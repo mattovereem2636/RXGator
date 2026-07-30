@@ -1,0 +1,2795 @@
+[
+  {
+    "id": "1000",
+    "generic": "atorvastatin",
+    "brands": [
+      "Lipitor",
+      "Atorvaliq"
+    ],
+    "aliases": [
+      "ator"
+    ],
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "atorvistatin",
+      "atorvastin",
+      "atorvastain",
+      "atorvststin",
+      "atorvasatin",
+      "atorvstatin"
+    ]
+  },
+  {
+    "id": "1001",
+    "generic": "metformin",
+    "brands": [
+      "Glucophage",
+      "Fortamet",
+      "Glumetza",
+      "Riomet"
+    ],
+    "aliases": [
+      "met",
+      "glucophage"
+    ],
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "metforman",
+      "metformon",
+      "metfromin",
+      "metfomin",
+      "metformen",
+      "metphormin"
+    ]
+  },
+  {
+    "id": "1002",
+    "generic": "lisinopril",
+    "brands": [
+      "Zestril",
+      "Prinivil"
+    ],
+    "aliases": [
+      "lisin"
+    ],
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "lisinipril",
+      "lisonopril",
+      "lisiniprol",
+      "lisinoprel",
+      "lisinopral",
+      "lisanopril",
+      "lysinopril"
+    ]
+  },
+  {
+    "id": "1003",
+    "generic": "amlodipine",
+    "brands": [
+      "Norvasc"
+    ],
+    "aliases": [
+      "amlod",
+      "norvasc"
+    ],
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "amlodapine",
+      "amlopidine",
+      "amlodipene",
+      "amlidopine",
+      "amlodepine",
+      "amoldipine"
+    ]
+  },
+  {
+    "id": "1004",
+    "generic": "levothyroxine",
+    "brands": [
+      "Synthroid",
+      "Levoxyl",
+      "Tirosint",
+      "Unithroid"
+    ],
+    "aliases": [
+      "levo",
+      "synthroid",
+      "thyroid med"
+    ],
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "primaryUseES": "Tiroides",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "levothyroxin",
+      "levothyroxene",
+      "levothyroxyne",
+      "levothroxine",
+      "levothyroxinee",
+      "synthroid"
+    ]
+  },
+  {
+    "id": "1005",
+    "generic": "omeprazole",
+    "brands": [
+      "Prilosec"
+    ],
+    "aliases": [
+      "ome",
+      "prilosec"
+    ],
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "omeprazol",
+      "omeprozole",
+      "omeprasole",
+      "omeprezole",
+      "omeprazolr",
+      "omeparzole"
+    ]
+  },
+  {
+    "id": "1006",
+    "generic": "losartan",
+    "brands": [
+      "Cozaar"
+    ],
+    "aliases": [
+      "losar",
+      "cozaar"
+    ],
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "losarten",
+      "loserton",
+      "lorsartan",
+      "losatan",
+      "losartaan",
+      "losartin"
+    ]
+  },
+  {
+    "id": "1007",
+    "generic": "gabapentin",
+    "brands": [
+      "Neurontin",
+      "Gralise"
+    ],
+    "aliases": [
+      "gaba",
+      "neurontin"
+    ],
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain",
+    "primaryUseES": "Dolor nervioso",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "gabapenton",
+      "gabapentine",
+      "gabapantin",
+      "gabapenten",
+      "gabbapentin",
+      "gabapentim"
+    ]
+  },
+  {
+    "id": "1008",
+    "generic": "sertraline",
+    "brands": [
+      "Zoloft"
+    ],
+    "aliases": [
+      "sert",
+      "zoloft"
+    ],
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "sertralin",
+      "sertralline",
+      "sertriline",
+      "sertaline",
+      "sertriline",
+      "sertraleen"
+    ]
+  },
+  {
+    "id": "1009",
+    "generic": "montelukast",
+    "brands": [
+      "Singulair"
+    ],
+    "aliases": [
+      "monte",
+      "singulair"
+    ],
+    "drugClass": "LTRA",
+    "primaryUse": "Asthma / Allergies",
+    "primaryUseES": "Asma / Alergias",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "montelucast",
+      "monteleukast",
+      "montelukest",
+      "montelucast",
+      "montelukats"
+    ]
+  },
+  {
+    "id": "1010",
+    "generic": "escitalopram",
+    "brands": [
+      "Lexapro"
+    ],
+    "aliases": [
+      "escit",
+      "lexapro"
+    ],
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "escitlopram",
+      "escitalopran",
+      "escitalipram",
+      "escitaopram",
+      "escitolopram"
+    ]
+  },
+  {
+    "id": "1011",
+    "generic": "trazodone",
+    "brands": [
+      "Desyrel",
+      "Oleptro"
+    ],
+    "aliases": [
+      "traz"
+    ],
+    "drugClass": "SARI",
+    "primaryUse": "Depression / Sleep",
+    "primaryUseES": "Depresión / Sueño",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "trazadone",
+      "trasodone",
+      "trazodne",
+      "trasadone",
+      "trazadome"
+    ]
+  },
+  {
+    "id": "1012",
+    "generic": "pantoprazole",
+    "brands": [
+      "Protonix"
+    ],
+    "aliases": [
+      "panto",
+      "protonix"
+    ],
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "pantoprazol",
+      "pantaprazole",
+      "pantoprasole",
+      "pantoprezole",
+      "pantroprazole"
+    ]
+  },
+  {
+    "id": "1013",
+    "generic": "rosuvastatin",
+    "brands": [
+      "Crestor"
+    ],
+    "aliases": [
+      "rosu",
+      "crestor"
+    ],
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "rosuvastain",
+      "rosuvistatin",
+      "rosuvastaten",
+      "rosuvastin",
+      "rosuvstatin"
+    ]
+  },
+  {
+    "id": "1014",
+    "generic": "duloxetine",
+    "brands": [
+      "Cymbalta"
+    ],
+    "aliases": [
+      "dulox",
+      "cymbalta"
+    ],
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Pain",
+    "primaryUseES": "Depresión / Dolor",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "duloxatine",
+      "duloxetin",
+      "duloxitine",
+      "duloxotine",
+      "dulocetine"
+    ]
+  },
+  {
+    "id": "1015",
+    "generic": "bupropion",
+    "brands": [
+      "Wellbutrin",
+      "Zyban"
+    ],
+    "aliases": [
+      "bup",
+      "wellbutrin"
+    ],
+    "drugClass": "NDRI",
+    "primaryUse": "Depression / Smoking",
+    "primaryUseES": "Depresión / Dejar de fumar",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "buproprion",
+      "bupropian",
+      "buproprion",
+      "bupropoin",
+      "buproion"
+    ]
+  },
+  {
+    "id": "1016",
+    "generic": "meloxicam",
+    "brands": [
+      "Mobic"
+    ],
+    "aliases": [
+      "melox",
+      "mobic"
+    ],
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "meloxicm",
+      "meloxican",
+      "meloxicame",
+      "meloxicab",
+      "melocicam"
+    ]
+  },
+  {
+    "id": "1017",
+    "generic": "carvedilol",
+    "brands": [
+      "Coreg"
+    ],
+    "aliases": [
+      "carv",
+      "coreg"
+    ],
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart failure",
+    "primaryUseES": "Insuficiencia cardíaca",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "carvediol",
+      "carvedolol",
+      "carvedalol",
+      "carvedlol",
+      "carvadilol"
+    ]
+  },
+  {
+    "id": "1018",
+    "generic": "tamsulosin",
+    "brands": [
+      "Flomax"
+    ],
+    "aliases": [
+      "tams",
+      "flomax"
+    ],
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Enlarged prostate",
+    "primaryUseES": "Próstata agrandada",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "tamsulocin",
+      "tamsulosen",
+      "tamsulisin",
+      "tamsulosine",
+      "tamsolusin"
+    ]
+  },
+  {
+    "id": "1019",
+    "generic": "hydrochlorothiazide",
+    "brands": [
+      "Microzide"
+    ],
+    "aliases": [
+      "HCTZ",
+      "hydrochlor",
+      "water pill",
+      "microzide"
+    ],
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "hydrochlorothiazid",
+      "hydrochlorthiazide",
+      "hydrochlorothizide",
+      "hydrochorthiazide",
+      "hydroclorothiazide"
+    ]
+  },
+  {
+    "id": "1020",
+    "generic": "fluoxetine",
+    "brands": [
+      "Prozac",
+      "Sarafem"
+    ],
+    "aliases": [
+      "fluox",
+      "prozac"
+    ],
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "fluoxatine",
+      "fluoxetin",
+      "fluoxitine",
+      "fluoxotine",
+      "fluoxetene"
+    ]
+  },
+  {
+    "id": "1021",
+    "generic": "amoxicillin",
+    "brands": [
+      "Amoxil",
+      "Trimox"
+    ],
+    "aliases": [
+      "amox",
+      "amoxil"
+    ],
+    "drugClass": "Penicillin",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "amoxicillan",
+      "amoxicilin",
+      "amoxycillin",
+      "amoxacillin",
+      "amoxicillion"
+    ]
+  },
+  {
+    "id": "1022",
+    "generic": "azithromycin",
+    "brands": [
+      "Zithromax",
+      "Z-Pack"
+    ],
+    "aliases": [
+      "azith",
+      "z-pack",
+      "zithromax",
+      "zpak",
+      "z pack"
+    ],
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "azithromicin",
+      "azithromycine",
+      "azythromycin",
+      "azitromycin",
+      "azithromysin"
+    ]
+  },
+  {
+    "id": "1023",
+    "generic": "albuterol",
+    "brands": [
+      "ProAir",
+      "Ventolin",
+      "Proventil"
+    ],
+    "aliases": [
+      "alb",
+      "proair",
+      "ventolin",
+      "inhaler"
+    ],
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "primaryUseES": "Asma / EPOC",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "albuteral",
+      "albuterol",
+      "albuterel",
+      "albutarol",
+      "albuteroll"
+    ]
+  },
+  {
+    "id": "1024",
+    "generic": "prednisone",
+    "brands": [
+      "Deltasone",
+      "Rayos"
+    ],
+    "aliases": [
+      "pred"
+    ],
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "primaryUseES": "Inflamación",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "predizone",
+      "predisone",
+      "prednezone",
+      "predinosone",
+      "prednizone",
+      "prednisoine"
+    ]
+  },
+  {
+    "id": "1025",
+    "generic": "clopidogrel",
+    "brands": [
+      "Plavix"
+    ],
+    "aliases": [
+      "clop",
+      "plavix"
+    ],
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "clopidogral",
+      "clopidogel",
+      "clopidogril",
+      "clopidogrell",
+      "clopidogrel"
+    ]
+  },
+  {
+    "id": "1026",
+    "generic": "furosemide",
+    "brands": [
+      "Lasix"
+    ],
+    "aliases": [
+      "furo",
+      "lasix"
+    ],
+    "drugClass": "Loop diuretic",
+    "primaryUse": "Edema / Heart failure",
+    "primaryUseES": "Edema / Insuficiencia cardíaca",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "furosimide",
+      "furosimede",
+      "furosemid",
+      "furosimide",
+      "furosimede"
+    ]
+  },
+  {
+    "id": "1027",
+    "generic": "metoprolol",
+    "brands": [
+      "Lopressor",
+      "Toprol-XL"
+    ],
+    "aliases": [
+      "meto",
+      "lopressor",
+      "toprol"
+    ],
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "primaryUseES": "Presión arterial / Corazón",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "metoprolal",
+      "metoprololol",
+      "metopralol",
+      "metoprolo",
+      "metprolol"
+    ]
+  },
+  {
+    "id": "1028",
+    "generic": "glipizide",
+    "brands": [
+      "Glucotrol"
+    ],
+    "aliases": [
+      "glip",
+      "glucotrol"
+    ],
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "glipizid",
+      "glipazide",
+      "glipzide",
+      "glipeside",
+      "glipiside"
+    ]
+  },
+  {
+    "id": "1029",
+    "generic": "pravastatin",
+    "brands": [
+      "Pravachol"
+    ],
+    "aliases": [
+      "prav",
+      "pravachol"
+    ],
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "pravastain",
+      "pravastein",
+      "pravistatin",
+      "pravastaten",
+      "pravastation"
+    ]
+  },
+  {
+    "id": "1030",
+    "generic": "simvastatin",
+    "brands": [
+      "Zocor"
+    ],
+    "aliases": [
+      "simv",
+      "zocor"
+    ],
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "simvistatin",
+      "simvastin",
+      "simvastain",
+      "simvastatine",
+      "simvastaten"
+    ]
+  },
+  {
+    "id": "1031",
+    "generic": "warfarin",
+    "brands": [
+      "Coumadin",
+      "Jantoven"
+    ],
+    "aliases": [
+      "warf",
+      "coumadin"
+    ],
+    "drugClass": "Anticoagulant",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "warferin",
+      "warfrin",
+      "warfarin",
+      "warfaren",
+      "warfain"
+    ]
+  },
+  {
+    "id": "1032",
+    "generic": "citalopram",
+    "brands": [
+      "Celexa"
+    ],
+    "aliases": [
+      "cital",
+      "celexa"
+    ],
+    "drugClass": "SSRI",
+    "primaryUse": "Depression",
+    "primaryUseES": "Depresión",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "citalopran",
+      "citalpram",
+      "citalapram",
+      "citaloprame",
+      "citaloprm"
+    ]
+  },
+  {
+    "id": "1033",
+    "generic": "tramadol",
+    "brands": [
+      "Ultram",
+      "ConZip"
+    ],
+    "aliases": [
+      "tram",
+      "ultram"
+    ],
+    "drugClass": "Opioid analgesic",
+    "primaryUse": "Pain",
+    "primaryUseES": "Dolor",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "tramadal",
+      "tramadoll",
+      "tramodol",
+      "tramadole",
+      "tramadl"
+    ]
+  },
+  {
+    "id": "1034",
+    "generic": "metronidazole",
+    "brands": [
+      "Flagyl"
+    ],
+    "aliases": [
+      "metro",
+      "flagyl"
+    ],
+    "drugClass": "Antibiotic",
+    "primaryUse": "Bacterial / Parasitic infection",
+    "primaryUseES": "Infección bacteriana / parasitaria",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "metronidazol",
+      "metronidizole",
+      "metronidazle",
+      "metronidazol",
+      "metranidazole"
+    ]
+  },
+  {
+    "id": "1035",
+    "generic": "cyclobenzaprine",
+    "brands": [
+      "Flexeril",
+      "Amrix"
+    ],
+    "aliases": [
+      "cyclo",
+      "flexeril"
+    ],
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasm",
+    "primaryUseES": "Espasmo muscular",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "cyclobenzaprin",
+      "cyclobenzapreen",
+      "cyclobenzaprine",
+      "cyclobenzapene",
+      "cyclobenziprine"
+    ]
+  },
+  {
+    "id": "1036",
+    "generic": "doxycycline",
+    "brands": [
+      "Vibramycin",
+      "Doryx"
+    ],
+    "aliases": [
+      "doxy",
+      "vibramycin"
+    ],
+    "drugClass": "Tetracycline",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "doxycyclin",
+      "doxicycline",
+      "doxycycline",
+      "doxicicline",
+      "doxycyclene"
+    ]
+  },
+  {
+    "id": "1037",
+    "generic": "venlafaxine",
+    "brands": [
+      "Effexor"
+    ],
+    "aliases": [
+      "venla",
+      "effexor"
+    ],
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "venlafaxin",
+      "venlafexine",
+      "venlafaxene",
+      "vanlafaxine",
+      "venlafxine"
+    ]
+  },
+  {
+    "id": "1038",
+    "generic": "clonazepam",
+    "brands": [
+      "Klonopin"
+    ],
+    "aliases": [
+      "clona",
+      "klonopin"
+    ],
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Seizures / Anxiety",
+    "primaryUseES": "Convulsiones / Ansiedad",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "clonazepan",
+      "clonazipam",
+      "clonazapam",
+      "clonazepem",
+      "clonezepam"
+    ]
+  },
+  {
+    "id": "1039",
+    "generic": "alprazolam",
+    "brands": [
+      "Xanax"
+    ],
+    "aliases": [
+      "xanax",
+      "xanex",
+      "alpraz"
+    ],
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "primaryUseES": "Ansiedad",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "alprazolan",
+      "alprozolam",
+      "alprazolm",
+      "alprazolame",
+      "alprazolom"
+    ]
+  },
+  {
+    "id": "1040",
+    "generic": "methylphenidate",
+    "brands": [
+      "Ritalin",
+      "Concerta",
+      "Focalin"
+    ],
+    "aliases": [
+      "ritalin",
+      "concerta"
+    ],
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "primaryUseES": "TDAH",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "methylphenidat",
+      "methylfenidate",
+      "methlyphenidate",
+      "methylphenidiate",
+      "methylphenadate"
+    ]
+  },
+  {
+    "id": "1041",
+    "generic": "diazepam",
+    "brands": [
+      "Valium"
+    ],
+    "aliases": [
+      "valium"
+    ],
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety / Seizures",
+    "primaryUseES": "Ansiedad / Convulsiones",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "diazepan",
+      "diazipam",
+      "diazapam",
+      "diazepem",
+      "diazapem"
+    ]
+  },
+  {
+    "id": "1042",
+    "generic": "lorazepam",
+    "brands": [
+      "Ativan"
+    ],
+    "aliases": [
+      "ativan",
+      "loraz"
+    ],
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "primaryUseES": "Ansiedad",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "lorazepan",
+      "lorazipam",
+      "lorazapam",
+      "lorazepem",
+      "lorezepam"
+    ]
+  },
+  {
+    "id": "1043",
+    "generic": "spironolactone",
+    "brands": [
+      "Aldactone"
+    ],
+    "aliases": [
+      "spiro",
+      "aldactone"
+    ],
+    "drugClass": "Potassium-sparing diuretic",
+    "primaryUse": "Heart failure / Edema",
+    "primaryUseES": "Insuficiencia cardíaca / Edema",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "spironolacton",
+      "spiranolactone",
+      "spironolactone",
+      "spironalactone",
+      "sprionolactone"
+    ]
+  },
+  {
+    "id": "1044",
+    "generic": "acetaminophen",
+    "brands": [
+      "Tylenol"
+    ],
+    "aliases": [
+      "tylenol",
+      "APAP",
+      "paracetamol"
+    ],
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "primaryUseES": "Dolor / Fiebre",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "acetominophen",
+      "acetaminophin",
+      "acetiminophen",
+      "acetaminifen",
+      "acetaminophan"
+    ]
+  },
+  {
+    "id": "1045",
+    "generic": "ibuprofen",
+    "brands": [
+      "Advil",
+      "Motrin"
+    ],
+    "aliases": [
+      "advil",
+      "motrin",
+      "IBU"
+    ],
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "ibuprofin",
+      "ibuprophen",
+      "ibuprofene",
+      "ibeprofen",
+      "ibuprufen"
+    ]
+  },
+  {
+    "id": "1046",
+    "generic": "naproxen",
+    "brands": [
+      "Aleve",
+      "Naprosyn"
+    ],
+    "aliases": [
+      "aleve",
+      "naprosyn"
+    ],
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "naproxin",
+      "naproxan",
+      "naproxyn",
+      "naporxen",
+      "naproxem"
+    ]
+  },
+  {
+    "id": "1047",
+    "generic": "cetirizine",
+    "brands": [
+      "Zyrtec"
+    ],
+    "aliases": [
+      "zyrtec"
+    ],
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "primaryUseES": "Alergias",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "cetrizine",
+      "ceterizine",
+      "cetirazine",
+      "cetirizin",
+      "cetirisine"
+    ]
+  },
+  {
+    "id": "1048",
+    "generic": "loratadine",
+    "brands": [
+      "Claritin"
+    ],
+    "aliases": [
+      "claritin"
+    ],
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "primaryUseES": "Alergias",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "loratidine",
+      "loratadin",
+      "loratidin",
+      "loratadene",
+      "loratidene"
+    ]
+  },
+  {
+    "id": "1049",
+    "generic": "fexofenadine",
+    "brands": [
+      "Allegra"
+    ],
+    "aliases": [
+      "allegra"
+    ],
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "primaryUseES": "Alergias",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "fexofenadene",
+      "fexofenidine",
+      "fexofenadince",
+      "fexafenadine"
+    ]
+  },
+  {
+    "id": "1050",
+    "generic": "famotidine",
+    "brands": [
+      "Pepcid"
+    ],
+    "aliases": [
+      "pepcid"
+    ],
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "famotadine",
+      "famotidene",
+      "famotodine",
+      "famoitdine"
+    ]
+  },
+  {
+    "id": "1051",
+    "generic": "ranitidine",
+    "brands": [
+      "Zantac"
+    ],
+    "aliases": [
+      "zantac"
+    ],
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "ranitadine",
+      "ranitidene",
+      "ranatidine",
+      "ranitadene"
+    ]
+  },
+  {
+    "id": "1052",
+    "generic": "lansoprazole",
+    "brands": [
+      "Prevacid"
+    ],
+    "aliases": [
+      "prevacid"
+    ],
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "lansoprasole",
+      "lansaprazole",
+      "lansoprazol",
+      "lansoprazle"
+    ]
+  },
+  {
+    "id": "1053",
+    "generic": "esomeprazole",
+    "brands": [
+      "Nexium"
+    ],
+    "aliases": [
+      "nexium"
+    ],
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "esomeprazol",
+      "esomeprasole",
+      "esomaprazole",
+      "esomeprezole"
+    ]
+  },
+  {
+    "id": "1054",
+    "generic": "insulin glargine",
+    "brands": [
+      "Lantus",
+      "Basaglar",
+      "Toujeo"
+    ],
+    "aliases": [
+      "lantus",
+      "basaglar"
+    ],
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "insulin glargin",
+      "insulin glargene",
+      "insuline glargine"
+    ]
+  },
+  {
+    "id": "1055",
+    "generic": "insulin lispro",
+    "brands": [
+      "Humalog",
+      "Admelog"
+    ],
+    "aliases": [
+      "humalog"
+    ],
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "insulin lispro",
+      "insulin lyspro",
+      "insuline lispro"
+    ]
+  },
+  {
+    "id": "1056",
+    "generic": "methotrexate",
+    "brands": [
+      "Trexall",
+      "Rasuvo",
+      "Otrexup"
+    ],
+    "aliases": [
+      "MTX",
+      "trexall"
+    ],
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "primaryUseES": "Artritis reumatoide / Cáncer",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "methotrexat",
+      "methotrexete",
+      "methotrexatte",
+      "methotraxate"
+    ]
+  },
+  {
+    "id": "1058",
+    "generic": "prednisolone",
+    "brands": [
+      "Orapred",
+      "Prelone"
+    ],
+    "aliases": [
+      "orapred"
+    ],
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "primaryUseES": "Inflamación",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "prednisalone",
+      "prednisolne",
+      "prednisoline",
+      "prednisolon"
+    ]
+  },
+  {
+    "id": "1059",
+    "generic": "ciprofloxacin",
+    "brands": [
+      "Cipro"
+    ],
+    "aliases": [
+      "cipro"
+    ],
+    "drugClass": "Fluoroquinolone",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "ciprofloxicin",
+      "ciprofloxacine",
+      "ciprfloxacin",
+      "ciprofloxasin"
+    ]
+  },
+  {
+    "id": "1060",
+    "generic": "levofloxacin",
+    "brands": [
+      "Levaquin"
+    ],
+    "aliases": [
+      "levaquin"
+    ],
+    "drugClass": "Fluoroquinolone",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "levofloxicin",
+      "levofloxacine",
+      "levofloxasin",
+      "levofloxcin"
+    ]
+  },
+  {
+    "id": "1061",
+    "generic": "cephalexin",
+    "brands": [
+      "Keflex"
+    ],
+    "aliases": [
+      "keflex"
+    ],
+    "drugClass": "Cephalosporin",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "cephalexan",
+      "cephilexin",
+      "cephalixin",
+      "cephlexin",
+      "cephalexine"
+    ]
+  },
+  {
+    "id": "1062",
+    "generic": "clindamycin",
+    "brands": [
+      "Cleocin"
+    ],
+    "aliases": [
+      "cleocin"
+    ],
+    "drugClass": "Lincosamide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "clindamicin",
+      "clindamycine",
+      "clindamacin",
+      "clindamysin"
+    ]
+  },
+  {
+    "id": "1063",
+    "generic": "sulfamethoxazole-trimethoprim",
+    "brands": [
+      "Bactrim",
+      "Septra"
+    ],
+    "aliases": [
+      "bactrim",
+      "septra",
+      "SMZ-TMP",
+      "sulfa"
+    ],
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "sulfamethoxazole",
+      "bactrim",
+      "sulfa-trimethoprim"
+    ]
+  },
+  {
+    "id": "1064",
+    "generic": "benazepril",
+    "brands": [
+      "Lotensin"
+    ],
+    "aliases": [
+      "lotensin"
+    ],
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "benazapril",
+      "benazepral",
+      "benazipril",
+      "benazeprile"
+    ]
+  },
+  {
+    "id": "1065",
+    "generic": "enalapril",
+    "brands": [
+      "Vasotec"
+    ],
+    "aliases": [
+      "vasotec"
+    ],
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "enalipril",
+      "enalopril",
+      "enalapral",
+      "enalipral"
+    ]
+  },
+  {
+    "id": "1066",
+    "generic": "ramipril",
+    "brands": [
+      "Altace"
+    ],
+    "aliases": [
+      "altace"
+    ],
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "ramapril",
+      "ramipral",
+      "rampril",
+      "ramiprile"
+    ]
+  },
+  {
+    "id": "1067",
+    "generic": "valsartan",
+    "brands": [
+      "Diovan"
+    ],
+    "aliases": [
+      "diovan"
+    ],
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "valsarten",
+      "valsartin",
+      "valsarton",
+      "valsartane"
+    ]
+  },
+  {
+    "id": "1068",
+    "generic": "irbesartan",
+    "brands": [
+      "Avapro"
+    ],
+    "aliases": [
+      "avapro"
+    ],
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "irbesarten",
+      "irbesartin",
+      "irbesarton",
+      "irbasartan"
+    ]
+  },
+  {
+    "id": "1069",
+    "generic": "olmesartan",
+    "brands": [
+      "Benicar"
+    ],
+    "aliases": [
+      "benicar"
+    ],
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "olmesarten",
+      "olmesartin",
+      "olmasartan",
+      "olmisartan"
+    ]
+  },
+  {
+    "id": "1070",
+    "generic": "diltiazem",
+    "brands": [
+      "Cardizem",
+      "Tiazac"
+    ],
+    "aliases": [
+      "cardizem",
+      "tiazac"
+    ],
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure / Heart",
+    "primaryUseES": "Presión arterial / Corazón",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "diltiazam",
+      "diltizem",
+      "diltiazm",
+      "diltiazen"
+    ]
+  },
+  {
+    "id": "1071",
+    "generic": "nifedipine",
+    "brands": [
+      "Procardia",
+      "Adalat"
+    ],
+    "aliases": [
+      "procardia"
+    ],
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "nifedapine",
+      "nifedipene",
+      "nifedepine",
+      "nifidipine"
+    ]
+  },
+  {
+    "id": "1072",
+    "generic": "atenolol",
+    "brands": [
+      "Tenormin"
+    ],
+    "aliases": [
+      "tenormin"
+    ],
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "atenalol",
+      "atenlol",
+      "atenolal",
+      "atanolol"
+    ]
+  },
+  {
+    "id": "1073",
+    "generic": "propranolol",
+    "brands": [
+      "Inderal"
+    ],
+    "aliases": [
+      "inderal"
+    ],
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Anxiety",
+    "primaryUseES": "Blood pressure / Anxiety",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "propranolal",
+      "propranalol",
+      "propronolol",
+      "propranololl"
+    ]
+  },
+  {
+    "id": "1074",
+    "generic": "bisoprolol",
+    "brands": [
+      "Zebeta"
+    ],
+    "aliases": [
+      "zebeta"
+    ],
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "bisoprolal",
+      "bisopralol",
+      "bisoprololl",
+      "bisoprolo"
+    ]
+  },
+  {
+    "id": "1075",
+    "generic": "clonidine",
+    "brands": [
+      "Catapres"
+    ],
+    "aliases": [
+      "catapres"
+    ],
+    "drugClass": "Alpha-2 agonist",
+    "primaryUse": "Blood pressure / ADHD",
+    "primaryUseES": "Blood pressure / ADHD",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "clonadine",
+      "clonidene",
+      "clonidin",
+      "clonodine"
+    ]
+  },
+  {
+    "id": "1076",
+    "generic": "finasteride",
+    "brands": [
+      "Proscar",
+      "Propecia"
+    ],
+    "aliases": [
+      "proscar",
+      "propecia"
+    ],
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "BPH / Hair loss",
+    "primaryUseES": "HPB / Caída del cabello",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "finasterid",
+      "finastride",
+      "finasteride",
+      "fenasteride"
+    ]
+  },
+  {
+    "id": "1077",
+    "generic": "sildenafil",
+    "brands": [
+      "Viagra",
+      "Revatio"
+    ],
+    "aliases": [
+      "viagra",
+      "revatio"
+    ],
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / PAH",
+    "primaryUseES": "Disfunción eréctil",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "sildenafal",
+      "sildinafil",
+      "sildanafil",
+      "sildenifil"
+    ]
+  },
+  {
+    "id": "1078",
+    "generic": "tadalafil",
+    "brands": [
+      "Cialis",
+      "Adcirca"
+    ],
+    "aliases": [
+      "cialis",
+      "adcirca"
+    ],
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / BPH",
+    "primaryUseES": "Disfunción eréctil / HPB",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "tadalafal",
+      "tadalifil",
+      "tadalfil",
+      "tadanafil"
+    ]
+  },
+  {
+    "id": "1079",
+    "generic": "sumatriptan",
+    "brands": [
+      "Imitrex"
+    ],
+    "aliases": [
+      "imitrex"
+    ],
+    "drugClass": "Triptan",
+    "primaryUse": "Migraine",
+    "primaryUseES": "Migraña",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "sumatriptin",
+      "sumatripten",
+      "sumatripan",
+      "sumatrippton"
+    ]
+  },
+  {
+    "id": "1080",
+    "generic": "ondansetron",
+    "brands": [
+      "Zofran"
+    ],
+    "aliases": [
+      "zofran",
+      "ODT"
+    ],
+    "drugClass": "5-HT3 antagonist",
+    "primaryUse": "Nausea / Vomiting",
+    "primaryUseES": "Náuseas / Vómitos",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "ondansetran",
+      "ondansetrin",
+      "ondancetrion",
+      "ondansteron"
+    ]
+  },
+  {
+    "id": "1081",
+    "generic": "promethazine",
+    "brands": [
+      "Phenergan"
+    ],
+    "aliases": [
+      "phenergan"
+    ],
+    "drugClass": "Antihistamine / Antiemetic",
+    "primaryUse": "Nausea / Allergies",
+    "primaryUseES": "Náuseas / Alergias",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "promethazin",
+      "promethezine",
+      "promethazene",
+      "promethizine"
+    ]
+  },
+  {
+    "id": "1082",
+    "generic": "meclizine",
+    "brands": [
+      "Antivert",
+      "Bonine"
+    ],
+    "aliases": [
+      "antivert",
+      "bonine"
+    ],
+    "drugClass": "Antihistamine",
+    "primaryUse": "Vertigo / Motion sickness",
+    "primaryUseES": "Vértigo / Mareo",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "meclazine",
+      "meclizene",
+      "meclezine",
+      "meclisine"
+    ]
+  },
+  {
+    "id": "1083",
+    "generic": "diclofenac",
+    "brands": [
+      "Voltaren"
+    ],
+    "aliases": [
+      "voltaren"
+    ],
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "diclofenec",
+      "diclofanac",
+      "diclofinac",
+      "diclophenac"
+    ]
+  },
+  {
+    "id": "1084",
+    "generic": "celecoxib",
+    "brands": [
+      "Celebrex"
+    ],
+    "aliases": [
+      "celebrex"
+    ],
+    "drugClass": "COX-2 inhibitor",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "celecoxab",
+      "celcoxib",
+      "celecoxibe",
+      "celicoxib"
+    ]
+  },
+  {
+    "id": "1085",
+    "generic": "pregabalin",
+    "brands": [
+      "Lyrica"
+    ],
+    "aliases": [
+      "lyrica"
+    ],
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain / Fibromyalgia",
+    "primaryUseES": "Dolor nervioso / Fibromialgia",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "pregabaline",
+      "pregabalon",
+      "pregablin",
+      "pregabakin"
+    ]
+  },
+  {
+    "id": "1086",
+    "generic": "topiramate",
+    "brands": [
+      "Topamax"
+    ],
+    "aliases": [
+      "topamax"
+    ],
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Migraine",
+    "primaryUseES": "Convulsiones / Migraña",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "topiramat",
+      "topiromate",
+      "topiramite",
+      "topiramete"
+    ]
+  },
+  {
+    "id": "1087",
+    "generic": "lamotrigine",
+    "brands": [
+      "Lamictal"
+    ],
+    "aliases": [
+      "lamictal"
+    ],
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "primaryUseES": "Convulsiones / Trastorno bipolar",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "lamotrigin",
+      "lamotragine",
+      "lamotrigene",
+      "lamitrigine"
+    ]
+  },
+  {
+    "id": "1088",
+    "generic": "levetiracetam",
+    "brands": [
+      "Keppra"
+    ],
+    "aliases": [
+      "keppra"
+    ],
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures",
+    "primaryUseES": "Convulsiones",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "levetiracetm",
+      "levetiracitam",
+      "levetiracetame",
+      "levetericetam"
+    ]
+  },
+  {
+    "id": "1089",
+    "generic": "valproic acid",
+    "brands": [
+      "Depakote",
+      "Depakene"
+    ],
+    "aliases": [
+      "depakote",
+      "depakene",
+      "VPA"
+    ],
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "primaryUseES": "Convulsiones / Trastorno bipolar",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "valproic",
+      "valporic acid",
+      "valprioc acid",
+      "valporic"
+    ]
+  },
+  {
+    "id": "1090",
+    "generic": "phenytoin",
+    "brands": [
+      "Dilantin"
+    ],
+    "aliases": [
+      "dilantin"
+    ],
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures",
+    "primaryUseES": "Convulsiones",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "phenytoine",
+      "phenytion",
+      "phenitoin",
+      "phenytoan"
+    ]
+  },
+  {
+    "id": "1091",
+    "generic": "aripiprazole",
+    "brands": [
+      "Abilify"
+    ],
+    "aliases": [
+      "abilify"
+    ],
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "primaryUseES": "Bipolar / Esquizofrenia",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "aripiprazol",
+      "aripiprasole",
+      "aripiprazle",
+      "aripaprazole"
+    ]
+  },
+  {
+    "id": "1092",
+    "generic": "quetiapine",
+    "brands": [
+      "Seroquel"
+    ],
+    "aliases": [
+      "seroquel"
+    ],
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "primaryUseES": "Bipolar / Esquizofrenia",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "quetiapene",
+      "quetipine",
+      "quetiapiene",
+      "quetiapaine"
+    ]
+  },
+  {
+    "id": "1093",
+    "generic": "olanzapine",
+    "brands": [
+      "Zyprexa"
+    ],
+    "aliases": [
+      "zyprexa"
+    ],
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "primaryUseES": "Bipolar / Esquizofrenia",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "olanzapene",
+      "olanzipine",
+      "olanzapiene",
+      "olanzepine"
+    ]
+  },
+  {
+    "id": "1094",
+    "generic": "risperidone",
+    "brands": [
+      "Risperdal"
+    ],
+    "aliases": [
+      "risperdal"
+    ],
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Schizophrenia / Bipolar",
+    "primaryUseES": "Esquizofrenia / Bipolar",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "risperidome",
+      "risperadone",
+      "risperidon",
+      "risperdone"
+    ]
+  },
+  {
+    "id": "1095",
+    "generic": "lithium carbonate",
+    "brands": [
+      "Lithobid",
+      "Eskalith"
+    ],
+    "aliases": [
+      "lithobid",
+      "lithium"
+    ],
+    "drugClass": "Mood stabilizer",
+    "primaryUse": "Bipolar",
+    "primaryUseES": "Trastorno bipolar",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "lithium carbonat",
+      "litheum",
+      "lithiam carbonate"
+    ]
+  },
+  {
+    "id": "1096",
+    "generic": "buspirone",
+    "brands": [
+      "Buspar"
+    ],
+    "aliases": [
+      "buspar"
+    ],
+    "drugClass": "Anxiolytic",
+    "primaryUse": "Anxiety",
+    "primaryUseES": "Ansiedad",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "buspiron",
+      "busprirone",
+      "busprone",
+      "busparone"
+    ]
+  },
+  {
+    "id": "1097",
+    "generic": "hydroxyzine",
+    "brands": [
+      "Vistaril",
+      "Atarax"
+    ],
+    "aliases": [
+      "vistaril",
+      "atarax"
+    ],
+    "drugClass": "Antihistamine",
+    "primaryUse": "Anxiety / Allergies",
+    "primaryUseES": "Anxiety / Allergies",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "hydroxyzene",
+      "hydroxizine",
+      "hydroxyzin",
+      "hyrdoxyzine"
+    ]
+  },
+  {
+    "id": "1098",
+    "generic": "zolpidem",
+    "brands": [
+      "Ambien"
+    ],
+    "aliases": [
+      "ambien"
+    ],
+    "drugClass": "Sedative-hypnotic",
+    "primaryUse": "Insomnia",
+    "primaryUseES": "Insomnio",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "zolpidam",
+      "zolpidm",
+      "zolpidem",
+      "zolpidim"
+    ]
+  },
+  {
+    "id": "1099",
+    "generic": "eszopiclone",
+    "brands": [
+      "Lunesta"
+    ],
+    "aliases": [
+      "lunesta"
+    ],
+    "drugClass": "Sedative-hypnotic",
+    "primaryUse": "Insomnia",
+    "primaryUseES": "Insomnio",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "eszopiclne",
+      "eszopiclone",
+      "eszopiclon",
+      "eszopiclome"
+    ]
+  },
+  {
+    "id": "1100",
+    "generic": "donepezil",
+    "brands": [
+      "Aricept"
+    ],
+    "aliases": [
+      "aricept"
+    ],
+    "drugClass": "Cholinesterase inhibitor",
+    "primaryUse": "Alzheimer's",
+    "primaryUseES": "Alzheimer",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "donepazil",
+      "donepezal",
+      "donepizil",
+      "donepesil"
+    ]
+  },
+  {
+    "id": "1101",
+    "generic": "memantine",
+    "brands": [
+      "Namenda"
+    ],
+    "aliases": [
+      "namenda"
+    ],
+    "drugClass": "NMDA antagonist",
+    "primaryUse": "Alzheimer's",
+    "primaryUseES": "Alzheimer",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "mamantine",
+      "memantene",
+      "memantina",
+      "memantene"
+    ]
+  },
+  {
+    "id": "1103",
+    "generic": "fluticasone",
+    "brands": [
+      "Flonase",
+      "Flovent"
+    ],
+    "aliases": [
+      "flonase",
+      "flovent"
+    ],
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "primaryUseES": "Allergies / Asthma",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "fluticasone",
+      "fluticason",
+      "fluticasne",
+      "fluitcasone"
+    ]
+  },
+  {
+    "id": "1104",
+    "generic": "budesonide",
+    "brands": [
+      "Pulmicort",
+      "Rhinocort",
+      "Entocort"
+    ],
+    "aliases": [
+      "pulmicort",
+      "rhinocort"
+    ],
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Asthma / Allergies / Crohn's",
+    "primaryUseES": "Asma / Alergias / Crohn",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "budesonid",
+      "budesonide",
+      "budisonide",
+      "budesanide"
+    ]
+  },
+  {
+    "id": "1105",
+    "generic": "tiotropium",
+    "brands": [
+      "Spiriva"
+    ],
+    "aliases": [
+      "spiriva"
+    ],
+    "drugClass": "Anticholinergic",
+    "primaryUse": "COPD",
+    "primaryUseES": "EPOC",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "tiotropiam",
+      "tiotripium",
+      "tiotropeum",
+      "tiotropiom"
+    ]
+  },
+  {
+    "id": "1106",
+    "generic": "latanoprost",
+    "brands": [
+      "Xalatan"
+    ],
+    "aliases": [
+      "xalatan"
+    ],
+    "drugClass": "Prostaglandin analog",
+    "primaryUse": "Glaucoma",
+    "primaryUseES": "Glaucoma",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "latanopros",
+      "latanprost",
+      "latanaprost",
+      "latanoproste"
+    ]
+  },
+  {
+    "id": "1107",
+    "generic": "timolol",
+    "brands": [
+      "Timoptic"
+    ],
+    "aliases": [
+      "timoptic"
+    ],
+    "drugClass": "Beta blocker (ophthalmic)",
+    "primaryUse": "Glaucoma",
+    "primaryUseES": "Glaucoma",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "timlol",
+      "timolal",
+      "timolole",
+      "timool"
+    ]
+  },
+  {
+    "id": "1108",
+    "generic": "pioglitazone",
+    "brands": [
+      "Actos"
+    ],
+    "aliases": [
+      "actos"
+    ],
+    "drugClass": "Thiazolidinedione",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "pioglitazon",
+      "pioglitasone",
+      "pioglitezone",
+      "pioglitazone"
+    ]
+  },
+  {
+    "id": "1109",
+    "generic": "sitagliptin",
+    "brands": [
+      "Januvia"
+    ],
+    "aliases": [
+      "januvia"
+    ],
+    "drugClass": "DPP-4 inhibitor",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "sitaglipten",
+      "sitagliptan",
+      "sitaglipton",
+      "stagliptin"
+    ]
+  },
+  {
+    "id": "1110",
+    "generic": "empagliflozin",
+    "brands": [
+      "Jardiance"
+    ],
+    "aliases": [
+      "jardiance"
+    ],
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes / Heart failure",
+    "primaryUseES": "Diabetes / Insuficiencia cardíaca",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "empagliflozn",
+      "empaglifozin",
+      "empagliflozine",
+      "empaglaflozin"
+    ]
+  },
+  {
+    "id": "1111",
+    "generic": "dapagliflozin",
+    "brands": [
+      "Farxiga"
+    ],
+    "aliases": [
+      "farxiga"
+    ],
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes / Heart failure",
+    "primaryUseES": "Diabetes / Insuficiencia cardíaca",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "dapagliflozn",
+      "dapaglifozin",
+      "dapagliflozine",
+      "dapaglioflzin"
+    ]
+  },
+  {
+    "id": "1112",
+    "generic": "liraglutide",
+    "brands": [
+      "Victoza",
+      "Saxenda"
+    ],
+    "aliases": [
+      "victoza",
+      "saxenda"
+    ],
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "liraglutid",
+      "liraglutide",
+      "liraglutyde",
+      "liragluetide"
+    ]
+  },
+  {
+    "id": "1113",
+    "generic": "semaglutide",
+    "brands": [
+      "Ozempic",
+      "Wegovy",
+      "Rybelsus"
+    ],
+    "aliases": [
+      "ozempic",
+      "wegovy",
+      "rybelsus"
+    ],
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "semaglutid",
+      "semaglutide",
+      "semaglutyde",
+      "semglutide",
+      "semiglutide"
+    ]
+  },
+  {
+    "id": "1114",
+    "generic": "tirzepatide",
+    "brands": [
+      "Mounjaro",
+      "Zepbound"
+    ],
+    "aliases": [
+      "mounjaro",
+      "zepbound"
+    ],
+    "drugClass": "GIP/GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "tirzepatid",
+      "tirzepatyde",
+      "tirazepatide",
+      "tirzepatede"
+    ]
+  },
+  {
+    "id": "1115",
+    "generic": "apixaban",
+    "brands": [
+      "Eliquis"
+    ],
+    "aliases": [
+      "eliquis"
+    ],
+    "drugClass": "Factor Xa inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "primaryUseES": "Coágulos / Fibrilación auricular",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "apixiban",
+      "apixabin",
+      "apixaban",
+      "apixiben"
+    ]
+  },
+  {
+    "id": "1116",
+    "generic": "rivaroxaban",
+    "brands": [
+      "Xarelto"
+    ],
+    "aliases": [
+      "xarelto"
+    ],
+    "drugClass": "Factor Xa inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "primaryUseES": "Coágulos / Fibrilación auricular",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "rivaroxiban",
+      "rivaroxabin",
+      "rivaroxban",
+      "riivaroxaban"
+    ]
+  },
+  {
+    "id": "1117",
+    "generic": "dabigatran",
+    "brands": [
+      "Pradaxa"
+    ],
+    "aliases": [
+      "pradaxa"
+    ],
+    "drugClass": "Direct thrombin inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "primaryUseES": "Coágulos / Fibrilación auricular",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "dabigitran",
+      "dabigatren",
+      "dabiagatran",
+      "dabigatrin"
+    ]
+  },
+  {
+    "id": "1118",
+    "generic": "allopurinol",
+    "brands": [
+      "Zyloprim"
+    ],
+    "aliases": [
+      "zyloprim"
+    ],
+    "drugClass": "XO inhibitor",
+    "primaryUse": "Gout",
+    "primaryUseES": "Gota",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "allopurinol",
+      "allopurinall",
+      "alopurinol",
+      "allopurinole"
+    ]
+  },
+  {
+    "id": "1119",
+    "generic": "colchicine",
+    "brands": [
+      "Colcrys",
+      "Mitigare"
+    ],
+    "aliases": [
+      "colcrys"
+    ],
+    "drugClass": "Anti-gout",
+    "primaryUse": "Gout",
+    "primaryUseES": "Gota",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "colchicin",
+      "colchicene",
+      "colchisine",
+      "colchiciene"
+    ]
+  },
+  {
+    "id": "1120",
+    "generic": "febuxostat",
+    "brands": [
+      "Uloric"
+    ],
+    "aliases": [
+      "uloric"
+    ],
+    "drugClass": "XO inhibitor",
+    "primaryUse": "Gout",
+    "primaryUseES": "Gota",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "febuxostate",
+      "febuxostat",
+      "febuoxstat",
+      "febuxstat"
+    ]
+  },
+  {
+    "id": "1121",
+    "generic": "metoclopramide",
+    "brands": [
+      "Reglan"
+    ],
+    "aliases": [
+      "reglan"
+    ],
+    "drugClass": "Prokinetic",
+    "primaryUse": "Nausea / GERD",
+    "primaryUseES": "Náuseas / ERGE",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "metocloprimide",
+      "metocloprimade",
+      "metoclopramid",
+      "metaclopramide"
+    ]
+  },
+  {
+    "id": "1122",
+    "generic": "dicyclomine",
+    "brands": [
+      "Bentyl"
+    ],
+    "aliases": [
+      "bentyl"
+    ],
+    "drugClass": "Anticholinergic",
+    "primaryUse": "IBS",
+    "primaryUseES": "SII",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "dicyclomin",
+      "dicyclomene",
+      "dicyclamine",
+      "dycyclomine"
+    ]
+  },
+  {
+    "id": "1123",
+    "generic": "sucralfate",
+    "brands": [
+      "Carafate"
+    ],
+    "aliases": [
+      "carafate"
+    ],
+    "drugClass": "Mucosal protectant",
+    "primaryUse": "Ulcers",
+    "primaryUseES": "Úlceras",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "sucralfat",
+      "sucralfete",
+      "sucralpate",
+      "sucralfete"
+    ]
+  },
+  {
+    "id": "1124",
+    "generic": "nitrofurantoin",
+    "brands": [
+      "Macrobid",
+      "Macrodantin"
+    ],
+    "aliases": [
+      "macrobid"
+    ],
+    "drugClass": "Antibiotic",
+    "primaryUse": "UTI",
+    "primaryUseES": "Infección urinaria",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "nitrofurantione",
+      "nitrofurantion",
+      "nitrofurantoen",
+      "nitrofuranoin"
+    ]
+  },
+  {
+    "id": "1125",
+    "generic": "phenazopyridine",
+    "brands": [
+      "Pyridium",
+      "Azo"
+    ],
+    "aliases": [
+      "pyridium",
+      "azo"
+    ],
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "primaryUseES": "Dolor de infección urinaria",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "phenazopyridin",
+      "phenazopyradine",
+      "phenazopyridene"
+    ]
+  },
+  {
+    "id": "1126",
+    "generic": "oxybutynin",
+    "brands": [
+      "Ditropan"
+    ],
+    "aliases": [
+      "ditropan"
+    ],
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "primaryUseES": "Vejiga hiperactiva",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "oxybutynine",
+      "oxybutinin",
+      "oxybuynin",
+      "oxybutynon"
+    ]
+  },
+  {
+    "id": "1127",
+    "generic": "solifenacin",
+    "brands": [
+      "Vesicare"
+    ],
+    "aliases": [
+      "vesicare"
+    ],
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "primaryUseES": "Vejiga hiperactiva",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "solifenacine",
+      "solifenican",
+      "solifencin",
+      "solifenacen"
+    ]
+  },
+  {
+    "id": "1128",
+    "generic": "testosterone",
+    "brands": [
+      "AndroGel",
+      "Testim",
+      "Axiron"
+    ],
+    "aliases": [
+      "androgel",
+      "testim",
+      "T"
+    ],
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "primaryUseES": "Testosterona baja",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "testosteron",
+      "testosterome",
+      "testostrone",
+      "testostirone"
+    ]
+  },
+  {
+    "id": "1129",
+    "generic": "estradiol",
+    "brands": [
+      "Estrace",
+      "Vivelle-Dot",
+      "Climara"
+    ],
+    "aliases": [
+      "estrace"
+    ],
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause / HRT",
+    "primaryUseES": "Menopausia / TRH",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "estradial",
+      "estradol",
+      "estridiol",
+      "estradioal"
+    ]
+  },
+  {
+    "id": "1130",
+    "generic": "medroxyprogesterone",
+    "brands": [
+      "Provera",
+      "Depo-Provera"
+    ],
+    "aliases": [
+      "provera",
+      "depo-provera"
+    ],
+    "drugClass": "Progestin",
+    "primaryUse": "Menopause / Contraception",
+    "primaryUseES": "Menopausia / Anticoncepción",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "medroxyprogesterone",
+      "medroxyprogesterion",
+      "medroxiprogesterone"
+    ]
+  },
+  {
+    "id": "1131",
+    "generic": "norethindrone",
+    "brands": [
+      "Aygestin",
+      "Camila"
+    ],
+    "aliases": [
+      "aygestin"
+    ],
+    "drugClass": "Progestin",
+    "primaryUse": "Contraception",
+    "primaryUseES": "Anticoncepción",
+    "hasGeneric": true,
+    "commonMisspellings": [
+      "norethindron",
+      "norethendrone",
+      "norethindrone",
+      "norethindrne"
+    ]
+  }
+]

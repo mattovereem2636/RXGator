@@ -1,0 +1,2231 @@
+{
+  "atorvastatin": {
+    "drugName": "Atorvastatin",
+    "dosage": "40mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-06-27T23:31:14.163Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Alto",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 12,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "lisinopril": {
+    "drugName": "Lisinopril",
+    "dosage": "20mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-06-27T23:31:14.163Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HEB",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 8.7,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "metformin": {
+    "drugName": "Metformin",
+    "dosage": "500mg",
+    "form": "tablet",
+    "quantity": 60,
+    "scrapedAt": "2026-06-27T23:31:14.163Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 3326.29,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 3326.29,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 1,
+        "retail_price": 3326.29,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 3326.29,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Meijer",
+        "goodrx_price": 5,
+        "retail_price": 19.99,
+        "discount_percentage": 75,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 5.83,
+        "retail_price": 15.56,
+        "discount_percentage": 63,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "levothyroxine": {
+    "drugName": "Levothyroxine",
+    "dosage": "88mcg",
+    "form": "tablet",
+    "quantity": 90,
+    "scrapedAt": "2026-06-27T23:31:14.163Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 10,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 10,
+        "retail_price": 26.54,
+        "discount_percentage": 62,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 17.1,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 25,
+        "retail_price": 1334.48,
+        "discount_percentage": 98,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 36.07,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "simvastatin": {
+    "drugName": "Simvastatin",
+    "dosage": "20mg",
+    "form": "tablet",
+    "quantity": 90,
+    "scrapedAt": "2026-07-02T19:32:05.691Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HEB",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Alto",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 2,
+        "retail_price": 54,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 54,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 2,
+        "retail_price": 54,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 54,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "hydrochlorothiazide": {
+    "drugName": "Hydrochlorothiazide",
+    "dosage": "25mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T19:32:05.691Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 2,
+        "retail_price": 55,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 55,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 2,
+        "retail_price": 55,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 55,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 9.3,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 25,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "meloxicam": {
+    "drugName": "Meloxicam",
+    "dosage": "15mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 9.84,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 11.7,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "gabapentin": {
+    "drugName": "Gabapentin",
+    "dosage": "300mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Wegmans",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 11.15,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 15.6,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 20,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 20.78,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 23.66,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "prednisone": {
+    "drugName": "Prednisone",
+    "dosage": "20mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Walmart",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Harris Teeter",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 10.2,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 10.37,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 16.33,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 31.76,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "furosemide": {
+    "drugName": "Furosemide",
+    "dosage": "20mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Walmart",
+        "goodrx_price": 4,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart Neighborhood Market",
+        "goodrx_price": 4,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 9.9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 10.28,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 22.29,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 25.99,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "carvedilol": {
+    "drugName": "Carvedilol",
+    "dosage": "25mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Walmart",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart Neighborhood Market",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 10.2,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 11.81,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 18.39,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 21.99,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "amlodipine": {
+    "drugName": "Amlodipine",
+    "dosage": "10mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 8.7,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart Neighborhood Market",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 9.76,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 16.66,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 18.86,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "losartan": {
+    "drugName": "Losartan",
+    "dosage": "50mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 9.65,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 15.3,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 16.47,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 24.99,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "tramadol": {
+    "drugName": "Tramadol",
+    "dosage": "50mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Publix",
+        "goodrx_price": 5.47,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 7.11,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 10.8,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 17.14,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 18.03,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 20.99,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "bupropion": {
+    "drugName": "Bupropion",
+    "dosage": "75mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Walmart",
+        "goodrx_price": 8.35,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart Neighborhood Market",
+        "goodrx_price": 8.49,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Wegmans",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 13.93,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 16.5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 18.49,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 24.55,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "duloxetine": {
+    "drugName": "Duloxetine",
+    "dosage": "60mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Kroger Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart Neighborhood Market",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 11.45,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 16.2,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 21.82,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 31.1,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "citalopram": {
+    "drugName": "Citalopram",
+    "dosage": "20mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart Neighborhood Market",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 9.3,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 10.61,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 19.16,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 19.99,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "warfarin": {
+    "drugName": "Warfarin",
+    "dosage": "5mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Walmart",
+        "goodrx_price": 4,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart Neighborhood Market",
+        "goodrx_price": 4,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Kroger Pharmacy",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 12.3,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 12.91,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 17.99,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 24.38,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "pantoprazole": {
+    "drugName": "Pantoprazole",
+    "dosage": "40mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Walgreens",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 9.87,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 12,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 18.63,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 23.99,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "montelukast": {
+    "drugName": "Montelukast",
+    "dosage": "10mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Walgreens",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart Neighborhood Market",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 10.76,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 13.2,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 23.14,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 25.99,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "escitalopram": {
+    "drugName": "Escitalopram",
+    "dosage": "10mg",
+    "form": "capsule",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:05:36.207Z",
+    "pharmacies": [
+      {
+        "name": "Walgreens",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sams Club",
+        "goodrx_price": 9.51,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 10.2,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule Pharmacy",
+        "goodrx_price": 19.55,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Costco",
+        "goodrx_price": 27.19,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "allopurinol": {
+    "drugName": "Allopurinol",
+    "dosage": "100mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:22:50.426Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Kroger",
+        "goodrx_price": 5,
+        "retail_price": 10.61,
+        "discount_percentage": 53,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Meijer",
+        "goodrx_price": 8.9,
+        "retail_price": 20.2,
+        "discount_percentage": 56,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "rosuvastatin": {
+    "drugName": "Rosuvastatin",
+    "dosage": "10mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:22:50.426Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Alto",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 8.1,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "sertraline": {
+    "drugName": "Sertraline",
+    "dosage": "50mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:22:50.426Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 7,
+        "retail_price": 330,
+        "discount_percentage": 98,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 9.9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Kroger",
+        "goodrx_price": 10,
+        "retail_price": 34.04,
+        "discount_percentage": 71,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "metoprolol": {
+    "drugName": "Metoprolol",
+    "dosage": "25mg",
+    "form": "tablet",
+    "quantity": 60,
+    "scrapedAt": "2026-07-02T20:22:50.426Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 25,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "amoxicillin": {
+    "drugName": "Amoxicillin",
+    "dosage": "500mg",
+    "form": "tablet",
+    "quantity": 21,
+    "scrapedAt": "2026-07-02T20:34:55.138Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS Pharmacy",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HEB",
+        "goodrx_price": 9,
+        "retail_price": 11.38,
+        "discount_percentage": 21,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 10,
+        "retail_price": 20.74,
+        "discount_percentage": 52,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "fluoxetine": {
+    "drugName": "Fluoxetine",
+    "dosage": "20mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:34:55.138Z",
+    "pharmacies": [
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 2,
+        "retail_price": 139,
+        "discount_percentage": 99,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 139,
+        "discount_percentage": 99,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 2,
+        "retail_price": 139,
+        "discount_percentage": 99,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 139,
+        "discount_percentage": 99,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 9.3,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 25,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "omeprazole": {
+    "drugName": "Omeprazole",
+    "dosage": "40mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:34:55.138Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 2,
+        "retail_price": 139,
+        "discount_percentage": 99,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 139,
+        "discount_percentage": 99,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 3,
+        "retail_price": 13,
+        "discount_percentage": 77,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "ShopRite",
+        "goodrx_price": 5,
+        "retail_price": 18.66,
+        "discount_percentage": 73,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 6,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "tamsulosin": {
+    "drugName": "Tamsulosin",
+    "dosage": "0.4mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-07-02T20:40:56.558Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 53,
+        "discount_percentage": 96,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 15.9,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 25,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.tar.gz
+logs/
+data/drug-names.json
+data/brand-generic-map.json
+scripts/.uptime-state
+search-log.csv
+feedback.json

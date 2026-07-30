@@ -1,0 +1,389 @@
+{
+  "empagliflozin": {
+    "brandNames": [
+      "Jardiance"
+    ],
+    "manufacturer": "Eli Lilly / Boehringer Ingelheim",
+    "programs": [
+      {
+        "name": "Jardiance Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $10/month",
+        "eligibility": "Commercially insured patients. Not valid for patients on Medicare, Medicaid, or other government insurance.",
+        "url": "https://www.jardiance.com/savings-card/"
+      },
+      {
+        "name": "Boehringer Ingelheim Cares Foundation",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured or underinsured patients meeting income requirements.",
+        "url": "https://www.bipatientsupport.com/"
+      }
+    ]
+  },
+  "tirzepatide": {
+    "brandNames": [
+      "Mounjaro",
+      "Zepbound"
+    ],
+    "manufacturer": "Eli Lilly",
+    "programs": [
+      {
+        "name": "Mounjaro Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $25/month",
+        "eligibility": "Commercially insured patients with a prescription for type 2 diabetes. Not valid for weight loss indication or government insurance.",
+        "url": "https://www.mounjaro.com/savings-card"
+      },
+      {
+        "name": "Lilly Cares Foundation",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements (typically under 400% federal poverty level).",
+        "url": "https://www.lillycares.com/"
+      }
+    ]
+  },
+  "semaglutide": {
+    "brandNames": [
+      "Ozempic",
+      "Rybelsus",
+      "Wegovy"
+    ],
+    "manufacturer": "Novo Nordisk",
+    "programs": [
+      {
+        "name": "Ozempic Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $25/month for up to 2 years",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.ozempic.com/savings-offer.html"
+      },
+      {
+        "name": "Novo Nordisk Patient Assistance Program",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured or underinsured patients meeting income requirements.",
+        "url": "https://www.novocare.com/pap.html"
+      }
+    ]
+  },
+  "adalimumab": {
+    "brandNames": [
+      "Humira"
+    ],
+    "manufacturer": "AbbVie",
+    "programs": [
+      {
+        "name": "HUMIRA Complete Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $5/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.humira.com/humira-complete/cost-and-copay"
+      },
+      {
+        "name": "AbbVie Patient Assistance Foundation",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements.",
+        "url": "https://www.abbvie.com/patients/patient-assistance.html"
+      }
+    ]
+  },
+  "apixaban": {
+    "brandNames": [
+      "Eliquis"
+    ],
+    "manufacturer": "Bristol-Myers Squibb / Pfizer",
+    "programs": [
+      {
+        "name": "Eliquis Free Trial Offer",
+        "type": "copay_card",
+        "savings": "30-day free trial, then pay as little as $10/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.eliquis.com/savings"
+      },
+      {
+        "name": "BMS Patient Assistance Foundation",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured or underinsured patients meeting income requirements.",
+        "url": "https://www.bmsaccesssupport.com/"
+      }
+    ]
+  },
+  "rivaroxaban": {
+    "brandNames": [
+      "Xarelto"
+    ],
+    "manufacturer": "Janssen (Johnson & Johnson)",
+    "programs": [
+      {
+        "name": "Xarelto Savings Program",
+        "type": "copay_card",
+        "savings": "Pay as little as $10/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.xarelto.com/savings"
+      },
+      {
+        "name": "Janssen CarePath Savings Program",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements.",
+        "url": "https://www.janssencarepath.com/"
+      }
+    ]
+  },
+  "sacubitril/valsartan": {
+    "brandNames": [
+      "Entresto"
+    ],
+    "manufacturer": "Novartis",
+    "programs": [
+      {
+        "name": "Entresto Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $10/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.entresto.com/savings"
+      },
+      {
+        "name": "Novartis Patient Assistance Foundation",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements.",
+        "url": "https://www.patient.novartis.com/"
+      }
+    ]
+  },
+  "dulaglutide": {
+    "brandNames": [
+      "Trulicity"
+    ],
+    "manufacturer": "Eli Lilly",
+    "programs": [
+      {
+        "name": "Trulicity Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $25/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.trulicity.com/savings-card"
+      },
+      {
+        "name": "Lilly Cares Foundation",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements.",
+        "url": "https://www.lillycares.com/"
+      }
+    ]
+  },
+  "sitagliptin": {
+    "brandNames": [
+      "Januvia"
+    ],
+    "manufacturer": "Merck",
+    "programs": [
+      {
+        "name": "Januvia Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $5/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.januvia.com/savings/"
+      },
+      {
+        "name": "Merck Patient Assistance Program",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income and residency requirements.",
+        "url": "https://www.merckhelps.com/"
+      }
+    ]
+  },
+  "insulin lispro": {
+    "brandNames": [
+      "Humalog"
+    ],
+    "manufacturer": "Eli Lilly",
+    "programs": [
+      {
+        "name": "Lilly Insulin Value Program",
+        "type": "copay_card",
+        "savings": "Cap of $35/month per prescription",
+        "eligibility": "Anyone with or without insurance. Available at participating pharmacies.",
+        "url": "https://www.insulinaffordability.com/"
+      },
+      {
+        "name": "Lilly Cares Foundation",
+        "type": "patient_assistance",
+        "savings": "Free insulin for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements.",
+        "url": "https://www.lillycares.com/"
+      }
+    ]
+  },
+  "insulin glargine": {
+    "brandNames": [
+      "Lantus",
+      "Basaglar",
+      "Toujeo"
+    ],
+    "manufacturer": "Sanofi / Eli Lilly",
+    "programs": [
+      {
+        "name": "Sanofi Insulins Valyou Savings Program",
+        "type": "copay_card",
+        "savings": "Pay $35 for a 30-day supply (no insurance needed)",
+        "eligibility": "Anyone \u2014 with or without insurance.",
+        "url": "https://www.sanofi.us/en/patients-and-caregivers/patient-assistance"
+      },
+      {
+        "name": "Sanofi Patient Connection",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements.",
+        "url": "https://www.sanofipatientconnection.com/"
+      }
+    ]
+  },
+  "rosuvastatin": {
+    "brandNames": [
+      "Crestor"
+    ],
+    "manufacturer": "AstraZeneca",
+    "programs": [
+      {
+        "name": "Note",
+        "type": "info",
+        "savings": "Generic rosuvastatin is widely available at $2-5/month with discount cards",
+        "eligibility": "Ask your pharmacist for the generic version \u2014 same drug, fraction of the price.",
+        "url": "https://rxgator.info/app"
+      }
+    ]
+  },
+  "liraglutide": {
+    "brandNames": [
+      "Victoza",
+      "Saxenda"
+    ],
+    "manufacturer": "Novo Nordisk",
+    "programs": [
+      {
+        "name": "Victoza Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $25/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.victoza.com/savings-card.html"
+      },
+      {
+        "name": "Novo Nordisk Patient Assistance Program",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements.",
+        "url": "https://www.novocare.com/pap.html"
+      }
+    ]
+  },
+  "dapagliflozin": {
+    "brandNames": [
+      "Farxiga"
+    ],
+    "manufacturer": "AstraZeneca",
+    "programs": [
+      {
+        "name": "Farxiga Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $0/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.farxiga.com/savings-and-support"
+      },
+      {
+        "name": "AZ&Me Patient Assistance",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements.",
+        "url": "https://www.azandmeapp.com/"
+      }
+    ]
+  },
+  "canagliflozin": {
+    "brandNames": [
+      "Invokana"
+    ],
+    "manufacturer": "Janssen (Johnson & Johnson)",
+    "programs": [
+      {
+        "name": "Invokana Savings Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $10/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.invokana.com/savings"
+      },
+      {
+        "name": "Janssen CarePath",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured patients meeting income requirements.",
+        "url": "https://www.janssencarepath.com/"
+      }
+    ]
+  },
+  "emtricitabine/tenofovir disoproxil fumarate": {
+    "brandNames": [
+      "Truvada"
+    ],
+    "manufacturer": "Gilead Sciences",
+    "programs": [
+      {
+        "name": "Gilead Advancing Access Copay Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $0/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.gileadadvancingaccess.com/"
+      },
+      {
+        "name": "Gilead Patient Assistance Program",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured or underinsured patients meeting income requirements.",
+        "url": "https://www.gileadadvancingaccess.com/"
+      },
+      {
+        "name": "Ready, Set, PrEP (Federal Program)",
+        "type": "patient_assistance",
+        "savings": "Free PrEP medication \u2014 no insurance needed",
+        "eligibility": "Anyone without insurance coverage for PrEP. Federal program.",
+        "url": "https://readysetprep.hiv.gov/"
+      }
+    ]
+  },
+  "emtricitabine/tenofovir alafenamide": {
+    "brandNames": [
+      "Descovy"
+    ],
+    "manufacturer": "Gilead Sciences",
+    "programs": [
+      {
+        "name": "Gilead Advancing Access Copay Card",
+        "type": "copay_card",
+        "savings": "Pay as little as $0/month",
+        "eligibility": "Commercially insured patients. Not valid for government insurance.",
+        "url": "https://www.gileadadvancingaccess.com/"
+      },
+      {
+        "name": "Gilead Patient Assistance Program",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "Uninsured or underinsured patients meeting income requirements.",
+        "url": "https://www.gileadadvancingaccess.com/"
+      },
+      {
+        "name": "Ready, Set, PrEP (Federal Program)",
+        "type": "patient_assistance",
+        "savings": "Free PrEP medication \u2014 no insurance needed",
+        "eligibility": "Anyone without insurance coverage for PrEP. Federal program.",
+        "url": "https://readysetprep.hiv.gov/"
+      }
+    ]
+  }
+}
