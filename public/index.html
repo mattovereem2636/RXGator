@@ -901,6 +901,15 @@
   </div>
 </div>
 
+<div class="recall-alert" role="alert" style="background:#FDF2F2; border:2px solid #C0392B; border-radius:8px; max-width:720px; margin:1rem auto 0; padding:0.9rem 1.25rem; display:flex; align-items:flex-start; gap:0.75rem;">
+  <span style="font-size:1.4rem; line-height:1;">&#9888;</span>
+  <div>
+    <strong style="color:#922B21; font-size:0.95rem;">Drug Recall Alert:</strong>
+    <span style="font-size:0.9rem; color:#2C3E50;"> Multiple lots of <strong>amlodipine and olmesartan medoxomil</strong> tablets (blood pressure medication) have been recalled by the FDA due to failed dissolution specs.</span>
+    <a href="/articles/amlodipine-olmesartan-recall-2026.html" style="display:inline-block; margin-top:0.3rem; font-size:0.88rem; color:#922B21; font-weight:600; text-decoration:underline;">Check if your medication is affected &rarr;</a>
+  </div>
+</div>
+
 <main id="main-content">
 <div class="search-box" role="search" aria-label="Drug price search">
   <div class="field field-drug ac-wrapper">
@@ -959,6 +968,9 @@
   &middot; <a href="https://ko-fi.com/rxgator" style="color:var(--gray-500); text-decoration:none; border-bottom:1px dotted var(--gray-500);">Ko-fi</a>
   &middot; <a href="/api/log" style="color:var(--gray-500); text-decoration:none; border-bottom:1px dotted var(--gray-500);">Admin Log</a>
   <span class="not-medical-advice" data-i18n="footerDisclaimer">RXGator is not a medical provider. This tool does not provide medical advice. Always consult your doctor or pharmacist before making changes to your medications.</span>
+  <div style="margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid #D5D8DC;">
+    <span style="font-size:1.05rem;">Need help? <a href="tel:988" style="color:#6C3483; font-weight:600;">Call or text 988</a> (crisis) &middot; <a href="tel:18006624357" style="color:#6C3483; font-weight:600;">1-800-662-4357</a> (SAMHSA) &middot; <a href="/resources.html" style="color:#6C3483; font-weight:600;">All Resources</a></span>
+  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js" crossorigin="anonymous"></script>
@@ -1058,6 +1070,13 @@ const T = {
   shortageAlert: { en: 'FDA Drug Shortage Alert', es: 'Alerta de Escasez de Medicamentos (FDA)' },
   shortageDesc: { en: 'The FDA has reported active supply issues for this medication. Availability and pricing may be affected. Contact your pharmacist for current stock status.', es: 'La FDA ha reportado problemas de suministro activos para este medicamento. La disponibilidad y los precios pueden verse afectados. Contacte a su farmacéutico para verificar existencias.' },
 
+  // Recall
+  recallAlert: { en: 'FDA Drug Recall Alert', es: 'Alerta de Retiro de Medicamento (FDA)' },
+  recallDesc: { en: 'The FDA has reported one or more active recalls for this medication. Check your bottle\'s lot number against the details below and contact your pharmacist if affected. Do not stop taking your medication without consulting your doctor.', es: 'La FDA ha reportado uno o más retiros activos para este medicamento. Verifique el número de lote en su frasco contra los detalles a continuación y contacte a su farmacéutico si está afectado. No deje de tomar su medicamento sin consultar a su médico.' },
+  recallClass: { en: 'Classification', es: 'Clasificación' },
+  recallLots: { en: 'Lot(s)', es: 'Lote(s)' },
+  recallReason: { en: 'Reason', es: 'Motivo' },
+
   // Patient assistance
   cantAfford: { en: 'Want to pay even less?', es: '¿Quiere pagar aún menos?' },
   cantAffordDesc: { en: "Many drug manufacturers offer additional savings programs that most people don't know about — even if you have insurance or Medicare. These can reduce your cost to zero in some cases.", es: 'Muchos fabricantes de medicamentos ofrecen programas de ahorro adicionales que la mayoría de la gente desconoce — incluso si tiene seguro o Medicare. Estos pueden reducir su costo a cero en algunos casos.' },
@@ -1125,6 +1144,20 @@ const T = {
   veteransTitle: { en: 'Veterans & Active Military', es: 'Veteranos y Militares Activos' },
   veteransDesc: { en: 'Thank you for your service. VA pharmacies and TRICARE may offer $0 copays — compare your VA benefits to civilian prices to find the best option.', es: 'Gracias por su servicio. Las farmacias del VA y TRICARE pueden ofrecer copagos de $0 — compare sus beneficios del VA con los precios civiles para encontrar la mejor opción.' },
   veteransLink: { en: 'VA Prescription Services', es: 'Servicios de Recetas del VA' },
+
+  // Crisis & Help Resources
+  helpResourcesTitle: { en: 'Struggling With Medication Costs?', es: '¿Le Preocupan los Costos de sus Medicamentos?' },
+  helpResourcesDesc: { en: "You are not alone. Millions of Americans face difficult choices about paying for prescriptions. Help is available — whether you need financial assistance, someone to talk to, or both.", es: 'No está solo/a. Millones de estadounidenses enfrentan decisiones difíciles sobre cómo pagar sus recetas. Hay ayuda disponible — ya sea que necesite asistencia financiera, alguien con quien hablar, o ambas cosas.' },
+  helpCrisisHeader: { en: 'Free & Confidential Support', es: 'Apoyo Gratuito y Confidencial' },
+  help988: { en: 'Call or text 988 — Suicide & Crisis Lifeline (24/7, free, confidential)', es: 'Llame o envíe un mensaje de texto al 988 — Línea de Prevención del Suicidio y Crisis (24/7, gratis, confidencial)' },
+  help988Spanish: { en: '', es: 'Oprima 2 para español' },
+  helpTextLine: { en: 'Text HOME to 741741 — Crisis Text Line (24/7)', es: 'Envíe HOME al 741741 — Línea de Texto de Crisis (24/7, en inglés)' },
+  helpSAMHSA: { en: 'Call 1-800-662-4357 — SAMHSA Helpline (mental health & substance use referrals, 24/7)', es: 'Llame al 1-800-662-4357 — Línea de Ayuda de SAMHSA (referencias de salud mental, 24/7, en español)' },
+  helpEldercare: { en: 'Call 1-800-677-1116 — Eldercare Locator (local resources for seniors)', es: 'Llame al 1-800-677-1116 — Localizador de Servicios para Personas Mayores' },
+  helpAssistanceHeader: { en: 'Medication Assistance Programs', es: 'Programas de Asistencia para Medicamentos' },
+  helpExtraHelp: { en: 'Medicare Extra Help — may lower Part D costs to $0', es: 'Ayuda Adicional de Medicare — puede reducir los costos de la Parte D a $0' },
+  helpSPAP: { en: 'State Prescription Assistance Programs — many states offer additional help', es: 'Programas Estatales de Asistencia para Recetas — muchos estados ofrecen ayuda adicional' },
+  helpFullResources: { en: 'See all resources', es: 'Ver todos los recursos' },
 
   // Welcome overlay
   welcomeTitle: { en: '', es: 'Bienvenido a RXGator' },
@@ -1627,6 +1660,8 @@ async function doSearch() {
   try {
     let url = `/api/search?drug=${encodeURIComponent(drug)}&quantity=${qty}`;
     if (zip) url += `&zip=${encodeURIComponent(zip)}`;
+    if (currentLang) url += `&lang=${currentLang}`;
+    if (drugInput.dataset.autocompleted === '1') { url += '&ac=1'; drugInput.dataset.autocompleted = ''; }
     const res = await fetch(url);
     const data = await res.json();
     saveRecentSearch(drug);
@@ -1712,6 +1747,27 @@ function renderResults(data) {
       <p style="font-size:0.88rem; color:#2C3E50; margin:0.4rem 0 0.5rem;">${t('shortageDesc')}</p>
       ${shortageHtml}
       <div style="margin-top:0.5rem;"><a href="https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm" target="_blank" rel="noopener" style="color:#C0392B; font-weight:600; font-size:0.82rem; text-decoration:none;">View all FDA drug shortages → <span style="font-size:0.72rem; opacity:0.7;">(opens in new tab)</span></a></div>
+    </div>`;
+  }
+
+  // FDA Drug Recall Warning
+  if (data.drugRecall && data.drugRecall.length > 0) {
+    const recalls = data.drugRecall;
+    let recallHtml = recalls.map(r => {
+      let detail = '';
+      if (r.company) detail += `<strong>${esc(r.company)}</strong>`;
+      if (r.classification) detail += ` — <span style="font-weight:600;">${esc(r.classification)}</span>`;
+      detail += `<br><span style="font-size:0.84rem;"><strong>${t('recallReason')}:</strong> ${esc(r.reason)}</span>`;
+      if (r.lotNumbers) detail += `<br><span style="font-size:0.84rem;"><strong>${t('recallLots')}:</strong> ${esc(r.lotNumbers)}</span>`;
+      if (r.quantity) detail += `<br><span style="font-size:0.84rem;"><strong>Qty:</strong> ${esc(r.quantity)}</span>`;
+      return `<div style="margin:0.4rem 0; padding:0.4rem 0; border-top:1px solid rgba(192,57,43,0.2); font-size:0.88rem; color:#2C3E50;">${detail}</div>`;
+    }).join('');
+
+    html += `<div style="background:#FDF2F2; border:2px solid #E74C3C; border-radius:10px; padding:1rem 1.25rem; margin:0.75rem 0;">
+      <div style="font-size:1.05rem; font-weight:700; color:#922B21;">🚨 ${t('recallAlert')}</div>
+      <p style="font-size:0.88rem; color:#2C3E50; margin:0.4rem 0 0.5rem;">${t('recallDesc')}</p>
+      ${recallHtml}
+      <div style="margin-top:0.5rem;"><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts" target="_blank" rel="noopener" style="color:#C0392B; font-weight:600; font-size:0.82rem; text-decoration:none;">View all FDA recalls → <span style="font-size:0.72rem; opacity:0.7;">(opens in new tab)</span></a></div>
     </div>`;
   }
 
@@ -2002,6 +2058,27 @@ function renderResults(data) {
     <br><a href="https://www.va.gov/health-care/prescriptions/" target="_blank" rel="noopener" style="color:#1B3A5C; font-weight:600; text-decoration:none;">${t('veteransLink')} → <span style="font-size:0.72rem; opacity:0.7;">${t('newTab')}</span></a>
   </div>`;
 
+  // Crisis & Help Resources card
+  html += `<div style="background:linear-gradient(135deg, #F4ECF7 0%, #EBE5F6 100%); border:1px solid #C39BD3; border-radius:10px; padding:1.25rem 1.5rem; margin:1rem 0; font-size:0.88rem;">
+    <div style="font-size:1.05rem; font-weight:700; color:#6C3483; margin-bottom:0.5rem;">${t('helpResourcesTitle')}</div>
+    <p style="color:#4A235A; margin-bottom:0.75rem; line-height:1.6;">${t('helpResourcesDesc')}</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:0.75rem;">
+      <div style="background:rgba(255,255,255,0.7); border-radius:8px; padding:0.85rem 1rem;">
+        <div style="font-weight:700; color:#6C3483; margin-bottom:0.5rem; font-size:0.9rem;">${t('helpCrisisHeader')}</div>
+        <div style="margin-bottom:0.4rem;"><a href="tel:988" style="color:#1B4F72; font-weight:600; text-decoration:none;">📞 ${t('help988')}</a>${currentLang === 'es' ? '<br><span style="font-size:0.82rem; color:#6C3483; margin-left:1.5rem;">' + t('help988Spanish') + '</span>' : ''}</div>
+        <div style="margin-bottom:0.4rem;"><span style="color:#1B4F72; font-weight:600;">💬 ${t('helpTextLine')}</span></div>
+        <div style="margin-bottom:0.4rem;"><a href="tel:18006624357" style="color:#1B4F72; font-weight:600; text-decoration:none;">📞 ${t('helpSAMHSA')}</a></div>
+        <div><a href="tel:18006771116" style="color:#1B4F72; font-weight:600; text-decoration:none;">📞 ${t('helpEldercare')}</a></div>
+      </div>
+      <div style="background:rgba(255,255,255,0.7); border-radius:8px; padding:0.85rem 1rem;">
+        <div style="font-weight:700; color:#6C3483; margin-bottom:0.5rem; font-size:0.9rem;">${t('helpAssistanceHeader')}</div>
+        <div style="margin-bottom:0.4rem;"><a href="https://www.ssa.gov/medicare/part-d-extra-help" target="_blank" rel="noopener" style="color:#145A32; font-weight:600; text-decoration:none;">💊 ${t('helpExtraHelp')}</a></div>
+        <div style="margin-bottom:0.4rem;"><a href="https://www.ncsl.org/health/state-pharmaceutical-assistance-programs" target="_blank" rel="noopener" style="color:#145A32; font-weight:600; text-decoration:none;">🏛️ ${t('helpSPAP')}</a></div>
+        <div><a href="/resources.html" style="color:#6C3483; font-weight:700; text-decoration:none;">${t('helpFullResources')} →</a></div>
+      </div>
+    </div>
+  </div>`;
+
   // Pharmacy safety
   html += `<div style="background:#EBF5FB; border-left:4px solid #2E86C1; border-radius:8px; padding:1rem 1.25rem; margin:1rem 0; font-size:0.88rem;">
     <strong style="color:#1B4F72;">${t('verifyPharmacy')}</strong><br>
@@ -2150,52 +2227,7 @@ async function submitFeedback(drugSearched) {
 </script>
 
 
-<!-- Prescription Savings Guides — static links for crawlers -->
-<section style="max-width:900px;margin:2.5rem auto;padding:0 1.5rem;">
-  <h2 style="text-align:center;color:#0B3B5C;font-size:1.6rem;margin-bottom:0.4rem;">Prescription Savings Guides</h2>
-  <p style="text-align:center;color:#5D6D7E;font-size:1rem;margin-bottom:1.5rem;">Practical, fact-checked articles to help you spend less on your medications.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;">
-    <a href="/articles/save-on-prescriptions-uninsured.html" style="display:block;padding:1rem;border:1px solid #AEB6BF;border-radius:8px;text-decoration:none;color:#2C3E50;transition:border-color 0.2s;">
-      <strong style="color:#0B3B5C;">5 Ways to Save on Prescriptions if You're Uninsured</strong><br>
-      <span style="font-size:0.9rem;color:#5D6D7E;">Cut your prescription costs by 50% to 90% — starting today.</span>
-    </a>
-    <a href="/articles/goodrx-vs-singlecare.html" style="display:block;padding:1rem;border:1px solid #AEB6BF;border-radius:8px;text-decoration:none;color:#2C3E50;transition:border-color 0.2s;">
-      <strong style="color:#0B3B5C;">GoodRx vs SingleCare: Which Saves You More?</strong><br>
-      <span style="font-size:0.9rem;color:#5D6D7E;">Both offer free discount cards, but prices vary wildly. We break it down.</span>
-    </a>
-    <a href="/articles/walmart-4-dollar-list.html" style="display:block;padding:1rem;border:1px solid #AEB6BF;border-radius:8px;text-decoration:none;color:#2C3E50;transition:border-color 0.2s;">
-      <strong style="color:#0B3B5C;">Walmart $4 Prescription List 2026 — Complete Guide</strong><br>
-      <span style="font-size:0.9rem;color:#5D6D7E;">Over 300 generics for $4/month, no insurance required.</span>
-    </a>
-    <a href="/articles/metformin-cost-without-insurance.html" style="display:block;padding:1rem;border:1px solid #AEB6BF;border-radius:8px;text-decoration:none;color:#2C3E50;transition:border-color 0.2s;">
-      <strong style="color:#0B3B5C;">How Much Does Metformin Cost Without Insurance?</strong><br>
-      <span style="font-size:0.9rem;color:#5D6D7E;">Generic metformin runs $4 to $30. Here's where to find the lowest price.</span>
-    </a>
-    <a href="/articles/medicare-donut-hole-guide.html" style="display:block;padding:1rem;border:1px solid #AEB6BF;border-radius:8px;text-decoration:none;color:#2C3E50;transition:border-color 0.2s;">
-      <strong style="color:#0B3B5C;">How to Navigate the Medicare Donut Hole</strong><br>
-      <span style="font-size:0.9rem;color:#5D6D7E;">Plan for the coverage gap and get through it faster.</span>
-    </a>
-    <a href="/articles/cost-plus-drugs-review.html" style="display:block;padding:1rem;border:1px solid #AEB6BF;border-radius:8px;text-decoration:none;color:#2C3E50;transition:border-color 0.2s;">
-      <strong style="color:#0B3B5C;">Is Cost Plus Drugs Legit?</strong><br>
-      <span style="font-size:0.9rem;color:#5D6D7E;">Mark Cuban's transparent pharmacy — how it works and whether it's cheaper.</span>
-    </a>
-    <a href="/articles/what-is-a-pbm.html" style="display:block;padding:1rem;border:1px solid #AEB6BF;border-radius:8px;text-decoration:none;color:#2C3E50;transition:border-color 0.2s;">
-      <strong style="color:#0B3B5C;">What Is a PBM and Why Does It Matter?</strong><br>
-      <span style="font-size:0.9rem;color:#5D6D7E;">Three companies control 80% of the drug market. Here's how.</span>
-    </a>
-    <a href="/articles/insulin-affordability-guide.html" style="display:block;padding:1rem;border:1px solid #AEB6BF;border-radius:8px;text-decoration:none;color:#2C3E50;transition:border-color 0.2s;">
-      <strong style="color:#0B3B5C;">How to Get Affordable Insulin</strong><br>
-      <span style="font-size:0.9rem;color:#5D6D7E;">Federal caps, manufacturer programs, and pharmacy options.</span>
-    </a>
-    <a href="/articles/ozempic-wegovy-savings-guide.html" style="display:block;padding:1rem;border:1px solid #AEB6BF;border-radius:8px;text-decoration:none;color:#2C3E50;transition:border-color 0.2s;">
-      <strong style="color:#0B3B5C;">How to Save on Ozempic and Wegovy</strong><br>
-      <span style="font-size:0.9rem;color:#5D6D7E;">$900+/month at list price — here's how to bring it down.</span>
-    </a>
-  </div>
-  <p style="text-align:center;margin-top:1.2rem;"><a href="/articles/" style="color:#0C8080;font-weight:600;text-decoration:none;">View All 51 Guides &rarr;</a></p>
-</section>
-
-<!-- Prescription Savings Articles Widget (enhanced carousel for JS-enabled browsers) -->
+<!-- Prescription Savings Articles Widget -->
 <div id="rxg-articles"></div>
 <link rel="stylesheet" href="/articles/article-style.css">
 <script src="/articles/article-widget.js"></script>

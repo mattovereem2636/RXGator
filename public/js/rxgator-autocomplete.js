@@ -321,6 +321,7 @@
 
       // Always search by generic name — this is the generic-first philosophy
       this.inputEl.value = this._capitalize(drug.generic);
+      this.inputEl.dataset.autocompleted = '1'; // flag for search logging
       this._close();
 
       // Store the selected drug info for the generic banner

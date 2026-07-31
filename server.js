@@ -9,6 +9,8 @@ const iraNegotiated = require('./ira-negotiated');
 const texasWac = require('./texas-wac');
 const rxOutreach = require('./rxoutreach');
 const rxsaver = require('./rxsaver');
+const fuzzySearch = require('./fuzzy-search');
+fuzzySearch.init(path.join(__dirname, 'data'));
 const blink = require('./blink');
 // HTML escaping for safe rendering in admin views
 function escapeHtml(str) {
@@ -51,7 +53,6 @@ const searchLimiter = rateLimit({
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: 'Too many searches. Please wait a minute and try again.' },
-  validate: false,
   keyGenerator: (req) => req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.ip,
 });
 
@@ -60,7 +61,7 @@ const LOG_FILE = path.join(__dirname, 'search_log.csv');
 
 // Initialize log file with headers if it doesn't exist
 if (!fs.existsSync(LOG_FILE)) {
-  fs.writeFileSync(LOG_FILE, 'timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source\n');
+  fs.writeFileSync(LOG_FILE, 'timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source,autocomplete,corrected_from,lang\n');
 }
 
 // ============================================================
@@ -311,7 +312,7 @@ function csvEscape(val) {
   return '"' + s.replace(/"/g, '""') + '"';
 }
 
-async function logSearch(req, drug, quantity, zip, results) {
+async function logSearch(req, drug, quantity, zip, results, extras = {}) {
   try {
     const timestamp = new Date().toISOString();
     const ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress || '';
@@ -323,11 +324,14 @@ async function logSearch(req, drug, quantity, zip, results) {
         user = decoded.split(':')[0];
       } catch(e) {}
     }
-    const sourcesHit = results.pricingResults ? results.pricingResults.length : 0;
     const lowest = results.pricingResults && results.pricingResults.length > 0 ? results.pricingResults[0] : null;
+    const sourcesHit = results.pricingResults ? results.pricingResults.length : 0;
     const lowestPrice = lowest ? (lowest.priceFor30 || 0).toFixed(2) : '';
     const lowestSource = lowest ? lowest.source : '';
-    const line = `${timestamp},${csvEscape(ip)},${csvEscape(user)},${csvEscape(drug)},${quantity},${zip || ''},${csvEscape(lowestPrice)},${csvEscape(lowestSource)}\n`;
+    const autocomplete = extras.autocomplete ? '1' : '0';
+    const corrected = extras.correctedFrom || '';
+    const lang = extras.lang || 'en';
+    const line = `${timestamp},${csvEscape(ip)},${csvEscape(user)},${csvEscape(drug)},${quantity},${zip || ''},${sourcesHit},${csvEscape(lowestPrice)},${csvEscape(lowestSource)},${autocomplete},${csvEscape(corrected)},${lang}\n`;
     await fsPromises.appendFile(LOG_FILE, line);
   } catch (err) {
     console.error('Log error:', err.message);
@@ -335,11 +339,8 @@ async function logSearch(req, drug, quantity, zip, results) {
 }
 
 // ============================================================
-// WALMART $4 GENERIC LIST (static, curated from published list)
-// ============================================================
-// ============================================================
 // WALMART PRESCRIPTION PROGRAM — Complete list from official PDF (eff. 9/16/2024)
-// Three tiers: $4/$10, $9/$24, $15/$38
+// Three tiers: $4/$10 (30/90-day), $9/$24, $15/$38
 // ============================================================
 const WALMART_4_LIST = {
   // === DIABETES ($4/$10) ===
@@ -453,7 +454,11 @@ const WALMART_4_LIST = {
 };
 
 // ============================================================
-// COSTCO PHARMACY ESTIMATED PRICING (expanded, based on published data)
+// COSTCO PHARMACY ESTIMATED PRICING
+// Costco doesn't have a public API. Prices here are per-unit estimates
+// derived from published reporting and spot-checks. No membership needed
+// to use Costco pharmacy (federal law). These are ballpark — actual
+// prices vary by location and may change without notice.
 // ============================================================
 function estimateCostcoPrice(genericName, strength, quantity) {
   const basePricePerUnit = {
@@ -603,7 +608,8 @@ async function queryCostPlus(drugName) {
         brandGeneric: r.brand_generic || 'Generic',
         insuranceEligible: r.insurance_eligible === 'Yes',
         note: 'Mail-order only. Price = cost + 15% markup + $5 pharmacy fee + $5 shipping.',
-        priceFor30: +(unitPrice * 30 + 10).toFixed(2),  // 30 units + $5 pharmacy + $5 shipping
+        // Cost Plus formula: (unit cost × quantity) + $5 pharmacy fee + $5 shipping = +$10 flat
+        priceFor30: +(unitPrice * 30 + 10).toFixed(2),
         priceFor90: +(unitPrice * 90 + 10).toFixed(2),
       };
     });
@@ -699,6 +705,10 @@ async function queryOpenFDA(drugName) {
 // RxNorm API (National Library of Medicine) - Drug Normalization
 // Free, no API key, 20 req/sec
 // ============================================================
+// Three-step resolution: (1) approximate match to get RxCUI,
+// (2) check term type — if brand (BN/SBD/SBDF), resolve to ingredient,
+// (3) look up brand names for the resolved generic ingredient.
+// Returns { rxcui, name, brandNames[], isBrandSearch, originalBrandName }
 async function queryRxNorm(drugName) {
   try {
     // Step 1: Get RxCUI via approximate match (handles misspellings)
@@ -980,6 +990,72 @@ async function checkDrugShortage(drugName) {
 }
 
 // ============================================================
+// FDA DRUG RECALL CHECK (openFDA Enforcement API)
+// ============================================================
+// Checks for active recalls on the searched drug. Uses the same
+// openFDA infrastructure as the pricing queries. The enforcement
+// endpoint covers recall data from 2004–present, updated weekly.
+// Only returns "Ongoing" recalls (not terminated/completed ones).
+// Filtering: many common drugs have dozens of "Ongoing" recalls that are
+// years old (e.g., metformin has 23). To avoid cry-wolf alerts, we only
+// surface recalls initiated within the last 6 months, OR any Class I
+// recall (most serious — reasonable probability of serious health
+// consequences or death) within the last 2 years.
+async function checkDrugRecall(drugName) {
+  try {
+    const searchTerm = encodeURIComponent(drugName.toLowerCase());
+    // Search both product_description and openfda.generic_name, filtered to Ongoing only
+    const url = `https://api.fda.gov/drug/enforcement.json?search=(openfda.generic_name:"${searchTerm}"+product_description:"${searchTerm}")+AND+status:"Ongoing"&limit=25`;
+    const data = await fetchJSON(url);
+    if (!data.results || data.results.length === 0) return null;
+
+    // Date cutoffs: 6 months for Class II/III, 2 years for Class I
+    const now = new Date();
+    const sixMonthsAgo = new Date(now);
+    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+    const twoYearsAgo = new Date(now);
+    twoYearsAgo.setFullYear(twoYearsAgo.getFullYear() - 2);
+
+    const parseRecallDate = (dateStr) => {
+      if (!dateStr || dateStr.length !== 8) return null;
+      // Format: YYYYMMDD
+      return new Date(`${dateStr.slice(0,4)}-${dateStr.slice(4,6)}-${dateStr.slice(6,8)}`);
+    };
+
+    const filtered = data.results.filter(r => {
+      const rDate = parseRecallDate(r.recall_initiation_date);
+      if (!rDate) return false;
+      // Class I (most dangerous): show if within last 2 years
+      if (r.classification === 'Class I') return rDate >= twoYearsAgo;
+      // Class II/III: show only if within last 6 months
+      return rDate >= sixMonthsAgo;
+    });
+
+    if (filtered.length === 0) return null;
+
+    return filtered.map(r => ({
+      recallNumber: r.recall_number || null,
+      classification: r.classification || null,
+      product: r.product_description || null,
+      reason: r.reason_for_recall || 'No details available',
+      company: r.recalling_firm || null,
+      recallDate: r.recall_initiation_date || null,
+      city: r.city || null,
+      state: r.state || null,
+      distribution: r.distribution_pattern || null,
+      quantity: r.product_quantity || null,
+      lotNumbers: r.code_info || null,
+      voluntaryMandated: r.voluntary_mandated || null,
+    }));
+  } catch (err) {
+    // Don't let recall check failure break the search
+    if (err.message && err.message.includes('404')) return null; // no results
+    console.error('FDA Recall check error:', err.message);
+    return null;
+  }
+}
+
+// ============================================================
 // AMAZON RXPASS ($5/month — Prime members, 55+ generics)
 // ============================================================
 const AMAZON_RXPASS_DRUGS = {
@@ -1018,37 +1094,58 @@ function queryAmazonRxPass(drugName) {
 // UNIFIED SEARCH ENDPOINT
 // ============================================================
 app.get('/api/search', searchLimiter, async (req, res) => {
-  const { drug, quantity, zip } = req.query;
+  const { drug, quantity, zip, ac, lang } = req.query;
   if (!drug || drug.trim().length < 2) {
     return res.status(400).json({ error: 'Please provide a drug name (min 2 characters)' });
   }
+  let drugName = drug.trim();
+  const originalInput = drugName; // preserve for logging
 
-  const drugName = drug.trim();
+  // ── PHASE 0: Fuzzy spelling correction ──────────────────────
+  // Local dictionary match (fuzzy-search.js) catches common misspellings
+  // BEFORE any API calls. Example: "metforman" → "metformin"
+  const fuzzyResolved = await fuzzySearch.resolve(drugName);
+  if (fuzzyResolved.corrected) {
+    console.log(`[FuzzySearch] Corrected "${drugName}" → "${fuzzyResolved.searchTerm}"`);
+    drugName = fuzzyResolved.searchTerm;
+  }
   const qty = parseInt(quantity) || 30;
   const zipCode = (zip || '').replace(/\D/g, '').substring(0, 5) || null;
 
   console.log(`[SEARCH] Drug: "${drugName}", Quantity: ${qty}, Zip: ${zipCode || 'not provided'}`);
 
-  // Step 1: Query RxNorm first to resolve brand names to generics
-  // Phase A: Check static brand-generic map FIRST (instant, no API call)
-    const staticGenericInfo = lookupBrandGeneric(drugName);
-    let genericInfo = staticGenericInfo || null;
+  // ── PHASE 1: Brand → Generic resolution ─────────────────────
+  // Two-tier lookup: static map first (instant O(1)), then RxNorm API.
+  // This is critical because pricing sources index by generic name —
+  // searching "Lipitor" won't find results unless we resolve to "atorvastatin".
+  //
+  // Phase A: brand-generic-lookup.json — instant, no API call
+  const staticGenericInfo = lookupBrandGeneric(drugName);
+  let genericInfo = staticGenericInfo || null;
 
-    if (staticGenericInfo && staticGenericInfo.hasGeneric) {
-      console.log(`[Static Map] Brand "${drugName}" → Generic "${staticGenericInfo.genericName}"`);
-    } else if (staticGenericInfo) {
-      console.log(`[Static Map] "${drugName}" — no generic available`);
-    }
-const rxnormResult = await queryRxNorm(staticGenericInfo && staticGenericInfo.hasGeneric ? staticGenericInfo.genericName : drugName);
+  if (staticGenericInfo && staticGenericInfo.hasGeneric) {
+    console.log(`[Static Map] Brand "${drugName}" → Generic "${staticGenericInfo.genericName}"`);
+  } else if (staticGenericInfo) {
+    console.log(`[Static Map] "${drugName}" — no generic available`);
+  }
 
-  // Use the resolved generic name for pricing queries if RxNorm found one
-const pricingSearchName = (staticGenericInfo && staticGenericInfo.hasGeneric) ? staticGenericInfo.genericName : (rxnormResult?.name || drugName);
+  // Phase B: RxNorm API — handles drugs not in the static map,
+  // plus provides the RxCUI needed for MedlinePlus drug info lookup.
+  // If we already resolved via static map, search RxNorm with the generic name.
+  const rxnormResult = await queryRxNorm(staticGenericInfo && staticGenericInfo.hasGeneric ? staticGenericInfo.genericName : drugName);
+
+  // pricingSearchName: the name ALL pricing queries use.
+  // Priority: static map generic > RxNorm-resolved name > original input
+  const pricingSearchName = (staticGenericInfo && staticGenericInfo.hasGeneric) ? staticGenericInfo.genericName : (rxnormResult?.name || drugName);
   if (rxnormResult?.isBrandSearch) {
-
     console.log(`[SEARCH] Brand "${drugName}" resolved to generic "${pricingSearchName}" via RxNorm`);
   }
 
-  // Step 2: Run all pricing + info queries in parallel using the resolved name
+  // ── PHASE 2: Parallel pricing queries ────────────────────────
+  // Fire all live API calls concurrently. Sync cache lookups are
+  // wrapped in Promise.resolve() to fit the Promise.all() pattern.
+  // The five async calls (Cost Plus, NADAC, openFDA, Walmart, Medicare)
+  // run simultaneously to minimize wall-clock time.
   const [costPlusResults, nadacResults, fdaResults, walmartResults, medicarePartDResult] = await Promise.all([
     queryCostPlus(pricingSearchName),
     queryNADAC(pricingSearchName),
@@ -1056,17 +1153,23 @@ const pricingSearchName = (staticGenericInfo && staticGenericInfo.hasGeneric) ? 
     Promise.resolve(queryWalmart(pricingSearchName)),
     queryMedicarePartD(pricingSearchName),
   ]);
-const rxOutreachResults = rxOutreach.search(pricingSearchName);
-const vaFssResults = vaFss.search(pricingSearchName);
-const iraResults = iraNegotiated.search(pricingSearchName);
-const texasWacResults = texasWac.search(pricingSearchName);
-const rxsaverResults = rxsaver.search(pricingSearchName) || [];
-const blinkResults = blink.search(pricingSearchName) || [];
 
-  // Check drug shortage (non-blocking — runs after main queries)
-  const shortageResult = await checkDrugShortage(pricingSearchName);
+  // Local cache lookups (sync — no await needed)
+  const rxOutreachResults = rxOutreach.search(pricingSearchName);
+  const vaFssResults = vaFss.search(pricingSearchName);
+  const iraResults = iraNegotiated.search(pricingSearchName);
+  const texasWacResults = texasWac.search(pricingSearchName);
+  const rxsaverResults = rxsaver.search(pricingSearchName) || [];
+  const blinkResults = blink.search(pricingSearchName) || [];
 
-  // Step 3: Query MedlinePlus using RxCUI from RxNorm
+  // Drug shortage + recall checks — run after pricing queries so they
+  // don't delay the main results if the FDA API is slow
+  const [shortageResult, recallResult] = await Promise.all([
+    checkDrugShortage(pricingSearchName),
+    checkDrugRecall(pricingSearchName),
+  ]);
+
+  // ── PHASE 3: Drug information (requires RxCUI from Phase 1) ─
   const medlinePlusResult = rxnormResult ? await queryMedlinePlus(rxnormResult.rxcui) : null;
 
   // Build Costco estimates from FDA data
@@ -1085,7 +1188,11 @@ const blinkResults = blink.search(pricingSearchName) || [];
     });
   }
 
-  // Normalize all pricing to unified format
+  // ── PHASE 4: Price normalization ──────────────────────────────
+  // Every source returns data in its own format. This section normalizes
+  // all results into a consistent schema: { source, drugName, unitPrice,
+  // priceFor30, priceFor90, priceForQuantity, note, dataFreshness, ... }
+  // so the frontend can display them in a single sorted table.
   const allPrices = [];
 
   // Cost Plus entries
@@ -1258,10 +1365,13 @@ const blinkResults = blink.search(pricingSearchName) || [];
     }
   }
 
-// Sort by 30-day price
+  // ── PHASE 5: Sort and assemble response ──────────────────────
+  // Sort consumer-actionable prices lowest-first so the best deal
+  // appears at the top of results. Entries with no priceFor30 sort last.
   allPrices.sort((a, b) => (a.priceFor30 || 999) - (b.priceFor30 || 999));
 
-  // Compute NADAC benchmark
+  // NADAC benchmark: what pharmacies pay on average — used by the frontend
+  // to show "you're paying X% above pharmacy cost" context
   const nadacBenchmark = nadacResults.length > 0
     ? {
         lowestNadacPerUnit: Math.min(...nadacResults.map(n => n.nadacPerUnit)),
@@ -1300,7 +1410,10 @@ const blinkResults = blink.search(pricingSearchName) || [];
   // MedlinePlus drug information
   const drugInformation = medlinePlusResult || null;
 
-  // Fuzzy fallback: if zero pricing results, suggest corrections
+  // Fuzzy fallback: if no pricing sources matched, query RxNorm's
+  // approximate match to suggest "did you mean...?" corrections.
+  // This only fires on zero results — it's the last-resort safety net
+  // after the Phase 0 dictionary correction already ran.
   let fuzzySuggestions = null;
   if (allPrices.length === 0) {
     fuzzySuggestions = await fuzzyDrugLookup(drugName);
@@ -1312,6 +1425,7 @@ const blinkResults = blink.search(pricingSearchName) || [];
     drugNormalization: drugInfo,
     drugInformation,
     drugShortage: shortageResult,
+    drugRecall: recallResult,
     medicarePartD: medicarePartDResult,
     rxOutreach: rxOutreachResults.length > 0 ? {
       source: 'Rx Outreach',
@@ -1360,13 +1474,18 @@ pricingResults: allPrices,
       vaFss: { status: vaFssResults.length > 0 ? 'found' : 'no_match', count: vaFssResults.length },
       rxSaver: { status: rxsaverResults.length > 0 ? 'found' : 'no_match', count: rxsaverResults.length },
       blinkHealth: { status: blinkResults.length > 0 ? 'found' : 'no_match', count: blinkResults.length },
+      fdaRecall: { status: recallResult ? 'found' : 'no_match', count: recallResult ? recallResult.length : 0 },
     },
     genericInfo: genericInfo || null,
     disclaimer: 'Prices shown are estimates from open data sources. Always verify the current price with your pharmacist before filling. This is not medical advice.',
   };
 
   // Log the search for analytics
-  logSearch(req, drugName, qty, zipCode, response);
+  logSearch(req, drugName, qty, zipCode, response, {
+    autocomplete: ac === '1',
+    correctedFrom: fuzzyResolved.corrected ? originalInput : '',
+    lang: lang || 'en',
+  });
 
   res.json(response);
 });
@@ -1384,7 +1503,7 @@ app.get('/api/search-count', async (req, res) => {
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2025', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'RxSaver (cached)'] });
+  res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2025', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)'] });
 });
 
 // Search log viewer (admin only - protected by Nginx Basic Auth)
@@ -1394,19 +1513,23 @@ app.get('/api/log', async (req, res) => {
     const lines = log.trim().split('\n');
     const entries = lines.slice(1).reverse(); // newest first
 
-    // Parse CSV entries
+    // Parse CSV entries (handles both old 9-col and new 12-col format)
     const parsed = entries.filter(l => l.trim()).map(line => {
-      const m = line.match(/^([^,]+),([^,]*),([^,]*),("?[^"]*"?),(\d+),(\d+),([^,]*),("?[^"]*"?)$/);
-      if (!m) return null;
+      const cols = line.split(',');
+      if (cols.length < 8) return null;
       return {
-        timestamp: m[1],
-        ip: m[2],
-        user: m[3],
-        drug: m[4].replace(/"/g, ''),
-        quantity: m[5],
-        hits: m[6],
-        price: m[7],
-        source: m[8].replace(/"/g, ''),
+        timestamp: cols[0],
+        ip: (cols[1] || '').replace(/"/g, ''),
+        user: (cols[2] || '').replace(/"/g, ''),
+        drug: (cols[3] || '').replace(/"/g, ''),
+        quantity: cols[4],
+        zip: cols[5] || '',
+        hits: cols[6],
+        price: (cols[7] || '').replace(/"/g, ''),
+        source: (cols[8] || '').replace(/"/g, ''),
+        autocomplete: cols[9] === '1',
+        correctedFrom: (cols[10] || '').replace(/"/g, ''),
+        lang: cols[11] || 'en',
       };
     }).filter(Boolean);
 
@@ -1421,6 +1544,13 @@ app.get('/api/log', async (req, res) => {
     // Count unique users and IPs
     const uniqueUsers = new Set(parsed.map(p => p.user));
     const uniqueIPs = new Set(parsed.map(p => p.ip));
+
+    // New analytics: autocomplete rate, zero-result rate, correction rate
+    const acCount = parsed.filter(p => p.autocomplete).length;
+    const acRate = parsed.length > 0 ? ((acCount / parsed.length) * 100).toFixed(1) : '0.0';
+    const zeroCount = parsed.filter(p => p.hits === '0' || p.hits === 0).length;
+    const zeroRate = parsed.length > 0 ? ((zeroCount / parsed.length) * 100).toFixed(1) : '0.0';
+    const correctedCount = parsed.filter(p => p.correctedFrom).length;
 
     res.type('text/html').send(`<!DOCTYPE html>
 <html lang="en">
@@ -1472,8 +1602,10 @@ app.get('/api/log', async (req, res) => {
 
   <div class="stats">
     <div class="stat-card"><div class="num">${parsed.length}</div><div class="label">Total Searches</div></div>
-    <div class="stat-card"><div class="num">${uniqueUsers.size}</div><div class="label">Unique Users</div></div>
     <div class="stat-card"><div class="num">${uniqueIPs.size}</div><div class="label">Unique IPs</div></div>
+    <div class="stat-card"><div class="num">${acRate}%</div><div class="label">Autocomplete Rate</div></div>
+    <div class="stat-card"><div class="num">${zeroRate}%</div><div class="label">Zero-Result Rate</div></div>
+    <div class="stat-card"><div class="num">${correctedCount}</div><div class="label">Fuzzy Corrections</div></div>
     <div class="stat-card"><div class="num">${topDrugs.length > 0 ? escapeHtml(topDrugs[0][0]) : '—'}</div><div class="label">Most Searched Drug</div></div>
   </div>
 
@@ -1844,9 +1976,7 @@ app.listen(PORT, () => {
   console.log(`  ║   ✓ VA FSS (govt benchmark, 4660 drugs) ║`);
   console.log(`  ║   ✓ IRA Negotiated (Medicare, 40 drugs) ║`);
   console.log(`  ║   ✓ TX WAC (mfr list price, 16K drugs)  ║`);
-  const rxsaverCount = rxsaver.stats().drugCount || 0;
-  const blinkCount = blink.stats().drugCount || 0;
-  console.log(`  ║   ✓ RxSaver (Apify cache, ${String(rxsaverCount).padEnd(4)} drugs)   ║`);
-  console.log(`  ║   ✓ Blink Health (Apify cache, ${String(blinkCount).padEnd(3)} drugs)║`);
+  console.log(`  ║   ✓ RxSaver (Apify cache, 194 drugs)    ║`);
+  console.log(`  ║   ✓ Blink Health (Apify cache, 69 drugs)║`);
   console.log(`  ╚═════════════════════════════════════════╝\n`);
 });

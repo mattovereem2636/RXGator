@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help & Resources — RxGator</title>
+<meta name="description" content="Free crisis hotlines, medication assistance programs, and financial help for prescription drug costs. You are not alone — help is available 24/7.">
+<link rel="canonical" href="https://rxgator.info/resources.html">
+<meta property="og:title" content="Help & Resources — RxGator">
+<meta property="og:description" content="Crisis hotlines, medication assistance programs, and financial help for prescription drug costs.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="/favicon.png">
+<style>
+  :root {
+    --navy: #0B3B5C;
+    --blue: #0C8080;
+    --purple: #6C3483;
+    --purple-light: #F4ECF7;
+    --purple-border: #C39BD3;
+    --green: #1E8449;
+    --green-light: #D5F5E3;
+    --orange: #E67E22;
+    --orange-light: #FDF2E9;
+    --blue-light: #EBF5FB;
+    --gray-700: #2C3E50;
+    --gray-500: #5D6D7E;
+    --gray-100: #F4F6F7;
+    --white: #FFFFFF;
+    --radius: 8px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    color: var(--gray-700);
+    background: var(--gray-100);
+    line-height: 1.6;
+  }
+
+  .header {
+    background: linear-gradient(135deg, #0B3B5C 0%, #0E5A6F 100%);
+    color: var(--white);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+  .header nav a { font-size: 0.9rem; font-weight: 400; margin-left: 1.25rem; opacity: 0.85; }
+  .header nav a:hover { opacity: 1; text-decoration: underline; }
+
+  .hero {
+    background: linear-gradient(135deg, #4A235A 0%, #6C3483 50%, #8E44AD 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; }
+  .hero p { font-size: 1.05rem; max-width: 640px; margin: 0 auto; opacity: 0.9; line-height: 1.7; }
+
+  .container { max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+  .section {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.75rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid;
+  }
+
+  .crisis h2 { color: var(--purple); border-color: var(--purple-border); }
+  .medication h2 { color: var(--green); border-color: #A9DFBF; }
+  .financial h2 { color: #1B4F72; border-color: #AED6F1; }
+  .seniors h2 { color: #A04000; border-color: #F5CBA7; }
+
+  .resource-item {
+    padding: 1rem 1.25rem;
+    margin: 0.75rem 0;
+    border-radius: 8px;
+    border-left: 4px solid;
+  }
+
+  .resource-item.crisis-item { background: var(--purple-light); border-color: var(--purple); }
+  .resource-item.med-item { background: var(--green-light); border-color: var(--green); }
+  .resource-item.financial-item { background: var(--blue-light); border-color: #2E86C1; }
+  .resource-item.senior-item { background: var(--orange-light); border-color: var(--orange); }
+
+  .resource-item .resource-name {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .resource-item .resource-phone {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0.25rem 0;
+  }
+
+  .resource-item .resource-phone a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .resource-item .resource-desc {
+    font-size: 0.9rem;
+    color: var(--gray-500);
+    line-height: 1.6;
+  }
+
+  .resource-item .resource-detail {
+    font-size: 0.82rem;
+    color: var(--gray-500);
+    margin-top: 0.4rem;
+    font-style: italic;
+  }
+
+  .resource-item a.resource-link {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .lang-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lang-toggle button {
+    padding: 0.4rem 1.25rem;
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--purple);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .lang-toggle button.active {
+    background: var(--purple);
+    color: var(--white);
+  }
+
+  .emergency-banner {
+    background: #C0392B;
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .emergency-banner a { color: var(--white); text-decoration: underline; }
+
+  .footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--gray-500);
+  }
+
+  .footer a { color: var(--gray-500); text-decoration: none; border-bottom: 1px dotted var(--gray-500); }
+
+  .back-to-search {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+
+  .back-to-search:hover { background: #154360; }
+
+  @media (max-width: 600px) {
+    .hero { padding: 2rem 1rem; }
+    .hero h1 { font-size: 1.5rem; }
+    .section { padding: 1.25rem 1rem; }
+    .container { padding: 1.25rem 1rem; }
+    .header nav a { margin-left: 0.75rem; font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="emergency-banner" id="emergencyBanner">
+  If you or someone you know is in immediate danger, call <a href="tel:911">911</a>. For crisis support, call or text <a href="tel:988">988</a> (24/7, free, confidential).
+</div>
+
+<div class="header">
+  <a href="/">Rx<span style="color:#D0F0F0; font-weight:300;">Gator</span></a>
+  <nav>
+    <a href="/">Search Drugs</a>
+    <a href="/articles/">Articles</a>
+    <a href="/about.html">About</a>
+  </nav>
+</div>
+
+<div class="hero">
+  <h1 id="heroTitle">You Are Not Alone</h1>
+  <p id="heroDesc">Millions of Americans struggle with the cost of prescription medications. Whether you need financial assistance, emotional support, or both — help is available right now, 24 hours a day, 7 days a week, at no cost to you.</p>
+</div>
+
+<div class="container">
+
+  <div class="lang-toggle">
+    <button id="langEN" class="active" onclick="setLang('en')">English</button>
+    <button id="langES" onclick="setLang('es')">Español</button>
+  </div>
+
+  <!-- CRISIS SUPPORT -->
+  <div class="section crisis" id="crisis-section">
+    <h2 id="crisisTitle">Crisis Support — Free & Confidential</h2>
+
+    <div class="resource-item crisis-item">
+      <div class="resource-name">988 Suicide & Crisis Lifeline</div>
+      <div class="resource-phone"><a href="tel:988">📞 Call or text: 988</a></div>
+      <div class="resource-desc" id="desc988">Available 24/7, free, confidential. Trained counselors for anyone in emotional distress — not just suicidal thoughts. Financial stress, anxiety about health, feeling overwhelmed — any crisis counts.</div>
+      <div class="resource-detail" id="detail988">Spanish: press 2 for Spanish-language support. TTY: use your preferred relay service or dial 711 then 988.</div>
+      <a href="https://988lifeline.org/chat/" target="_blank" rel="noopener" class="resource-link" style="color:var(--purple);" id="link988">Chat online at 988lifeline.org →</a>
+    </div>
+
+    <div class="resource-item crisis-item">
+      <div class="resource-name">Crisis Text Line</div>
+      <div class="resource-phone">💬 Text HOME to 741741</div>
+      <div class="resource-desc" id="descTextLine">Free, 24/7 text-based support. If you prefer texting over calling, trained crisis counselors are available right from your phone.</div>
+      <a href="https://www.crisistextline.org/" target="_blank" rel="noopener" class="resource-link" style="color:var(--purple);" id="linkTextLine">Learn more at crisistextline.org →</a>
+    </div>
+
+    <div class="resource-item crisis-item">
+      <div class="resource-name">SAMHSA National Helpline</div>
+      <div class="resource-phone"><a href="tel:18006624357">📞 1-800-662-4357</a></div>
+      <div class="resource-desc" id="descSAMHSA">Free, confidential, 24/7 referral and information service for mental health and substance use disorders. Available in English and Spanish. They can connect you with local treatment centers, support groups, and community organizations.</div>
+      <a href="https://www.samhsa.gov/find-help/helplines/national-helpline" target="_blank" rel="noopener" class="resource-link" style="color:var(--purple);" id="linkSAMHSA">Visit SAMHSA.gov →</a>
+    </div>
+  </div>
+
+  <!-- SENIOR-SPECIFIC RESOURCES -->
+  <div class="section seniors" id="seniors-section">
+    <h2 id="seniorsTitle">Resources for Older Adults</h2>
+
+    <div class="resource-item senior-item">
+      <div class="resource-name">Eldercare Locator</div>
+      <div class="resource-phone"><a href="tel:18006771116">📞 1-800-677-1116</a></div>
+      <div class="resource-desc" id="descEldercare">A free nationwide service connecting older adults and their caregivers with local resources — including help paying for medications, meals, transportation to pharmacies, and in-home support. Run by the U.S. Administration on Aging.</div>
+      <div class="resource-detail" id="detailEldercare">Monday–Friday, 9am–8pm ET. Interpreters available for 150+ languages.</div>
+      <a href="https://eldercare.acl.gov/" target="_blank" rel="noopener" class="resource-link" style="color:#A04000;" id="linkEldercare">Find local services at eldercare.acl.gov →</a>
+    </div>
+
+    <div class="resource-item senior-item">
+      <div class="resource-name" id="nameAging">Area Agency on Aging (AAA)</div>
+      <div class="resource-desc" id="descAging">Every county in the U.S. has a local Area Agency on Aging. They help seniors navigate benefits, apply for assistance programs, and connect with community services. Call the Eldercare Locator above to find yours.</div>
+    </div>
+
+    <div class="resource-item senior-item">
+      <div class="resource-name">NCOA BenefitsCheckUp</div>
+      <div class="resource-desc" id="descNCOA">Free online tool from the National Council on Aging that screens for over 2,500 benefits programs. Answer a few questions and find programs you may qualify for — prescription assistance, food, utilities, and more.</div>
+      <a href="https://benefitscheckup.org/" target="_blank" rel="noopener" class="resource-link" style="color:#A04000;" id="linkNCOA">Check your benefits at benefitscheckup.org →</a>
+    </div>
+  </div>
+
+  <!-- MEDICATION ASSISTANCE -->
+  <div class="section medication" id="medication-section">
+    <h2 id="medTitle">Medication Assistance Programs</h2>
+
+    <div class="resource-item med-item">
+      <div class="resource-name">Medicare Extra Help (Low-Income Subsidy)</div>
+      <div class="resource-desc" id="descExtraHelp">If you have Medicare Part D, Extra Help can lower your prescription costs to $0–$11.20 per drug. About 2 million people who qualify haven't signed up yet. Income limits in 2026: up to $23,440/year (single) or $31,660/year (married).</div>
+      <div class="resource-detail" id="detailExtraHelp">Apply online in about 10 minutes. No appointment needed.</div>
+      <a href="https://www.ssa.gov/medicare/part-d-extra-help" target="_blank" rel="noopener" class="resource-link" style="color:var(--green);" id="linkExtraHelp">Apply for Extra Help at ssa.gov →</a>
+    </div>
+
+    <div class="resource-item med-item">
+      <div class="resource-name">NeedyMeds</div>
+      <div class="resource-desc" id="descNeedyMeds">A nonprofit database of over 5,000 patient assistance programs from drug manufacturers, foundations, and government agencies. Search by drug name to find programs that can provide your medication for free or at reduced cost.</div>
+      <a href="https://www.needymeds.org/" target="_blank" rel="noopener" class="resource-link" style="color:var(--green);" id="linkNeedyMeds">Search programs at needymeds.org →</a>
+    </div>
+
+    <div class="resource-item med-item">
+      <div class="resource-name">RxAssist</div>
+      <div class="resource-desc" id="descRxAssist">A comprehensive database of patient assistance programs run by pharmaceutical companies, government agencies, and nonprofits. Includes eligibility information and direct links to applications.</div>
+      <a href="https://www.rxassist.org/" target="_blank" rel="noopener" class="resource-link" style="color:var(--green);" id="linkRxAssist">Search programs at rxassist.org →</a>
+    </div>
+
+    <div class="resource-item med-item">
+      <div class="resource-name" id="nameSPAP">State Prescription Assistance Programs (SPAPs)</div>
+      <div class="resource-desc" id="descSPAP">Many states run their own prescription assistance programs that provide additional help beyond federal programs. These vary by state but can significantly reduce your costs.</div>
+      <a href="https://www.ncsl.org/health/state-pharmaceutical-assistance-programs" target="_blank" rel="noopener" class="resource-link" style="color:var(--green);" id="linkSPAP">Find your state's programs →</a>
+    </div>
+
+    <div class="resource-item med-item">
+      <div class="resource-name" id="nameRxOutreach">Rx Outreach</div>
+      <div class="resource-desc" id="descRxOutreach">A nonprofit mail-order pharmacy that offers over 800 medications at reduced prices (often $20 or less for a 90-day supply). Available to individuals below 400% of the federal poverty level.</div>
+      <a href="https://rxoutreach.org/" target="_blank" rel="noopener" class="resource-link" style="color:var(--green);" id="linkRxOutreach">Check eligibility at rxoutreach.org →</a>
+    </div>
+  </div>
+
+  <!-- FINANCIAL & COMMUNITY HELP -->
+  <div class="section financial" id="financial-section">
+    <h2 id="financialTitle">Financial & Community Help</h2>
+
+    <div class="resource-item financial-item">
+      <div class="resource-name">211 — Local Community Services</div>
+      <div class="resource-phone"><a href="tel:211">📞 Dial 2-1-1</a></div>
+      <div class="resource-desc" id="desc211">A free, confidential service that connects you with local help — food banks, utility assistance, housing support, transportation, and more. Available in most areas of the United States, 24/7.</div>
+      <a href="https://www.211.org/" target="_blank" rel="noopener" class="resource-link" style="color:#1B4F72;" id="link211">Find local resources at 211.org →</a>
+    </div>
+
+    <div class="resource-item financial-item">
+      <div class="resource-name" id="nameMedicaid">Medicaid</div>
+      <div class="resource-desc" id="descMedicaid">If you have low income, you may qualify for Medicaid, which covers most prescription drugs at little or no cost. Eligibility varies by state. You can apply any time of year — there is no enrollment period.</div>
+      <a href="https://www.healthcare.gov/medicaid-chip/" target="_blank" rel="noopener" class="resource-link" style="color:#1B4F72;" id="linkMedicaid">Check if you qualify at healthcare.gov →</a>
+    </div>
+
+    <div class="resource-item financial-item">
+      <div class="resource-name" id="namePAN">Patient Access Network (PAN) Foundation</div>
+      <div class="resource-desc" id="descPAN">Helps cover out-of-pocket costs for insured patients who cannot afford their medications. Offers copay assistance for specific diseases and drug categories.</div>
+      <a href="https://panfoundation.org/" target="_blank" rel="noopener" class="resource-link" style="color:#1B4F72;" id="linkPAN">Apply at panfoundation.org →</a>
+    </div>
+
+    <div class="resource-item financial-item">
+      <div class="resource-name" id="nameHealthWell">HealthWell Foundation</div>
+      <div class="resource-desc" id="descHealthWell">Provides financial assistance to adults and children with chronic or life-altering diseases, helping with prescription copays, premiums, and other out-of-pocket health costs.</div>
+      <a href="https://www.healthwellfoundation.org/" target="_blank" rel="noopener" class="resource-link" style="color:#1B4F72;" id="linkHealthWell">Check eligibility at healthwellfoundation.org →</a>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin:2rem 0;">
+    <p style="font-size:0.95rem; color:var(--gray-500); margin-bottom:1rem;">These resources are provided as a public service. RxGator is not affiliated with any of these organizations.</p>
+    <a href="/" class="back-to-search">← Back to Drug Price Search</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  RxGator v1.0
+  &middot; <a href="/">Search Drugs</a>
+  &middot; <a href="/articles/">Articles</a>
+  &middot; <a href="/about.html">About</a>
+  <br>
+  <span>Need help right now? Call or text <a href="tel:988" style="color:var(--purple); font-weight:600;">988</a> (24/7, free, confidential)</span>
+</div>
+
+<script>
+// Bilingual support
+const content = {
+  es: {
+    emergencyBanner: 'Si usted o alguien que conoce está en peligro inmediato, llame al <a href="tel:911">911</a>. Para apoyo en crisis, llame o envíe un mensaje de texto al <a href="tel:988">988</a> (24/7, gratis, confidencial — oprima 2 para español).',
+    heroTitle: 'No Está Solo/a',
+    heroDesc: 'Millones de estadounidenses luchan con el costo de los medicamentos recetados. Ya sea que necesite asistencia financiera, apoyo emocional, o ambas cosas — hay ayuda disponible ahora mismo, las 24 horas del día, los 7 días de la semana, sin costo alguno.',
+    crisisTitle: 'Apoyo en Crisis — Gratuito y Confidencial',
+    desc988: 'Disponible 24/7, gratis, confidencial. Consejeros capacitados para cualquier persona en angustia emocional — no solo pensamientos suicidas. Estrés financiero, ansiedad por la salud, sentirse abrumado/a — cualquier crisis cuenta. Oprima 2 para español.',
+    detail988: 'TTY: use su servicio de retransmisión preferido o marque 711 y luego 988.',
+    link988: 'Chat en línea en 988lifeline.org (en inglés) →',
+    descTextLine: 'Apoyo gratuito por texto, 24/7. Si prefiere enviar mensajes de texto en lugar de llamar, hay consejeros de crisis disponibles. (Servicio en inglés)',
+    linkTextLine: 'Más información en crisistextline.org →',
+    descSAMHSA: 'Servicio gratuito, confidencial, 24/7 de referencia e información para trastornos de salud mental y uso de sustancias. Disponible en español. Pueden conectarlo con centros de tratamiento locales, grupos de apoyo y organizaciones comunitarias.',
+    linkSAMHSA: 'Visite SAMHSA.gov →',
+    seniorsTitle: 'Recursos para Personas Mayores',
+    descEldercare: 'Un servicio gratuito a nivel nacional que conecta a personas mayores y sus cuidadores con recursos locales — incluyendo ayuda para pagar medicamentos, comidas, transporte a farmacias y apoyo en el hogar. Administrado por la Administración sobre Envejecimiento de EE.UU.',
+    detailEldercare: 'Lunes a viernes, 9am–8pm ET. Intérpretes disponibles para más de 150 idiomas, incluyendo español.',
+    linkEldercare: 'Encuentre servicios locales en eldercare.acl.gov →',
+    descAging: 'Cada condado en EE.UU. tiene una Agencia Local sobre Envejecimiento. Ayudan a las personas mayores a navegar beneficios, solicitar programas de asistencia y conectarse con servicios comunitarios. Llame al número de Eldercare Locator arriba para encontrar la suya.',
+    descNCOA: 'Herramienta gratuita en línea del Consejo Nacional sobre Envejecimiento que evalúa más de 2,500 programas de beneficios. Responda algunas preguntas y encuentre programas para los que podría calificar — asistencia para recetas, alimentos, servicios públicos y más.',
+    linkNCOA: 'Verifique sus beneficios en benefitscheckup.org →',
+    medTitle: 'Programas de Asistencia para Medicamentos',
+    descExtraHelp: 'Si tiene Medicare Parte D, la Ayuda Adicional puede reducir sus costos de recetas a $0–$11.20 por medicamento. Cerca de 2 millones de personas que califican aún no se han inscrito. Límites de ingresos en 2026: hasta $23,440/año (soltero) o $31,660/año (casado).',
+    detailExtraHelp: 'Solicite en línea en unos 10 minutos. No necesita cita.',
+    linkExtraHelp: 'Solicite Ayuda Adicional en ssa.gov →',
+    descNeedyMeds: 'Una base de datos sin fines de lucro con más de 5,000 programas de asistencia al paciente de fabricantes de medicamentos, fundaciones y agencias gubernamentales. Busque por nombre de medicamento para encontrar programas que pueden proporcionar su medicamento gratis o a costo reducido.',
+    linkNeedyMeds: 'Busque programas en needymeds.org →',
+    descRxAssist: 'Una base de datos completa de programas de asistencia al paciente administrados por compañías farmacéuticas, agencias gubernamentales y organizaciones sin fines de lucro. Incluye información de elegibilidad y enlaces directos a solicitudes.',
+    linkRxAssist: 'Busque programas en rxassist.org →',
+    descSPAP: 'Muchos estados tienen sus propios programas de asistencia para recetas que brindan ayuda adicional más allá de los programas federales. Estos varían según el estado pero pueden reducir significativamente sus costos.',
+    linkSPAP: 'Encuentre los programas de su estado →',
+    descRxOutreach: 'Una farmacia de pedidos por correo sin fines de lucro que ofrece más de 800 medicamentos a precios reducidos (a menudo $20 o menos para un suministro de 90 días). Disponible para personas por debajo del 400% del nivel federal de pobreza.',
+    linkRxOutreach: 'Verifique elegibilidad en rxoutreach.org →',
+    financialTitle: 'Ayuda Financiera y Comunitaria',
+    desc211: 'Un servicio gratuito y confidencial que lo conecta con ayuda local — bancos de alimentos, asistencia con servicios públicos, apoyo de vivienda, transporte y más. Disponible en la mayoría de las áreas de Estados Unidos, 24/7. Disponible en español.',
+    link211: 'Encuentre recursos locales en 211.org →',
+    descMedicaid: 'Si tiene bajos ingresos, puede calificar para Medicaid, que cubre la mayoría de los medicamentos recetados con poco o ningún costo. La elegibilidad varía según el estado. Puede solicitar en cualquier momento del año — no hay período de inscripción.',
+    linkMedicaid: 'Verifique si califica en healthcare.gov →',
+    descPAN: 'Ayuda a cubrir los costos de bolsillo para pacientes asegurados que no pueden pagar sus medicamentos. Ofrece asistencia con copagos para enfermedades específicas y categorías de medicamentos.',
+    linkPAN: 'Solicite en panfoundation.org →',
+    descHealthWell: 'Proporciona asistencia financiera a adultos y niños con enfermedades crónicas o que alteran la vida, ayudando con copagos de recetas, primas y otros costos de salud de bolsillo.',
+    linkHealthWell: 'Verifique elegibilidad en healthwellfoundation.org →',
+  }
+};
+
+function setLang(lang) {
+  document.getElementById('langEN').classList.toggle('active', lang === 'en');
+  document.getElementById('langES').classList.toggle('active', lang === 'es');
+  document.documentElement.lang = lang;
+
+  if (lang === 'es' && content.es) {
+    const es = content.es;
+    document.getElementById('emergencyBanner').innerHTML = es.emergencyBanner;
+    document.getElementById('heroTitle').textContent = es.heroTitle;
+    document.getElementById('heroDesc').textContent = es.heroDesc;
+    document.getElementById('crisisTitle').textContent = es.crisisTitle;
+    document.getElementById('desc988').textContent = es.desc988;
+    document.getElementById('detail988').textContent = es.detail988;
+    document.getElementById('link988').textContent = es.link988;
+    document.getElementById('descTextLine').textContent = es.descTextLine;
+    document.getElementById('linkTextLine').textContent = es.linkTextLine;
+    document.getElementById('descSAMHSA').textContent = es.descSAMHSA;
+    document.getElementById('linkSAMHSA').textContent = es.linkSAMHSA;
+    document.getElementById('seniorsTitle').textContent = es.seniorsTitle;
+    document.getElementById('descEldercare').textContent = es.descEldercare;
+    document.getElementById('detailEldercare').textContent = es.detailEldercare;
+    document.getElementById('linkEldercare').textContent = es.linkEldercare;
+    document.getElementById('descAging').textContent = es.descAging;
+    document.getElementById('descNCOA').textContent = es.descNCOA;
+    document.getElementById('linkNCOA').textContent = es.linkNCOA;
+    document.getElementById('medTitle').textContent = es.medTitle;
+    document.getElementById('descExtraHelp').textContent = es.descExtraHelp;
+    document.getElementById('detailExtraHelp').textContent = es.detailExtraHelp;
+    document.getElementById('linkExtraHelp').textContent = es.linkExtraHelp;
+    document.getElementById('descNeedyMeds').textContent = es.descNeedyMeds;
+    document.getElementById('linkNeedyMeds').textContent = es.linkNeedyMeds;
+    document.getElementById('descRxAssist').textContent = es.descRxAssist;
+    document.getElementById('linkRxAssist').textContent = es.linkRxAssist;
+    document.getElementById('descSPAP').textContent = es.descSPAP;
+    document.getElementById('linkSPAP').textContent = es.linkSPAP;
+    document.getElementById('descRxOutreach').textContent = es.descRxOutreach;
+    document.getElementById('linkRxOutreach').textContent = es.linkRxOutreach;
+    document.getElementById('financialTitle').textContent = es.financialTitle;
+    document.getElementById('desc211').textContent = es.desc211;
+    document.getElementById('link211').textContent = es.link211;
+    document.getElementById('descMedicaid').textContent = es.descMedicaid;
+    document.getElementById('linkMedicaid').textContent = es.linkMedicaid;
+    document.getElementById('descPAN').textContent = es.descPAN;
+    document.getElementById('linkPAN').textContent = es.linkPAN;
+    document.getElementById('descHealthWell').textContent = es.descHealthWell;
+    document.getElementById('linkHealthWell').textContent = es.linkHealthWell;
+  } else {
+    // Reload to restore English (simplest approach)
+    location.reload();
+  }
+}
+</script>
+
+</body>
+</html>
