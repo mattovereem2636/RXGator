@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= title %> | RxGator</title>
+<meta name="description" content="<%= description %>">
+<meta name="keywords" content="<%= keywords %>">
+<meta property="og:title" content="<%= (typeof ogTitle !== 'undefined' && ogTitle) ? ogTitle : title %>">
+<meta property="og:description" content="<%= description %>">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rxgator.info/articles/<%= slug %>.html">
+<meta property="og:site_name" content="RxGator">
+<meta property="og:image" content="https://rxgator.info/logo-primary.png">
+<link rel="canonical" href="https://rxgator.info/articles/<%= slug %>.html">
+<link rel="stylesheet" href="/articles/article-style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "<%= title %>",
+  "description": "<%= description %>",
+  "datePublished": "<%= datePublished %>",
+  "dateModified": "<%= (typeof dateModified !== 'undefined' && dateModified) ? dateModified : datePublished %>",
+  "author": {
+    "@type": "Organization",
+    "name": "RXGator",
+    "url": "https://rxgator.info"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "RXGator",
+    "url": "https://rxgator.info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rxgator.info/logo-primary.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rxgator.info/articles/<%= slug %>.html"
+  },
+  "articleSection": "<%= (typeof articleSection !== 'undefined' && articleSection) ? articleSection : 'Drug Pricing' %>"
+}
+</script>
