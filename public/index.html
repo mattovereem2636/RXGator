@@ -840,6 +840,202 @@
     text-decoration: none;
   }
   .needymeds-card a:hover { text-decoration: underline; }
+
+  /* ── My Medications Panel ── */
+  .my-meds-fab {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .my-meds-fab:hover { transform: scale(1.05); background: #0C8080; }
+  .my-meds-fab .badge {
+    background: #E74C3C;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 0.1rem 0.4rem;
+    border-radius: 50px;
+    min-width: 18px;
+    text-align: center;
+  }
+  .my-meds-panel {
+    display: none;
+    position: fixed;
+    bottom: 4.5rem;
+    right: 1.5rem;
+    width: 380px;
+    max-width: calc(100vw - 2rem);
+    max-height: 70vh;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+    z-index: 998;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .my-meds-panel.open { display: flex; }
+  .my-meds-panel-header {
+    padding: 1rem 1.25rem;
+    background: var(--navy);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .my-meds-panel-header h3 { font-size: 1rem; font-weight: 700; margin: 0; }
+  .my-meds-panel-header button {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.2rem;
+  }
+  .my-meds-panel-header button:hover { color: #fff; }
+  .my-meds-search {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #E0E8EC;
+  }
+  .my-meds-search input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #E0E8EC;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    outline: none;
+  }
+  .my-meds-search input:focus { border-color: var(--blue); }
+  .my-meds-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.5rem 0;
+  }
+  .my-meds-item {
+    display: flex;
+    align-items: center;
+    padding: 0.65rem 1.25rem;
+    gap: 0.75rem;
+    border-bottom: 1px solid #F4F6F7;
+    transition: background 0.15s;
+  }
+  .my-meds-item:hover { background: #F8FAFB; }
+  .my-meds-item-info { flex: 1; min-width: 0; }
+  .my-meds-item-name {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--navy);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .my-meds-item-detail {
+    font-size: 0.78rem;
+    color: var(--gray-500);
+  }
+  .my-meds-item-actions { display: flex; gap: 0.3rem; flex-shrink: 0; }
+  .my-meds-item-actions button {
+    background: none;
+    border: 1px solid #E0E8EC;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    color: var(--gray-500);
+    transition: all 0.15s;
+  }
+  .my-meds-item-actions button:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+  .my-meds-item-actions .remove-btn:hover { background: #E74C3C; border-color: #E74C3C; }
+  .my-meds-footer {
+    padding: 0.75rem 1.25rem;
+    border-top: 1px solid #E0E8EC;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .my-meds-footer button {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .my-meds-footer .search-all-btn { background: var(--blue); color: #fff; }
+  .my-meds-footer .search-all-btn:hover { background: var(--navy); }
+  .my-meds-footer .clear-btn { background: #FADBD8; color: #C0392B; }
+  .my-meds-footer .clear-btn:hover { background: #E74C3C; color: #fff; }
+  .my-meds-empty {
+    padding: 2rem 1.25rem;
+    text-align: center;
+    color: var(--gray-400);
+    font-size: 0.88rem;
+  }
+  .my-meds-empty-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+  /* Multi-drug input area */
+  .multi-drug-area {
+    max-width: 720px;
+    margin: 0 auto 0.5rem;
+    padding: 0 1.5rem;
+  }
+  .multi-drug-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .drug-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: var(--light-blue);
+    color: var(--navy);
+    padding: 0.25rem 0.6rem;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+  .drug-chip .chip-remove {
+    background: none;
+    border: none;
+    color: var(--gray-500);
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+  }
+  .drug-chip .chip-remove:hover { color: #E74C3C; }
+  .add-drug-link {
+    font-size: 0.82rem;
+    color: var(--blue);
+    cursor: pointer;
+    font-weight: 600;
+    background: none;
+    border: none;
+    text-decoration: none;
+  }
+  .add-drug-link:hover { text-decoration: underline; }
+  @media print {
+    .my-meds-fab, .my-meds-panel { display: none !important; }
+  }
+  @media (max-width: 480px) {
+    .my-meds-panel { right: 0; bottom: 4rem; width: 100%; max-width: 100%; border-radius: 16px 16px 0 0; }
+  }
+
   @media print {
     .header, .search-box, .feedback-section, .footer, .how-to-toggle, .how-to-content, .sources-bar, button { display: none !important; }
     .price-card { break-inside: avoid; box-shadow: none !important; border: 1px solid #ccc !important; }
@@ -911,6 +1107,14 @@
 </div>
 
 <main id="main-content">
+<div class="rxg-nav" style="text-align:center; padding:0.6rem 1.5rem; background:#F2F7FA; border-bottom:1px solid #E0E8EC; font-size:0.85rem;">
+  <a href="/" style="color:#0C8080; text-decoration:none; font-weight:600; margin:0 0.6rem;">Home</a>
+  <a href="/about.html" style="color:#0C8080; text-decoration:none; font-weight:600; margin:0 0.6rem;">About</a>
+  <a href="/faq.html" style="color:#0C8080; text-decoration:none; font-weight:600; margin:0 0.6rem;">FAQ</a>
+  <a href="/articles/" style="color:#0C8080; text-decoration:none; font-weight:600; margin:0 0.6rem;">Articles</a>
+  <a href="/resources.html" style="color:#0C8080; text-decoration:none; font-weight:600; margin:0 0.6rem;">Resources</a>
+  <a href="https://patreon.com/RXGator" target="_blank" rel="noopener" style="color:#0C8080; text-decoration:none; font-weight:600; margin:0 0.6rem;">Support Us</a>
+</div>
 <div class="search-box" role="search" aria-label="Drug price search">
   <div class="field field-drug ac-wrapper">
     <label for="drugInput" data-i18n="drugName">Drug Name</label>
@@ -962,6 +1166,282 @@
 </div>
 </main>
 
+
+<!-- ══ Article Rotator ══ -->
+<style>
+.article-rotator {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+.article-rotator h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy, #0B3B5C);
+  margin-bottom: 1rem;
+}
+.rotator-track-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.rotator-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.rotator-card {
+  min-width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+@media (min-width: 640px) {
+  .rotator-card { min-width: 50%; }
+}
+@media (min-width: 900px) {
+  .rotator-card { min-width: 33.333%; }
+}
+.rotator-card a {
+  display: block;
+  width: 100%;
+  background: var(--white, #fff);
+  border: 1px solid #E0E8EC;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+.rotator-card a:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.rotator-card .rc-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--blue, #0C8080);
+  background: var(--light-blue, #D0F0F0);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+.rotator-card .rc-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy, #0B3B5C);
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+.rotator-card .rc-desc {
+  font-size: 0.82rem;
+  color: var(--gray-500, #5D6D7E);
+  line-height: 1.5;
+}
+.rotator-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.rotator-btn {
+  background: var(--blue, #0C8080);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.rotator-btn:hover { background: var(--navy, #0B3B5C); }
+.rotator-dots {
+  display: flex;
+  gap: 6px;
+}
+.rotator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #CBD5E1;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 0;
+}
+.rotator-dot.active { background: var(--blue, #0C8080); }
+.rotator-viewall {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--blue, #0C8080);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.rotator-viewall:hover { text-decoration: underline; }
+</style>
+
+<div class="article-rotator" id="articleRotator">
+  <h2>Prescription Savings Tips &amp; Guides</h2>
+  <div class="rotator-track-wrapper">
+    <div class="rotator-track" id="rotatorTrack">
+      <div class="rotator-card">
+        <a href="/articles/save-on-prescriptions-uninsured.html">
+          <span class="rc-tag">Guide</span>
+          <div class="rc-title">How to Save on Prescriptions Without Insurance</div>
+          <div class="rc-desc">Practical strategies for finding the lowest prices when you don't have coverage.</div>
+        </a>
+      </div>
+      <div class="rotator-card">
+        <a href="/articles/goodrx-vs-singlecare.html">
+          <span class="rc-tag">Comparison</span>
+          <div class="rc-title">GoodRx vs SingleCare: Which Saves You More?</div>
+          <div class="rc-desc">A side-by-side comparison of the two biggest prescription discount cards.</div>
+        </a>
+      </div>
+      <div class="rotator-card">
+        <a href="/articles/best-pharmacy-cheap-prescriptions.html">
+          <span class="rc-tag">Guide</span>
+          <div class="rc-title">Best Pharmacies for Cheap Prescriptions</div>
+          <div class="rc-desc">Which pharmacies consistently offer the lowest prices on generic drugs.</div>
+        </a>
+      </div>
+      <div class="rotator-card">
+        <a href="/articles/cost-plus-drugs-review.html">
+          <span class="rc-tag">Review</span>
+          <div class="rc-title">Cost Plus Drugs Review: Is Mark Cuban's Pharmacy Legit?</div>
+          <div class="rc-desc">What you need to know about the transparent-pricing mail-order pharmacy.</div>
+        </a>
+      </div>
+      <div class="rotator-card">
+        <a href="/articles/walmart-4-dollar-list.html">
+          <span class="rc-tag">Resource</span>
+          <div class="rc-title">Walmart $4 Prescription List: What's Still on It?</div>
+          <div class="rc-desc">The complete guide to Walmart's discount generic drug program.</div>
+        </a>
+      </div>
+      <div class="rotator-card">
+        <a href="/articles/medicare-part-d-subsidy-ending-2027.html">
+          <span class="rc-tag">Medicare</span>
+          <div class="rc-title">Medicare Part D Subsidy Changes: What Seniors Need to Know</div>
+          <div class="rc-desc">How upcoming changes to Medicare Part D could affect your prescription costs.</div>
+        </a>
+      </div>
+      <div class="rotator-card">
+        <a href="/articles/what-is-a-pbm.html">
+          <span class="rc-tag">Explainer</span>
+          <div class="rc-title">What Is a PBM? And Why Does It Matter for Drug Prices?</div>
+          <div class="rc-desc">Pharmacy Benefit Managers control drug pricing — here's how they work.</div>
+        </a>
+      </div>
+      <div class="rotator-card">
+        <a href="/articles/atorvastatin-cost-without-insurance.html">
+          <span class="rc-tag">Drug Pricing</span>
+          <div class="rc-title">Atorvastatin Cost Without Insurance</div>
+          <div class="rc-desc">America's most prescribed drug can cost $4 or $90 — it depends where you fill it.</div>
+        </a>
+      </div>
+      <div class="rotator-card">
+        <a href="/articles/rx-outreach-nonprofit-pharmacy-review.html">
+          <span class="rc-tag">Review</span>
+          <div class="rc-title">Rx Outreach: The Nonprofit Pharmacy Most People Don't Know About</div>
+          <div class="rc-desc">A nonprofit mail-order pharmacy with some of the lowest prices in the country.</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="rotator-controls">
+    <button class="rotator-btn" onclick="rotatorPrev()" aria-label="Previous articles">&#8249;</button>
+    <div class="rotator-dots" id="rotatorDots"></div>
+    <button class="rotator-btn" onclick="rotatorNext()" aria-label="Next articles">&#8250;</button>
+  </div>
+  <a href="/articles/" class="rotator-viewall">View All Articles &rarr;</a>
+</div>
+
+<script>
+(function() {
+  var track = document.getElementById('rotatorTrack');
+  var dotsContainer = document.getElementById('rotatorDots');
+  if (!track || !dotsContainer) return;
+
+  var cards = track.querySelectorAll('.rotator-card');
+  var totalCards = cards.length;
+  var currentIndex = 0;
+  var autoTimer = null;
+
+  function getVisible() {
+    var w = window.innerWidth;
+    if (w >= 900) return 3;
+    if (w >= 640) return 2;
+    return 1;
+  }
+
+  function getMaxIndex() {
+    return Math.max(0, totalCards - getVisible());
+  }
+
+  function buildDots() {
+    dotsContainer.innerHTML = '';
+    var maxIdx = getMaxIndex();
+    for (var i = 0; i <= maxIdx; i++) {
+      var dot = document.createElement('button');
+      dot.className = 'rotator-dot' + (i === currentIndex ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dot.onclick = (function(idx) { return function() { goTo(idx); }; })(i);
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function goTo(idx) {
+    var maxIdx = getMaxIndex();
+    if (idx < 0) idx = maxIdx;
+    if (idx > maxIdx) idx = 0;
+    currentIndex = idx;
+    var pct = (100 / totalCards) * currentIndex;
+    track.style.transform = 'translateX(-' + pct + '%)';
+    buildDots();
+    resetAuto();
+  }
+
+  window.rotatorNext = function() { goTo(currentIndex + 1); };
+  window.rotatorPrev = function() { goTo(currentIndex - 1); };
+
+  function resetAuto() {
+    if (autoTimer) clearInterval(autoTimer);
+    autoTimer = setInterval(function() { goTo(currentIndex + 1); }, 5000);
+  }
+
+  // Recalculate on resize
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+      goTo(currentIndex);
+    }, 200);
+  });
+
+  // Pause on hover
+  var wrapper = track.parentElement;
+  wrapper.addEventListener('mouseenter', function() { if (autoTimer) clearInterval(autoTimer); });
+  wrapper.addEventListener('mouseleave', function() { resetAuto(); });
+
+  // Init
+  buildDots();
+  resetAuto();
+})();
+</script>
+<!-- ══ End Article Rotator ══ -->
+
 <div class="footer">
   RxGator v1.0 &mdash; 18 Data Sources
   &mdash; <a href="https://patreon.com/RXGator" style="color:var(--gray-500); text-decoration:none; border-bottom:1px dotted var(--gray-500);">Patreon</a>
@@ -979,10 +1459,18 @@
 function setTextSize(size) {
   const sizes = { normal: '100%', large: '115%', xlarge: '130%' };
   document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
   document.getElementById('sizeA').style.background = size === 'normal' ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
   document.getElementById('sizeAA').style.background = size === 'large' ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
   document.getElementById('sizeAAA').style.background = size === 'xlarge' ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
 }
+// Restore saved text size preference
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') setTextSize(saved);
+  } catch(e) {}
+})();
 
 // ============================================================
 // LANGUAGE TOGGLE — English / Español
@@ -2238,5 +2726,328 @@ async function submitFeedback(drugSearched) {
 <link rel="stylesheet" href="/articles/article-style.css">
 <script src="/articles/article-widget.js"></script>
 <script src="/my-medications.js"></script>
+<script src="/pap-card.js" defer></script>
+<script src="/partd-card.js" defer></script>
+<script src="/partd-card.js" defer></script>
+
+<script>
+// ══════════════════════════════════════════════════════
+// MY MEDICATIONS — Save, Search, Manage
+// ══════════════════════════════════════════════════════
+(function() {
+  const STORAGE_KEY = 'rxgator_my_meds';
+
+  // ── Data layer ──
+  function getMeds() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch(e) { return []; }
+  }
+  function saveMeds(meds) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(meds)); } catch(e) {}
+    updateBadge();
+    renderPanel();
+  }
+  function addMed(drugName, price, source, strength) {
+    const meds = getMeds();
+    const key = (drugName || '').toLowerCase().trim();
+    // Don't add duplicates
+    if (meds.some(m => (m.name || '').toLowerCase().trim() === key)) {
+      // Update price if it changed
+      const idx = meds.findIndex(m => (m.name || '').toLowerCase().trim() === key);
+      meds[idx].price = price;
+      meds[idx].source = source;
+      meds[idx].strength = strength || meds[idx].strength;
+      meds[idx].updated = new Date().toISOString();
+      saveMeds(meds);
+      return false; // was update, not new
+    }
+    meds.push({
+      name: drugName,
+      price: price,
+      source: source,
+      strength: strength || '',
+      added: new Date().toISOString(),
+      updated: new Date().toISOString()
+    });
+    saveMeds(meds);
+    return true; // was new
+  }
+  function removeMed(index) {
+    const meds = getMeds();
+    meds.splice(index, 1);
+    saveMeds(meds);
+  }
+  function clearMeds() {
+    saveMeds([]);
+  }
+
+  // ── Save button (called from renderResults) ──
+  window._rxgSaveMedButton = function(drugName, price, source, strength) {
+    const meds = getMeds();
+    const key = (drugName || '').toLowerCase().trim();
+    const isSaved = meds.some(m => (m.name || '').toLowerCase().trim() === key);
+    const btnId = 'saveBtn_' + key.replace(/[^a-z0-9]/g, '_');
+    return '<button id="' + btnId + '" onclick="window._rxgSaveMed(this, \'' + drugName.replace(/'/g, "\\'") + '\', ' + (price||0) + ', \'' + (source||'').replace(/'/g, "\\'") + '\', \'' + (strength||'').replace(/'/g, "\\'") + '\')" style="padding:0.4rem 1rem; background:' + (isSaved ? '#27AE60' : 'var(--orange,#E67E22)') + '; color:#fff; border:none; border-radius:6px; font-size:0.85rem; font-weight:600; cursor:pointer;">' + (isSaved ? '✓ Saved' : '💊 Save to My List') + '</button>';
+  };
+
+  window._rxgSaveMed = function(btn, drugName, price, source, strength) {
+    const isNew = addMed(drugName, price, source, strength);
+    btn.textContent = '✓ Saved';
+    btn.style.background = '#27AE60';
+    // Brief flash
+    if (isNew) {
+      btn.style.transform = 'scale(1.1)';
+      setTimeout(function() { btn.style.transform = 'scale(1)'; }, 200);
+    }
+  };
+
+  // ── Floating action button + Panel ──
+  function createUI() {
+    // FAB
+    const fab = document.createElement('button');
+    fab.className = 'my-meds-fab';
+    fab.id = 'myMedsFab';
+    fab.innerHTML = '💊 My Meds <span class="badge" id="myMedsBadge">0</span>';
+    fab.onclick = togglePanel;
+    document.body.appendChild(fab);
+
+    // Panel
+    const panel = document.createElement('div');
+    panel.className = 'my-meds-panel';
+    panel.id = 'myMedsPanel';
+    panel.innerHTML = `
+      <div class="my-meds-panel-header">
+        <h3>💊 My Medications</h3>
+        <button onclick="window._rxgToggleMedsPanel()" title="Close">&times;</button>
+      </div>
+      <div class="my-meds-search">
+        <input type="text" id="myMedsSearchInput" placeholder="Search your medications..." oninput="window._rxgFilterMeds(this.value)">
+      </div>
+      <div class="my-meds-list" id="myMedsList"></div>
+      <div class="my-meds-footer" id="myMedsFooter" style="display:none;">
+        <button class="search-all-btn" onclick="window._rxgSearchAllMeds()">🔍 Search All Prices</button>
+        <button class="clear-btn" onclick="if(confirm('Remove all saved medications?')) window._rxgClearMeds()">Clear All</button>
+      </div>
+    `;
+    document.body.appendChild(panel);
+    updateBadge();
+    renderPanel();
+  }
+
+  function togglePanel() {
+    const panel = document.getElementById('myMedsPanel');
+    panel.classList.toggle('open');
+    if (panel.classList.contains('open')) renderPanel();
+  }
+  window._rxgToggleMedsPanel = togglePanel;
+
+  function updateBadge() {
+    const badge = document.getElementById('myMedsBadge');
+    if (!badge) return;
+    const count = getMeds().length;
+    badge.textContent = count;
+    badge.style.display = count > 0 ? 'inline' : 'none';
+  }
+
+  function renderPanel(filter) {
+    const listEl = document.getElementById('myMedsList');
+    const footerEl = document.getElementById('myMedsFooter');
+    if (!listEl) return;
+    const meds = getMeds();
+    const filterLC = (filter || '').toLowerCase();
+
+    if (meds.length === 0) {
+      listEl.innerHTML = '<div class="my-meds-empty"><div class="my-meds-empty-icon">💊</div>No medications saved yet.<br><span style="font-size:0.82rem;">Search for a drug and click "Save to My List"</span></div>';
+      if (footerEl) footerEl.style.display = 'none';
+      return;
+    }
+
+    if (footerEl) footerEl.style.display = 'flex';
+    const filtered = filterLC ? meds.filter(m => (m.name||'').toLowerCase().includes(filterLC)) : meds;
+
+    if (filtered.length === 0) {
+      listEl.innerHTML = '<div class="my-meds-empty">No medications match your search.</div>';
+      return;
+    }
+
+    listEl.innerHTML = filtered.map(function(m, i) {
+      // Find the real index in the full meds array
+      const realIdx = meds.indexOf(m);
+      const priceStr = m.price ? '$' + Number(m.price).toFixed(2) : '';
+      const detailParts = [];
+      if (m.strength) detailParts.push(m.strength);
+      if (priceStr) detailParts.push(priceStr + (m.source ? ' at ' + m.source : ''));
+      const added = m.added ? new Date(m.added).toLocaleDateString() : '';
+      if (added) detailParts.push('Added ' + added);
+      return '<div class="my-meds-item">' +
+        '<div class="my-meds-item-info">' +
+          '<div class="my-meds-item-name">' + (m.name || 'Unknown') + '</div>' +
+          '<div class="my-meds-item-detail">' + detailParts.join(' · ') + '</div>' +
+        '</div>' +
+        '<div class="my-meds-item-actions">' +
+          '<button onclick="window._rxgSearchOneMed(' + realIdx + ')" title="Search prices">🔍</button>' +
+          '<button class="remove-btn" onclick="window._rxgRemoveMed(' + realIdx + ')" title="Remove">✕</button>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  window._rxgFilterMeds = function(val) { renderPanel(val); };
+  window._rxgRemoveMed = function(idx) { removeMed(idx); };
+  window._rxgClearMeds = function() { clearMeds(); };
+
+  window._rxgSearchOneMed = function(idx) {
+    const meds = getMeds();
+    if (!meds[idx]) return;
+    const input = document.getElementById('search-input') || document.querySelector('input[type="text"]');
+    if (input) {
+      input.value = meds[idx].name;
+      // Close panel
+      document.getElementById('myMedsPanel').classList.remove('open');
+      // Trigger search
+      if (typeof doSearch === 'function') doSearch();
+      else if (typeof window.doSearch === 'function') window.doSearch();
+    }
+  };
+
+  window._rxgSearchAllMeds = function() {
+    const meds = getMeds();
+    if (meds.length === 0) return;
+    const names = meds.map(function(m) { return m.name; });
+    // Close panel
+    document.getElementById('myMedsPanel').classList.remove('open');
+    // Use multi-drug search
+    window._rxgMultiDrugSearch(names);
+  };
+
+  // ══════════════════════════════════════════════════════
+  // MULTI-DRUG SEARCH
+  // ══════════════════════════════════════════════════════
+
+  window._rxgMultiDrugSearch = async function(drugNames) {
+    const resultsDiv = document.getElementById('results');
+    const qty = document.querySelector('select') ? document.querySelector('select').value : '30';
+    const zipInput = document.querySelector('input[placeholder*="zip"], input[placeholder*="Zip"], #zip-input');
+    const zip = zipInput ? zipInput.value.trim() : '';
+
+    resultsDiv.innerHTML = '<div class="status loading">Searching ' + drugNames.length + ' medications...</div>';
+
+    let allHtml = '';
+    let completed = 0;
+
+    for (const drug of drugNames) {
+      try {
+        let url = '/api/search?drug=' + encodeURIComponent(drug) + '&quantity=' + qty;
+        if (zip) url += '&zip=' + encodeURIComponent(zip);
+        const res = await fetch(url);
+        const data = await res.json();
+        completed++;
+
+        // Update progress
+        resultsDiv.innerHTML = '<div class="status loading">Searched ' + completed + ' of ' + drugNames.length + '...</div>';
+
+        // Build mini result section
+        const prices = data.pricingResults || [];
+        const gName = data.drugNormalization?.genericName || drug;
+        const lowest = prices.length > 0 ? prices[0] : null;
+
+        allHtml += '<div style="background:#fff; border:2px solid #E0E8EC; border-radius:12px; padding:1.25rem 1.5rem; margin:1rem 0;">';
+        allHtml += '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:0.75rem;">';
+        allHtml += '<h3 style="font-size:1.1rem; color:var(--navy); margin:0;">' + gName + '</h3>';
+        if (lowest) {
+          allHtml += '<div style="font-size:1.3rem; font-weight:800; color:var(--green-dark,#145A32);">$' + (lowest.priceFor30 || 0).toFixed(2) + '<span style="font-size:0.75rem; font-weight:400; color:var(--gray-500);"> /30-day</span></div>';
+        }
+        allHtml += '</div>';
+
+        if (prices.length === 0) {
+          allHtml += '<div style="color:var(--gray-500); font-size:0.88rem;">No pricing data found. <a href="#" onclick="event.preventDefault(); document.getElementById(\'search-input\') ? document.getElementById(\'search-input\').value=\'' + drug.replace(/'/g, "\\'") + '\' : 0; if(typeof doSearch===\'function\') doSearch();" style="color:var(--blue); font-weight:600;">Search individually →</a></div>';
+        } else {
+          // Show top 3 prices
+          const topPrices = prices.slice(0, 3);
+          topPrices.forEach(function(p, i) {
+            const dp = qty == 90 ? p.priceFor90 : p.priceFor30;
+            allHtml += '<div style="display:flex; justify-content:space-between; align-items:center; padding:0.4rem 0; border-top:1px solid #F4F6F7;">';
+            allHtml += '<span style="font-size:0.88rem; color:var(--gray-700);">' + (i === 0 ? '🏆 ' : '') + p.source + '</span>';
+            allHtml += '<span style="font-weight:700; color:' + (i === 0 ? 'var(--green-dark,#145A32)' : 'var(--gray-700)') + ';">$' + (dp != null ? dp.toFixed(2) : '—') + '</span>';
+            allHtml += '</div>';
+          });
+          if (prices.length > 3) {
+            allHtml += '<div style="font-size:0.82rem; color:var(--gray-400); padding-top:0.3rem;">+ ' + (prices.length - 3) + ' more sources</div>';
+          }
+          allHtml += '<div style="margin-top:0.5rem;"><a href="#" onclick="event.preventDefault(); var el = document.getElementById(\'search-input\'); if(el){el.value=\'' + drug.replace(/'/g, "\\'") + '\';} if(typeof doSearch===\'function\') doSearch();" style="color:var(--blue); font-weight:600; font-size:0.85rem; text-decoration:none;">View full details →</a></div>';
+        }
+        allHtml += '</div>';
+
+      } catch (err) {
+        completed++;
+        allHtml += '<div style="background:#FDEDEC; border-radius:10px; padding:1rem; margin:1rem 0;"><strong>' + drug + '</strong> — Error: ' + err.message + '</div>';
+      }
+    }
+
+    // Render all results
+    resultsDiv.innerHTML = '<div class="results-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">' +
+      '<div style="font-size:1.1rem; font-weight:700; color:var(--navy);">Multi-Drug Results — ' + drugNames.length + ' medications</div>' +
+      '<div style="display:flex; gap:0.5rem;">' +
+        '<button onclick="window.print()" style="padding:0.4rem 1rem; background:var(--navy); color:#fff; border:none; border-radius:6px; font-size:0.85rem; font-weight:600; cursor:pointer;">🖨 Print</button>' +
+      '</div>' +
+    '</div>' + allHtml;
+  };
+
+  // ── Add "or search multiple drugs" hint under search box ──
+  function addMultiDrugHint() {
+    const searchBox = document.querySelector('.search-box');
+    if (!searchBox || document.getElementById('multiDrugHint')) return;
+
+    const hint = document.createElement('div');
+    hint.id = 'multiDrugHint';
+    hint.className = 'multi-drug-area';
+    hint.innerHTML = '<div style="text-align:center; margin-top:0.25rem;"><button class="add-drug-link" onclick="window._rxgShowMultiInput()" title="Search for multiple drugs at once">+ Compare multiple drugs</button></div>' +
+      '<div id="multiDrugInput" style="display:none; max-width:720px; margin:0.5rem auto; background:#fff; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.08); padding:1rem 1.25rem;">' +
+        '<div style="font-size:0.88rem; font-weight:600; color:var(--navy); margin-bottom:0.5rem;">Enter drug names (one per line):</div>' +
+        '<textarea id="multiDrugTextarea" rows="4" placeholder="metformin&#10;lisinopril&#10;atorvastatin" style="width:100%; padding:0.5rem 0.75rem; border:2px solid #E0E8EC; border-radius:6px; font-size:0.92rem; font-family:inherit; resize:vertical;"></textarea>' +
+        '<div style="display:flex; gap:0.5rem; margin-top:0.5rem;">' +
+          '<button onclick="window._rxgDoMultiSearch()" style="padding:0.5rem 1.25rem; background:var(--blue); color:#fff; border:none; border-radius:6px; font-size:0.88rem; font-weight:600; cursor:pointer;">🔍 Search All</button>' +
+          '<button onclick="document.getElementById(\'multiDrugInput\').style.display=\'none\'" style="padding:0.5rem 1rem; background:#F4F6F7; color:var(--gray-500); border:none; border-radius:6px; font-size:0.88rem; cursor:pointer;">Cancel</button>' +
+        '</div>' +
+      '</div>';
+
+    searchBox.parentNode.insertBefore(hint, searchBox.nextSibling);
+  }
+
+  window._rxgShowMultiInput = function() {
+    const el = document.getElementById('multiDrugInput');
+    if (el) {
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+      if (el.style.display === 'block') {
+        document.getElementById('multiDrugTextarea').focus();
+      }
+    }
+  };
+
+  window._rxgDoMultiSearch = function() {
+    const textarea = document.getElementById('multiDrugTextarea');
+    if (!textarea) return;
+    const drugs = textarea.value.split('\n').map(function(s) { return s.trim(); }).filter(function(s) { return s.length > 0; });
+    if (drugs.length === 0) { textarea.focus(); return; }
+    if (drugs.length === 1) {
+      // Single drug — use normal search
+      var input = document.getElementById('search-input') || document.querySelector('input[type="text"]');
+      if (input) { input.value = drugs[0]; }
+      if (typeof doSearch === 'function') doSearch();
+      return;
+    }
+    document.getElementById('multiDrugInput').style.display = 'none';
+    window._rxgMultiDrugSearch(drugs);
+  };
+
+  // ── Init ──
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() { createUI(); addMultiDrugHint(); });
+  } else {
+    createUI();
+    addMultiDrugHint();
+  }
+})();
+</script>
+
 </body>
 </html>

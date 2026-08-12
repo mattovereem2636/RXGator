@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prescription Savings Guides & Articles | RxGator</title>
+<meta name="description" content="Free guides on saving money on prescription drugs. Compare pharmacy prices, find discount programs, and learn how to cut your medication costs.">
+<meta property="og:title" content="Prescription Savings Guides | RxGator">
+<meta property="og:description" content="Free guides on saving money on prescription drugs — from discount cards to pharmacy programs to manufacturer assistance.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://rxgator.info/articles/">
+<link rel="stylesheet" href="/articles/article-style.css">
+<style>
+  .articles-hero {
+    background: linear-gradient(135deg, #1a2332, #2d4a5e);
+    color: #fff;
+    padding: 48px 24px;
+    text-align: center;
+  }
+  .articles-hero h1 {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 12px;
+  }
+  .articles-hero p {
+    color: #94a3b8;
+    font-size: 18px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .articles-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 24px;
+  }
+  .article-item {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .article-item:hover {
+    border-color: var(--teal);
+    box-shadow: 0 2px 10px rgba(13,148,136,0.1);
+  }
+  .article-item .ai-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .article-item .ai-tag {
+    background: var(--teal-light);
+    color: var(--teal-dark);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+  .article-item .ai-date {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+  .article-item .ai-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .article-item .ai-desc {
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+  .articles-cta {
+    text-align: center;
+    padding: 40px 24px;
+    background: var(--bg-alt);
+    margin-top: 20px;
+  }
+  .articles-cta p { font-size: 18px; margin-bottom: 14px; }
+  .articles-cta a.cta-btn {
+    display: inline-block;
+    background: var(--teal);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.2s;
+  }
+  .articles-cta a.cta-btn:hover { background: var(--teal-dark); }
+  @media (max-width: 640px) {
+    .articles-hero h1 { font-size: 26px; }
+    .article-item .ai-title { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<nav class="article-nav">
+  <a href="/" class="logo">Rx<span>Gator</span></a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/search.html">Search Drugs</a>
+    <a href="/articles/">All Articles</a>
+  </div>
+</nav>
+
+<div class="articles-hero">
+  <h1>Prescription Savings Guides</h1>
+  <p>Practical, fact-checked guides to help you spend less on your medications. No ads, no affiliate links — just the information you need.</p>
+</div>
+
+<div class="articles-list" id="article-list">
+  <!-- Populated by JS from articles.json -->
+</div>
+
+<div class="articles-cta">
+  <p><strong>Search your medication on RxGator</strong> — compare prices across 18 sources, free.</p>
+  <a href="/search.html" class="cta-btn">Search Drug Prices</a>
+</div>
+
+<footer class="article-footer">
+  <p>&copy; 2026 RxGator &middot; <a href="/">Home</a> &middot; <a href="/about.html">About</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
+  <p style="margin-top:8px;">RxGator is a free prescription drug price comparison tool. We are not a pharmacy and do not sell medications.</p>
+</footer>
+
+<script>
+fetch('/articles/articles.json')
+  .then(r => r.json())
+  .then(articles => {
+    const container = document.getElementById('article-list');
+    // Sort newest first
+    articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+    articles.forEach(a => {
+      const dateStr = new Date(a.date + 'T12:00:00Z').toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric', timeZone:'UTC' });
+      const el = document.createElement('a');
+      el.href = '/articles/' + a.slug + '.html';
+      el.className = 'article-item';
+      el.innerHTML = `
+        <div class="ai-meta">
+          <span class="ai-tag">${a.tag}</span>
+          <span class="ai-date">${dateStr} &middot; ${a.readTime}</span>
+        </div>
+        <div class="ai-title">${a.title}</div>
+        <div class="ai-desc">${a.description}</div>
+      `;
+      container.appendChild(el);
+    });
+  })
+  .catch(() => {
+    document.getElementById('article-list').innerHTML = '<p style="text-align:center;padding:40px;color:#64748b;">Unable to load articles.</p>';
+  });
+</script>
+</body>
+</html>

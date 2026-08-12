@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequently Asked Questions — RXGator</title>
+<meta name="description" content="Answers to common questions about RXGator, prescription drug pricing, discount cards, and how to save money on medications.">
+<link rel="canonical" href="https://rxgator.info/faq.html">
+<meta property="og:title" content="RXGator FAQ — Your Questions Answered">
+<meta property="og:description" content="How to use RXGator, save money on prescriptions, and understand drug pricing.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rxgator.info/faq.html">
+<meta property="og:image" content="https://rxgator.info/logo-primary.png">
+<meta property="og:site_name" content="RXGator">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B3B5C;
+    --teal: #0C8080;
+    --teal-bright: #12A3A3;
+    --teal-light: #D0F0F0;
+    --pale: #F4F8F9;
+    --white: #FFFFFF;
+    --gray-700: #2C3E50;
+    --gray-500: #5D6D7E;
+    --green: #145A32;
+    --green-light: #D5F5E3;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0B3B5C;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-link:focus { top: 0; }
+
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--gray-700); background: var(--white); line-height: 1.7; }
+
+  .header {
+    background: linear-gradient(135deg, #0B3B5C 0%, #0E5A6F 100%);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .header a { text-decoration: none; }
+  .header img { max-width: 200px; height: auto; }
+
+  .nav {
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    background: var(--pale);
+    border-bottom: 1px solid #E0E8EC;
+    font-size: 0.85rem;
+  }
+  .nav a { color: #0A7070; text-decoration: none; font-weight: 600; margin: 0 0.75rem; }
+  .nav a:hover { text-decoration: underline; }
+
+  .content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+  }
+
+  .intro {
+    font-size: 0.95rem;
+    color: var(--gray-500);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  .faq-section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--teal);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--teal-light);
+  }
+
+  .faq-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-item details {
+    background: var(--white);
+    border: 1px solid #E0E8EC;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.15s;
+  }
+
+  .faq-item details[open] {
+    border-color: var(--teal-light);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .faq-item summary {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faq-item summary::-webkit-details-marker { display: none; }
+
+  .faq-item summary::after {
+    content: '+';
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--teal);
+    flex-shrink: 0;
+    margin-left: 1rem;
+    transition: transform 0.2s;
+  }
+
+  .faq-item details[open] summary::after {
+    content: '\2212';
+  }
+
+  .faq-item summary:hover {
+    background: var(--pale);
+  }
+
+  .faq-answer {
+    padding: 0 1.25rem 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .faq-answer p { margin-bottom: 0.75rem; }
+
+  .faq-answer strong { color: var(--navy); }
+
+  .faq-answer ul {
+    margin: 0.5rem 0 0.75rem 1.5rem;
+  }
+
+  .faq-answer li {
+    margin-bottom: 0.4rem;
+  }
+
+  .faq-tip {
+    background: var(--green-light);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+    font-size: 0.9rem;
+    color: var(--green);
+  }
+
+  .faq-tip strong { color: var(--green); }
+
+  .faq-cta {
+    background: linear-gradient(135deg, #0B3B5C 0%, #0E5A6F 100%);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2.5rem 0;
+  }
+
+  .faq-cta h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-cta p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+  }
+
+  .faq-cta a {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: var(--white);
+    color: var(--navy);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .faq-cta a:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+
+  .footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+  .footer a { color: #25CCCC; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  .footer-medical { display: block; margin-top: 0.75rem; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.9); }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.4rem; }
+    .faq-item summary { font-size: 0.92rem; padding: 0.85rem 1rem; }
+    .faq-answer { font-size: 0.9rem; padding: 0 1rem 1rem; }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2566350144413801" crossorigin="anonymous"></script>
+<script defer src="https://analytics.tapthemap.online/getinfo" data-website-id="5734e55c-87b7-4ada-ad28-58b1b465a20c"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is RXGator really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, completely free. There is no charge to search, no account to create, no credit card required, and no premium tier. RXGator is a public-benefit project funded by community support through Patreon and Ko-fi. It will always be free to use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why should I use RXGator instead of GoodRx?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GoodRx only shows GoodRx prices. RXGator searches all major pricing sources simultaneously — 18 data sources in one click — and shows you which one actually has the best deal. Sometimes GoodRx wins, sometimes Walmart's $4 program wins, sometimes Cost Plus by mail wins. RXGator shows you which is cheapest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Just go to rxgator.info, type your drug name, and search. No registration, no login, no email required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my information private?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. RXGator never sells, shares, or transmits your search data to advertisers or third parties. We don't track you across the web, we don't build profiles, and we don't use cookies for advertising."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are these prices guaranteed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prices are estimates. Drug prices can change daily, and the actual price at the pharmacy may differ based on your location, the specific pharmacy, and current availability. Always verify the price at the pharmacy counter before filling your prescription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use these prices with my insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends — but sometimes the discount price is cheaper than your insurance copay. Ask your pharmacist to run it both ways. Note that discount card prices do NOT count toward your insurance deductible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do the prices come from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RXGator searches 18 data sources simultaneously including Cost Plus Drugs, GoodRx, SingleCare, Amazon RxPass, Walmart Rx Program, Costco Pharmacy, NADAC (government pharmacy cost data), Medicare Part D, RxNorm, MedlinePlus, openFDA, and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is RXGator medical advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. RXGator is not a medical provider and does not provide medical advice. We provide prescription drug pricing information for comparison purposes only. Always consult your doctor or pharmacist before starting, stopping, or changing any medication."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="header">
+  <a href="/"><img src="/logo-reversed.png" alt="RXGator Home"></a>
+</div>
+
+<div class="nav">
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/faq.html">FAQ</a>
+  <a href="/privacy.html" data-i18n="navPrivacy">Privacy</a>
+  <a href="/terms.html" data-i18n="navTerms">Terms</a>
+  <a href="https://patreon.com/RXGator" target="_blank" rel="noopener" data-i18n="navSupport">Support Us</a>
+  <a href="/app" data-i18n="navSearch">Search Drugs</a>
+  <span style="margin-left:0.5rem;">
+    <button onclick="setLang('en')" id="langEN" style="padding:0.2rem 0.6rem; background:var(--teal); color:#fff; border:1px solid var(--teal); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">English</button>
+    <button onclick="setLang('es')" id="langES" style="padding:0.2rem 0.6rem; background:transparent; color:var(--teal); border:1px solid var(--teal); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">Español</button>
+  </span>
+</div>
+
+<main id="main-content">
+<div class="content">
+  <h1 data-i18n="faqTitle">Frequently Asked Questions</h1>
+  <p class="intro" data-i18n-html="faqIntro">Everything you need to know about using RXGator to find lower prescription drug prices. If your question isn't answered here, email us at <a href="mailto:info@rxgator.info" style="color:var(--teal);">info@rxgator.info</a>.</p>
+
+  <!-- SECTION 1: GETTING STARTED -->
+  <h2 class="faq-section-title" data-i18n="secGettingStarted">Getting Started</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qFree">Is RXGator really free?</summary>
+    <div class="faq-answer">
+      <p><strong>Yes, completely free.</strong> There is no charge to search, no account to create, no credit card required, and no premium tier. RXGator is a public-benefit project funded by community support through <a href="https://patreon.com/RXGator" style="color:var(--teal);">Patreon</a> and <a href="https://ko-fi.com/rxgator" style="color:var(--teal);">Ko-fi</a>. It will always be free to use.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qWhyNotGoodrx">Why should I use RXGator instead of GoodRx?</summary>
+    <div class="faq-answer">
+      <p><strong>GoodRx only shows GoodRx prices.</strong> SingleCare only shows SingleCare prices. Walmart doesn't tell you about Cost Plus. Your pharmacist doesn't know about Amazon RxPass. No single source is cheapest for every drug at every pharmacy.</p>
+      <p>RXGator searches <strong>all of them simultaneously</strong> — 18 data sources in one click — and shows you which one actually has the best deal. We're not replacing GoodRx. We're showing you whether GoodRx is the best deal, or whether something else beats it.</p>
+      <p>Sometimes GoodRx wins. Sometimes Walmart's $4 program wins. Sometimes Cost Plus by mail wins. The point is: you shouldn't have to check each one individually. That's what RXGator does for you.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qMoney">How does RXGator make money?</summary>
+    <div class="faq-answer">
+      <p>Transparency matters, so here's exactly how RXGator is funded:</p>
+      <ul>
+        <li><strong>Community support</strong> — monthly contributions through <a href="https://patreon.com/RXGator" style="color:var(--teal);">Patreon</a> and one-time tips through <a href="https://ko-fi.com/rxgator" style="color:var(--teal);">Ko-fi</a></li>
+        <li><strong>Display advertising</strong> — Google AdSense (pending approval) will show contextual ads that are clearly labeled. Your drug search data is never shared with advertisers.</li>
+        <li><strong>Affiliate commissions</strong> — when you click through to a pharmacy platform like GoodRx or Cost Plus Drugs and fill a prescription, RXGator may earn a small referral fee. This never affects how results are ranked — cheapest is always first.</li>
+      </ul>
+      <p>We will <strong>never</strong> sell your search data. If all funding stopped tomorrow, the free government data sources (NADAC, Medicare Part D, RxNorm, MedlinePlus, openFDA) would keep working indefinitely — those cost nothing to query. The tool would still be useful; we just couldn't add new discount card data.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qAccount">Do I need to create an account?</summary>
+    <div class="faq-answer">
+      <p><strong>No.</strong> Just go to <a href="/app" style="color:var(--teal);">rxgator.info/app</a>, type your drug name, and search. No registration, no login, no email required.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qPrivate">Is my information private?</summary>
+    <div class="faq-answer">
+      <p><strong>Yes.</strong> RXGator never sells, shares, or transmits your search data to advertisers or third parties. We don't track you across the web, we don't build profiles, and we don't use cookies for advertising. Your drug searches are logged only to help us understand which drugs are most searched so we can prioritize adding data. Read our full <a href="/privacy.html" style="color:var(--teal);">Privacy Policy</a> for details.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qWhatDrugs">What drugs can I search for?</summary>
+    <div class="faq-answer">
+      <p>You can search for any prescription drug by <strong>generic name</strong> (like "atorvastatin") or <strong>brand name</strong> (like "Lipitor"). RXGator automatically resolves brand names to their generic equivalents and shows you the generic prices, which are almost always cheaper.</p>
+      <div class="faq-tip"><strong>Tip:</strong> If you're not sure of the generic name, just type the brand name on your prescription bottle. RXGator will find it.</div>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qZip">Why does it ask for my zip code?</summary>
+    <div class="faq-answer">
+      <p>The zip code field is <strong>optional</strong>. When provided, it helps identify pharmacy prices near your location. Some data sources like SingleCare and GoodRx offer pharmacy-specific pricing that varies by zip code. If you leave it blank, RXGator shows national pricing from all sources.</p>
+      <p><strong>We never track or store your location.</strong> The zip code is used only for that one search and is not saved to any database.</p>
+    </div>
+  </details></div>
+
+  <!-- SECTION 2: UNDERSTANDING PRICES -->
+  <h2 class="faq-section-title" data-i18n="secUnderstanding">Understanding Your Results</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qReadResults">How do I read the price results?</summary>
+    <div class="faq-answer">
+      <p>After searching, you'll see a list of prices sorted <strong>lowest to highest</strong>. The cheapest option is always first, highlighted in green. Each result shows:</p>
+      <ul>
+        <li><strong>The source</strong> — where this price comes from (Cost Plus Drugs, GoodRx, Walmart, etc.)</li>
+        <li><strong>The price</strong> — what you would pay for a 30-day or 90-day supply</li>
+        <li><strong>"How do I get this price?"</strong> — click this for step-by-step instructions on how to actually get the price at the pharmacy</li>
+      </ul>
+      <p>The first result's instructions are already expanded so you can see exactly what to do.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qGuaranteed">Are these prices guaranteed?</summary>
+    <div class="faq-answer">
+      <p><strong>Prices are estimates.</strong> Drug prices can change daily, and the actual price at the pharmacy may differ based on your location, the specific pharmacy, and current availability. Always verify the price at the pharmacy counter before filling your prescription.</p>
+      <p>That said, the prices shown are based on real data from government databases, pharmacy programs, and discount card platforms. They are the best available estimates at the time of your search.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qPharmacyCost">What is the "Pharmacy Cost" benchmark?</summary>
+    <div class="faq-answer">
+      <p>The Pharmacy Cost (also called NADAC) is <strong>what your pharmacy pays to buy the drug from the manufacturer</strong>. It's published by the government as a transparency measure. If the price you're being charged is much higher than this number, there's a significant markup — and you should ask your pharmacist about cheaper options or use a discount card.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qMedicareCost">What is the "Medicare Average Cost"?</summary>
+    <div class="faq-answer">
+      <p>This shows the <strong>average cost per prescription fill across all Medicare Part D plans</strong>. It's useful as a benchmark — if you're on Medicare and paying significantly more than this average, you may want to review your plan's formulary or talk to your plan about alternatives.</p>
+      <p>The trend line shows whether this drug is getting more or less expensive over time (2020–2023 data from CMS).</p>
+    </div>
+  </details></div>
+
+  <!-- SECTION 3: SAVING MONEY -->
+  <h2 class="faq-section-title" data-i18n="secSaving">Saving Money on Prescriptions</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qGoodrxCoupon">How do I use a GoodRx coupon at the pharmacy?</summary>
+    <div class="faq-answer">
+      <p>It's simple:</p>
+      <ul>
+        <li>Search your drug on RXGator and find the GoodRx price</li>
+        <li>Click <strong>"View on GoodRx"</strong> in the search results</li>
+        <li>On GoodRx's website, select your pharmacy and get the coupon</li>
+        <li>Show the coupon to your pharmacist (on your phone screen or printed)</li>
+        <li>The pharmacist enters the discount code and you pay the lower price</li>
+      </ul>
+      <div class="faq-tip"><strong>Important:</strong> GoodRx coupons are NOT insurance. They are a separate discount. You can use them even if you have insurance — sometimes the GoodRx price is lower than your insurance copay.</div>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qPharmacist">Will my pharmacist accept these prices?</summary>
+    <div class="faq-answer">
+      <p><strong>Yes, in most cases.</strong> Discount card prices (GoodRx, SingleCare) are accepted at most major pharmacies including CVS, Walgreens, Walmart, Kroger, and Costco. The pharmacist processes the discount as a separate program — you simply show them the coupon or discount card information.</p>
+      <p>Pharmacy programs like Walmart's $4 program and Cost Plus Drugs are the pharmacy's own pricing — just ask for them at the counter.</p>
+      <p>If a pharmacist says they don't accept a particular discount, try a different pharmacy. Acceptance can vary by location.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qInsurance">Can I use these prices with my insurance?</summary>
+    <div class="faq-answer">
+      <p><strong>It depends — but sometimes the discount price is cheaper than your insurance copay.</strong> Here's how to think about it:</p>
+      <ul>
+        <li>If your insurance copay is <strong>higher</strong> than the discount card price, use the discount card instead. You can ask the pharmacist to run it both ways.</li>
+        <li>If your insurance copay is <strong>lower</strong>, use your insurance.</li>
+        <li>Discount card prices <strong>do NOT count toward your insurance deductible</strong>. If you're close to meeting your deductible, using insurance may be better long-term even if the copay is slightly higher.</li>
+      </ul>
+      <div class="faq-tip"><strong>Tip:</strong> Ask your pharmacist: "Can you check if the cash price or a discount card is cheaper than my copay?" They can run it both ways at the counter.</div>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qMedicareSave">How do I save money if I'm on Medicare?</summary>
+    <div class="faq-answer">
+      <p>Medicare Part D covers prescription drugs, but copays can still be significant. Here are your options:</p>
+      <ul>
+        <li><strong>Compare your Medicare copay to discount card prices.</strong> For some generics, a GoodRx or SingleCare coupon may be cheaper than your Medicare copay.</li>
+        <li><strong>Check if your drug is on the $4 list.</strong> Walmart's $4 program and similar pharmacy programs don't require insurance and may beat your copay.</li>
+        <li><strong>Apply for Extra Help (LIS).</strong> If your income is limited, Medicare's Extra Help program can reduce drug costs to $4–$10 per prescription. Call 1-800-MEDICARE.</li>
+        <li><strong>Check manufacturer assistance programs.</strong> After every RXGator search, you'll see links to NeedyMeds and RxAssist — many manufacturers offer copay assistance even for Medicare beneficiaries.</li>
+      </ul>
+      <p><strong>Important:</strong> If you use a discount card instead of Medicare, that cost does NOT count toward your Medicare Part D out-of-pocket maximum.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qPAP">What are patient assistance programs?</summary>
+    <div class="faq-answer">
+      <p>Many drug manufacturers offer programs that provide medications <strong>for free or at very low cost</strong> to people who qualify. These programs are especially helpful for expensive brand-name drugs.</p>
+      <p>You may qualify even if you have insurance or Medicare. Eligibility is usually based on income and insurance status. After every RXGator search, you'll see links to:</p>
+      <ul>
+        <li><strong><a href="https://www.needymeds.org" target="_blank" rel="noopener" style="color:inherit;">NeedyMeds</a></strong> — searches manufacturer programs by drug name</li>
+        <li><strong><a href="https://www.rxassist.org" target="_blank" rel="noopener" style="color:inherit;">RxAssist</a></strong> — comprehensive database of patient assistance programs</li>
+      </ul>
+      <p>These are free services. Applying typically involves filling out a form from the manufacturer. Your doctor's office can often help with the paperwork.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qBrandGeneric">What's the difference between brand and generic drugs?</summary>
+    <div class="faq-answer">
+      <p>A <strong>generic drug</strong> contains the same active ingredient, in the same dosage and form, as the brand-name drug. The FDA requires generics to be "bioequivalent" — meaning they work the same way in your body.</p>
+      <p>The difference is <strong>price</strong>. A brand-name drug like Lipitor might cost $200/month, while generic atorvastatin costs $2–$5/month. Same drug. Same effect. Fraction of the price.</p>
+      <p>When you search a brand name on RXGator, it automatically shows you generic prices and explains the connection. Over 90% of prescriptions filled in the U.S. are generics.</p>
+      <div class="faq-tip"><strong>Important:</strong> Always talk to your doctor before switching between brand and generic. In rare cases (certain thyroid medications, anti-seizure drugs), your doctor may have a specific reason for prescribing the brand name.</div>
+    </div>
+  </details></div>
+
+  <!-- SECTION 4: ABOUT THE TOOL -->
+  <h2 class="faq-section-title" data-i18n="secAbout">About RXGator</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qPriceSource">Where do the prices come from?</summary>
+    <div class="faq-answer">
+      <p>RXGator searches <strong>18 data sources</strong> simultaneously:</p>
+      <ul>
+        <li><strong><a href="https://costplusdrugs.com" target="_blank" rel="noopener" style="color:inherit;">Cost Plus Drugs</a></strong> — Mark Cuban's transparent pricing pharmacy (live API)</li>
+        <li><strong><a href="https://www.goodrx.com" target="_blank" rel="noopener" style="color:inherit;">GoodRx</a></strong> — discount card pricing at major pharmacies (cached data)</li>
+        <li><strong><a href="https://www.singlecare.com" target="_blank" rel="noopener" style="color:inherit;">SingleCare</a></strong> — discount card pricing with loyalty programs (cached data)</li>
+        <li><strong><a href="https://pharmacy.amazon.com/rxpass" target="_blank" rel="noopener" style="color:inherit;">Amazon RxPass</a></strong> — $5/month for 55+ generics for Prime members (built-in list)</li>
+        <li><strong><a href="https://www.walmart.com/cp/4-dollar-prescriptions/1078664" target="_blank" rel="noopener" style="color:inherit;">Walmart Rx Program</a></strong> — $4/$9/$15 generics (built-in list)</li>
+        <li><strong><a href="https://www.costco.com/pharmacy/" target="_blank" rel="noopener" style="color:inherit;">Costco Pharmacy</a></strong> — estimated retail pricing (built-in estimates)</li>
+        <li><strong><a href="https://data.medicaid.gov/datasets?keyword=nadac" target="_blank" rel="noopener" style="color:inherit;">NADAC</a></strong> — government data showing what pharmacies pay (Medicaid, live API)</li>
+        <li><strong>Federal Upper Limit</strong> — maximum Medicaid reimbursement (CMS data)</li>
+        <li><strong><a href="https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-opioid-prescribing-rates/medicare-part-d-spending-by-drug" target="_blank" rel="noopener" style="color:inherit;">Medicare Part D</a></strong> — average Medicare costs with trends (CMS, live API)</li>
+        <li><strong><a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="_blank" rel="noopener" style="color:inherit;">RxNorm</a></strong> — drug name matching and brand-to-generic resolution (NLM, live API)</li>
+        <li><strong><a href="https://medlineplus.gov" target="_blank" rel="noopener" style="color:inherit;">MedlinePlus</a></strong> — drug information in plain language (NLM, live API)</li>
+        <li><strong><a href="https://open.fda.gov" target="_blank" rel="noopener" style="color:inherit;">openFDA</a></strong> — drug safety and identification data (FDA, live API)</li>
+      </ul>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qUpdated">How often are prices updated?</summary>
+    <div class="faq-answer">
+      <p>It depends on the source:</p>
+      <ul>
+        <li><strong>Cost Plus Drugs, NADAC, Medicare Part D, RxNorm, MedlinePlus, openFDA</strong> — queried in real time on every search. Always current.</li>
+        <li><strong>GoodRx and SingleCare</strong> — cached data, updated periodically. Prices are recent but may be hours or days old.</li>
+        <li><strong>Walmart, Costco, Amazon RxPass</strong> — built-in lists, updated when program pricing changes (typically quarterly).</li>
+        <li><strong>Federal Upper Limit</strong> — updated monthly from CMS data.</li>
+      </ul>
+      <p>Always verify the final price at the pharmacy counter.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qWhoBuilt">Who built RXGator and why?</summary>
+    <div class="faq-answer">
+      <p>RXGator was built by <strong>Matt Overeem</strong>, a technology assessment professional with 34 years of experience in public infrastructure. It grew from a simple question: why isn't there one tool that shows every available price for a prescription drug?</p>
+      <p>RXGator is operated by Technology Assessment Project LLC, based in Glenview, Illinois. It's a public-benefit project — no venture capital, no corporate parent, no investors to satisfy. The tool exists to serve people who need affordable medication.</p>
+      <p>Read more on the <a href="/about.html" style="color:var(--teal);">About page</a>.</p>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qSupport">How can I support RXGator?</summary>
+    <div class="faq-answer">
+      <p>RXGator is funded by community support. Every dollar goes directly to data acquisition — the infrastructure that pulls pricing from discount card platforms.</p>
+      <ul>
+        <li><strong>Patreon</strong> — monthly support starting at $3/month: <a href="https://patreon.com/RXGator" style="color:var(--teal);">patreon.com/RXGator</a></li>
+        <li><strong>Share the tool</strong> — tell your friends, family, doctor, or pharmacist about rxgator.info</li>
+        <li><strong>Give feedback</strong> — after every search, there's a feedback form. Tell us what's missing or what could be better.</li>
+      </ul>
+    </div>
+  </details></div>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qMedAdvice">Is RXGator medical advice?</summary>
+    <div class="faq-answer">
+      <p><strong>No. RXGator is not a medical provider and does not provide medical advice.</strong> We provide prescription drug pricing information for comparison purposes only. Always consult your doctor or pharmacist before starting, stopping, or changing any medication. Read our full <a href="/terms.html" style="color:var(--teal);">Terms of Use</a>.</p>
+    </div>
+  </details></div>
+
+  <!-- SECTION 5: VETERANS -->
+  <h2 class="faq-section-title" data-i18n="secVeterans">🎖️ Veterans & Military Families</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qVA">I'm a veteran — should I use RXGator or my VA pharmacy?</summary>
+    <div class="faq-answer">
+      <p>First — <strong>thank you for your service.</strong> RXGator is grateful to every veteran and active-duty service member who has served or is serving this country. You've earned every benefit available to you.</p>
+      <p>The short answer: <strong>check both.</strong> Your VA pharmacy and TRICARE benefits may offer the best prices — many veterans receive prescriptions at $0 copay for service-connected conditions, and VA mail-order pharmacy provides 90-day supplies at minimal cost.</p>
+      <p>But there are situations where RXGator can help:</p>
+      <ul>
+        <li><strong>Non-service-connected prescriptions</strong> may have higher VA copays. A discount card at your local CVS or Walmart might be cheaper.</li>
+        <li><strong>Convenience</strong> — if your nearest VA pharmacy is a long drive, a $2 GoodRx coupon at the pharmacy next door might save you time and gas money.</li>
+        <li><strong>Family members</strong> — your spouse and dependents may not have VA pharmacy access. RXGator helps them find the lowest civilian prices.</li>
+        <li><strong>Transitioning out of military service</strong> — if you're between TRICARE and civilian coverage, discount cards bridge the gap at no cost.</li>
+      </ul>
+      <div class="faq-tip"><strong>VA Pharmacy Resources:</strong>
+        <br>• <a href="https://www.va.gov/health-care/prescriptions/" style="color:var(--green);">VA Prescription Services</a> — refill prescriptions, check VA pharmacy benefits
+        <br>• <a href="https://www.va.gov/health-care/eligibility/" style="color:var(--green);">VA Health Care Eligibility</a> — check if you qualify for VA health benefits
+        <br>• <a href="https://www.tricare.mil/CoveredServices/Pharmacy" style="color:var(--green);">TRICARE Pharmacy</a> — active duty, retiree, and family pharmacy benefits
+      </div>
+      <p>RXGator shows you the civilian options. Compare them to your VA or TRICARE copay and choose whichever saves you more. You served this country — you shouldn't overpay for your medication.</p>
+    </div>
+  </details></div>
+
+  <!-- SECTION 6: MEDICARE COVERAGE GAP -->
+  <h2 class="faq-section-title" data-i18n="secMedicare">Medicare Coverage Gap</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qDonutHole">What is the Medicare "donut hole" and how does RXGator help?</summary>
+    <div class="faq-answer">
+      <p>The Medicare Part D <strong>"donut hole"</strong> (officially the "coverage gap") is a period where your drug costs suddenly increase. Here's how it works:</p>
+      <ul>
+        <li><strong>Initial Coverage:</strong> You pay your normal copays until your total drug costs reach a threshold (around $5,030 in 2026).</li>
+        <li><strong>Coverage Gap (Donut Hole):</strong> You now pay 25% of the cost for brand-name drugs and generics until your out-of-pocket spending reaches the catastrophic threshold.</li>
+        <li><strong>Catastrophic Coverage:</strong> Your costs drop significantly — you pay a small copay or coinsurance for the rest of the year.</li>
+      </ul>
+      <p><strong>This is exactly when RXGator is most valuable.</strong> When you enter the donut hole, your Medicare costs spike — but discount card prices don't change. A drug that cost you $10/month with your plan copay might suddenly cost $50/month in the gap. Meanwhile, a free GoodRx coupon still gives you the same $2 price it always did.</p>
+      <div class="faq-tip"><strong>Donut Hole Strategy:</strong> When you hit the coverage gap, search every medication on RXGator and compare the discount card price to your plan's gap pricing. For many generics, paying cash with a discount card is dramatically cheaper than your 25% cost-sharing. Important: discount card purchases do NOT count toward your out-of-pocket maximum, so weigh this decision carefully for expensive drugs.</div>
+    </div>
+  </details></div>
+
+  <!-- SECTION 7: UNINSURED -->
+  <h2 class="faq-section-title">No Insurance?</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qNoInsurance">I don't have insurance — can RXGator still help me?</summary>
+    <div class="faq-answer">
+      <p><strong>Absolutely — RXGator may be even more valuable for you than for insured patients.</strong></p>
+      <p>Here's what most uninsured people don't realize: discount cards like GoodRx and SingleCare are <strong>NOT insurance</strong>. They're free discount programs that anyone can use, and they often provide prices lower than what insured patients pay in copays. You don't need to qualify, sign up, or pay anything.</p>
+      <p>Your playbook as an uninsured patient:</p>
+      <ul>
+        <li><strong>Search every drug on RXGator</strong> — you'll see prices from 18 sources. The lowest price is what you pay at the pharmacy with a free coupon.</li>
+        <li><strong>Check Walmart's $4 program</strong> — 85 generics, $4 for 30 days, no card or coupon needed. Just ask at the counter.</li>
+        <li><strong>Consider Cost Plus Drugs</strong> — Mark Cuban's mail-order pharmacy charges cost + 15% + flat fees. Often the cheapest option.</li>
+        <li><strong><a href="https://pharmacy.amazon.com/rxpass" target="_blank" rel="noopener" style="color:inherit;">Amazon RxPass</a></strong> — $5/month covers 55+ generics if you have Amazon Prime.</li>
+        <li><strong>Apply for manufacturer assistance</strong> — RXGator links to NeedyMeds and RxAssist after every search. Many manufacturers provide expensive medications for free to uninsured patients.</li>
+        <li><strong>Check Medicaid eligibility</strong> — visit <a href="https://www.healthcare.gov/medicaid-chip/" style="color:var(--teal);">healthcare.gov/medicaid-chip</a> to see if you qualify.</li>
+      </ul>
+      <div class="faq-tip"><strong>Key insight:</strong> For common generics, an uninsured person using a free GoodRx coupon often pays LESS than an insured person paying their copay. The system is that broken. RXGator exists to show you all your options.</div>
+    </div>
+  </details></div>
+
+  <!-- SECTION 8: CAREGIVERS -->
+  <h2 class="faq-section-title">For Caregivers</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qCaregiver">I manage medications for a family member — how can RXGator help?</summary>
+    <div class="faq-answer">
+      <p><strong>If you're the one who fills the pillbox, drives to the pharmacy, argues with the insurance company, and makes sure mom takes her medication — this tool was built for you.</strong></p>
+      <p>Caregivers are often the ones who actually compare prices, but most pricing tools are designed for the patient, not the person managing their care. Here's how to use RXGator as a caregiver:</p>
+      <ul>
+        <li><strong>Search all of your family member's medications</strong> — RXGator remembers your recent searches, so they're right there next time you visit.</li>
+        <li><strong>Use the Share button</strong> — tap 📤 Share to text or email the results to other family members so everyone is on the same page.</li>
+        <li><strong>Print the results</strong> — on a computer, click 🖨 Print Results and bring the printout to the pharmacy. On a phone, show the screen directly to the pharmacist.</li>
+        <li><strong>Check manufacturer assistance programs</strong> — if your family member takes expensive brand-name drugs, the manufacturer copay cards and patient assistance programs can save hundreds per month. RXGator shows these after every search.</li>
+        <li><strong>Switch to Spanish</strong> — if the person you're caring for prefers Spanish, tap "Español" in the header. The entire interface, including step-by-step pharmacy instructions, switches to Spanish. They can show it to the pharmacist directly.</li>
+      </ul>
+      <p>You're doing important, difficult, often invisible work. RXGator can't make caregiving easy, but it can take the prescription price research off your plate.</p>
+    </div>
+  </details></div>
+
+  <!-- SECTION 9: YOUNG ADULTS -->
+  <h2 class="faq-section-title">Just Starting to Buy Your Own Prescriptions?</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qAgedOff">I just aged off my parents' insurance — where do I start?</summary>
+    <div class="faq-answer">
+      <p><strong>Welcome to the most confusing market in America.</strong> Here's the 2-minute version:</p>
+      <p>You do NOT need insurance to get low prescription prices. Discount cards like GoodRx and SingleCare are <strong>completely free</strong> — they're not insurance, they're just discount programs anyone can use. Show the coupon on your phone at the pharmacy and you pay the discounted price.</p>
+      <ul>
+        <li><strong>Generic drugs are cheap.</strong> Most common medications (antidepressants, allergy, birth control) cost $2-10/month with a free coupon. The pharmacy's cash price might be $30-60 for the same pill.</li>
+        <li><strong>Never pay the sticker price.</strong> Always check RXGator first — 18 sources, one click.</li>
+        <li><strong>Walmart sells 85 drugs for $4.</strong> No coupon needed. Just ask.</li>
+        <li><strong>Amazon RxPass is $5/month</strong> for 55+ generics if you have Prime.</li>
+        <li><strong>Ask your doctor for the generic.</strong> It costs 90% less and works the same.</li>
+      </ul>
+      <div class="faq-tip"><strong>Quick start:</strong> Search your medication on RXGator. Click "How do I get this price?" on the cheapest option. Follow the steps. You'll probably save $20-50 on your first fill.</div>
+    </div>
+  </details></div>
+
+  <!-- SECTION 10: PrEP -->
+  <h2 class="faq-section-title">PrEP & High-Cost Specialty Medications</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="qPrEP">I take PrEP (Truvada or Descovy) — can RXGator help?</summary>
+    <div class="faq-answer">
+      <p>PrEP costs $1,600-2,000/month without assistance. But <strong>most people qualify for programs that reduce the cost to $0.</strong></p>
+      <ul>
+        <li><strong>Gilead Advancing Access Copay Card</strong> — commercial insurance? Gilead reduces your cost to $0. Apply at <a href="https://www.gileadadvancingaccess.com/" style="color:var(--teal);">gileadadvancingaccess.com</a></li>
+        <li><strong>Gilead Patient Assistance</strong> — uninsured? Free medication. Same website.</li>
+        <li><strong>Ready, Set, PrEP</strong> — federal program providing PrEP at no cost. Visit <a href="https://readysetprep.hiv.gov/" style="color:var(--teal);">readysetprep.hiv.gov</a></li>
+        <li><strong>State ADAP programs</strong> — many states cover PrEP through AIDS Drug Assistance Programs.</li>
+      </ul>
+      <div class="faq-tip"><strong>Nobody should go without PrEP because of cost.</strong> Between Gilead's programs and Ready, Set, PrEP, $0 PrEP is available to virtually everyone who needs it.</div>
+    </div>
+  </details></div>
+
+  <!-- SECTION 11: 340B -->
+  <h2 class="faq-section-title">Community Health Centers & 340B Program</h2>
+
+  <div class="faq-item"><details>
+    <summary data-i18n="q340B">What is the 340B program? Could I already be getting cheaper drugs?</summary>
+    <div class="faq-answer">
+      <p>The <strong>340B Drug Pricing Program</strong> requires manufacturers to sell medications at deep discounts to community health centers, public hospitals, and certain clinics. If you receive care at one of these facilities, you may have access to prescriptions at <strong>$0-5 per fill</strong>.</p>
+      <p>You might qualify if you are uninsured, underinsured, have low income, or receive care at a federally funded clinic.</p>
+      <p><strong>Find a health center near you:</strong> <a href="https://findahealthcenter.hrsa.gov/" style="color:var(--teal);">findahealthcenter.hrsa.gov</a> — enter your zip code. These centers serve everyone regardless of ability to pay.</p>
+      <div class="faq-tip"><strong>Already at a community health center?</strong> Ask if they have a 340B pharmacy. You may already be getting the best possible price.</div>
+    </div>
+  </details></div>
+
+  <!-- CTA -->
+  <div class="faq-cta">
+    <h3>Ready to find lower prices?</h3>
+    <p>Search any prescription drug across 18 data sources. Free, private, no account required.</p>
+    <a href="/app">Search Drug Prices</a>
+  </div>
+
+  <p style="font-size:0.88rem; color:var(--gray-500); text-align:center;">Still have questions? Email us at <a href="mailto:info@rxgator.info" style="color:var(--teal);">info@rxgator.info</a></p>
+</div>
+</main>
+
+<div class="footer">
+  RXGator &mdash; Prescription Aggregator &mdash; <a href="https://rxgator.info">rxgator.info</a><br>
+  <a href="/">Home</a> &middot; <a href="/about.html">About</a> &middot; <a href="/faq.html">FAQ</a> &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a> &middot; <a href="https://github.com/mattovereem2636/rxgator">GitHub</a> &middot; <a href="https://ko-fi.com/rxgator">Ko-fi</a>
+  <span class="footer-medical">RXGator is not a medical provider. This tool does not provide medical advice. Always consult your doctor or pharmacist before making changes to your medications.</span>
+</div>
+
+<script>
+const T = {
+  navPrivacy: { en: 'Privacy', es: 'Privacidad' },
+  navTerms: { en: 'Terms', es: 'Términos' },
+  navSupport: { en: 'Support Us', es: 'Apóyanos' },
+  navSearch: { en: 'Search Drugs', es: 'Buscar Medicamentos' },
+  faqTitle: { en: 'Frequently Asked Questions', es: 'Preguntas Frecuentes' },
+  faqIntro: { en: 'Everything you need to know about using RXGator to find lower prescription drug prices. If your question isn\'t answered here, email us at <a href="mailto:info@rxgator.info" style="color:var(--teal);">info@rxgator.info</a>.', es: 'Todo lo que necesita saber sobre cómo usar RXGator para encontrar precios más bajos de medicamentos recetados. Si su pregunta no está respondida aquí, escríbanos a <a href="mailto:info@rxgator.info" style="color:var(--teal);">info@rxgator.info</a>.' },
+  secGettingStarted: { en: 'Getting Started', es: 'Primeros Pasos' },
+  secUnderstanding: { en: 'Understanding Your Results', es: 'Entendiendo Sus Resultados' },
+  secSaving: { en: 'Saving Money on Prescriptions', es: 'Ahorrando en Medicamentos Recetados' },
+  secAbout: { en: 'About RXGator', es: 'Acerca de RXGator' },
+  secVeterans: { en: '🎖️ Veterans & Military Families', es: '🎖️ Veteranos y Familias Militares' },
+  secMedicare: { en: 'Medicare Coverage Gap', es: 'Brecha de Cobertura de Medicare' },
+  qFree: { en: 'Is RXGator really free?', es: '¿RXGator es realmente gratis?' },
+  qWhyNotGoodrx: { en: 'Why should I use RXGator instead of GoodRx?', es: '¿Por qué debería usar RXGator en lugar de GoodRx?' },
+  qMoney: { en: 'How does RXGator make money?', es: '¿Cómo gana dinero RXGator?' },
+  qAccount: { en: 'Do I need to create an account?', es: '¿Necesito crear una cuenta?' },
+  qPrivate: { en: 'Is my information private?', es: '¿Mi información es privada?' },
+  qWhatDrugs: { en: 'What drugs can I search for?', es: '¿Qué medicamentos puedo buscar?' },
+  qZip: { en: 'Why does it ask for my zip code?', es: '¿Por qué pide mi código postal?' },
+  qReadResults: { en: 'How do I read the price results?', es: '¿Cómo leo los resultados de precios?' },
+  qGuaranteed: { en: 'Are these prices guaranteed?', es: '¿Estos precios están garantizados?' },
+  qPharmacyCost: { en: 'What is the "Pharmacy Cost" benchmark?', es: '¿Qué es el "Costo de Farmacia"?' },
+  qMedicareCost: { en: 'What is the "Medicare Average Cost"?', es: '¿Qué es el "Costo Promedio de Medicare"?' },
+  qGoodrxCoupon: { en: 'How do I use a GoodRx coupon at the pharmacy?', es: '¿Cómo uso un cupón de GoodRx en la farmacia?' },
+  qPharmacist: { en: 'Will my pharmacist accept these prices?', es: '¿Mi farmacéutico aceptará estos precios?' },
+  qInsurance: { en: 'Can I use these prices with my insurance?', es: '¿Puedo usar estos precios con mi seguro?' },
+  qMedicareSave: { en: "How do I save money if I'm on Medicare?", es: '¿Cómo ahorro dinero si tengo Medicare?' },
+  qPAP: { en: 'What are patient assistance programs?', es: '¿Qué son los programas de asistencia al paciente?' },
+  qBrandGeneric: { en: "What's the difference between brand and generic drugs?", es: '¿Cuál es la diferencia entre medicamentos de marca y genéricos?' },
+  qPriceSource: { en: 'Where do the prices come from?', es: '¿De dónde vienen los precios?' },
+  qUpdated: { en: 'How often are prices updated?', es: '¿Con qué frecuencia se actualizan los precios?' },
+  qWhoBuilt: { en: 'Who built RXGator and why?', es: '¿Quién construyó RXGator y por qué?' },
+  qSupport: { en: 'How can I support RXGator?', es: '¿Cómo puedo apoyar a RXGator?' },
+  qMedAdvice: { en: 'Is RXGator medical advice?', es: '¿RXGator es un consejo médico?' },
+  qVA: { en: "I'm a veteran — should I use RXGator or my VA pharmacy?", es: 'Soy veterano — ¿debería usar RXGator o mi farmacia del VA?' },
+  qDonutHole: { en: 'What is the Medicare "donut hole" and how does RXGator help?', es: '¿Qué es el "donut hole" de Medicare y cómo ayuda RXGator?' },
+  qNoInsurance: { en: "I don't have insurance — can RXGator still help me?", es: 'No tengo seguro — ¿RXGator puede ayudarme?' },
+  qCaregiver: { en: 'I manage medications for a family member — how can RXGator help?', es: 'Administro los medicamentos de un familiar — ¿cómo puede ayudar RXGator?' },
+  qAgedOff: { en: "I just aged off my parents' insurance — where do I start?", es: 'Acabo de perder el seguro de mis padres — ¿por dónde empiezo?' },
+  qPrEP: { en: 'I take PrEP (Truvada or Descovy) — can RXGator help?', es: 'Tomo PrEP (Truvada o Descovy) — ¿puede ayudar RXGator?' },
+  q340B: { en: 'What is the 340B program? Could I already be getting cheaper drugs?', es: '¿Qué es el programa 340B? ¿Podría ya estar obteniendo medicamentos más baratos?' },
+};
+
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  try { localStorage.setItem('rxgator_lang', lang); } catch(e) {}
+  document.getElementById('langEN').style.background = lang === 'en' ? 'var(--teal)' : 'transparent';
+  document.getElementById('langEN').style.color = lang === 'en' ? '#fff' : 'var(--teal)';
+  document.getElementById('langES').style.background = lang === 'es' ? 'var(--teal)' : 'transparent';
+  document.getElementById('langES').style.color = lang === 'es' ? '#fff' : 'var(--teal)';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (T[key]) el.textContent = T[key][lang] || T[key].en;
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    if (T[key]) el.innerHTML = T[key][lang] || T[key].en;
+  });
+}
+
+// Detect language: saved preference > browser language > English
+(function() {
+  let preferred = '';
+  try { preferred = localStorage.getItem('rxgator_lang') || ''; } catch(e) {}
+  if (!preferred) {
+    const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    preferred = browserLang.startsWith('es') ? 'es' : 'en';
+  }
+  if (preferred === 'es') {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => setLang('es'));
+    } else {
+      setLang('es');
+    }
+  }
+})();
+</script>
+</body>
+</html>

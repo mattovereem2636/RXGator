@@ -367,3 +367,39 @@ a:hover { color: var(--teal-dark); }
   color: #5D6D7E;
   font-style: normal;
 }
+
+/* ── Font Size Buttons ── */
+.font-size-btns {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+.font-size-btns .fs-label {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-right: 2px;
+}
+.font-size-btns button {
+  padding: 2px 8px;
+  background: transparent;
+  color: #cbd5e1;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+  line-height: 1.4;
+}
+.font-size-btns button:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+.font-size-btns button.active {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal);
+}
+@media (max-width: 600px) {
+  .font-size-btns { margin-left: 0; margin-top: 6px; }
+}

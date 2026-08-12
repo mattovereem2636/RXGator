@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAP Finder — Free &amp; Low-Cost Medication Programs | RxGator</title>
+<meta name="description" content="Find Patient Assistance Programs (PAPs) for your medications. Search 100 top-prescribed drugs to discover free medication programs, eligibility requirements, and how to apply.">
+<meta name="keywords" content="patient assistance program, free medication, PAP finder, prescription help, drug assistance, RxGator">
+<link rel="canonical" href="https://rxgator.info/pap-finder">
+<meta property="og:title" content="PAP Finder — Free & Low-Cost Medication Programs | RxGator">
+<meta property="og:description" content="Search Patient Assistance Programs for 100 top-prescribed drugs. Find free medication programs and eligibility requirements.">
+<meta property="og:url" content="https://rxgator.info/pap-finder">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RxGator">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PAP Finder — Free & Low-Cost Medication Programs">
+<meta name="twitter:description" content="Search Patient Assistance Programs for 100 top-prescribed drugs.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "RxGator PAP Finder",
+  "description": "Search Patient Assistance Programs (PAPs) for 100 top-prescribed medications. Find free medication programs, check eligibility, and apply online.",
+  "url": "https://rxgator.info/pap-finder",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "RxGator",
+    "url": "https://rxgator.info"
+  }
+}
+</script>
+
+<style>
+/* ── Variables ── */
+:root {
+  --navy: #0B3B5C;
+  --blue: #0C8080;
+  --blue-bright: #12A3A3;
+  --light-blue: #D0F0F0;
+  --pale: #F2F7FA;
+  --green: #1E8449;
+  --green-dark: #145A32;
+  --green-light: #D5F5E3;
+  --orange: #E67E22;
+  --orange-dark: #A04000;
+  --orange-light: #FDEBD0;
+  --red: #C0392B;
+  --red-light: #FADBD8;
+  --gray-700: #2C3E50;
+  --gray-500: #5D6D7E;
+  --gray-400: #7F8C8D;
+  --gray-300: #AEB6BF;
+  --gray-200: #D5D8DC;
+  --gray-100: #EAECEE;
+  --white: #FFFFFF;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--gray-700);
+  background: var(--pale);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Top Bar ── */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 56px;
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo-link {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.5px;
+}
+.logo-link:hover { text-decoration: none; opacity: 0.9; }
+.top-bar nav { display: flex; gap: 20px; }
+.top-bar nav a {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.top-bar nav a:hover { color: var(--white); text-decoration: none; }
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, #0a4f6d 50%, var(--blue) 100%);
+  padding: 48px 24px 56px;
+  text-align: center;
+  color: var(--white);
+}
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+.hero p {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+/* ── Search ── */
+.search-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+.search-input {
+  width: 100%;
+  padding: 16px 20px 16px 48px;
+  font-size: 1.1rem;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--gray-700);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-input::placeholder { color: var(--gray-400); }
+.search-input:focus {
+  border-color: var(--blue-bright);
+  box-shadow: 0 0 0 4px rgba(18,163,163,0.2);
+}
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: var(--gray-400);
+  pointer-events: none;
+}
+
+/* ── Autocomplete ── */
+.autocomplete-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 50;
+  display: none;
+}
+.autocomplete-list.open { display: block; }
+.ac-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--gray-100);
+  transition: background 0.1s;
+}
+.ac-item:last-child { border-bottom: none; }
+.ac-item:hover, .ac-item.active { background: var(--pale); }
+.ac-item .ac-names {
+  flex: 1;
+}
+.ac-item .ac-generic { font-weight: 600; color: var(--gray-700); }
+.ac-item .ac-brand { font-size: 0.85rem; color: var(--gray-500); }
+.ac-item .ac-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.ac-badge.has-pap { background: var(--green-light); color: var(--green-dark); }
+.ac-badge.no-pap { background: var(--light-blue); color: var(--blue); }
+
+/* ── Stats Bar ── */
+.stats-bar {
+  text-align: center;
+  padding: 14px 24px;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  font-size: 0.88rem;
+  color: var(--gray-500);
+}
+.stats-bar span { font-weight: 600; color: var(--gray-700); }
+
+/* ── Main Content ── */
+.main-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+}
+
+/* ── Result Card ── */
+.result-card {
+  background: var(--white);
+  border-radius: 14px;
+  border: 2px solid var(--gray-200);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  margin-bottom: 28px;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.result-card.pap-available { border-color: var(--green); }
+.result-card.no-pap { border-color: var(--blue); }
+
+.card-header {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.result-card.pap-available .card-header { background: var(--green-light); }
+.result-card.no-pap .card-header { background: var(--light-blue); }
+
+.card-header-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+}
+.result-card.pap-available .card-header-icon { background: var(--green); color: var(--white); }
+.result-card.no-pap .card-header-icon { background: var(--blue); color: var(--white); }
+
+.card-header-text h2 { font-size: 1.15rem; font-weight: 700; line-height: 1.3; }
+.result-card.pap-available .card-header-text h2 { color: var(--green-dark); }
+.result-card.no-pap .card-header-text h2 { color: var(--navy); }
+.card-header-text p { font-size: 0.88rem; color: var(--gray-500); margin-top: 2px; }
+
+.card-body { padding: 24px; }
+
+/* ── Drug Title Row ── */
+.drug-title-row {
+  margin-bottom: 20px;
+}
+.drug-title-row h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.drug-title-row .drug-class {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+
+/* ── Detail Grid ── */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.detail-item {
+  padding: 14px 16px;
+  background: var(--pale);
+  border-radius: 10px;
+}
+.detail-item.full-width { grid-column: 1 / -1; }
+.detail-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: var(--gray-500);
+  margin-bottom: 4px;
+}
+.detail-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+.detail-value a { color: var(--blue); }
+
+/* ── Action Buttons ── */
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.1s, box-shadow 0.15s;
+  line-height: 1;
+}
+.btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); text-decoration: none; }
+.btn-primary {
+  background: var(--green);
+  color: var(--white);
+}
+.btn-primary:hover { background: var(--green-dark); }
+.btn-secondary {
+  background: var(--white);
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+.btn-secondary:hover { background: var(--light-blue); }
+.btn-cta {
+  background: var(--blue);
+  color: var(--white);
+}
+.btn-cta:hover { background: var(--blue-bright); }
+
+.phone-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  background: var(--orange-light);
+  border-radius: 10px;
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+.phone-row .phone-icon { font-size: 1.1rem; }
+.phone-row a {
+  font-weight: 700;
+  color: var(--orange-dark);
+  font-size: 1.1rem;
+}
+
+/* ── Generic Note ── */
+.generic-note {
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: var(--light-blue);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--navy);
+  border-left: 4px solid var(--blue);
+}
+.generic-note strong { display: block; margin-bottom: 4px; }
+
+/* ── Fallback Resources Grid ── */
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+.resource-card {
+  padding: 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.resource-card:hover { border-color: var(--blue); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.resource-card h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.resource-card p { font-size: 0.8rem; color: var(--gray-500); margin-bottom: 8px; }
+.resource-card a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+/* ── FPL Calculator ── */
+.fpl-section {
+  margin-top: 28px;
+}
+.fpl-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  width: 100%;
+  text-align: left;
+  transition: border-color 0.15s;
+}
+.fpl-toggle:hover { border-color: var(--blue); }
+.fpl-toggle .toggle-icon {
+  transition: transform 0.2s;
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+.fpl-toggle.expanded .toggle-icon { transform: rotate(180deg); }
+
+.fpl-panel {
+  display: none;
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 24px;
+  margin-top: -2px;
+}
+.fpl-panel.open { display: block; }
+
+.fpl-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.fpl-field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray-500);
+  margin-bottom: 6px;
+}
+.fpl-field select,
+.fpl-field input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid var(--gray-200);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--gray-700);
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.fpl-field select:focus,
+.fpl-field input:focus { border-color: var(--blue-bright); }
+
+.fpl-results {
+  padding: 20px;
+  background: var(--pale);
+  border-radius: 10px;
+}
+.fpl-pct {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+.fpl-thresholds {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.fpl-threshold {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+.fpl-threshold.qualifies { background: var(--green-light); color: var(--green-dark); }
+.fpl-threshold.no-qualify { background: var(--gray-100); color: var(--gray-500); }
+.fpl-threshold .check { font-weight: 700; font-size: 1rem; }
+
+/* ── Empty State ── */
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--gray-400);
+}
+.empty-state .empty-icon { font-size: 3rem; margin-bottom: 16px; opacity: 0.5; }
+.empty-state h3 { font-size: 1.1rem; color: var(--gray-500); margin-bottom: 8px; }
+.empty-state p { font-size: 0.9rem; max-width: 400px; margin: 0 auto; }
+
+/* ── Loading ── */
+.loading-state {
+  text-align: center;
+  padding: 60px 24px;
+}
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--gray-200);
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-state p { color: var(--gray-400); }
+
+/* ── Error ── */
+.error-state {
+  text-align: center;
+  padding: 40px 24px;
+  background: var(--red-light);
+  border-radius: 12px;
+  margin: 24px 0;
+}
+.error-state h3 { color: var(--red); margin-bottom: 8px; }
+.error-state p { color: var(--gray-700); font-size: 0.9rem; }
+
+/* ── Footer ── */
+.site-footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.7);
+  padding: 32px 24px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.footer-links { margin-bottom: 12px; }
+.footer-links a {
+  color: rgba(255,255,255,0.7);
+  margin: 0 6px;
+}
+.footer-links a:hover { color: var(--white); }
+.footer-disclaimer {
+  max-width: 640px;
+  margin: 16px auto 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .hero { padding: 32px 16px 40px; }
+  .hero h1 { font-size: 1.5rem; }
+  .hero p { font-size: 0.95rem; }
+  .search-input { font-size: 1rem; padding: 14px 16px 14px 44px; }
+  .main-content { padding: 20px 16px 40px; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .resources-grid { grid-template-columns: 1fr; }
+  .fpl-form { grid-template-columns: 1fr; }
+  .action-buttons { flex-direction: column; }
+  .btn { justify-content: center; }
+  .top-bar nav { gap: 12px; }
+  .top-bar nav a { font-size: 0.8rem; }
+  .stats-bar { font-size: 0.8rem; }
+}
+
+/* ── Print ── */
+@media print {
+  .top-bar, .hero, .fpl-section, .stats-bar, .action-buttons, .search-wrap { display: none; }
+  body { background: white; }
+  .main-content { padding: 0; max-width: 100%; }
+  .result-card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+  .site-footer { background: none; color: #333; border-top: 1px solid #ccc; }
+  .footer-disclaimer { opacity: 1; }
+  a { color: #333; }
+  a::after { content: " (" attr(href) ")"; font-size: 0.75rem; color: #666; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── Top Bar ── -->
+<div class="top-bar">
+  <a href="/" class="logo-link">RXGator</a>
+  <nav>
+    <a href="/">Price Search</a>
+    <a href="/articles/">Articles</a>
+    <a href="/about.html">About</a>
+    <span style="display:inline-flex; align-items:center; gap:3px; margin-left:0.5rem; border-left:1px solid rgba(255,255,255,0.2); padding-left:0.75rem;">
+      <span style="font-size:0.7rem; color:rgba(255,255,255,0.5);">Text:</span>
+      <button onclick="setTextSize('normal')" id="sizeA" style="padding:0.1rem 0.35rem; background:rgba(255,255,255,0.25); color:#fff; border:1px solid rgba(255,255,255,0.5); border-radius:3px; cursor:pointer; font-size:0.7rem; font-weight:600;">A</button>
+      <button onclick="setTextSize('large')" id="sizeAA" style="padding:0.1rem 0.35rem; background:transparent; color:rgba(255,255,255,0.7); border:1px solid rgba(255,255,255,0.3); border-radius:3px; cursor:pointer; font-size:0.8rem; font-weight:600;">A+</button>
+      <button onclick="setTextSize('xlarge')" id="sizeAAA" style="padding:0.1rem 0.35rem; background:transparent; color:rgba(255,255,255,0.7); border:1px solid rgba(255,255,255,0.3); border-radius:3px; cursor:pointer; font-size:0.9rem; font-weight:600;">A++</button>
+    </span>
+  </nav>
+</div>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <h1>Patient Assistance Program Finder</h1>
+  <p>Search the top 100 most-prescribed medications to find free or low-cost drug programs you may qualify for.</p>
+  <div class="search-wrap">
+    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input type="text"
+           class="search-input"
+           id="searchInput"
+           placeholder="Search your medication (e.g., Ozempic, lisinopril, Eliquis...)"
+           autocomplete="off"
+           role="combobox"
+           aria-expanded="false"
+           aria-controls="acList"
+           aria-autocomplete="list"
+           aria-label="Search medications">
+    <div class="autocomplete-list" id="acList" role="listbox" aria-label="Medication suggestions"></div>
+  </div>
+</section>
+
+<!-- ── Stats Bar ── -->
+<div class="stats-bar" id="statsBar">
+  Loading medication database...
+</div>
+
+<!-- ── Main Content ── -->
+<main class="main-content">
+  <div id="resultArea">
+    <div class="empty-state" id="emptyState">
+      <div class="empty-icon">&#128138;</div>
+      <h3>Search for your medication above</h3>
+      <p>We cover the top 100 most-prescribed drugs in the US, including brand-name medications with manufacturer Patient Assistance Programs.</p>
+    </div>
+    <div class="loading-state" id="loadingState" style="display:none;">
+      <div class="loading-spinner"></div>
+      <p>Loading medication database...</p>
+    </div>
+    <div id="errorState" style="display:none;"></div>
+    <div id="drugResult" style="display:none;"></div>
+  </div>
+
+  <!-- ── FPL Calculator ── -->
+  <div class="fpl-section">
+    <button class="fpl-toggle" id="fplToggle" aria-expanded="false" aria-controls="fplPanel">
+      <span>&#128200;</span>
+      <span>FPL Eligibility Calculator</span>
+      <span class="toggle-icon">&#9660;</span>
+    </button>
+    <div class="fpl-panel" id="fplPanel" role="region" aria-label="Federal Poverty Level calculator">
+      <p style="font-size:0.9rem;color:var(--gray-500);margin-bottom:16px;">
+        Most Patient Assistance Programs use the Federal Poverty Level (FPL) to determine eligibility. Enter your household details to see if you may qualify.
+      </p>
+      <div class="fpl-form">
+        <div class="fpl-field">
+          <label for="hhSize">Household Size</label>
+          <select id="hhSize" aria-label="Household size">
+            <option value="1">1 person</option>
+            <option value="2">2 people</option>
+            <option value="3">3 people</option>
+            <option value="4" selected>4 people</option>
+            <option value="5">5 people</option>
+            <option value="6">6 people</option>
+            <option value="7">7 people</option>
+            <option value="8">8+ people</option>
+          </select>
+        </div>
+        <div class="fpl-field">
+          <label for="hhIncome">Annual Household Income ($)</label>
+          <input type="number" id="hhIncome" placeholder="e.g. 45000" min="0" step="1000" aria-label="Annual household income in dollars">
+        </div>
+      </div>
+      <div class="fpl-results" id="fplResults" style="display:none;"></div>
+    </div>
+  </div>
+</main>
+
+<!-- ── Footer ── -->
+<footer class="site-footer">
+  <div class="footer-links">
+    &copy; 2026 RxGator &middot;
+    <a href="/">Home</a> &middot;
+    <a href="/about.html">About</a> &middot;
+    <a href="/privacy.html">Privacy</a> &middot;
+    <a href="/terms.html">Terms</a>
+  </div>
+  <div class="footer-disclaimer">
+    <strong>Disclaimer:</strong> RxGator is an informational tool and is not a pharmacy, insurer, or healthcare provider. Patient Assistance Program details, eligibility requirements, and availability may change without notice. Always verify program information directly with the manufacturer or program administrator before applying. RxGator does not guarantee eligibility or acceptance into any program. This site does not provide medical advice.
+  </div>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  // ── State ──
+  let db = null;
+  let acIndex = -1;
+  let acItems = [];
+
+  // ── DOM refs ──
+  const searchInput = document.getElementById('searchInput');
+  const acList = document.getElementById('acList');
+  const statsBar = document.getElementById('statsBar');
+  const emptyState = document.getElementById('emptyState');
+  const loadingState = document.getElementById('loadingState');
+  const errorState = document.getElementById('errorState');
+  const drugResult = document.getElementById('drugResult');
+  const fplToggle = document.getElementById('fplToggle');
+  const fplPanel = document.getElementById('fplPanel');
+  const hhSize = document.getElementById('hhSize');
+  const hhIncome = document.getElementById('hhIncome');
+  const fplResults = document.getElementById('fplResults');
+
+  // ── Load Data ──
+  async function loadDatabase() {
+    loadingState.style.display = 'block';
+    emptyState.style.display = 'none';
+    try {
+      const resp = await fetch('/pap-database.json');
+      if (!resp.ok) throw new Error('Failed to load database (HTTP ' + resp.status + ')');
+      db = await resp.json();
+      loadingState.style.display = 'none';
+      emptyState.style.display = 'block';
+      updateStats();
+    } catch (err) {
+      loadingState.style.display = 'none';
+      errorState.style.display = 'block';
+      errorState.innerHTML = '<div class="error-state"><h3>Could not load medication database</h3><p>' +
+        escapeHtml(err.message) + '. Please refresh the page to try again.</p></div>';
+      statsBar.textContent = 'Database unavailable';
+    }
+  }
+
+  function updateStats() {
+    if (!db) return;
+    const totalDrugs = db.drugs.length;
+    const withPap = db.drugs.filter(d => d.pap).length;
+    const mfrs = new Set(db.drugs.filter(d => d.pap).map(d => d.manufacturer)).size;
+    statsBar.innerHTML = 'Covering the top <span>' + totalDrugs + '</span> most-prescribed drugs in the US &bull; ' +
+      '<span>' + withPap + '</span> drugs with manufacturer PAPs &bull; ' +
+      '<span>' + mfrs + '</span> manufacturer programs';
+  }
+
+  // ── Fuzzy Search ──
+  function searchDrugs(query) {
+    if (!db || !query) return [];
+    const q = query.toLowerCase().trim();
+    if (q.length < 2) return [];
+
+    const scored = [];
+    for (const drug of db.drugs) {
+      const gn = (drug.generic_name || '').toLowerCase();
+      const bn = (drug.brand_name || '').toLowerCase();
+      let score = 0;
+
+      if (gn === q || bn === q) score = 100;
+      else if (gn.startsWith(q)) score = 90;
+      else if (bn.startsWith(q)) score = 85;
+      else if (gn.includes(q)) score = 70;
+      else if (bn.includes(q)) score = 65;
+      else {
+        // fuzzy: check if all chars of query appear in order
+        let gi = 0, bi = 0;
+        let gMatch = true, bMatch = true;
+        for (const c of q) {
+          const gIdx = gn.indexOf(c, gi);
+          if (gIdx === -1) { gMatch = false; }
+          else { gi = gIdx + 1; }
+          const bIdx = bn.indexOf(c, bi);
+          if (bIdx === -1) { bMatch = false; }
+          else { bi = bIdx + 1; }
+        }
+        if (gMatch) score = 40;
+        else if (bMatch) score = 35;
+      }
+
+      if (score > 0) scored.push({ drug, score });
+    }
+
+    scored.sort((a, b) => b.score - a.score);
+    return scored.slice(0, 8).map(s => s.drug);
+  }
+
+  // ── Autocomplete Rendering ──
+  function showAutocomplete(drugs) {
+    if (drugs.length === 0) {
+      acList.classList.remove('open');
+      searchInput.setAttribute('aria-expanded', 'false');
+      acItems = [];
+      acIndex = -1;
+      return;
+    }
+    acItems = drugs;
+    acIndex = -1;
+    let html = '';
+    for (let i = 0; i < drugs.length; i++) {
+      const d = drugs[i];
+      const badge = d.pap
+        ? '<span class="ac-badge has-pap">Free PAP</span>'
+        : '<span class="ac-badge no-pap">Low-Cost</span>';
+      html += '<div class="ac-item" role="option" id="ac-' + i + '" data-index="' + i + '">' +
+        '<div class="ac-names"><div class="ac-generic">' + escapeHtml(d.generic_name) + '</div>' +
+        '<div class="ac-brand">' + escapeHtml(d.brand_name || 'Generic') + ' &mdash; ' + escapeHtml(d.drug_class || '') + '</div></div>' +
+        badge + '</div>';
+    }
+    acList.innerHTML = html;
+    acList.classList.add('open');
+    searchInput.setAttribute('aria-expanded', 'true');
+  }
+
+  function hideAutocomplete() {
+    acList.classList.remove('open');
+    searchInput.setAttribute('aria-expanded', 'false');
+    acIndex = -1;
+  }
+
+  function selectDrug(drug) {
+    searchInput.value = drug.generic_name + (drug.brand_name ? ' (' + drug.brand_name + ')' : '');
+    hideAutocomplete();
+    renderDrug(drug);
+  }
+
+  // ── Drug Result Rendering ──
+  function renderDrug(drug) {
+    emptyState.style.display = 'none';
+    drugResult.style.display = 'block';
+
+    if (drug.pap) {
+      renderPapDrug(drug);
+    } else {
+      renderGenericDrug(drug);
+    }
+  }
+
+  function renderPapDrug(drug) {
+    const p = drug.pap;
+    let html = '<div class="result-card pap-available">';
+    html += '<div class="card-header"><div class="card-header-icon">&#10003;</div>';
+    html += '<div class="card-header-text"><h2>Free Medication Available</h2>';
+    html += '<p>This drug has a manufacturer Patient Assistance Program</p></div></div>';
+    html += '<div class="card-body">';
+
+    // Drug title
+    html += '<div class="drug-title-row"><h3>' + escapeHtml(drug.generic_name);
+    if (drug.brand_name) html += ' <span style="color:var(--gray-400);font-weight:400;">(' + escapeHtml(drug.brand_name) + ')</span>';
+    html += '</h3>';
+    if (drug.drug_class) html += '<div class="drug-class">' + escapeHtml(drug.drug_class) + '</div>';
+    html += '</div>';
+
+    // Detail grid
+    html += '<div class="detail-grid">';
+    html += detailItem('Program', p.program_name || 'Manufacturer PAP');
+    html += detailItem('Manufacturer', drug.manufacturer || 'N/A');
+    html += detailItem('Income Limit', p.income_limit_pct_fpl ? (p.income_limit_pct_fpl + '% FPL') : 'Varies');
+    html += detailItem('Insurance Requirement', p.insurance_requirement || 'See program details');
+    html += detailItem('Processing Time', p.processing_time || 'Varies');
+    html += detailItem('What You Get', p.what_you_get || 'Free medication');
+    if (p.notes) html += detailItem('Notes', p.notes, true);
+    html += '</div>';
+
+    // Action buttons
+    html += '<div class="action-buttons">';
+    if (p.application_url) {
+      html += '<a href="' + escapeHtml(p.application_url) + '" target="_blank" rel="noopener" class="btn btn-primary">&#128196; Apply Now</a>';
+    }
+    html += '<a href="/" class="btn btn-secondary">&#128269; Compare Prices on RxGator</a>';
+    html += '</div>';
+
+    // Phone
+    if (p.phone) {
+      html += '<div class="phone-row"><span class="phone-icon">&#128222;</span> Prefer to call? ';
+      html += '<a href="tel:' + escapeHtml(p.phone.replace(/[^0-9+]/g, '')) + '">' + escapeHtml(p.phone) + '</a></div>';
+    }
+
+    // Generic note
+    if (drug.has_generic) {
+      html += '<div class="generic-note"><strong>Generic alternative available</strong>';
+      html += 'A generic version of this medication exists';
+      if (drug.generic_price_range) html += ' (typically ' + escapeHtml(drug.generic_price_range) + ')';
+      html += '. Ask your doctor if the generic is right for you &mdash; it may be cheaper than going through a PAP.</div>';
+    }
+
+    // Drug notes
+    if (drug.notes) {
+      html += '<p style="margin-top:14px;font-size:0.88rem;color:var(--gray-500);">' + escapeHtml(drug.notes) + '</p>';
+    }
+
+    html += '</div></div>';
+    drugResult.innerHTML = html;
+  }
+
+  function renderGenericDrug(drug) {
+    let html = '<div class="result-card no-pap">';
+    html += '<div class="card-header"><div class="card-header-icon">&#128176;</div>';
+    html += '<div class="card-header-text"><h2>Low-Cost Options Available</h2>';
+    html += '<p>This medication is available at affordable prices</p></div></div>';
+    html += '<div class="card-body">';
+
+    // Drug title
+    html += '<div class="drug-title-row"><h3>' + escapeHtml(drug.generic_name);
+    if (drug.brand_name) html += ' <span style="color:var(--gray-400);font-weight:400;">(' + escapeHtml(drug.brand_name) + ')</span>';
+    html += '</h3>';
+    if (drug.drug_class) html += '<div class="drug-class">' + escapeHtml(drug.drug_class) + '</div>';
+    html += '</div>';
+
+    // Details
+    html += '<div class="detail-grid">';
+    if (drug.generic_price_range) html += detailItem('Typical Price Range', drug.generic_price_range);
+    html += detailItem('Generic Available', drug.has_generic ? 'Yes' : 'No');
+    if (drug.manufacturer) html += detailItem('Manufacturer', drug.manufacturer);
+    if (drug.notes) html += detailItem('Notes', drug.notes, true);
+    html += '</div>';
+
+    html += '<p style="margin: 16px 0 8px; font-size:0.95rem; color:var(--gray-700);">This medication does not have a manufacturer PAP, but you can save with these resources:</p>';
+
+    // Fallback resources
+    if (db.fallback_resources && db.fallback_resources.length) {
+      html += '<div class="resources-grid">';
+      for (const r of db.fallback_resources) {
+        html += '<div class="resource-card"><h4>' + escapeHtml(r.name) + '</h4>';
+        html += '<p>' + escapeHtml(r.description) + '</p>';
+        html += '<a href="' + escapeHtml(r.url) + '" target="_blank" rel="noopener">Visit site &rarr;</a></div>';
+      }
+      html += '</div>';
+    }
+
+    // CTA
+    html += '<div class="action-buttons" style="margin-top:20px;">';
+    html += '<a href="/" class="btn btn-cta">&#128269; Compare Prices on RxGator</a>';
+    html += '</div>';
+
+    html += '</div></div>';
+    drugResult.innerHTML = html;
+  }
+
+  function detailItem(label, value, fullWidth) {
+    return '<div class="detail-item' + (fullWidth ? ' full-width' : '') + '">' +
+      '<div class="detail-label">' + escapeHtml(label) + '</div>' +
+      '<div class="detail-value">' + escapeHtml(value) + '</div></div>';
+  }
+
+  // ── FPL Calculator ──
+  function updateFPL() {
+    if (!db || !db.fpl2026) return;
+    const size = hhSize.value;
+    const income = parseFloat(hhIncome.value);
+    if (!income || income <= 0) {
+      fplResults.style.display = 'none';
+      return;
+    }
+
+    const fplAmount = db.fpl2026[size];
+    if (!fplAmount) {
+      fplResults.style.display = 'none';
+      return;
+    }
+
+    const pct = (income / fplAmount) * 100;
+    const thresholds = [
+      { level: 200, label: '200% FPL — Some state programs' },
+      { level: 300, label: '300% FPL — Most restrictive PAPs' },
+      { level: 400, label: '400% FPL — Many manufacturer PAPs' },
+      { level: 600, label: '600% FPL — Generous PAPs (e.g., Lilly Cares)' }
+    ];
+
+    let html = '<div class="fpl-pct">Your income is ' + Math.round(pct) + '% of FPL</div>';
+    html += '<p style="font-size:0.85rem;color:var(--gray-500);margin-bottom:12px;">Based on ' +
+      size + '-person household, 2026 FPL of $' + fplAmount.toLocaleString() + '</p>';
+    html += '<div class="fpl-thresholds">';
+
+    for (const t of thresholds) {
+      const qualifies = pct <= t.level;
+      html += '<div class="fpl-threshold ' + (qualifies ? 'qualifies' : 'no-qualify') + '">';
+      html += '<span class="check">' + (qualifies ? '&#10004;' : '&#10006;') + '</span>';
+      html += '<span>' + escapeHtml(t.label) + (qualifies ? ' — You may qualify' : ' — Over limit') + '</span>';
+      html += '</div>';
+    }
+    html += '</div>';
+
+    fplResults.innerHTML = html;
+    fplResults.style.display = 'block';
+  }
+
+  // ── Utility ──
+  function escapeHtml(str) {
+    if (!str) return '';
+    const d = document.createElement('div');
+    d.textContent = String(str);
+    return d.innerHTML;
+  }
+
+  // ── Event Listeners ──
+  searchInput.addEventListener('input', function() {
+    const val = this.value.trim();
+    if (val.length < 2) {
+      hideAutocomplete();
+      return;
+    }
+    const results = searchDrugs(val);
+    showAutocomplete(results);
+  });
+
+  searchInput.addEventListener('keydown', function(e) {
+    if (!acList.classList.contains('open')) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      acIndex = Math.min(acIndex + 1, acItems.length - 1);
+      highlightAcItem();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      acIndex = Math.max(acIndex - 1, 0);
+      highlightAcItem();
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (acIndex >= 0 && acIndex < acItems.length) {
+        selectDrug(acItems[acIndex]);
+      } else if (acItems.length > 0) {
+        selectDrug(acItems[0]);
+      }
+    } else if (e.key === 'Escape') {
+      hideAutocomplete();
+    }
+  });
+
+  function highlightAcItem() {
+    const items = acList.querySelectorAll('.ac-item');
+    items.forEach((el, i) => {
+      el.classList.toggle('active', i === acIndex);
+      if (i === acIndex) {
+        el.scrollIntoView({ block: 'nearest' });
+        searchInput.setAttribute('aria-activedescendant', 'ac-' + i);
+      }
+    });
+  }
+
+  acList.addEventListener('click', function(e) {
+    const item = e.target.closest('.ac-item');
+    if (item) {
+      const idx = parseInt(item.dataset.index, 10);
+      if (acItems[idx]) selectDrug(acItems[idx]);
+    }
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.search-wrap')) {
+      hideAutocomplete();
+    }
+  });
+
+  // FPL toggle
+  fplToggle.addEventListener('click', function() {
+    const isExpanded = fplPanel.classList.toggle('open');
+    this.classList.toggle('expanded', isExpanded);
+    this.setAttribute('aria-expanded', isExpanded);
+  });
+
+  hhSize.addEventListener('change', updateFPL);
+  hhIncome.addEventListener('input', updateFPL);
+
+  // ── Init ──
+  loadDatabase();
+})();
+</script>
+
+<script>
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    var inTopBar = el.closest && el.closest('.top-bar');
+    if (inTopBar) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.25)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'rgba(255,255,255,0.7)';
+      el.style.borderColor = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.3)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
+})();
+</script>
+</body>
+</html>

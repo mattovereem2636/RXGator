@@ -1,0 +1,214 @@
+/**
+ * RxGator Generic Available Banner Styles
+ */
+
+/* ===== BANNER CONTAINER ===== */
+.rxgator-gb {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+  border: 2px solid #2E7D32;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0 24px 0;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.rxgator-gb.rxgator-gb-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== ICON ===== */
+.rxgator-gb-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+/* ===== CONTENT ===== */
+.rxgator-gb-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ===== TITLE LINE ===== */
+.rxgator-gb-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.rxgator-gb-arrow {
+  font-size: 18px;
+  font-weight: 600;
+  color: #666666;
+}
+
+.rxgator-gb-generic-name {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1B5E20;
+}
+
+.rxgator-gb-badge {
+  display: inline-block;
+  background: #2E7D32;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== DESCRIPTION ===== */
+.rxgator-gb-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.rxgator-gb-savings {
+  color: #1B5E20;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+/* ===== META TAGS ===== */
+.rxgator-gb-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.rxgator-gb-class {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2E7D32;
+  background: rgba(46, 125, 50, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.rxgator-gb-use {
+  font-size: 12px;
+  color: #666666;
+  padding: 2px 0;
+}
+
+/* ===== NOTE ===== */
+.rxgator-gb-note {
+  font-size: 13px;
+  color: #888888;
+  font-style: italic;
+}
+
+/* ===== CLOSE BUTTON ===== */
+.rxgator-gb-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999999;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.rxgator-gb-close:hover {
+  color: #333333;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .rxgator-gb {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    margin: 12px 0 20px 0;
+  }
+
+  .rxgator-gb-icon {
+    font-size: 28px;
+  }
+
+  .rxgator-gb-generic-name {
+    font-size: 20px;
+  }
+
+  .rxgator-gb-description {
+    font-size: 14px;
+  }
+
+  .rxgator-gb-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .rxgator-gb-close {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+/* ===== DARK MODE ===== */
+@media (prefers-color-scheme: dark) {
+  .rxgator-gb {
+    background: linear-gradient(135deg, #1a2e1a 0%, #1a3a1a 100%);
+    border-color: #4CAF50;
+  }
+
+  .rxgator-gb-arrow {
+    color: #aaaaaa;
+  }
+
+  .rxgator-gb-generic-name {
+    color: #81C784;
+  }
+
+  .rxgator-gb-description {
+    color: #cccccc;
+  }
+
+  .rxgator-gb-savings {
+    color: #81C784;
+  }
+
+  .rxgator-gb-class {
+    background: rgba(76, 175, 80, 0.15);
+    color: #81C784;
+  }
+
+  .rxgator-gb-use {
+    color: #999999;
+  }
+
+  .rxgator-gb-note {
+    color: #777777;
+  }
+
+  .rxgator-gb-close {
+    color: #777777;
+  }
+
+  .rxgator-gb-close:hover {
+    color: #cccccc;
+    background: rgba(255, 255, 255, 0.05);
+  }
+}

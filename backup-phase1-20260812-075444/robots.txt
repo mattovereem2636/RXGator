@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /about.html
+Allow: /privacy.html
+Allow: /terms.html
+Disallow: /app
+Disallow: /api
+
+Sitemap: https://rxgator.info/sitemap.xml

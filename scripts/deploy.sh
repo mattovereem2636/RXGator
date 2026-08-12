@@ -27,3 +27,5 @@ else
 fi
 
 echo "=== Deploy complete ==="
+/var/www/rxaggregator/scripts/fix-permissions.sh
+/var/www/rxaggregator/scripts/fix-permissions.sh

@@ -274,7 +274,13 @@
   <a href="/terms.html" data-i18n="navTerms">Terms of Use</a>
   <a href="https://patreon.com/RXGator" target="_blank" rel="noopener" data-i18n="navSupport">Support Us</a>
   <a href="/app" data-i18n="navSearch">Search Drugs</a>
-  <span style="margin-left:0.5rem;">
+  <span style="margin-left:0.25rem;">
+      <span style="font-size:0.72rem; color:var(--gray-500,#5D6D7E);">Text:</span>
+      <button onclick="setTextSize('normal')" id="sizeA" style="padding:0.1rem 0.4rem; background:var(--teal,#0C8080); color:#fff; border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.72rem; font-weight:600;" title="Normal text size">A</button>
+      <button onclick="setTextSize('large')" id="sizeAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.82rem; font-weight:600;" title="Large text">A+</button>
+      <button onclick="setTextSize('xlarge')" id="sizeAAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.92rem; font-weight:600;" title="Extra large text">A++</button>
+    </span>
+    <span style="margin-left:0.5rem;">
     <button onclick="setLang('en')" id="langEN" style="padding:0.2rem 0.6rem; background:var(--teal); color:#fff; border:1px solid var(--teal); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">English</button>
     <button onclick="setLang('es')" id="langES" style="padding:0.2rem 0.6rem; background:transparent; color:var(--teal); border:1px solid var(--teal); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">Español</button>
   </span>
@@ -293,12 +299,12 @@
   <p data-i18n="problemP2">The same generic medication can cost $4 at one pharmacy and $37 at another — same pill, same day, same zip code. The difference is simply knowing where to look.</p>
 
   <h2 data-i18n="whatWeDo">What RXGator Does</h2>
-  <p data-i18n="whatWeDoP1">RXGator searches sixteen data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.</p>
+  <p data-i18n="whatWeDoP1">RXGator searches eighteen data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.</p>
   <p data-i18n="whatWeDoP2">Every result includes step-by-step instructions explaining how to actually get that price at the pharmacy counter. No sign-up required. No data sold. Free forever.</p>
 
   <div class="stat-row">
     <div class="stat-card">
-      <div class="num">16</div>
+      <div class="num">18</div>
       <div class="label" data-i18n="statSources">Data Sources</div>
     </div>
     <div class="stat-card">
@@ -411,7 +417,7 @@ const T = {
   problemP1: { en: 'Americans overpay for prescription drugs every single day — not because cheaper options don\'t exist, but because no one tool shows all of them. GoodRx only shows GoodRx prices. SingleCare only shows SingleCare prices. Your pharmacist only knows their own shelf price. The information is scattered across a dozen platforms, and nobody has time to check them all.', es: 'Los estadounidenses pagan de más por medicamentos recetados todos los días — no porque no existan opciones más baratas, sino porque ninguna herramienta las muestra todas. GoodRx solo muestra precios de GoodRx. SingleCare solo muestra precios de SingleCare. Su farmacéutico solo conoce sus propios precios. La información está dispersa en una docena de plataformas y nadie tiene tiempo para revisar todas.' },
   problemP2: { en: 'The same generic medication can cost $4 at one pharmacy and $37 at another — same pill, same day, same zip code. The difference is simply knowing where to look.', es: 'El mismo medicamento genérico puede costar $4 en una farmacia y $37 en otra — la misma pastilla, el mismo día, el mismo código postal. La diferencia es simplemente saber dónde buscar.' },
   whatWeDo: { en: 'What RXGator Does', es: 'Qué Hace RXGator' },
-  whatWeDoP1: { en: 'RXGator searches sixteen data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.', es: 'RXGator busca en dieciséis fuentes de datos simultáneamente — bases de datos gubernamentales, programas de farmacia, plataformas de tarjetas de descuento y farmacias por correo — y devuelve todos los precios disponibles ordenados del más barato al más caro. Una búsqueda reemplaza el trabajo de verificar múltiples plataformas individualmente.' },
+  whatWeDoP1: { en: 'RXGator searches eighteen data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.', es: 'RXGator busca en dieciséis fuentes de datos simultáneamente — bases de datos gubernamentales, programas de farmacia, plataformas de tarjetas de descuento y farmacias por correo — y devuelve todos los precios disponibles ordenados del más barato al más caro. Una búsqueda reemplaza el trabajo de verificar múltiples plataformas individualmente.' },
   whatWeDoP2: { en: 'Every result includes step-by-step instructions explaining how to actually get that price at the pharmacy counter. No sign-up required. No data sold. Free forever.', es: 'Cada resultado incluye instrucciones paso a paso que explican cómo obtener ese precio en el mostrador de la farmacia. Sin registro. Sin venta de datos. Gratis para siempre.' },
   statSources: { en: 'Data Sources', es: 'Fuentes de Datos' },
   statCost: { en: 'Cost to Users', es: 'Costo para Usuarios' },
@@ -435,6 +441,44 @@ const T = {
   contactTitle: { en: 'Contact', es: 'Contacto' },
   contactDesc: { en: 'Questions, feedback, partnership inquiries, or media requests:', es: 'Preguntas, comentarios, consultas de asociación o solicitudes de medios:' },
 };
+
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    if (el.closest && el.closest('.article-nav')) {
+      el.style.background = b.active ? '#0d9488' : 'transparent';
+      el.style.color = b.active ? '#fff' : '#cbd5e1';
+      el.style.borderColor = b.active ? '#0d9488' : 'rgba(255,255,255,0.3)';
+    } else if (el.closest && el.closest('.header')) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
+})();
 
 function setLang(lang) {
   document.documentElement.lang = lang;

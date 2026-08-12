@@ -59,6 +59,12 @@
     <a href="/search.html">Search Drugs</a>
     <a href="/articles/">All Articles</a>
   </div>
+  <div class="font-size-btns">
+    <span class="fs-label">Text:</span>
+    <button onclick="setTextSize('normal')" id="sizeA" class="active" title="Normal" style="font-size:12px;">A</button>
+    <button onclick="setTextSize('large')" id="sizeAA" title="Large" style="font-size:14px;">A+</button>
+    <button onclick="setTextSize('xlarge')" id="sizeAAA" title="Extra large" style="font-size:16px;">A++</button>
+  </div>
 </nav>
 <article class="article-container">
 <div class="article-meta">
@@ -100,7 +106,7 @@
 <p>Atorvastatin is a drug where no one should be paying a high price. The supply is abundant, the competition is fierce, and the options for discounts are everywhere. The only barrier is knowing to look.</p>
 
 <div class="article-cta">
-  <p><strong>Search your medication on RxGator</strong> to compare prices across 16 sources — free, no account required.</p>
+  <p><strong>Search your medication on RxGator</strong> to compare prices across 18 sources — free, no account required.</p>
   <a href="/search.html" class="cta-btn">Search Drug Prices Now</a>
 </div>
 <div class="related-articles">
@@ -124,5 +130,44 @@
   <p>&copy; 2026 RxGator &middot; <a href="/">Home</a> &middot; <a href="/about.html">About</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
   <p style="margin-top:8px;">RxGator is a free prescription drug price comparison tool. We are not a pharmacy and do not sell medications.</p>
 </footer>
+<script>
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    if (el.closest && el.closest('.article-nav')) {
+      el.style.background = b.active ? '#0d9488' : 'transparent';
+      el.style.color = b.active ? '#fff' : '#cbd5e1';
+      el.style.borderColor = b.active ? '#0d9488' : 'rgba(255,255,255,0.3)';
+    } else if (el.closest && el.closest('.header')) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
+})();
+</script>
 </body>
 </html>

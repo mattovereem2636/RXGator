@@ -141,6 +141,12 @@
   <a href="/terms.html">Terms of Use</a>
   <a href="https://patreon.com/RXGator" target="_blank" rel="noopener">Support Us</a>
   <a href="/app">Search Drugs</a>
+  <span style="margin-left:0.5rem;">
+    <span style="font-size:0.72rem; color:var(--gray-500,#5D6D7E);">Text:</span>
+    <button onclick="setTextSize('normal')" id="sizeA" style="padding:0.1rem 0.4rem; background:var(--teal,#0C8080); color:#fff; border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.72rem; font-weight:600;" title="Normal text size">A</button>
+    <button onclick="setTextSize('large')" id="sizeAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.82rem; font-weight:600;" title="Large text">A+</button>
+    <button onclick="setTextSize('xlarge')" id="sizeAAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.92rem; font-weight:600;" title="Extra large text">A++</button>
+  </span>
 </div>
 
 <main id="main-content">
@@ -250,5 +256,44 @@
   <span class="footer-medical">This tool is not medical advice. Always consult your doctor or pharmacist before making changes to your medications.</span>
 </div>
 
+
+<script>
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    var inTopBar = el.closest && el.closest('.top-bar');
+    if (inTopBar) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.25)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'rgba(255,255,255,0.7)';
+      el.style.borderColor = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.3)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
+})();
+</script>
 </body>
 </html>

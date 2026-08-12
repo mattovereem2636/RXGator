@@ -624,6 +624,12 @@ a:hover { text-decoration: underline; }
     <a href="https://rxgator.info">Drug Prices</a>
     <a href="/pap-finder">PAP Finder</a>
     <a href="/part-d-optimizer">Part D Optimizer</a>
+    <span style="display:inline-flex; align-items:center; gap:3px; margin-left:0.5rem; border-left:1px solid rgba(255,255,255,0.2); padding-left:0.75rem;">
+      <span style="font-size:0.7rem; color:rgba(255,255,255,0.5);">Text:</span>
+      <button onclick="setTextSize('normal')" id="sizeA" style="padding:0.1rem 0.35rem; background:rgba(255,255,255,0.25); color:#fff; border:1px solid rgba(255,255,255,0.5); border-radius:3px; cursor:pointer; font-size:0.7rem; font-weight:600;">A</button>
+      <button onclick="setTextSize('large')" id="sizeAA" style="padding:0.1rem 0.35rem; background:transparent; color:rgba(255,255,255,0.7); border:1px solid rgba(255,255,255,0.3); border-radius:3px; cursor:pointer; font-size:0.8rem; font-weight:600;">A+</button>
+      <button onclick="setTextSize('xlarge')" id="sizeAAA" style="padding:0.1rem 0.35rem; background:transparent; color:rgba(255,255,255,0.7); border:1px solid rgba(255,255,255,0.3); border-radius:3px; cursor:pointer; font-size:0.9rem; font-weight:600;">A++</button>
+    </span>
   </nav>
 </div>
 
@@ -1223,6 +1229,45 @@ a:hover { text-decoration: underline; }
   // ── Init ──
   loadDB();
 
+})();
+</script>
+
+<script>
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    var inTopBar = el.closest && el.closest('.top-bar');
+    if (inTopBar) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.25)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'rgba(255,255,255,0.7)';
+      el.style.borderColor = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.3)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
 })();
 </script>
 </body>

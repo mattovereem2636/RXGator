@@ -407,6 +407,44 @@ const content = {
   }
 };
 
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    if (el.closest && el.closest('.article-nav')) {
+      el.style.background = b.active ? '#0d9488' : 'transparent';
+      el.style.color = b.active ? '#fff' : '#cbd5e1';
+      el.style.borderColor = b.active ? '#0d9488' : 'rgba(255,255,255,0.3)';
+    } else if (el.closest && el.closest('.header')) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
+})();
+
 function setLang(lang) {
   document.getElementById('langEN').classList.toggle('active', lang === 'en');
   document.getElementById('langES').classList.toggle('active', lang === 'es');
