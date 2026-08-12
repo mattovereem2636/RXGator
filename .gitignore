@@ -7,3 +7,4 @@ data/brand-generic-map.json
 scripts/.uptime-state
 search-log.csv
 feedback.json
+backup-*
