@@ -2,13 +2,13 @@
   "source": "Blink Health",
   "sourceUrl": "https://www.blinkhealth.com",
   "description": "Blink Health discounted prescription prices with home delivery and pharmacy pickup",
-  "generatedAt": "2026-07-26T00:17:46.129551Z",
+  "generatedAt": "2026-08-16T06:32:36.245437Z",
   "drugCount": 204,
   "priceCount": 204,
   "drugs": {
-    "furosemide": {
-      "name": "furosemide",
-      "slug": "furosemide",
+    "amlodipine": {
+      "name": "amlodipine",
+      "slug": "amlodipine",
       "strength": "",
       "form": "",
       "quantity": "",
@@ -22,806 +22,8 @@
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/furosemide",
-      "scrapedAt": "2026-07-26T00:17:46.129583Z"
-    },
-    "carvedilol": {
-      "name": "carvedilol",
-      "slug": "carvedilol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/carvedilol",
-      "scrapedAt": "2026-07-26T00:17:46.129590Z"
-    },
-    "hydrochlorothiazide": {
-      "name": "hydrochlorothiazide",
-      "slug": "hydrochlorothiazide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/hydrochlorothiazide",
-      "scrapedAt": "2026-07-26T00:17:46.129594Z"
-    },
-    "spironolactone": {
-      "name": "spironolactone",
-      "slug": "spironolactone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.5,
-      "highestPrice": 6.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/spironolactone",
-      "scrapedAt": "2026-07-26T00:17:46.129600Z"
-    },
-    "lisinopril-hydrochlorothiazide": {
-      "name": "lisinopril-hydrochlorothiazide",
-      "slug": "lisinopril-hydrochlorothiazide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.85,
-      "highestPrice": 6.85,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.85,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/lisinopril-hydrochlorothiazide",
-      "scrapedAt": "2026-07-26T00:17:46.129604Z"
-    },
-    "trimethoprim": {
-      "name": "trimethoprim",
-      "slug": "trimethoprim",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 12.77,
-      "highestPrice": 12.77,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 12.77,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/trimethoprim",
-      "scrapedAt": "2026-07-26T00:17:46.129609Z"
-    },
-    "losartan-hydrochlorothiazide": {
-      "name": "losartan-hydrochlorothiazide",
-      "slug": "losartan-hydrochlorothiazide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.3,
-      "highestPrice": 6.3,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.3,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/losartan-hydrochlorothiazide",
-      "scrapedAt": "2026-07-26T00:17:46.129613Z"
-    },
-    "warfarin": {
-      "name": "warfarin",
-      "slug": "warfarin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/warfarin",
-      "scrapedAt": "2026-07-26T00:17:46.129617Z"
-    },
-    "valsartan": {
-      "name": "valsartan",
-      "slug": "valsartan",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 22.3,
-      "highestPrice": 22.3,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 22.3,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/valsartan",
-      "scrapedAt": "2026-07-26T00:17:46.129620Z"
-    },
-    "fluconazole": {
-      "name": "fluconazole",
-      "slug": "fluconazole",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.08,
-      "highestPrice": 11.08,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.08,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/fluconazole",
-      "scrapedAt": "2026-07-26T00:17:46.129624Z"
-    },
-    "valacyclovir": {
-      "name": "valacyclovir",
-      "slug": "valacyclovir",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 14.6,
-      "highestPrice": 14.6,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 14.6,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/valacyclovir",
-      "scrapedAt": "2026-07-26T00:17:46.129627Z"
-    },
-    "olmesartan": {
-      "name": "olmesartan",
-      "slug": "olmesartan",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.7,
-      "highestPrice": 6.7,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.7,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/olmesartan",
-      "scrapedAt": "2026-07-26T00:17:46.129631Z"
-    },
-    "clopidogrel": {
-      "name": "clopidogrel",
-      "slug": "clopidogrel",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 8.9,
-      "highestPrice": 8.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 8.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/clopidogrel",
-      "scrapedAt": "2026-07-26T00:17:46.129635Z"
-    },
-    "pravastatin": {
-      "name": "pravastatin",
-      "slug": "pravastatin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 10.3,
-      "highestPrice": 10.3,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 10.3,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/pravastatin",
-      "scrapedAt": "2026-07-26T00:17:46.129640Z"
-    },
-    "irbesartan": {
-      "name": "irbesartan",
-      "slug": "irbesartan",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.7,
-      "highestPrice": 11.7,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.7,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/irbesartan",
-      "scrapedAt": "2026-07-26T00:17:46.129643Z"
-    },
-    "acyclovir": {
-      "name": "acyclovir",
-      "slug": "acyclovir",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.84,
-      "highestPrice": 11.84,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.84,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/acyclovir",
-      "scrapedAt": "2026-07-26T00:17:46.129647Z"
-    },
-    "simvastatin": {
-      "name": "simvastatin",
-      "slug": "simvastatin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/simvastatin",
-      "scrapedAt": "2026-07-26T00:17:46.129650Z"
-    },
-    "oseltamivir": {
-      "name": "oseltamivir",
-      "slug": "oseltamivir",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 388.99,
-      "highestPrice": 388.99,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 388.99,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/oseltamivir",
-      "scrapedAt": "2026-07-26T00:17:46.129654Z"
-    },
-    "benazepril": {
-      "name": "benazepril",
-      "slug": "benazepril",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/benazepril",
-      "scrapedAt": "2026-07-26T00:17:46.129657Z"
-    },
-    "rosuvastatin": {
-      "name": "rosuvastatin",
-      "slug": "rosuvastatin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 8.75,
-      "highestPrice": 8.75,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 8.75,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/rosuvastatin",
-      "scrapedAt": "2026-07-26T00:17:46.129661Z"
-    },
-    "penicillin-v-potassium": {
-      "name": "penicillin V potassium",
-      "slug": "penicillin-v-potassium",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 9.87,
-      "highestPrice": 9.87,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 9.87,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/penicillin-v-potassium",
-      "scrapedAt": "2026-07-26T00:17:46.129665Z"
-    },
-    "olanzapine": {
-      "name": "olanzapine",
-      "slug": "olanzapine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 8.0,
-      "highestPrice": 8.0,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 8.0,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/olanzapine",
-      "scrapedAt": "2026-07-26T00:17:46.129669Z"
-    },
-    "ramipril": {
-      "name": "ramipril",
-      "slug": "ramipril",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ramipril",
-      "scrapedAt": "2026-07-26T00:17:46.129674Z"
-    },
-    "risperidone": {
-      "name": "risperidone",
-      "slug": "risperidone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/risperidone",
-      "scrapedAt": "2026-07-26T00:17:46.129678Z"
-    },
-    "haloperidol": {
-      "name": "haloperidol",
-      "slug": "haloperidol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 27.31,
-      "highestPrice": 27.31,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 27.31,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/haloperidol",
-      "scrapedAt": "2026-07-26T00:17:46.129683Z"
-    },
-    "budesonide": {
-      "name": "budesonide",
-      "slug": "budesonide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 122.59,
-      "highestPrice": 122.59,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 122.59,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/budesonide",
-      "scrapedAt": "2026-07-26T00:17:46.129687Z"
-    },
-    "nifedipine": {
-      "name": "nifedipine",
-      "slug": "nifedipine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 13.3,
-      "highestPrice": 13.3,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 13.3,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/nifedipine",
-      "scrapedAt": "2026-07-26T00:17:46.129690Z"
-    },
-    "colchicine": {
-      "name": "colchicine",
-      "slug": "colchicine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 219.13,
-      "highestPrice": 219.13,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 219.13,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/colchicine",
-      "scrapedAt": "2026-07-26T00:17:46.129693Z"
-    },
-    "clozapine": {
-      "name": "clozapine",
-      "slug": "clozapine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 36.67,
-      "highestPrice": 36.67,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 36.67,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/clozapine",
-      "scrapedAt": "2026-07-26T00:17:46.129697Z"
-    },
-    "theophylline": {
-      "name": "theophylline",
-      "slug": "theophylline",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 213.6,
-      "highestPrice": 213.6,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 213.6,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/theophylline",
-      "scrapedAt": "2026-07-26T00:17:46.129701Z"
-    },
-    "allopurinol": {
-      "name": "allopurinol",
-      "slug": "allopurinol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 7.8,
-      "highestPrice": 7.8,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 7.8,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/allopurinol",
-      "scrapedAt": "2026-07-26T00:17:46.129704Z"
-    },
-    "propranolol": {
-      "name": "propranolol",
-      "slug": "propranolol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 13.7,
-      "highestPrice": 13.7,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 13.7,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/propranolol",
-      "scrapedAt": "2026-07-26T00:17:46.129708Z"
-    },
-    "estradiol": {
-      "name": "estradiol",
-      "slug": "estradiol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.2,
-      "highestPrice": 6.2,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.2,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/estradiol",
-      "scrapedAt": "2026-07-26T00:17:46.129711Z"
-    },
-    "ranolazine": {
-      "name": "ranolazine",
-      "slug": "ranolazine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 29.9,
-      "highestPrice": 29.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 29.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ranolazine",
-      "scrapedAt": "2026-07-26T00:17:46.129716Z"
-    },
-    "atenolol": {
-      "name": "atenolol",
-      "slug": "atenolol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/atenolol",
-      "scrapedAt": "2026-07-26T00:17:46.129751Z"
-    },
-    "oxcarbazepine": {
-      "name": "oxcarbazepine",
-      "slug": "oxcarbazepine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 16.0,
-      "highestPrice": 16.0,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 16.0,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/oxcarbazepine",
-      "scrapedAt": "2026-07-26T00:17:46.129759Z"
-    },
-    "levetiracetam": {
-      "name": "levetiracetam",
-      "slug": "levetiracetam",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 8.9,
-      "highestPrice": 8.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 8.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/levetiracetam",
-      "scrapedAt": "2026-07-26T00:17:46.129763Z"
-    },
-    "progesterone": {
-      "name": "progesterone",
-      "slug": "progesterone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 144.16,
-      "highestPrice": 144.16,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 144.16,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/progesterone",
-      "scrapedAt": "2026-07-26T00:17:46.129767Z"
-    },
-    "lansoprazole": {
-      "name": "lansoprazole",
-      "slug": "lansoprazole",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.0,
-      "highestPrice": 11.0,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.0,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/lansoprazole",
-      "scrapedAt": "2026-07-26T00:17:46.129776Z"
-    },
-    "carbamazepine": {
-      "name": "carbamazepine",
-      "slug": "carbamazepine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 30.9,
-      "highestPrice": 30.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 30.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/carbamazepine",
-      "scrapedAt": "2026-07-26T00:17:46.129781Z"
-    },
-    "misoprostol": {
-      "name": "misoprostol",
-      "slug": "misoprostol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.12,
-      "highestPrice": 6.12,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.12,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/misoprostol",
-      "scrapedAt": "2026-07-26T00:17:46.129785Z"
-    },
-    "hydralazine": {
-      "name": "hydralazine",
-      "slug": "hydralazine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 4.17,
-      "highestPrice": 4.17,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 4.17,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/hydralazine",
-      "scrapedAt": "2026-07-26T00:17:46.129788Z"
-    },
-    "isosorbide-mononitrate": {
-      "name": "isosorbide mononitrate",
-      "slug": "isosorbide-mononitrate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/isosorbide-mononitrate",
-      "scrapedAt": "2026-07-26T00:17:46.129792Z"
+      "url": "https://www.blinkhealth.com/amlodipine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "testosterone": {
       "name": "testosterone",
@@ -840,2553 +42,64 @@
         }
       ],
       "url": "https://www.blinkhealth.com/testosterone",
-      "scrapedAt": "2026-07-26T00:17:46.129803Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "phenytoin": {
-      "name": "phenytoin",
-      "slug": "phenytoin",
+    "penicillin-v-potassium": {
+      "name": "penicillin V potassium",
+      "slug": "penicillin-v-potassium",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 15.0,
-      "highestPrice": 15.0,
+      "lowestPrice": 9.87,
+      "highestPrice": 9.87,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 15.0,
+          "price": 9.87,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/phenytoin",
-      "scrapedAt": "2026-07-26T00:17:46.129807Z"
+      "url": "https://www.blinkhealth.com/penicillin-v-potassium",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "cyclobenzaprine": {
-      "name": "cyclobenzaprine",
-      "slug": "cyclobenzaprine",
+    "nifedipine": {
+      "name": "nifedipine",
+      "slug": "nifedipine",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 6.5,
-      "highestPrice": 6.5,
+      "lowestPrice": 13.3,
+      "highestPrice": 13.3,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 6.5,
+          "price": 13.3,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/cyclobenzaprine",
-      "scrapedAt": "2026-07-26T00:17:46.129811Z"
+      "url": "https://www.blinkhealth.com/nifedipine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "lactulose": {
-      "name": "lactulose",
-      "slug": "lactulose",
+    "propranolol": {
+      "name": "propranolol",
+      "slug": "propranolol",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 13.79,
-      "highestPrice": 13.79,
+      "lowestPrice": 13.7,
+      "highestPrice": 13.7,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 13.79,
+          "price": 13.7,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/lactulose",
-      "scrapedAt": "2026-07-26T00:17:46.129815Z"
-    },
-    "valproic-acid": {
-      "name": "valproic acid",
-      "slug": "valproic-acid",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 21.28,
-      "highestPrice": 21.28,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 21.28,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/valproic-acid",
-      "scrapedAt": "2026-07-26T00:17:46.129818Z"
-    },
-    "digoxin": {
-      "name": "digoxin",
-      "slug": "digoxin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 17.5,
-      "highestPrice": 17.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 17.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/digoxin",
-      "scrapedAt": "2026-07-26T00:17:46.129823Z"
-    },
-    "divalproex": {
-      "name": "divalproex",
-      "slug": "divalproex",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 31.2,
-      "highestPrice": 31.2,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 31.2,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/divalproex",
-      "scrapedAt": "2026-07-26T00:17:46.129827Z"
-    },
-    "tolterodine": {
-      "name": "tolterodine",
-      "slug": "tolterodine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 61.8,
-      "highestPrice": 61.8,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 61.8,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/tolterodine",
-      "scrapedAt": "2026-07-26T00:17:46.129831Z"
-    },
-    "amiodarone": {
-      "name": "amiodarone",
-      "slug": "amiodarone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 8.1,
-      "highestPrice": 8.1,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 8.1,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/amiodarone",
-      "scrapedAt": "2026-07-26T00:17:46.129834Z"
-    },
-    "loperamide": {
-      "name": "loperamide",
-      "slug": "loperamide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 17.61,
-      "highestPrice": 17.61,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 17.61,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/loperamide",
-      "scrapedAt": "2026-07-26T00:17:46.129837Z"
-    },
-    "solifenacin": {
-      "name": "solifenacin",
-      "slug": "solifenacin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 16.99,
-      "highestPrice": 16.99,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 16.99,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/solifenacin",
-      "scrapedAt": "2026-07-26T00:17:46.129842Z"
-    },
-    "mesalamine": {
-      "name": "mesalamine",
-      "slug": "mesalamine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 1462.4,
-      "highestPrice": 1462.4,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 1462.4,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/mesalamine",
-      "scrapedAt": "2026-07-26T00:17:46.129846Z"
-    },
-    "doxazosin": {
-      "name": "doxazosin",
-      "slug": "doxazosin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 10.6,
-      "highestPrice": 10.6,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 10.6,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/doxazosin",
-      "scrapedAt": "2026-07-26T00:17:46.129849Z"
-    },
-    "dutasteride": {
-      "name": "dutasteride",
-      "slug": "dutasteride",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 13.98,
-      "highestPrice": 13.98,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 13.98,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/dutasteride",
-      "scrapedAt": "2026-07-26T00:17:46.129853Z"
-    },
-    "ezetimibe": {
-      "name": "ezetimibe",
-      "slug": "ezetimibe",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 12.8,
-      "highestPrice": 12.8,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 12.8,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ezetimibe",
-      "scrapedAt": "2026-07-26T00:17:46.129856Z"
-    },
-    "eszopiclone": {
-      "name": "eszopiclone",
-      "slug": "eszopiclone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 17.7,
-      "highestPrice": 17.7,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 17.7,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/eszopiclone",
-      "scrapedAt": "2026-07-26T00:17:46.129860Z"
-    },
-    "celecoxib": {
-      "name": "celecoxib",
-      "slug": "celecoxib",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 15.95,
-      "highestPrice": 15.95,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 15.95,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/celecoxib",
-      "scrapedAt": "2026-07-26T00:17:46.129863Z"
-    },
-    "tretinoin": {
-      "name": "tretinoin",
-      "slug": "tretinoin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 113.8,
-      "highestPrice": 113.8,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 113.8,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/tretinoin",
-      "scrapedAt": "2026-07-26T00:17:46.129867Z"
-    },
-    "sumatriptan": {
-      "name": "sumatriptan",
-      "slug": "sumatriptan",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 391.15,
-      "highestPrice": 391.15,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 391.15,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/sumatriptan",
-      "scrapedAt": "2026-07-26T00:17:46.129872Z"
-    },
-    "indomethacin": {
-      "name": "indomethacin",
-      "slug": "indomethacin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.6,
-      "highestPrice": 6.6,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.6,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/indomethacin",
-      "scrapedAt": "2026-07-26T00:17:46.129875Z"
-    },
-    "gemfibrozil": {
-      "name": "gemfibrozil",
-      "slug": "gemfibrozil",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.5,
-      "highestPrice": 11.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/gemfibrozil",
-      "scrapedAt": "2026-07-26T00:17:46.129911Z"
-    },
-    "ketorolac": {
-      "name": "ketorolac",
-      "slug": "ketorolac",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 38.19,
-      "highestPrice": 38.19,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 38.19,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ketorolac",
-      "scrapedAt": "2026-07-26T00:17:46.129915Z"
-    },
-    "rizatriptan": {
-      "name": "rizatriptan",
-      "slug": "rizatriptan",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 16.6,
-      "highestPrice": 16.6,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 16.6,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/rizatriptan",
-      "scrapedAt": "2026-07-26T00:17:46.129919Z"
-    },
-    "clotrimazole": {
-      "name": "clotrimazole",
-      "slug": "clotrimazole",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 31.74,
-      "highestPrice": 31.74,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 31.74,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/clotrimazole",
-      "scrapedAt": "2026-07-26T00:17:46.129923Z"
-    },
-    "donepezil": {
-      "name": "donepezil",
-      "slug": "donepezil",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.37,
-      "highestPrice": 6.37,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.37,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/donepezil",
-      "scrapedAt": "2026-07-26T00:17:46.129926Z"
-    },
-    "glyburide": {
-      "name": "glyburide",
-      "slug": "glyburide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 5.38,
-      "highestPrice": 5.38,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 5.38,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/glyburide",
-      "scrapedAt": "2026-07-26T00:17:46.129929Z"
-    },
-    "baclofen": {
-      "name": "baclofen",
-      "slug": "baclofen",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 14.8,
-      "highestPrice": 14.8,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 14.8,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/baclofen",
-      "scrapedAt": "2026-07-26T00:17:46.129933Z"
-    },
-    "memantine": {
-      "name": "memantine",
-      "slug": "memantine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.9,
-      "highestPrice": 11.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/memantine",
-      "scrapedAt": "2026-07-26T00:17:46.129936Z"
-    },
-    "tizanidine": {
-      "name": "tizanidine",
-      "slug": "tizanidine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.39,
-      "highestPrice": 11.39,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.39,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/tizanidine",
-      "scrapedAt": "2026-07-26T00:17:46.129940Z"
-    },
-    "acarbose": {
-      "name": "acarbose",
-      "slug": "acarbose",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 15.75,
-      "highestPrice": 15.75,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 15.75,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/acarbose",
-      "scrapedAt": "2026-07-26T00:17:46.129943Z"
-    },
-    "atomoxetine": {
-      "name": "atomoxetine",
-      "slug": "atomoxetine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 91.19,
-      "highestPrice": 91.19,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 91.19,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/atomoxetine",
-      "scrapedAt": "2026-07-26T00:17:46.129948Z"
-    },
-    "methocarbamol": {
-      "name": "methocarbamol",
-      "slug": "methocarbamol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 7.5,
-      "highestPrice": 7.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 7.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/methocarbamol",
-      "scrapedAt": "2026-07-26T00:17:46.129951Z"
-    },
-    "hydrocortisone": {
-      "name": "hydrocortisone",
-      "slug": "hydrocortisone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 20.98,
-      "highestPrice": 20.98,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 20.98,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/hydrocortisone",
-      "scrapedAt": "2026-07-26T00:17:46.129954Z"
-    },
-    "latanoprost": {
-      "name": "latanoprost",
-      "slug": "latanoprost",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 13.65,
-      "highestPrice": 13.65,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 13.65,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/latanoprost",
-      "scrapedAt": "2026-07-26T00:17:46.129958Z"
-    },
-    "carisoprodol": {
-      "name": "carisoprodol",
-      "slug": "carisoprodol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 17.18,
-      "highestPrice": 17.18,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 17.18,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/carisoprodol",
-      "scrapedAt": "2026-07-26T00:17:46.129961Z"
-    },
-    "doxepin": {
-      "name": "doxepin",
-      "slug": "doxepin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 14.3,
-      "highestPrice": 14.3,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 14.3,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/doxepin",
-      "scrapedAt": "2026-07-26T00:17:46.129967Z"
-    },
-    "aripiprazole": {
-      "name": "aripiprazole",
-      "slug": "aripiprazole",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 18.0,
-      "highestPrice": 18.0,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 18.0,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/aripiprazole",
-      "scrapedAt": "2026-07-26T00:17:46.129971Z"
-    },
-    "quetiapine": {
-      "name": "quetiapine",
-      "slug": "quetiapine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 8.9,
-      "highestPrice": 8.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 8.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/quetiapine",
-      "scrapedAt": "2026-07-26T00:17:46.129974Z"
-    },
-    "isoniazid": {
-      "name": "isoniazid",
-      "slug": "isoniazid",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 9.62,
-      "highestPrice": 9.62,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 9.62,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/isoniazid",
-      "scrapedAt": "2026-07-26T00:17:46.129978Z"
-    },
-    "ethambutol": {
-      "name": "ethambutol",
-      "slug": "ethambutol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 62.13,
-      "highestPrice": 62.13,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 62.13,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ethambutol",
-      "scrapedAt": "2026-07-26T00:17:46.129982Z"
-    },
-    "capsaicin": {
-      "name": "capsaicin",
-      "slug": "capsaicin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 9.18,
-      "highestPrice": 9.18,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 9.18,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/capsaicin",
-      "scrapedAt": "2026-07-26T00:17:46.129992Z"
-    },
-    "pyrazinamide": {
-      "name": "pyrazinamide",
-      "slug": "pyrazinamide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 65.04,
-      "highestPrice": 65.04,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 65.04,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/pyrazinamide",
-      "scrapedAt": "2026-07-26T00:17:46.129995Z"
-    },
-    "paliperidone": {
-      "name": "paliperidone",
-      "slug": "paliperidone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 362.17,
-      "highestPrice": 362.17,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 362.17,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/paliperidone",
-      "scrapedAt": "2026-07-26T00:17:46.129998Z"
-    },
-    "piroxicam": {
-      "name": "piroxicam",
-      "slug": "piroxicam",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 23.4,
-      "highestPrice": 23.4,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 23.4,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/piroxicam",
-      "scrapedAt": "2026-07-26T00:17:46.130004Z"
-    },
-    "pantoprazole": {
-      "name": "pantoprazole",
-      "slug": "pantoprazole",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 8.95,
-      "highestPrice": 8.95,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 8.95,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/pantoprazole",
-      "scrapedAt": "2026-07-26T00:17:46.130008Z"
-    },
-    "etodolac": {
-      "name": "etodolac",
-      "slug": "etodolac",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 38.5,
-      "highestPrice": 38.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 38.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/etodolac",
-      "scrapedAt": "2026-07-26T00:17:46.130011Z"
-    },
-    "famotidine": {
-      "name": "famotidine",
-      "slug": "famotidine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 21.85,
-      "highestPrice": 21.85,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 21.85,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/famotidine",
-      "scrapedAt": "2026-07-26T00:17:46.130014Z"
-    },
-    "buspirone": {
-      "name": "buspirone",
-      "slug": "buspirone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 13.1,
-      "highestPrice": 13.1,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 13.1,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/buspirone",
-      "scrapedAt": "2026-07-26T00:17:46.130018Z"
-    },
-    "sulindac": {
-      "name": "sulindac",
-      "slug": "sulindac",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 16.1,
-      "highestPrice": 16.1,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 16.1,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/sulindac",
-      "scrapedAt": "2026-07-26T00:17:46.130022Z"
-    },
-    "montelukast": {
-      "name": "montelukast",
-      "slug": "montelukast",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 5.8,
-      "highestPrice": 5.8,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 5.8,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/montelukast",
-      "scrapedAt": "2026-07-26T00:17:46.130026Z"
-    },
-    "salsalate": {
-      "name": "salsalate",
-      "slug": "salsalate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 37.08,
-      "highestPrice": 37.08,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 37.08,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/salsalate",
-      "scrapedAt": "2026-07-26T00:17:46.130031Z"
-    },
-    "mometasone": {
-      "name": "mometasone",
-      "slug": "mometasone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 36.08,
-      "highestPrice": 36.08,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 36.08,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/mometasone",
-      "scrapedAt": "2026-07-26T00:17:46.130036Z"
-    },
-    "amoxicillin": {
-      "name": "amoxicillin",
-      "slug": "amoxicillin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.1,
-      "highestPrice": 6.1,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.1,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/amoxicillin",
-      "scrapedAt": "2026-07-26T00:17:46.130040Z"
-    },
-    "sucralfate": {
-      "name": "sucralfate",
-      "slug": "sucralfate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 38.5,
-      "highestPrice": 38.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 38.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/sucralfate",
-      "scrapedAt": "2026-07-26T00:17:46.130043Z"
-    },
-    "diflunisal": {
-      "name": "diflunisal",
-      "slug": "diflunisal",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 71.9,
-      "highestPrice": 71.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 71.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/diflunisal",
-      "scrapedAt": "2026-07-26T00:17:46.130047Z"
-    },
-    "azithromycin": {
-      "name": "azithromycin",
-      "slug": "azithromycin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 9.94,
-      "highestPrice": 9.94,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 9.94,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/azithromycin",
-      "scrapedAt": "2026-07-26T00:17:46.130051Z"
-    },
-    "cetirizine": {
-      "name": "cetirizine",
-      "slug": "cetirizine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 5.5,
-      "highestPrice": 5.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 5.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/cetirizine",
-      "scrapedAt": "2026-07-26T00:17:46.130054Z"
-    },
-    "sertraline": {
-      "name": "sertraline",
-      "slug": "sertraline",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 7.1,
-      "highestPrice": 7.1,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 7.1,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/sertraline",
-      "scrapedAt": "2026-07-26T00:17:46.130057Z"
-    },
-    "dicyclomine": {
-      "name": "dicyclomine",
-      "slug": "dicyclomine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 28.7,
-      "highestPrice": 28.7,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 28.7,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/dicyclomine",
-      "scrapedAt": "2026-07-26T00:17:46.130061Z"
-    },
-    "loratadine": {
-      "name": "loratadine",
-      "slug": "loratadine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 5.0,
-      "highestPrice": 5.0,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 5.0,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/loratadine",
-      "scrapedAt": "2026-07-26T00:17:46.130065Z"
-    },
-    "ondansetron": {
-      "name": "ondansetron",
-      "slug": "ondansetron",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 7.41,
-      "highestPrice": 7.41,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 7.41,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ondansetron",
-      "scrapedAt": "2026-07-26T00:17:46.130069Z"
-    },
-    "fluoxetine": {
-      "name": "fluoxetine",
-      "slug": "fluoxetine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/fluoxetine",
-      "scrapedAt": "2026-07-26T00:17:46.130073Z"
-    },
-    "fexofenadine": {
-      "name": "fexofenadine",
-      "slug": "fexofenadine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 18.3,
-      "highestPrice": 18.3,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 18.3,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/fexofenadine",
-      "scrapedAt": "2026-07-26T00:17:46.130076Z"
-    },
-    "ciprofloxacin": {
-      "name": "ciprofloxacin",
-      "slug": "ciprofloxacin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 173.35,
-      "highestPrice": 173.35,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 173.35,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ciprofloxacin",
-      "scrapedAt": "2026-07-26T00:17:46.130080Z"
-    },
-    "promethazine": {
-      "name": "promethazine",
-      "slug": "promethazine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 61.64,
-      "highestPrice": 61.64,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 61.64,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/promethazine",
-      "scrapedAt": "2026-07-26T00:17:46.130083Z"
-    },
-    "cephalexin": {
-      "name": "cephalexin",
-      "slug": "cephalexin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 7.32,
-      "highestPrice": 7.32,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 7.32,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/cephalexin",
-      "scrapedAt": "2026-07-26T00:17:46.130086Z"
-    },
-    "citalopram": {
-      "name": "citalopram",
-      "slug": "citalopram",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/citalopram",
-      "scrapedAt": "2026-07-26T00:17:46.130089Z"
-    },
-    "desloratadine": {
-      "name": "desloratadine",
-      "slug": "desloratadine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 17.84,
-      "highestPrice": 17.84,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 17.84,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/desloratadine",
-      "scrapedAt": "2026-07-26T00:17:46.130094Z"
-    },
-    "venlafaxine": {
-      "name": "venlafaxine",
-      "slug": "venlafaxine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 8.9,
-      "highestPrice": 8.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 8.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/venlafaxine",
-      "scrapedAt": "2026-07-26T00:17:46.130097Z"
-    },
-    "clindamycin": {
-      "name": "Clindamycin (Generic)",
-      "slug": "clindamycin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 35.83,
-      "highestPrice": 35.83,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 35.83,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/clindamycin",
-      "scrapedAt": "2026-07-26T00:17:46.130100Z"
-    },
-    "benzonatate": {
-      "name": "benzonatate",
-      "slug": "benzonatate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 21.12,
-      "highestPrice": 21.12,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 21.12,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/benzonatate",
-      "scrapedAt": "2026-07-26T00:17:46.130105Z"
-    },
-    "duloxetine": {
-      "name": "duloxetine",
-      "slug": "duloxetine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 10.95,
-      "highestPrice": 10.95,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 10.95,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/duloxetine",
-      "scrapedAt": "2026-07-26T00:17:46.130108Z"
-    },
-    "guaifenesin": {
-      "name": "guaifenesin",
-      "slug": "guaifenesin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.61,
-      "highestPrice": 6.61,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.61,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/guaifenesin",
-      "scrapedAt": "2026-07-26T00:17:46.130112Z"
-    },
-    "ursodiol": {
-      "name": "ursodiol",
-      "slug": "ursodiol",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 118.55,
-      "highestPrice": 118.55,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 118.55,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ursodiol",
-      "scrapedAt": "2026-07-26T00:17:46.130116Z"
-    },
-    "trazodone": {
-      "name": "trazodone",
-      "slug": "trazodone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/trazodone",
-      "scrapedAt": "2026-07-26T00:17:46.130124Z"
-    },
-    "mirtazapine": {
-      "name": "mirtazapine",
-      "slug": "mirtazapine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.2,
-      "highestPrice": 6.2,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.2,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/mirtazapine",
-      "scrapedAt": "2026-07-26T00:17:46.130128Z"
-    },
-    "moxifloxacin": {
-      "name": "moxifloxacin",
-      "slug": "moxifloxacin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 67.83,
-      "highestPrice": 67.83,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 67.83,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/moxifloxacin",
-      "scrapedAt": "2026-07-26T00:17:46.130131Z"
-    },
-    "colesevelam": {
-      "name": "colesevelam",
-      "slug": "colesevelam",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 97.06,
-      "highestPrice": 97.06,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 97.06,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/colesevelam",
-      "scrapedAt": "2026-07-26T00:17:46.130135Z"
-    },
-    "cromolyn": {
-      "name": "cromolyn",
-      "slug": "cromolyn",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 29.41,
-      "highestPrice": 29.41,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 29.41,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/cromolyn",
-      "scrapedAt": "2026-07-26T00:17:46.130138Z"
-    },
-    "amitriptyline": {
-      "name": "amitriptyline",
-      "slug": "amitriptyline",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/amitriptyline",
-      "scrapedAt": "2026-07-26T00:17:46.130142Z"
-    },
-    "zafirlukast": {
-      "name": "zafirlukast",
-      "slug": "zafirlukast",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 92.67,
-      "highestPrice": 92.67,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 92.67,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/zafirlukast",
-      "scrapedAt": "2026-07-26T00:17:46.130151Z"
-    },
-    "minocycline": {
-      "name": "minocycline",
-      "slug": "minocycline",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 40.5,
-      "highestPrice": 40.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 40.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/minocycline",
-      "scrapedAt": "2026-07-26T00:17:46.130155Z"
-    },
-    "tetracycline": {
-      "name": "tetracycline",
-      "slug": "tetracycline",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 416.67,
-      "highestPrice": 416.67,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 416.67,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/tetracycline",
-      "scrapedAt": "2026-07-26T00:17:46.130159Z"
-    },
-    "nortriptyline": {
-      "name": "nortriptyline",
-      "slug": "nortriptyline",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/nortriptyline",
-      "scrapedAt": "2026-07-26T00:17:46.130167Z"
-    },
-    "alvimopan": {
-      "name": "alvimopan",
-      "slug": "alvimopan",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 5607.8,
-      "highestPrice": 5607.8,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 5607.8,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/alvimopan",
-      "scrapedAt": "2026-07-26T00:17:46.130173Z"
-    },
-    "clarithromycin": {
-      "name": "clarithromycin",
-      "slug": "clarithromycin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 32.26,
-      "highestPrice": 32.26,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 32.26,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/clarithromycin",
-      "scrapedAt": "2026-07-26T00:17:46.130178Z"
-    },
-    "erythromycin": {
-      "name": "erythromycin",
-      "slug": "erythromycin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 18.26,
-      "highestPrice": 18.26,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 18.26,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/erythromycin",
-      "scrapedAt": "2026-07-26T00:17:46.130187Z"
-    },
-    "linezolid": {
-      "name": "linezolid",
-      "slug": "linezolid",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 148.25,
-      "highestPrice": 148.25,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 148.25,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/linezolid",
-      "scrapedAt": "2026-07-26T00:17:46.130196Z"
-    },
-    "repaglinide": {
-      "name": "repaglinide",
-      "slug": "repaglinide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 22.4,
-      "highestPrice": 22.4,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 22.4,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/repaglinide",
-      "scrapedAt": "2026-07-26T00:17:46.130202Z"
-    },
-    "glycopyrrolate": {
-      "name": "glycopyrrolate",
-      "slug": "glycopyrrolate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 16.28,
-      "highestPrice": 16.28,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 16.28,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/glycopyrrolate",
-      "scrapedAt": "2026-07-26T00:17:46.130207Z"
-    },
-    "rifampin": {
-      "name": "rifampin",
-      "slug": "rifampin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 82.48,
-      "highestPrice": 82.48,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 82.48,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/rifampin",
-      "scrapedAt": "2026-07-26T00:17:46.130216Z"
-    },
-    "nateglinide": {
-      "name": "nateglinide",
-      "slug": "nateglinide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 54.1,
-      "highestPrice": 54.1,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 54.1,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/nateglinide",
-      "scrapedAt": "2026-07-26T00:17:46.130284Z"
-    },
-    "glipizide": {
-      "name": "glipizide",
-      "slug": "glipizide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 2.63,
-      "highestPrice": 2.63,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 2.63,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/glipizide",
-      "scrapedAt": "2026-07-26T00:17:46.130293Z"
-    },
-    "bromocriptine": {
-      "name": "bromocriptine",
-      "slug": "bromocriptine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 73.5,
-      "highestPrice": 73.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 73.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/bromocriptine",
-      "scrapedAt": "2026-07-26T00:17:46.130301Z"
-    },
-    "omeprazole": {
-      "name": "omeprazole",
-      "slug": "omeprazole",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 6.2,
-      "highestPrice": 6.2,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 6.2,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/omeprazole",
-      "scrapedAt": "2026-07-26T00:17:46.130307Z"
-    },
-    "glimepiride": {
-      "name": "glimepiride",
-      "slug": "glimepiride",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/glimepiride",
-      "scrapedAt": "2026-07-26T00:17:46.130313Z"
-    },
-    "desmopressin": {
-      "name": "desmopressin",
-      "slug": "desmopressin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 71.14,
-      "highestPrice": 71.14,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 71.14,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/desmopressin",
-      "scrapedAt": "2026-07-26T00:17:46.130319Z"
-    },
-    "cabergoline": {
-      "name": "cabergoline",
-      "slug": "cabergoline",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 33.61,
-      "highestPrice": 33.61,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 33.61,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/cabergoline",
-      "scrapedAt": "2026-07-26T00:17:46.130323Z"
-    },
-    "lanthanum": {
-      "name": "lanthanum",
-      "slug": "lanthanum",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 297.14,
-      "highestPrice": 297.14,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 297.14,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/lanthanum",
-      "scrapedAt": "2026-07-26T00:17:46.130327Z"
-    },
-    "alendronate": {
-      "name": "alendronate",
-      "slug": "alendronate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 4.6,
-      "highestPrice": 4.6,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 4.6,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/alendronate",
-      "scrapedAt": "2026-07-26T00:17:46.130332Z"
-    },
-    "ropinirole": {
-      "name": "ropinirole",
-      "slug": "ropinirole",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 5.3,
-      "highestPrice": 5.3,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 5.3,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ropinirole",
-      "scrapedAt": "2026-07-26T00:17:46.130337Z"
-    },
-    "risedronate": {
-      "name": "risedronate",
-      "slug": "risedronate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 35.9,
-      "highestPrice": 35.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 35.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/risedronate",
-      "scrapedAt": "2026-07-26T00:17:46.130340Z"
-    },
-    "ibandronate": {
-      "name": "ibandronate",
-      "slug": "ibandronate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.14,
-      "highestPrice": 11.14,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.14,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ibandronate",
-      "scrapedAt": "2026-07-26T00:17:46.130344Z"
-    },
-    "pramipexole": {
-      "name": "pramipexole",
-      "slug": "pramipexole",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 4.6,
-      "highestPrice": 4.6,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 4.6,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/pramipexole",
-      "scrapedAt": "2026-07-26T00:17:46.130347Z"
-    },
-    "carbidopa-levodopa": {
-      "name": "carbidopa-levodopa",
-      "slug": "carbidopa-levodopa",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 14.8,
-      "highestPrice": 14.8,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 14.8,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/carbidopa-levodopa",
-      "scrapedAt": "2026-07-26T00:17:46.130353Z"
-    },
-    "raloxifene": {
-      "name": "raloxifene",
-      "slug": "raloxifene",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 26.6,
-      "highestPrice": 26.6,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 26.6,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/raloxifene",
-      "scrapedAt": "2026-07-26T00:17:46.130359Z"
-    },
-    "entacapone": {
-      "name": "entacapone",
-      "slug": "entacapone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 111.2,
-      "highestPrice": 111.2,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 111.2,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/entacapone",
-      "scrapedAt": "2026-07-26T00:17:46.130365Z"
-    },
-    "benztropine": {
-      "name": "benztropine",
-      "slug": "benztropine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 10.1,
-      "highestPrice": 10.1,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 10.1,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/benztropine",
-      "scrapedAt": "2026-07-26T00:17:46.130371Z"
-    },
-    "trihexyphenidyl": {
-      "name": "trihexyphenidyl",
-      "slug": "trihexyphenidyl",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 5.25,
-      "highestPrice": 5.25,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 5.25,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/trihexyphenidyl",
-      "scrapedAt": "2026-07-26T00:17:46.130376Z"
-    },
-    "riluzole": {
-      "name": "riluzole",
-      "slug": "riluzole",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 116.36,
-      "highestPrice": 116.36,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 116.36,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/riluzole",
-      "scrapedAt": "2026-07-26T00:17:46.130383Z"
-    },
-    "tetrabenazine": {
-      "name": "tetrabenazine",
-      "slug": "tetrabenazine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 1236.35,
-      "highestPrice": 1236.35,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 1236.35,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/tetrabenazine",
-      "scrapedAt": "2026-07-26T00:17:46.130394Z"
-    },
-    "tamsulosin": {
-      "name": "tamsulosin",
-      "slug": "tamsulosin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.15,
-      "highestPrice": 11.15,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.15,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/tamsulosin",
-      "scrapedAt": "2026-07-26T00:17:46.130400Z"
-    },
-    "finasteride": {
-      "name": "finasteride",
-      "slug": "finasteride",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 8.95,
-      "highestPrice": 8.95,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 8.95,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/finasteride",
-      "scrapedAt": "2026-07-26T00:17:46.130406Z"
-    },
-    "sildenafil": {
-      "name": "sildenafil",
-      "slug": "sildenafil",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 23.95,
-      "highestPrice": 23.95,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 23.95,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/sildenafil",
-      "scrapedAt": "2026-07-26T00:17:46.130411Z"
-    },
-    "primidone": {
-      "name": "primidone",
-      "slug": "primidone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 10.2,
-      "highestPrice": 10.2,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 10.2,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/primidone",
-      "scrapedAt": "2026-07-26T00:17:46.130415Z"
-    },
-    "ethosuximide": {
-      "name": "ethosuximide",
-      "slug": "ethosuximide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 82.0,
-      "highestPrice": 82.0,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 82.0,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/ethosuximide",
-      "scrapedAt": "2026-07-26T00:17:46.130424Z"
-    },
-    "tadalafil": {
-      "name": "tadalafil",
-      "slug": "tadalafil",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 105.0,
-      "highestPrice": 105.0,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 105.0,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/tadalafil",
-      "scrapedAt": "2026-07-26T00:17:46.130431Z"
-    },
-    "alfuzosin": {
-      "name": "alfuzosin",
-      "slug": "alfuzosin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 7.5,
-      "highestPrice": 7.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 7.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/alfuzosin",
-      "scrapedAt": "2026-07-26T00:17:46.130436Z"
-    },
-    "clobazam": {
-      "name": "clobazam",
-      "slug": "clobazam",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 44.75,
-      "highestPrice": 44.75,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 44.75,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/clobazam",
-      "scrapedAt": "2026-07-26T00:17:46.130446Z"
-    },
-    "terazosin": {
-      "name": "terazosin",
-      "slug": "terazosin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 15.23,
-      "highestPrice": 15.23,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 15.23,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/terazosin",
-      "scrapedAt": "2026-07-26T00:17:46.130452Z"
-    },
-    "darifenacin": {
-      "name": "darifenacin",
-      "slug": "darifenacin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 123.3,
-      "highestPrice": 123.3,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 123.3,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/darifenacin",
-      "scrapedAt": "2026-07-26T00:17:46.130461Z"
-    },
-    "rufinamide": {
-      "name": "rufinamide",
-      "slug": "rufinamide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 504.78,
-      "highestPrice": 504.78,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 504.78,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/rufinamide",
-      "scrapedAt": "2026-07-26T00:17:46.130468Z"
-    },
-    "trospium": {
-      "name": "trospium",
-      "slug": "trospium",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 135.3,
-      "highestPrice": 135.3,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 135.3,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/trospium",
-      "scrapedAt": "2026-07-26T00:17:46.130473Z"
-    },
-    "phenazopyridine": {
-      "name": "phenazopyridine",
-      "slug": "phenazopyridine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 15.9,
-      "highestPrice": 15.9,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 15.9,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/phenazopyridine",
-      "scrapedAt": "2026-07-26T00:17:46.130479Z"
-    },
-    "felbamate": {
-      "name": "felbamate",
-      "slug": "felbamate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 561.07,
-      "highestPrice": 561.07,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 561.07,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/felbamate",
-      "scrapedAt": "2026-07-26T00:17:46.130484Z"
-    },
-    "potassium-citrate": {
-      "name": "potassium citrate",
-      "slug": "potassium-citrate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 44.21,
-      "highestPrice": 44.21,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 44.21,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/potassium-citrate",
-      "scrapedAt": "2026-07-26T00:17:46.130490Z"
-    },
-    "tiagabine": {
-      "name": "tiagabine",
-      "slug": "tiagabine",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 342.87,
-      "highestPrice": 342.87,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 342.87,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/tiagabine",
-      "scrapedAt": "2026-07-26T00:17:46.130495Z"
-    },
-    "sodium-bicarbonate": {
-      "name": "sodium bicarbonate",
-      "slug": "sodium-bicarbonate",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 11.28,
-      "highestPrice": 11.28,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 11.28,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/sodium-bicarbonate",
-      "scrapedAt": "2026-07-26T00:17:46.130498Z"
-    },
-    "dorzolamide": {
-      "name": "dorzolamide",
-      "slug": "dorzolamide",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 21.74,
-      "highestPrice": 21.74,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 21.74,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/dorzolamide",
-      "scrapedAt": "2026-07-26T00:17:46.130512Z"
-    },
-    "aliskiren": {
-      "name": "aliskiren",
-      "slug": "aliskiren",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 266.31,
-      "highestPrice": 266.31,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 266.31,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/aliskiren",
-      "scrapedAt": "2026-07-26T00:17:46.130516Z"
-    },
-    "eplerenone": {
-      "name": "eplerenone",
-      "slug": "eplerenone",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 42.47,
-      "highestPrice": 42.47,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 42.47,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/eplerenone",
-      "scrapedAt": "2026-07-26T00:17:46.130526Z"
-    },
-    "tolvaptan": {
-      "name": "tolvaptan",
-      "slug": "tolvaptan",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 15636.15,
-      "highestPrice": 15636.15,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 15636.15,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/tolvaptan",
-      "scrapedAt": "2026-07-26T00:17:46.130532Z"
-    },
-    "metformin": {
-      "name": "metformin",
-      "slug": "metformin",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.96,
-      "highestPrice": 3.96,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.96,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/metformin",
-      "scrapedAt": "2026-07-26T00:17:46.130535Z"
-    },
-    "lisinopril": {
-      "name": "lisinopril",
-      "slug": "lisinopril",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 3.5,
-      "highestPrice": 3.5,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 3.5,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/lisinopril",
-      "scrapedAt": "2026-07-26T00:17:46.130540Z"
-    },
-    "losartan": {
-      "name": "losartan",
-      "slug": "losartan",
-      "strength": "",
-      "form": "",
-      "quantity": "",
-      "lowestPrice": 7.8,
-      "highestPrice": 7.8,
-      "pharmacyCount": 1,
-      "prices": [
-        {
-          "pharmacy": "Blink Health",
-          "price": 7.8,
-          "type": "Home Delivery"
-        }
-      ],
-      "url": "https://www.blinkhealth.com/losartan",
-      "scrapedAt": "2026-07-26T00:17:46.130543Z"
+      "url": "https://www.blinkhealth.com/propranolol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "atorvastatin": {
       "name": "atorvastatin",
@@ -3405,11 +118,30 @@
         }
       ],
       "url": "https://www.blinkhealth.com/atorvastatin",
-      "scrapedAt": "2026-07-26T00:17:46.130548Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "amlodipine": {
-      "name": "amlodipine",
-      "slug": "amlodipine",
+    "tolterodine": {
+      "name": "tolterodine",
+      "slug": "tolterodine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 61.8,
+      "highestPrice": 61.8,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 61.8,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/tolterodine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "atenolol": {
+      "name": "atenolol",
+      "slug": "atenolol",
       "strength": "",
       "form": "",
       "quantity": "",
@@ -3423,31 +155,50 @@
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/amlodipine",
-      "scrapedAt": "2026-07-26T00:17:46.130551Z"
+      "url": "https://www.blinkhealth.com/atenolol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "pregabalin": {
-      "name": "pregabalin",
-      "slug": "pregabalin",
+    "budesonide": {
+      "name": "budesonide",
+      "slug": "budesonide",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 209.77,
-      "highestPrice": 209.77,
+      "lowestPrice": 122.59,
+      "highestPrice": 122.59,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 209.77,
+          "price": 122.59,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/pregabalin",
-      "scrapedAt": "2026-07-26T00:17:46.130555Z"
+      "url": "https://www.blinkhealth.com/budesonide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "meloxicam": {
-      "name": "meloxicam",
-      "slug": "meloxicam",
+    "solifenacin": {
+      "name": "solifenacin",
+      "slug": "solifenacin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 16.99,
+      "highestPrice": 16.99,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 16.99,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/solifenacin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "carvedilol": {
+      "name": "carvedilol",
+      "slug": "carvedilol",
       "strength": "",
       "form": "",
       "quantity": "",
@@ -3461,31 +212,259 @@
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/meloxicam",
-      "scrapedAt": "2026-07-26T00:17:46.130558Z"
+      "url": "https://www.blinkhealth.com/carvedilol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "metronidazole": {
-      "name": "metronidazole",
-      "slug": "metronidazole",
+    "dutasteride": {
+      "name": "dutasteride",
+      "slug": "dutasteride",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 11.94,
-      "highestPrice": 11.94,
+      "lowestPrice": 13.98,
+      "highestPrice": 13.98,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 11.94,
+          "price": 13.98,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/metronidazole",
-      "scrapedAt": "2026-07-26T00:17:46.130561Z"
+      "url": "https://www.blinkhealth.com/dutasteride",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "pioglitazone": {
-      "name": "pioglitazone",
-      "slug": "pioglitazone",
+    "furosemide": {
+      "name": "furosemide",
+      "slug": "furosemide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/furosemide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "theophylline": {
+      "name": "theophylline",
+      "slug": "theophylline",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 213.6,
+      "highestPrice": 213.6,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 213.6,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/theophylline",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "tretinoin": {
+      "name": "tretinoin",
+      "slug": "tretinoin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 113.8,
+      "highestPrice": 113.8,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 113.8,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/tretinoin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "hydrochlorothiazide": {
+      "name": "hydrochlorothiazide",
+      "slug": "hydrochlorothiazide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/hydrochlorothiazide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "hydralazine": {
+      "name": "hydralazine",
+      "slug": "hydralazine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 4.17,
+      "highestPrice": 4.17,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 4.17,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/hydralazine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "isosorbide-mononitrate": {
+      "name": "isosorbide mononitrate",
+      "slug": "isosorbide-mononitrate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/isosorbide-mononitrate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "spironolactone": {
+      "name": "spironolactone",
+      "slug": "spironolactone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.5,
+      "highestPrice": 6.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/spironolactone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "clotrimazole": {
+      "name": "clotrimazole",
+      "slug": "clotrimazole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 31.74,
+      "highestPrice": 31.74,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 31.74,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/clotrimazole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "lansoprazole": {
+      "name": "lansoprazole",
+      "slug": "lansoprazole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.0,
+      "highestPrice": 11.0,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.0,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/lansoprazole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "warfarin": {
+      "name": "warfarin",
+      "slug": "warfarin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/warfarin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "digoxin": {
+      "name": "digoxin",
+      "slug": "digoxin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 17.5,
+      "highestPrice": 17.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 17.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/digoxin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "misoprostol": {
+      "name": "misoprostol",
+      "slug": "misoprostol",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.12,
+      "highestPrice": 6.12,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.12,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/misoprostol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "clopidogrel": {
+      "name": "clopidogrel",
+      "slug": "clopidogrel",
       "strength": "",
       "form": "",
       "quantity": "",
@@ -3499,160 +478,198 @@
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/pioglitazone",
-      "scrapedAt": "2026-07-26T00:17:46.130566Z"
+      "url": "https://www.blinkhealth.com/clopidogrel",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "levothyroxine": {
-      "name": "levothyroxine",
-      "slug": "levothyroxine",
+    "amiodarone": {
+      "name": "amiodarone",
+      "slug": "amiodarone",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 13.9,
-      "highestPrice": 13.9,
+      "lowestPrice": 8.1,
+      "highestPrice": 8.1,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 13.9,
+          "price": 8.1,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/levothyroxine",
-      "scrapedAt": "2026-07-26T00:17:46.130569Z"
+      "url": "https://www.blinkhealth.com/amiodarone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "methimazole": {
-      "name": "methimazole",
-      "slug": "methimazole",
+    "doxazosin": {
+      "name": "doxazosin",
+      "slug": "doxazosin",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 6.3,
-      "highestPrice": 6.3,
+      "lowestPrice": 10.6,
+      "highestPrice": 10.6,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 6.3,
+          "price": 10.6,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/methimazole",
-      "scrapedAt": "2026-07-26T00:17:46.130572Z"
+      "url": "https://www.blinkhealth.com/doxazosin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "prednisone": {
-      "name": "prednisone",
-      "slug": "prednisone",
+    "lactulose": {
+      "name": "lactulose",
+      "slug": "lactulose",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 3.0,
-      "highestPrice": 3.0,
+      "lowestPrice": 13.79,
+      "highestPrice": 13.79,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 3.0,
+          "price": 13.79,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/prednisone",
-      "scrapedAt": "2026-07-26T00:17:46.130576Z"
+      "url": "https://www.blinkhealth.com/lactulose",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "prednisolone": {
-      "name": "prednisolone",
-      "slug": "prednisolone",
+    "pravastatin": {
+      "name": "pravastatin",
+      "slug": "pravastatin",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 7.51,
-      "highestPrice": 7.51,
+      "lowestPrice": 10.3,
+      "highestPrice": 10.3,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 7.51,
+          "price": 10.3,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/prednisolone",
-      "scrapedAt": "2026-07-26T00:17:46.130579Z"
+      "url": "https://www.blinkhealth.com/pravastatin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "methylprednisolone": {
-      "name": "methylprednisolone",
-      "slug": "methylprednisolone",
+    "ezetimibe": {
+      "name": "ezetimibe",
+      "slug": "ezetimibe",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 17.88,
-      "highestPrice": 17.88,
+      "lowestPrice": 12.8,
+      "highestPrice": 12.8,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 17.88,
+          "price": 12.8,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/methylprednisolone",
-      "scrapedAt": "2026-07-26T00:17:46.130582Z"
+      "url": "https://www.blinkhealth.com/ezetimibe",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "dexamethasone": {
-      "name": "dexamethasone",
-      "slug": "dexamethasone",
+    "latanoprost": {
+      "name": "latanoprost",
+      "slug": "latanoprost",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 4.77,
-      "highestPrice": 4.77,
+      "lowestPrice": 13.65,
+      "highestPrice": 13.65,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 4.77,
+          "price": 13.65,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/dexamethasone",
-      "scrapedAt": "2026-07-26T00:17:46.130585Z"
+      "url": "https://www.blinkhealth.com/latanoprost",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "fludrocortisone": {
-      "name": "fludrocortisone",
-      "slug": "fludrocortisone",
+    "hydrocortisone": {
+      "name": "hydrocortisone",
+      "slug": "hydrocortisone",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 18.15,
-      "highestPrice": 18.15,
+      "lowestPrice": 20.98,
+      "highestPrice": 20.98,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 18.15,
+          "price": 20.98,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/fludrocortisone",
-      "scrapedAt": "2026-07-26T00:17:46.130589Z"
+      "url": "https://www.blinkhealth.com/hydrocortisone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "medroxyprogesterone": {
-      "name": "medroxyprogesterone",
-      "slug": "medroxyprogesterone",
+    "simvastatin": {
+      "name": "simvastatin",
+      "slug": "simvastatin",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 4.9,
-      "highestPrice": 4.9,
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 4.9,
+          "price": 3.5,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/medroxyprogesterone",
-      "scrapedAt": "2026-07-26T00:17:46.130595Z"
+      "url": "https://www.blinkhealth.com/simvastatin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "rosuvastatin": {
+      "name": "rosuvastatin",
+      "slug": "rosuvastatin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 8.75,
+      "highestPrice": 8.75,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 8.75,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/rosuvastatin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "loperamide": {
+      "name": "loperamide",
+      "slug": "loperamide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 17.61,
+      "highestPrice": 17.61,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 17.61,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/loperamide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "brimonidine": {
       "name": "brimonidine",
@@ -3671,45 +688,64 @@
         }
       ],
       "url": "https://www.blinkhealth.com/brimonidine",
-      "scrapedAt": "2026-07-26T00:17:46.130600Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "fluvoxamine": {
-      "name": "fluvoxamine",
-      "slug": "fluvoxamine",
+    "mesalamine": {
+      "name": "mesalamine",
+      "slug": "mesalamine",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 41.3,
-      "highestPrice": 41.3,
+      "lowestPrice": 1462.4,
+      "highestPrice": 1462.4,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 41.3,
+          "price": 1462.4,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/fluvoxamine",
-      "scrapedAt": "2026-07-26T00:17:46.130605Z"
+      "url": "https://www.blinkhealth.com/mesalamine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "levofloxacin": {
-      "name": "levofloxacin",
-      "slug": "levofloxacin",
+    "gemfibrozil": {
+      "name": "gemfibrozil",
+      "slug": "gemfibrozil",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 9.9,
-      "highestPrice": 9.9,
+      "lowestPrice": 11.5,
+      "highestPrice": 11.5,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 9.9,
+          "price": 11.5,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/levofloxacin",
-      "scrapedAt": "2026-07-26T00:17:46.130608Z"
+      "url": "https://www.blinkhealth.com/gemfibrozil",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "celecoxib": {
+      "name": "celecoxib",
+      "slug": "celecoxib",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 15.95,
+      "highestPrice": 15.95,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 15.95,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/celecoxib",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "hydroxychloroquine": {
       "name": "hydroxychloroquine",
@@ -3728,7 +764,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/hydroxychloroquine",
-      "scrapedAt": "2026-07-26T00:17:46.130611Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "naltrexone": {
       "name": "naltrexone",
@@ -3747,26 +783,26 @@
         }
       ],
       "url": "https://www.blinkhealth.com/naltrexone",
-      "scrapedAt": "2026-07-26T00:17:46.130615Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
-    "nitrofurantoin": {
-      "name": "nitrofurantoin",
-      "slug": "nitrofurantoin",
+    "ketorolac": {
+      "name": "ketorolac",
+      "slug": "ketorolac",
       "strength": "",
       "form": "",
       "quantity": "",
-      "lowestPrice": 294.58,
-      "highestPrice": 294.58,
+      "lowestPrice": 38.19,
+      "highestPrice": 38.19,
       "pharmacyCount": 1,
       "prices": [
         {
           "pharmacy": "Blink Health",
-          "price": 294.58,
+          "price": 38.19,
           "type": "Home Delivery"
         }
       ],
-      "url": "https://www.blinkhealth.com/nitrofurantoin",
-      "scrapedAt": "2026-07-26T00:17:46.130618Z"
+      "url": "https://www.blinkhealth.com/ketorolac",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "clonidine": {
       "name": "clonidine",
@@ -3785,7 +821,83 @@
         }
       ],
       "url": "https://www.blinkhealth.com/clonidine",
-      "scrapedAt": "2026-07-26T00:17:46.130621Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "ranolazine": {
+      "name": "ranolazine",
+      "slug": "ranolazine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 29.9,
+      "highestPrice": 29.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 29.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/ranolazine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "baclofen": {
+      "name": "baclofen",
+      "slug": "baclofen",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 14.8,
+      "highestPrice": 14.8,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 14.8,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/baclofen",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "olanzapine": {
+      "name": "olanzapine",
+      "slug": "olanzapine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 8.0,
+      "highestPrice": 8.0,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 8.0,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/olanzapine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "tizanidine": {
+      "name": "tizanidine",
+      "slug": "tizanidine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.39,
+      "highestPrice": 11.39,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.39,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/tizanidine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "guanfacine": {
       "name": "guanfacine",
@@ -3804,7 +916,64 @@
         }
       ],
       "url": "https://www.blinkhealth.com/guanfacine",
-      "scrapedAt": "2026-07-26T00:17:46.130624Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "risperidone": {
+      "name": "risperidone",
+      "slug": "risperidone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/risperidone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "methocarbamol": {
+      "name": "methocarbamol",
+      "slug": "methocarbamol",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 7.5,
+      "highestPrice": 7.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 7.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/methocarbamol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "meloxicam": {
+      "name": "meloxicam",
+      "slug": "meloxicam",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/meloxicam",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "docusate-sodium": {
       "name": "docusate sodium",
@@ -3823,7 +992,653 @@
         }
       ],
       "url": "https://www.blinkhealth.com/docusate-sodium",
-      "scrapedAt": "2026-07-26T00:17:46.130628Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "carisoprodol": {
+      "name": "carisoprodol",
+      "slug": "carisoprodol",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 17.18,
+      "highestPrice": 17.18,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 17.18,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/carisoprodol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "haloperidol": {
+      "name": "haloperidol",
+      "slug": "haloperidol",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 27.31,
+      "highestPrice": 27.31,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 27.31,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/haloperidol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "cyclobenzaprine": {
+      "name": "cyclobenzaprine",
+      "slug": "cyclobenzaprine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.5,
+      "highestPrice": 6.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/cyclobenzaprine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "clozapine": {
+      "name": "clozapine",
+      "slug": "clozapine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 36.67,
+      "highestPrice": 36.67,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 36.67,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/clozapine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "oxcarbazepine": {
+      "name": "oxcarbazepine",
+      "slug": "oxcarbazepine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 16.0,
+      "highestPrice": 16.0,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 16.0,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/oxcarbazepine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "levetiracetam": {
+      "name": "levetiracetam",
+      "slug": "levetiracetam",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 8.9,
+      "highestPrice": 8.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 8.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/levetiracetam",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "pregabalin": {
+      "name": "pregabalin",
+      "slug": "pregabalin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 209.77,
+      "highestPrice": 209.77,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 209.77,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/pregabalin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "phenytoin": {
+      "name": "phenytoin",
+      "slug": "phenytoin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 15.0,
+      "highestPrice": 15.0,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 15.0,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/phenytoin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "carbamazepine": {
+      "name": "carbamazepine",
+      "slug": "carbamazepine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 30.9,
+      "highestPrice": 30.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 30.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/carbamazepine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "valproic-acid": {
+      "name": "valproic acid",
+      "slug": "valproic-acid",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 21.28,
+      "highestPrice": 21.28,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 21.28,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/valproic-acid",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "divalproex": {
+      "name": "divalproex",
+      "slug": "divalproex",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 31.2,
+      "highestPrice": 31.2,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 31.2,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/divalproex",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "eszopiclone": {
+      "name": "eszopiclone",
+      "slug": "eszopiclone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 17.7,
+      "highestPrice": 17.7,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 17.7,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/eszopiclone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "sumatriptan": {
+      "name": "sumatriptan",
+      "slug": "sumatriptan",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 391.15,
+      "highestPrice": 391.15,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 391.15,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/sumatriptan",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "rizatriptan": {
+      "name": "rizatriptan",
+      "slug": "rizatriptan",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 16.6,
+      "highestPrice": 16.6,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 16.6,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/rizatriptan",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "donepezil": {
+      "name": "donepezil",
+      "slug": "donepezil",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.37,
+      "highestPrice": 6.37,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.37,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/donepezil",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "memantine": {
+      "name": "memantine",
+      "slug": "memantine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.9,
+      "highestPrice": 11.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/memantine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "atomoxetine": {
+      "name": "atomoxetine",
+      "slug": "atomoxetine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 91.19,
+      "highestPrice": 91.19,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 91.19,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/atomoxetine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "fluvoxamine": {
+      "name": "fluvoxamine",
+      "slug": "fluvoxamine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 41.3,
+      "highestPrice": 41.3,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 41.3,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/fluvoxamine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "levofloxacin": {
+      "name": "levofloxacin",
+      "slug": "levofloxacin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 9.9,
+      "highestPrice": 9.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 9.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/levofloxacin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "nitrofurantoin": {
+      "name": "nitrofurantoin",
+      "slug": "nitrofurantoin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 294.58,
+      "highestPrice": 294.58,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 294.58,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/nitrofurantoin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "aripiprazole": {
+      "name": "aripiprazole",
+      "slug": "aripiprazole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 18.0,
+      "highestPrice": 18.0,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 18.0,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/aripiprazole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "doxepin": {
+      "name": "doxepin",
+      "slug": "doxepin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 14.3,
+      "highestPrice": 14.3,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 14.3,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/doxepin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "quetiapine": {
+      "name": "quetiapine",
+      "slug": "quetiapine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 8.9,
+      "highestPrice": 8.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 8.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/quetiapine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "paliperidone": {
+      "name": "paliperidone",
+      "slug": "paliperidone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 362.17,
+      "highestPrice": 362.17,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 362.17,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/paliperidone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "pantoprazole": {
+      "name": "pantoprazole",
+      "slug": "pantoprazole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 8.95,
+      "highestPrice": 8.95,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 8.95,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/pantoprazole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "buspirone": {
+      "name": "buspirone",
+      "slug": "buspirone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 13.1,
+      "highestPrice": 13.1,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 13.1,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/buspirone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "famotidine": {
+      "name": "famotidine",
+      "slug": "famotidine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 21.85,
+      "highestPrice": 21.85,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 21.85,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/famotidine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "amoxicillin": {
+      "name": "amoxicillin",
+      "slug": "amoxicillin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.1,
+      "highestPrice": 6.1,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.1,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/amoxicillin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "sucralfate": {
+      "name": "sucralfate",
+      "slug": "sucralfate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 38.5,
+      "highestPrice": 38.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 38.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/sucralfate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "isoniazid": {
+      "name": "isoniazid",
+      "slug": "isoniazid",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 9.62,
+      "highestPrice": 9.62,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 9.62,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/isoniazid",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "azithromycin": {
+      "name": "azithromycin",
+      "slug": "azithromycin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 9.94,
+      "highestPrice": 9.94,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 9.94,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/azithromycin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "ethambutol": {
+      "name": "ethambutol",
+      "slug": "ethambutol",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 62.13,
+      "highestPrice": 62.13,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 62.13,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/ethambutol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "dicyclomine": {
+      "name": "dicyclomine",
+      "slug": "dicyclomine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 28.7,
+      "highestPrice": 28.7,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 28.7,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/dicyclomine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "pyrazinamide": {
+      "name": "pyrazinamide",
+      "slug": "pyrazinamide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 65.04,
+      "highestPrice": 65.04,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 65.04,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/pyrazinamide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "naproxen": {
       "name": "naproxen",
@@ -3842,7 +1657,26 @@
         }
       ],
       "url": "https://www.blinkhealth.com/naproxen",
-      "scrapedAt": "2026-07-26T00:17:46.130631Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "ondansetron": {
+      "name": "ondansetron",
+      "slug": "ondansetron",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 7.41,
+      "highestPrice": 7.41,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 7.41,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/ondansetron",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "ibuprofen": {
       "name": "ibuprofen",
@@ -3861,7 +1695,387 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ibuprofen",
-      "scrapedAt": "2026-07-26T00:17:46.130634Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "promethazine": {
+      "name": "promethazine",
+      "slug": "promethazine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 61.64,
+      "highestPrice": 61.64,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 61.64,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/promethazine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "ciprofloxacin": {
+      "name": "ciprofloxacin",
+      "slug": "ciprofloxacin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 173.35,
+      "highestPrice": 173.35,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 173.35,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/ciprofloxacin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "cephalexin": {
+      "name": "cephalexin",
+      "slug": "cephalexin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 7.32,
+      "highestPrice": 7.32,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 7.32,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/cephalexin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "clindamycin": {
+      "name": "Clindamycin (Generic)",
+      "slug": "clindamycin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 35.83,
+      "highestPrice": 35.83,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 35.83,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/clindamycin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "montelukast": {
+      "name": "montelukast",
+      "slug": "montelukast",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 5.8,
+      "highestPrice": 5.8,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 5.8,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/montelukast",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "metronidazole": {
+      "name": "metronidazole",
+      "slug": "metronidazole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.94,
+      "highestPrice": 11.94,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.94,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/metronidazole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "mometasone": {
+      "name": "mometasone",
+      "slug": "mometasone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 36.08,
+      "highestPrice": 36.08,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 36.08,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/mometasone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "ursodiol": {
+      "name": "ursodiol",
+      "slug": "ursodiol",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 118.55,
+      "highestPrice": 118.55,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 118.55,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/ursodiol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "cetirizine": {
+      "name": "cetirizine",
+      "slug": "cetirizine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 5.5,
+      "highestPrice": 5.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 5.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/cetirizine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "moxifloxacin": {
+      "name": "moxifloxacin",
+      "slug": "moxifloxacin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 67.83,
+      "highestPrice": 67.83,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 67.83,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/moxifloxacin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "loratadine": {
+      "name": "loratadine",
+      "slug": "loratadine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 5.0,
+      "highestPrice": 5.0,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 5.0,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/loratadine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "colesevelam": {
+      "name": "colesevelam",
+      "slug": "colesevelam",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 97.06,
+      "highestPrice": 97.06,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 97.06,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/colesevelam",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "capsaicin": {
+      "name": "capsaicin",
+      "slug": "capsaicin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 9.18,
+      "highestPrice": 9.18,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 9.18,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/capsaicin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "minocycline": {
+      "name": "minocycline",
+      "slug": "minocycline",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 40.5,
+      "highestPrice": 40.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 40.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/minocycline",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "fexofenadine": {
+      "name": "fexofenadine",
+      "slug": "fexofenadine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 18.3,
+      "highestPrice": 18.3,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 18.3,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/fexofenadine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "tetracycline": {
+      "name": "tetracycline",
+      "slug": "tetracycline",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 416.67,
+      "highestPrice": 416.67,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 416.67,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/tetracycline",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "desloratadine": {
+      "name": "desloratadine",
+      "slug": "desloratadine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 17.84,
+      "highestPrice": 17.84,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 17.84,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/desloratadine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "piroxicam": {
+      "name": "piroxicam",
+      "slug": "piroxicam",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 23.4,
+      "highestPrice": 23.4,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 23.4,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/piroxicam",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "alvimopan": {
+      "name": "alvimopan",
+      "slug": "alvimopan",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 5607.8,
+      "highestPrice": 5607.8,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 5607.8,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/alvimopan",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "clarithromycin": {
+      "name": "clarithromycin",
+      "slug": "clarithromycin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 32.26,
+      "highestPrice": 32.26,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 32.26,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/clarithromycin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     },
     "levocetirizine": {
       "name": "levocetirizine",
@@ -3880,7 +2094,1793 @@
         }
       ],
       "url": "https://www.blinkhealth.com/levocetirizine",
-      "scrapedAt": "2026-07-26T00:17:46.130638Z"
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "etodolac": {
+      "name": "etodolac",
+      "slug": "etodolac",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 38.5,
+      "highestPrice": 38.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 38.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/etodolac",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "salsalate": {
+      "name": "salsalate",
+      "slug": "salsalate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 37.08,
+      "highestPrice": 37.08,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 37.08,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/salsalate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "diflunisal": {
+      "name": "diflunisal",
+      "slug": "diflunisal",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 71.9,
+      "highestPrice": 71.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 71.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/diflunisal",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "rifampin": {
+      "name": "rifampin",
+      "slug": "rifampin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 82.48,
+      "highestPrice": 82.48,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 82.48,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/rifampin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "glipizide": {
+      "name": "glipizide",
+      "slug": "glipizide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 2.63,
+      "highestPrice": 2.63,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 2.63,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/glipizide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "cromolyn": {
+      "name": "cromolyn",
+      "slug": "cromolyn",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 29.41,
+      "highestPrice": 29.41,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 29.41,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/cromolyn",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "sertraline": {
+      "name": "sertraline",
+      "slug": "sertraline",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 7.1,
+      "highestPrice": 7.1,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 7.1,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/sertraline",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "zafirlukast": {
+      "name": "zafirlukast",
+      "slug": "zafirlukast",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 92.67,
+      "highestPrice": 92.67,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 92.67,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/zafirlukast",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "glimepiride": {
+      "name": "glimepiride",
+      "slug": "glimepiride",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/glimepiride",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "fluoxetine": {
+      "name": "fluoxetine",
+      "slug": "fluoxetine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/fluoxetine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "pioglitazone": {
+      "name": "pioglitazone",
+      "slug": "pioglitazone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 8.9,
+      "highestPrice": 8.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 8.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/pioglitazone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "citalopram": {
+      "name": "citalopram",
+      "slug": "citalopram",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/citalopram",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "venlafaxine": {
+      "name": "venlafaxine",
+      "slug": "venlafaxine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 8.9,
+      "highestPrice": 8.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 8.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/venlafaxine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "duloxetine": {
+      "name": "duloxetine",
+      "slug": "duloxetine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 10.95,
+      "highestPrice": 10.95,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 10.95,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/duloxetine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "glycopyrrolate": {
+      "name": "glycopyrrolate",
+      "slug": "glycopyrrolate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 16.28,
+      "highestPrice": 16.28,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 16.28,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/glycopyrrolate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "trazodone": {
+      "name": "trazodone",
+      "slug": "trazodone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/trazodone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "mirtazapine": {
+      "name": "mirtazapine",
+      "slug": "mirtazapine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.2,
+      "highestPrice": 6.2,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.2,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/mirtazapine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "omeprazole": {
+      "name": "omeprazole",
+      "slug": "omeprazole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.2,
+      "highestPrice": 6.2,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.2,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/omeprazole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "amitriptyline": {
+      "name": "amitriptyline",
+      "slug": "amitriptyline",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/amitriptyline",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "nortriptyline": {
+      "name": "nortriptyline",
+      "slug": "nortriptyline",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/nortriptyline",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "repaglinide": {
+      "name": "repaglinide",
+      "slug": "repaglinide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 22.4,
+      "highestPrice": 22.4,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 22.4,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/repaglinide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "nateglinide": {
+      "name": "nateglinide",
+      "slug": "nateglinide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 54.1,
+      "highestPrice": 54.1,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 54.1,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/nateglinide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "alendronate": {
+      "name": "alendronate",
+      "slug": "alendronate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 4.6,
+      "highestPrice": 4.6,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 4.6,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/alendronate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "risedronate": {
+      "name": "risedronate",
+      "slug": "risedronate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 35.9,
+      "highestPrice": 35.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 35.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/risedronate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "ibandronate": {
+      "name": "ibandronate",
+      "slug": "ibandronate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.14,
+      "highestPrice": 11.14,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.14,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/ibandronate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "bromocriptine": {
+      "name": "bromocriptine",
+      "slug": "bromocriptine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 73.5,
+      "highestPrice": 73.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 73.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/bromocriptine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "raloxifene": {
+      "name": "raloxifene",
+      "slug": "raloxifene",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 26.6,
+      "highestPrice": 26.6,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 26.6,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/raloxifene",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "levothyroxine": {
+      "name": "levothyroxine",
+      "slug": "levothyroxine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 13.9,
+      "highestPrice": 13.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 13.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/levothyroxine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "methylprednisolone": {
+      "name": "methylprednisolone",
+      "slug": "methylprednisolone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 17.88,
+      "highestPrice": 17.88,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 17.88,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/methylprednisolone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "carbidopa-levodopa": {
+      "name": "carbidopa-levodopa",
+      "slug": "carbidopa-levodopa",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 14.8,
+      "highestPrice": 14.8,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 14.8,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/carbidopa-levodopa",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "tadalafil": {
+      "name": "tadalafil",
+      "slug": "tadalafil",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 105.0,
+      "highestPrice": 105.0,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 105.0,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/tadalafil",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "alfuzosin": {
+      "name": "alfuzosin",
+      "slug": "alfuzosin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 7.5,
+      "highestPrice": 7.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 7.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/alfuzosin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "entacapone": {
+      "name": "entacapone",
+      "slug": "entacapone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 111.2,
+      "highestPrice": 111.2,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 111.2,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/entacapone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "fludrocortisone": {
+      "name": "fludrocortisone",
+      "slug": "fludrocortisone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 18.15,
+      "highestPrice": 18.15,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 18.15,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/fludrocortisone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "terazosin": {
+      "name": "terazosin",
+      "slug": "terazosin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 15.23,
+      "highestPrice": 15.23,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 15.23,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/terazosin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "dexamethasone": {
+      "name": "dexamethasone",
+      "slug": "dexamethasone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 4.77,
+      "highestPrice": 4.77,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 4.77,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/dexamethasone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "benztropine": {
+      "name": "benztropine",
+      "slug": "benztropine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 10.1,
+      "highestPrice": 10.1,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 10.1,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/benztropine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "trihexyphenidyl": {
+      "name": "trihexyphenidyl",
+      "slug": "trihexyphenidyl",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 5.25,
+      "highestPrice": 5.25,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 5.25,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/trihexyphenidyl",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "darifenacin": {
+      "name": "darifenacin",
+      "slug": "darifenacin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 123.3,
+      "highestPrice": 123.3,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 123.3,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/darifenacin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "tetrabenazine": {
+      "name": "tetrabenazine",
+      "slug": "tetrabenazine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 1236.35,
+      "highestPrice": 1236.35,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 1236.35,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/tetrabenazine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "riluzole": {
+      "name": "riluzole",
+      "slug": "riluzole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 116.36,
+      "highestPrice": 116.36,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 116.36,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/riluzole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "trospium": {
+      "name": "trospium",
+      "slug": "trospium",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 135.3,
+      "highestPrice": 135.3,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 135.3,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/trospium",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "phenazopyridine": {
+      "name": "phenazopyridine",
+      "slug": "phenazopyridine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 15.9,
+      "highestPrice": 15.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 15.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/phenazopyridine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "potassium-citrate": {
+      "name": "potassium citrate",
+      "slug": "potassium-citrate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 44.21,
+      "highestPrice": 44.21,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 44.21,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/potassium-citrate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "primidone": {
+      "name": "primidone",
+      "slug": "primidone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 10.2,
+      "highestPrice": 10.2,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 10.2,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/primidone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "ethosuximide": {
+      "name": "ethosuximide",
+      "slug": "ethosuximide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 82.0,
+      "highestPrice": 82.0,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 82.0,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/ethosuximide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "sodium-bicarbonate": {
+      "name": "sodium bicarbonate",
+      "slug": "sodium-bicarbonate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.28,
+      "highestPrice": 11.28,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.28,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/sodium-bicarbonate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "aliskiren": {
+      "name": "aliskiren",
+      "slug": "aliskiren",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 266.31,
+      "highestPrice": 266.31,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 266.31,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/aliskiren",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "clobazam": {
+      "name": "clobazam",
+      "slug": "clobazam",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 44.75,
+      "highestPrice": 44.75,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 44.75,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/clobazam",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "eplerenone": {
+      "name": "eplerenone",
+      "slug": "eplerenone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 42.47,
+      "highestPrice": 42.47,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 42.47,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/eplerenone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "tolvaptan": {
+      "name": "tolvaptan",
+      "slug": "tolvaptan",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 15636.15,
+      "highestPrice": 15636.15,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 15636.15,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/tolvaptan",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "rufinamide": {
+      "name": "rufinamide",
+      "slug": "rufinamide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 504.78,
+      "highestPrice": 504.78,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 504.78,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/rufinamide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "dorzolamide": {
+      "name": "dorzolamide",
+      "slug": "dorzolamide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 21.74,
+      "highestPrice": 21.74,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 21.74,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/dorzolamide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "felbamate": {
+      "name": "felbamate",
+      "slug": "felbamate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 561.07,
+      "highestPrice": 561.07,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 561.07,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/felbamate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "tiagabine": {
+      "name": "tiagabine",
+      "slug": "tiagabine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 342.87,
+      "highestPrice": 342.87,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 342.87,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/tiagabine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "losartan-hydrochlorothiazide": {
+      "name": "losartan-hydrochlorothiazide",
+      "slug": "losartan-hydrochlorothiazide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.3,
+      "highestPrice": 6.3,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.3,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/losartan-hydrochlorothiazide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "lisinopril-hydrochlorothiazide": {
+      "name": "lisinopril-hydrochlorothiazide",
+      "slug": "lisinopril-hydrochlorothiazide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.85,
+      "highestPrice": 6.85,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.85,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/lisinopril-hydrochlorothiazide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "colchicine": {
+      "name": "colchicine",
+      "slug": "colchicine",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 219.13,
+      "highestPrice": 219.13,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 219.13,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/colchicine",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "olmesartan": {
+      "name": "olmesartan",
+      "slug": "olmesartan",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.7,
+      "highestPrice": 6.7,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.7,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/olmesartan",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "valsartan": {
+      "name": "valsartan",
+      "slug": "valsartan",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 22.3,
+      "highestPrice": 22.3,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 22.3,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/valsartan",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "irbesartan": {
+      "name": "irbesartan",
+      "slug": "irbesartan",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.7,
+      "highestPrice": 11.7,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.7,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/irbesartan",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "allopurinol": {
+      "name": "allopurinol",
+      "slug": "allopurinol",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 7.8,
+      "highestPrice": 7.8,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 7.8,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/allopurinol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "trimethoprim": {
+      "name": "trimethoprim",
+      "slug": "trimethoprim",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 12.77,
+      "highestPrice": 12.77,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 12.77,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/trimethoprim",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "estradiol": {
+      "name": "estradiol",
+      "slug": "estradiol",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.2,
+      "highestPrice": 6.2,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.2,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/estradiol",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "fluconazole": {
+      "name": "fluconazole",
+      "slug": "fluconazole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.08,
+      "highestPrice": 11.08,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.08,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/fluconazole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "benazepril": {
+      "name": "benazepril",
+      "slug": "benazepril",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/benazepril",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "valacyclovir": {
+      "name": "valacyclovir",
+      "slug": "valacyclovir",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 14.6,
+      "highestPrice": 14.6,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 14.6,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/valacyclovir",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "metformin": {
+      "name": "metformin",
+      "slug": "metformin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.96,
+      "highestPrice": 3.96,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.96,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/metformin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "progesterone": {
+      "name": "progesterone",
+      "slug": "progesterone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 144.16,
+      "highestPrice": 144.16,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 144.16,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/progesterone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "ramipril": {
+      "name": "ramipril",
+      "slug": "ramipril",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/ramipril",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "losartan": {
+      "name": "losartan",
+      "slug": "losartan",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 7.8,
+      "highestPrice": 7.8,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 7.8,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/losartan",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "oseltamivir": {
+      "name": "oseltamivir",
+      "slug": "oseltamivir",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 388.99,
+      "highestPrice": 388.99,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 388.99,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/oseltamivir",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "glyburide": {
+      "name": "glyburide",
+      "slug": "glyburide",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 5.38,
+      "highestPrice": 5.38,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 5.38,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/glyburide",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "indomethacin": {
+      "name": "indomethacin",
+      "slug": "indomethacin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.6,
+      "highestPrice": 6.6,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.6,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/indomethacin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "acarbose": {
+      "name": "acarbose",
+      "slug": "acarbose",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 15.75,
+      "highestPrice": 15.75,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 15.75,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/acarbose",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "benzonatate": {
+      "name": "benzonatate",
+      "slug": "benzonatate",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 21.12,
+      "highestPrice": 21.12,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 21.12,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/benzonatate",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "sulindac": {
+      "name": "sulindac",
+      "slug": "sulindac",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 16.1,
+      "highestPrice": 16.1,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 16.1,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/sulindac",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "erythromycin": {
+      "name": "erythromycin",
+      "slug": "erythromycin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 18.26,
+      "highestPrice": 18.26,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 18.26,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/erythromycin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "linezolid": {
+      "name": "linezolid",
+      "slug": "linezolid",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 148.25,
+      "highestPrice": 148.25,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 148.25,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/linezolid",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "guaifenesin": {
+      "name": "guaifenesin",
+      "slug": "guaifenesin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.61,
+      "highestPrice": 6.61,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.61,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/guaifenesin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "methimazole": {
+      "name": "methimazole",
+      "slug": "methimazole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 6.3,
+      "highestPrice": 6.3,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 6.3,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/methimazole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "desmopressin": {
+      "name": "desmopressin",
+      "slug": "desmopressin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 71.14,
+      "highestPrice": 71.14,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 71.14,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/desmopressin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "cabergoline": {
+      "name": "cabergoline",
+      "slug": "cabergoline",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 33.61,
+      "highestPrice": 33.61,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 33.61,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/cabergoline",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "lanthanum": {
+      "name": "lanthanum",
+      "slug": "lanthanum",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 297.14,
+      "highestPrice": 297.14,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 297.14,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/lanthanum",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "tamsulosin": {
+      "name": "tamsulosin",
+      "slug": "tamsulosin",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.15,
+      "highestPrice": 11.15,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.15,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/tamsulosin",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "prednisone": {
+      "name": "prednisone",
+      "slug": "prednisone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.0,
+      "highestPrice": 3.0,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.0,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/prednisone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "ropinirole": {
+      "name": "ropinirole",
+      "slug": "ropinirole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 5.3,
+      "highestPrice": 5.3,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 5.3,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/ropinirole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "finasteride": {
+      "name": "finasteride",
+      "slug": "finasteride",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 8.95,
+      "highestPrice": 8.95,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 8.95,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/finasteride",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "prednisolone": {
+      "name": "prednisolone",
+      "slug": "prednisolone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 7.51,
+      "highestPrice": 7.51,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 7.51,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/prednisolone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "sildenafil": {
+      "name": "sildenafil",
+      "slug": "sildenafil",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 23.95,
+      "highestPrice": 23.95,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 23.95,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/sildenafil",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "pramipexole": {
+      "name": "pramipexole",
+      "slug": "pramipexole",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 4.6,
+      "highestPrice": 4.6,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 4.6,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/pramipexole",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "acyclovir": {
+      "name": "acyclovir",
+      "slug": "acyclovir",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 11.84,
+      "highestPrice": 11.84,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 11.84,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/acyclovir",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "medroxyprogesterone": {
+      "name": "medroxyprogesterone",
+      "slug": "medroxyprogesterone",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 4.9,
+      "highestPrice": 4.9,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 4.9,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/medroxyprogesterone",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
+    },
+    "lisinopril": {
+      "name": "lisinopril",
+      "slug": "lisinopril",
+      "strength": "",
+      "form": "",
+      "quantity": "",
+      "lowestPrice": 3.5,
+      "highestPrice": 3.5,
+      "pharmacyCount": 1,
+      "prices": [
+        {
+          "pharmacy": "Blink Health",
+          "price": 3.5,
+          "type": "Home Delivery"
+        }
+      ],
+      "url": "https://www.blinkhealth.com/lisinopril",
+      "scrapedAt": "2026-08-16T06:32:36.245437Z"
     }
   }
 }
