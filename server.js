@@ -46,6 +46,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 require("./health-report")(app);
+require("./trumprx-prices")(app);
 
 // Rate limiting for search API — 30 requests per minute per IP
 const searchLimiter = rateLimit({
@@ -54,9 +55,9 @@ const searchLimiter = rateLimit({
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: 'Too many searches. Please wait a minute and try again.' },
-  validate: { ipKeyGenerator: false },
+  validate: false,
   keyGenerator: (req) => req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.ip,
-  validate: { ipKeyGenerator: false },
+  validate: false,
 });
 
 const PORT = process.env.PORT || 3100;
