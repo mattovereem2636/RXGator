@@ -47,6 +47,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 require("./health-report")(app);
 require("./trumprx-prices")(app);
+require("./nadac-prices")(app);
 
 // Rate limiting for search API — 30 requests per minute per IP
 const searchLimiter = rateLimit({
@@ -1507,7 +1508,7 @@ app.get('/api/search-count', async (req, res) => {
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2025', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)', 'FedRx (govt deals, 841 drugs)'] });
+  res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2026 (pharmacy costs, 6327 drugs)', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)', 'FedRx (govt deals, 841 drugs)'] });
 });
 
 // Search log viewer (admin only - protected by Nginx Basic Auth)
@@ -1963,9 +1964,9 @@ app.listen(PORT, () => {
   console.log(`  ║   RxGator Prototype v0.5                 ║`);
   console.log(`  ║   http://localhost:${PORT}                  ║`);
   console.log(`  ║                                          ║`);
-  console.log(`  ║   Data Sources (18):                     ║`);
+  console.log(`  ║   Data Sources (20):                     ║`);
   console.log(`  ║   ✓ Cost Plus Drugs (live API)           ║`);
-  console.log(`  ║   ✓ NADAC 2025 (Medicaid open data)     ║`);
+  console.log(`  ║   ✓ NADAC 2026 (pharmacy costs, 6327 drugs)     ║`);
   console.log(`  ║   ✓ Medicaid FUL (federal upper limit)  ║`);
   console.log(`  ║   ✓ openFDA (drug normalization)        ║`);
   console.log(`  ║   ✓ RxNorm (NLM - drug matching)        ║`);
@@ -1983,5 +1984,4 @@ app.listen(PORT, () => {
   console.log(`  ║   ✓ RxSaver (Apify cache, 194 drugs)    ║`);
   console.log(`  ║   ✓ Blink Health (Apify cache, 69 drugs)║`);
   console.log(`  ║   ✓ FedRx (govt deals, 841 drugs)      ║`);
-  console.log(`  ╚═════════════════════════════════════════╝\n`);
 });
