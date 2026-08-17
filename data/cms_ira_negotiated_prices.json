@@ -1,0 +1,566 @@
+{
+  "source": "CMS Medicare Drug Price Negotiation Program",
+  "sourceUrl": "https://www.cms.gov/initiatives/medicare-prescription-drug-affordability/overview/medicare-drug-price-negotiation-program/selected-drugs-negotiated-prices",
+  "generatedAt": "2026-08-17",
+  "totalDrugs": 40,
+  "drugs": [
+    {
+      "drugName": "ELIQUIS",
+      "activeIngredient": "APIXABAN",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 237.25,
+      "mfpPerUnit": 4.257193,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 12,
+      "sampleNDCs": [
+        "00003-0893-21",
+        "00003-0893-31",
+        "00003-0893-41"
+      ]
+    },
+    {
+      "drugName": "ENBREL",
+      "activeIngredient": "ETANERCEPT",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 2418.7,
+      "mfpPerUnit": 599.326595,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 23,
+      "sampleNDCs": [
+        "58406-0010-01",
+        "58406-0010-04",
+        "58406-0021-01"
+      ]
+    },
+    {
+      "drugName": "ENTRESTO",
+      "activeIngredient": "VALSARTAN / SACUBITRILAT",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 295.0,
+      "mfpPerUnit": 5.226585,
+      "mfpEffectiveDate": "01/01/2026",
+      "ndcCount": 17,
+      "sampleNDCs": [
+        "00078-0659-20",
+        "00078-0659-35",
+        "00078-0659-61"
+      ]
+    },
+    {
+      "drugName": "FARXIGA",
+      "activeIngredient": "DAPAGLIFLOZIN",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 183.33,
+      "mfpPerUnit": 6.216618,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 17,
+      "sampleNDCs": [
+        "00003-1427-11",
+        "00003-1427-12",
+        "00003-1427-13"
+      ]
+    },
+    {
+      "drugName": "IMBRUVICA",
+      "activeIngredient": "IBRUTINIB",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 9571.07,
+      "mfpPerUnit": 363.537534,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 8,
+      "sampleNDCs": [
+        "57962-0007-12",
+        "57962-0014-28",
+        "57962-0070-28"
+      ]
+    },
+    {
+      "drugName": "JANUVIA",
+      "activeIngredient": "SITAGLIPTIN",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 116.06,
+      "mfpPerUnit": 4.013589,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 19,
+      "sampleNDCs": [
+        "00006-0112-01",
+        "00006-0112-28",
+        "00006-0112-31"
+      ]
+    },
+    {
+      "drugName": "JARDIANCE",
+      "activeIngredient": "EMPAGLIFLOZIN",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 202.33,
+      "mfpPerUnit": 6.977749,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 6,
+      "sampleNDCs": [
+        "00597-0152-30",
+        "00597-0152-37",
+        "00597-0152-90"
+      ]
+    },
+    {
+      "drugName": "NOVOLOG; NOVOLOG FLEXPEN; NOVOLOG PENFILL; FIASP; FIASP FLEXTOUCH; FIASP PENFILL",
+      "activeIngredient": "INSULIN ASPART, HUMAN",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 119.0,
+      "mfpPerUnit": 6.956927,
+      "mfpEffectiveDate": "01/01/2026",
+      "ndcCount": 17,
+      "sampleNDCs": [
+        "00169-2100-11",
+        "00169-2101-12",
+        "00169-2101-25"
+      ]
+    },
+    {
+      "drugName": "STELARA",
+      "activeIngredient": "USTEKINUMAB",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 4695.0,
+      "mfpPerUnit": 25.108135,
+      "mfpEffectiveDate": "01/01/2026",
+      "ndcCount": 9,
+      "sampleNDCs": [
+        "57894-0054-27",
+        "57894-0060-02",
+        "57894-0060-03"
+      ]
+    },
+    {
+      "drugName": "XARELTO",
+      "activeIngredient": "RIVAROXABAN",
+      "ipay": "2026",
+      "mfpPer30DaySupply": 197.0,
+      "mfpPerUnit": 1.329054,
+      "mfpEffectiveDate": "01/01/2026",
+      "ndcCount": 23,
+      "sampleNDCs": [
+        "50458-0575-01",
+        "50458-0577-01",
+        "50458-0577-10"
+      ]
+    },
+    {
+      "drugName": "AUSTEDO; AUSTEDO XR",
+      "activeIngredient": "DEUTETRABENAZINE",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 4093.0,
+      "mfpPerUnit": 50.27127,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 13,
+      "sampleNDCs": [
+        "68546-0170-60",
+        "68546-0171-60",
+        "68546-0172-60"
+      ]
+    },
+    {
+      "drugName": "BREO ELLIPTA",
+      "activeIngredient": "FLUTICASONE; VILANTEROL",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 67.0,
+      "mfpPerUnit": 1.146551,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 7,
+      "sampleNDCs": [
+        "00173-0859-10",
+        "00173-0859-14",
+        "00173-0882-10"
+      ]
+    },
+    {
+      "drugName": "CALQUENCE",
+      "activeIngredient": "ACALABRUTINIB",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 8600.0,
+      "mfpPerUnit": 154.82328,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 2,
+      "sampleNDCs": [
+        "00310-0512-60",
+        "00310-3512-60"
+      ]
+    },
+    {
+      "drugName": "IBRANCE",
+      "activeIngredient": "PALBOCICLIB",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 7871.0,
+      "mfpPerUnit": 380.560323,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 9,
+      "sampleNDCs": [
+        "00069-0187-21",
+        "00069-0188-21",
+        "00069-0189-21"
+      ]
+    },
+    {
+      "drugName": "JANUMET; JANUMET XR",
+      "activeIngredient": "METFORMIN; SITAGLIPTIN",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 80.0,
+      "mfpPerUnit": 1.452377,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 19,
+      "sampleNDCs": [
+        "00006-0078-61",
+        "00006-0078-62",
+        "00006-0078-82"
+      ]
+    },
+    {
+      "drugName": "LINZESS",
+      "activeIngredient": "LINACLOTIDE",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 136.0,
+      "mfpPerUnit": 4.550294,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 3,
+      "sampleNDCs": [
+        "00456-1201-30",
+        "00456-1202-30",
+        "00456-1203-30"
+      ]
+    },
+    {
+      "drugName": "OFEV",
+      "activeIngredient": "NINTEDANIB",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 6350.0,
+      "mfpPerUnit": 108.972348,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 2,
+      "sampleNDCs": [
+        "00597-0143-60",
+        "00597-0145-60"
+      ]
+    },
+    {
+      "drugName": "OTEZLA; OTEZLA XR",
+      "activeIngredient": "APREMILAST",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 1650.0,
+      "mfpPerUnit": 28.571974,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 14,
+      "sampleNDCs": [
+        "55513-0137-28",
+        "55513-0137-50",
+        "55513-0137-60"
+      ]
+    },
+    {
+      "drugName": "OZEMPIC; RYBELSUS; WEGOVY",
+      "activeIngredient": "SEMAGLUTIDE",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 274.0,
+      "mfpPerUnit": 92.260313,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 33,
+      "sampleNDCs": [
+        "00169-4130-01",
+        "00169-4130-13",
+        "00169-4132-11"
+      ]
+    },
+    {
+      "drugName": "POMALYST",
+      "activeIngredient": "POMALIDOMIDE",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 8650.0,
+      "mfpPerUnit": 434.542696,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 8,
+      "sampleNDCs": [
+        "59572-0501-00",
+        "59572-0501-21",
+        "59572-0502-00"
+      ]
+    },
+    {
+      "drugName": "TRADJENTA",
+      "activeIngredient": "LINAGLIPTIN",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 78.0,
+      "mfpPerUnit": 2.794808,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 4,
+      "sampleNDCs": [
+        "00597-0140-10",
+        "00597-0140-30",
+        "00597-0140-61"
+      ]
+    },
+    {
+      "drugName": "TRELEGY ELLIPTA",
+      "activeIngredient": "FLUTICASONE; UMECLIDINIUM; VILANTEROL",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 175.0,
+      "mfpPerUnit": 2.930914,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 4,
+      "sampleNDCs": [
+        "00173-0887-10",
+        "00173-0887-14",
+        "00173-0893-10"
+      ]
+    },
+    {
+      "drugName": "VRAYLAR",
+      "activeIngredient": "CARIPRAZINE",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 770.0,
+      "mfpPerUnit": 26.986339,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 26,
+      "sampleNDCs": [
+        "61874-0115-11",
+        "61874-0115-17",
+        "61874-0115-20"
+      ]
+    },
+    {
+      "drugName": "XIFAXAN",
+      "activeIngredient": "RIFAXIMIN",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 1000.0,
+      "mfpPerUnit": 3.928692,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 8,
+      "sampleNDCs": [
+        "65649-0301-03",
+        "65649-0301-04",
+        "65649-0301-05"
+      ]
+    },
+    {
+      "drugName": "XTANDI",
+      "activeIngredient": "ENZALUTAMIDE",
+      "ipay": "2027",
+      "mfpPer30DaySupply": 7004.0,
+      "mfpPerUnit": 61.924219,
+      "mfpEffectiveDate": "01/01/2027",
+      "ndcCount": 3,
+      "sampleNDCs": [
+        "00469-0125-99",
+        "00469-0625-99",
+        "00469-0725-60"
+      ]
+    },
+    {
+      "drugName": "ANORO ELLIPTA",
+      "activeIngredient": "UMECLIDINIUM; VILANTEROL",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 4,
+      "sampleNDCs": [
+        "00173-0869-06",
+        "00173-0869-10",
+        "00173-0869-61"
+      ]
+    },
+    {
+      "drugName": "BIKTARVY",
+      "activeIngredient": "BICTEGRAVIR; EMTRICITABINE; TENOFOVIR ANHYDROUS",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 10,
+      "sampleNDCs": [
+        "50090-6247-00",
+        "61958-2501-01",
+        "61958-2501-02"
+      ]
+    },
+    {
+      "drugName": "BOTOX; BOTOX COSMETIC",
+      "activeIngredient": "BOTULINUM TOXIN TYPE A",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 6,
+      "sampleNDCs": [
+        "00023-1145-01",
+        "00023-1145-02",
+        "00023-3919-50"
+      ]
+    },
+    {
+      "drugName": "CIMZIA",
+      "activeIngredient": "CERTOLIZUMAB PEGOL",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 6,
+      "sampleNDCs": [
+        "50474-0700-61",
+        "50474-0700-62",
+        "50474-0710-79"
+      ]
+    },
+    {
+      "drugName": "COSENTYX",
+      "activeIngredient": "SECUKINUMAB",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 9,
+      "sampleNDCs": [
+        "00078-0639-41",
+        "00078-0639-68",
+        "00078-0639-97"
+      ]
+    },
+    {
+      "drugName": "ENTYVIO",
+      "activeIngredient": "VEDOLIZUMAB",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 5,
+      "sampleNDCs": [
+        "64764-0107-10",
+        "64764-0107-11",
+        "64764-0108-20"
+      ]
+    },
+    {
+      "drugName": "ERLEADA",
+      "activeIngredient": "APALUTAMIDE",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 5,
+      "sampleNDCs": [
+        "59676-0600-12",
+        "59676-0600-56",
+        "59676-0600-99"
+      ]
+    },
+    {
+      "drugName": "KISQALI",
+      "activeIngredient": "RIBOCICLIB",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 5,
+      "sampleNDCs": [
+        "00078-0860-01",
+        "00078-0867-14",
+        "00078-0867-42"
+      ]
+    },
+    {
+      "drugName": "LENVIMA",
+      "activeIngredient": "LENVATINIB",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 16,
+      "sampleNDCs": [
+        "62856-0704-05",
+        "62856-0704-30",
+        "62856-0708-05"
+      ]
+    },
+    {
+      "drugName": "ORENCIA",
+      "activeIngredient": "ABATACEPT",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 8,
+      "sampleNDCs": [
+        "00003-2187-10",
+        "00003-2187-13",
+        "00003-2188-11"
+      ]
+    },
+    {
+      "drugName": "REXULTI",
+      "activeIngredient": "BREXPIPRAZOLE",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 14,
+      "sampleNDCs": [
+        "59148-0035-13",
+        "59148-0036-07",
+        "59148-0036-13"
+      ]
+    },
+    {
+      "drugName": "TRULICITY",
+      "activeIngredient": "DULAGLUTIDE",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 19,
+      "sampleNDCs": [
+        "00002-1433-01",
+        "00002-1433-61",
+        "00002-1433-80"
+      ]
+    },
+    {
+      "drugName": "VERZENIO",
+      "activeIngredient": "ABEMACICLIB",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 8,
+      "sampleNDCs": [
+        "00002-4483-54",
+        "00002-4483-62",
+        "00002-4815-54"
+      ]
+    },
+    {
+      "drugName": "XELJANZ; XELJANZ XR",
+      "activeIngredient": "TOFACITINIB",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 16,
+      "sampleNDCs": [
+        "00069-0501-14",
+        "00069-0501-30",
+        "00069-0502-30"
+      ]
+    },
+    {
+      "drugName": "XOLAIR",
+      "activeIngredient": "OMALIZUMAB",
+      "ipay": "2028",
+      "mfpPer30DaySupply": null,
+      "mfpPerUnit": null,
+      "mfpEffectiveDate": null,
+      "ndcCount": 14,
+      "sampleNDCs": [
+        "50242-0040-62",
+        "50242-0040-86",
+        "50242-0214-01"
+      ]
+    }
+  ]
+}
