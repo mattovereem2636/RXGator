@@ -1507,7 +1507,7 @@ app.get('/api/search-count', async (req, res) => {
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2025', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)'] });
+  res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2025', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)', 'FedRx (govt deals, 841 drugs)'] });
 });
 
 // Search log viewer (admin only - protected by Nginx Basic Auth)
@@ -1982,5 +1982,6 @@ app.listen(PORT, () => {
   console.log(`  ║   ✓ TX WAC (mfr list price, 16K drugs)  ║`);
   console.log(`  ║   ✓ RxSaver (Apify cache, 194 drugs)    ║`);
   console.log(`  ║   ✓ Blink Health (Apify cache, 69 drugs)║`);
+  console.log(`  ║   ✓ FedRx (govt deals, 841 drugs)      ║`);
   console.log(`  ╚═════════════════════════════════════════╝\n`);
 });
