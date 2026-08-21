@@ -8,3 +8,11 @@ scripts/.uptime-state
 search-log.csv
 feedback.json
 backup-*
+# Added by Phase 3 code review
+*.bak
+*.log
+tmp/
+.DS_Store
+feedback_log.csv
+search_log.csv
+health-report*.json
