@@ -1,13 +1,13 @@
 {
   "source": "HealthWarehouse",
   "sourceUrl": "https://www.healthwarehouse.com",
-  "dataDate": "2026-08-17",
+  "dataDate": "2026-08-19",
   "description": "Drug pricing from HealthWarehouse online pharmacy (NABP accredited, all 50 states)",
-  "totalProducts": 930,
-  "withPriceCount": 930,
-  "inStockCount": 913,
+  "totalProducts": 929,
+  "withPriceCount": 929,
+  "inStockCount": 912,
   "rxCount": 492,
-  "otcCount": 438,
+  "otcCount": 437,
   "products": [
     {
       "name": "21st Century Mega Multi for Women, Multivitamin & Multimineral 90 tablets",
@@ -1099,6 +1099,24 @@
       "source": "rx-search"
     },
     {
+      "name": "Balmex Adult Advantage Zinc Oxide 11.3% B Protected Skin Relief Cream- 12oz",
+      "price": 15.28,
+      "url": "https://www.healthwarehouse.com/balmex-adult-advantage-zinc-oxide-11-3-b-protected-skin-relief-cream-12oz",
+      "sku": "A10222190",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Balmex Adult Advantage Zinc Oxide 11.3% B Protected Skin Relief Cream- 3oz",
+      "price": 6.37,
+      "url": "https://www.healthwarehouse.com/balmex-adult-advantage-zinc-oxide-11-3-b-protected-skin-relief-cream-3oz",
+      "sku": "A10225935",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
       "name": "Band Aid Hurt-Free Antiseptic Wash 6oz",
       "price": 5.83,
       "url": "https://www.healthwarehouse.com/band-aid-hurt-free-antiseptic-wash-6oz",
@@ -1505,7 +1523,7 @@
     },
     {
       "name": "Buspirone 10mg Tablets",
-      "price": 0.17,
+      "price": 0.18,
       "url": "https://www.healthwarehouse.com/buspirone-10mg-tablets",
       "sku": "*102803",
       "rxRequired": true,
@@ -1532,7 +1550,7 @@
     },
     {
       "name": "Buspirone HCL 15mg Tablets",
-      "price": 0.16,
+      "price": 0.17,
       "url": "https://www.healthwarehouse.com/buspirone-hcl-15mg-tablets-generic-buspar",
       "sku": "*BUSPIRONEHCL15",
       "rxRequired": true,
@@ -2000,7 +2018,7 @@
     },
     {
       "name": "Citalopram 40mg Tablets",
-      "price": 0.08,
+      "price": 0.09,
       "url": "https://www.healthwarehouse.com/citalopram-40mg-tablets",
       "sku": "*CITALOPRAM40",
       "rxRequired": true,
@@ -2666,7 +2684,7 @@
     },
     {
       "name": "Duloxetine 20mg Capsules",
-      "price": 0.1,
+      "price": 0.11,
       "url": "https://www.healthwarehouse.com/duloxetine-20mg-capsules",
       "sku": "*DULOXETINE20",
       "rxRequired": true,
@@ -3314,7 +3332,7 @@
     },
     {
       "name": "Fluoxetine 10mg Capsules",
-      "price": 0.11,
+      "price": 0.12,
       "url": "https://www.healthwarehouse.com/fluoxetine-10mg-capsules",
       "sku": "*FLUOX10",
       "rxRequired": true,
@@ -3359,7 +3377,7 @@
     },
     {
       "name": "Fluoxetine 40mg Capsules",
-      "price": 0.19,
+      "price": 0.2,
       "url": "https://www.healthwarehouse.com/fluoxetine-40mg-capsules",
       "sku": "*FLUOX40",
       "rxRequired": true,
@@ -3494,7 +3512,7 @@
     },
     {
       "name": "Furosemide 20mg Tablets",
-      "price": 0.09,
+      "price": 0.1,
       "url": "https://www.healthwarehouse.com/furosemide-20mg-tablets",
       "sku": "*114188",
       "rxRequired": true,
@@ -4241,7 +4259,7 @@
     },
     {
       "name": "Hydrochlorothiazide (HCTZ) 12.5mg Capsules",
-      "price": 0.11,
+      "price": 0.12,
       "url": "https://www.healthwarehouse.com/hydrochlorothiazide-hctz-12-5mg-capsules",
       "sku": "*110095",
       "rxRequired": true,
@@ -4573,15 +4591,6 @@
       "source": "home-medical"
     },
     {
-      "name": "K-Y Jelly Lubricant - 2oz Tube",
-      "price": 4.27,
-      "url": "https://www.healthwarehouse.com/k-y-jelly-lubricant-2oz-tube",
-      "sku": "A10145504",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "home-medical"
-    },
-    {
       "name": "Keto-Diastix Strip- 50ct",
       "price": 15.67,
       "url": "https://www.healthwarehouse.com/keto-diastix-strip-50ct",
@@ -4816,6 +4825,15 @@
       "source": "over-the-counter"
     },
     {
+      "name": "Leader Camphor Spirit External Analgesic USP, 2oz",
+      "price": 5.6,
+      "url": "https://www.healthwarehouse.com/leader-camphor-spirit-external-analgesic-usp-2oz",
+      "sku": "C5455787",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
       "name": "Leader ClearLax Polyethylene Glycol Powder - Laxative- 17.9 oz",
       "price": 18.23,
       "url": "https://www.healthwarehouse.com/leader-clearlax-polyethylene-glycol-powder-laxative-17-9-oz",
@@ -4934,7 +4952,7 @@
     },
     {
       "name": "Levothyroxine (Synthroid, Levoxyl) 100 mcg Tablets",
-      "price": 0.21,
+      "price": 0.22,
       "url": "https://www.healthwarehouse.com/levothyroxine-synthroid-levoxyl-100-mcg-tablets",
       "sku": "*LEVOTHY100",
       "rxRequired": true,
@@ -4997,7 +5015,7 @@
     },
     {
       "name": "Levothyroxine (Synthroid, Levoxyl) 25mcg Tablets",
-      "price": 0.18,
+      "price": 0.19,
       "url": "https://www.healthwarehouse.com/levothyroxine-synthroid-levoxyl-25mcg-tablets",
       "sku": "*LEVOTHY25",
       "rxRequired": true,
@@ -5033,7 +5051,7 @@
     },
     {
       "name": "Levothyroxine (Synthroid, Levoxyl) 88mcg Tablets",
-      "price": 0.19,
+      "price": 0.2,
       "url": "https://www.healthwarehouse.com/levothyroxine-88mcg-tablets-1",
       "sku": "*LEVOTHY88",
       "rxRequired": true,
@@ -5168,7 +5186,7 @@
     },
     {
       "name": "Lisinopril 30mg Tablets",
-      "price": 0.12,
+      "price": 0.13,
       "url": "https://www.healthwarehouse.com/lisinopril-30mg-tablets",
       "sku": "*LISINOP30",
       "rxRequired": true,
@@ -5204,7 +5222,7 @@
     },
     {
       "name": "Lisinopril-HCTZ 20mg-12.5mg Tablets",
-      "price": 0.11,
+      "price": 0.12,
       "url": "https://www.healthwarehouse.com/lisinopril-hctz-20mg-12-5mg-tablets",
       "sku": "*116459",
       "rxRequired": true,
@@ -5213,7 +5231,7 @@
     },
     {
       "name": "Lisinopril-HCTZ 20mg-25mg Tablets",
-      "price": 0.11,
+      "price": 0.12,
       "url": "https://www.healthwarehouse.com/lisinopril-hctz-20mg-25mg-tablets",
       "sku": "*LISINHCTZ2025",
       "rxRequired": true,
@@ -5914,15 +5932,6 @@
       "source": "over-the-counter"
     },
     {
-      "name": "My Choice Levonorgestrel 1.5mg Tablet-1ct",
-      "price": 25.51,
-      "url": "https://www.healthwarehouse.com/my-choice-levonorgestrel-1-5mg-tablet-1ct",
-      "sku": "A10249688",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
       "name": "Mylan Cetirizine Antihistamine 10mg - 100 Tablets",
       "price": 14.57,
       "url": "https://www.healthwarehouse.com/generic-zyrtec-cetirizine-antihistamine-10mg-100-tablets",
@@ -6125,15 +6134,6 @@
       "price": 9.5,
       "url": "https://www.healthwarehouse.com/natures-blend-selenium-200-mcg-tablets-100ct",
       "sku": "A144663",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "home-medical"
-    },
-    {
-      "name": "Natures Blend Vitamin D 400 I.U. Tablets 100ct",
-      "price": 5.57,
-      "url": "https://www.healthwarehouse.com/natures-blend-vitamin-d-400-i-u-tablets-100ct",
-      "sku": "A148332",
       "rxRequired": false,
       "inStock": true,
       "source": "home-medical"
@@ -6446,7 +6446,7 @@
     },
     {
       "name": "Omeprazole DR 10 mg Capsules",
-      "price": 0.15,
+      "price": 0.16,
       "url": "https://www.healthwarehouse.com/omeprazole-10mg-capsules-generic-prilosec",
       "sku": "*OMEPRAZOLE10",
       "rxRequired": true,
@@ -6662,7 +6662,7 @@
     },
     {
       "name": "Pantoprazole DR 20mg Tablets",
-      "price": 0.15,
+      "price": 0.16,
       "url": "https://www.healthwarehouse.com/pantoprazole-sodium-20mg-tablets-generic-protonix",
       "sku": "*PANTOSODDR20",
       "rxRequired": true,
@@ -6761,7 +6761,7 @@
     },
     {
       "name": "Pravastatin 20 mg Tablets",
-      "price": 0.15,
+      "price": 0.16,
       "url": "https://www.healthwarehouse.com/pravastatin-20mg-tablets",
       "sku": "*PRAVASTATIN20",
       "rxRequired": true,
@@ -7210,15 +7210,6 @@
       "source": "over-the-counter"
     },
     {
-      "name": "Rugby Meclizine 25mg Chew Tablet- 1000ct",
-      "price": 33.61,
-      "url": "https://www.healthwarehouse.com/rugby-meclizine-25mg-chew-tablet-1000ct",
-      "sku": "A10253025",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
       "name": "S.T. 37 Solution - 8oz",
       "price": 13,
       "url": "https://www.healthwarehouse.com/s-t-37-solution-8oz",
@@ -7274,7 +7265,7 @@
     },
     {
       "name": "Sertraline 25mg Tablets",
-      "price": 0.2,
+      "price": 0.21,
       "url": "https://www.healthwarehouse.com/sertraline-25mg-tablets-generic-zoloft",
       "sku": "*SERTRALINE25",
       "rxRequired": true,
@@ -7337,7 +7328,7 @@
     },
     {
       "name": "Simvastatin 10mg Tablets",
-      "price": 0.09,
+      "price": 0.1,
       "url": "https://www.healthwarehouse.com/simvastatin-10mg-tablets",
       "sku": "*SIMVA10",
       "rxRequired": true,
@@ -7895,7 +7886,7 @@
     },
     {
       "name": "Topiramate 50mg Tablets",
-      "price": 0.1,
+      "price": 0.11,
       "url": "https://www.healthwarehouse.com/topiramate-50mg-tablets-generic-topamax",
       "sku": "*TOPIRAMATE50",
       "rxRequired": true,
@@ -7949,7 +7940,7 @@
     },
     {
       "name": "Trazodone 100mg Tablets",
-      "price": 0.23,
+      "price": 0.24,
       "url": "https://www.healthwarehouse.com/trazodone-100mg-tablets",
       "sku": "*TRAZODONE100",
       "rxRequired": true,

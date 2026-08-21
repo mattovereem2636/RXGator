@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const helmet = require('helmet');
 const path = require('path');
 const fs = require('fs');
 const fsPromises = require('fs').promises;
@@ -12,17 +11,6 @@ const rxOutreach = require('./rxoutreach');
 const rxsaver = require('./rxsaver');
 const fuzzySearch = require('./fuzzy-search');
 fuzzySearch.init(path.join(__dirname, 'data'));
-
-// Global error handlers — log and exit for clean PM2 restart
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('[FATAL] Unhandled Promise Rejection:', reason);
-  process.exit(1);
-});
-process.on('uncaughtException', (err) => {
-  console.error('[FATAL] Uncaught Exception:', err);
-  process.exit(1);
-});
-
 const blink = require('./blink');
 // HTML escaping for safe rendering in admin views
 function escapeHtml(str) {
@@ -54,27 +42,8 @@ function lookupBrandGeneric(drugName) {
   return null;
 }
 const app = express();
-app.use(cors({
-  origin: process.env.NODE_ENV === 'development'
-    ? true
-    : ['https://rxgator.info', 'https://www.rxgator.info'],
-  methods: ['GET', 'POST'],
-  optionsSuccessStatus: 200,
-}));
-app.use(helmet({
-  contentSecurityPolicy: {
-    directives: {
-      defaultSrc: ["'self'"],
-      scriptSrc: ["'self'", "'unsafe-inline'", "https://pagead2.googlesyndication.com", "https://cloud.umami.is"],
-      styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-      fontSrc: ["'self'", "https://fonts.gstatic.com"],
-      imgSrc: ["'self'", "data:", "https:"],
-      connectSrc: ["'self'", "https://cloud.umami.is"],
-      frameSrc: ["https://googleads.g.doubleclick.net"],
-    },
-  },
-}));
-app.use(express.json({ limit: '10mb' }));
+app.use(cors());
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 require("./health-report")(app);
 require("./trumprx-prices")(app);
@@ -90,17 +59,7 @@ const searchLimiter = rateLimit({
   message: { error: 'Too many searches. Please wait a minute and try again.' },
   validate: false,
   keyGenerator: (req) => req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.ip,
-});
-
-// Rate limiting for feedback — 5 submissions per 15 minutes per IP
-const feedbackLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 5,
-  standardHeaders: true,
-  legacyHeaders: false,
-  message: { error: 'Too many feedback submissions. Please wait and try again.' },
   validate: false,
-  keyGenerator: (req) => req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.ip,
 });
 
 const PORT = process.env.PORT || 3100;
@@ -362,7 +321,7 @@ function csvEscape(val) {
 async function logSearch(req, drug, quantity, zip, results, extras = {}) {
   try {
     const timestamp = new Date().toISOString();
-    const ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.socket.remoteAddress || '';
+    const ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress || '';
     let user = 'unknown';
     const auth = req.headers['authorization'];
     if (auth && auth.startsWith('Basic ')) {
@@ -1145,12 +1104,6 @@ app.get('/api/search', searchLimiter, async (req, res) => {
   if (!drug || drug.trim().length < 2) {
     return res.status(400).json({ error: 'Please provide a drug name (min 2 characters)' });
   }
-  if (drug.trim().length > 100) {
-    return res.status(400).json({ error: 'Drug name too long (max 100 characters)' });
-  }
-  if (!/^[a-zA-Z0-9 \-\/\.,']+$/.test(drug.trim())) {
-    return res.status(400).json({ error: 'Drug name contains invalid characters' });
-  }
   let drugName = drug.trim();
   const originalInput = drugName; // preserve for logging
 
@@ -1721,11 +1674,11 @@ if (!fs.existsSync(FEEDBACK_FILE)) {
   fs.writeFileSync(FEEDBACK_FILE, 'timestamp,ip,user,helpful,drug,comment\n');
 }
 
-app.post('/api/feedback', feedbackLimiter, async (req, res) => {
+app.post('/api/feedback', async (req, res) => {
   try {
     const { helpful, comment, drug } = req.body;
     const timestamp = new Date().toISOString();
-    const ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.socket.remoteAddress || '';
+    const ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress || '';
     let user = 'unknown';
     const auth = req.headers['authorization'];
     if (auth && auth.startsWith('Basic ')) {
@@ -1810,32 +1763,12 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Admin authentication middleware — defense in depth
-// Nginx handles Basic Auth, but Express verifies too
-function requireAdmin(req, res, next) {
-  const auth = req.headers['authorization'];
-  if (!auth || !auth.startsWith('Basic ')) {
-    return res.status(401).json({ error: 'Authentication required' });
-  }
-  try {
-    const decoded = Buffer.from(auth.split(' ')[1], 'base64').toString();
-    const [user, pass] = decoded.split(':');
-    if (!user || !pass) {
-      return res.status(401).json({ error: 'Invalid credentials' });
-    }
-    req.adminUser = user;
-    next();
-  } catch (e) {
-    return res.status(401).json({ error: 'Invalid authorization header' });
-  }
-}
-
 // ============================================================
 // SINGLECARE CACHE MANAGEMENT
 // ============================================================
 
 // Import Apify dataset JSON into the cache
-app.post('/api/singlecare/import', requireAdmin, (req, res) => {
+app.post('/api/singlecare/import', (req, res) => {
   try {
     const data = req.body;
     if (!Array.isArray(data)) {
@@ -1876,7 +1809,7 @@ app.get('/api/singlecare/cache', (req, res) => {
 // ============================================================
 
 // Import Apify dataset JSON into the GoodRx cache
-app.post('/api/goodrx/import', requireAdmin, (req, res) => {
+app.post('/api/goodrx/import', (req, res) => {
   try {
     const data = req.body;
     if (!Array.isArray(data)) {
@@ -2002,7 +1935,7 @@ app.get('/api/rxsaver/search', (req, res) => {
 });
 
 // RxSaver cache reload (after SCP-ing new data)
-app.post('/api/rxsaver/reload', requireAdmin, (req, res) => {
+app.post('/api/rxsaver/reload', (req, res) => {
   res.json(rxsaver.reload());
 });
 
@@ -2023,7 +1956,7 @@ app.get('/api/blink/search', (req, res) => {
 });
 
 // Blink Health cache reload (after SCP-ing new data)
-app.post('/api/blink/reload', requireAdmin, (req, res) => {
+app.post('/api/blink/reload', (req, res) => {
   res.json(blink.reload());
 });
 
@@ -2052,6 +1985,5 @@ app.listen(PORT, () => {
   console.log(`  ║   ✓ RxSaver (Apify cache, 194 drugs)    ║`);
   console.log(`  ║   ✓ Blink Health (Apify cache, 69 drugs)║`);
   console.log(`  ║   ✓ FedRx (govt deals, 841 drugs)      ║`);
-  console.log(`  ║   ✓ HealthWarehouse (online, 930 drugs) ║`);
-  console.log(`  ╚══════════════════════════════════════════╝\n`);
 });
+  console.log(`  ║   ✓ HealthWarehouse (online, 930 drugs) ║`);

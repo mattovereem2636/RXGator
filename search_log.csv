@@ -337,3 +337,25 @@ timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source
 2026-08-16T02:22:12.174Z,"68.134.58.223","unknown","Buspirone",90,21221,22,"1.20","Costco Pharmacy (est.)",0,"",en
 2026-08-16T21:16:07.512Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
 2026-08-16T21:16:08.295Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-18T16:00:20.304Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-18T16:00:24.826Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-18T19:50:52.648Z,"172.56.219.28","unknown","urocit-k",90,17350,20,"13.00","Rx Outreach",0,"urocit-k 10",en
+2026-08-18T19:51:07.447Z,"172.56.219.28","unknown","urocit-k",90,17350,20,"13.00","Rx Outreach",0,"urocit-k 10",en
+2026-08-18T19:51:30.586Z,"172.56.219.28","unknown","urocit-k",90,17350,20,"13.00","Rx Outreach",0,"urocit-k 10",en
+2026-08-20T16:19:12.226Z,"146.75.146.0","unknown","Estradiol",30,,40,"5.00","Amazon RxPass",0,"",en
+2026-08-20T16:19:18.095Z,"146.75.146.0","unknown","Estradiol",30,24328,40,"5.00","Amazon RxPass",0,"",en
+2026-08-20T16:19:52.896Z,"146.75.146.0","unknown","estradiol",30,24328,40,"5.00","Amazon RxPass",0,"Estradiol twice weekly patch",en
+2026-08-20T16:19:54.356Z,"146.75.146.0","unknown","estradiol",30,24328,40,"5.00","Amazon RxPass",0,"Estradiol twice weekly patch",en
+2026-08-20T19:53:23.205Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-20T19:53:32.205Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-20T19:53:38.999Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-20T19:53:53.373Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-21T02:07:51.747Z,"172.56.105.243","unknown","Tadalafil",30,,18,"10.72","Cost Plus Drugs",0,"",en
+2026-08-21T02:07:55.607Z,"172.56.105.243","unknown","Tadalafil",30,98053,18,"10.72","Cost Plus Drugs",0,"",en
+2026-08-21T02:09:09.865Z,"172.56.105.243","unknown","Tadalafil",90,98053,18,"10.72","Cost Plus Drugs",0,"",en
+2026-08-21T18:47:47.429Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-21T18:48:04.154Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-21T18:48:12.517Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-21T18:48:21.352Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-21T18:48:27.328Z,"75.26.237.124","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-21T19:55:24.159Z,"74.208.32.197","unknown","metformin",30,,25,"0.90","Costco Pharmacy (est.)",0,"",en
