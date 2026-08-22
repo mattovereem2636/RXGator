@@ -16,3 +16,5 @@ tmp/
 feedback_log.csv
 search_log.csv
 health-report*.json
+.env.healthcheck
+.env.healthcheck

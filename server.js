@@ -66,11 +66,12 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      scriptSrc: ["'self'", "'unsafe-inline'", "https://pagead2.googlesyndication.com", "https://cloud.umami.is"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "https://pagead2.googlesyndication.com", "https://cloud.umami.is", "https://cdnjs.cloudflare.com"],
+      scriptSrcAttr: ["'unsafe-inline'"],
       styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
       fontSrc: ["'self'", "https://fonts.gstatic.com"],
       imgSrc: ["'self'", "data:", "https:"],
-      connectSrc: ["'self'", "https://cloud.umami.is"],
+      connectSrc: ["'self'", "https://cloud.umami.is", "https://pagead2.googlesyndication.com", "https://ep1.adtrafficquality.google"],
       frameSrc: ["https://googleads.g.doubleclick.net"],
     },
   },
@@ -1031,8 +1032,10 @@ async function checkDrugShortage(drugName) {
       updateDate: s.update_date || null,
     }));
   } catch (err) {
-    // Don't let shortage check failure break the search
-    console.error('FDA Shortage check error:', err.message);
+    // 404 = no shortages found (normal); only log real errors
+    if (!err.message.includes("404")) console.error("FDA Shortage check error:", err.message);
+
+
     return null;
   }
 }
