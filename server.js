@@ -25,6 +25,7 @@ process.on('uncaughtException', (err) => {
 });
 
 const blink = require('./blink');
+const optum = require('./optum');
 // HTML escaping for safe rendering in admin views
 function escapeHtml(str) {
   if (!str) return '';
@@ -66,11 +67,12 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      scriptSrc: ["'self'", "'unsafe-inline'", "https://pagead2.googlesyndication.com", "https://cloud.umami.is"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "https://pagead2.googlesyndication.com", "https://cloud.umami.is", "https://cdnjs.cloudflare.com"],
+      scriptSrcAttr: ["'unsafe-inline'"],
       styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
       fontSrc: ["'self'", "https://fonts.gstatic.com"],
       imgSrc: ["'self'", "data:", "https:"],
-      connectSrc: ["'self'", "https://cloud.umami.is"],
+      connectSrc: ["'self'", "https://cloud.umami.is", "https://pagead2.googlesyndication.com", "https://ep1.adtrafficquality.google"],
       frameSrc: ["https://googleads.g.doubleclick.net"],
     },
   },
@@ -1031,8 +1033,10 @@ async function checkDrugShortage(drugName) {
       updateDate: s.update_date || null,
     }));
   } catch (err) {
-    // Don't let shortage check failure break the search
-    console.error('FDA Shortage check error:', err.message);
+    // 404 = no shortages found (normal); only log real errors
+    if (!err.message.includes("404")) console.error("FDA Shortage check error:", err.message);
+
+
     return null;
   }
 }
@@ -1215,6 +1219,7 @@ app.get('/api/search', searchLimiter, async (req, res) => {
   const texasWacResults = texasWac.search(pricingSearchName);
   const rxsaverResults = rxsaver.search(pricingSearchName) || [];
   const blinkResults = blink.search(pricingSearchName) || [];
+  const optumResults = optum.search(pricingSearchName) || [];
 
   // Drug shortage + recall checks — run after pricing queries so they
   // don't delay the main results if the FDA API is slow
@@ -1396,6 +1401,24 @@ app.get('/api/search', searchLimiter, async (req, res) => {
       pharmacy: bl.pharmacy,
       note: `Blink Health: $${bl.price.toFixed(2)} via ${bl.type} at ${bl.pharmacy} (${bl.quantity || 30}-count). Order online at blinkhealth.com.`,
       dataFreshness: bl.cachedDate ? `Cached ${new Date(bl.cachedDate).toLocaleDateString()}` : 'Cached',
+    });
+  }
+  // Optum Perks entries (from cache — Puppeteer scraped)
+  for (const op of optumResults) {
+    allPrices.push({
+      source: op.source,
+      sourceUrl: op.sourceUrl,
+      drugName: op.drugName,
+      strength: op.strength,
+      form: op.form,
+      unitPrice: op.quantity ? +(op.price / parseInt(op.quantity)).toFixed(4) : null,
+      priceForQuantity: op.price,
+      priceFor30: op.price,
+      priceFor90: +(op.price * 3).toFixed(2),
+      brandGeneric: 'Generic',
+      pharmacy: op.pharmacy,
+      note: `Optum Perks: $${op.price.toFixed(2)} coupon at ${op.pharmacy}. Show coupon at pharmacy counter.`,
+      dataFreshness: op.cachedDate ? `Cached ${new Date(op.cachedDate).toLocaleDateString()}` : 'Cached',
     });
   }
 
@@ -2026,6 +2049,21 @@ app.get('/api/blink/search', (req, res) => {
 // Blink Health cache reload (after SCP-ing new data)
 app.post('/api/blink/reload', requireAdmin, (req, res) => {
   res.json(blink.reload());
+});
+
+// --- Optum Perks cache endpoints ---
+app.get('/api/optum/cache', (req, res) => {
+  if (req.query.full === 'true') return res.json(optum.fullCache());
+  res.json(optum.stats());
+});
+app.get('/api/optum/search', (req, res) => {
+  const { drug } = req.query;
+  if (!drug) return res.status(400).json({ error: 'drug parameter required' });
+  const results = optum.search(drug);
+  res.json({ drug, results: results || [], count: results ? results.length : 0 });
+});
+app.post('/api/optum/reload', requireAdmin, (req, res) => {
+  res.json(optum.reload());
 });
 
 app.listen(PORT, () => {

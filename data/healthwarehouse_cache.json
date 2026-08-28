@@ -1,7 +1,8 @@
 {
   "source": "HealthWarehouse",
   "sourceUrl": "https://www.healthwarehouse.com",
-  "dataDate": "2026-08-19",
+  "dataDate": "2026-08-23",
+  "scrapedAt": "2026-08-23T21:57:22.832Z",
   "description": "Drug pricing from HealthWarehouse online pharmacy (NABP accredited, all 50 states)",
   "totalProducts": 929,
   "withPriceCount": 929,
@@ -1919,7 +1920,7 @@
     },
     {
       "name": "Children's Loratadine 5mg Syrup- 4oz",
-      "price": 9.67,
+      "price": 10.82,
       "url": "https://www.healthwarehouse.com/children-s-loratadine-5mg-syrup-4oz",
       "sku": "A10002964",
       "rxRequired": false,

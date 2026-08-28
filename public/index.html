@@ -1436,7 +1436,7 @@
 <!-- ══ End Article Rotator ══ -->
 
 <div class="footer">
-  RxGator v1.0 &mdash; 18 Data Sources
+  RxGator v1.0 &mdash; 19 Data Sources
   &mdash; <a href="https://patreon.com/RXGator" style="color:var(--gray-500); text-decoration:none; border-bottom:1px dotted var(--gray-500);">Patreon</a>
   &middot; <a href="https://ko-fi.com/rxgator" style="color:var(--gray-500); text-decoration:none; border-bottom:1px dotted var(--gray-500);">Ko-fi</a>
   &middot; <a href="/api/log" style="color:var(--gray-500); text-decoration:none; border-bottom:1px dotted var(--gray-500);">Admin Log</a>
@@ -1446,7 +1446,7 @@
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js" crossorigin="anonymous"></script>
+<script src="/fuse.min.js" crossorigin="anonymous"></script>
 <script>
 // Text size toggle
 function setTextSize(size) {
@@ -2301,7 +2301,7 @@ function renderResults(data) {
     const worstPrice = prices[prices.length - 1];
     const nadacUnit = data.nadacBenchmark ? `$${data.nadacBenchmark.lowestNadacPerUnit.toFixed(4)}` : null;
     html += `<div style="background:#EBF5FB; border-left:4px solid #2E86C1; border-radius:8px; padding:0.85rem 1.1rem; margin:0.75rem 0; font-size:0.88rem; color:#1B4F72;">
-      <strong>Why RXGator?</strong> GoodRx only shows GoodRx prices. SingleCare only shows SingleCare. Your pharmacist only knows their shelf price. RXGator searched <strong>all 18 sources</strong> and found ${bestSource} has the best deal for this drug. ${nadacUnit ? `Your pharmacy pays about ${nadacUnit}/pill wholesale.` : ''}
+      <strong>Why RXGator?</strong> GoodRx only shows GoodRx prices. SingleCare only shows SingleCare. Your pharmacist only knows their shelf price. RXGator searched <strong>all 19 sources</strong> and found ${bestSource} has the best deal for this drug. ${nadacUnit ? `Your pharmacy pays about ${nadacUnit}/pill wholesale.` : ''}
     </div>`;
   }
 
@@ -2575,12 +2575,11 @@ function renderResults(data) {
 
   // Disclaimer
   html += `<div class="disclaimer">
-    <strong>18 Data Sources</strong><br>
+    <strong>19 Data Sources</strong><br>
     This tool queries <a href="https://costplusdrugs.com" target="_blank" rel="noopener" style="color:#1A6FA0;">Cost Plus Drugs</a> (live API), <a href="https://www.singlecare.com" target="_blank" rel="noopener" style="color:#1A6FA0;">SingleCare</a> (cached), <a href="https://www.goodrx.com" target="_blank" rel="noopener" style="color:#1A6FA0;">GoodRx</a> (cached), <a href="https://www.rxsaver.com" target="_blank" rel="noopener" style="color:#1A6FA0;">RxSaver</a> (cached), <a href="https://www.blinkhealth.com" target="_blank" rel="noopener" style="color:#1A6FA0;">Blink Health</a> (cached), <a href="https://pharmacy.amazon.com/rxpass" target="_blank" rel="noopener" style="color:#1A6FA0;">Amazon RxPass</a> (built-in), <a href="https://data.medicaid.gov/datasets?keyword=nadac" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicaid NADAC</a> (benchmark), <a href="https://data.medicaid.gov/datasets?keyword=ful" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicaid FUL</a> (benchmark), <a href="https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-opioid-prescribing-rates/medicare-part-d-spending-by-drug" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicare Part D</a> (CMS), <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="_blank" rel="noopener" style="color:#1A6FA0;">RxNorm</a> (drug matching), <a href="https://medlineplus.gov" target="_blank" rel="noopener" style="color:#1A6FA0;">MedlinePlus</a> (drug information), <a href="https://open.fda.gov" target="_blank" rel="noopener" style="color:#1A6FA0;">openFDA</a> (normalization), <a href="https://www.walmart.com/cp/4-dollar-prescriptions/1078664" target="_blank" rel="noopener" style="color:#1A6FA0;">Walmart Rx Program</a>, <a href="https://www.costco.com/pharmacy/" target="_blank" rel="noopener" style="color:#1A6FA0;">Costco Pharmacy</a> (estimated), <a href="https://rxoutreach.org" target="_blank" rel="noopener" style="color:#1A6FA0;">Rx Outreach</a> (nonprofit mail-order), <a href="https://www.va.gov/opal/nac/fss/pharmPrices.asp" target="_blank" rel="noopener" style="color:#1A6FA0;">VA Federal Supply Schedule</a> (govt benchmark), <a href="https://www.cms.gov/inflation-reduction-act-and-medicare/negotiated-prices-for-selected-drugs" target="_blank" rel="noopener" style="color:#1A6FA0;">IRA Negotiated Prices</a> (Medicare), and <a href="https://www.dshs.texas.gov/prescription-drug-prices" target="_blank" rel="noopener" style="color:#1A6FA0;">Texas DSHS WAC</a> (manufacturer list price).
     <br>Drug information provided by MedlinePlus, a service of the National Library of Medicine.
     <br>Prices are estimates and may differ from what you pay at the pharmacy. Always verify with your pharmacist.
     <div style="margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid #D6EAF8;">
-      <strong style="font-size:0.95rem; color:#C0392B;"><a href="https://www.rxsaver.com" target="_blank" rel="noopener" style="color:inherit;">RxSaver</a>, <a href="https://www.optumperks.com" target="_blank" rel="noopener" style="color:inherit;">Optum Perks</a>, and <a href="https://www.blinkhealth.com" target="_blank" rel="noopener" style="color:inherit;">Blink Health</a> are not yet integrated.</strong>
     </div>
   </div>`;
 

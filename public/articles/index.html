@@ -3,13 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prescription Savings Guides & Articles | RxGator</title>
+<title>Prescription Savings Guides &amp; Articles | RxGator</title>
 <meta name="description" content="Free guides on saving money on prescription drugs. Compare pharmacy prices, find discount programs, and learn how to cut your medication costs.">
 <meta property="og:title" content="Prescription Savings Guides | RxGator">
 <meta property="og:description" content="Free guides on saving money on prescription drugs — from discount cards to pharmacy programs to manufacturer assistance.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://rxgator.info/articles/">
+<link rel="alternate" hreflang="en" href="https://rxgator.info/articles/">
+<link rel="alternate" hreflang="es" href="https://rxgator.info/articles/">
 <link rel="stylesheet" href="/articles/article-style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Prescription Savings Guides & Articles",
+  "description": "Free guides on saving money on prescription drugs. Compare pharmacy prices, find discount programs, and learn how to cut your medication costs.",
+  "url": "https://rxgator.info/articles/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "RXGator",
+    "url": "https://rxgator.info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rxgator.info/logo-primary.png"
+    }
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 66,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://rxgator.info/articles/nadac-drug-prices-2025-vs-2026.html",
+        "name": "Drug Prices 2025 vs 2026: What Pharmacies Actually Pay (NADAC Data)"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://rxgator.info/articles/first-48-hours-after-losing-insurance.html",
+        "name": "7 Things to Do in the First 48 Hours After Losing Insurance"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://rxgator.info/articles/patient-assistance-programs-complete-guide.html",
+        "name": "Patient Assistance Programs: The Complete Guide to Free Medications"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "url": "https://rxgator.info/articles/trumprx-explained.html",
+        "name": "TrumpRx.gov Explained: What It Covers, Who Benefits, and the Fine Print"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "url": "https://rxgator.info/articles/cobra-insurance-cost.html",
+        "name": "COBRA: Is It Worth $800/Month? (The Real Math)"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "url": "https://rxgator.info/articles/medicare-part-d-subsidy-ending-2027.html",
+        "name": "Medicare Part D Subsidy Ending in 2027: What Seniors Need to Know and Do Now"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "url": "https://rxgator.info/articles/amlodipine-olmesartan-recall-2026.html",
+        "name": "Amlodipine and Olmesartan Medoxomil Recall 2026: What You Need to Know"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "url": "https://rxgator.info/articles/amlodipine-cost-without-insurance.html",
+        "name": "How Much Does Amlodipine Cost Without Insurance in 2026?"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "url": "https://rxgator.info/articles/losartan-cost-without-insurance.html",
+        "name": "How Much Does Losartan Cost Without Insurance in 2026?"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "url": "https://rxgator.info/articles/omeprazole-cost-without-insurance.html",
+        "name": "How Much Does Omeprazole Cost Without Insurance in 2026?"
+      }
+    ]
+  }
+}
+</script>
 <style>
   .articles-hero {
     background: linear-gradient(135deg, #1a2332, #2d4a5e);
@@ -28,9 +114,32 @@
     max-width: 560px;
     margin: 0 auto;
   }
+  .lang-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 24px auto 0;
+    max-width: 800px;
+    padding: 0 24px;
+  }
+  .lang-toggle button {
+    padding: 8px 20px;
+    border: 2px solid var(--teal, #0d9488);
+    background: transparent;
+    color: var(--teal, #0d9488);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  .lang-toggle button.active {
+    background: var(--teal, #0d9488);
+    color: #fff;
+  }
   .articles-list {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 24px auto 40px;
     padding: 0 24px;
   }
   .article-item {
@@ -98,6 +207,21 @@
     transition: background 0.2s;
   }
   .articles-cta a.cta-btn:hover { background: var(--teal-dark); }
+  .section-heading {
+    max-width: 800px;
+    margin: 32px auto 0;
+    padding: 0 24px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .article-count {
+    max-width: 800px;
+    margin: 8px auto 0;
+    padding: 0 24px;
+    font-size: 14px;
+    color: var(--text-light);
+  }
   @media (max-width: 640px) {
     .articles-hero h1 { font-size: 26px; }
     .article-item .ai-title { font-size: 17px; }
@@ -121,52 +245,1103 @@
     <button onclick="setTextSize('xlarge')" id="sizeAAA" title="Extra large" style="font-size:16px;">A++</button>
   </div>
 </nav>
-
 <div class="articles-hero">
   <h1>Prescription Savings Guides</h1>
   <p>Practical, fact-checked guides to help you spend less on your medications. No ads, no affiliate links — just the information you need.</p>
 </div>
-
-<div class="articles-list" id="article-list">
-  <!-- Populated by JS from articles.json -->
+<div class="lang-toggle">
+  <button id="btn-en" class="active" onclick="showLang('en')">English (52)</button>
+  <button id="btn-es" onclick="showLang('es')">Espa&ntilde;ol (14)</button>
+  <button id="btn-all" onclick="showLang('all')">All (66)</button>
 </div>
-
+<p class="article-count" id="article-count">52 articles</p>
+<div class="articles-list" id="article-list-en">
+    <a href="/articles/nadac-drug-prices-2025-vs-2026.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">August 17, 2026 &middot; 8 min read</span>
+      </div>
+      <div class="ai-title">Drug Prices 2025 vs 2026: What Pharmacies Actually Pay (NADAC Data)</div>
+      <div class="ai-desc">Insulin dropped up to 75%. Generics fell 3.3% on average. But Ozempic barely budged. We compared 6,000+ drugs using federal NADAC data.</div>
+    </a>
+    <a href="/articles/first-48-hours-after-losing-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">August 9, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">7 Things to Do in the First 48 Hours After Losing Insurance</div>
+      <div class="ai-desc">COBRA deadlines, Medicaid, ACA enrollment, emergency fills — the 7 most important things to do right now.</div>
+    </a>
+    <a href="/articles/patient-assistance-programs-complete-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">August 9, 2026 &middot; 10 min read</span>
+      </div>
+      <div class="ai-title">Patient Assistance Programs: The Complete Guide to Free Medications</div>
+      <div class="ai-desc">How to get free prescription drugs from manufacturer programs. Eligibility, income limits, how to apply, and every major program listed.</div>
+    </a>
+    <a href="/articles/trumprx-explained.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">August 9, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">TrumpRx.gov Explained: What It Covers, Who Benefits, and the Fine Print</div>
+      <div class="ai-desc">What TrumpRx actually does, which drugs are covered, how it compares to other options, and what it does not do.</div>
+    </a>
+    <a href="/articles/cobra-insurance-cost.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">August 9, 2026 &middot; 8 min read</span>
+      </div>
+      <div class="ai-title">COBRA: Is It Worth $800/Month? (The Real Math)</div>
+      <div class="ai-desc">COBRA vs ACA Marketplace — real cost comparisons, when COBRA makes sense, and the 60-day retroactive election strategy.</div>
+    </a>
+    <a href="/articles/medicare-part-d-subsidy-ending-2027.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Medicare & Policy</span>
+        <span class="ai-date">July 31, 2026 &middot; 8 min read</span>
+      </div>
+      <div class="ai-title">Medicare Part D Subsidy Ending in 2027: What Seniors Need to Know and Do Now</div>
+      <div class="ai-desc">The federal government is ending subsidies that kept Medicare drug premiums low for 25 million seniors. Here's what's changing, how much more you could pay, and how to contact Congress.</div>
+    </a>
+    <a href="/articles/amlodipine-olmesartan-recall-2026.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Safety</span>
+        <span class="ai-date">July 31, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Amlodipine and Olmesartan Medoxomil Recall 2026: What You Need to Know</div>
+      <div class="ai-desc">Multiple lots of amlodipine and olmesartan medoxomil tablets have been recalled due to failed dissolution specifications. Find out if your medication is affected and what to do next.</div>
+    </a>
+    <a href="/articles/amlodipine-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Amlodipine Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Generic amlodipine runs $3 to $45 per month depending on your pharmacy. Here's where to find the lowest price and what most people actually pay.</div>
+    </a>
+    <a href="/articles/losartan-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Losartan Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Generic losartan runs $4 to $55 per month depending on your pharmacy. Here's where to find the lowest price and how to avoid the massive retail markup.</div>
+    </a>
+    <a href="/articles/omeprazole-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Omeprazole Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Omeprazole is available both as a prescription and over the counter, and the cheapest option depends on how you're paying. Here's the full pricing breakdown.</div>
+    </a>
+    <a href="/articles/gabapentin-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Gabapentin Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Gabapentin prices depend heavily on dosage. With a discount card, a 30-day supply runs $6 to $25. Without one, expect $50 to $120. Here's the full breakdown.</div>
+    </a>
+    <a href="/articles/lisinopril-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Lisinopril Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Find out what lisinopril costs without insurance in 2026. Compare prices from $4 to $40, learn about discount programs, and discover how to get the lowest price on this common blood pressure medication.</div>
+    </a>
+    <a href="/articles/levothyroxine-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Levothyroxine Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Levothyroxine is the 4th most prescribed drug in America. Learn what it costs without insurance, why brand Synthroid persists, and how to save on your thyroid medication in 2026.</div>
+    </a>
+    <a href="/articles/ozempic-wegovy-savings-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Brand Drugs</span>
+        <span class="ai-date">July 26, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">How to Save on Ozempic and Wegovy in 2026</div>
+      <div class="ai-desc">Ozempic and Wegovy cost $900-$1,300/month at list price. Learn about manufacturer savings programs, insurance coverage, compounding pharmacies, and future generics to reduce your semaglutide costs.</div>
+    </a>
+    <a href="/articles/eliquis-savings-alternatives.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Brand Drugs</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">How to Save on Eliquis: Coupons, Alternatives, and What's Coming</div>
+      <div class="ai-desc">Eliquis costs over $600/month at list price. Learn about the BMS co-pay card, Medicare negotiation impact, generic timeline, and alternatives to reduce your blood thinner costs in 2026.</div>
+    </a>
+    <a href="/articles/inflation-reduction-act-drug-prices.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">July 26, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">What the Inflation Reduction Act Means for Your Drug Prices</div>
+      <div class="ai-desc">The Inflation Reduction Act is changing prescription drug prices for millions of Americans. Learn about Medicare drug negotiations, the $35 insulin cap, $2,000 out-of-pocket limit, and what's coming through 2029.</div>
+    </a>
+    <a href="/articles/biosimilars-explained.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Biosimilars: The Generic Revolution for Expensive Drugs</div>
+      <div class="ai-desc">Learn what biosimilars are, how they differ from traditional generics, and how they're driving down prices on expensive biologic drugs like Humira and insulin.</div>
+    </a>
+    <a href="/articles/medicare-part-d-enrollment-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Medicare</span>
+        <span class="ai-date">July 26, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">Medicare Part D: How to Choose the Right Prescription Drug Plan</div>
+      <div class="ai-desc">A complete guide to Medicare Part D enrollment, plan comparison, formulary tiers, and avoiding costly mistakes when choosing your prescription drug coverage.</div>
+    </a>
+    <a href="/articles/va-prescription-benefits-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">VA Prescription Benefits: What Veterans Should Know About Drug Costs</div>
+      <div class="ai-desc">A guide to VA pharmacy benefits for veterans, including copay tiers, mail-order prescriptions, VA formulary, and how VA drug prices compare to retail pharmacies.</div>
+    </a>
+    <a href="/articles/telehealth-prescriptions-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Practical Guide</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How to Get Prescriptions Through Telehealth in 2026</div>
+      <div class="ai-desc">Learn how telehealth prescriptions work, what medications can be prescribed online, how much visits cost, and tips for filling telehealth prescriptions at the lowest price.</div>
+    </a>
+    <a href="/articles/how-to-read-pharmacy-receipt.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How to Read Your Pharmacy Receipt (And Catch Overcharges)</div>
+      <div class="ai-desc">Learn how to decode your pharmacy receipt, understand DAW codes, spot billing errors, and know when paying cash beats using your insurance copay.</div>
+    </a>
+    <a href="/articles/metformin-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Metformin Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Generic metformin runs $4 to $30 per month depending on your pharmacy. Here's where to find the lowest price and what most people actually pay.</div>
+    </a>
+    <a href="/articles/goodrx-vs-singlecare.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparison</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">GoodRx vs SingleCare: Which Saves You More?</div>
+      <div class="ai-desc">Both offer free discount cards, but prices vary wildly by pharmacy and medication. We break down which one wins and when.</div>
+    </a>
+    <a href="/articles/walmart-4-dollar-list.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Walmart $4 Prescription List 2026 — Complete Guide</div>
+      <div class="ai-desc">Over 300 generic medications for $4 per month, no insurance required. Here's what's covered, what's not, and the catches most people miss.</div>
+    </a>
+    <a href="/articles/medicare-donut-hole-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Medicare</span>
+        <span class="ai-date">July 9, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">How to Use the Medicare Donut Hole to Your Advantage</div>
+      <div class="ai-desc">The coverage gap hits millions of seniors every year. Here's how to plan for it, reduce your costs inside it, and get through it faster.</div>
+    </a>
+    <a href="/articles/save-on-prescriptions-uninsured.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">5 Ways to Save on Prescriptions if You're Uninsured</div>
+      <div class="ai-desc">No insurance doesn't mean full price. These five strategies can cut your prescription costs by 50% to 90% — starting today.</div>
+    </a>
+    <a href="/articles/cost-plus-drugs-review.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Review</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Is Cost Plus Drugs Legit? What to Know Before You Order</div>
+      <div class="ai-desc">Mark Cuban's transparent pharmacy charges cost plus 15%. Here's how it works, what it covers, and whether it's actually cheaper than your current pharmacy.</div>
+    </a>
+    <a href="/articles/amazon-rxpass-review.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Review</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">Amazon RxPass Review: Is $5/Month Worth It?</div>
+      <div class="ai-desc">All your eligible generic medications for one flat fee. We look at the drug list, the fine print, and who actually saves money.</div>
+    </a>
+    <a href="/articles/jardiance-savings-card.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Brand Drugs</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How to Get Jardiance for Less (Manufacturer Savings Card)</div>
+      <div class="ai-desc">Jardiance retails at $500+ per month. Eli Lilly's savings program and other options can bring it down dramatically. Here's how to qualify.</div>
+    </a>
+    <a href="/articles/costco-pharmacy-no-membership.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">Costco Pharmacy Without a Membership — What to Know</div>
+      <div class="ai-desc">You don't need a Costco card to use the pharmacy. Costco's prices on generics are among the lowest in the country. Here's how it works.</div>
+    </a>
+    <a href="/articles/what-pharmacy-pays-for-your-medication.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">The $0.02 Pill: What Your Pharmacy Actually Pays for Your Medication</div>
+      <div class="ai-desc">The gap between what pharmacies pay for generic drugs and what you pay at the counter is staggering. Here's how to see the real numbers.</div>
+    </a>
+    <a href="/articles/rx-outreach-nonprofit-pharmacy-review.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Review</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Rx Outreach: The Nonprofit Pharmacy Most People Don't Know About</div>
+      <div class="ai-desc">Rx Outreach is a nonprofit mail-order pharmacy offering 1,000+ medications with free shipping, no insurance required. Here's how it works and how it compares.</div>
+    </a>
+    <a href="/articles/atorvastatin-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Atorvastatin (Generic Lipitor) Cost Without Insurance?</div>
+      <div class="ai-desc">Atorvastatin is the most prescribed drug in America — and one of the cheapest generics available. Here's what it actually costs and where to find the lowest price.</div>
+    </a>
+    <a href="/articles/generic-vs-brand-name-drugs.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">6 min read</span>
+      </div>
+      <div class="ai-title">Generic vs Brand-Name Drugs: Are They Really the Same?</div>
+      <div class="ai-desc">The FDA says yes. Your pharmacist says yes. So why does the brand version cost 10x more? Here's what's actually different — and what isn't.</div>
+    </a>
+    <a href="/articles/what-is-a-pbm.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">7 min read</span>
+      </div>
+      <div class="ai-title">What Is a Pharmacy Benefit Manager (PBM) and Why Does It Matter?</div>
+      <div class="ai-desc">Three companies control nearly 80% of the prescription drug market. Understanding how PBMs work explains why your medications cost what they do.</div>
+    </a>
+    <a href="/articles/transfer-prescription-cheaper-pharmacy.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">4 min read</span>
+      </div>
+      <div class="ai-title">How to Transfer Your Prescription to a Cheaper Pharmacy</div>
+      <div class="ai-desc">Switching pharmacies is easier than most people think and can save you hundreds per year. Here's the step-by-step process.</div>
+    </a>
+    <a href="/articles/patient-assistance-programs-free-medications.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">6 min read</span>
+      </div>
+      <div class="ai-title">Patient Assistance Programs: How to Get Free or Low-Cost Medications</div>
+      <div class="ai-desc">Drug manufacturers, nonprofits, and government programs provide free medications to millions of Americans. Here's how to find and apply for them.</div>
+    </a>
+    <a href="/articles/why-drug-prices-vary-by-pharmacy.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Why the Same Drug Costs Different Prices at Different Pharmacies</div>
+      <div class="ai-desc">The same generic pill can cost $4 at one pharmacy and $40 at another in the same neighborhood. Here's how pharmacy pricing actually works.</div>
+    </a>
+    <a href="/articles/pill-splitting-save-money.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Pill Splitting: A Legal Way to Cut Your Drug Costs in Half</div>
+      <div class="ai-desc">Many tablets cost the same regardless of strength. Splitting a double-dose pill can cut your costs by 50%. Here's when it works and when it doesn't.</div>
+    </a>
+    <a href="/articles/best-pharmacy-cheap-prescriptions.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparison</span>
+        <span class="ai-date">6 min read</span>
+      </div>
+      <div class="ai-title">The Best Pharmacies for Cheap Prescriptions</div>
+      <div class="ai-desc">Not all pharmacies price the same. Here's how the major chains, warehouse clubs, and online options stack up for uninsured and cash-pay patients.</div>
+    </a>
+    <a href="/articles/talk-to-doctor-about-drug-costs.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">4 min read</span>
+      </div>
+      <div class="ai-title">How to Talk to Your Doctor About Drug Costs</div>
+      <div class="ai-desc">Your doctor doesn't always know what your medication costs at the pharmacy. Here's how to have the conversation that could save you real money.</div>
+    </a>
+    <a href="/articles/insulin-affordability-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">7 min read</span>
+      </div>
+      <div class="ai-title">How to Get Affordable Insulin: Programs, Caps, and Options</div>
+      <div class="ai-desc">Insulin prices have been a crisis for millions. Federal caps, manufacturer programs, and pharmacy options have changed the landscape. Here's the current picture.</div>
+    </a>
+    <a href="/articles/what-is-a-formulary.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">What Is a Formulary and Why Does It Affect Your Drug Costs?</div>
+      <div class="ai-desc">Your insurance company's formulary decides what you pay for every prescription. Understanding how it works can save you hundreds per year.</div>
+    </a>
+    <a href="/articles/mail-order-vs-retail-pharmacy.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparison</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Mail-Order Pharmacy vs Retail: Pros, Cons, and Savings</div>
+      <div class="ai-desc">Mail-order pharmacies can save you time and money on maintenance medications. But they're not always the better deal. Here's when each option wins.</div>
+    </a>
+    <a href="/articles/hsa-fsa-pay-for-prescriptions.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">How to Use Your HSA or FSA to Pay for Prescriptions</div>
+      <div class="ai-desc">Your health savings account or flexible spending account can cover prescriptions tax-free. Here's what qualifies and how to maximize the benefit.</div>
+    </a>
+    <a href="/articles/insurance-wont-cover-medication.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">6 min read</span>
+      </div>
+      <div class="ai-title">What to Do When Your Insurance Won't Cover Your Medication</div>
+      <div class="ai-desc">A denied prescription isn't the end of the road. Prior authorizations, appeals, therapeutic alternatives, and other options can get you covered — or save you money outside insurance.</div>
+    </a>
+    <a href="/articles/prescription-drug-coupons-how-they-work.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Prescription Drug Coupons: How They Work and the Fine Print</div>
+      <div class="ai-desc">Free coupons from GoodRx, SingleCare, and manufacturers can cut your costs dramatically. But there are tradeoffs most people don't know about.</div>
+    </a>
+    <a href="/articles/90-day-prescriptions-save-money.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">4 min read</span>
+      </div>
+      <div class="ai-title">90-Day Prescriptions: Why Buying in Bulk Saves Money</div>
+      <div class="ai-desc">Filling a 90-day supply instead of monthly can save 20% to 40% on many medications — plus fewer pharmacy trips.</div>
+    </a>
+    <a href="/articles/otc-vs-prescription-save-money.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Over-the-Counter vs Prescription: When OTC Is the Smarter Move</div>
+      <div class="ai-desc">Some prescription drugs have identical OTC versions at a fraction of the cost. Here's when switching to over-the-counter makes sense.</div>
+    </a>
+    <a href="/articles/prescriptions-while-traveling.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Practical Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">How to Get Prescriptions Filled While Traveling</div>
+      <div class="ai-desc">Running out of medication on the road doesn't have to be a crisis. Here's how to get prescriptions filled away from home — domestically and internationally.</div>
+    </a>
+    <a href="/articles/generic-drug-discontinued-what-to-do.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Practical Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">What Happens When a Generic Drug Gets Discontinued?</div>
+      <div class="ai-desc">Drug shortages and manufacturer exits can leave you scrambling. Here's what to do when your generic disappears and how to find alternatives fast.</div>
+    </a>
+    <a href="/articles/us-drug-prices-vs-other-countries.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">7 min read</span>
+      </div>
+      <div class="ai-title">Why US Drug Prices Are Higher Than Other Countries</div>
+      <div class="ai-desc">Americans pay two to three times more for the same medications as people in Canada, Europe, and Australia. Here's why the system works this way.</div>
+    </a>
+</div>
+<div class="articles-list" id="article-list-es" style="display:none;">
+    <a href="/articles/es/ahorrar-recetas-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Guía de Ahorro</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">5 Formas de Ahorrar en Recetas Médicas sin Seguro</div>
+      <div class="ai-desc">No tener seguro no significa pagar precio completo. Estas cinco estrategias pueden reducir el costo de sus recetas entre un 50% y un 90%.</div>
+    </a>
+    <a href="/articles/es/goodrx-vs-singlecare-comparacion.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparación</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">GoodRx vs SingleCare: ¿Cuál Le Ahorra Más?</div>
+      <div class="ai-desc">Ambas ofrecen tarjetas de descuento gratuitas, pero los precios varían según la farmacia y el medicamento. Analizamos cuál gana y cuándo.</div>
+    </a>
+    <a href="/articles/es/lista-walmart-4-dolares.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Guía de Ahorro</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">Lista de Medicamentos de $4 de Walmart 2026 — Guía Completa</div>
+      <div class="ai-desc">Más de 300 medicamentos genéricos por $4 al mes, sin seguro médico. Qué está incluido, qué no, y los detalles que la mayoría no conoce.</div>
+    </a>
+    <a href="/articles/es/resena-cost-plus-drugs.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Reseña</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Es Confiable Cost Plus Drugs? Lo Que Debe Saber Antes de Ordenar</div>
+      <div class="ai-desc">La farmacia de Mark Cuban cobra el costo más 15%. Cómo funciona, qué medicamentos tiene, y si realmente es más barato que su farmacia actual.</div>
+    </a>
+    <a href="/articles/es/mejores-farmacias-recetas-baratas.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparación</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">Las Mejores Farmacias para Recetas Baratas</div>
+      <div class="ai-desc">No todas las farmacias cobran igual. Comparamos las cadenas principales, clubes de almacén y opciones en línea para pacientes sin seguro.</div>
+    </a>
+    <a href="/articles/es/guia-accesibilidad-insulina.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 7 min de lectura</span>
+      </div>
+      <div class="ai-title">Cómo Obtener Insulina a Precio Accesible: Programas, Topes y Opciones</div>
+      <div class="ai-desc">Topes federales, programas de fabricantes y opciones de farmacia han cambiado el panorama de la insulina. Aquí está la situación actual.</div>
+    </a>
+    <a href="/articles/es/que-es-un-pbm.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Industria</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 7 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Qué Es un PBM y Por Qué Afecta el Precio de Sus Medicamentos?</div>
+      <div class="ai-desc">Tres empresas controlan casi el 80% del mercado de medicamentos recetados. Entender cómo funcionan los PBM explica por qué sus medicamentos cuestan lo que cuestan.</div>
+    </a>
+    <a href="/articles/es/guia-brecha-cobertura-medicare.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Medicare</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 7 min de lectura</span>
+      </div>
+      <div class="ai-title">Cómo Usar la Brecha de Cobertura de Medicare a Su Favor</div>
+      <div class="ai-desc">La brecha de cobertura afecta a millones de personas mayores cada año. Cómo planificar, reducir costos y superarla más rápido.</div>
+    </a>
+    <a href="/articles/es/costo-metformina-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Metformina Sin Seguro en 2026?</div>
+      <div class="ai-desc">Metformina genérica cuesta entre $4 y $30 al mes dependiendo de la farmacia. Aquí le mostramos dónde encontrar el precio más bajo.</div>
+    </a>
+    <a href="/articles/es/costo-lisinopril-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Lisinopril Sin Seguro en 2026?</div>
+      <div class="ai-desc">Lisinopril genérico cuesta entre $3 y $40 al mes. Compare precios y encuentre el mejor precio en su farmacia.</div>
+    </a>
+    <a href="/articles/es/costo-atorvastatina-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Atorvastatina Sin Seguro en 2026?</div>
+      <div class="ai-desc">Atorvastatina genérica (Lipitor) cuesta entre $4 y $90 al mes. Descubra dónde encontrar el precio más bajo.</div>
+    </a>
+    <a href="/articles/es/costo-amlodipino-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Amlodipino Sin Seguro en 2026?</div>
+      <div class="ai-desc">Amlodipino genérico cuesta entre $3 y $45 al mes. Aquí le mostramos cómo conseguir el mejor precio.</div>
+    </a>
+    <a href="/articles/es/costo-losartan-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Losartán Sin Seguro en 2026?</div>
+      <div class="ai-desc">Losartán genérico cuesta entre $4 y $55 al mes. Compare precios y ahorre en su medicamento para la presión arterial.</div>
+    </a>
+    <a href="/articles/es/costo-omeprazol-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Omeprazol Sin Seguro en 2026?</div>
+      <div class="ai-desc">Omeprazol está disponible con y sin receta. Aquí le explicamos las diferencias de precio y dónde encontrar la mejor oferta.</div>
+    </a>
+</div>
+<div class="articles-list" id="article-list-all" style="display:none;">
+    <a href="/articles/es/ahorrar-recetas-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Guía de Ahorro</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">5 Formas de Ahorrar en Recetas Médicas sin Seguro</div>
+      <div class="ai-desc">No tener seguro no significa pagar precio completo. Estas cinco estrategias pueden reducir el costo de sus recetas entre un 50% y un 90%.</div>
+    </a>
+    <a href="/articles/es/goodrx-vs-singlecare-comparacion.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparación</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">GoodRx vs SingleCare: ¿Cuál Le Ahorra Más?</div>
+      <div class="ai-desc">Ambas ofrecen tarjetas de descuento gratuitas, pero los precios varían según la farmacia y el medicamento. Analizamos cuál gana y cuándo.</div>
+    </a>
+    <a href="/articles/es/lista-walmart-4-dolares.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Guía de Ahorro</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">Lista de Medicamentos de $4 de Walmart 2026 — Guía Completa</div>
+      <div class="ai-desc">Más de 300 medicamentos genéricos por $4 al mes, sin seguro médico. Qué está incluido, qué no, y los detalles que la mayoría no conoce.</div>
+    </a>
+    <a href="/articles/es/resena-cost-plus-drugs.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Reseña</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Es Confiable Cost Plus Drugs? Lo Que Debe Saber Antes de Ordenar</div>
+      <div class="ai-desc">La farmacia de Mark Cuban cobra el costo más 15%. Cómo funciona, qué medicamentos tiene, y si realmente es más barato que su farmacia actual.</div>
+    </a>
+    <a href="/articles/es/mejores-farmacias-recetas-baratas.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparación</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">Las Mejores Farmacias para Recetas Baratas</div>
+      <div class="ai-desc">No todas las farmacias cobran igual. Comparamos las cadenas principales, clubes de almacén y opciones en línea para pacientes sin seguro.</div>
+    </a>
+    <a href="/articles/es/guia-accesibilidad-insulina.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 7 min de lectura</span>
+      </div>
+      <div class="ai-title">Cómo Obtener Insulina a Precio Accesible: Programas, Topes y Opciones</div>
+      <div class="ai-desc">Topes federales, programas de fabricantes y opciones de farmacia han cambiado el panorama de la insulina. Aquí está la situación actual.</div>
+    </a>
+    <a href="/articles/es/que-es-un-pbm.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Industria</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 7 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Qué Es un PBM y Por Qué Afecta el Precio de Sus Medicamentos?</div>
+      <div class="ai-desc">Tres empresas controlan casi el 80% del mercado de medicamentos recetados. Entender cómo funcionan los PBM explica por qué sus medicamentos cuestan lo que cuestan.</div>
+    </a>
+    <a href="/articles/es/guia-brecha-cobertura-medicare.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Medicare</span>
+        <span class="ai-date">27 de agosto de 2026 &middot; 7 min de lectura</span>
+      </div>
+      <div class="ai-title">Cómo Usar la Brecha de Cobertura de Medicare a Su Favor</div>
+      <div class="ai-desc">La brecha de cobertura afecta a millones de personas mayores cada año. Cómo planificar, reducir costos y superarla más rápido.</div>
+    </a>
+    <a href="/articles/nadac-drug-prices-2025-vs-2026.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">August 17, 2026 &middot; 8 min read</span>
+      </div>
+      <div class="ai-title">Drug Prices 2025 vs 2026: What Pharmacies Actually Pay (NADAC Data)</div>
+      <div class="ai-desc">Insulin dropped up to 75%. Generics fell 3.3% on average. But Ozempic barely budged. We compared 6,000+ drugs using federal NADAC data.</div>
+    </a>
+    <a href="/articles/first-48-hours-after-losing-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">August 9, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">7 Things to Do in the First 48 Hours After Losing Insurance</div>
+      <div class="ai-desc">COBRA deadlines, Medicaid, ACA enrollment, emergency fills — the 7 most important things to do right now.</div>
+    </a>
+    <a href="/articles/patient-assistance-programs-complete-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">August 9, 2026 &middot; 10 min read</span>
+      </div>
+      <div class="ai-title">Patient Assistance Programs: The Complete Guide to Free Medications</div>
+      <div class="ai-desc">How to get free prescription drugs from manufacturer programs. Eligibility, income limits, how to apply, and every major program listed.</div>
+    </a>
+    <a href="/articles/trumprx-explained.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">August 9, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">TrumpRx.gov Explained: What It Covers, Who Benefits, and the Fine Print</div>
+      <div class="ai-desc">What TrumpRx actually does, which drugs are covered, how it compares to other options, and what it does not do.</div>
+    </a>
+    <a href="/articles/cobra-insurance-cost.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">August 9, 2026 &middot; 8 min read</span>
+      </div>
+      <div class="ai-title">COBRA: Is It Worth $800/Month? (The Real Math)</div>
+      <div class="ai-desc">COBRA vs ACA Marketplace — real cost comparisons, when COBRA makes sense, and the 60-day retroactive election strategy.</div>
+    </a>
+    <a href="/articles/es/costo-metformina-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Metformina Sin Seguro en 2026?</div>
+      <div class="ai-desc">Metformina genérica cuesta entre $4 y $30 al mes dependiendo de la farmacia. Aquí le mostramos dónde encontrar el precio más bajo.</div>
+    </a>
+    <a href="/articles/es/costo-lisinopril-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Lisinopril Sin Seguro en 2026?</div>
+      <div class="ai-desc">Lisinopril genérico cuesta entre $3 y $40 al mes. Compare precios y encuentre el mejor precio en su farmacia.</div>
+    </a>
+    <a href="/articles/es/costo-atorvastatina-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Atorvastatina Sin Seguro en 2026?</div>
+      <div class="ai-desc">Atorvastatina genérica (Lipitor) cuesta entre $4 y $90 al mes. Descubra dónde encontrar el precio más bajo.</div>
+    </a>
+    <a href="/articles/es/costo-amlodipino-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Amlodipino Sin Seguro en 2026?</div>
+      <div class="ai-desc">Amlodipino genérico cuesta entre $3 y $45 al mes. Aquí le mostramos cómo conseguir el mejor precio.</div>
+    </a>
+    <a href="/articles/es/costo-losartan-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 5 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Losartán Sin Seguro en 2026?</div>
+      <div class="ai-desc">Losartán genérico cuesta entre $4 y $55 al mes. Compare precios y ahorre en su medicamento para la presión arterial.</div>
+    </a>
+    <a href="/articles/es/costo-omeprazol-sin-seguro.html" class="article-item" data-lang="es">
+      <div class="ai-meta">
+        <span class="ai-tag">Precios de Medicamentos</span>
+        <span class="ai-date">1 de agosto de 2026 &middot; 6 min de lectura</span>
+      </div>
+      <div class="ai-title">¿Cuánto Cuesta Omeprazol Sin Seguro en 2026?</div>
+      <div class="ai-desc">Omeprazol está disponible con y sin receta. Aquí le explicamos las diferencias de precio y dónde encontrar la mejor oferta.</div>
+    </a>
+    <a href="/articles/medicare-part-d-subsidy-ending-2027.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Medicare & Policy</span>
+        <span class="ai-date">July 31, 2026 &middot; 8 min read</span>
+      </div>
+      <div class="ai-title">Medicare Part D Subsidy Ending in 2027: What Seniors Need to Know and Do Now</div>
+      <div class="ai-desc">The federal government is ending subsidies that kept Medicare drug premiums low for 25 million seniors. Here's what's changing, how much more you could pay, and how to contact Congress.</div>
+    </a>
+    <a href="/articles/amlodipine-olmesartan-recall-2026.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Safety</span>
+        <span class="ai-date">July 31, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Amlodipine and Olmesartan Medoxomil Recall 2026: What You Need to Know</div>
+      <div class="ai-desc">Multiple lots of amlodipine and olmesartan medoxomil tablets have been recalled due to failed dissolution specifications. Find out if your medication is affected and what to do next.</div>
+    </a>
+    <a href="/articles/amlodipine-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Amlodipine Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Generic amlodipine runs $3 to $45 per month depending on your pharmacy. Here's where to find the lowest price and what most people actually pay.</div>
+    </a>
+    <a href="/articles/losartan-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Losartan Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Generic losartan runs $4 to $55 per month depending on your pharmacy. Here's where to find the lowest price and how to avoid the massive retail markup.</div>
+    </a>
+    <a href="/articles/omeprazole-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Omeprazole Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Omeprazole is available both as a prescription and over the counter, and the cheapest option depends on how you're paying. Here's the full pricing breakdown.</div>
+    </a>
+    <a href="/articles/gabapentin-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Gabapentin Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Gabapentin prices depend heavily on dosage. With a discount card, a 30-day supply runs $6 to $25. Without one, expect $50 to $120. Here's the full breakdown.</div>
+    </a>
+    <a href="/articles/lisinopril-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Lisinopril Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Find out what lisinopril costs without insurance in 2026. Compare prices from $4 to $40, learn about discount programs, and discover how to get the lowest price on this common blood pressure medication.</div>
+    </a>
+    <a href="/articles/levothyroxine-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Levothyroxine Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Levothyroxine is the 4th most prescribed drug in America. Learn what it costs without insurance, why brand Synthroid persists, and how to save on your thyroid medication in 2026.</div>
+    </a>
+    <a href="/articles/ozempic-wegovy-savings-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Brand Drugs</span>
+        <span class="ai-date">July 26, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">How to Save on Ozempic and Wegovy in 2026</div>
+      <div class="ai-desc">Ozempic and Wegovy cost $900-$1,300/month at list price. Learn about manufacturer savings programs, insurance coverage, compounding pharmacies, and future generics to reduce your semaglutide costs.</div>
+    </a>
+    <a href="/articles/eliquis-savings-alternatives.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Brand Drugs</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">How to Save on Eliquis: Coupons, Alternatives, and What's Coming</div>
+      <div class="ai-desc">Eliquis costs over $600/month at list price. Learn about the BMS co-pay card, Medicare negotiation impact, generic timeline, and alternatives to reduce your blood thinner costs in 2026.</div>
+    </a>
+    <a href="/articles/inflation-reduction-act-drug-prices.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">July 26, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">What the Inflation Reduction Act Means for Your Drug Prices</div>
+      <div class="ai-desc">The Inflation Reduction Act is changing prescription drug prices for millions of Americans. Learn about Medicare drug negotiations, the $35 insulin cap, $2,000 out-of-pocket limit, and what's coming through 2029.</div>
+    </a>
+    <a href="/articles/biosimilars-explained.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Biosimilars: The Generic Revolution for Expensive Drugs</div>
+      <div class="ai-desc">Learn what biosimilars are, how they differ from traditional generics, and how they're driving down prices on expensive biologic drugs like Humira and insulin.</div>
+    </a>
+    <a href="/articles/medicare-part-d-enrollment-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Medicare</span>
+        <span class="ai-date">July 26, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">Medicare Part D: How to Choose the Right Prescription Drug Plan</div>
+      <div class="ai-desc">A complete guide to Medicare Part D enrollment, plan comparison, formulary tiers, and avoiding costly mistakes when choosing your prescription drug coverage.</div>
+    </a>
+    <a href="/articles/va-prescription-benefits-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">July 26, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">VA Prescription Benefits: What Veterans Should Know About Drug Costs</div>
+      <div class="ai-desc">A guide to VA pharmacy benefits for veterans, including copay tiers, mail-order prescriptions, VA formulary, and how VA drug prices compare to retail pharmacies.</div>
+    </a>
+    <a href="/articles/telehealth-prescriptions-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Practical Guide</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How to Get Prescriptions Through Telehealth in 2026</div>
+      <div class="ai-desc">Learn how telehealth prescriptions work, what medications can be prescribed online, how much visits cost, and tips for filling telehealth prescriptions at the lowest price.</div>
+    </a>
+    <a href="/articles/how-to-read-pharmacy-receipt.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">July 26, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How to Read Your Pharmacy Receipt (And Catch Overcharges)</div>
+      <div class="ai-desc">Learn how to decode your pharmacy receipt, understand DAW codes, spot billing errors, and know when paying cash beats using your insurance copay.</div>
+    </a>
+    <a href="/articles/metformin-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Metformin Cost Without Insurance in 2026?</div>
+      <div class="ai-desc">Generic metformin runs $4 to $30 per month depending on your pharmacy. Here's where to find the lowest price and what most people actually pay.</div>
+    </a>
+    <a href="/articles/goodrx-vs-singlecare.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparison</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">GoodRx vs SingleCare: Which Saves You More?</div>
+      <div class="ai-desc">Both offer free discount cards, but prices vary wildly by pharmacy and medication. We break down which one wins and when.</div>
+    </a>
+    <a href="/articles/walmart-4-dollar-list.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Walmart $4 Prescription List 2026 — Complete Guide</div>
+      <div class="ai-desc">Over 300 generic medications for $4 per month, no insurance required. Here's what's covered, what's not, and the catches most people miss.</div>
+    </a>
+    <a href="/articles/medicare-donut-hole-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Medicare</span>
+        <span class="ai-date">July 9, 2026 &middot; 7 min read</span>
+      </div>
+      <div class="ai-title">How to Use the Medicare Donut Hole to Your Advantage</div>
+      <div class="ai-desc">The coverage gap hits millions of seniors every year. Here's how to plan for it, reduce your costs inside it, and get through it faster.</div>
+    </a>
+    <a href="/articles/save-on-prescriptions-uninsured.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">5 Ways to Save on Prescriptions if You're Uninsured</div>
+      <div class="ai-desc">No insurance doesn't mean full price. These five strategies can cut your prescription costs by 50% to 90% — starting today.</div>
+    </a>
+    <a href="/articles/cost-plus-drugs-review.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Review</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Is Cost Plus Drugs Legit? What to Know Before You Order</div>
+      <div class="ai-desc">Mark Cuban's transparent pharmacy charges cost plus 15%. Here's how it works, what it covers, and whether it's actually cheaper than your current pharmacy.</div>
+    </a>
+    <a href="/articles/amazon-rxpass-review.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Review</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">Amazon RxPass Review: Is $5/Month Worth It?</div>
+      <div class="ai-desc">All your eligible generic medications for one flat fee. We look at the drug list, the fine print, and who actually saves money.</div>
+    </a>
+    <a href="/articles/jardiance-savings-card.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Brand Drugs</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">How to Get Jardiance for Less (Manufacturer Savings Card)</div>
+      <div class="ai-desc">Jardiance retails at $500+ per month. Eli Lilly's savings program and other options can bring it down dramatically. Here's how to qualify.</div>
+    </a>
+    <a href="/articles/costco-pharmacy-no-membership.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">July 9, 2026 &middot; 5 min read</span>
+      </div>
+      <div class="ai-title">Costco Pharmacy Without a Membership — What to Know</div>
+      <div class="ai-desc">You don't need a Costco card to use the pharmacy. Costco's prices on generics are among the lowest in the country. Here's how it works.</div>
+    </a>
+    <a href="/articles/what-pharmacy-pays-for-your-medication.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">The $0.02 Pill: What Your Pharmacy Actually Pays for Your Medication</div>
+      <div class="ai-desc">The gap between what pharmacies pay for generic drugs and what you pay at the counter is staggering. Here's how to see the real numbers.</div>
+    </a>
+    <a href="/articles/rx-outreach-nonprofit-pharmacy-review.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Review</span>
+        <span class="ai-date">July 9, 2026 &middot; 6 min read</span>
+      </div>
+      <div class="ai-title">Rx Outreach: The Nonprofit Pharmacy Most People Don't Know About</div>
+      <div class="ai-desc">Rx Outreach is a nonprofit mail-order pharmacy offering 1,000+ medications with free shipping, no insurance required. Here's how it works and how it compares.</div>
+    </a>
+    <a href="/articles/atorvastatin-cost-without-insurance.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">How Much Does Atorvastatin (Generic Lipitor) Cost Without Insurance?</div>
+      <div class="ai-desc">Atorvastatin is the most prescribed drug in America — and one of the cheapest generics available. Here's what it actually costs and where to find the lowest price.</div>
+    </a>
+    <a href="/articles/generic-vs-brand-name-drugs.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">6 min read</span>
+      </div>
+      <div class="ai-title">Generic vs Brand-Name Drugs: Are They Really the Same?</div>
+      <div class="ai-desc">The FDA says yes. Your pharmacist says yes. So why does the brand version cost 10x more? Here's what's actually different — and what isn't.</div>
+    </a>
+    <a href="/articles/what-is-a-pbm.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">7 min read</span>
+      </div>
+      <div class="ai-title">What Is a Pharmacy Benefit Manager (PBM) and Why Does It Matter?</div>
+      <div class="ai-desc">Three companies control nearly 80% of the prescription drug market. Understanding how PBMs work explains why your medications cost what they do.</div>
+    </a>
+    <a href="/articles/transfer-prescription-cheaper-pharmacy.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">4 min read</span>
+      </div>
+      <div class="ai-title">How to Transfer Your Prescription to a Cheaper Pharmacy</div>
+      <div class="ai-desc">Switching pharmacies is easier than most people think and can save you hundreds per year. Here's the step-by-step process.</div>
+    </a>
+    <a href="/articles/patient-assistance-programs-free-medications.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">6 min read</span>
+      </div>
+      <div class="ai-title">Patient Assistance Programs: How to Get Free or Low-Cost Medications</div>
+      <div class="ai-desc">Drug manufacturers, nonprofits, and government programs provide free medications to millions of Americans. Here's how to find and apply for them.</div>
+    </a>
+    <a href="/articles/why-drug-prices-vary-by-pharmacy.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Why the Same Drug Costs Different Prices at Different Pharmacies</div>
+      <div class="ai-desc">The same generic pill can cost $4 at one pharmacy and $40 at another in the same neighborhood. Here's how pharmacy pricing actually works.</div>
+    </a>
+    <a href="/articles/pill-splitting-save-money.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Pill Splitting: A Legal Way to Cut Your Drug Costs in Half</div>
+      <div class="ai-desc">Many tablets cost the same regardless of strength. Splitting a double-dose pill can cut your costs by 50%. Here's when it works and when it doesn't.</div>
+    </a>
+    <a href="/articles/best-pharmacy-cheap-prescriptions.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparison</span>
+        <span class="ai-date">6 min read</span>
+      </div>
+      <div class="ai-title">The Best Pharmacies for Cheap Prescriptions</div>
+      <div class="ai-desc">Not all pharmacies price the same. Here's how the major chains, warehouse clubs, and online options stack up for uninsured and cash-pay patients.</div>
+    </a>
+    <a href="/articles/talk-to-doctor-about-drug-costs.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">4 min read</span>
+      </div>
+      <div class="ai-title">How to Talk to Your Doctor About Drug Costs</div>
+      <div class="ai-desc">Your doctor doesn't always know what your medication costs at the pharmacy. Here's how to have the conversation that could save you real money.</div>
+    </a>
+    <a href="/articles/insulin-affordability-guide.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Drug Pricing</span>
+        <span class="ai-date">7 min read</span>
+      </div>
+      <div class="ai-title">How to Get Affordable Insulin: Programs, Caps, and Options</div>
+      <div class="ai-desc">Insulin prices have been a crisis for millions. Federal caps, manufacturer programs, and pharmacy options have changed the landscape. Here's the current picture.</div>
+    </a>
+    <a href="/articles/what-is-a-formulary.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">What Is a Formulary and Why Does It Affect Your Drug Costs?</div>
+      <div class="ai-desc">Your insurance company's formulary decides what you pay for every prescription. Understanding how it works can save you hundreds per year.</div>
+    </a>
+    <a href="/articles/mail-order-vs-retail-pharmacy.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Comparison</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Mail-Order Pharmacy vs Retail: Pros, Cons, and Savings</div>
+      <div class="ai-desc">Mail-order pharmacies can save you time and money on maintenance medications. But they're not always the better deal. Here's when each option wins.</div>
+    </a>
+    <a href="/articles/hsa-fsa-pay-for-prescriptions.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">How to Use Your HSA or FSA to Pay for Prescriptions</div>
+      <div class="ai-desc">Your health savings account or flexible spending account can cover prescriptions tax-free. Here's what qualifies and how to maximize the benefit.</div>
+    </a>
+    <a href="/articles/insurance-wont-cover-medication.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">6 min read</span>
+      </div>
+      <div class="ai-title">What to Do When Your Insurance Won't Cover Your Medication</div>
+      <div class="ai-desc">A denied prescription isn't the end of the road. Prior authorizations, appeals, therapeutic alternatives, and other options can get you covered — or save you money outside insurance.</div>
+    </a>
+    <a href="/articles/prescription-drug-coupons-how-they-work.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Education</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Prescription Drug Coupons: How They Work and the Fine Print</div>
+      <div class="ai-desc">Free coupons from GoodRx, SingleCare, and manufacturers can cut your costs dramatically. But there are tradeoffs most people don't know about.</div>
+    </a>
+    <a href="/articles/90-day-prescriptions-save-money.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">4 min read</span>
+      </div>
+      <div class="ai-title">90-Day Prescriptions: Why Buying in Bulk Saves Money</div>
+      <div class="ai-desc">Filling a 90-day supply instead of monthly can save 20% to 40% on many medications — plus fewer pharmacy trips.</div>
+    </a>
+    <a href="/articles/otc-vs-prescription-save-money.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Savings Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">Over-the-Counter vs Prescription: When OTC Is the Smarter Move</div>
+      <div class="ai-desc">Some prescription drugs have identical OTC versions at a fraction of the cost. Here's when switching to over-the-counter makes sense.</div>
+    </a>
+    <a href="/articles/prescriptions-while-traveling.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Practical Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">How to Get Prescriptions Filled While Traveling</div>
+      <div class="ai-desc">Running out of medication on the road doesn't have to be a crisis. Here's how to get prescriptions filled away from home — domestically and internationally.</div>
+    </a>
+    <a href="/articles/generic-drug-discontinued-what-to-do.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Practical Guide</span>
+        <span class="ai-date">5 min read</span>
+      </div>
+      <div class="ai-title">What Happens When a Generic Drug Gets Discontinued?</div>
+      <div class="ai-desc">Drug shortages and manufacturer exits can leave you scrambling. Here's what to do when your generic disappears and how to find alternatives fast.</div>
+    </a>
+    <a href="/articles/us-drug-prices-vs-other-countries.html" class="article-item" data-lang="en">
+      <div class="ai-meta">
+        <span class="ai-tag">Industry</span>
+        <span class="ai-date">7 min read</span>
+      </div>
+      <div class="ai-title">Why US Drug Prices Are Higher Than Other Countries</div>
+      <div class="ai-desc">Americans pay two to three times more for the same medications as people in Canada, Europe, and Australia. Here's why the system works this way.</div>
+    </a>
+</div>
 <div class="articles-cta">
   <p><strong>Search your medication on RxGator</strong> — compare prices across 18 sources, free.</p>
   <a href="/search.html" class="cta-btn">Search Drug Prices</a>
 </div>
-
 <footer class="article-footer">
   <p>&copy; 2026 RxGator &middot; <a href="/">Home</a> &middot; <a href="/about.html">About</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
   <p style="margin-top:8px;">RxGator is a free prescription drug price comparison tool. We are not a pharmacy and do not sell medications.</p>
 </footer>
-
 <script>
-fetch('/articles/articles.json')
-  .then(r => r.json())
-  .then(articles => {
-    const container = document.getElementById('article-list');
-    // Sort newest first
-    articles.sort((a, b) => new Date(b.date) - new Date(a.date));
-    articles.forEach(a => {
-      const dateStr = new Date(a.date + 'T12:00:00Z').toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric', timeZone:'UTC' });
-      const el = document.createElement('a');
-      el.href = '/articles/' + a.slug + '.html';
-      el.className = 'article-item';
-      el.innerHTML = `
-        <div class="ai-meta">
-          <span class="ai-tag">${a.tag}</span>
-          <span class="ai-date">${dateStr} &middot; ${a.readTime}</span>
-        </div>
-        <div class="ai-title">${a.title}</div>
-        <div class="ai-desc">${a.description}</div>
-      `;
-      container.appendChild(el);
-    });
-  })
-  .catch(() => {
-    document.getElementById('article-list').innerHTML = '<p style="text-align:center;padding:40px;color:#64748b;">Unable to load articles.</p>';
-  });
+function showLang(lang) {
+  document.getElementById('article-list-en').style.display = lang === 'en' || lang === 'all' ? '' : 'none';
+  document.getElementById('article-list-es').style.display = lang === 'es' || lang === 'all' ? '' : 'none';
+  document.getElementById('article-list-all').style.display = 'none';
+  if (lang === 'all') {
+    document.getElementById('article-list-en').style.display = 'none';
+    document.getElementById('article-list-es').style.display = 'none';
+    document.getElementById('article-list-all').style.display = '';
+  }
+  document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
+  document.getElementById('btn-es').className = lang === 'es' ? 'active' : '';
+  document.getElementById('btn-all').className = lang === 'all' ? 'active' : '';
+  var counts = { en: 52, es: 14, all: 66 };
+  var labels = { en: ' articles', es: ' art\u00edculos', all: ' articles' };
+  document.getElementById('article-count').textContent = counts[lang] + labels[lang];
+}
 </script>
 <script>
 function setTextSize(size) {
@@ -185,8 +1360,6 @@ function setTextSize(size) {
       el.style.background = b.active ? '#0d9488' : 'transparent';
       el.style.color = b.active ? '#fff' : '#cbd5e1';
       el.style.borderColor = b.active ? '#0d9488' : 'rgba(255,255,255,0.3)';
-    } else if (el.closest && el.closest('.header')) {
-      el.style.background = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
     } else {
       el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
       el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';

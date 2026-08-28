@@ -3030,5 +3030,45 @@
     "primaryUse": "Blood clots",
     "hasGeneric": true,
     "typicalSavings": "80-95%"
+  },
+  "gemtesa": {
+    "brand": "Gemtesa",
+    "generic": "vibegron",
+    "drugClass": "Beta-3 agonist",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "nubeqa": {
+    "brand": "Nubeqa",
+    "generic": "darolutamide",
+    "drugClass": "Androgen receptor inhibitor",
+    "primaryUse": "Prostate cancer",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "nubeca": {
+    "brand": "Nubeca",
+    "generic": "darolutamide",
+    "drugClass": "Androgen receptor inhibitor",
+    "primaryUse": "Prostate cancer",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "rukobia": {
+    "brand": "Rukobia",
+    "generic": "fostemsavir",
+    "drugClass": "Attachment inhibitor",
+    "primaryUse": "HIV-1 infection",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "zepbound": {
+    "brand": "Zepbound",
+    "generic": "tirzepatide",
+    "drugClass": "GIP/GLP-1 agonist",
+    "primaryUse": "Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
   }
 }
