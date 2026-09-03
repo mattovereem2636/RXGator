@@ -27,6 +27,7 @@ function loadCache() {
         // Build search index: multiple keys per drug for fuzzy matching
         searchIndex.clear();
         for (const [slug, drug] of Object.entries(cache.drugs)) {
+            if (!drug || !drug.name) continue;
             // Index by slug (e.g., "metformin", "atorvastatin-calcium")
             searchIndex.set(slug.toLowerCase(), drug);
 

@@ -53,6 +53,7 @@ const FuzzySearch = {
       this.drugNames = JSON.parse(fs.readFileSync(namesPath, 'utf8'));
       this.brandMap = JSON.parse(fs.readFileSync(brandPath, 'utf8'));
 
+      this.drugNames = this.drugNames.filter(d => d && d.generic);
       // Build a set of known generic names for fast exact matching
       this.genericSet = new Set(this.drugNames.map(d => d.generic.toLowerCase()));
 
@@ -60,9 +61,9 @@ const FuzzySearch = {
       this.allKnownNames = new Set();
       this.drugNames.forEach(d => {
         this.allKnownNames.add(d.generic.toLowerCase());
-        d.brands.forEach(b => this.allKnownNames.add(b.toLowerCase()));
-        d.aliases.forEach(a => this.allKnownNames.add(a.toLowerCase()));
-        d.commonMisspellings.forEach(m => this.allKnownNames.add(m.toLowerCase()));
+        (d.brands || []).forEach(b => this.allKnownNames.add(b.toLowerCase()));
+        (d.aliases || []).forEach(a => this.allKnownNames.add(a.toLowerCase()));
+        (d.commonMisspellings || []).forEach(m => this.allKnownNames.add(m.toLowerCase()));
       });
 
       this.initialized = true;
