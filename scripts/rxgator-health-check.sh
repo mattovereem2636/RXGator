@@ -12,6 +12,7 @@ EXPECTED_IP="74.208.32.197"
 APP_DIR="/var/www/rxaggregator"
 PM2_PROCESS="rxaggregator"
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
 
 # Load Resend API key from env file (keeps secrets out of the script)
 source /var/www/rxaggregator/.env.healthcheck 2>/dev/null
@@ -306,7 +307,27 @@ PM2_RESTARTS=$(echo "$RX_STATUS" | cut -d'|' -f2)
 PM2_MEM=$(echo "$RX_STATUS" | cut -d'|' -f3)
 
 if [ "$PM2_STATUS" != "online" ]; then
-  fail "PM2 rxaggregator status: $PM2_STATUS (not online). Run: pm2 restart rxaggregator"
+  # Auto-restart on failure
+  log "[AUTO-RESTART] rxaggregator was $PM2_STATUS — restarting now..."
+  pm2 restart rxaggregator >> "$LOG_FILE" 2>&1
+  sleep 5
+  # Re-check after restart
+  RECHECK=$(pm2 jlist 2>/dev/null | python3 -c "
+import sys, json
+try:
+    data = json.load(sys.stdin)
+    for p in data:
+        if p.get('name') == 'rxaggregator':
+            print(p.get('pm2_env',{}).get('status','unknown'))
+            break
+except:
+    print('error')
+" 2>/dev/null)
+  if [ "$RECHECK" = "online" ]; then
+    warn "PM2 rxaggregator was $PM2_STATUS — auto-restarted successfully"
+  else
+    fail "PM2 rxaggregator was $PM2_STATUS — auto-restart FAILED (now $RECHECK). Manual intervention needed."
+  fi
 else
   pass "PM2 rxaggregator: online"
 fi

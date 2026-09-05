@@ -277,7 +277,7 @@
             ${m.bestPrice ? `<div class="big">$${m.bestPrice.toFixed(2)}</div>` : '<div class="big">--</div>'}
             <div class="src">${l('bestPrice')}</div>
           </div>
-          <button class="mmp-remove" onclick="window._rxgRemoveMed('${esc(m.drugName)}')" title="${l('remove')}">&times;</button>
+          <button class="mmp-remove" onclick="window._rxgRemoveMed('${esc(m.drugName)}')" title="${l('remove')}" aria-label="${l('remove')} ${esc(m.drugName)}">&times;</button>
         </div>
       `;
     });

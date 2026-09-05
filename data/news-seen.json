@@ -25,8 +25,8 @@
   },
   "http://www.fda.gov/industry/generic-drug-user-fee-amendments/generic-drug-facilities-sites-and-organization-lists": {
     "title": "Generic Drug Facilities, Sites and Organization Lists",
-    "date": "2026-07-31T14:07:29.000Z",
-    "firstSeen": "2026-07-31T22:11:50.687Z",
+    "date": "2026-09-01T16:16:35.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
     "score": 1
   },
   "http://www.fda.gov/drugs/guidance-compliance-regulatory-information/fda-drug-competition-action-plan-maximizing-scientific-and-regulatory-clarity-respect-complex": {
@@ -57,6 +57,84 @@
     "title": "Agency Information Collection Activities: Submission for OMB Review; Comment Request",
     "date": "2026-07-24T00:00:00.000Z",
     "firstSeen": "2026-07-31T22:11:50.687Z",
+    "score": 1
+  },
+  "http://www.fda.gov/drugs/news-events-human-drugs/public-meeting-recommendations-reauthorization-prescription-drug-user-fee-act-pdufa-09162026": {
+    "title": "Public Meeting on the Recommendations for Reauthorization of the Prescription Drug User Fee Act (PDUFA) - 09/16/2026",
+    "date": "2026-09-01T20:36:38.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 2
+  },
+  "http://www.fda.gov/science-research/bioinformatics-tools/fdalabel-full-text-search-drug-product-labeling": {
+    "title": "FDALabel:  Full-Text Search of Drug Product Labeling",
+    "date": "2026-09-01T19:32:16.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "http://www.fda.gov/drugs/news-events-human-drugs/public-meeting-reauthorization-generic-drug-user-fee-amendments-gdufa-09172026": {
+    "title": "Public Meeting on the Reauthorization of Generic Drug User Fee Amendments (GDUFA) - 09/17/2026",
+    "date": "2026-09-01T16:28:27.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "http://www.fda.gov/drugs/drug-and-biologic-approval-and-ind-activity-reports/first-generic-drug-approvals": {
+    "title": "First Generic Drug Approvals",
+    "date": "2026-09-01T14:42:44.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "http://www.fda.gov/drugs/drug-supply-chain-integrity/drug-supply-chain-security-act-dscsa": {
+    "title": "Drug Supply Chain Security Act (DSCSA)",
+    "date": "2026-09-01T14:31:24.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 2
+  },
+  "http://www.fda.gov/drugs/drug-safety-and-availability/drug-safety-communications": {
+    "title": "Drug Safety Communications",
+    "date": "2026-09-01T13:59:38.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/preye-llc-732141-08182026": {
+    "title": "PReye, LLC - 732141 - 08/18/2026",
+    "date": "2026-09-01T13:20:07.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/fresenius-medical-care-ag-co-kgaa-730319-08252026": {
+    "title": "Fresenius Medical Care AG &amp; Co. KGaA - 730319 - 08/25/2026",
+    "date": "2026-09-01T13:20:07.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/reliance-life-sciences-private-limited-730801-08182026": {
+    "title": "Reliance Life Sciences Private Limited - 730801 - 08/18/2026",
+    "date": "2026-09-01T13:20:07.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/jabil-inc-731037-08272026": {
+    "title": "Jabil Inc. - 731037 - 08/27/2026",
+    "date": "2026-09-01T13:20:06.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "http://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/shoolin-pharma-chem-llp-734100-08182026": {
+    "title": "Shoolin Pharma Chem LLP - 734100 - 08/18/2026",
+    "date": "2026-09-01T13:20:06.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "http://www.fda.gov/news-events/press-announcements/fda-issues-emergency-use-authorization-generic-drug-prevent-new-world-screwworm-cattle": {
+    "title": "FDA Issues Emergency Use Authorization for Generic Drug to Prevent New World Screwworm in Cattle",
+    "date": "2026-08-27T16:55:38.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
+    "score": 1
+  },
+  "2026-17875": {
+    "title": "Agency Information Collection Activities: Proposed Collection; Comment Request",
+    "date": "2026-09-01T00:00:00.000Z",
+    "firstSeen": "2026-09-01T22:56:31.803Z",
     "score": 1
   }
 }

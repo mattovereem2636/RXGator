@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RXGator — Free Prescription Drug Price Comparison</title>
+<meta name="description" content="Compare prescription drug prices across 18 data sources. One search, every platform, the actual lowest price. Free forever.">
+<link rel="canonical" href="https://rxgator.info/landing.html">
+<meta property="og:title" content="RXGator — Free Prescription Drug Price Comparison">
+<meta property="og:description" content="Compare prescription drug prices across 18 data sources. One search, every platform, the actual lowest price. Free forever.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rxgator.info">
+<meta property="og:image" content="https://rxgator.info/logo-primary.png">
+<meta property="og:site_name" content="RXGator">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RXGator — Free Prescription Drug Price Comparison">
+<meta name="twitter:description" content="Compare prescription drug prices across 18 data sources. One search, every platform, the actual lowest price. Free forever.">
+<meta name="twitter:image" content="https://rxgator.info/logo-primary.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B3B5C;
+    --teal: #0C8080;
+    --teal-bright: #25CCCC;
+    --teal-light: #D0F0F0;
+    --pale: #F4F8F9;
+    --white: #FFFFFF;
+    --gray-700: #2C3E50;
+    --gray-500: #5D6D7E;
+    --gray-300: #AEB6BF;
+    --green: #145A32;
+    --green-light: #D5F5E3;
+    --red: #C0392B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0B3B5C;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-link:focus { top: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--gray-700);
+    background: var(--white);
+    line-height: 1.6;
+  }
+
+  /* === HERO === */
+  .hero {
+    background: linear-gradient(135deg, #0B3B5C 0%, #0E5A6F 50%, #0C8080 100%);
+    color: var(--white);
+    padding: 3rem 1.5rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: var(--white);
+    clip-path: ellipse(55% 100% at 50% 100%);
+  }
+
+  .hero-logo {
+    max-width: 400px;
+    width: 85%;
+    height: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.3rem;
+    font-weight: 400;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 0.75rem;
+    line-height: 1.5;
+  }
+
+  .hero-sub {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    padding: 0.9rem 2.5rem;
+    background: var(--white);
+    color: var(--navy);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    letter-spacing: 0.3px;
+  }
+
+  .hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+  }
+
+  .hero-cta:focus-visible {
+    outline: 3px solid var(--teal-bright);
+    outline-offset: 3px;
+  }
+
+  .hero-note {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 0.75rem;
+  }
+
+  /* === SECTION CONTAINER === */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* === PROBLEM/SOLUTION === */
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-alt {
+    background: var(--pale);
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    color: var(--gray-500);
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* === PRICE COMPARISON CALLOUT === */
+  .callout {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 1.75rem 2rem;
+    text-align: center;
+    margin: 0 auto 2.5rem;
+    max-width: 600px;
+    border: 2px solid var(--teal-light);
+  }
+
+  .callout-drug {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--teal);
+    margin-bottom: 0.75rem;
+  }
+
+  .callout-prices {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .callout-price {
+    text-align: center;
+  }
+
+  .callout-price .amount {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .callout-price .label {
+    font-size: 0.78rem;
+    color: var(--gray-500);
+    margin-top: 0.25rem;
+  }
+
+  .callout-price.low .amount { color: var(--green); }
+  .callout-price.high .amount { color: var(--red); }
+
+  .callout-vs {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gray-300);
+  }
+
+  .callout-note {
+    font-size: 0.8rem;
+    color: var(--gray-500);
+    margin-top: 0.75rem;
+    font-style: italic;
+  }
+
+  /* === DATA SOURCES GRID === */
+  .sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .source-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    border-left: 4px solid var(--teal);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  }
+
+  .source-card h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+  }
+
+  .source-card p {
+    font-size: 0.82rem;
+    color: var(--gray-500);
+    line-height: 1.5;
+  }
+
+  .source-card .badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .badge-live { background: var(--green-light); color: var(--green); }
+  .badge-free { background: var(--teal-light); color: #087070; }
+  .badge-gov { background: #E8DAEF; color: #6C3483; }
+
+  /* === HOW IT WORKS === */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .step {
+    text-align: center;
+    padding: 1.25rem;
+  }
+
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--navy);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+  }
+
+  .step h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+  }
+
+  .step p {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+  }
+
+  /* === SUPPORT SECTION === */
+  .support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .support-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    transition: transform 0.15s;
+  }
+
+  .support-card:hover { transform: translateY(-2px); }
+
+  .support-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+  }
+
+  .support-card p {
+    font-size: 0.82rem;
+    color: var(--gray-500);
+    margin-bottom: 0.75rem;
+  }
+
+  .support-card a {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: var(--teal);
+    color: var(--white);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: background 0.15s;
+  }
+
+  .support-card a:hover { background: var(--navy); }
+  .support-card a:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+
+  /* === FOOTER === */
+  .footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+
+  .footer a {
+    color: var(--teal-bright);
+    text-decoration: none;
+  }
+
+  .footer a:hover { text-decoration: underline; }
+
+  .footer-medical {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 600px) {
+    .hero { padding: 2rem 1rem 3rem; }
+    .hero-logo { max-width: 280px; }
+    .hero-tagline { font-size: 1.1rem; }
+    .hero-cta { padding: 0.75rem 2rem; font-size: 1rem; }
+    .section-title { font-size: 1.3rem; }
+    .callout-prices { gap: 1rem; }
+    .callout-price .amount { font-size: 1.8rem; }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2566350144413801" crossorigin="anonymous"></script>
+<script defer src="https://analytics.tapthemap.online/getinfo" data-website-id="5734e55c-87b7-4ada-ad28-58b1b465a20c"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="/logo-reversed.png" alt="RXGator - Prescription Aggregator" class="hero-logo">
+  <div style="margin-bottom:0.5rem;">
+    <button onclick="setLang('en')" id="langEN" style="padding:0.2rem 0.6rem; background:rgba(255,255,255,0.5); color:#fff; border:1px solid rgba(255,255,255,0.4); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">English</button>
+    <button onclick="setLang('es')" id="langES" style="padding:0.2rem 0.6rem; background:rgba(255,255,255,0.2); color:#fff; border:1px solid rgba(255,255,255,0.4); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">Español</button>
+  </div>
+  <p class="hero-tagline" data-i18n="tagline">One search. Every platform. The real lowest price.</p>
+  <p class="hero-sub" data-i18n="heroSub">Compare prescription drug prices across 18 data sources — free, independent, and built for you.</p>
+  <a href="/app" class="hero-cta" data-i18n="heroCta">Search Drug Prices</a>
+  <p class="hero-note" data-i18n="heroNote">Free to use. No account required. 18 data sources.</p>
+</div>
+
+</div>
+
+<main id="main-content">
+<!-- PRICE COMPARISON -->
+<div class="section">
+  <div class="container">
+    <div class="callout">
+      <div class="callout-drug" data-i18n="calloutDrug">Lisinopril (generic) — 90-day supply</div>
+      <div class="callout-prices">
+        <div class="callout-price low">
+          <div class="amount">$1.20</div>
+          <div class="label">Costco Pharmacy</div>
+        </div>
+        <div class="callout-vs">vs</div>
+        <div class="callout-price high">
+          <div class="amount">$36.52</div>
+          <div class="label">CVS Pharmacy</div>
+        </div>
+      </div>
+      <p class="callout-note" data-i18n="calloutNote">Same drug. Same day. Same zip code. RXGator found the difference.</p>
+      <p style="font-size:0.75rem; color:#5D6D7E; margin-top:0.4rem;">Cash prices without insurance or coupons. Your actual cost depends on your plan, pharmacy, and whether you use a discount card — that's why RXGator searches all options.</p>
+    </div>
+
+    <div id="searchCounter" style="text-align:center; margin-bottom:1.5rem; font-size:0.9rem; color:#5D6D7E;"></div>
+    <script>
+      fetch('/api/search-count').then(r=>r.json()).then(d=>{
+        if(d.count>=500) document.getElementById('searchCounter').innerHTML='<strong style="color:#0B3B5C;font-size:1.1rem;">'+d.count.toLocaleString()+'</strong> drug searches and counting';
+        else document.getElementById('searchCounter').innerHTML='<span style="color:#0B3B5C; font-weight:600;">Built in Illinois. Used nationwide.</span>';
+      }).catch(()=>{});
+    </script>
+
+    <div class="section-title" data-i18n="whyTitle">Why RXGator?</div>
+    <div class="section-subtitle" data-i18n="whySub">No single discount card is cheapest for every drug at every pharmacy. The winning strategy is to check them all — but who has time for that?</div>
+
+    <div style="background:#EBF5FB; border-radius:10px; padding:1rem 1.5rem; margin:0 auto 1.5rem; max-width:600px; text-align:center;">
+      <p style="font-size:0.95rem; color:#1B4F72; margin:0;" data-i18n-html="whyNotGoodrx"><strong>Why not just use GoodRx?</strong> Because GoodRx only shows GoodRx prices. We search GoodRx, SingleCare, Cost Plus Drugs, Amazon, Walmart, Costco, Rx Outreach, and 6 government databases — all at once. Sometimes GoodRx wins. Sometimes it doesn't. Shouldn't you know?</p>
+    </div>
+
+    <p style="text-align:center; font-size:0.88rem; color:#5D6D7E; max-width:600px; margin:0 auto 1rem;" data-i18n="caregiverNote">Managing medications for a family member? RXGator helps caregivers compare prices across all platforms — search, print, share, and show results to the pharmacist in English or Spanish.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3 data-i18n="step1Title">Search Any Drug</h3>
+        <p data-i18n="step1Desc">Type a generic or brand name. RXGator resolves brands to generics automatically.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3 data-i18n="step2Title">Compare 18 Sources</h3>
+        <p data-i18n="step2Desc">Cost Plus Drugs, GoodRx, SingleCare, Amazon RxPass, Medicare Part D, and seven more — searched simultaneously.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3 data-i18n="step3Title">Get the Lowest Price</h3>
+        <p data-i18n="step3Desc">Results ranked cheapest first, with step-by-step instructions on how to get that price at the pharmacy.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:2rem;">
+      <img src="/screenshot.png" alt="RXGator search results showing prescription drug prices from 18 sources" style="max-width:100%; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.15);" onerror="this.style.display='none'">
+    </div>
+  </div>
+</div>
+<div class="section section-alt">
+  <div class="container">
+    <div class="section-title" data-i18n="sourcesTitle">18 Data Sources. One Search.</div>
+    <div class="section-subtitle" data-i18n="sourcesSub">We query government databases, pharmacy programs, and discount platforms simultaneously.</div>
+
+    <div class="sources-grid">
+      <div class="source-card">
+        <span class="badge badge-live">Live API</span>
+        <h3><a href="https://costplusdrugs.com" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:2px solid var(--teal-bright, #25CCCC);">Cost Plus Drugs</a></h3>
+        <p>Mark Cuban's transparent pricing. 2,200+ generics at cost + 15% + flat fees.</p>
+      </div>
+      <div class="source-card">
+        <span class="badge badge-live">Cached</span>
+        <h3><a href="https://www.singlecare.com" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:2px solid var(--teal-bright, #25CCCC);">SingleCare</a></h3>
+        <p>Pharmacy-specific pricing at CVS, Walgreens, Walmart, Kroger, Costco with loyalty discounts.</p>
+      </div>
+      <div class="source-card">
+        <span class="badge badge-gov">Government</span>
+        <h3><a href="https://data.medicaid.gov/datasets?keyword=nadac" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:2px solid var(--teal-bright, #25CCCC);">NADAC Benchmark</a></h3>
+        <p>What pharmacies actually pay for drugs. The Medicaid transparency benchmark.</p>
+      </div>
+      <div class="source-card">
+        <span class="badge badge-gov">Government</span>
+        <h3><a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:2px solid var(--teal-bright, #25CCCC);">RxNorm</a> &amp; <a href="https://medlineplus.gov" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:2px solid var(--teal-bright, #25CCCC);">MedlinePlus</a></h3>
+        <p>Drug matching, brand-to-generic resolution, and plain-language drug information from NIH.</p>
+      </div>
+      <div class="source-card">
+        <span class="badge badge-free">$4/$9/$15</span>
+        <h3><a href="https://www.walmart.com/cp/4-dollar-prescriptions/1078664" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:2px solid var(--teal-bright, #25CCCC);">Walmart Rx Program</a></h3>
+        <p>85 generics across three pricing tiers. No card, no coupon — just ask at the counter.</p>
+      </div>
+      <div class="source-card">
+        <span class="badge badge-free">No Membership</span>
+        <h3><a href="https://www.costco.com/pharmacy/" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:2px solid var(--teal-bright, #25CCCC);">Costco Pharmacy</a></h3>
+        <p>Consistently among the cheapest retail pharmacies. No Costco membership required (federal law).</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUPPORT -->
+<div class="section">
+  <div class="container">
+
+<!-- Prescription Savings Articles Widget -->
+<div id="rxg-articles"></div>
+<link rel="stylesheet" href="/articles/article-style.css">
+<script src="/articles/article-widget.js"></script>
+
+    <div class="section-title" data-i18n="supportTitle">Support RXGator</div>
+    <div class="section-subtitle" data-i18n="supportSub">RXGator is free and always will be. Every dollar goes directly to data acquisition — adding more pharmacy platforms so more people can find cheaper medication.</div>
+
+    <div class="support-grid">
+      <div class="support-card">
+        <h3>Patreon</h3>
+        <p data-i18n="patreonDesc">Monthly support with behind-the-scenes updates and early access.</p>
+        <a href="https://patreon.com/RXGator" target="_blank" rel="noopener" data-i18n="patreonBtn">Become a Patron</a>
+      </div>
+      <div class="support-card">
+        <h3>Ko-fi</h3>
+        <p data-i18n="kofiDesc">One-time tip — buy us a coffee and keep the data flowing.</p>
+        <a href="https://ko-fi.com/rxgator" target="_blank" rel="noopener" data-i18n="kofiBtn">Support on Ko-fi</a>
+      </div>
+      <div class="support-card">
+        <h3>GitHub</h3>
+        <p data-i18n="githubDesc">Star the project, follow the roadmap, and watch development progress.</p>
+        <a href="https://github.com/mattovereem2636/rxgator" target="_blank" rel="noopener" data-i18n="githubBtn">View Project</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<div class="footer">
+  RXGator &mdash; Prescription Aggregator &mdash; <a href="https://rxgator.info">rxgator.info</a><br>
+  <a href="/">Home</a> &middot; <a href="/about.html">About</a> &middot; <a href="/faq.html">FAQ</a> &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a> &middot;
+  <a href="https://github.com/mattovereem2636/rxgator">GitHub</a> &middot;
+  <a href="https://patreon.com/RXGator">Patreon (monthly)</a> &middot;
+  <a href="https://ko-fi.com/rxgator">Ko-fi (one-time)</a><br>
+  Built by <a href="mailto:info@rxgator.info">Matt Overeem</a> &mdash; Technology Assessment Project LLC
+  <span class="footer-medical" data-i18n="footerMedical">This tool is not medical advice. Always consult your doctor or pharmacist before making changes to your medications.</span>
+  <div style="margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid #D5D8DC;">
+    <span style="font-size:1.05rem;">Need help? <a href="tel:988" style="color:#6C3483; font-weight:600;">Call or text 988</a> (crisis) &middot; <a href="tel:18006624357" style="color:#6C3483; font-weight:600;">1-800-662-4357</a> (SAMHSA) &middot; <a href="/resources.html" style="color:#6C3483; font-weight:600;">All Resources</a></span>
+  </div>
+</div>
+
+<script>
+const T = {
+  tagline: { en: 'One search. Every platform. The real lowest price.', es: 'Una búsqueda. Todas las plataformas. El precio más bajo real.' },
+  heroSub: { en: 'Compare prescription drug prices across 18 data sources — free, independent, and built for you.', es: 'Compare precios de medicamentos recetados en 18 fuentes de datos — gratis, independiente, y diseñado para usted.' },
+  heroCta: { en: 'Search Drug Prices', es: 'Buscar Precios de Medicamentos' },
+  heroNote: { en: 'Free to use. No account required. 18 data sources.', es: 'Gratis. Sin cuenta. 18 fuentes de datos.' },
+  calloutDrug: { en: 'Lisinopril (generic) — 90-day supply', es: 'Lisinopril (genérico) — suministro de 90 días' },
+  calloutNote: { en: 'Same drug. Same day. Same zip code. RXGator found the difference.', es: 'Mismo medicamento. Mismo día. Mismo código postal. RXGator encontró la diferencia.' },
+  whyTitle: { en: 'Why RXGator?', es: '¿Por qué RXGator?' },
+  whySub: { en: "No single discount card is cheapest for every drug at every pharmacy. The winning strategy is to check them all — but who has time for that?", es: 'Ninguna tarjeta de descuento es la más barata para todos los medicamentos en todas las farmacias. La mejor estrategia es revisar todas — pero ¿quién tiene tiempo para eso?' },
+  step1Title: { en: 'Search Any Drug', es: 'Busque Cualquier Medicamento' },
+  step1Desc: { en: 'Type a generic or brand name. RXGator resolves brands to generics automatically.', es: 'Escriba el nombre genérico o de marca. RXGator convierte marcas a genéricos automáticamente.' },
+  step2Title: { en: 'Compare 18 Sources', es: 'Compare 18 Fuentes' },
+  step2Desc: { en: 'Cost Plus Drugs, GoodRx, SingleCare, Amazon RxPass, Medicare Part D, and seven more — searched simultaneously.', es: 'Cost Plus Drugs, GoodRx, SingleCare, Amazon RxPass, Medicare Part D, y siete más — búsqueda simultánea.' },
+  step3Title: { en: 'Get the Lowest Price', es: 'Obtenga el Precio Más Bajo' },
+  step3Desc: { en: 'Results ranked cheapest first, with step-by-step instructions on how to get that price at the pharmacy.', es: 'Resultados ordenados del más barato al más caro, con instrucciones paso a paso para obtener ese precio en la farmacia.' },
+  sourcesTitle: { en: '18 Data Sources. One Search.', es: '18 Fuentes de Datos. Una Búsqueda.' },
+  sourcesSub: { en: 'We query government databases, pharmacy programs, and discount platforms simultaneously.', es: 'Consultamos bases de datos del gobierno, programas de farmacias y plataformas de descuento simultáneamente.' },
+  supportTitle: { en: 'Support RXGator', es: 'Apoye a RXGator' },
+  supportSub: { en: 'RXGator is free and always will be. Every dollar goes directly to data acquisition — adding more pharmacy platforms so more people can find cheaper medication.', es: 'RXGator es gratis y siempre lo será. Cada dólar se destina directamente a la adquisición de datos — agregando más plataformas de farmacias para que más personas encuentren medicamentos más baratos.' },
+  patreonDesc: { en: 'Monthly support with behind-the-scenes updates and early access.', es: 'Apoyo mensual con actualizaciones exclusivas y acceso anticipado.' },
+  patreonBtn: { en: 'Become a Patron', es: 'Apoyar en Patreon' },
+  kofiDesc: { en: 'One-time tip — buy us a coffee and keep the data flowing.', es: 'Donación única — invítanos un café y mantén los datos activos.' },
+  kofiBtn: { en: 'Support on Ko-fi', es: 'Apoyar en Ko-fi' },
+  githubDesc: { en: 'Star the project, follow the roadmap, and watch development progress.', es: 'Dale estrella al proyecto, sigue la hoja de ruta y observa el progreso.' },
+  githubBtn: { en: 'View Project', es: 'Ver Proyecto' },
+  caregiverNote: { en: 'Managing medications for a family member? RXGator helps caregivers compare prices across all platforms — search, print, share, and show results to the pharmacist in English or Spanish.', es: '¿Maneja los medicamentos de un familiar? RXGator ayuda a los cuidadores a comparar precios en todas las plataformas — busque, imprima, comparta y muestre los resultados al farmacéutico en inglés o español.' },
+  footerMedical: { en: 'This tool is not medical advice. Always consult your doctor or pharmacist before making changes to your medications.', es: 'Esta herramienta no es consejo médico. Siempre consulte a su médico o farmacéutico antes de hacer cambios en sus medicamentos.' },
+  whyNotGoodrx: { en: '<strong>Why not just use GoodRx?</strong> Because GoodRx only shows GoodRx prices. We search GoodRx, SingleCare, Cost Plus Drugs, Amazon, Walmart, Costco, Rx Outreach, and 6 government databases — all at once. Sometimes GoodRx wins. Sometimes it doesn\'t. Shouldn\'t you know?', es: '<strong>¿Por qué no solo usar GoodRx?</strong> Porque GoodRx solo muestra precios de GoodRx. Nosotros buscamos en GoodRx, SingleCare, Cost Plus Drugs, Amazon, Walmart, Costco, Rx Outreach y 6 bases de datos del gobierno — todo a la vez. A veces GoodRx gana. A veces no. ¿No debería saberlo?' },
+};
+
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    if (el.closest && el.closest('.article-nav')) {
+      el.style.background = b.active ? '#0d9488' : 'transparent';
+      el.style.color = b.active ? '#fff' : '#cbd5e1';
+      el.style.borderColor = b.active ? '#0d9488' : 'rgba(255,255,255,0.3)';
+    } else if (el.closest && el.closest('.header')) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
+})();
+
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  try { localStorage.setItem('rxgator_lang', lang); } catch(e) {}
+  document.getElementById('langEN').style.background = lang === 'en' ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
+  document.getElementById('langES').style.background = lang === 'es' ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (T[key]) el.textContent = T[key][lang] || T[key].en;
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    if (T[key]) el.innerHTML = T[key][lang] || T[key].en;
+  });
+}
+
+// Detect language: saved preference > browser language > English
+(function() {
+  let preferred = '';
+  try { preferred = localStorage.getItem('rxgator_lang') || ''; } catch(e) {}
+  if (!preferred) {
+    const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    preferred = browserLang.startsWith('es') ? 'es' : 'en';
+  }
+  if (preferred === 'es') {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => setLang('es'));
+    } else {
+      setLang('es');
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

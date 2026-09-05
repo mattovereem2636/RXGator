@@ -422,3 +422,79 @@ timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source
 2026-08-27T06:00:24.827Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
 2026-08-27T18:00:15.200Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
 2026-08-27T18:00:17.062Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-28T02:02:02.707Z,"172.59.189.81","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-28T06:00:17.108Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-28T06:00:20.148Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-28T15:17:14.162Z,"172.59.189.81","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-28T18:00:14.704Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-28T18:00:15.949Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-28T22:06:38.463Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-28T22:06:39.046Z,"::ffff:127.0.0.1","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T00:32:37.892Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T00:32:38.760Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T00:32:39.566Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T00:32:40.391Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T02:02:29.514Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T06:00:13.449Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T06:00:14.372Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T18:00:11.227Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T18:00:15.076Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-29T22:04:44.624Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-30T02:02:32.951Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-30T02:02:48.328Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-30T06:00:10.119Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-30T06:00:13.377Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-30T18:00:11.236Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-30T18:00:12.430Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-30T22:06:59.400Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-30T22:07:14.258Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T02:02:26.816Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T06:00:16.358Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T06:00:21.179Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T14:23:09.788Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T14:23:45.720Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T14:23:53.981Z,"75.26.237.124","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T18:00:17.971Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T18:00:18.637Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T19:49:11.039Z,"74.244.242.88","unknown","Metformin",90,60025,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-08-31T19:49:12.112Z,"74.244.242.88","unknown","Metformin",90,60025,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-01T02:02:48.535Z,"50.207.133.75","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-01T06:00:17.060Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-01T06:00:18.539Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-01T17:18:30.345Z,"50.207.133.75","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-01T17:18:31.095Z,"50.207.133.75","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-01T18:00:17.178Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-01T18:00:18.692Z,"74.208.32.197","unknown","metformin",30,,29,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-01T18:32:46.040Z,"99.109.12.149","unknown","Apixaban",30,,0,"","",0,"",en
+2026-09-01T18:32:59.671Z,"99.109.12.149","unknown","Apixaban",30,32966,0,"","",0,"",en
+2026-09-02T02:47:28.459Z,"50.207.133.75","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-02T06:00:17.017Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-02T06:00:17.716Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-02T18:00:19.739Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-02T18:00:22.156Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-02T18:57:35.879Z,"50.207.133.75","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T02:01:59.975Z,"50.207.133.75","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T02:02:15.475Z,"50.207.133.75","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T02:02:26.538Z,"50.207.133.75","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T06:00:18.073Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T06:00:19.456Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T14:54:30.876Z,"50.207.133.75","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T14:54:32.160Z,"50.207.133.75","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T15:39:36.679Z,"50.207.133.75","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T18:00:15.148Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T18:00:16.832Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-03T22:19:08.580Z,"104.202.149.28","unknown","ivermectin",30,,3,"35.00","Rx Outreach",0,"ivermectin",en
+2026-09-04T06:00:13.665Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-04T06:00:15.131Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-04T13:44:13.125Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-04T15:35:53.133Z,"75.26.237.124","unknown","Levothyroxine",30,,52,"0.33","GoodRx",0,"",en
+2026-09-04T15:35:58.246Z,"75.26.237.124","unknown","Levothyroxine",90,,52,"0.33","GoodRx",0,"",en
+2026-09-04T15:41:48.840Z,"75.26.237.124","unknown","lisinopril",90,,36,"1.00","GoodRx",0,"",en
+2026-09-04T15:43:40.053Z,"75.26.237.124","unknown","Omeprazole",90,,23,"1.00","GoodRx",0,"",en
+2026-09-04T15:43:42.372Z,"75.26.237.124","unknown","Omeprazole",90,,23,"1.00","GoodRx",0,"",en
+2026-09-04T15:45:01.005Z,"75.26.237.124","unknown","Atorvastatin",90,,25,"1.00","GoodRx",0,"",en
+2026-09-04T15:45:08.998Z,"75.26.237.124","unknown","Atorvastatin",90,,25,"1.00","GoodRx",0,"",en
+2026-09-04T18:00:20.035Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-04T18:00:22.460Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-04T19:01:44.577Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-05T02:02:04.792Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en

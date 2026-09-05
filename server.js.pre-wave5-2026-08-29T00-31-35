@@ -1,0 +1,1096 @@
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const helmet = require('helmet');
+const path = require('path');
+const fs = require('fs');
+const fsPromises = require('fs').promises;
+const rateLimit = require('express-rate-limit');
+const vaFss = require('./va-fss');
+const iraNegotiated = require('./ira-negotiated');
+const texasWac = require('./texas-wac');
+const rxOutreach = require('./rxoutreach');
+const rxsaver = require('./rxsaver');
+const fuzzySearch = require('./fuzzy-search');
+fuzzySearch.init(path.join(__dirname, 'data'));
+
+// Global error handlers — log and exit for clean PM2 restart
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('[FATAL] Unhandled Promise Rejection:', reason);
+  process.exit(1);
+});
+process.on('uncaughtException', (err) => {
+  console.error('[FATAL] Uncaught Exception:', err);
+  process.exit(1);
+});
+
+const blink = require('./blink');
+const optum = require('./optum');
+const { escapeHtml, safeUrl, csvEscape, fetchJSON } = require('./utils');
+const { queryCostPlus, queryNADAC } = require('./data-sources');
+const { loadDrugNamesDictionary, queryOpenFDA, queryRxNorm, queryMedlinePlus, fuzzyDrugLookup } = require('./drug-info');
+const { queryFUL, queryMfrAssist, queryMedicarePartD, checkDrugShortage, checkDrugRecall } = require('./govt-data');
+const { lookupBrandGeneric, queryWalmart, estimateCostcoPrice, queryAmazonRxPass } = require('./retail-sources');
+const { querySingleCare, queryGoodRx, saveSingleCareCache, saveGoodRxCache, getSingleCareCache, getGoodRxCache } = require('./cache-manager');
+const singleCareCache = getSingleCareCache();
+const goodRxCache = getGoodRxCache();
+
+
+const app = express();
+app.use(cors({
+  origin: process.env.NODE_ENV === 'development'
+    ? true
+    : ['https://rxgator.info', 'https://www.rxgator.info'],
+  methods: ['GET', 'POST'],
+  optionsSuccessStatus: 200,
+}));
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "https://pagead2.googlesyndication.com", "https://cloud.umami.is", "https://cdnjs.cloudflare.com"],
+      scriptSrcAttr: ["'unsafe-inline'"],
+      styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+      fontSrc: ["'self'", "https://fonts.gstatic.com"],
+      imgSrc: ["'self'", "data:", "https:"],
+      connectSrc: ["'self'", "https://cloud.umami.is", "https://pagead2.googlesyndication.com", "https://ep1.adtrafficquality.google"],
+      frameSrc: ["https://googleads.g.doubleclick.net"],
+    },
+  },
+}));
+app.use(express.json({ limit: '10mb' }));
+app.use(express.static(path.join(__dirname, 'public')));
+require("./health-report")(app);
+require("./trumprx-prices")(app);
+require("./nadac-prices")(app);
+require("./healthwarehouse-prices")(app);
+
+// Rate limiting for search API — 30 requests per minute per IP
+const searchLimiter = rateLimit({
+  windowMs: 60 * 1000,
+  max: 30,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Too many searches. Please wait a minute and try again.' },
+  validate: false,
+  keyGenerator: (req) => req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.ip,
+});
+
+// Rate limiting for feedback — 5 submissions per 15 minutes per IP
+const feedbackLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 5,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Too many feedback submissions. Please wait and try again.' },
+  validate: false,
+  keyGenerator: (req) => req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.ip,
+});
+
+const PORT = process.env.PORT || 3100;
+const LOG_FILE = path.join(__dirname, 'search_log.csv');
+
+// Initialize log file with headers if it doesn't exist
+if (!fs.existsSync(LOG_FILE)) {
+  fs.writeFileSync(LOG_FILE, 'timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source,autocomplete,corrected_from,lang\n');
+}
+
+
+
+
+
+
+async function logSearch(req, drug, quantity, zip, results, extras = {}) {
+  try {
+    const timestamp = new Date().toISOString();
+    const ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.socket.remoteAddress || '';
+    let user = 'unknown';
+    const auth = req.headers['authorization'];
+    if (auth && auth.startsWith('Basic ')) {
+      try {
+        const decoded = Buffer.from(auth.split(' ')[1], 'base64').toString();
+        user = decoded.split(':')[0];
+      } catch(e) {}
+    }
+    const lowest = results.pricingResults && results.pricingResults.length > 0 ? results.pricingResults[0] : null;
+    const sourcesHit = results.pricingResults ? results.pricingResults.length : 0;
+    const lowestPrice = lowest ? (lowest.priceFor30 || 0).toFixed(2) : '';
+    const lowestSource = lowest ? lowest.source : '';
+    const autocomplete = extras.autocomplete ? '1' : '0';
+    const corrected = extras.correctedFrom || '';
+    const lang = extras.lang || 'en';
+    const line = `${timestamp},${csvEscape(ip)},${csvEscape(user)},${csvEscape(drug)},${quantity},${zip || ''},${sourcesHit},${csvEscape(lowestPrice)},${csvEscape(lowestSource)},${autocomplete},${csvEscape(corrected)},${lang}\n`;
+    await fsPromises.appendFile(LOG_FILE, line);
+  } catch (err) {
+    console.error('Log error:', err.message);
+  }
+}
+
+
+
+loadDrugNamesDictionary();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ============================================================
+// UNIFIED SEARCH ENDPOINT
+// ============================================================
+app.get('/api/search', searchLimiter, async (req, res) => {
+  const { drug, quantity, zip, ac, lang } = req.query;
+  if (!drug || drug.trim().length < 2) {
+    return res.status(400).json({ error: 'Please provide a drug name (min 2 characters)' });
+  }
+  if (drug.trim().length > 100) {
+    return res.status(400).json({ error: 'Drug name too long (max 100 characters)' });
+  }
+  if (!/^[a-zA-Z0-9 \-\/\.,']+$/.test(drug.trim())) {
+    return res.status(400).json({ error: 'Drug name contains invalid characters' });
+  }
+  let drugName = drug.trim();
+  const originalInput = drugName; // preserve for logging
+
+  // ── PHASE 0: Fuzzy spelling correction ──────────────────────
+  // Local dictionary match (fuzzy-search.js) catches common misspellings
+  // BEFORE any API calls. Example: "metforman" → "metformin"
+  const fuzzyResolved = await fuzzySearch.resolve(drugName);
+  if (fuzzyResolved.corrected) {
+    console.log(`[FuzzySearch] Corrected "${drugName}" → "${fuzzyResolved.searchTerm}"`);
+    drugName = fuzzyResolved.searchTerm;
+  }
+  const qty = parseInt(quantity) || 30;
+  const zipCode = (zip || '').replace(/\D/g, '').substring(0, 5) || null;
+
+  console.log(`[SEARCH] Drug: "${drugName}", Quantity: ${qty}, Zip: ${zipCode || 'not provided'}`);
+
+  // ── PHASE 1: Brand → Generic resolution ─────────────────────
+  // Two-tier lookup: static map first (instant O(1)), then RxNorm API.
+  // This is critical because pricing sources index by generic name —
+  // searching "Lipitor" won't find results unless we resolve to "atorvastatin".
+  //
+  // Phase A: brand-generic-lookup.json — instant, no API call
+  const staticGenericInfo = lookupBrandGeneric(drugName);
+  let genericInfo = staticGenericInfo || null;
+
+  if (staticGenericInfo && staticGenericInfo.hasGeneric) {
+    console.log(`[Static Map] Brand "${drugName}" → Generic "${staticGenericInfo.genericName}"`);
+  } else if (staticGenericInfo) {
+    console.log(`[Static Map] "${drugName}" — no generic available`);
+  }
+
+  // Phase B: RxNorm API — handles drugs not in the static map,
+  // plus provides the RxCUI needed for MedlinePlus drug info lookup.
+  // If we already resolved via static map, search RxNorm with the generic name.
+  const rxnormResult = await queryRxNorm(staticGenericInfo && staticGenericInfo.hasGeneric ? staticGenericInfo.genericName : drugName);
+
+  // pricingSearchName: the name ALL pricing queries use.
+  // Priority: static map generic > RxNorm-resolved name > original input
+  const pricingSearchName = (staticGenericInfo && staticGenericInfo.hasGeneric) ? staticGenericInfo.genericName : (rxnormResult?.name || drugName);
+  if (rxnormResult?.isBrandSearch) {
+    console.log(`[SEARCH] Brand "${drugName}" resolved to generic "${pricingSearchName}" via RxNorm`);
+  }
+
+  // ── PHASE 2: Parallel pricing queries ────────────────────────
+  // Fire all live API calls concurrently. Sync cache lookups are
+  // wrapped in Promise.resolve() to fit the Promise.all() pattern.
+  // The five async calls (Cost Plus, NADAC, openFDA, Walmart, Medicare)
+  // run simultaneously to minimize wall-clock time.
+  const [costPlusResults, nadacResults, fdaResults, walmartResults, medicarePartDResult] = await Promise.all([
+    queryCostPlus(pricingSearchName),
+    queryNADAC(pricingSearchName),
+    queryOpenFDA(pricingSearchName),
+    Promise.resolve(queryWalmart(pricingSearchName)),
+    queryMedicarePartD(pricingSearchName),
+  ]);
+
+  // Local cache lookups (sync — no await needed)
+  const rxOutreachResults = rxOutreach.search(pricingSearchName);
+  const vaFssResults = vaFss.search(pricingSearchName);
+  const iraResults = iraNegotiated.search(pricingSearchName);
+  const texasWacResults = texasWac.search(pricingSearchName);
+  const rxsaverResults = rxsaver.search(pricingSearchName) || [];
+  const blinkResults = blink.search(pricingSearchName) || [];
+  const optumResults = optum.search(pricingSearchName) || [];
+
+  // Drug shortage + recall checks — run after pricing queries so they
+  // don't delay the main results if the FDA API is slow
+  const [shortageResult, recallResult] = await Promise.all([
+    checkDrugShortage(pricingSearchName),
+    checkDrugRecall(pricingSearchName),
+  ]);
+
+  // ── PHASE 3: Drug information (requires RxCUI from Phase 1) ─
+  const medlinePlusResult = rxnormResult ? await queryMedlinePlus(rxnormResult.rxcui) : null;
+
+  // Build Costco estimates from FDA data
+  const costcoResults = [];
+  const costcoEst = estimateCostcoPrice(drugName, null, qty);
+  if (costcoEst) {
+    costcoResults.push({
+      source: 'Costco Pharmacy (est.)',
+      sourceUrl: 'https://www.costco.com/pharmacy/',
+      drugName: drugName.charAt(0).toUpperCase() + drugName.slice(1),
+      unitPrice: costcoEst.unitPrice,
+      priceFor30: +(costcoEst.unitPrice * 30).toFixed(2),
+      priceFor90: +(costcoEst.unitPrice * 90).toFixed(2),
+      brandGeneric: 'Generic',
+      note: costcoEst.note,
+    });
+  }
+
+  // ── PHASE 4: Price normalization ──────────────────────────────
+  // Every source returns data in its own format. This section normalizes
+  // all results into a consistent schema: { source, drugName, unitPrice,
+  // priceFor30, priceFor90, priceForQuantity, note, dataFreshness, ... }
+  // so the frontend can display them in a single sorted table.
+  const allPrices = [];
+
+  // Cost Plus entries
+  for (const cp of costPlusResults) {
+    allPrices.push({
+      source: cp.source,
+      sourceUrl: cp.sourceUrl,
+      drugName: cp.drugName,
+      brandName: cp.brandName,
+      strength: cp.strength,
+      form: cp.form,
+      ndc: cp.ndc,
+      unitPrice: cp.unitPrice,
+      priceForQuantity: +(cp.unitPrice * qty + 10).toFixed(2),
+      priceFor30: cp.priceFor30,
+      priceFor90: cp.priceFor90,
+      brandGeneric: cp.brandGeneric,
+      note: cp.note,
+      dataFreshness: 'Real-time API',
+    });
+  }
+
+  // Walmart entries
+  for (const wm of walmartResults) {
+    allPrices.push({
+      source: wm.source,
+      sourceUrl: wm.sourceUrl,
+      drugName: wm.drugName,
+      strength: wm.strength,
+      form: wm.form,
+      unitPrice: wm.unitPrice,
+      priceForQuantity: qty <= 30 ? wm.priceFor30 : wm.priceFor90,
+      priceFor30: wm.priceFor30,
+      priceFor90: wm.priceFor90,
+      brandGeneric: wm.brandGeneric,
+      note: wm.note,
+      dataFreshness: 'Published list',
+    });
+  }
+
+  // Costco entries
+  for (const co of costcoResults) {
+    allPrices.push({
+      source: co.source,
+      sourceUrl: co.sourceUrl,
+      drugName: co.drugName,
+      unitPrice: co.unitPrice,
+      priceForQuantity: +(co.unitPrice * qty).toFixed(2),
+      priceFor30: co.priceFor30,
+      priceFor90: co.priceFor90,
+      brandGeneric: co.brandGeneric,
+      note: co.note,
+      dataFreshness: 'Estimated',
+    });
+  }
+
+  // Amazon RxPass entries
+  const amazonResults = queryAmazonRxPass(pricingSearchName);
+  for (const am of amazonResults) {
+    allPrices.push({
+      source: am.source,
+      sourceUrl: am.sourceUrl,
+      drugName: am.drugName,
+      unitPrice: am.unitPrice,
+      priceForQuantity: 5.00,
+      priceFor30: 5.00,
+      priceFor90: 5.00,
+      brandGeneric: am.brandGeneric,
+      priceType: am.priceType,
+      note: am.note,
+      dataFreshness: 'Built-in list',
+    });
+  }
+
+  // SingleCare entries (from cache)
+  const singleCareResults = querySingleCare(pricingSearchName);
+  for (const sc of singleCareResults) {
+    allPrices.push({
+      source: sc.source,
+      sourceUrl: sc.sourceUrl,
+      drugName: sc.drugName,
+      ndc: sc.ndc,
+      unitPrice: sc.unitPrice,
+      priceForQuantity: qty <= 30 ? sc.priceFor30 : sc.priceFor90,
+      priceFor30: sc.priceFor30,
+      priceFor90: sc.priceFor90,
+      brandGeneric: sc.brandGeneric,
+      note: sc.note,
+      dataFreshness: sc.dataFreshness,
+      pharmacies: sc.pharmacies,
+      priceHistory: sc.priceHistory,
+    });
+  }
+
+  // GoodRx entries (from cache)
+  const goodRxResults = queryGoodRx(pricingSearchName);
+  for (const gr of goodRxResults) {
+    allPrices.push({
+      source: gr.source,
+      sourceUrl: gr.sourceUrl,
+      drugName: gr.drugName,
+      dosage: gr.dosage,
+      form: gr.form,
+      unitPrice: gr.unitPrice,
+      priceForQuantity: qty <= 30 ? gr.priceFor30 : gr.priceFor90,
+      priceFor30: gr.priceFor30,
+      priceFor90: gr.priceFor90,
+      brandGeneric: gr.brandGeneric,
+      note: gr.note,
+      dataFreshness: gr.dataFreshness,
+      pharmacies: gr.pharmacies,
+    });
+  }
+
+  // RxSaver entries (from cache — Apify scraped)
+  for (const rs of rxsaverResults) {
+    allPrices.push({
+      source: rs.source,
+      sourceUrl: rs.sourceUrl,
+      drugName: rs.drugName,
+      strength: rs.strength,
+      form: rs.form,
+      unitPrice: rs.quantity ? +(rs.price / parseInt(rs.quantity)).toFixed(4) : null,
+      priceForQuantity: rs.price,
+      priceFor30: rs.price,
+      priceFor90: +(rs.price * 3).toFixed(2),
+      brandGeneric: 'Generic',
+      pharmacy: rs.pharmacy,
+      note: `RxSaver coupon: $${rs.priceFormatted.replace('$', '')} at ${rs.pharmacy} (${rs.quantity || 30}-count). Show coupon at pharmacy counter.`,
+      dataFreshness: rs.cachedDate ? `Cached ${new Date(rs.cachedDate).toLocaleDateString()}` : 'Cached',
+    });
+  }
+
+  // Blink Health entries (from cache — Apify scraped)
+  for (const bl of blinkResults) {
+    allPrices.push({
+      source: bl.source,
+      sourceUrl: bl.sourceUrl,
+      drugName: bl.drugName,
+      strength: bl.strength,
+      form: bl.form,
+      unitPrice: bl.quantity ? +(bl.price / parseInt(bl.quantity)).toFixed(4) : null,
+      priceForQuantity: bl.price,
+      priceFor30: bl.price,
+      priceFor90: +(bl.price * 3).toFixed(2),
+      brandGeneric: 'Generic',
+      pharmacy: bl.pharmacy,
+      note: `Blink Health: $${bl.price.toFixed(2)} via ${bl.type} at ${bl.pharmacy} (${bl.quantity || 30}-count). Order online at blinkhealth.com.`,
+      dataFreshness: bl.cachedDate ? `Cached ${new Date(bl.cachedDate).toLocaleDateString()}` : 'Cached',
+    });
+  }
+  // Optum Perks entries (from cache — Puppeteer scraped)
+  for (const op of optumResults) {
+    allPrices.push({
+      source: op.source,
+      sourceUrl: op.sourceUrl,
+      drugName: op.drugName,
+      strength: op.strength,
+      form: op.form,
+      unitPrice: op.quantity ? +(op.price / parseInt(op.quantity)).toFixed(4) : null,
+      priceForQuantity: op.price,
+      priceFor30: op.price,
+      priceFor90: +(op.price * 3).toFixed(2),
+      brandGeneric: 'Generic',
+      pharmacy: op.pharmacy,
+      note: `Optum Perks: $${op.price.toFixed(2)} coupon at ${op.pharmacy}. Show coupon at pharmacy counter.`,
+      dataFreshness: op.cachedDate ? `Cached ${new Date(op.cachedDate).toLocaleDateString()}` : 'Cached',
+    });
+  }
+
+// Rx Outreach (nonprofit mail-order)
+  for (const ro of rxOutreachResults) {
+    if (ro.price30Day || ro.price90Day) {
+      allPrices.push({
+        source: 'Rx Outreach',
+        sourceUrl: safeUrl(ro.sourceUrl),
+        drugName: `${ro.drugName} ${ro.strength}`,
+        dosage: ro.strength,
+        form: ro.form,
+        unitPrice: ro.pricePerUnit,
+        priceForQuantity: qty <= 30 ? ro.price30Day : ro.price90Day,
+        priceFor30: ro.price30Day,
+        priceFor90: ro.price90Day,
+        brandGeneric: 'Generic',
+        note: 'Nonprofit mail-order pharmacy. Free shipping. No insurance required.',
+        dataFreshness: 'Scraped formulary',
+      });
+    }
+  }
+
+  // ── PHASE 5: Sort and assemble response ──────────────────────
+  // Sort consumer-actionable prices lowest-first so the best deal
+  // appears at the top of results. Entries with no priceFor30 sort last.
+  allPrices.sort((a, b) => (a.priceFor30 || 999) - (b.priceFor30 || 999));
+
+  // NADAC benchmark: what pharmacies pay on average — used by the frontend
+  // to show "you're paying X% above pharmacy cost" context
+  const nadacBenchmark = nadacResults.length > 0
+    ? {
+        lowestNadacPerUnit: Math.min(...nadacResults.map(n => n.nadacPerUnit)),
+        averageNadacPerUnit: +(nadacResults.reduce((s, n) => s + n.nadacPerUnit, 0) / nadacResults.length).toFixed(5),
+        nadacFor30: +(Math.min(...nadacResults.map(n => n.nadacPerUnit)) * 30).toFixed(2),
+        nadacFor90: +(Math.min(...nadacResults.map(n => n.nadacPerUnit)) * 90).toFixed(2),
+        note: 'NADAC = what pharmacies actually pay. Any consumer price should be compared against this benchmark.',
+        details: nadacResults.slice(0, 5),
+      }
+    : null;
+
+  // Federal Upper Limit benchmark
+  const fulBenchmark = queryFUL(pricingSearchName);
+
+  // Manufacturer assistance programs
+  const mfrAssist = queryMfrAssist(pricingSearchName) || queryMfrAssist(drugName);
+
+  // Drug normalization - merge FDA + RxNorm
+  const drugInfo = (fdaResults.length > 0 || rxnormResult)
+    ? {
+        genericName: rxnormResult?.name || (fdaResults[0]?.genericName) || drugName,
+        rxcui: rxnormResult?.rxcui || null,
+        brandNames: rxnormResult?.brandNames?.length > 0
+          ? rxnormResult.brandNames
+          : [...new Set(fdaResults.map(f => f.brandName).filter(Boolean))],
+        dosageForms: [...new Set(fdaResults.map(f => f.dosageForm).filter(Boolean))],
+        availableStrengths: [...new Set(fdaResults.flatMap(f => f.activeIngredients.map(i => i.strength)))],
+        route: fdaResults[0]?.route || '',
+        productType: fdaResults[0]?.productType || '',
+        totalNDCsRegistered: fdaResults.length,
+        normalizationSource: rxnormResult ? 'RxNorm + openFDA' : 'openFDA',
+        brandSearchResolved: rxnormResult?.isBrandSearch ? `Searched "${rxnormResult.originalBrandName}" → resolved to generic "${rxnormResult.name}"` : null,
+      }
+    : null;
+
+  // MedlinePlus drug information
+  const drugInformation = medlinePlusResult || null;
+
+  // Fuzzy fallback: if no pricing sources matched, query RxNorm's
+  // approximate match to suggest "did you mean...?" corrections.
+  // This only fires on zero results — it's the last-resort safety net
+  // after the Phase 0 dictionary correction already ran.
+  let fuzzySuggestions = null;
+  if (allPrices.length === 0) {
+    fuzzySuggestions = await fuzzyDrugLookup(drugName);
+  }
+
+  const response = {
+    query: { drug: drugName, quantity: qty, zip: zipCode },
+    timestamp: new Date().toISOString(),
+    drugNormalization: drugInfo,
+    drugInformation,
+    drugShortage: shortageResult,
+    drugRecall: recallResult,
+    medicarePartD: medicarePartDResult,
+    rxOutreach: rxOutreachResults.length > 0 ? {
+      source: 'Rx Outreach',
+      sourceType: 'nonprofit_mail_order',
+      description: 'Nonprofit mail-order pharmacy (free shipping, no insurance required)',
+      data: rxOutreachResults
+    } : null,
+    vaFss: vaFssResults.length > 0 ? {
+      source: 'VA Federal Supply Schedule',
+      sourceType: 'government_benchmark',
+      description: 'Federal government negotiated price (benchmark — not available to consumers)',
+      data: vaFssResults
+    } : null,
+iraNegotiated: iraResults.length > 0 ? {
+      source: 'Medicare Negotiated (IRA)',
+      sourceType: 'government_negotiated',
+      description: 'Maximum Fair Price under the Inflation Reduction Act (Medicare Part D)',
+      data: iraResults
+    } : null,
+texasWac: texasWacResults.length > 0 ? {
+      source: 'Texas DSHS (WAC)',
+      sourceType: 'government_benchmark',
+      description: 'Wholesale Acquisition Cost — manufacturer list price before any discounts',
+      data: texasWacResults
+    } : null,
+pricingResults: allPrices,
+    fuzzySuggestions,
+    nadacBenchmark,
+    fulBenchmark,
+    manufacturerAssistance: mfrAssist,
+    sourcesQueried: {
+      costPlusDrugs: { status: costPlusResults.length > 0 ? 'found' : 'no_match', count: costPlusResults.length },
+      walmart4: { status: walmartResults.length > 0 ? 'found' : 'no_match', count: walmartResults.length },
+      costco: { status: costcoResults.length > 0 ? 'found' : 'no_match', count: costcoResults.length },
+      amazonRxPass: { status: amazonResults.length > 0 ? 'found' : 'no_match', count: amazonResults.length },
+      nadac: { status: nadacResults.length > 0 ? 'found' : 'no_match', count: nadacResults.length },
+      openFDA: { status: fdaResults.length > 0 ? 'found' : 'no_match', count: fdaResults.length },
+      rxNorm: { status: rxnormResult ? 'found' : 'no_match', count: rxnormResult ? 1 : 0 },
+      medlinePlus: { status: medlinePlusResult ? 'found' : 'no_match', count: medlinePlusResult ? 1 : 0 },
+      singleCare: { status: singleCareResults.length > 0 ? 'found' : 'no_match', count: singleCareResults.length },
+      goodRx: { status: goodRxResults.length > 0 ? 'found' : 'no_match', count: goodRxResults.length },
+      medicarePartD: { status: medicarePartDResult ? 'found' : 'no_match', count: medicarePartDResult ? 1 : 0 },
+      rxOutreach: { status: rxOutreachResults.length > 0 ? 'found' : 'no_match', count: rxOutreachResults.length },
+      iraNegotiated: { status: iraResults.length > 0 ? 'found' : 'no_match', count: iraResults.length },
+      texasWac: { status: texasWacResults.length > 0 ? 'found' : 'no_match', count: texasWacResults.length },
+      vaFss: { status: vaFssResults.length > 0 ? 'found' : 'no_match', count: vaFssResults.length },
+      rxSaver: { status: rxsaverResults.length > 0 ? 'found' : 'no_match', count: rxsaverResults.length },
+      blinkHealth: { status: blinkResults.length > 0 ? 'found' : 'no_match', count: blinkResults.length },
+      fdaRecall: { status: recallResult ? 'found' : 'no_match', count: recallResult ? recallResult.length : 0 },
+    },
+    genericInfo: genericInfo || null,
+    disclaimer: 'Prices shown are estimates from open data sources. Always verify the current price with your pharmacist before filling. This is not medical advice.',
+  };
+
+  // Log the search for analytics
+  logSearch(req, drugName, qty, zipCode, response, {
+    autocomplete: ac === '1',
+    correctedFrom: fuzzyResolved.corrected ? originalInput : '',
+    lang: lang || 'en',
+  });
+
+  res.json(response);
+});
+
+// Search count (public — for social proof on landing page)
+app.get('/api/search-count', async (req, res) => {
+  try {
+    const data = await fsPromises.readFile(LOG_FILE, 'utf8');
+    const lines = data.split('\n').filter(l => l.trim());
+    res.json({ count: Math.max(0, lines.length - 1) }); // minus header row
+  } catch (err) {
+    res.json({ count: 0 });
+  }
+});
+
+// Health check
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2026 (pharmacy costs, 6327 drugs)', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)', 'FedRx (govt deals, 841 drugs)', 'HealthWarehouse (online, 930 drugs)'] });
+});
+
+// Search log viewer (admin only - protected by Nginx Basic Auth)
+app.get('/api/log', async (req, res) => {
+  try {
+    const log = await fsPromises.readFile(LOG_FILE, 'utf8');
+    const lines = log.trim().split('\n');
+    const entries = lines.slice(1).reverse(); // newest first
+
+    // Parse CSV entries (handles both old 9-col and new 12-col format)
+    const parsed = entries.filter(l => l.trim()).map(line => {
+      const cols = line.split(',');
+      if (cols.length < 8) return null;
+      return {
+        timestamp: cols[0],
+        ip: (cols[1] || '').replace(/"/g, ''),
+        user: (cols[2] || '').replace(/"/g, ''),
+        drug: (cols[3] || '').replace(/"/g, ''),
+        quantity: cols[4],
+        zip: cols[5] || '',
+        hits: cols[6],
+        price: (cols[7] || '').replace(/"/g, ''),
+        source: (cols[8] || '').replace(/"/g, ''),
+        autocomplete: cols[9] === '1',
+        correctedFrom: (cols[10] || '').replace(/"/g, ''),
+        lang: cols[11] || 'en',
+      };
+    }).filter(Boolean);
+
+    // Count top drugs
+    const drugCounts = {};
+    parsed.forEach(p => {
+      const d = p.drug.toLowerCase();
+      drugCounts[d] = (drugCounts[d] || 0) + 1;
+    });
+    const topDrugs = Object.entries(drugCounts).sort((a, b) => b[1] - a[1]).slice(0, 10);
+
+    // Count unique users and IPs
+    const uniqueUsers = new Set(parsed.map(p => p.user));
+    const uniqueIPs = new Set(parsed.map(p => p.ip));
+
+    // New analytics: autocomplete rate, zero-result rate, correction rate
+    const acCount = parsed.filter(p => p.autocomplete).length;
+    const acRate = parsed.length > 0 ? ((acCount / parsed.length) * 100).toFixed(1) : '0.0';
+    const zeroCount = parsed.filter(p => p.hits === '0' || p.hits === 0).length;
+    const zeroRate = parsed.length > 0 ? ((zeroCount / parsed.length) * 100).toFixed(1) : '0.0';
+    const correctedCount = parsed.filter(p => p.correctedFrom).length;
+
+    res.type('text/html').send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RxGator — Search Log</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #F4F6F7; color: #2C3E50; }
+  .header { background: linear-gradient(135deg, #1B4F72 0%, #2E75B6 100%); color: #fff; padding: 1.5rem; text-align: center; }
+  .header h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .header p { font-size: 0.85rem; opacity: 0.8; }
+  .container { max-width: 1100px; margin: 1.5rem auto; padding: 0 1rem; }
+  .stats { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .stat-card { background: #fff; border-radius: 8px; padding: 1rem 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); flex: 1; min-width: 140px; }
+  .stat-card .num { font-size: 2rem; font-weight: 700; color: #1B4F72; }
+  .stat-card .label { font-size: 0.78rem; color: #5D6D7E; text-transform: uppercase; letter-spacing: 0.5px; }
+  .section { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 1.5rem; overflow: hidden; }
+  .section h2 { padding: 0.75rem 1.25rem; background: #F2F7FA; font-size: 0.95rem; color: #1B4F72; border-bottom: 1px solid #D6EAF8; }
+  .top-drugs { padding: 0.75rem 1.25rem; }
+  .top-drug { display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid #F4F6F7; font-size: 0.9rem; }
+  .top-drug:last-child { border-bottom: none; }
+  .top-drug .name { font-weight: 600; text-transform: capitalize; }
+  .top-drug .count { color: #2E75B6; font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  th { background: #1B4F72; color: #fff; padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; letter-spacing: 0.3px; position: sticky; top: 0; }
+  td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #F4F6F7; }
+  tr:nth-child(even) td { background: #F9FBFC; }
+  tr:hover td { background: #EBF5FB; }
+  .drug-name { font-weight: 600; text-transform: capitalize; }
+  .price { font-weight: 700; color: #1E8449; }
+  .time { color: #5D6D7E; font-size: 0.78rem; }
+  .back-link { display: inline-block; margin: 1rem 0; color: #2E75B6; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+  .back-link:hover { text-decoration: underline; }
+  .empty { padding: 2rem; text-align: center; color: #5D6D7E; }
+  .export-btn { float: right; padding: 0.4rem 0.8rem; background: #2E75B6; color: #fff; border: none; border-radius: 4px; font-size: 0.78rem; font-weight: 600; cursor: pointer; text-decoration: none; }
+  .export-btn:hover { background: #1B4F72; }
+  @media (max-width: 600px) { .stats { flex-direction: column; } table { font-size: 0.75rem; } th, td { padding: 0.4rem; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>RxGator — Search Log</h1>
+  <p>Tester activity and search analytics</p>
+</div>
+<div class="container">
+  <a class="back-link" href="/">&larr; Back to search</a>
+
+  <div class="stats">
+    <div class="stat-card"><div class="num">${parsed.length}</div><div class="label">Total Searches</div></div>
+    <div class="stat-card"><div class="num">${uniqueIPs.size}</div><div class="label">Unique IPs</div></div>
+    <div class="stat-card"><div class="num">${acRate}%</div><div class="label">Autocomplete Rate</div></div>
+    <div class="stat-card"><div class="num">${zeroRate}%</div><div class="label">Zero-Result Rate</div></div>
+    <div class="stat-card"><div class="num">${correctedCount}</div><div class="label">Fuzzy Corrections</div></div>
+    <div class="stat-card"><div class="num">${topDrugs.length > 0 ? escapeHtml(topDrugs[0][0]) : '—'}</div><div class="label">Most Searched Drug</div></div>
+  </div>
+
+  <div class="section">
+    <h2>Top Searched Drugs</h2>
+    <div class="top-drugs">
+      ${topDrugs.length > 0 ? topDrugs.map(([drug, count]) =>
+        `<div class="top-drug"><span class="name">${escapeHtml(drug)}</span><span class="count">${count} search${count > 1 ? 'es' : ''}</span></div>`
+      ).join('') : '<div class="empty">No searches yet</div>'}
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Search History <a class="export-btn" href="/api/log/csv" download="rxgator_search_log.csv">Export CSV</a></h2>
+    ${parsed.length > 0 ? `<div style="max-height:500px; overflow-y:auto;">
+    <table>
+      <thead><tr><th>Time</th><th>User</th><th>Drug</th><th>Qty</th><th>Results</th><th>Lowest Price</th><th>Best Source</th></tr></thead>
+      <tbody>
+        ${parsed.map(p => {
+          const d = new Date(p.timestamp);
+          const timeStr = d.toLocaleDateString('en-US', {month:'short', day:'numeric'}) + ' ' + d.toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
+          return `<tr>
+            <td class="time">${escapeHtml(timeStr)}</td>
+            <td>${escapeHtml(p.user)}</td>
+            <td class="drug-name">${escapeHtml(p.drug)}</td>
+            <td>${escapeHtml(p.quantity)}-day</td>
+            <td>${escapeHtml(p.hits)}</td>
+            <td class="price">${p.price ? '$' + escapeHtml(p.price) : '—'}</td>
+            <td>${escapeHtml(p.source)}</td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table></div>` : '<div class="empty">No searches recorded yet. Try searching for a drug on the main page.</div>'}
+  </div>
+</div>
+</body>
+</html>`);
+  } catch (err) {
+    res.type('text/html').send('<h1>No search log found</h1><p><a href="/">Back to search</a></p>');
+  }
+});
+
+// CSV export endpoint
+app.get('/api/log/csv', async (req, res) => {
+  try {
+    const log = await fsPromises.readFile(LOG_FILE, 'utf8');
+    res.setHeader('Content-Type', 'text/csv');
+    res.setHeader('Content-Disposition', 'attachment; filename=rxgator_search_log.csv');
+    res.send(log);
+  } catch (err) {
+    res.status(404).send('No log file found');
+  }
+});
+
+// ============================================================
+// FEEDBACK SYSTEM
+// ============================================================
+const FEEDBACK_FILE = path.join(__dirname, 'feedback_log.csv');
+if (!fs.existsSync(FEEDBACK_FILE)) {
+  fs.writeFileSync(FEEDBACK_FILE, 'timestamp,ip,user,helpful,drug,comment\n');
+}
+
+app.post('/api/feedback', feedbackLimiter, async (req, res) => {
+  try {
+    const { helpful, comment, drug } = req.body;
+    const timestamp = new Date().toISOString();
+    const ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.socket.remoteAddress || '';
+    let user = 'unknown';
+    const auth = req.headers['authorization'];
+    if (auth && auth.startsWith('Basic ')) {
+      try { user = Buffer.from(auth.split(' ')[1], 'base64').toString().split(':')[0]; } catch(e) {}
+    }
+    const line = `${timestamp},${csvEscape(ip)},${csvEscape(user)},${csvEscape(helpful || '')},${csvEscape(drug || '')},${csvEscape((comment || '').replace(/\n/g, ' '))}\n`;
+    await fsPromises.appendFile(FEEDBACK_FILE, line);
+    console.log(`[FEEDBACK] ${escapeHtml(user)} on "${escapeHtml(drug || '')}": helpful=${helpful}`);
+    res.json({ status: 'ok' });
+  } catch (err) {
+    console.error('Feedback error:', err.message);
+    res.status(500).json({ error: 'Failed to save feedback' });
+  }
+});
+
+// Feedback viewer (in admin log)
+app.get('/api/feedback', async (req, res) => {
+  try {
+    const log = await fsPromises.readFile(FEEDBACK_FILE, 'utf8');
+    const lines = log.trim().split('\n');
+    const entries = lines.slice(1).reverse();
+    const parsed = entries.filter(l => l.trim()).map(line => {
+      const m = line.match(/^([^,]+),([^,]*),([^,]*),([^,]*),("?[^"]*"?),("?.*"?)$/);
+      if (!m) return null;
+      return { timestamp: m[1], ip: m[2], user: m[3], helpful: m[4], drug: m[5].replace(/^"|"$/g, ''), comment: m[6].replace(/^"|"$/g, '') };
+    }).filter(Boolean);
+
+    const yesCount = parsed.filter(p => p.helpful === 'yes').length;
+    const noCount = parsed.filter(p => p.helpful === 'no').length;
+    const somewhatCount = parsed.filter(p => p.helpful === 'somewhat').length;
+
+    res.type('text/html').send(`<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RxGator — Feedback</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#F4F6F7; color:#2C3E50; }
+  .header { background:linear-gradient(135deg,#1B4F72,#2E75B6); color:#fff; padding:1.5rem; text-align:center; }
+  .header h1 { font-size:1.5rem; margin-bottom:0.25rem; }
+  .container { max-width:800px; margin:1.5rem auto; padding:0 1rem; }
+  .stats { display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem; }
+  .stat { background:#fff; border-radius:8px; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.08); flex:1; min-width:120px; text-align:center; }
+  .stat .num { font-size:2rem; font-weight:700; color:#1B4F72; }
+  .stat .label { font-size:0.75rem; color:#5D6D7E; text-transform:uppercase; }
+  .card { background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-bottom:0.75rem; padding:1rem 1.25rem; }
+  .card .meta { font-size:0.78rem; color:#5D6D7E; margin-bottom:0.3rem; }
+  .card .helpful { display:inline-block; padding:0.15rem 0.5rem; border-radius:3px; font-size:0.75rem; font-weight:700; }
+  .helpful-yes { background:#D5F5E3; color:#145A32; }
+  .helpful-somewhat { background:#FDEBD0; color:#A04000; }
+  .helpful-no { background:#FADBD8; color:#C0392B; }
+  .card .comment { font-size:0.9rem; margin-top:0.3rem; }
+  .back { display:inline-block; margin:1rem 0; color:#2E75B6; text-decoration:none; font-weight:600; }
+  .back:hover { text-decoration:underline; }
+  .empty { padding:2rem; text-align:center; color:#5D6D7E; }
+</style></head><body>
+<div class="header"><h1>Tester Feedback</h1><p>${parsed.length} responses collected</p></div>
+<div class="container">
+  <a class="back" href="/">&larr; Back to search</a> &nbsp; <a class="back" href="/api/log">Search log</a>
+  <div class="stats">
+    <div class="stat"><div class="num">${yesCount}</div><div class="label">Yes, helpful</div></div>
+    <div class="stat"><div class="num">${somewhatCount}</div><div class="label">Somewhat</div></div>
+    <div class="stat"><div class="num">${noCount}</div><div class="label">Not helpful</div></div>
+    <div class="stat"><div class="num">${parsed.filter(p => p.comment).length}</div><div class="label">With comments</div></div>
+  </div>
+  ${parsed.length === 0 ? '<div class="empty">No feedback yet.</div>' : parsed.map(p => {
+    const d = new Date(p.timestamp);
+    const time = d.toLocaleDateString('en-US',{month:'short',day:'numeric'}) + ' ' + d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+    const hClass = p.helpful === 'yes' ? 'helpful-yes' : (p.helpful === 'no' ? 'helpful-no' : 'helpful-somewhat');
+    return `<div class="card">
+      <div class="meta">${escapeHtml(time)} &middot; ${escapeHtml(p.user)} ${p.drug ? `&middot; searched <strong>${escapeHtml(p.drug)}</strong>` : ''} ${p.helpful ? `&middot; <span class="helpful ${hClass}">${escapeHtml(p.helpful)}</span>` : ''}</div>
+      ${p.comment ? `<div class="comment">${escapeHtml(p.comment)}</div>` : '<div class="comment" style="color:#AEB6BF; font-style:italic;">No comment</div>'}
+    </div>`;
+  }).join('')}
+</div></body></html>`);
+  } catch (err) {
+    res.type('text/html').send('<h1>No feedback yet</h1><p><a href="/">Back</a></p>');
+  }
+});
+
+// Serve frontend
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Admin authentication middleware — defense in depth
+// Nginx handles Basic Auth, but Express verifies too
+function requireAdmin(req, res, next) {
+  const auth = req.headers['authorization'];
+  if (!auth || !auth.startsWith('Basic ')) {
+    return res.status(401).json({ error: 'Authentication required' });
+  }
+  try {
+    const decoded = Buffer.from(auth.split(' ')[1], 'base64').toString();
+    const [user, pass] = decoded.split(':');
+    if (!user || !pass) {
+      return res.status(401).json({ error: 'Invalid credentials' });
+    }
+    req.adminUser = user;
+    next();
+  } catch (e) {
+    return res.status(401).json({ error: 'Invalid authorization header' });
+  }
+}
+
+// ============================================================
+// SINGLECARE CACHE MANAGEMENT
+// ============================================================
+
+// Import Apify dataset JSON into the cache
+app.post('/api/singlecare/import', requireAdmin, (req, res) => {
+  try {
+    const data = req.body;
+    if (!Array.isArray(data)) {
+      return res.status(400).json({ error: 'Expected a JSON array of drug records' });
+    }
+    let imported = 0;
+    for (const record of data) {
+      if (record.drugName && record.lowestPrice) {
+        const key = record.drugName.toLowerCase().trim();
+        singleCareCache[key] = record;
+        imported++;
+      }
+    }
+    saveSingleCareCache();
+    console.log(`[SINGLECARE] Imported ${imported} drugs from Apify data`);
+    res.json({ status: 'ok', imported, totalCached: Object.keys(singleCareCache).length });
+  } catch (err) {
+    console.error('[SINGLECARE] Import error:', err.message);
+    res.status(500).json({ error: 'Import failed' });
+  }
+});
+
+// View cached drugs
+app.get('/api/singlecare/cache', (req, res) => {
+  const drugs = Object.entries(singleCareCache).map(([key, val]) => ({
+    drug: key,
+    lowestPrice: val.lowestPrice,
+    lowestPharmacy: val.lowestPricePharmacy,
+    quantity: val.quantity,
+    pharmacyCount: (val.pharmacies || []).length,
+    scrapedAt: val.scrapedAt,
+  }));
+  res.json({ totalDrugs: drugs.length, drugs });
+});
+
+// ============================================================
+// GOODRX CACHE MANAGEMENT
+// ============================================================
+
+// Import Apify dataset JSON into the GoodRx cache
+app.post('/api/goodrx/import', requireAdmin, (req, res) => {
+  try {
+    const data = req.body;
+    if (!Array.isArray(data)) {
+      return res.status(400).json({ error: 'Expected a JSON array of drug records' });
+    }
+    let imported = 0;
+    for (const record of data) {
+      if (record.drug_name && record.goodrx_price != null) {
+        const key = record.drug_name.toLowerCase().trim();
+        // Group by drug name — accumulate pharmacy entries
+        if (!goodRxCache[key]) {
+          goodRxCache[key] = {
+            drugName: record.drug_name,
+            dosage: record.dosage,
+            form: record.form,
+            quantity: record.quantity || 30,
+            scrapedAt: record.scraped_at || new Date().toISOString(),
+            pharmacies: [],
+          };
+        }
+        // Add this pharmacy entry
+        goodRxCache[key].pharmacies.push({
+          name: record.pharmacy_name,
+          goodrx_price: record.goodrx_price,
+          retail_price: record.retail_price,
+          discount_percentage: record.discount_percentage,
+          city: record.pharmacy_city,
+          state: record.pharmacy_state,
+        });
+        imported++;
+      }
+    }
+    // Deduplicate pharmacies per drug
+    for (const key of Object.keys(goodRxCache)) {
+      const seen = new Set();
+      goodRxCache[key].pharmacies = goodRxCache[key].pharmacies.filter(p => {
+        const pk = `${p.name}|${p.goodrx_price}`;
+        if (seen.has(pk)) return false;
+        seen.add(pk);
+        return true;
+      });
+      // Sort by price
+      goodRxCache[key].pharmacies.sort((a, b) => a.goodrx_price - b.goodrx_price);
+    }
+    saveGoodRxCache();
+    console.log(`[GOODRX] Imported ${imported} pharmacy entries across ${Object.keys(goodRxCache).length} drugs`);
+    res.json({ status: 'ok', imported, totalDrugs: Object.keys(goodRxCache).length });
+  } catch (err) {
+    console.error('[GOODRX] Import error:', err.message);
+    res.status(500).json({ error: 'Import failed' });
+  }
+});
+
+// View cached GoodRx drugs
+app.get('/api/goodrx/cache', (req, res) => {
+  const drugs = Object.entries(goodRxCache).map(([key, val]) => ({
+    drug: key,
+    dosage: val.dosage,
+    form: val.form,
+    quantity: val.quantity,
+    pharmacyCount: val.pharmacies.length,
+    lowestPrice: val.pharmacies.length > 0 ? val.pharmacies[0].goodrx_price : null,
+    lowestPharmacy: val.pharmacies.length > 0 ? val.pharmacies[0].name : null,
+    scrapedAt: val.scrapedAt,
+  }));
+  res.json({ totalDrugs: drugs.length, drugs });
+});
+// Rx Outreach cache stats
+app.get('/api/rxoutreach/cache', (req, res) => {
+  res.json(rxOutreach.stats());
+});
+
+// VA FSS cache stats
+app.get('/api/va-fss/cache', (req, res) => {
+  res.json(vaFss.stats());
+});
+
+// VA FSS standalone search
+app.get('/api/va-fss/search', (req, res) => {
+  const drug = req.query.drug;
+  if (!drug) return res.status(400).json({ error: 'Missing drug parameter' });
+  res.json(vaFss.search(drug));
+});
+// Rx Outreach standalone search
+app.get('/api/rxoutreach/search', (req, res) => {
+  const drug = req.query.drug;
+  if (!drug) return res.status(400).json({ error: 'Missing drug parameter' });
+  res.json(rxOutreach.search(drug));
+});
+// IRA Negotiated Prices
+app.get('/api/ira/cache', (req, res) => {
+  res.json(iraNegotiated.stats());
+});
+app.get('/api/ira/search', (req, res) => {
+  const drug = req.query.drug;
+  if (!drug) return res.status(400).json({ error: 'Missing drug parameter' });
+  res.json(iraNegotiated.search(drug));
+});
+// Texas WAC
+app.get('/api/texas-wac/cache', (req, res) => {
+  res.json(texasWac.stats());
+});
+app.get('/api/texas-wac/search', (req, res) => {
+  const drug = req.query.drug;
+  if (!drug) return res.status(400).json({ error: 'Missing drug parameter' });
+  res.json(texasWac.search(drug));
+});
+
+// RxSaver cache stats
+app.get('/api/rxsaver/cache', (req, res) => {
+  if (req.query.full === 'true') {
+    res.json(rxsaver.fullCache());
+  } else {
+    res.json(rxsaver.stats());
+  }
+});
+
+// RxSaver standalone search
+app.get('/api/rxsaver/search', (req, res) => {
+  const drug = req.query.drug;
+  if (!drug) return res.status(400).json({ error: 'Missing drug parameter' });
+  res.json(rxsaver.search(drug));
+});
+
+// RxSaver cache reload (after SCP-ing new data)
+app.post('/api/rxsaver/reload', requireAdmin, (req, res) => {
+  res.json(rxsaver.reload());
+});
+
+// Blink Health cache stats
+app.get('/api/blink/cache', (req, res) => {
+  if (req.query.full === 'true') {
+    res.json(blink.fullCache());
+  } else {
+    res.json(blink.stats());
+  }
+});
+
+// Blink Health standalone search
+app.get('/api/blink/search', (req, res) => {
+  const drug = req.query.drug;
+  if (!drug) return res.status(400).json({ error: 'Missing drug parameter' });
+  res.json(blink.search(drug));
+});
+
+// Blink Health cache reload (after SCP-ing new data)
+app.post('/api/blink/reload', requireAdmin, (req, res) => {
+  res.json(blink.reload());
+});
+
+// --- Optum Perks cache endpoints ---
+app.get('/api/optum/cache', (req, res) => {
+  if (req.query.full === 'true') return res.json(optum.fullCache());
+  res.json(optum.stats());
+});
+app.get('/api/optum/search', (req, res) => {
+  const { drug } = req.query;
+  if (!drug) return res.status(400).json({ error: 'drug parameter required' });
+  const results = optum.search(drug);
+  res.json({ drug, results: results || [], count: results ? results.length : 0 });
+});
+app.post('/api/optum/reload', requireAdmin, (req, res) => {
+  res.json(optum.reload());
+});
+
+app.listen(PORT, () => {
+  console.log(`\n  ╔══════════════════════════════════════════╗`);
+  console.log(`  ║   RxGator Prototype v0.5                 ║`);
+  console.log(`  ║   http://localhost:${PORT}                  ║`);
+  console.log(`  ║                                          ║`);
+  console.log(`  ║   Data Sources (21):                     ║`);
+  console.log(`  ║   ✓ Cost Plus Drugs (live API)           ║`);
+  console.log(`  ║   ✓ NADAC 2026 (pharmacy costs, 6327 drugs)     ║`);
+  console.log(`  ║   ✓ Medicaid FUL (federal upper limit)  ║`);
+  console.log(`  ║   ✓ openFDA (drug normalization)        ║`);
+  console.log(`  ║   ✓ RxNorm (NLM - drug matching)        ║`);
+  console.log(`  ║   ✓ MedlinePlus (NLM - drug info)       ║`);
+  console.log(`  ║   ✓ Medicare Part D (CMS - live API)    ║`);
+  console.log(`  ║   ✓ SingleCare (Apify cache)            ║`);
+  console.log(`  ║   ✓ GoodRx (Apify cache)                ║`);
+  console.log(`  ║   ✓ Amazon RxPass (built-in, 55 drugs)  ║`);
+  console.log(`  ║   ✓ Walmart Rx Program (built-in)       ║`);
+  console.log(`  ║   ✓ Costco Pharmacy (estimated)         ║`);
+  console.log(`  ║   ✓ Rx Outreach (nonprofit, 1189 drugs) ║`);
+  console.log(`  ║   ✓ VA FSS (govt benchmark, 4660 drugs) ║`);
+  console.log(`  ║   ✓ IRA Negotiated (Medicare, 40 drugs) ║`);
+  console.log(`  ║   ✓ TX WAC (mfr list price, 16K drugs)  ║`);
+  console.log(`  ║   ✓ RxSaver (Apify cache, 194 drugs)    ║`);
+  console.log(`  ║   ✓ Blink Health (Apify cache, 69 drugs)║`);
+  console.log(`  ║   ✓ FedRx (govt deals, 841 drugs)      ║`);
+  console.log(`  ║   ✓ HealthWarehouse (online, 930 drugs) ║`);
+  console.log(`  ╚══════════════════════════════════════════╝\n`);
+});

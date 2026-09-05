@@ -1,0 +1,1490 @@
+{
+  "lipitor": {
+    "generic": "atorvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol"
+  },
+  "atorvaliq": {
+    "generic": "atorvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol"
+  },
+  "ator": {
+    "generic": "atorvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol"
+  },
+  "glucophage": {
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "fortamet": {
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "glumetza": {
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "riomet": {
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "met": {
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "zestril": {
+    "generic": "lisinopril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "prinivil": {
+    "generic": "lisinopril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "lisin": {
+    "generic": "lisinopril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "norvasc": {
+    "generic": "amlodipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "amlod": {
+    "generic": "amlodipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "synthroid": {
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "primaryUseES": "Tiroides"
+  },
+  "levoxyl": {
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "primaryUseES": "Tiroides"
+  },
+  "tirosint": {
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "primaryUseES": "Tiroides"
+  },
+  "unithroid": {
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "primaryUseES": "Tiroides"
+  },
+  "levo": {
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "primaryUseES": "Tiroides"
+  },
+  "thyroid med": {
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "primaryUseES": "Tiroides"
+  },
+  "prilosec": {
+    "generic": "omeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido"
+  },
+  "ome": {
+    "generic": "omeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido"
+  },
+  "cozaar": {
+    "generic": "losartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "losar": {
+    "generic": "losartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "neurontin": {
+    "generic": "gabapentin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain",
+    "primaryUseES": "Dolor nervioso"
+  },
+  "gralise": {
+    "generic": "gabapentin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain",
+    "primaryUseES": "Dolor nervioso"
+  },
+  "gaba": {
+    "generic": "gabapentin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain",
+    "primaryUseES": "Dolor nervioso"
+  },
+  "zoloft": {
+    "generic": "sertraline",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad"
+  },
+  "sert": {
+    "generic": "sertraline",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad"
+  },
+  "singulair": {
+    "generic": "montelukast",
+    "drugClass": "LTRA",
+    "primaryUse": "Asthma / Allergies",
+    "primaryUseES": "Asma / Alergias"
+  },
+  "monte": {
+    "generic": "montelukast",
+    "drugClass": "LTRA",
+    "primaryUse": "Asthma / Allergies",
+    "primaryUseES": "Asma / Alergias"
+  },
+  "lexapro": {
+    "generic": "escitalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad"
+  },
+  "escit": {
+    "generic": "escitalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad"
+  },
+  "desyrel": {
+    "generic": "trazodone",
+    "drugClass": "SARI",
+    "primaryUse": "Depression / Sleep",
+    "primaryUseES": "Depresión / Sueño"
+  },
+  "oleptro": {
+    "generic": "trazodone",
+    "drugClass": "SARI",
+    "primaryUse": "Depression / Sleep",
+    "primaryUseES": "Depresión / Sueño"
+  },
+  "traz": {
+    "generic": "trazodone",
+    "drugClass": "SARI",
+    "primaryUse": "Depression / Sleep",
+    "primaryUseES": "Depresión / Sueño"
+  },
+  "protonix": {
+    "generic": "pantoprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido"
+  },
+  "panto": {
+    "generic": "pantoprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido"
+  },
+  "crestor": {
+    "generic": "rosuvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol"
+  },
+  "rosu": {
+    "generic": "rosuvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol"
+  },
+  "cymbalta": {
+    "generic": "duloxetine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Pain",
+    "primaryUseES": "Depresión / Dolor"
+  },
+  "dulox": {
+    "generic": "duloxetine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Pain",
+    "primaryUseES": "Depresión / Dolor"
+  },
+  "wellbutrin": {
+    "generic": "bupropion",
+    "drugClass": "NDRI",
+    "primaryUse": "Depression / Smoking",
+    "primaryUseES": "Depresión / Dejar de fumar"
+  },
+  "zyban": {
+    "generic": "bupropion",
+    "drugClass": "NDRI",
+    "primaryUse": "Depression / Smoking",
+    "primaryUseES": "Depresión / Dejar de fumar"
+  },
+  "bup": {
+    "generic": "bupropion",
+    "drugClass": "NDRI",
+    "primaryUse": "Depression / Smoking",
+    "primaryUseES": "Depresión / Dejar de fumar"
+  },
+  "mobic": {
+    "generic": "meloxicam",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación"
+  },
+  "melox": {
+    "generic": "meloxicam",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación"
+  },
+  "coreg": {
+    "generic": "carvedilol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart failure",
+    "primaryUseES": "Insuficiencia cardíaca"
+  },
+  "carv": {
+    "generic": "carvedilol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart failure",
+    "primaryUseES": "Insuficiencia cardíaca"
+  },
+  "flomax": {
+    "generic": "tamsulosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Enlarged prostate",
+    "primaryUseES": "Próstata agrandada"
+  },
+  "tams": {
+    "generic": "tamsulosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Enlarged prostate",
+    "primaryUseES": "Próstata agrandada"
+  },
+  "microzide": {
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "hctz": {
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "hydrochlor": {
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "water pill": {
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "prozac": {
+    "generic": "fluoxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad"
+  },
+  "sarafem": {
+    "generic": "fluoxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad"
+  },
+  "fluox": {
+    "generic": "fluoxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad"
+  },
+  "amoxil": {
+    "generic": "amoxicillin",
+    "drugClass": "Penicillin",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "trimox": {
+    "generic": "amoxicillin",
+    "drugClass": "Penicillin",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "amox": {
+    "generic": "amoxicillin",
+    "drugClass": "Penicillin",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "zithromax": {
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "z-pack": {
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "azith": {
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "zpak": {
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "z pack": {
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "proair": {
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "primaryUseES": "Asma / EPOC"
+  },
+  "ventolin": {
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "primaryUseES": "Asma / EPOC"
+  },
+  "proventil": {
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "primaryUseES": "Asma / EPOC"
+  },
+  "alb": {
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "primaryUseES": "Asma / EPOC"
+  },
+  "inhaler": {
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "primaryUseES": "Asma / EPOC"
+  },
+  "deltasone": {
+    "generic": "prednisone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "primaryUseES": "Inflamación"
+  },
+  "rayos": {
+    "generic": "prednisone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "primaryUseES": "Inflamación"
+  },
+  "pred": {
+    "generic": "prednisone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "primaryUseES": "Inflamación"
+  },
+  "plavix": {
+    "generic": "clopidogrel",
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre"
+  },
+  "clop": {
+    "generic": "clopidogrel",
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre"
+  },
+  "lasix": {
+    "generic": "furosemide",
+    "drugClass": "Loop diuretic",
+    "primaryUse": "Edema / Heart failure",
+    "primaryUseES": "Edema / Insuficiencia cardíaca"
+  },
+  "furo": {
+    "generic": "furosemide",
+    "drugClass": "Loop diuretic",
+    "primaryUse": "Edema / Heart failure",
+    "primaryUseES": "Edema / Insuficiencia cardíaca"
+  },
+  "lopressor": {
+    "generic": "metoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "primaryUseES": "Presión arterial / Corazón"
+  },
+  "toprol-xl": {
+    "generic": "metoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "primaryUseES": "Presión arterial / Corazón"
+  },
+  "meto": {
+    "generic": "metoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "primaryUseES": "Presión arterial / Corazón"
+  },
+  "toprol": {
+    "generic": "metoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "primaryUseES": "Presión arterial / Corazón"
+  },
+  "glucotrol": {
+    "generic": "glipizide",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "glip": {
+    "generic": "glipizide",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "pravachol": {
+    "generic": "pravastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol"
+  },
+  "prav": {
+    "generic": "pravastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol"
+  },
+  "zocor": {
+    "generic": "simvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol"
+  },
+  "simv": {
+    "generic": "simvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol"
+  },
+  "coumadin": {
+    "generic": "warfarin",
+    "drugClass": "Anticoagulant",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre"
+  },
+  "jantoven": {
+    "generic": "warfarin",
+    "drugClass": "Anticoagulant",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre"
+  },
+  "warf": {
+    "generic": "warfarin",
+    "drugClass": "Anticoagulant",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre"
+  },
+  "celexa": {
+    "generic": "citalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression",
+    "primaryUseES": "Depresión"
+  },
+  "cital": {
+    "generic": "citalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression",
+    "primaryUseES": "Depresión"
+  },
+  "ultram": {
+    "generic": "tramadol",
+    "drugClass": "Opioid analgesic",
+    "primaryUse": "Pain",
+    "primaryUseES": "Dolor"
+  },
+  "conzip": {
+    "generic": "tramadol",
+    "drugClass": "Opioid analgesic",
+    "primaryUse": "Pain",
+    "primaryUseES": "Dolor"
+  },
+  "tram": {
+    "generic": "tramadol",
+    "drugClass": "Opioid analgesic",
+    "primaryUse": "Pain",
+    "primaryUseES": "Dolor"
+  },
+  "flagyl": {
+    "generic": "metronidazole",
+    "drugClass": "Antibiotic",
+    "primaryUse": "Bacterial / Parasitic infection",
+    "primaryUseES": "Infección bacteriana / parasitaria"
+  },
+  "metro": {
+    "generic": "metronidazole",
+    "drugClass": "Antibiotic",
+    "primaryUse": "Bacterial / Parasitic infection",
+    "primaryUseES": "Infección bacteriana / parasitaria"
+  },
+  "flexeril": {
+    "generic": "cyclobenzaprine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasm",
+    "primaryUseES": "Espasmo muscular"
+  },
+  "amrix": {
+    "generic": "cyclobenzaprine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasm",
+    "primaryUseES": "Espasmo muscular"
+  },
+  "cyclo": {
+    "generic": "cyclobenzaprine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasm",
+    "primaryUseES": "Espasmo muscular"
+  },
+  "vibramycin": {
+    "generic": "doxycycline",
+    "drugClass": "Tetracycline",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "doryx": {
+    "generic": "doxycycline",
+    "drugClass": "Tetracycline",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "doxy": {
+    "generic": "doxycycline",
+    "drugClass": "Tetracycline",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "effexor": {
+    "generic": "venlafaxine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad"
+  },
+  "venla": {
+    "generic": "venlafaxine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión / Ansiedad"
+  },
+  "klonopin": {
+    "generic": "clonazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Seizures / Anxiety",
+    "primaryUseES": "Convulsiones / Ansiedad"
+  },
+  "clona": {
+    "generic": "clonazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Seizures / Anxiety",
+    "primaryUseES": "Convulsiones / Ansiedad"
+  },
+  "xanax": {
+    "generic": "alprazolam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "primaryUseES": "Ansiedad"
+  },
+  "xanex": {
+    "generic": "alprazolam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "primaryUseES": "Ansiedad"
+  },
+  "alpraz": {
+    "generic": "alprazolam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "primaryUseES": "Ansiedad"
+  },
+  "ritalin": {
+    "generic": "methylphenidate",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "primaryUseES": "TDAH"
+  },
+  "concerta": {
+    "generic": "methylphenidate",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "primaryUseES": "TDAH"
+  },
+  "focalin": {
+    "generic": "methylphenidate",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "primaryUseES": "TDAH"
+  },
+  "valium": {
+    "generic": "diazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety / Seizures",
+    "primaryUseES": "Ansiedad / Convulsiones"
+  },
+  "ativan": {
+    "generic": "lorazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "primaryUseES": "Ansiedad"
+  },
+  "loraz": {
+    "generic": "lorazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "primaryUseES": "Ansiedad"
+  },
+  "aldactone": {
+    "generic": "spironolactone",
+    "drugClass": "Potassium-sparing diuretic",
+    "primaryUse": "Heart failure / Edema",
+    "primaryUseES": "Insuficiencia cardíaca / Edema"
+  },
+  "spiro": {
+    "generic": "spironolactone",
+    "drugClass": "Potassium-sparing diuretic",
+    "primaryUse": "Heart failure / Edema",
+    "primaryUseES": "Insuficiencia cardíaca / Edema"
+  },
+  "tylenol": {
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "primaryUseES": "Dolor / Fiebre"
+  },
+  "apap": {
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "primaryUseES": "Dolor / Fiebre"
+  },
+  "paracetamol": {
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "primaryUseES": "Dolor / Fiebre"
+  },
+  "advil": {
+    "generic": "ibuprofen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación"
+  },
+  "motrin": {
+    "generic": "ibuprofen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación"
+  },
+  "ibu": {
+    "generic": "ibuprofen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación"
+  },
+  "aleve": {
+    "generic": "naproxen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación"
+  },
+  "naprosyn": {
+    "generic": "naproxen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación"
+  },
+  "zyrtec": {
+    "generic": "cetirizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "primaryUseES": "Alergias"
+  },
+  "claritin": {
+    "generic": "loratadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "primaryUseES": "Alergias"
+  },
+  "allegra": {
+    "generic": "fexofenadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "primaryUseES": "Alergias"
+  },
+  "pepcid": {
+    "generic": "famotidine",
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido"
+  },
+  "zantac": {
+    "generic": "ranitidine",
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido"
+  },
+  "prevacid": {
+    "generic": "lansoprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido"
+  },
+  "nexium": {
+    "generic": "esomeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "primaryUseES": "Reflujo ácido"
+  },
+  "lantus": {
+    "generic": "insulin glargine",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "basaglar": {
+    "generic": "insulin glargine",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "toujeo": {
+    "generic": "insulin glargine",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "humalog": {
+    "generic": "insulin lispro",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "admelog": {
+    "generic": "insulin lispro",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "trexall": {
+    "generic": "methotrexate",
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "primaryUseES": "Artritis reumatoide / Cáncer"
+  },
+  "rasuvo": {
+    "generic": "methotrexate",
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "primaryUseES": "Artritis reumatoide / Cáncer"
+  },
+  "otrexup": {
+    "generic": "methotrexate",
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "primaryUseES": "Artritis reumatoide / Cáncer"
+  },
+  "mtx": {
+    "generic": "methotrexate",
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "primaryUseES": "Artritis reumatoide / Cáncer"
+  },
+  "orapred": {
+    "generic": "prednisolone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "primaryUseES": "Inflamación"
+  },
+  "prelone": {
+    "generic": "prednisolone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "primaryUseES": "Inflamación"
+  },
+  "cipro": {
+    "generic": "ciprofloxacin",
+    "drugClass": "Fluoroquinolone",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "levaquin": {
+    "generic": "levofloxacin",
+    "drugClass": "Fluoroquinolone",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "keflex": {
+    "generic": "cephalexin",
+    "drugClass": "Cephalosporin",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "cleocin": {
+    "generic": "clindamycin",
+    "drugClass": "Lincosamide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "bactrim": {
+    "generic": "sulfamethoxazole-trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "septra": {
+    "generic": "sulfamethoxazole-trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "smz-tmp": {
+    "generic": "sulfamethoxazole-trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "sulfa": {
+    "generic": "sulfamethoxazole-trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "primaryUseES": "Infección bacteriana"
+  },
+  "lotensin": {
+    "generic": "benazepril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "vasotec": {
+    "generic": "enalapril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "altace": {
+    "generic": "ramipril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "diovan": {
+    "generic": "valsartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "avapro": {
+    "generic": "irbesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "benicar": {
+    "generic": "olmesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "cardizem": {
+    "generic": "diltiazem",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure / Heart",
+    "primaryUseES": "Presión arterial / Corazón"
+  },
+  "tiazac": {
+    "generic": "diltiazem",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure / Heart",
+    "primaryUseES": "Presión arterial / Corazón"
+  },
+  "procardia": {
+    "generic": "nifedipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "adalat": {
+    "generic": "nifedipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "tenormin": {
+    "generic": "atenolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "inderal": {
+    "generic": "propranolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Anxiety",
+    "primaryUseES": "Blood pressure / Anxiety"
+  },
+  "zebeta": {
+    "generic": "bisoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial"
+  },
+  "catapres": {
+    "generic": "clonidine",
+    "drugClass": "Alpha-2 agonist",
+    "primaryUse": "Blood pressure / ADHD",
+    "primaryUseES": "Blood pressure / ADHD"
+  },
+  "proscar": {
+    "generic": "finasteride",
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "BPH / Hair loss",
+    "primaryUseES": "HPB / Caída del cabello"
+  },
+  "propecia": {
+    "generic": "finasteride",
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "BPH / Hair loss",
+    "primaryUseES": "HPB / Caída del cabello"
+  },
+  "viagra": {
+    "generic": "sildenafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / PAH",
+    "primaryUseES": "Disfunción eréctil"
+  },
+  "revatio": {
+    "generic": "sildenafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / PAH",
+    "primaryUseES": "Disfunción eréctil"
+  },
+  "cialis": {
+    "generic": "tadalafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / BPH",
+    "primaryUseES": "Disfunción eréctil / HPB"
+  },
+  "adcirca": {
+    "generic": "tadalafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / BPH",
+    "primaryUseES": "Disfunción eréctil / HPB"
+  },
+  "imitrex": {
+    "generic": "sumatriptan",
+    "drugClass": "Triptan",
+    "primaryUse": "Migraine",
+    "primaryUseES": "Migraña"
+  },
+  "zofran": {
+    "generic": "ondansetron",
+    "drugClass": "5-HT3 antagonist",
+    "primaryUse": "Nausea / Vomiting",
+    "primaryUseES": "Náuseas / Vómitos"
+  },
+  "odt": {
+    "generic": "ondansetron",
+    "drugClass": "5-HT3 antagonist",
+    "primaryUse": "Nausea / Vomiting",
+    "primaryUseES": "Náuseas / Vómitos"
+  },
+  "phenergan": {
+    "generic": "promethazine",
+    "drugClass": "Antihistamine / Antiemetic",
+    "primaryUse": "Nausea / Allergies",
+    "primaryUseES": "Náuseas / Alergias"
+  },
+  "antivert": {
+    "generic": "meclizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Vertigo / Motion sickness",
+    "primaryUseES": "Vértigo / Mareo"
+  },
+  "bonine": {
+    "generic": "meclizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Vertigo / Motion sickness",
+    "primaryUseES": "Vértigo / Mareo"
+  },
+  "voltaren": {
+    "generic": "diclofenac",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación"
+  },
+  "celebrex": {
+    "generic": "celecoxib",
+    "drugClass": "COX-2 inhibitor",
+    "primaryUse": "Pain / Inflammation",
+    "primaryUseES": "Dolor / Inflamación"
+  },
+  "lyrica": {
+    "generic": "pregabalin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain / Fibromyalgia",
+    "primaryUseES": "Dolor nervioso / Fibromialgia"
+  },
+  "topamax": {
+    "generic": "topiramate",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Migraine",
+    "primaryUseES": "Convulsiones / Migraña"
+  },
+  "lamictal": {
+    "generic": "lamotrigine",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "primaryUseES": "Convulsiones / Trastorno bipolar"
+  },
+  "keppra": {
+    "generic": "levetiracetam",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures",
+    "primaryUseES": "Convulsiones"
+  },
+  "depakote": {
+    "generic": "valproic acid",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "primaryUseES": "Convulsiones / Trastorno bipolar"
+  },
+  "depakene": {
+    "generic": "valproic acid",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "primaryUseES": "Convulsiones / Trastorno bipolar"
+  },
+  "vpa": {
+    "generic": "valproic acid",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "primaryUseES": "Convulsiones / Trastorno bipolar"
+  },
+  "dilantin": {
+    "generic": "phenytoin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures",
+    "primaryUseES": "Convulsiones"
+  },
+  "abilify": {
+    "generic": "aripiprazole",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "primaryUseES": "Bipolar / Esquizofrenia"
+  },
+  "seroquel": {
+    "generic": "quetiapine",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "primaryUseES": "Bipolar / Esquizofrenia"
+  },
+  "zyprexa": {
+    "generic": "olanzapine",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "primaryUseES": "Bipolar / Esquizofrenia"
+  },
+  "risperdal": {
+    "generic": "risperidone",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Schizophrenia / Bipolar",
+    "primaryUseES": "Esquizofrenia / Bipolar"
+  },
+  "lithobid": {
+    "generic": "lithium carbonate",
+    "drugClass": "Mood stabilizer",
+    "primaryUse": "Bipolar",
+    "primaryUseES": "Trastorno bipolar"
+  },
+  "eskalith": {
+    "generic": "lithium carbonate",
+    "drugClass": "Mood stabilizer",
+    "primaryUse": "Bipolar",
+    "primaryUseES": "Trastorno bipolar"
+  },
+  "lithium": {
+    "generic": "lithium carbonate",
+    "drugClass": "Mood stabilizer",
+    "primaryUse": "Bipolar",
+    "primaryUseES": "Trastorno bipolar"
+  },
+  "buspar": {
+    "generic": "buspirone",
+    "drugClass": "Anxiolytic",
+    "primaryUse": "Anxiety",
+    "primaryUseES": "Ansiedad"
+  },
+  "vistaril": {
+    "generic": "hydroxyzine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Anxiety / Allergies",
+    "primaryUseES": "Anxiety / Allergies"
+  },
+  "atarax": {
+    "generic": "hydroxyzine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Anxiety / Allergies",
+    "primaryUseES": "Anxiety / Allergies"
+  },
+  "ambien": {
+    "generic": "zolpidem",
+    "drugClass": "Sedative-hypnotic",
+    "primaryUse": "Insomnia",
+    "primaryUseES": "Insomnio"
+  },
+  "lunesta": {
+    "generic": "eszopiclone",
+    "drugClass": "Sedative-hypnotic",
+    "primaryUse": "Insomnia",
+    "primaryUseES": "Insomnio"
+  },
+  "aricept": {
+    "generic": "donepezil",
+    "drugClass": "Cholinesterase inhibitor",
+    "primaryUse": "Alzheimer's",
+    "primaryUseES": "Alzheimer"
+  },
+  "namenda": {
+    "generic": "memantine",
+    "drugClass": "NMDA antagonist",
+    "primaryUse": "Alzheimer's",
+    "primaryUseES": "Alzheimer"
+  },
+  "flonase": {
+    "generic": "fluticasone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "primaryUseES": "Allergies / Asthma"
+  },
+  "flovent": {
+    "generic": "fluticasone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "primaryUseES": "Allergies / Asthma"
+  },
+  "pulmicort": {
+    "generic": "budesonide",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Asthma / Allergies / Crohn's",
+    "primaryUseES": "Asma / Alergias / Crohn"
+  },
+  "rhinocort": {
+    "generic": "budesonide",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Asthma / Allergies / Crohn's",
+    "primaryUseES": "Asma / Alergias / Crohn"
+  },
+  "entocort": {
+    "generic": "budesonide",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Asthma / Allergies / Crohn's",
+    "primaryUseES": "Asma / Alergias / Crohn"
+  },
+  "spiriva": {
+    "generic": "tiotropium",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "COPD",
+    "primaryUseES": "EPOC"
+  },
+  "xalatan": {
+    "generic": "latanoprost",
+    "drugClass": "Prostaglandin analog",
+    "primaryUse": "Glaucoma",
+    "primaryUseES": "Glaucoma"
+  },
+  "timoptic": {
+    "generic": "timolol",
+    "drugClass": "Beta blocker (ophthalmic)",
+    "primaryUse": "Glaucoma",
+    "primaryUseES": "Glaucoma"
+  },
+  "actos": {
+    "generic": "pioglitazone",
+    "drugClass": "Thiazolidinedione",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "januvia": {
+    "generic": "sitagliptin",
+    "drugClass": "DPP-4 inhibitor",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes"
+  },
+  "jardiance": {
+    "generic": "empagliflozin",
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes / Heart failure",
+    "primaryUseES": "Diabetes / Insuficiencia cardíaca"
+  },
+  "farxiga": {
+    "generic": "dapagliflozin",
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes / Heart failure",
+    "primaryUseES": "Diabetes / Insuficiencia cardíaca"
+  },
+  "victoza": {
+    "generic": "liraglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso"
+  },
+  "saxenda": {
+    "generic": "liraglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso"
+  },
+  "ozempic": {
+    "generic": "semaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso"
+  },
+  "wegovy": {
+    "generic": "semaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso"
+  },
+  "rybelsus": {
+    "generic": "semaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso"
+  },
+  "mounjaro": {
+    "generic": "tirzepatide",
+    "drugClass": "GIP/GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso"
+  },
+  "zepbound": {
+    "generic": "tirzepatide",
+    "drugClass": "GIP/GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "primaryUseES": "Diabetes / Pérdida de peso"
+  },
+  "eliquis": {
+    "generic": "apixaban",
+    "drugClass": "Factor Xa inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "primaryUseES": "Coágulos / Fibrilación auricular"
+  },
+  "xarelto": {
+    "generic": "rivaroxaban",
+    "drugClass": "Factor Xa inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "primaryUseES": "Coágulos / Fibrilación auricular"
+  },
+  "pradaxa": {
+    "generic": "dabigatran",
+    "drugClass": "Direct thrombin inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "primaryUseES": "Coágulos / Fibrilación auricular"
+  },
+  "zyloprim": {
+    "generic": "allopurinol",
+    "drugClass": "XO inhibitor",
+    "primaryUse": "Gout",
+    "primaryUseES": "Gota"
+  },
+  "colcrys": {
+    "generic": "colchicine",
+    "drugClass": "Anti-gout",
+    "primaryUse": "Gout",
+    "primaryUseES": "Gota"
+  },
+  "mitigare": {
+    "generic": "colchicine",
+    "drugClass": "Anti-gout",
+    "primaryUse": "Gout",
+    "primaryUseES": "Gota"
+  },
+  "uloric": {
+    "generic": "febuxostat",
+    "drugClass": "XO inhibitor",
+    "primaryUse": "Gout",
+    "primaryUseES": "Gota"
+  },
+  "reglan": {
+    "generic": "metoclopramide",
+    "drugClass": "Prokinetic",
+    "primaryUse": "Nausea / GERD",
+    "primaryUseES": "Náuseas / ERGE"
+  },
+  "bentyl": {
+    "generic": "dicyclomine",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "IBS",
+    "primaryUseES": "SII"
+  },
+  "carafate": {
+    "generic": "sucralfate",
+    "drugClass": "Mucosal protectant",
+    "primaryUse": "Ulcers",
+    "primaryUseES": "Úlceras"
+  },
+  "macrobid": {
+    "generic": "nitrofurantoin",
+    "drugClass": "Antibiotic",
+    "primaryUse": "UTI",
+    "primaryUseES": "Infección urinaria"
+  },
+  "macrodantin": {
+    "generic": "nitrofurantoin",
+    "drugClass": "Antibiotic",
+    "primaryUse": "UTI",
+    "primaryUseES": "Infección urinaria"
+  },
+  "pyridium": {
+    "generic": "phenazopyridine",
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "primaryUseES": "Dolor de infección urinaria"
+  },
+  "azo": {
+    "generic": "phenazopyridine",
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "primaryUseES": "Dolor de infección urinaria"
+  },
+  "ditropan": {
+    "generic": "oxybutynin",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "primaryUseES": "Vejiga hiperactiva"
+  },
+  "vesicare": {
+    "generic": "solifenacin",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "primaryUseES": "Vejiga hiperactiva"
+  },
+  "androgel": {
+    "generic": "testosterone",
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "primaryUseES": "Testosterona baja"
+  },
+  "testim": {
+    "generic": "testosterone",
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "primaryUseES": "Testosterona baja"
+  },
+  "axiron": {
+    "generic": "testosterone",
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "primaryUseES": "Testosterona baja"
+  },
+  "t": {
+    "generic": "testosterone",
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "primaryUseES": "Testosterona baja"
+  },
+  "estrace": {
+    "generic": "estradiol",
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause / HRT",
+    "primaryUseES": "Menopausia / TRH"
+  },
+  "vivelle-dot": {
+    "generic": "estradiol",
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause / HRT",
+    "primaryUseES": "Menopausia / TRH"
+  },
+  "climara": {
+    "generic": "estradiol",
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause / HRT",
+    "primaryUseES": "Menopausia / TRH"
+  },
+  "provera": {
+    "generic": "medroxyprogesterone",
+    "drugClass": "Progestin",
+    "primaryUse": "Menopause / Contraception",
+    "primaryUseES": "Menopausia / Anticoncepción"
+  },
+  "depo-provera": {
+    "generic": "medroxyprogesterone",
+    "drugClass": "Progestin",
+    "primaryUse": "Menopause / Contraception",
+    "primaryUseES": "Menopausia / Anticoncepción"
+  },
+  "aygestin": {
+    "generic": "norethindrone",
+    "drugClass": "Progestin",
+    "primaryUse": "Contraception",
+    "primaryUseES": "Anticoncepción"
+  },
+  "camila": {
+    "generic": "norethindrone",
+    "drugClass": "Progestin",
+    "primaryUse": "Contraception",
+    "primaryUseES": "Anticoncepción"
+  }
+}

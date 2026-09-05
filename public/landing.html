@@ -126,6 +126,12 @@
     outline-offset: 3px;
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    .hero-cta { transition: none; }
+    .support-card { transition: none; }
+    .source-card { transition: none; }
+  }
+
   .hero-note {
     font-size: 0.8rem;
     opacity: 0.7;
@@ -401,7 +407,8 @@
 
 <!-- HERO -->
 <div class="hero">
-  <img src="/logo-reversed.png" alt="RXGator - Prescription Aggregator" class="hero-logo">
+  <img src="/logo-reversed.png" alt="" class="hero-logo" width="360" height="80">
+  <h1 class="sr-only">RXGator — Prescription Price Aggregator</h1>
   <div style="margin-bottom:0.5rem;">
     <button onclick="setLang('en')" id="langEN" style="padding:0.2rem 0.6rem; background:rgba(255,255,255,0.5); color:#fff; border:1px solid rgba(255,255,255,0.4); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">English</button>
     <button onclick="setLang('es')" id="langES" style="padding:0.2rem 0.6rem; background:rgba(255,255,255,0.2); color:#fff; border:1px solid rgba(255,255,255,0.4); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">Español</button>
@@ -410,6 +417,14 @@
   <p class="hero-sub" data-i18n="heroSub">Compare prescription drug prices across 18 data sources — free, independent, and built for you.</p>
   <a href="/app" class="hero-cta" data-i18n="heroCta">Search Drug Prices</a>
   <p class="hero-note" data-i18n="heroNote">Free to use. No account required. 18 data sources.</p>
+<div class="recall-alert" role="alert" style="background:#FDF2F2; border:2px solid #C0392B; border-radius:8px; max-width:720px; margin:1rem auto 0; padding:0.9rem 1.25rem; display:flex; align-items:flex-start; gap:0.75rem;">
+  <span style="font-size:1.4rem; line-height:1;">&#9888;</span>
+  <div>
+    <strong style="color:#922B21; font-size:0.95rem;">Drug Recall Alert:</strong>
+    <span style="font-size:0.9rem; color:#2C3E50;"> FDA recalled 10 lots of compounded semaglutide (Apollo Care) for particulate contamination, Diovan (valsartan) 160mg for dissolution failure, and clindamycin oral solution for foreign particles. (Sept 1, 2026)</span>
+    <a href="/articles/fda-recall-semaglutide-valsartan-sept-2026.html" style="display:inline-block; margin-top:0.3rem; font-size:0.88rem; color:#922B21; font-weight:600; text-decoration:underline;">Learn more about these recalls &rarr;</a>
+  </div>
+</div>
 </div>
 
 </div>
@@ -432,7 +447,7 @@
         </div>
       </div>
       <p class="callout-note" data-i18n="calloutNote">Same drug. Same day. Same zip code. RXGator found the difference.</p>
-      <p style="font-size:0.75rem; color:#5D6D7E; margin-top:0.4rem;">Cash prices without insurance or coupons. Your actual cost depends on your plan, pharmacy, and whether you use a discount card — that's why RXGator searches all options.</p>
+      <p style="font-size:0.75rem; color:#5D6D7E; margin-top:0.4rem;">Cash prices without insurance or coupons. Your actual cost depends on your plan, pharmacy, and whether you use a discount card — that’s why RXGator searches all options.</p>
     </div>
 
     <div id="searchCounter" style="text-align:center; margin-bottom:1.5rem; font-size:0.9rem; color:#5D6D7E;"></div>
@@ -443,11 +458,11 @@
       }).catch(()=>{});
     </script>
 
-    <div class="section-title" data-i18n="whyTitle">Why RXGator?</div>
+    <h2 class="section-title" data-i18n="whyTitle">Why RXGator?</h2>
     <div class="section-subtitle" data-i18n="whySub">No single discount card is cheapest for every drug at every pharmacy. The winning strategy is to check them all — but who has time for that?</div>
 
     <div style="background:#EBF5FB; border-radius:10px; padding:1rem 1.5rem; margin:0 auto 1.5rem; max-width:600px; text-align:center;">
-      <p style="font-size:0.95rem; color:#1B4F72; margin:0;" data-i18n-html="whyNotGoodrx"><strong>Why not just use GoodRx?</strong> Because GoodRx only shows GoodRx prices. We search GoodRx, SingleCare, Cost Plus Drugs, Amazon, Walmart, Costco, Rx Outreach, and 6 government databases — all at once. Sometimes GoodRx wins. Sometimes it doesn't. Shouldn't you know?</p>
+      <p style="font-size:0.95rem; color:#1B4F72; margin:0;" data-i18n-html="whyNotGoodrx"><strong>Why not just use GoodRx?</strong> Because GoodRx only shows GoodRx prices. We search GoodRx, SingleCare, Cost Plus Drugs, Amazon, Walmart, Costco, Rx Outreach, and 6 government databases — all at once. Sometimes GoodRx wins. Sometimes it doesn’t. Shouldn’t you know?</p>
     </div>
 
     <p style="text-align:center; font-size:0.88rem; color:#5D6D7E; max-width:600px; margin:0 auto 1rem;" data-i18n="caregiverNote">Managing medications for a family member? RXGator helps caregivers compare prices across all platforms — search, print, share, and show results to the pharmacist in English or Spanish.</p>
@@ -471,20 +486,20 @@
     </div>
 
     <div style="text-align:center; margin-top:2rem;">
-      <img src="/screenshot.png" alt="RXGator search results showing prescription drug prices from 18 sources" style="max-width:100%; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.15);" onerror="this.style.display='none'">
+      <img src="/screenshot.png" alt="RXGator search results showing prescription drug prices from 18 sources" width="800" height="500" style="max-width:100%; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.15);" onerror="this.style.display='none'">
     </div>
   </div>
 </div>
 <div class="section section-alt">
   <div class="container">
-    <div class="section-title" data-i18n="sourcesTitle">18 Data Sources. One Search.</div>
+    <h2 class="section-title" data-i18n="sourcesTitle">18 Data Sources. One Search.</h2>
     <div class="section-subtitle" data-i18n="sourcesSub">We query government databases, pharmacy programs, and discount platforms simultaneously.</div>
 
     <div class="sources-grid">
       <div class="source-card">
         <span class="badge badge-live">Live API</span>
         <h3><a href="https://costplusdrugs.com" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:2px solid var(--teal-bright, #25CCCC);">Cost Plus Drugs</a></h3>
-        <p>Mark Cuban's transparent pricing. 2,200+ generics at cost + 15% + flat fees.</p>
+        <p>Mark Cuban’s transparent pricing. 2,200+ generics at cost + 15% + flat fees.</p>
       </div>
       <div class="source-card">
         <span class="badge badge-live">Cached</span>
@@ -524,7 +539,7 @@
 <link rel="stylesheet" href="/articles/article-style.css">
 <script src="/articles/article-widget.js"></script>
 
-    <div class="section-title" data-i18n="supportTitle">Support RXGator</div>
+    <h2 class="section-title" data-i18n="supportTitle">Support RXGator</h2>
     <div class="section-subtitle" data-i18n="supportSub">RXGator is free and always will be. Every dollar goes directly to data acquisition — adding more pharmacy platforms so more people can find cheaper medication.</div>
 
     <div class="support-grid">
@@ -591,7 +606,7 @@ const T = {
   githubBtn: { en: 'View Project', es: 'Ver Proyecto' },
   caregiverNote: { en: 'Managing medications for a family member? RXGator helps caregivers compare prices across all platforms — search, print, share, and show results to the pharmacist in English or Spanish.', es: '¿Maneja los medicamentos de un familiar? RXGator ayuda a los cuidadores a comparar precios en todas las plataformas — busque, imprima, comparta y muestre los resultados al farmacéutico en inglés o español.' },
   footerMedical: { en: 'This tool is not medical advice. Always consult your doctor or pharmacist before making changes to your medications.', es: 'Esta herramienta no es consejo médico. Siempre consulte a su médico o farmacéutico antes de hacer cambios en sus medicamentos.' },
-  whyNotGoodrx: { en: '<strong>Why not just use GoodRx?</strong> Because GoodRx only shows GoodRx prices. We search GoodRx, SingleCare, Cost Plus Drugs, Amazon, Walmart, Costco, Rx Outreach, and 6 government databases — all at once. Sometimes GoodRx wins. Sometimes it doesn\'t. Shouldn\'t you know?', es: '<strong>¿Por qué no solo usar GoodRx?</strong> Porque GoodRx solo muestra precios de GoodRx. Nosotros buscamos en GoodRx, SingleCare, Cost Plus Drugs, Amazon, Walmart, Costco, Rx Outreach y 6 bases de datos del gobierno — todo a la vez. A veces GoodRx gana. A veces no. ¿No debería saberlo?' },
+  whyNotGoodrx: { en: '<strong>Why not just use GoodRx?</strong> Because GoodRx only shows GoodRx prices. We search GoodRx, SingleCare, Cost Plus Drugs, Amazon, Walmart, Costco, Rx Outreach, and 6 government databases — all at once. Sometimes GoodRx wins. Sometimes it doesn\u2019t. Shouldn\u2019t you know?', es: '<strong>¿Por qué no solo usar GoodRx?</strong> Porque GoodRx solo muestra precios de GoodRx. Nosotros buscamos en GoodRx, SingleCare, Cost Plus Drugs, Amazon, Walmart, Costco, Rx Outreach y 6 bases de datos del gobierno — todo a la vez. A veces GoodRx gana. A veces no. ¿No debería saberlo?' },
 };
 
 function setTextSize(size) {
