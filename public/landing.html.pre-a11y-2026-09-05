@@ -375,10 +375,6 @@
   .footer a {
     color: var(--teal-bright);
     text-decoration: none;
-    display: inline-block;
-    padding: 4px 2px;
-    min-height: 24px;
-    line-height: 1.2;
   }
 
   .footer a:hover { text-decoration: underline; }
@@ -569,7 +565,7 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="footer" role="contentinfo">
+<div class="footer">
   RXGator &mdash; Prescription Aggregator &mdash; <a href="https://rxgator.info">rxgator.info</a><br>
   <a href="/">Home</a> &middot; <a href="/about.html">About</a> &middot; <a href="/faq.html">FAQ</a> &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a> &middot;
   <a href="https://github.com/mattovereem2636/rxgator">GitHub</a> &middot;
@@ -580,7 +576,7 @@
   <div style="margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid #D5D8DC;">
     <span style="font-size:1.05rem;">Need help? <a href="tel:988" style="color:#6C3483; font-weight:600;">Call or text 988</a> (crisis) &middot; <a href="tel:18006624357" style="color:#6C3483; font-weight:600;">1-800-662-4357</a> (SAMHSA) &middot; <a href="/resources.html" style="color:#6C3483; font-weight:600;">All Resources</a></span>
   </div>
-</footer>
+</div>
 
 <script>
 const T = {
