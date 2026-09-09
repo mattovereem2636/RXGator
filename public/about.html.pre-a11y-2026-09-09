@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About RXGator — Our Mission</title>
+<meta name="description" content="RXGator is a free prescription drug price aggregator built to bring transparency to medication pricing. Learn about our mission and who built it.">
+<link rel="canonical" href="https://rxgator.info/about.html">
+<meta property="og:title" content="About RXGator — Our Mission">
+<meta property="og:description" content="RXGator is a free prescription drug price aggregator built to bring transparency to medication pricing.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rxgator.info/about.html">
+<meta property="og:image" content="https://rxgator.info/logo-primary.png">
+<meta property="og:site_name" content="RXGator">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B3B5C;
+    --teal: #0C8080;
+    --teal-bright: #25CCCC;
+    --teal-light: #D0F0F0;
+    --pale: #F4F8F9;
+    --white: #FFFFFF;
+    --gray-700: #2C3E50;
+    --gray-500: #5D6D7E;
+    --green: #145A32;
+    --green-light: #D5F5E3;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0B3B5C;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-link:focus { top: 0; }
+
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--gray-700); background: var(--white); line-height: 1.7; }
+
+  .header {
+    background: linear-gradient(135deg, #0B3B5C 0%, #0E5A6F 100%);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .header a { text-decoration: none; }
+  .header img { max-width: 200px; height: auto; }
+
+  .nav {
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    background: var(--pale);
+    border-bottom: 1px solid #E0E8EC;
+    font-size: 0.85rem;
+  }
+  .nav a { color: #0A7070; text-decoration: none; font-weight: 600; margin: 0 0.75rem; }
+  .nav a:hover { text-decoration: underline; }
+
+  .content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p { margin-bottom: 1rem; font-size: 0.95rem; }
+
+  .mission-callout {
+    background: linear-gradient(135deg, #0B3B5C 0%, #0E5A6F 100%);
+    color: var(--white);
+    padding: 2rem 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .mission-callout p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .stat-card {
+    background: var(--pale);
+    border-radius: 10px;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .stat-card .num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1;
+  }
+
+  .stat-card .label {
+    font-size: 0.8rem;
+    color: var(--gray-500);
+    margin-top: 0.25rem;
+  }
+
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+  }
+
+  .principle {
+    background: var(--white);
+    border: 2px solid var(--teal-light);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .principle h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 0.4rem;
+  }
+
+  .principle p {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+  .roadmap-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+  }
+
+  .roadmap-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 0.35rem;
+    flex-shrink: 0;
+  }
+
+  .dot-done { background: var(--green); }
+  .dot-next { background: var(--teal); }
+  .dot-future { background: var(--gray-500); }
+
+  .roadmap-text {
+    font-size: 0.9rem;
+  }
+
+  .roadmap-text strong { color: var(--navy); }
+  .roadmap-text .status { font-size: 0.78rem; color: var(--gray-500); }
+
+  .about-founder {
+    background: var(--pale);
+    border-radius: 12px;
+    padding: 1.75rem 2rem;
+    margin: 2rem 0;
+  }
+
+  .about-founder h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .about-founder p {
+    font-size: 0.9rem;
+    color: var(--gray-500);
+  }
+
+  .cta-box {
+    background: var(--green-light);
+    border-radius: 12px;
+    padding: 1.75rem 2rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .cta-box h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-box p { font-size: 0.9rem; color: var(--gray-700); margin-bottom: 0.75rem; }
+
+  .cta-box a {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: var(--teal);
+    color: var(--white);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 0.25rem;
+    transition: background 0.15s;
+  }
+
+  .cta-box a:hover { background: var(--navy); }
+
+  .footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+  .footer a { color: var(--teal-bright); text-decoration: none; display: inline-block; padding: 4px 2px; min-height: 24px; line-height: 1.2; }
+  .footer a:hover { text-decoration: underline; }
+  .footer-medical { display: block; margin-top: 0.75rem; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.9); }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.4rem; }
+    .mission-callout p { font-size: 1rem; }
+    .stat-card .num { font-size: 1.6rem; }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2566350144413801" crossorigin="anonymous"></script>
+<script defer src="https://analytics.tapthemap.online/getinfo" data-website-id="5734e55c-87b7-4ada-ad28-58b1b465a20c"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="header" role="banner">
+  <a href="/"><img src="/logo-reversed.png" alt="RXGator Home"></a>
+</header>
+
+<nav class="nav" aria-label="Main navigation">
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/faq.html">FAQ</a>
+  <a href="/privacy.html" data-i18n="navPrivacy">Privacy Policy</a>
+  <a href="/terms.html" data-i18n="navTerms">Terms of Use</a>
+  <a href="https://patreon.com/RXGator" target="_blank" rel="noopener" data-i18n="navSupport">Support Us</a>
+  <a href="/app" data-i18n="navSearch">Search Drugs</a>
+  <span style="margin-left:0.25rem;">
+      <span style="font-size:0.72rem; color:var(--gray-500,#5D6D7E);">Text:</span>
+      <button onclick="setTextSize('normal')" id="sizeA" style="padding:0.1rem 0.4rem; background:var(--teal,#0C8080); color:#fff; border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.72rem; font-weight:600;" title="Normal text size">A</button>
+      <button onclick="setTextSize('large')" id="sizeAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.82rem; font-weight:600;" title="Large text">A+</button>
+      <button onclick="setTextSize('xlarge')" id="sizeAAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.92rem; font-weight:600;" title="Extra large text">A++</button>
+    </span>
+    <span style="margin-left:0.5rem;">
+    <button onclick="setLang('en')" id="langEN" style="padding:0.2rem 0.6rem; background:var(--teal); color:#fff; border:1px solid var(--teal); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">English</button>
+    <button onclick="setLang('es')" id="langES" style="padding:0.2rem 0.6rem; background:transparent; color:var(--teal); border:1px solid var(--teal); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">Español</button>
+  </span>
+</nav>
+
+<main id="main-content">
+<div class="content">
+  <h1 data-i18n="aboutTitle">About RXGator</h1>
+
+  <div class="mission-callout">
+    <p data-i18n="missionStatement">Prescription pricing should be transparent. No one should overpay for medication because they didn't know a cheaper option existed ten minutes away.</p>
+  </div>
+
+  <h2 data-i18n="theProblem">The Problem</h2>
+  <p data-i18n="problemP1">Americans overpay for prescription drugs every single day — not because cheaper options don't exist, but because no one tool shows all of them. GoodRx only shows GoodRx prices. SingleCare only shows SingleCare prices. Your pharmacist only knows their own shelf price. The information is scattered across a dozen platforms, and nobody has time to check them all.</p>
+  <p data-i18n="problemP2">The same generic medication can cost $4 at one pharmacy and $37 at another — same pill, same day, same zip code. The difference is simply knowing where to look.</p>
+
+  <h2 data-i18n="whatWeDo">What RXGator Does</h2>
+  <p data-i18n="whatWeDoP1">RXGator searches nineteen data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.</p>
+  <p data-i18n="whatWeDoP2">Every result includes step-by-step instructions explaining how to actually get that price at the pharmacy counter. No sign-up required. No data sold. Free forever.</p>
+
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="num">19</div>
+      <div class="label" data-i18n="statSources">Data Sources</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">$0</div>
+      <div class="label" data-i18n="statCost">Cost to Users</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">0</div>
+      <div class="label" data-i18n="statAds">Ads Tracking You</div>
+    </div>
+  </div>
+
+  <h2 data-i18n="principles">Our Principles</h2>
+  <div class="principles">
+    <div class="principle">
+      <h3 data-i18n="priceFirst">Price First, Always</h3>
+      <p data-i18n="priceFirstDesc">Results are ranked by lowest price. Period. Affiliate relationships, sponsorships, and partnerships never affect ranking order. The cheapest option is always first.</p>
+    </div>
+    <div class="principle">
+      <h3 data-i18n="noDataSelling">No Data Selling</h3>
+      <p data-i18n="noDataSellingDesc">Your drug searches are never sold, shared with advertisers, or used to build profiles. Read our full privacy policy — it says exactly what it means.</p>
+    </div>
+    <div class="principle">
+      <h3 data-i18n="transparent">Transparent Operations</h3>
+      <p data-i18n="transparentDesc">RXGator is community-funded through Patreon. We believe in the same transparency for our funding that we believe in for drug pricing.</p>
+    </div>
+    <div class="principle">
+      <h3 data-i18n="freeForever">Free Forever</h3>
+      <p data-i18n="freeForeverDesc">RXGator will never charge consumers to search for drug prices. The tool exists to serve the public interest, funded by the community and by affiliate commissions when users choose to fill prescriptions through our links.</p>
+    </div>
+  </div>
+
+  <h2 data-i18n="roadmap">Roadmap</h2>
+  <div class="roadmap-item">
+    <div class="roadmap-dot dot-done"></div>
+    <div class="roadmap-text"><strong><a href="https://costplusdrugs.com" target="_blank" rel="noopener" style="color:inherit;">Cost Plus Drugs</a>, <a href="https://data.medicaid.gov/datasets?keyword=nadac" target="_blank" rel="noopener" style="color:inherit;">NADAC</a>, <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="_blank" rel="noopener" style="color:inherit;">RxNorm</a>, <a href="https://medlineplus.gov" target="_blank" rel="noopener" style="color:inherit;">MedlinePlus</a>, <a href="https://open.fda.gov" target="_blank" rel="noopener" style="color:inherit;">openFDA</a>, <a href="https://www.walmart.com/cp/4-dollar-prescriptions/1078664" target="_blank" rel="noopener" style="color:inherit;">Walmart</a>, <a href="https://www.costco.com/pharmacy/" target="_blank" rel="noopener" style="color:inherit;">Costco</a></strong><br><span class="status">Live — 7 free government and public data sources</span></div>
+  </div>
+  <div class="roadmap-item">
+    <div class="roadmap-dot dot-done"></div>
+    <div class="roadmap-text"><strong><a href="https://www.singlecare.com" target="_blank" rel="noopener" style="color:inherit;">SingleCare</a> pharmacy pricing</strong><br><span class="status">Live — CVS, Walgreens, Walmart, Kroger, Costco with loyalty pricing</span></div>
+  </div>
+  <div class="roadmap-item">
+    <div class="roadmap-dot dot-next"></div>
+    <div class="roadmap-text"><strong><a href="https://www.blinkhealth.com" target="_blank" rel="noopener" style="color:inherit;">Blink Health</a> integration</strong><br><span class="status">Next — Price-match guarantee on generics, 35,000 pharmacies</span></div>
+  </div>
+  <div class="roadmap-item">
+    <div class="roadmap-dot dot-next"></div>
+    <div class="roadmap-text"><strong><a href="https://www.rxsaver.com" target="_blank" rel="noopener" style="color:inherit;">RxSaver</a> integration</strong><br><span class="status">Next — 60,000 pharmacies, advocacy savings for high-cost prescriptions</span></div>
+  </div>
+  <div class="roadmap-item">
+    <div class="roadmap-dot dot-future"></div>
+    <div class="roadmap-text"><strong>Patient assistance programs (<a href="https://www.needymeds.org" target="_blank" rel="noopener" style="color:inherit;">NeedyMeds</a>)</strong><br><span class="status">Planned — NeedyMeds integration for manufacturer copay cards and free drug programs</span></div>
+  </div>
+  <div class="roadmap-item">
+    <div class="roadmap-dot dot-future"></div>
+    <div class="roadmap-text"><strong>Insurance copay comparison</strong><br><span class="status">Planned — Compare your insurance copay vs. discount card prices</span></div>
+  </div>
+  <div class="roadmap-item">
+    <div class="roadmap-dot dot-future"></div>
+    <div class="roadmap-text"><strong>Mobile app</strong><br><span class="status">Planned — Compare prices at the pharmacy counter in real time</span></div>
+  </div>
+
+  <h2 data-i18n="whoBuilt">Who Built This</h2>
+  <div class="about-founder">
+    <div style="display:flex; gap:1.25rem; align-items:flex-start; flex-wrap:wrap;">
+      <img src="/founder.jpg" alt="Matt Overeem, Founder of RXGator" style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid var(--teal-light);" onerror="this.style.display='none'">
+      <div>
+        <h3 data-i18n="founderName">Matt Overeem — Founder</h3>
+    <p data-i18n="founderBio">Matt is a technology assessment professional with 34 years of experience in public infrastructure, GIS, and technology evaluation. He holds degrees from Northwestern University and Roosevelt University. RXGator grew from a simple question: why isn't there one tool that shows every available price for a prescription drug? The answer turned out to be that building one requires connecting government databases, pharmacy APIs, discount card platforms, and drug reference systems that were never designed to talk to each other. That's a technology assessment problem — and that's exactly Matt's background.</p>
+    <p data-i18n="founderCompany">RXGator is operated by Technology Assessment Project LLC, based in Glenview, Illinois.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h3 data-i18n="ctaTitle">Support RXGator</h3>
+    <p data-i18n="ctaDesc">Every dollar goes directly to adding more pharmacy data sources so more people can find cheaper medication.</p>
+    <a href="https://patreon.com/RXGator" target="_blank" rel="noopener">Patreon</a>
+    <a href="https://ko-fi.com/rxgator" target="_blank" rel="noopener">Ko-fi</a>
+    <a href="https://github.com/mattovereem2636/rxgator" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <h2 data-i18n="contactTitle">Contact</h2>
+  <p data-i18n="contactDesc">Questions, feedback, partnership inquiries, or media requests:</p>
+  <p>
+    <strong>Email:</strong> <a href="mailto:info@rxgator.info" style="color:var(--teal);">info@rxgator.info</a><br>
+    <strong>Web:</strong> <a href="https://rxgator.info" style="color:var(--teal);">rxgator.info</a><br>
+    <strong>GitHub:</strong> <a href="https://github.com/mattovereem2636/rxgator" style="color:var(--teal);">github.com/mattovereem2636/rxgator</a>
+  </p>
+</div>
+</main>
+
+<footer class="footer" role="contentinfo">
+  RXGator &mdash; Prescription Aggregator &mdash; <a href="https://rxgator.info">rxgator.info</a><br>
+  <a href="/">Home</a> &middot; <a href="/about.html">About</a>
+  <a href="/faq.html">FAQ</a> &middot; <a href="/privacy.html">Privacy Policy</a>
+  <a href="/terms.html">Terms of Use</a> &middot; <a href="https://github.com/mattovereem2636/rxgator">GitHub</a> &middot; <a href="https://ko-fi.com/rxgator">Ko-fi</a>
+  <span class="footer-medical">This tool is not medical advice. Always consult your doctor or pharmacist before making changes to your medications.</span>
+</footer>
+
+<script>
+const T = {
+  navPrivacy: { en: 'Privacy Policy', es: 'Privacidad' },
+  navTerms: { en: 'Terms of Use', es: 'Términos' },
+  navSupport: { en: 'Support Us', es: 'Apóyanos' },
+  navSearch: { en: 'Search Drugs', es: 'Buscar Medicamentos' },
+  aboutTitle: { en: 'About RXGator', es: 'Acerca de RXGator' },
+  missionStatement: { en: 'Prescription pricing should be transparent. No one should overpay for medication because they didn\'t know a cheaper option existed ten minutes away.', es: 'Los precios de medicamentos recetados deben ser transparentes. Nadie debería pagar de más porque no sabía que existía una opción más barata a diez minutos de distancia.' },
+  theProblem: { en: 'The Problem', es: 'El Problema' },
+  problemP1: { en: 'Americans overpay for prescription drugs every single day — not because cheaper options don\'t exist, but because no one tool shows all of them. GoodRx only shows GoodRx prices. SingleCare only shows SingleCare prices. Your pharmacist only knows their own shelf price. The information is scattered across a dozen platforms, and nobody has time to check them all.', es: 'Los estadounidenses pagan de más por medicamentos recetados todos los días — no porque no existan opciones más baratas, sino porque ninguna herramienta las muestra todas. GoodRx solo muestra precios de GoodRx. SingleCare solo muestra precios de SingleCare. Su farmacéutico solo conoce sus propios precios. La información está dispersa en una docena de plataformas y nadie tiene tiempo para revisar todas.' },
+  problemP2: { en: 'The same generic medication can cost $4 at one pharmacy and $37 at another — same pill, same day, same zip code. The difference is simply knowing where to look.', es: 'El mismo medicamento genérico puede costar $4 en una farmacia y $37 en otra — la misma pastilla, el mismo día, el mismo código postal. La diferencia es simplemente saber dónde buscar.' },
+  whatWeDo: { en: 'What RXGator Does', es: 'Qué Hace RXGator' },
+  whatWeDoP1: { en: 'RXGator searches nineteen data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.', es: 'RXGator busca en diecinueve fuentes de datos simultáneamente — bases de datos gubernamentales, programas de farmacia, plataformas de tarjetas de descuento y farmacias por correo — y devuelve todos los precios disponibles ordenados del más barato al más caro. Una búsqueda reemplaza el trabajo de verificar múltiples plataformas individualmente.' },
+  whatWeDoP2: { en: 'Every result includes step-by-step instructions explaining how to actually get that price at the pharmacy counter. No sign-up required. No data sold. Free forever.', es: 'Cada resultado incluye instrucciones paso a paso que explican cómo obtener ese precio en el mostrador de la farmacia. Sin registro. Sin venta de datos. Gratis para siempre.' },
+  statSources: { en: 'Data Sources', es: 'Fuentes de Datos' },
+  statCost: { en: 'Cost to Users', es: 'Costo para Usuarios' },
+  statAds: { en: 'Ads Tracking You', es: 'Anuncios Rastreándote' },
+  principles: { en: 'Our Principles', es: 'Nuestros Principios' },
+  priceFirst: { en: 'Price First, Always', es: 'Precio Primero, Siempre' },
+  priceFirstDesc: { en: 'Results are ranked by lowest price. Period. Affiliate relationships, sponsorships, and partnerships never affect ranking order. The cheapest option is always first.', es: 'Los resultados se clasifican por el precio más bajo. Punto. Las relaciones de afiliados, patrocinios y asociaciones nunca afectan el orden. La opción más barata siempre aparece primero.' },
+  noDataSelling: { en: 'No Data Selling', es: 'Sin Venta de Datos' },
+  noDataSellingDesc: { en: 'Your drug searches are never sold, shared with advertisers, or used to build profiles. Read our full privacy policy — it says exactly what it means.', es: 'Sus búsquedas de medicamentos nunca se venden, comparten con anunciantes ni se usan para crear perfiles. Lea nuestra política de privacidad completa — dice exactamente lo que significa.' },
+  transparent: { en: 'Transparent Operations', es: 'Operaciones Transparentes' },
+  transparentDesc: { en: 'RXGator is community-funded through Patreon. We believe in the same transparency for our funding that we believe in for drug pricing.', es: 'RXGator es financiado por la comunidad a través de Patreon. Creemos en la misma transparencia para nuestro financiamiento que para los precios de medicamentos.' },
+  freeForever: { en: 'Free Forever', es: 'Gratis Para Siempre' },
+  freeForeverDesc: { en: 'RXGator will never charge consumers to search for drug prices. The tool exists to serve the public interest, funded by the community and by affiliate commissions when users choose to fill prescriptions through our links.', es: 'RXGator nunca cobrará a los consumidores por buscar precios de medicamentos. La herramienta existe para servir al interés público, financiada por la comunidad y por comisiones de afiliados cuando los usuarios eligen surtir recetas a través de nuestros enlaces.' },
+  roadmap: { en: 'Roadmap', es: 'Hoja de Ruta' },
+  whoBuilt: { en: 'Who Built This', es: 'Quién Construyó Esto' },
+  founderName: { en: 'Matt Overeem — Founder', es: 'Matt Overeem — Fundador' },
+  founderBio: { en: 'Matt is a technology assessment professional with 34 years of experience in public infrastructure, GIS, and technology evaluation. He holds degrees from Northwestern University and Roosevelt University. RXGator grew from a simple question: why isn\'t there one tool that shows every available price for a prescription drug? The answer turned out to be that building one requires connecting government databases, pharmacy APIs, discount card platforms, and drug reference systems that were never designed to talk to each other. That\'s a technology assessment problem — and that\'s exactly Matt\'s background.', es: 'Matt es un profesional de evaluación de tecnología con 34 años de experiencia en infraestructura pública, SIG y evaluación tecnológica. Tiene títulos de Northwestern University y Roosevelt University. RXGator nació de una simple pregunta: ¿por qué no hay una herramienta que muestre todos los precios disponibles para un medicamento recetado? La respuesta resultó ser que construir una requiere conectar bases de datos gubernamentales, APIs de farmacias, plataformas de tarjetas de descuento y sistemas de referencia de medicamentos que nunca fueron diseñados para comunicarse entre sí. Eso es un problema de evaluación tecnológica — y esa es exactamente la experiencia de Matt.' },
+  founderCompany: { en: 'RXGator is operated by Technology Assessment Project LLC, based in Glenview, Illinois.', es: 'RXGator es operado por Technology Assessment Project LLC, con sede en Glenview, Illinois.' },
+  ctaTitle: { en: 'Support RXGator', es: 'Apoya a RXGator' },
+  ctaDesc: { en: 'Every dollar goes directly to adding more pharmacy data sources so more people can find cheaper medication.', es: 'Cada dólar se destina directamente a agregar más fuentes de datos de farmacias para que más personas puedan encontrar medicamentos más baratos.' },
+  contactTitle: { en: 'Contact', es: 'Contacto' },
+  contactDesc: { en: 'Questions, feedback, partnership inquiries, or media requests:', es: 'Preguntas, comentarios, consultas de asociación o solicitudes de medios:' },
+};
+
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    if (el.closest && el.closest('.article-nav')) {
+      el.style.background = b.active ? '#0d9488' : 'transparent';
+      el.style.color = b.active ? '#fff' : '#cbd5e1';
+      el.style.borderColor = b.active ? '#0d9488' : 'rgba(255,255,255,0.3)';
+    } else if (el.closest && el.closest('.header')) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
+})();
+
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  try { localStorage.setItem('rxgator_lang', lang); } catch(e) {}
+  document.getElementById('langEN').style.background = lang === 'en' ? 'var(--teal)' : 'transparent';
+  document.getElementById('langEN').style.color = lang === 'en' ? '#fff' : 'var(--teal)';
+  document.getElementById('langES').style.background = lang === 'es' ? 'var(--teal)' : 'transparent';
+  document.getElementById('langES').style.color = lang === 'es' ? '#fff' : 'var(--teal)';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (T[key]) el.textContent = T[key][lang] || T[key].en;
+  });
+}
+
+// Detect language: saved preference > browser language > English
+(function() {
+  let preferred = '';
+  try { preferred = localStorage.getItem('rxgator_lang') || ''; } catch(e) {}
+  if (!preferred) {
+    const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    preferred = browserLang.startsWith('es') ? 'es' : 'en';
+  }
+  if (preferred === 'es') {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => setLang('es'));
+    } else {
+      setLang('es');
+    }
+  }
+})();
+</script>
+</body>
+</html>

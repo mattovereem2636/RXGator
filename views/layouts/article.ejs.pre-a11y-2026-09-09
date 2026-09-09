@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include('../partials/article-head', locals) %>
+</head>
+<body>
+<%- include('../partials/nav') %>
+<main>
+<article class="article-container">
+<div class="article-meta">
+  <span class="article-tag"><%= articleSection || 'Drug Pricing' %></span>
+  <span class="article-readtime"><%= readTime || '5 min read' %></span>
+</div>
+<h1><%= title %></h1>
+<% if (typeof subtitle !== 'undefined' && subtitle) { %>
+<p class="article-subtitle"><%= subtitle %></p>
+<% } %>
+
+<%- content %>
+
+<%- include('../partials/article-cta') %>
+<% if (typeof relatedArticles !== 'undefined' && relatedArticles && relatedArticles.length > 0) { %>
+<div class="related-articles">
+  <h2>Related Articles</h2>
+  <div class="related-grid">
+    <% relatedArticles.forEach(function(ra) { %>
+    <a href="/articles/<%= ra.slug %>.html" class="related-card">
+      <div class="rc-tag"><%= ra.tag %></div>
+      <div class="rc-title"><%= ra.title %></div>
+    </a>
+    <% }); %>
+  </div>
+</div>
+<% } %>
+<%- include('../partials/disclaimer') %>
+</article>
+</main>
+<%- include('../partials/footer') %>
+</body>
+</html>

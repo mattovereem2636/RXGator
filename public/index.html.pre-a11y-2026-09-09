@@ -12,9 +12,6 @@
 <link rel="alternate" hreflang="en" href="https://rxgator.info/">
 <link rel="alternate" hreflang="es" href="https://rxgator.info/">
 <link rel="alternate" hreflang="x-default" href="https://rxgator.info/">
-<link rel="alternate" hreflang="en" href="https://rxgator.info/">
-<link rel="alternate" hreflang="es" href="https://rxgator.info/">
-<link rel="alternate" hreflang="x-default" href="https://rxgator.info/">
 <meta property="og:title" content="RXGator — Compare Prescription Drug Prices From 18+ Sources">
 <meta property="og:description" content="Free prescription price comparison across 18+ data sources. Find the lowest cost for your medication instantly.">
 <meta property="og:type" content="website">
@@ -757,13 +754,6 @@
     padding: 1.5rem;
     font-size: 0.85rem;
     color: var(--gray-500);
-  }
-
-  .footer a {
-    display: inline-block;
-    padding: 4px 2px;
-    min-height: 24px;
-    line-height: 1.2;
   }
 
   .footer a {
@@ -1702,9 +1692,6 @@ function setLang(lang) {
   esBtn.style.color = lang === 'es' ? '#0B3B5C' : '#fff';
   esBtn.style.border = lang === 'es' ? '1px solid rgba(255,255,255,0.6)' : '2px solid rgba(255,255,255,0.8)';
   esBtn.setAttribute('aria-pressed', lang === 'es' ? 'true' : 'false');
-
-  // Update page title for language
-  document.title = lang === 'es' ? 'RXGator — Comparador Gratuito de Precios de Medicamentos' : 'RXGator — Compare Prescription Drug Prices From 18+ Sources';
 
   // Update page title for language
   document.title = lang === 'es' ? 'RXGator — Comparador Gratuito de Precios de Medicamentos' : 'RXGator — Compare Prescription Drug Prices From 18+ Sources';
