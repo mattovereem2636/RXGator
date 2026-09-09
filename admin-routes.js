@@ -7,6 +7,7 @@
 
 'use strict';
 
+const crypto = require('crypto');
 const { getSingleCareCache, getGoodRxCache, saveSingleCareCache, saveGoodRxCache } = require('./cache-manager');
 const vaFss = require('./va-fss');
 const iraNegotiated = require('./ira-negotiated');
@@ -17,8 +18,27 @@ const blink = require('./blink');
 const optum = require('./optum');
 
 /**
- * Admin authentication middleware — defense in depth.
- * Nginx handles Basic Auth, but Express verifies too.
+ * Constant-time string comparison so a mismatch doesn't leak match
+ * length/position via response timing.
+ * @param {string} a
+ * @param {string} b
+ * @returns {boolean}
+ */
+function timingSafeStringEqual(a, b) {
+  const bufA = Buffer.from(String(a));
+  const bufB = Buffer.from(String(b));
+  if (bufA.length !== bufB.length) {
+    crypto.timingSafeEqual(bufA, Buffer.alloc(bufA.length));
+    return false;
+  }
+  return crypto.timingSafeEqual(bufA, bufB);
+}
+
+/**
+ * Admin authentication middleware.
+ * Validates Basic Auth credentials against ADMIN_USER/ADMIN_PASS in .env.
+ * Fails closed if those aren't configured, rather than silently accepting
+ * any non-empty username/password like before.
  * @param {Object} req - Express request.
  * @param {Object} res - Express response.
  * @param {Function} next - Express next middleware.
@@ -26,19 +46,33 @@ const optum = require('./optum');
 function requireAdmin(req, res, next) {
   const auth = req.headers['authorization'];
   if (!auth || !auth.startsWith('Basic ')) {
+    res.set('WWW-Authenticate', 'Basic realm="RxGator Admin"');
     return res.status(401).json({ error: 'Authentication required' });
   }
+
+  let user, pass;
   try {
     const decoded = Buffer.from(auth.split(' ')[1], 'base64').toString();
-    const [user, pass] = decoded.split(':');
-    if (!user || !pass) {
-      return res.status(401).json({ error: 'Invalid credentials' });
-    }
-    req.adminUser = user;
-    next();
+    [user, pass] = decoded.split(':');
   } catch (e) {
     return res.status(401).json({ error: 'Invalid authorization header' });
   }
+
+  const expectedUser = process.env.ADMIN_USER;
+  const expectedPass = process.env.ADMIN_PASS;
+  if (!expectedUser || !expectedPass) {
+    console.error('[ADMIN] ADMIN_USER/ADMIN_PASS not set in .env — refusing admin request');
+    return res.status(500).json({ error: 'Admin auth not configured' });
+  }
+
+  const userOk = !!user && timingSafeStringEqual(user, expectedUser);
+  const passOk = !!pass && timingSafeStringEqual(pass, expectedPass);
+  if (!userOk || !passOk) {
+    return res.status(401).json({ error: 'Invalid credentials' });
+  }
+
+  req.adminUser = user;
+  next();
 }
 
 /**

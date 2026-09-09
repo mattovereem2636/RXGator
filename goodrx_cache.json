@@ -152,6 +152,30 @@
         "state": null
       },
       {
+        "name": "Honeybee",
+        "goodrx_price": 2,
+        "retail_price": 59,
+        "discount_percentage": 97,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Wegmans",
+        "goodrx_price": 8.23,
+        "retail_price": 33.99,
+        "discount_percentage": 76,
+        "city": null,
+        "state": null
+      },
+      {
         "name": "HealthWarehouse",
         "goodrx_price": 8.7,
         "retail_price": null,
@@ -233,7 +257,55 @@
         "state": null
       },
       {
+        "name": "Honeybee",
+        "goodrx_price": 2,
+        "retail_price": 59,
+        "discount_percentage": 97,
+        "city": null,
+        "state": null
+      },
+      {
         "name": "Meijer",
+        "goodrx_price": 5,
+        "retail_price": 19.99,
+        "discount_percentage": 75,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 5,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Wegmans",
+        "goodrx_price": 5,
+        "retail_price": 19.99,
+        "discount_percentage": 75,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Giant",
+        "goodrx_price": 5,
+        "retail_price": 19.99,
+        "discount_percentage": 75,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "ShopRite",
+        "goodrx_price": 5,
+        "retail_price": 19.99,
+        "discount_percentage": 75,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Sav-on",
         "goodrx_price": 5,
         "retail_price": 19.99,
         "discount_percentage": 75,
@@ -307,6 +379,22 @@
       },
       {
         "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 59,
+        "discount_percentage": 97,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Honeybee",
+        "goodrx_price": 2,
+        "retail_price": 59,
+        "discount_percentage": 97,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
         "goodrx_price": 5,
         "retail_price": null,
         "discount_percentage": null,
@@ -332,6 +420,30 @@
       {
         "name": "HealthWarehouse",
         "goodrx_price": 17.1,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HealthWarehouse",
+        "goodrx_price": 18,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Albertsons",
+        "goodrx_price": 22.01,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Safeway",
+        "goodrx_price": 22.01,
         "retail_price": null,
         "discount_percentage": null,
         "city": null,
@@ -2098,6 +2210,14 @@
         "state": null
       },
       {
+        "name": "Honeybee",
+        "goodrx_price": 2,
+        "retail_price": 59,
+        "discount_percentage": 97,
+        "city": null,
+        "state": null
+      },
+      {
         "name": "Capsule",
         "goodrx_price": 3,
         "retail_price": 13,
@@ -2118,6 +2238,22 @@
         "goodrx_price": 5,
         "retail_price": 18.66,
         "discount_percentage": 73,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Kroger",
+        "goodrx_price": 5,
+        "retail_price": 21.05,
+        "discount_percentage": 76,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "HEB",
+        "goodrx_price": 5,
+        "retail_price": 21.05,
+        "discount_percentage": 76,
         "city": null,
         "state": null
       },
@@ -2223,6 +2359,95 @@
         "goodrx_price": 25,
         "retail_price": null,
         "discount_percentage": null,
+        "city": null,
+        "state": null
+      }
+    ]
+  },
+  "apixaban": {
+    "drugName": "Apixaban",
+    "dosage": "2.5mg",
+    "form": "tablet",
+    "quantity": 30,
+    "scrapedAt": "2026-09-07T18:58:00Z",
+    "pharmacies": [
+      {
+        "name": "Target",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Capsule",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "GoodRx Care",
+        "goodrx_price": 1,
+        "retail_price": 2862,
+        "discount_percentage": 100,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "CVS",
+        "goodrx_price": 2,
+        "retail_price": null,
+        "discount_percentage": null,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walgreens",
+        "goodrx_price": 2,
+        "retail_price": 59,
+        "discount_percentage": 97,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Walmart",
+        "goodrx_price": 2,
+        "retail_price": 59,
+        "discount_percentage": 97,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Publix",
+        "goodrx_price": 2,
+        "retail_price": 59,
+        "discount_percentage": 97,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Honeybee",
+        "goodrx_price": 2,
+        "retail_price": 59,
+        "discount_percentage": 97,
+        "city": null,
+        "state": null
+      },
+      {
+        "name": "Ro",
+        "goodrx_price": 25,
+        "retail_price": 1333.15,
+        "discount_percentage": 98,
         "city": null,
         "state": null
       }

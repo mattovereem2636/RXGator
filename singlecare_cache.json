@@ -2,151 +2,13 @@
   "lisinopril": {
     "drugName": "Lisinopril",
     "drugType": "Generic",
-    "isGeneric": true,
-    "url": "https://www.singlecare.com/prescription/lisinopril",
-    "ndc": "68180098003",
-    "quantity": 90,
     "lowestPrice": 9.76,
     "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 8,
-    "pharmacies": [
-      {
-        "name": "Kroger Pharmacy",
-        "price": 9.76,
-        "loyaltyPrice": 6.76,
-        "loyaltyBonusSavings": 3
-      },
-      {
-        "name": "Harris Teeter Pharmacy",
-        "price": 9.76,
-        "loyaltyPrice": 6.76,
-        "loyaltyBonusSavings": 3
-      },
-      {
-        "name": "Food Lion",
-        "price": 11.08,
-        "loyaltyPrice": 11.08,
-        "loyaltyBonusSavings": null
-      },
-      {
-        "name": "Publix",
-        "price": 18.55,
-        "loyaltyPrice": 15.55,
-        "loyaltyBonusSavings": 3
-      },
-      {
-        "name": "Walmart Pharmacy",
-        "price": 24,
-        "loyaltyPrice": 24,
-        "loyaltyBonusSavings": 0
-      },
-      {
-        "name": "Walgreens",
-        "price": 26.32,
-        "loyaltyPrice": 23.32,
-        "loyaltyBonusSavings": 3
-      },
-      {
-        "name": "CVS Pharmacy",
-        "price": 36.52,
-        "loyaltyPrice": 33.52,
-        "loyaltyBonusSavings": 3
-      }
-    ],
-    "sideEffects": [
-      "Allergic reaction: Itching or hives, swelling in your face or hands, swelling or tingling in your mouth or throat, chest tightness, trouble breathing",
-      "Fever, chills, sore throat, body aches",
-      "Change in how much or how often you urinate",
-      "Lightheadedness, dizziness, fainting",
-      "Severe stomach pain (with or without nausea or vomiting)"
-    ],
-    "priceHistory": [
-      {
-        "year": 2025,
-        "month": 6,
-        "price": 40.74,
-        "singlecareprice": 25.98,
-        "name": "Jun 2025"
-      },
-      {
-        "year": 2025,
-        "month": 7,
-        "price": 40.18,
-        "singlecareprice": 25.43,
-        "name": "Jul 2025"
-      },
-      {
-        "year": 2025,
-        "month": 8,
-        "price": 42.86,
-        "singlecareprice": 25.27,
-        "name": "Aug 2025"
-      },
-      {
-        "year": 2025,
-        "month": 9,
-        "price": 41.98,
-        "singlecareprice": 24.27,
-        "name": "Sep 2025"
-      },
-      {
-        "year": 2025,
-        "month": 10,
-        "price": 39.82,
-        "singlecareprice": 26.14,
-        "name": "Oct 2025"
-      },
-      {
-        "year": 2025,
-        "month": 11,
-        "price": 40.42,
-        "singlecareprice": 23.54,
-        "name": "Nov 2025"
-      },
-      {
-        "year": 2025,
-        "month": 12,
-        "price": 44.31,
-        "singlecareprice": 26.2,
-        "name": "Dec 2025"
-      },
-      {
-        "year": 2026,
-        "month": 1,
-        "price": 42.34,
-        "singlecareprice": 25.89,
-        "name": "Jan 2026"
-      },
-      {
-        "year": 2026,
-        "month": 2,
-        "price": 43.6,
-        "singlecareprice": 26.72,
-        "name": "Feb 2026"
-      },
-      {
-        "year": 2026,
-        "month": 3,
-        "price": 44.11,
-        "singlecareprice": 23.06,
-        "name": "Mar 2026"
-      },
-      {
-        "year": 2026,
-        "month": 4,
-        "price": 43.3,
-        "singlecareprice": 23.93,
-        "name": "Apr 2026"
-      },
-      {
-        "year": 2026,
-        "month": 5,
-        "price": 42.26,
-        "singlecareprice": 26.18,
-        "name": "May 2026"
-      }
-    ],
-    "scrapedAt": "2026-06-25T02:19:24.248Z"
+    "url": "https://www.singlecare.com/prescription/lisinopril",
+    "scrapedAt": "2026-09-07T23:56:29Z"
   },
   "simvastatin": {
     "drugName": "Simvastatin",
@@ -164,66 +26,66 @@
     "drugType": "Generic",
     "lowestPrice": 4,
     "lowestPricePharmacy": "Walmart Neighborhood Market",
-    "quantity": 30,
-    "ndc": "29300012810",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 9,
     "url": "https://www.singlecare.com/prescription/hydrochlorothiazide",
-    "scrapedAt": "2026-06-25T18:01:38.416Z"
+    "scrapedAt": "2026-09-08T00:14:26Z"
   },
   "gabapentin": {
     "drugName": "Gabapentin",
     "drugType": "Generic",
     "lowestPrice": 11.5,
     "lowestPricePharmacy": "Food Lion",
-    "quantity": 90,
-    "ndc": "69097094312",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 9,
     "url": "https://www.singlecare.com/prescription/gabapentin",
-    "scrapedAt": "2026-06-25T18:05:06.349Z"
+    "scrapedAt": "2026-09-07T23:57:19Z"
   },
   "omeprazole": {
     "drugName": "Omeprazole",
     "drugType": "Generic",
-    "lowestPrice": 8.78,
+    "lowestPrice": 7.99,
     "lowestPricePharmacy": "Kroger Pharmacy",
-    "quantity": 30,
-    "ndc": "68462039710",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 9,
     "url": "https://www.singlecare.com/prescription/omeprazole",
-    "scrapedAt": "2026-06-25T18:04:57.474Z"
+    "scrapedAt": "2026-09-07T23:57:21Z"
   },
   "meloxicam": {
     "drugName": "Meloxicam",
     "drugType": "Generic",
-    "lowestPrice": 9.33,
-    "lowestPricePharmacy": "Food Lion",
-    "quantity": 30,
-    "ndc": "68382005105",
+    "lowestPrice": 7.99,
+    "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 9,
     "url": "https://www.singlecare.com/prescription/meloxicam",
-    "scrapedAt": "2026-06-25T18:05:23.526Z"
+    "scrapedAt": "2026-09-08T00:14:21Z"
   },
   "prednisone": {
     "drugName": "Prednisone",
     "drugType": "Generic",
     "lowestPrice": 6.15,
     "lowestPricePharmacy": "Walmart Neighborhood Market",
-    "quantity": 10,
-    "ndc": "70954006020",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 9,
     "url": "https://www.singlecare.com/prescription/prednisone",
-    "scrapedAt": "2026-06-25T18:05:24.681Z"
+    "scrapedAt": "2026-09-08T00:18:16Z"
   },
   "furosemide": {
     "drugName": "Furosemide",
     "drugType": "Generic",
     "lowestPrice": 4,
     "lowestPricePharmacy": "Walmart Neighborhood Market",
-    "quantity": 30,
-    "ndc": "00054429731",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 9,
     "url": "https://www.singlecare.com/prescription/furosemide",
-    "scrapedAt": "2026-06-25T18:05:25.380Z"
+    "scrapedAt": "2026-09-08T00:18:50Z"
   },
   "allopurinol": {
     "drugName": "Allopurinol",
@@ -241,32 +103,252 @@
     "drugType": "Generic",
     "lowestPrice": 8.8,
     "lowestPricePharmacy": "Kroger Pharmacy",
-    "quantity": 60,
-    "ndc": "68382009405",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 9,
     "url": "https://www.singlecare.com/prescription/carvedilol",
-    "scrapedAt": "2026-06-25T18:18:01.464Z"
+    "scrapedAt": "2026-09-08T00:14:20Z"
   },
   "metformin": {
     "drugName": "Metformin",
     "drugType": "Generic",
     "lowestPrice": 8.32,
     "lowestPricePharmacy": "Kroger Pharmacy",
-    "quantity": 60,
-    "ndc": "65862000899",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 7,
     "url": "https://www.singlecare.com/prescription/metformin",
-    "scrapedAt": "2026-06-25T18:18:04.246Z"
+    "scrapedAt": "2026-09-07T23:56:28Z"
   },
   "amoxicillin": {
     "drugName": "Amoxicillin",
     "drugType": "Generic",
     "lowestPrice": 6.22,
     "lowestPricePharmacy": "Walmart Neighborhood Market",
-    "quantity": 21,
-    "ndc": "65862001705",
+    "quantity": null,
+    "ndc": null,
     "pharmacyCount": 9,
     "url": "https://www.singlecare.com/prescription/amoxicillin",
-    "scrapedAt": "2026-06-25T18:25:51.424Z"
+    "scrapedAt": "2026-09-08T00:18:13Z"
+  },
+  "amlodipine besylate": {
+    "drugName": "Amlodipine Besylate",
+    "drugType": "Generic",
+    "lowestPrice": 6.9,
+    "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/amlodipine-besylate",
+    "scrapedAt": "2026-09-07T23:56:46Z"
+  },
+  "levothyroxine sodium": {
+    "drugName": "Levothyroxine Sodium",
+    "drugType": "Generic",
+    "lowestPrice": 10,
+    "lowestPricePharmacy": "Walmart Neighborhood Market",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/levothyroxine-sodium",
+    "scrapedAt": "2026-09-07T23:56:51Z"
+  },
+  "atorvastatin calcium": {
+    "drugName": "Atorvastatin Calcium",
+    "drugType": "Generic",
+    "lowestPrice": 9.8,
+    "lowestPricePharmacy": "Food Lion",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 8,
+    "url": "https://www.singlecare.com/prescription/atorvastatin-calcium",
+    "scrapedAt": "2026-09-07T23:56:52Z"
+  },
+  "losartan potassium": {
+    "drugName": "Losartan Potassium",
+    "drugType": "Generic",
+    "lowestPrice": 9,
+    "lowestPricePharmacy": "Walmart Neighborhood Market",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 8,
+    "url": "https://www.singlecare.com/prescription/losartan-potassium",
+    "scrapedAt": "2026-09-07T23:57:29Z"
+  },
+  "sertraline hcl": {
+    "drugName": "Sertraline Hcl",
+    "drugType": "Generic",
+    "lowestPrice": 9.73,
+    "lowestPricePharmacy": "Food Lion",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/sertraline-hcl",
+    "scrapedAt": "2026-09-07T23:57:30Z"
+  },
+  "montelukast sodium": {
+    "drugName": "Montelukast Sodium",
+    "drugType": "Generic",
+    "lowestPrice": 12.44,
+    "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/montelukast-sodium",
+    "scrapedAt": "2026-09-07T23:57:31Z"
+  },
+  "trazodone hcl": {
+    "drugName": "Trazodone Hcl",
+    "drugType": "Generic",
+    "lowestPrice": 9,
+    "lowestPricePharmacy": "Walmart Neighborhood Market",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/trazodone-hcl",
+    "scrapedAt": "2026-09-08T00:13:39Z"
+  },
+  "escitalopram oxalate": {
+    "drugName": "Escitalopram Oxalate",
+    "drugType": "Generic",
+    "lowestPrice": 10.99,
+    "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/escitalopram-oxalate",
+    "scrapedAt": "2026-09-08T00:13:50Z"
+  },
+  "rosuvastatin calcium": {
+    "drugName": "Rosuvastatin Calcium",
+    "drugType": "Generic",
+    "lowestPrice": 14.17,
+    "lowestPricePharmacy": "Food Lion",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 8,
+    "url": "https://www.singlecare.com/prescription/rosuvastatin-calcium",
+    "scrapedAt": "2026-09-08T00:13:50Z"
+  },
+  "duloxetine hcl": {
+    "drugName": "Duloxetine Hcl",
+    "drugType": "Generic",
+    "lowestPrice": 11.17,
+    "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/duloxetine-hcl",
+    "scrapedAt": "2026-09-08T00:13:52Z"
+  },
+  "pantoprazole sodium": {
+    "drugName": "Pantoprazole Sodium",
+    "drugType": "Generic",
+    "lowestPrice": 9.58,
+    "lowestPricePharmacy": "Food Lion",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/pantoprazole-sodium",
+    "scrapedAt": "2026-09-08T00:13:55Z"
+  },
+  "tamsulosin hcl": {
+    "drugName": "Tamsulosin Hcl",
+    "drugType": "Generic",
+    "lowestPrice": 10.04,
+    "lowestPricePharmacy": "Food Lion",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/tamsulosin-hcl",
+    "scrapedAt": "2026-09-08T00:14:30Z"
+  },
+  "bupropion hcl": {
+    "drugName": "Bupropion Hcl",
+    "drugType": "Generic",
+    "lowestPrice": 12.06,
+    "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/bupropion-hcl",
+    "scrapedAt": "2026-09-08T00:14:31Z"
+  },
+  "azithromycin": {
+    "drugName": "Azithromycin",
+    "drugType": "Generic",
+    "lowestPrice": 8.93,
+    "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/azithromycin",
+    "scrapedAt": "2026-09-08T00:18:15Z"
+  },
+  "albuterol sulfate": {
+    "drugName": "Albuterol Sulfate",
+    "drugType": "Generic",
+    "lowestPrice": 11.51,
+    "lowestPricePharmacy": "Walmart Neighborhood Market",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/albuterol-sulfate",
+    "scrapedAt": "2026-09-08T00:18:27Z"
+  },
+  "fluoxetine hcl": {
+    "drugName": "Fluoxetine Hcl",
+    "drugType": "Generic",
+    "lowestPrice": 9,
+    "lowestPricePharmacy": "Walmart Neighborhood Market",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/fluoxetine-hcl",
+    "scrapedAt": "2026-09-08T00:18:30Z"
+  },
+  "glipizide": {
+    "drugName": "Glipizide",
+    "drugType": "Generic",
+    "lowestPrice": 18.26,
+    "lowestPricePharmacy": "Food Lion",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 8,
+    "url": "https://www.singlecare.com/prescription/glipizide",
+    "scrapedAt": "2026-09-08T00:18:52Z"
+  },
+  "clopidogrel bisulfate": {
+    "drugName": "Clopidogrel Bisulfate",
+    "drugType": "Generic",
+    "lowestPrice": 7.27,
+    "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/clopidogrel-bisulfate",
+    "scrapedAt": "2026-09-08T00:18:54Z"
+  },
+  "pravastatin sodium": {
+    "drugName": "Pravastatin Sodium",
+    "drugType": "Generic",
+    "lowestPrice": 17.36,
+    "lowestPricePharmacy": "Food Lion",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 8,
+    "url": "https://www.singlecare.com/prescription/pravastatin-sodium",
+    "scrapedAt": "2026-09-08T00:18:56Z"
+  },
+  "metoprolol tartrate": {
+    "drugName": "Metoprolol Tartrate",
+    "drugType": "Generic",
+    "lowestPrice": 7.13,
+    "lowestPricePharmacy": "Kroger Pharmacy",
+    "quantity": null,
+    "ndc": null,
+    "pharmacyCount": 9,
+    "url": "https://www.singlecare.com/prescription/metoprolol-tartrate",
+    "scrapedAt": "2026-09-08T00:18:57Z"
   }
 }

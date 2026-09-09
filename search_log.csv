@@ -498,3 +498,62 @@ timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source
 2026-09-04T18:00:22.460Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
 2026-09-04T19:01:44.577Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
 2026-09-05T02:02:04.792Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-05T06:00:15.467Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-05T06:00:17.069Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-05T18:00:16.393Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-05T18:00:17.623Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-06T00:47:55.814Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-06T02:02:10.793Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-06T02:02:24.369Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-06T06:00:26.491Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-06T06:00:27.495Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-06T18:00:15.154Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-06T18:00:16.121Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-06T21:23:16.902Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-07T01:59:37.773Z,"173.50.78.172","unknown","water,bacteriostatic",30,23693,8,"15.00","Rx Outreach",0,"bacteriostatic water",en
+2026-09-07T02:00:26.213Z,"173.50.78.172","unknown","lisinopril",30,23693,36,"1.00","GoodRx",0,"",en
+2026-09-07T02:01:34.268Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-07T06:00:11.367Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-07T06:00:16.298Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-07T18:00:11.459Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-07T18:00:12.325Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-07T19:01:49.721Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-08T02:02:34.688Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-08T05:58:30.095Z,"68.134.58.223","unknown","Fluticasone",30,,11,"5.00","Amazon RxPass",0,"",en
+2026-09-08T05:58:31.351Z,"68.134.58.223","unknown","Fluticasone",30,21221,11,"5.00","Amazon RxPass",0,"",en
+2026-09-08T05:59:09.086Z,"68.134.58.223","unknown","Fluticasone",90,21221,11,"5.00","Amazon RxPass",0,"",en
+2026-09-08T06:00:22.708Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-08T06:00:25.307Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-08T18:00:14.619Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-08T18:00:15.462Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-08T18:59:21.772Z,"70.109.153.115","unknown","lisinopril",30,,36,"1.00","GoodRx",0,"",en
+2026-09-08T19:00:24.609Z,"70.109.153.115","unknown","Lisinopril",90,,36,"1.00","GoodRx",0,"",en
+2026-09-08T19:00:27.901Z,"70.109.153.115","unknown","Amlodipine",90,,23,"1.20","Costco Pharmacy (est.)",0,"",en
+2026-09-08T19:00:32.622Z,"70.109.153.115","unknown","Sertraline",90,,37,"1.00","GoodRx",0,"",en
+2026-09-08T19:00:35.508Z,"70.109.153.115","unknown","Gabapentin",90,,18,"1.50","Costco Pharmacy (est.)",0,"",en
+2026-09-08T19:00:47.712Z,"70.109.153.115","unknown","lisinopril",90,04938,36,"1.00","GoodRx",0,"",en
+2026-09-08T19:01:35.614Z,"70.109.153.115","unknown","lisinopril",90,04938,36,"1.00","GoodRx",0,"",en
+2026-09-08T19:02:37.260Z,"70.109.153.115","unknown","Lisinopril",30,,36,"1.00","GoodRx",0,"",en
+2026-09-08T19:02:37.835Z,"70.109.153.115","unknown","Amlodipine",30,,23,"1.20","Costco Pharmacy (est.)",0,"",en
+2026-09-08T19:02:38.464Z,"70.109.153.115","unknown","Sertraline",30,,37,"1.00","GoodRx",0,"",en
+2026-09-08T19:02:39.003Z,"70.109.153.115","unknown","Gabapentin",30,,18,"1.50","Costco Pharmacy (est.)",0,"",en
+2026-09-08T19:03:04.979Z,"70.109.153.115","unknown","Sertraline",30,,37,"1.00","GoodRx",0,"",en
+2026-09-08T19:03:14.724Z,"70.109.153.115","unknown","Sertraline",30,04938,37,"1.00","GoodRx",0,"",en
+2026-09-08T20:00:31.245Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-08T20:00:48.088Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-08T20:00:58.379Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-08T20:01:11.264Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T02:01:50.406Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T02:02:07.435Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T06:00:15.507Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T06:00:16.411Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T16:45:14.132Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T16:46:08.582Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T16:46:34.085Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T16:47:00.199Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T17:16:17.750Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T18:00:16.532Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T18:00:18.957Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T19:01:52.303Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T19:02:08.216Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
+2026-09-09T19:02:23.053Z,"75.26.237.124","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
