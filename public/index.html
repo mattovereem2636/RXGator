@@ -414,8 +414,8 @@
   <img src="/logo-reversed.png" alt="" class="hero-logo" width="360" height="80">
   <h1 class="sr-only">RXGator — Prescription Price Aggregator</h1>
   <div style="margin-bottom:0.5rem;">
-    <button onclick="setLang('en')" id="langEN" style="padding:0.2rem 0.6rem; background:rgba(255,255,255,0.5); color:#fff; border:1px solid rgba(255,255,255,0.4); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">English</button>
-    <button onclick="setLang('es')" id="langES" style="padding:0.2rem 0.6rem; background:rgba(255,255,255,0.2); color:#fff; border:1px solid rgba(255,255,255,0.4); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;">Español</button>
+    <button onclick="setLang('en')" id="langEN" style="padding:0.4rem 0.9rem; background:#fff; color:#0B3B5C; border:2px solid #fff; border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;" aria-pressed="true">English</button>
+    <button onclick="setLang('es')" id="langES" style="padding:0.4rem 0.9rem; background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.8); border-radius:4px; cursor:pointer; font-size:0.82rem; font-weight:700;" aria-pressed="false">Español</button>
   </div>
   <p class="hero-tagline" data-i18n="tagline">One search. Every platform. The real lowest price.</p>
   <p class="hero-sub" data-i18n="heroSub">Compare prescription drug prices across 18 data sources — free, independent, and built for you.</p>
@@ -656,8 +656,12 @@ function setTextSize(size) {
 function setLang(lang) {
   document.documentElement.lang = lang;
   try { localStorage.setItem('rxgator_lang', lang); } catch(e) {}
-  document.getElementById('langEN').style.background = lang === 'en' ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
-  document.getElementById('langES').style.background = lang === 'es' ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.2)';
+  document.getElementById('langEN').style.background = lang === 'en' ? '#fff' : 'transparent';
+  document.getElementById('langEN').style.color = lang === 'en' ? '#0B3B5C' : '#fff';
+  document.getElementById('langEN').setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+  document.getElementById('langES').style.background = lang === 'es' ? '#fff' : 'transparent';
+  document.getElementById('langES').style.color = lang === 'es' ? '#0B3B5C' : '#fff';
+  document.getElementById('langES').setAttribute('aria-pressed', lang === 'es' ? 'true' : 'false');
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (T[key]) el.textContent = T[key][lang] || T[key].en;
