@@ -42,7 +42,7 @@ app.use(helmet({
   },
 }));
 app.use(express.json({ limit: '10mb' }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), { index: false }));
 require("./health-report")(app);
 require("./trumprx-prices")(app);
 require("./nadac-prices")(app);
@@ -86,7 +86,7 @@ require('./admin-routes')(app);
 
 // Serve frontend
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'app.html'));
 });
 
 

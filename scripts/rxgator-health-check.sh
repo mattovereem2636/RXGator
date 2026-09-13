@@ -206,9 +206,12 @@ log "--- CSP & Front-End Check ---"
 
 # CSP is set by helmet in Express — /app proxies to Express, static files bypass it.
 # Must check /app to see the actual CSP headers users receive.
+CSP_HEADER_COUNT=$(curl -sI --max-time 10 "$DOMAIN/app" | grep -ic "content-security-policy")
 CSP_HEADER=$(curl -sI --max-time 10 "$DOMAIN/app" | grep -i "content-security-policy" | head -1)
 
-if [ -n "$CSP_HEADER" ]; then
+if [ "$CSP_HEADER_COUNT" -gt 1 ]; then
+  fail "/app is sending $CSP_HEADER_COUNT Content-Security-Policy headers (expected 1) — likely an nginx add_header stacking on the app's own CSP (same failure mode that broke TapTheMap's maps on Sept 13). Check /etc/nginx/sites-enabled/rxgator* for a duplicate CSP line."
+elif [ -n "$CSP_HEADER" ]; then
   # Check script-src-attr
   if echo "$CSP_HEADER" | grep -qi "script-src-attr"; then
     if ! echo "$CSP_HEADER" | grep -qi "script-src-attr[^;]*unsafe-inline"; then
@@ -332,10 +335,28 @@ else
   pass "PM2 rxaggregator: online"
 fi
 
-if [ "$PM2_RESTARTS" -gt 10 ]; then
-  warn "PM2 restart count: $PM2_RESTARTS (above 10 — possible memory leak)"
+# Restart count on its own is a bad signal here: cron runs a scheduled
+# preventive restart twice daily (see /etc/cron: "45 5,17 * * * pm2 restart
+# rxaggregator"), so the raw counter climbs by design and will cross any
+# fixed threshold within days regardless of actual health. Track the delta
+# since the last check instead — only the 1 expected preventive restart
+# per check window should show up; more than that suggests real crashing.
+RESTART_STATE_FILE="/var/www/rxaggregator/.restart-state.txt"
+PREV_RESTARTS=$(cat "$RESTART_STATE_FILE" 2>/dev/null)
+if [ -z "$PREV_RESTARTS" ]; then
+  PREV_RESTARTS=$PM2_RESTARTS
+fi
+RESTART_DELTA=$((PM2_RESTARTS - PREV_RESTARTS))
+if [ "$RESTART_DELTA" -lt 0 ]; then
+  # Counter went backwards — process was reset/redeployed since last check
+  RESTART_DELTA=0
+fi
+echo "$PM2_RESTARTS" > "$RESTART_STATE_FILE"
+
+if [ "$RESTART_DELTA" -gt 3 ]; then
+  warn "PM2 restart count rose by $RESTART_DELTA since the last check (total: $PM2_RESTARTS) — more than the 1 expected preventive restart, may indicate crash-looping"
 else
-  pass "PM2 restart count: $PM2_RESTARTS"
+  pass "PM2 restart count: $PM2_RESTARTS (+$RESTART_DELTA since last check, within expected range)"
 fi
 
 PM2_MEM_HIGH=$(echo "$PM2_MEM > 300.0" | bc -l 2>/dev/null)
