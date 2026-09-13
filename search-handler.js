@@ -29,6 +29,7 @@ const rxsaver = require('./rxsaver');
 const blink = require('./blink');
 const optum = require('./optum');
 const trumprx = require('./trumprx');
+const healthwarehouse = require('./healthwarehouse');
 const fuzzySearch = require('./fuzzy-search');
 
 /**
@@ -168,6 +169,7 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
     const blinkResults = searchSourceWithFallback(blink, pricingSearchName, drugName);
     const optumResults = searchSourceWithFallback(optum, pricingSearchName, drugName);
     const trumprxResults = searchSourceWithFallback(trumprx, pricingSearchName, drugName);
+    const healthwarehouseResults = searchSourceWithFallback(healthwarehouse, pricingSearchName, drugName);
 
     const [shortageResult, recallResult] = await Promise.all([
       checkDrugShortage(pricingSearchName),
@@ -314,6 +316,17 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
       });
     }
 
+    for (const hw of healthwarehouseResults) {
+      allPrices.push({
+        source: hw.source, sourceUrl: hw.sourceUrl, drugName: hw.drugName,
+        unitPrice: hw.price, priceForQuantity: hw.price,
+        priceFor30: hw.priceFor30, priceFor90: hw.priceFor90,
+        brandGeneric: hw.rxRequired ? 'Generic' : 'OTC',
+        note: `HealthWarehouse: ${hw.price.toFixed(2)}. NABP-accredited online pharmacy, licensed in all 50 states.`,
+        dataFreshness: hw.cachedDate ? `Cached (data date ${hw.cachedDate})` : 'Cached',
+      });
+    }
+
     for (const ro of rxOutreachResults) {
       if (ro.price30Day || ro.price90Day) {
         allPrices.push({
@@ -422,6 +435,7 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
         rxSaver: { status: rxsaverResults.length > 0 ? 'found' : 'no_match', count: rxsaverResults.length },
         blinkHealth: { status: blinkResults.length > 0 ? 'found' : 'no_match', count: blinkResults.length },
         trumpRx: { status: trumprxResults.length > 0 ? 'found' : 'no_match', count: trumprxResults.length },
+        healthWarehouse: { status: healthwarehouseResults.length > 0 ? 'found' : 'no_match', count: healthwarehouseResults.length },
         fdaRecall: { status: recallResult ? 'found' : 'no_match', count: recallResult ? recallResult.length : 0 },
       },
       genericInfo: genericInfo || null,
