@@ -28,6 +28,7 @@ const rxOutreach = require('./rxoutreach');
 const rxsaver = require('./rxsaver');
 const blink = require('./blink');
 const optum = require('./optum');
+const trumprx = require('./trumprx');
 const fuzzySearch = require('./fuzzy-search');
 
 /**
@@ -166,6 +167,7 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
     const rxsaverResults = searchSourceWithFallback(rxsaver, pricingSearchName, drugName);
     const blinkResults = searchSourceWithFallback(blink, pricingSearchName, drugName);
     const optumResults = searchSourceWithFallback(optum, pricingSearchName, drugName);
+    const trumprxResults = searchSourceWithFallback(trumprx, pricingSearchName, drugName);
 
     const [shortageResult, recallResult] = await Promise.all([
       checkDrugShortage(pricingSearchName),
@@ -299,6 +301,19 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
       });
     }
 
+    for (const tx of trumprxResults) {
+      allPrices.push({
+        source: tx.source, sourceUrl: tx.sourceUrl, drugName: tx.drugName,
+        unitPrice: tx.price, priceForQuantity: tx.priceFor30,
+        priceFor30: tx.priceFor30, priceFor90: tx.priceFor90,
+        brandGeneric: tx.company ? 'Brand' : 'Generic',
+        note: tx.savingsPercent
+          ? `TrumpRx.gov: ${tx.price.toFixed(2)} (${tx.savingsPercent}% off list price ${tx.originalPrice.toFixed(2)}). Federal drug pricing platform — trumprx.gov.`
+          : `TrumpRx.gov: ${tx.price.toFixed(2)}. Federal drug pricing platform — trumprx.gov.`,
+        dataFreshness: tx.cachedDate ? `Cached ${new Date(tx.cachedDate).toLocaleDateString()}` : 'Cached',
+      });
+    }
+
     for (const ro of rxOutreachResults) {
       if (ro.price30Day || ro.price90Day) {
         allPrices.push({
@@ -406,6 +421,7 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
         vaFss: { status: vaFssResults.length > 0 ? 'found' : 'no_match', count: vaFssResults.length },
         rxSaver: { status: rxsaverResults.length > 0 ? 'found' : 'no_match', count: rxsaverResults.length },
         blinkHealth: { status: blinkResults.length > 0 ? 'found' : 'no_match', count: blinkResults.length },
+        trumpRx: { status: trumprxResults.length > 0 ? 'found' : 'no_match', count: trumprxResults.length },
         fdaRecall: { status: recallResult ? 'found' : 'no_match', count: recallResult ? recallResult.length : 0 },
       },
       genericInfo: genericInfo || null,
