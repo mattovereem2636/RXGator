@@ -18,3 +18,5 @@ search_log.csv
 health-report*.json
 .env.healthcheck
 .env.healthcheck
+.restart-state.txt
+*.bak-*
