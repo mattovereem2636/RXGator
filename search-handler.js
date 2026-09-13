@@ -31,6 +31,35 @@ const optum = require('./optum');
 const fuzzySearch = require('./fuzzy-search');
 
 /**
+ * Query a pricing-source module with the RxNorm/static-map-resolved name,
+ * and fall back to the original (pre-resolution) search term if that
+ * yields nothing. Needed because some brand-name drugs (e.g. Mounjaro,
+ * Ozempic, Zepbound, Jardiance) have no marketed generic, so the source's
+ * cache is indexed under the brand name — but the resolved pricing name
+ * is the generic ingredient, which never matches. Results are merged and
+ * deduped so normal generic-name searches are unaffected.
+ * @param {{search: function(string): Array}} sourceModule
+ * @param {string} primaryName - resolved (generic where applicable) name
+ * @param {string} fallbackName - original search term before resolution
+ * @returns {Array}
+ */
+function searchSourceWithFallback(sourceModule, primaryName, fallbackName) {
+  const primary = sourceModule.search(primaryName) || [];
+  if (!fallbackName || fallbackName.toLowerCase().trim() === primaryName.toLowerCase().trim()) {
+    return primary;
+  }
+  const fallback = sourceModule.search(fallbackName) || [];
+  if (fallback.length === 0) return primary;
+  const seen = new Set(primary.map(r => JSON.stringify(r)));
+  const merged = primary.slice();
+  for (const r of fallback) {
+    const key = JSON.stringify(r);
+    if (!seen.has(key)) { merged.push(r); seen.add(key); }
+  }
+  return merged;
+}
+
+/**
  * Log a search to the analytics CSV file.
  * @param {Object} req - Express request object.
  * @param {string} drug - Drug name searched.
@@ -130,13 +159,13 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
       queryMedicarePartD(pricingSearchName),
     ]);
 
-    const rxOutreachResults = rxOutreach.search(pricingSearchName);
-    const vaFssResults = vaFss.search(pricingSearchName);
-    const iraResults = iraNegotiated.search(pricingSearchName);
-    const texasWacResults = texasWac.search(pricingSearchName);
-    const rxsaverResults = rxsaver.search(pricingSearchName) || [];
-    const blinkResults = blink.search(pricingSearchName) || [];
-    const optumResults = optum.search(pricingSearchName) || [];
+    const rxOutreachResults = searchSourceWithFallback(rxOutreach, pricingSearchName, drugName);
+    const vaFssResults = searchSourceWithFallback(vaFss, pricingSearchName, drugName);
+    const iraResults = searchSourceWithFallback(iraNegotiated, pricingSearchName, drugName);
+    const texasWacResults = searchSourceWithFallback(texasWac, pricingSearchName, drugName);
+    const rxsaverResults = searchSourceWithFallback(rxsaver, pricingSearchName, drugName);
+    const blinkResults = searchSourceWithFallback(blink, pricingSearchName, drugName);
+    const optumResults = searchSourceWithFallback(optum, pricingSearchName, drugName);
 
     const [shortageResult, recallResult] = await Promise.all([
       checkDrugShortage(pricingSearchName),

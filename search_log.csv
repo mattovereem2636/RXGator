@@ -587,3 +587,4 @@ timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source
 2026-09-13T19:07:56.574Z,"74.208.32.197","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
 2026-09-13T19:09:22.408Z,"160.79.106.136","unknown","metformin",30,,37,"0.90","Costco Pharmacy (est.)",0,"",en
 2026-09-13T20:11:01.818Z,"::ffff:127.0.0.1","unknown","mounjaro",30,60025,0,"","",0,"",en
+2026-09-13T20:15:10.316Z,"::ffff:127.0.0.1","unknown","mounjaro",30,60025,0,"","",0,"",en
