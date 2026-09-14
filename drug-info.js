@@ -67,6 +67,7 @@ async function queryOpenFDA(drugName) {
 
     return Array.from(seen.values());
   } catch (err) {
+    if (err.message && err.message.includes('404')) return [];
     console.error('openFDA API error:', err.message);
     return [];
   }
