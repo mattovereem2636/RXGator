@@ -596,3 +596,4 @@ timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source
 2026-09-13T20:30:18.851Z,"::ffff:127.0.0.1","unknown","zepbound",30,60025,2,"299.00","TrumpRx.gov",0,"",en
 2026-09-13T20:36:29.656Z,"::ffff:127.0.0.1","unknown","metformin",30,60025,43,"0.09","HealthWarehouse",0,"",en
 2026-09-13T20:36:30.165Z,"::ffff:127.0.0.1","unknown","lisinopril",30,60025,42,"0.08","HealthWarehouse",0,"",en
+2026-09-14T02:01:49.690Z,"75.26.237.124","unknown","metformin",30,,43,"0.09","HealthWarehouse",0,"",en
