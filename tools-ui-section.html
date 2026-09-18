@@ -1,0 +1,67 @@
+<style>
+  .tools-section { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+  .tools-section h2 { color: var(--navy); font-size: 1.4rem; margin-bottom: 1rem; text-align: center; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+  .tool-card { background: var(--white); border: 1px solid var(--gray-300); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.25rem; display: flex; flex-direction: column; }
+  .tool-card h3 { color: var(--navy); font-size: 1.05rem; margin-bottom: 0.4rem; }
+  .tool-desc { color: var(--gray-500); font-size: 0.88rem; margin-bottom: 0.9rem; line-height: 1.4; }
+  .tool-form { display: flex; gap: 0.5rem; }
+  .tool-form-stacked { flex-direction: column; }
+  .tool-form label.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  .tool-form input { flex: 1; padding: 0.6rem 0.7rem; border: 1px solid var(--gray-border); border-radius: 6px; font-size: 0.92rem; min-width: 0; }
+  .tool-form input:focus { outline: 3px solid var(--blue-bright); outline-offset: 1px; }
+  .btn-tool { background: var(--blue); color: var(--white); border: none; padding: 0.6rem 1rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.92rem; white-space: nowrap; }
+  .btn-tool:hover { background: var(--blue-bright); }
+  .btn-tool:focus { outline: 3px solid var(--orange); outline-offset: 1px; }
+  .tool-results { margin-top: 0.9rem; font-size: 0.88rem; color: var(--gray-700); max-height: 260px; overflow-y: auto; }
+  .tool-result-item { padding: 0.6rem 0; border-bottom: 1px solid var(--gray-100); }
+  .tool-result-item:last-child { border-bottom: none; }
+  .tool-badge-discount { display: inline-block; background: var(--green-light); color: var(--green-dark); font-size: 0.72rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 4px; margin-left: 0.4rem; }
+  .tool-severity-severe, .tool-severity-major { color: var(--red); font-weight: 700; }
+  .tool-severity-moderate { color: var(--orange-dark); font-weight: 700; }
+  .tool-severity-unknown { color: var(--gray-500); font-weight: 700; }
+  .tool-error { color: var(--red); font-size: 0.85rem; }
+  .tool-loading { color: var(--gray-400); font-style: italic; }
+  @media (max-width: 600px) {
+    .tool-form { flex-direction: column; }
+  }
+</style>
+<section class="tools-section" aria-labelledby="toolsHeading">
+  <h2 id="toolsHeading">More Ways to Save</h2>
+  <div class="tools-grid">
+    <div class="tool-card" id="pharmacyTool">
+      <h3>📍 Find a Nearby Pharmacy</h3>
+      <p class="tool-desc">Search pharmacies near your ZIP code, including free and low-cost generic programs.</p>
+      <div class="tool-form">
+        <label for="pharmZipInput" class="sr-only">ZIP code</label>
+        <input type="text" id="pharmZipInput" placeholder="ZIP code" maxlength="5" inputmode="numeric" pattern="[0-9]{5}">
+        <button class="btn-tool" onclick="rxgFindPharmacies()">Search</button>
+      </div>
+      <div id="pharmResults" class="tool-results" role="region" aria-label="Pharmacy search results" aria-live="polite"></div>
+    </div>
+
+    <div class="tool-card" id="alertsTool">
+      <h3>🔔 Get Price Drop Alerts</h3>
+      <p class="tool-desc">We will email you when the price of your medication drops.</p>
+      <div class="tool-form tool-form-stacked">
+        <label for="alertDrugInput" class="sr-only">Drug name</label>
+        <input type="text" id="alertDrugInput" placeholder="Drug name (e.g. metformin)">
+        <label for="alertEmailInput" class="sr-only">Email address</label>
+        <input type="email" id="alertEmailInput" placeholder="you@example.com">
+        <button class="btn-tool" onclick="rxgSubscribeAlert()">Notify Me</button>
+      </div>
+      <div id="alertResults" class="tool-results" role="region" aria-label="Price alert subscription status" aria-live="polite"></div>
+    </div>
+
+    <div class="tool-card" id="interactionsTool">
+      <h3>⚠️ Check Drug Interactions</h3>
+      <p class="tool-desc">Enter 2 or more medications to check for known interactions. Not medical advice.</p>
+      <div class="tool-form tool-form-stacked">
+        <label for="interactDrugsInput" class="sr-only">Drug names, comma-separated</label>
+        <input type="text" id="interactDrugsInput" placeholder="e.g. metformin, lisinopril">
+        <button class="btn-tool" onclick="rxgCheckInteractions()">Check Interactions</button>
+      </div>
+      <div id="interactResults" class="tool-results" role="region" aria-label="Drug interaction results" aria-live="polite"></div>
+    </div>
+  </div>
+</section>

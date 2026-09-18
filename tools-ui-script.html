@@ -1,0 +1,102 @@
+<script>
+function rxgEsc(str) {
+  const div = document.createElement('div');
+  div.textContent = str === null || str === undefined ? '' : String(str);
+  return div.innerHTML;
+}
+
+async function rxgFindPharmacies() {
+  const zip = document.getElementById('pharmZipInput').value.trim();
+  const resultsEl = document.getElementById('pharmResults');
+  if (!/^\d{5}$/.test(zip)) {
+    resultsEl.innerHTML = '<div class="tool-error">Enter a valid 5-digit ZIP code.</div>';
+    return;
+  }
+  resultsEl.innerHTML = '<div class="tool-loading">Searching...</div>';
+  try {
+    const res = await fetch('/api/pharmacies?zip=' + encodeURIComponent(zip) + '&limit=10');
+    const data = await res.json();
+    if (!data.pharmacies || data.pharmacies.length === 0) {
+      resultsEl.innerHTML = '<div class="tool-error">No pharmacies found for that ZIP code.</div>';
+      return;
+    }
+    let html = '';
+    for (const p of data.pharmacies) {
+      html += '<div class="tool-result-item"><strong>' + rxgEsc(p.name) + '</strong>';
+      if (p.isDiscountChain) html += '<span class="tool-badge-discount">' + rxgEsc(p.discountProgram) + '</span>';
+      html += '<br>' + rxgEsc(p.address || '');
+      if (p.city) html += ', ' + rxgEsc(p.city) + ', ' + rxgEsc(p.state || '');
+      if (p.phone) html += '<br>' + rxgEsc(p.phone);
+      html += '</div>';
+    }
+    resultsEl.innerHTML = html;
+  } catch (err) {
+    resultsEl.innerHTML = '<div class="tool-error">Something went wrong. Please try again.</div>';
+  }
+}
+
+async function rxgSubscribeAlert() {
+  const drug = document.getElementById('alertDrugInput').value.trim();
+  const email = document.getElementById('alertEmailInput').value.trim();
+  const resultsEl = document.getElementById('alertResults');
+  if (!drug) {
+    resultsEl.innerHTML = '<div class="tool-error">Enter a drug name.</div>';
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    resultsEl.innerHTML = '<div class="tool-error">Enter a valid email address.</div>';
+    return;
+  }
+  resultsEl.innerHTML = '<div class="tool-loading">Subscribing...</div>';
+  try {
+    const res = await fetch('/api/alerts/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, drug: drug })
+    });
+    const data = await res.json();
+    if (data.status === 'subscribed' || data.status === 'already_subscribed') {
+      let priceText = '';
+      if (data.currentPrice) priceText = ' Current lowest price: $' + Number(data.currentPrice).toFixed(2) + '.';
+      resultsEl.innerHTML = '<div class="tool-result-item">You are subscribed to price alerts for <strong>' + rxgEsc(drug) + '</strong>.' + priceText + '</div>';
+    } else {
+      resultsEl.innerHTML = '<div class="tool-error">' + rxgEsc(data.error || 'Something went wrong.') + '</div>';
+    }
+  } catch (err) {
+    resultsEl.innerHTML = '<div class="tool-error">Something went wrong. Please try again.</div>';
+  }
+}
+
+async function rxgCheckInteractions() {
+  const raw = document.getElementById('interactDrugsInput').value.trim();
+  const resultsEl = document.getElementById('interactResults');
+  const drugs = raw.split(',').map(function(s) { return s.trim(); }).filter(Boolean);
+  if (drugs.length < 2) {
+    resultsEl.innerHTML = '<div class="tool-error">Enter at least 2 drug names, separated by commas.</div>';
+    return;
+  }
+  resultsEl.innerHTML = '<div class="tool-loading">Checking...</div>';
+  try {
+    const res = await fetch('/api/interactions?drugs=' + encodeURIComponent(drugs.join(',')));
+    const data = await res.json();
+    if (data.error) {
+      resultsEl.innerHTML = '<div class="tool-error">' + rxgEsc(data.error) + '</div>';
+      return;
+    }
+    if (!data.interactions || data.interactions.length === 0) {
+      resultsEl.innerHTML = '<div class="tool-result-item">No known interactions found between: ' + rxgEsc(drugs.join(', ')) + '.</div><div class="tool-error" style="margin-top:0.5rem;">' + rxgEsc(data.disclaimer || '') + '</div>';
+      return;
+    }
+    const sevClass = { SEVERE: 'tool-severity-severe', MAJOR: 'tool-severity-major', MODERATE: 'tool-severity-moderate', UNKNOWN: 'tool-severity-unknown' };
+    let html = '';
+    for (const i of data.interactions) {
+      html += '<div class="tool-result-item"><span class="' + (sevClass[i.severity] || 'tool-severity-unknown') + '">' + rxgEsc(i.severity) + '</span>: ' + rxgEsc(i.drug) + ' + ' + rxgEsc(i.interactsWith) + '<br>';
+      html += '<span style="font-size:0.82rem;color:var(--gray-500);">' + rxgEsc(i.excerpt || '') + '</span></div>';
+    }
+    html += '<div class="tool-error" style="margin-top:0.5rem;">' + rxgEsc(data.disclaimer || '') + '</div>';
+    resultsEl.innerHTML = html;
+  } catch (err) {
+    resultsEl.innerHTML = '<div class="tool-error">Something went wrong. Please try again.</div>';
+  }
+}
+</script>

@@ -673,3 +673,8 @@ timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source
 2026-09-18T01:25:10.536Z,"74.208.32.197","unknown","olmesartan",30,,22,"0.31","HealthWarehouse",0,"",en
 2026-09-18T01:30:48.349Z,"74.208.32.197","unknown","vibegron",30,,0,"","",0,"gemtesa",en
 2026-09-18T01:30:48.957Z,"74.208.32.197","unknown","darolutamide",30,,0,"","",0,"nubeca",en
+2026-09-18T01:39:02.823Z,"74.208.32.197","unknown","lisinopril",30,,42,"0.08","HealthWarehouse",0,"",en
+2026-09-18T01:41:25.738Z,"74.208.32.197","unknown","lisinopril",30,,49,"0.08","HealthWarehouse",0,"",en
+2026-09-18T02:07:19.037Z,"160.79.106.136","unknown","metformin",30,,50,"0.09","HealthWarehouse",0,"",en
+2026-09-18T02:15:33.420Z,"::ffff:127.0.0.1","unknown","metformin",30,60025,50,"0.09","HealthWarehouse",0,"",en
+2026-09-18T02:15:57.795Z,"::ffff:127.0.0.1","unknown","metformin",30,60025,50,"0.09","HealthWarehouse",0,"",en
