@@ -1,0 +1,14 @@
+{
+  "source": "Inside Rx",
+  "sourceUrl": "https://insiderx.com",
+  "generatedAt": "2026-09-17T00:00:00.000Z",
+  "drugCount": 0,
+  "priceCount": 0,
+  "description": "PLACEHOLDER — empty until the Inside Rx Apify actor runs (headless-browser, ZIP-dependent pricing — see insiderx.js header comment). Shape matches blink_cache.json/rxsaver_cache.json: drugs keyed by slug, each with a prices[] array. cardInfo is Inside Rx's static, nationwide discount-card identifiers (same for every drug/pharmacy) — capture once, not per drug, then fill in below.",
+  "cardInfo": {
+    "bin": "REPLACE_WITH_REAL_BIN",
+    "pcn": "REPLACE_WITH_REAL_PCN",
+    "group": "REPLACE_WITH_REAL_GROUP"
+  },
+  "drugs": {}
+}

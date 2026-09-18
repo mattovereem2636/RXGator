@@ -30,7 +30,6 @@ const blink = require('./blink');
 const optum = require('./optum');
 const trumprx = require('./trumprx');
 const healthwarehouse = require('./healthwarehouse');
-const insiderx = require('./insiderx');
 const fuzzySearch = require('./fuzzy-search');
 
 /**
@@ -171,7 +170,6 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
     const optumResults = searchSourceWithFallback(optum, pricingSearchName, drugName);
     const trumprxResults = searchSourceWithFallback(trumprx, pricingSearchName, drugName);
     const healthwarehouseResults = searchSourceWithFallback(healthwarehouse, pricingSearchName, drugName);
-    const insiderxResults = searchSourceWithFallback(insiderx, pricingSearchName, drugName);
 
     const [shortageResult, recallResult] = await Promise.all([
       checkDrugShortage(pricingSearchName),
@@ -329,19 +327,6 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
       });
     }
 
-    for (const ix of insiderxResults) {
-      allPrices.push({
-        source: ix.source, sourceUrl: ix.sourceUrl, drugName: ix.drugName,
-        strength: ix.strength, form: ix.form,
-        unitPrice: ix.quantity ? +(ix.price / parseInt(ix.quantity)).toFixed(4) : null,
-        priceForQuantity: ix.price, priceFor30: ix.price,
-        priceFor90: +(ix.price * 3).toFixed(2),
-        brandGeneric: 'Generic', pharmacy: ix.pharmacy,
-        note: `Inside Rx discount card: \$${ix.price.toFixed(2)} at ${ix.pharmacy} (${ix.quantity || 30}-count). NOT INSURANCE — cannot be combined with insurance, copay assistance, Medicare, Medicaid, or TRICARE. Show the card at the pharmacy counter.`,
-        dataFreshness: ix.cachedDate ? `Cached ${new Date(ix.cachedDate).toLocaleDateString()}` : 'Cached',
-      });
-    }
-
     for (const ro of rxOutreachResults) {
       if (ro.price30Day || ro.price90Day) {
         allPrices.push({
@@ -451,7 +436,6 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
         blinkHealth: { status: blinkResults.length > 0 ? 'found' : 'no_match', count: blinkResults.length },
         trumpRx: { status: trumprxResults.length > 0 ? 'found' : 'no_match', count: trumprxResults.length },
         healthWarehouse: { status: healthwarehouseResults.length > 0 ? 'found' : 'no_match', count: healthwarehouseResults.length },
-        insideRx: { status: insiderxResults.length > 0 ? 'found' : 'no_match', count: insiderxResults.length },
         fdaRecall: { status: recallResult ? 'found' : 'no_match', count: recallResult ? recallResult.length : 0 },
       },
       genericInfo: genericInfo || null,
@@ -480,6 +464,6 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
 
   // Health check
   app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2026 (pharmacy costs, 6327 drugs)', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)', 'FedRx (govt deals, 841 drugs)', 'HealthWarehouse (online, 930 drugs)', 'Inside Rx (cached)'] });
+    res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2026 (pharmacy costs, 6327 drugs)', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)', 'FedRx (govt deals, 841 drugs)', 'HealthWarehouse (online, 930 drugs)'] });
   });
 };
