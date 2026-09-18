@@ -20,3 +20,4 @@ health-report*.json
 .env.healthcheck
 .restart-state.txt
 *.bak-*
+*.pre-*

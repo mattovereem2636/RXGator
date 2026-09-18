@@ -2792,16 +2792,42 @@
       "norethindrne"
     ]
   },
-  "tirzepatide",
-  "mounjaro",
-  "zepbound",
-  "tirzepatide injection",
-  "tirz",
-  "semaglutide",
-  "ozempic",
-  "wegovy",
-  "rybelsus",
-  "semaglutide injection",
-  "semaglutide oral",
-  "sema"
+  {
+    "id": "1132",
+    "generic": "vibegron",
+    "brands": [
+      "Gemtesa"
+    ],
+    "aliases": [
+      "gemtesa"
+    ],
+    "drugClass": "Beta-3 adrenergic agonist",
+    "primaryUse": "Overactive bladder",
+    "primaryUseES": "Vejiga hiperactiva",
+    "hasGeneric": false,
+    "commonMisspellings": [
+      "vibegon",
+      "vibegrom",
+      "vibegran"
+    ]
+  },
+  {
+    "id": "1133",
+    "generic": "darolutamide",
+    "brands": [
+      "Nubeqa"
+    ],
+    "aliases": [
+      "nubeqa"
+    ],
+    "drugClass": "Androgen receptor inhibitor",
+    "primaryUse": "Prostate cancer",
+    "primaryUseES": "Cáncer de próstata",
+    "hasGeneric": false,
+    "commonMisspellings": [
+      "nubeca",
+      "darolutimide",
+      "darolutomide"
+    ]
+  }
 ]
