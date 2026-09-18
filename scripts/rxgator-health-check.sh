@@ -46,7 +46,7 @@ REPORT=""
 
 # Helper: log a line
 log() {
-  echo "$1" >> "$LOG_FILE"
+  echo -e "$1" >> "$LOG_FILE"
   REPORT="$REPORT$1\n"
 }
 
@@ -240,8 +240,8 @@ else
   warn "No CSP header found on /app — helmet may not be active. Check Express middleware."
 fi
 
-# Verify Fuse.js script tag exists in index.html (served locally as /fuse.min.js)
-FUSE_TAG=$(grep -i 'fuse' "$APP_DIR/public/index.html" | grep -o 'src="[^"]*"' 2>/dev/null)
+# Verify Fuse.js script tag exists in app.html (served locally as /fuse.min.js)
+FUSE_TAG=$(grep -i 'fuse' "$APP_DIR/public/app.html" | grep -o 'src="[^"]*"' 2>/dev/null)
 if [ -n "$FUSE_TAG" ]; then
   pass "Fuse.js script tag present: $FUSE_TAG"
   # Also verify the actual file exists on disk
@@ -252,7 +252,7 @@ if [ -n "$FUSE_TAG" ]; then
     fail "Fuse.js script tag found but file missing at $FUSE_FILE — autocomplete is broken"
   fi
 else
-  warn "Fuse.js script tag not found in index.html — autocomplete may be broken"
+  warn "Fuse.js script tag not found in app.html — autocomplete may be broken"
 fi
 
 # ---------------------------------------------------------
@@ -377,7 +377,7 @@ fi
 # Error log scan
 log ""
 log "--- Error Log Scan (last 50 lines) ---"
-ERR_LOG=$(pm2 logs "$PM2_PROCESS" --err --nostream --lines 50 2>&1 | grep -v "^$" | grep -v "TAILING")
+ERR_LOG=$(pm2 logs "$PM2_PROCESS" --err --nostream --lines 50 2>&1 | grep -v "^$" | grep -v "TAILING" | grep -v "last 50 lines:")
 CRASH_COUNT=$(echo "$ERR_LOG" | grep -ci "error\|crash\|exception\|ECONNREFUSED\|ENOMEM" 2>/dev/null)
 if [ "$CRASH_COUNT" -gt 0 ]; then
   # Get unique error patterns
