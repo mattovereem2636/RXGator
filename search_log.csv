@@ -671,3 +671,5 @@ timestamp,ip,user,drug,quantity,zip,sources_hit,lowest_price,lowest_source
 2026-09-18T01:25:09.057Z,"74.208.32.197","unknown","zepbound",30,,2,"299.00","TrumpRx.gov",0,"",en
 2026-09-18T01:25:09.640Z,"74.208.32.197","unknown","jardiance",30,,1,"8.33","Rx Outreach",0,"",en
 2026-09-18T01:25:10.536Z,"74.208.32.197","unknown","olmesartan",30,,22,"0.31","HealthWarehouse",0,"",en
+2026-09-18T01:30:48.349Z,"74.208.32.197","unknown","vibegron",30,,0,"","",0,"gemtesa",en
+2026-09-18T01:30:48.957Z,"74.208.32.197","unknown","darolutamide",30,,0,"","",0,"nubeca",en
