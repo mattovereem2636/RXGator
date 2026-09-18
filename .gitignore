@@ -21,3 +21,4 @@ health-report*.json
 .restart-state.txt
 *.bak-*
 *.pre-*
+data/alerts_subscribers.json
