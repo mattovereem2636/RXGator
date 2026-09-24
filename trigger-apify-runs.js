@@ -20,13 +20,21 @@ const { execSync } = require('child_process');
 const path = require('path');
 
 // --- Configuration ---
+// NOTE (2026-09-18): these run as Actor TASKS, not bare actors. Both
+// apify/web-scraper and apify/playwright-scraper require actor-specific
+// input (startUrls, pageFunction, etc.) that only lived as each actor's
+// last-used-input in the Apify console — a bare POST to /v2/acts/{id}/runs
+// with an empty body gets rejected with HTTP 400 "Field input.startUrls is
+// required". Fixed by saving that input as a named Task for each actor
+// (Apify Console -> open the actor -> "Save as a new task"), which bakes
+// the input in so the task can be triggered with just a token.
 const ACTORS = {
   rxsaver: {
-    actorId: 'apify~web-scraper',
+    taskId: 'definable_denim~rxsaver-scraper-rxgator',
     label: 'Web Scraper (RxSaver)'
   },
   blink: {
-    actorId: 'apify~playwright-scraper',
+    taskId: 'definable_denim~blink-health-scraper-rxgator',
     label: 'Playwright Scraper (Blink Health)'
   }
 };
@@ -78,8 +86,8 @@ function httpsGet(url) {
 }
 
 // --- Trigger a run ---
-async function triggerRun(actorId, token) {
-  const url = `https://api.apify.com/v2/acts/${actorId}/runs?token=${token}`;
+async function triggerRun(taskId, token) {
+  const url = `https://api.apify.com/v2/actor-tasks/${taskId}/runs?token=${token}`;
   const result = await httpsRequest(url, { method: 'POST', headers: { 'Content-Type': 'application/json' } }, '{}');
 
   if (result.status !== 201) {
@@ -141,7 +149,7 @@ async function main() {
   for (const [key, actor] of Object.entries(ACTORS)) {
     try {
       console.log(`  Triggering ${actor.label}...`);
-      const run = await triggerRun(actor.actorId, token);
+      const run = await triggerRun(actor.taskId, token);
       runs[key] = { runId: run.id, label: actor.label };
       console.log(`  Started run: ${run.id}`);
     } catch (err) {

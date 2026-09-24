@@ -22,3 +22,5 @@ health-report*.json
 *.bak-*
 *.pre-*
 data/alerts_subscribers.json
+# Added in v1.4.3: secrets, backups, logs with visitor IPs
+backups/

@@ -356,7 +356,12 @@ async function main() {
       console.log(`  Run ID: ${run.id}`);
       console.log(`  Started: ${run.startedAt}`);
       console.log(`  Finished: ${run.finishedAt}`);
-      console.log(`  Results: ${run.stats.itemCount || 'unknown'}`);
+      // NOTE (2026-09-18): Run objects (list or detail endpoint) do not carry
+      // an itemCount field on `stats` — that only exists on the Dataset
+      // object. Previously this crashed here (list endpoint has no `stats`
+      // at all) or silently reported 0 (detail endpoint has `stats` but no
+      // `itemCount` on it). Actual item count is printed below after the
+      // dataset download, which is the real source of truth.
 
       // 2. Download dataset
       console.log('  Downloading dataset...');

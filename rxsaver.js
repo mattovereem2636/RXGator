@@ -87,6 +87,15 @@ function search(drugName) {
         }
     }
 
+    if (!drug) {
+        // Brand-only drugs (e.g. vibegron) are indexed under the brand name (e.g. gemtesa).
+        const brandAlias = require('./brand-alias').brandAliasFor(query);
+        if (brandAlias) {
+            const brandQuery = brandAlias.replace(/[^a-z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
+            drug = searchIndex.get(brandQuery) || searchIndex.get(brandQuery.replace(/\s+/g, '-'));
+        }
+    }
+
     if (!drug) return null;
 
     // Return all pharmacy prices as individual result entries

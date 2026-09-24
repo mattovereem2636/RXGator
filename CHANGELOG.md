@@ -4,6 +4,65 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.4.3] — 2026-09-24 (Secret Hygiene)
+
+### Security
+- Removed a hard-coded Apify API token from `refresh-caches.js`. The script now reads `APIFY_TOKEN_REFRESH_CACHES` from the environment or `/var/www/rxaggregator/.env`. GitHub push protection blocked the commit that contained the token, so the token was never published.
+
+### Changed
+- `.gitignore` now excludes `.env`, `*.bak`, `*.tar.gz`, `backups/`, and `search_log.csv`. The search log holds visitor IP addresses and no longer belongs in version control. `data/backups/` is untracked for the same reason.
+
+---
+
+## [1.4.2] — 2026-09-24 (Brand-Only Cache Lookup Fix)
+
+### Added
+- `brand-alias.js` — maps a brand-only generic to its brand name. An alias exists only when the dictionary entry has `hasGeneric: false` and exactly one brand, so multi-brand drugs and drugs with a real generic are never aliased.
+
+### Fixed
+- Cache lookups missed brand-only drugs. Search resolves these drugs to the generic name (for example `vibegron`), but the SingleCare, GoodRx, and RxSaver caches key them by brand name (`gemtesa`, `nubeqa`). The Gemtesa and Nubeqa pricing added in 1.4.0 was unreachable, and every search for these drugs logged zero source hits. `cache-manager.js` (SingleCare, GoodRx) and `rxsaver.js` now try the brand alias when the direct lookup misses. Direct hits are unchanged.
+
+### Notes
+- The alias index loads at startup from `data/drug-names.json`. Restart the app after dictionary changes.
+- Other cached sources are not changed in this release.
+
+---
+
+## [1.4.1] — 2026-09-24 (Health Check Probe Fix)
+
+### Fixed
+- openFDA NDC health probe in `health-report.js` searched `status:Current`, which is not a field in the openFDA NDC dataset. openFDA returns HTTP 404 when a search matches nothing, so `/api/health/report` showed `INVALID_RESPONSE` while the API was healthy. The probe now searches `generic_name:metformin`.
+
+### Notes
+- The 5.83% zero-result rate (target under 5%) needed no dictionary change. Vibegron, darolutamide, gemtesa, and nubeqa are already in the dictionary. The six zero-result rows came from test searches run from the server IP on 2026-09-18 during the gap-fix work, and they leave the 7-day window on 2026-09-25.
+
+---
+
+## [1.4.0] — 2026-09-18 (Cache Refresh & Coverage Expansion)
+
+### Added
+- Nubeqa and Gemtesa pricing added to `singlecare_cache.json` (34 total drugs, up from 32)
+- Mounjaro and Gemtesa pricing added to `rxsaver_cache.json` (270 total drugs, up from 268)
+- `scripts/check-blink-health.js` — canary monitor that checks whether Blink Health has reopened public per-drug pricing (currently closed across all three of its product lines: Quick Save, BlinkRx, and Cash Express). Intended to run on a recurring schedule.
+- `scripts/add-gap-drugs.js` — one-time merge script that added the above cache entries; retained for audit trail
+- `scripts/fix-rxsaver-wrapper.js` — one-time corrective script (see Fixed below); retained for audit trail
+- `version.json` — new file tracking `APP_VERSION` / `APP_DATE`; no such tracking existed before this release
+
+### Changed
+- `goodrx_cache.json` — refreshed 23 of 30 drugs via the GoodRx Apify actor
+- `singlecare_cache.json` — refreshed all 32 pre-existing drugs via the SingleCare Apify actor, plus 2 new entries (34 total)
+
+### Fixed
+- `rxsaver_cache.json` wrapper bug: `add-gap-drugs.js` initially added new drug entries as top-level siblings of the `drugs` wrapper object instead of inside it. Corrected via `fix-rxsaver-wrapper.js`. No data was lost — the original 268 entries inside `cache.drugs` were never touched by the bug.
+- Root-caused why the health-check endpoint under-reports `rxsaver_cache.json` and `blink_cache.json` size ("entries: 7" for both): the health check counts top-level wrapper keys (`source`, `sourceUrl`, `drugCount`, `drugs`, etc. — 7 of them) instead of the nested `drugs` object. Root cause identified in this release; the health-check script itself is not yet patched (see Known Issues).
+
+### Known Issues
+- 7 GoodRx drugs remain blocked by anti-bot protection even after a residential-proxy retry: apixaban, carvedilol, furosemide, gabapentin, levothyroxine, lisinopril, omeprazole. This is a persistent block on these specific pages, not a transient IP-reputation issue. Old cached values were retained rather than overwritten with empty data.
+- `blink_cache.json` (204 drugs) can no longer be refreshed by scraping. Blink Health closed all public per-drug pricing pages across Quick Save, BlinkRx, and Cash Express as of this release. Treat it as a frozen/legacy dataset until a different data-access method exists. `scripts/check-blink-health.js` was added to catch it if this ever reopens.
+- `scripts/health-check.js` still reports an inaccurate "entries" count for `rxsaver_cache.json` and `blink_cache.json` (see Fixed above) — needs a follow-up patch to read `Object.keys(cache.drugs).length` instead of `Object.keys(cache).length`. Not fixed in this release; flagging for the next code-review pass.
+
+---
+
 ## [1.3.0] — 2026-07-26 (Content Expansion — 10 New Articles)
 
 ### Added

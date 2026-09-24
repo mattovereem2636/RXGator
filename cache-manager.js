@@ -49,13 +49,15 @@ function saveSingleCareCache() {
   }
 }
 
+const { resolveCacheKey } = require('./brand-alias');
+
 /**
  * Query the SingleCare cache for coupon pricing on a drug.
  * @param {string} drugName - The drug name to search.
  * @returns {Array<Object>} Array with one pricing result, or empty if not cached.
  */
 function querySingleCare(drugName) {
-  const key = drugName.toLowerCase().trim();
+  const key = resolveCacheKey(drugName, singleCareCache);
   const entry = singleCareCache[key];
   if (!entry || !entry.lowestPrice) return [];
 
@@ -131,7 +133,7 @@ function saveGoodRxCache() {
  * @returns {Array<Object>} Array with one pricing result, or empty if not cached.
  */
 function queryGoodRx(drugName) {
-  const key = drugName.toLowerCase().trim();
+  const key = resolveCacheKey(drugName, goodRxCache);
   const entry = goodRxCache[key];
   if (!entry || !entry.pharmacies || entry.pharmacies.length === 0) return [];
 

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RxGator Version Log</title>
+<meta name="description" content="Version history for the RxGator drug price comparison application.">
+<style>
+  :root {
+    --color-primary: #1F4E79;
+    --color-text: #1a1a1a;
+    --color-bg: #ffffff;
+    --color-border: #d9d9d9;
+    --color-muted: #5a5a5a;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--color-text);
+    background: var(--color-bg);
+    margin: 0;
+    line-height: 1.6;
+  }
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--color-primary);
+    color: #fff;
+    padding: var(--space-sm) var(--space-md);
+    z-index: 100;
+  }
+  .skip-link:focus {
+    left: var(--space-sm);
+    top: var(--space-sm);
+  }
+  header {
+    background: var(--color-primary);
+    color: #fff;
+    padding: var(--space-lg) var(--space-md);
+  }
+  header h1 { margin: 0 0 var(--space-sm) 0; font-size: 1.75rem; }
+  header p { margin: 0; opacity: 0.9; }
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md);
+  }
+  section.version {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--space-md) var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+  section.version.current {
+    border-color: var(--color-primary);
+    border-width: 2px;
+  }
+  section.version h2 {
+    margin-top: 0;
+    color: var(--color-primary);
+    font-size: 1.3rem;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    margin-left: var(--space-sm);
+    vertical-align: middle;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  ul { margin-top: 0.3rem; }
+  li { margin-bottom: 0.25rem; }
+  code {
+    background: #f2f2f2;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+  footer {
+    text-align: center;
+    color: var(--color-muted);
+    padding: var(--space-lg) var(--space-md);
+    font-size: 0.9rem;
+  }
+  a { color: var(--color-primary); }
+  a:focus, button:focus, [tabindex]:focus { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+  <h1>RxGator Version Log</h1>
+  <p>Release history for the RxGator drug price comparison application.</p>
+</header>
+<main id="main-content">
+
+<section class="version current" aria-labelledby="v1-4-3">
+  <h2 id="v1-4-3">1.4.3 — 2026-09-24 <span class="badge">Current</span></h2>
+  <p><em>Secret Hygiene</em></p>
+
+  <h3>Security</h3>
+  <ul>
+    <li>Removed a hard-coded Apify API token from <code>refresh-caches.js</code>. The script now reads <code>APIFY_TOKEN_REFRESH_CACHES</code> from the environment or <code>/var/www/rxaggregator/.env</code>. GitHub push protection blocked the commit that contained the token, so the token was never published.</li>
+  </ul>
+
+  <h3>Changed</h3>
+  <ul>
+    <li><code>.gitignore</code> now excludes <code>.env</code>, <code>*.bak</code>, <code>*.tar.gz</code>, <code>backups/</code>, and <code>search_log.csv</code>. The search log holds visitor IP addresses and no longer belongs in version control. <code>data/backups/</code> is untracked for the same reason.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-4-2">
+  <h2 id="v1-4-2">1.4.2 — 2026-09-24</h2>
+  <p><em>Brand-Only Cache Lookup Fix</em></p>
+
+  <h3>Added</h3>
+  <ul>
+    <li><code>brand-alias.js</code> — maps a brand-only generic to its brand name. An alias exists only when the dictionary entry has <code>hasGeneric: false</code> and exactly one brand, so multi-brand drugs and drugs with a real generic are never aliased.</li>
+  </ul>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>Cache lookups missed brand-only drugs. Search resolves these drugs to the generic name (for example <code>vibegron</code>), but the SingleCare, GoodRx, and RxSaver caches key them by brand name (<code>gemtesa</code>, <code>nubeqa</code>). The Gemtesa and Nubeqa pricing added in 1.4.0 was unreachable, and every search for these drugs logged zero source hits. <code>cache-manager.js</code> (SingleCare, GoodRx) and <code>rxsaver.js</code> now try the brand alias when the direct lookup misses. Direct hits are unchanged.</li>
+  </ul>
+
+  <h3>Notes</h3>
+  <ul>
+    <li>The alias index loads at startup from <code>data/drug-names.json</code>. Restart the app after dictionary changes.</li>
+    <li>Other cached sources are not changed in this release.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-4-1">
+  <h2 id="v1-4-1">1.4.1 — 2026-09-24</h2>
+  <p><em>Health Check Probe Fix</em></p>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>openFDA NDC health probe in <code>health-report.js</code> searched <code>status:Current</code>, which is not a field in the openFDA NDC dataset. openFDA returns HTTP 404 when a search matches nothing, so <code>/api/health/report</code> showed <code>INVALID_RESPONSE</code> while the API was healthy. The probe now searches <code>generic_name:metformin</code>.</li>
+  </ul>
+
+  <h3>Notes</h3>
+  <ul>
+    <li>The 5.83% zero-result rate needed no dictionary change. Vibegron, darolutamide, gemtesa, and nubeqa are already in the dictionary. The six zero-result rows came from test searches run from the server IP on 2026-09-18 and leave the 7-day window on 2026-09-25.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-4-0">
+  <h2 id="v1-4-0">1.4.0 — 2026-09-18</h2>
+  <p><em>Cache Refresh &amp; Coverage Expansion</em></p>
+
+  <h3>Added</h3>
+  <ul>
+    <li>Nubeqa and Gemtesa pricing added to <code>singlecare_cache.json</code> (34 total drugs, up from 32)</li>
+    <li>Mounjaro and Gemtesa pricing added to <code>rxsaver_cache.json</code> (270 total drugs, up from 268)</li>
+    <li><code>scripts/check-blink-health.js</code> — canary monitor that checks whether Blink Health has reopened public per-drug pricing (currently closed across all three of its product lines: Quick Save, BlinkRx, and Cash Express)</li>
+    <li><code>scripts/add-gap-drugs.js</code> — one-time merge script that added the above cache entries; retained for audit trail</li>
+    <li><code>scripts/fix-rxsaver-wrapper.js</code> — one-time corrective script (see Fixed below); retained for audit trail</li>
+    <li><code>version.json</code> — new file tracking <code>APP_VERSION</code> / <code>APP_DATE</code>; no such tracking existed before this release</li>
+  </ul>
+
+  <h3>Changed</h3>
+  <ul>
+    <li><code>goodrx_cache.json</code> — refreshed 23 of 30 drugs via the GoodRx Apify actor</li>
+    <li><code>singlecare_cache.json</code> — refreshed all 32 pre-existing drugs via the SingleCare Apify actor, plus 2 new entries (34 total)</li>
+  </ul>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li><code>rxsaver_cache.json</code> wrapper bug: a merge script initially added new drug entries as top-level siblings of the <code>drugs</code> wrapper object instead of inside it. Corrected via <code>fix-rxsaver-wrapper.js</code>. No data was lost — the original 268 entries inside <code>cache.drugs</code> were never touched by the bug.</li>
+    <li>Root-caused why the health-check endpoint under-reports <code>rxsaver_cache.json</code> and <code>blink_cache.json</code> size ("entries: 7" for both): the health check counts top-level wrapper keys instead of the nested <code>drugs</code> object. Root cause identified; the health-check script itself is not yet patched (see Known Issues).</li>
+  </ul>
+
+  <h3>Known Issues</h3>
+  <ul>
+    <li>7 GoodRx drugs remain blocked by anti-bot protection even after a residential-proxy retry: apixaban, carvedilol, furosemide, gabapentin, levothyroxine, lisinopril, omeprazole. This is a persistent block on these specific pages, not a transient IP-reputation issue. Old cached values were retained rather than overwritten with empty data.</li>
+    <li><code>blink_cache.json</code> (204 drugs) can no longer be refreshed by scraping. Blink Health closed all public per-drug pricing pages across Quick Save, BlinkRx, and Cash Express as of this release. Treat it as a frozen/legacy dataset until a different data-access method exists.</li>
+    <li><code>scripts/health-check.js</code> still reports an inaccurate "entries" count for <code>rxsaver_cache.json</code> and <code>blink_cache.json</code> — needs a follow-up patch to read <code>Object.keys(cache.drugs).length</code> instead of <code>Object.keys(cache).length</code>. Not fixed in this release.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-3-0">
+  <h2 id="v1-3-0">1.3.0 — 2026-07-26</h2>
+  <p><em>Content Expansion — 10 New Articles</em></p>
+  <h3>Added</h3>
+  <ul>
+    <li>10 new SEO articles, bringing the total from 31 to 41 (drug pricing, brand drugs, industry, education, Medicare, savings guides, practical guides)</li>
+  </ul>
+  <h3>Changed</h3>
+  <ul>
+    <li><code>articles.json</code> — added 10 new entries (41 total)</li>
+    <li><code>sitemap.xml</code> — added 10 new article URLs</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-2-0">
+  <h2 id="v1-2-0">1.2.0 — 2026-07-26</h2>
+  <p><em>Code Review — Low-Priority Improvements</em></p>
+  <h3>Added</h3>
+  <ul>
+    <li><code>CHANGELOG.md</code> — documenting project history</li>
+    <li>Inline code comments on complex logic in <code>server.js</code> (price normalization, brand→generic resolution, fuzzy matching, unified search pipeline)</li>
+  </ul>
+  <h3>Changed</h3>
+  <ul>
+    <li><code>articles.json</code> — added missing <code>rx-outreach-nonprofit-pharmacy-review</code> entry</li>
+  </ul>
+  <h3>Removed</h3>
+  <ul>
+    <li><code>metformin-cost.html</code> — duplicate orphan file</li>
+    <li>Dead code cleanup in <code>server.js</code></li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-1-0">
+  <h2 id="v1-1-0">1.1.0 — 2026-07-26</h2>
+  <p><em>Code Review — Medium-Priority Fixes</em></p>
+  <h3>Added</h3>
+  <ul>
+    <li><code>data-sources.json</code> — centralized registry of all 18 data sources</li>
+    <li><code>scripts/health-check.js</code> — automated health check for all data sources</li>
+    <li><code>SOURCES.md</code> — developer reference for all 18 data sources</li>
+    <li><code>scripts/accessibility-audit.js</code> — custom WCAG 2.1 AA audit</li>
+  </ul>
+  <h3>Changed</h3>
+  <ul>
+    <li>Accessibility fixes across all 6 HTML pages (skip links, main landmarks, heading hierarchy)</li>
+    <li><code>data-sources.json</code> — marked openFDA, MedlinePlus, and FDA Drug Shortages as non-critical</li>
+    <li><code>scripts/health-check.js</code> — non-critical failures now show WARN instead of FAIL</li>
+  </ul>
+  <h3>Fixed</h3>
+  <ul>
+    <li>False positive in accessibility audit (expanded ARIA valid roles list)</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-0-0">
+  <h2 id="v1-0-0">1.0.0 — 2026-07-25 (Baseline)</h2>
+  <p>Production-stable release tagged as <code>v1.0-baseline</code> before code review improvements began.</p>
+  <h3>Features</h3>
+  <ul>
+    <li>Unified drug price search across 18 data sources</li>
+    <li>7 live API integrations (Cost Plus Drugs, NADAC, openFDA, RxNorm, MedlinePlus, Medicare Part D, FDA Shortages)</li>
+    <li>6 cached/scraped sources (SingleCare, GoodRx, Medicaid FUL, Manufacturer Assistance, Rx Outreach, VA FSS)</li>
+    <li>3 additional cached sources (IRA Negotiated Prices, Texas WAC, RxSaver, Blink Health)</li>
+    <li>3 static/hardcoded sources (Walmart $4 List, Amazon RxPass, Costco estimate)</li>
+    <li>Brand→generic drug resolution via RxNorm</li>
+    <li>Fuzzy drug name matching</li>
+    <li>Consumer drug information from MedlinePlus</li>
+    <li>Drug shortage alerts from FDA</li>
+    <li>Rate limiting (30 requests/minute)</li>
+    <li>30 SEO articles covering drug pricing, savings strategies, and industry explainers</li>
+    <li>Mobile-responsive design</li>
+    <li>Google AdSense integration</li>
+    <li>PM2 process management on Ubuntu VPS (IONOS)</li>
+  </ul>
+</section>
+
+</main>
+<footer>
+  <p>RxGator — Technology Assessment Project LLC</p>
+</footer>
+</body>
+</html>

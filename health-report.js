@@ -97,7 +97,7 @@ const API_CHECKS = [
     validate: (body) => { const d = JSON.parse(body); return d && (Array.isArray(d) ? d.length > 0 : Object.keys(d).length > 0); } },
   { name: 'NADAC (Medicaid)', url: 'https://data.medicaid.gov/api/1/datastore/query/f38d0706-1239-442c-a3cc-40ef1b686ac0/0?conditions%5B0%5D%5Bproperty%5D=ndc_description&conditions%5B0%5D%5Bvalue%5D=%25METFORMIN%25&conditions%5B0%5D%5Boperator%5D=LIKE&limit=3',
     validate: (body) => { const d = JSON.parse(body); return d && d.results && d.results.length > 0; } },
-  { name: 'openFDA NDC', url: 'https://api.fda.gov/drug/ndc.json?search=status:Current&limit=3',
+  { name: 'openFDA NDC', url: 'https://api.fda.gov/drug/ndc.json?search=generic_name:metformin&limit=3',
     validate: (body) => { const d = JSON.parse(body); return d && d.results && d.results.length > 0; } },
   { name: 'RxNorm (NLM)', url: 'https://rxnav.nlm.nih.gov/REST/rxcui.json?name=metformin&search=1',
     validate: (body) => { const d = JSON.parse(body); return d && d.idGroup && d.idGroup.rxnormId && d.idGroup.rxnormId.length > 0; } },
