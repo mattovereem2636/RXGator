@@ -2794,40 +2794,46 @@
   },
   {
     "id": "1132",
-    "generic": "vibegron",
+    "generic": "dupilumab",
     "brands": [
-      "Gemtesa"
+      "Dupixent"
     ],
     "aliases": [
-      "gemtesa"
+      "dupixent"
     ],
-    "drugClass": "Beta-3 adrenergic agonist",
-    "primaryUse": "Overactive bladder",
-    "primaryUseES": "Vejiga hiperactiva",
+    "drugClass": "Monoclonal Antibody",
+    "primaryUse": "Eczema / Asthma",
+    "primaryUseES": "Eccema / Asma",
     "hasGeneric": false,
     "commonMisspellings": [
-      "vibegon",
-      "vibegrom",
-      "vibegran"
+      "dupliumab",
+      "dupilimab",
+      "duplimab",
+      "dupilumeb",
+      "duplxent",
+      "dupixant",
+      "dupexent",
+      "dupikent"
     ]
   },
   {
     "id": "1133",
-    "generic": "darolutamide",
+    "generic": "fostemsavir",
     "brands": [
-      "Nubeqa"
+      "Rukobia"
     ],
     "aliases": [
-      "nubeqa"
+      "rukobia"
     ],
-    "drugClass": "Androgen receptor inhibitor",
-    "primaryUse": "Prostate cancer",
-    "primaryUseES": "Cáncer de próstata",
+    "drugClass": "Attachment Inhibitor",
+    "primaryUse": "HIV",
+    "primaryUseES": "VIH",
     "hasGeneric": false,
     "commonMisspellings": [
-      "nubeca",
-      "darolutimide",
-      "darolutomide"
+      "fostemsivir",
+      "fostemsvir",
+      "fostemsaver",
+      "rukobai"
     ]
   }
 ]

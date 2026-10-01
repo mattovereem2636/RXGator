@@ -265,7 +265,7 @@ const fs = require('fs');
 
 // Write the full dictionary
 fs.writeFileSync(
-  '/home/claude/rxgator-search-upgrade/data/drug-names.json',
+  'data/drug-names.json',
   JSON.stringify(dictionary, null, 2)
 );
 
@@ -294,7 +294,7 @@ dictionary.forEach(drug => {
 });
 
 fs.writeFileSync(
-  '/home/claude/rxgator-search-upgrade/data/brand-generic-map.json',
+  'data/brand-generic-map.json',
   JSON.stringify(brandMap, null, 2)
 );
 
