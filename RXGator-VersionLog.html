@@ -104,8 +104,39 @@
 </header>
 <main id="main-content">
 
-<section class="version current" aria-labelledby="v1-4-4">
-  <h2 id="v1-4-4">1.4.4 — 2026-10-01 <span class="badge">Current</span></h2>
+<section class="version current" aria-labelledby="v1-4-5">
+  <h2 id="v1-4-5">1.4.5 — 2026-10-01 <span class="badge">Current</span></h2>
+  <p><em>Manufacturer Link Cleanup</em></p>
+
+  <h3>Added</h3>
+  <ul>
+    <li><code>patch-mfr-links2-oct2026.js</code> — second link-fix pass, kept for the audit trail.</li>
+  </ul>
+
+  <h3>Changed</h3>
+  <ul>
+    <li>Replaced the program links for Invokana, Sanofi insulins (Lantus), Victoza, the Novo Nordisk assistance program (liraglutide entry), Entresto, the Novartis Patient Assistance Foundation, and Januvia in <code>manufacturer_assistance.json</code>.</li>
+    <li>Replaced the Ready, Set, PrEP entry with an HIV.gov page that lists manufacturer programs for PrEP medicines. The Ready, Set, PrEP site no longer resolves.</li>
+    <li>Replaced the Takeda Help at Hand link in <code>public/pap-database.json</code> (now 1.0.2).</li>
+  </ul>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>Nine program links returned 404, did not resolve, or landed on an error page. <code>check-mfr-links.js</code> found them in the 1.4.4 run.</li>
+  </ul>
+
+  <h3>Known Issues</h3>
+  <ul>
+    <li>Three new links need a browser check, because automated tools could not read them: Victoza, Entresto, and Januvia. Each carries <code>needsReview</code> in the data.</li>
+    <li>About a dozen links return 403 to automated requests. These include Lilly, Bayer, AbbVie, and AstraZeneca pages. They load in a browser. Confirm each one by hand.</li>
+    <li>The <code>pap-database.json</code> BMS link for aripiprazole returns 404, and <code>jjpaf.org</code> timed out. Both are not fixed. The aripiprazole entry may belong to a different manufacturer.</li>
+    <li>Takeda reports that some products leave Help at Hand on 2026-12-31.</li>
+    <li>Dollar amounts remain in the program text for the 13 drugs not reviewed in 1.4.4.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-4-4">
+  <h2 id="v1-4-4">1.4.4 — 2026-10-01</h2>
   <p><em>Manufacturer Links and Dictionary Fix</em></p>
 
   <h3>Added</h3>

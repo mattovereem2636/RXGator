@@ -4,6 +4,28 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.4.5] — 2026-10-01 (Manufacturer Link Cleanup)
+
+### Added
+- `patch-mfr-links2-oct2026.js` — second link-fix pass, kept for the audit trail.
+
+### Changed
+- Replaced the program links for Invokana, Sanofi insulins (Lantus), Victoza, the Novo Nordisk assistance program (liraglutide entry), Entresto, the Novartis Patient Assistance Foundation, and Januvia in `manufacturer_assistance.json`.
+- Replaced the Ready, Set, PrEP entry with an HIV.gov page that lists manufacturer programs for PrEP medicines. The Ready, Set, PrEP site no longer resolves.
+- Replaced the Takeda Help at Hand link in `public/pap-database.json` (now 1.0.2).
+
+### Fixed
+- Nine program links returned 404, did not resolve, or landed on an error page. `check-mfr-links.js` found them in the 1.4.4 run.
+
+### Known Issues
+- Three new links need a browser check, because automated tools could not read them: Victoza, Entresto, and Januvia. Each carries `needsReview` in the data.
+- About a dozen links return 403 to automated requests. These include Lilly, Bayer, AbbVie, and AstraZeneca pages. They load in a browser. Confirm each one by hand.
+- The `pap-database.json` BMS link for aripiprazole returns 404, and `jjpaf.org` timed out. Both are not fixed. The aripiprazole entry may belong to a different manufacturer.
+- Takeda reports that some products leave Help at Hand on 2026-12-31.
+- Dollar amounts remain in the program text for the 13 drugs not reviewed in 1.4.4.
+
+---
+
 ## [1.4.4] — 2026-10-01 (Manufacturer Links and Dictionary Fix)
 
 ### Added

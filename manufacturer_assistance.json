@@ -164,14 +164,17 @@
         "type": "copay_card",
         "savings": "Pay as little as $10/month",
         "eligibility": "Commercially insured patients. Not valid for government insurance.",
-        "url": "https://www.entresto.com/savings"
+        "url": "https://enrollsupport.entresto.com/",
+        "linkCheckedOn": "2026-10-01",
+        "needsReview": true
       },
       {
         "name": "Novartis Patient Assistance Foundation",
         "type": "patient_assistance",
         "savings": "Free medication for qualifying patients",
         "eligibility": "Uninsured patients meeting income requirements.",
-        "url": "https://www.patient.novartis.com/"
+        "url": "https://pap.novartis.com/",
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   },
@@ -208,7 +211,9 @@
         "type": "copay_card",
         "savings": "Pay as little as $5/month",
         "eligibility": "Commercially insured patients. Not valid for government insurance.",
-        "url": "https://www.januvia.com/savings/"
+        "url": "https://www.januvia.com/special-offers/",
+        "linkCheckedOn": "2026-10-01",
+        "needsReview": true
       },
       {
         "name": "Merck Patient Assistance Program",
@@ -254,7 +259,8 @@
         "type": "copay_card",
         "savings": "Pay $35 for a 30-day supply (no insurance needed)",
         "eligibility": "Anyone — with or without insurance.",
-        "url": "https://www.sanofi.us/en/patients-and-caregivers/patient-assistance"
+        "url": "https://www.lantus.com/sign-up-for-savings",
+        "linkCheckedOn": "2026-10-01"
       },
       {
         "name": "Sanofi Patient Connection",
@@ -292,14 +298,17 @@
         "type": "copay_card",
         "savings": "Pay as little as $25/month",
         "eligibility": "Commercially insured patients. Not valid for government insurance.",
-        "url": "https://www.victoza.com/savings-card.html"
+        "url": "https://www.novocare.com/diabetes/products/victoza.html",
+        "linkCheckedOn": "2026-10-01",
+        "needsReview": true
       },
       {
         "name": "Novo Nordisk Patient Assistance Program",
         "type": "patient_assistance",
         "savings": "Free medication for qualifying patients",
         "eligibility": "Uninsured patients meeting income requirements.",
-        "url": "https://www.novocare.com/pap.html"
+        "url": "https://www.novocare.com/diabetes/help-with-costs/pap.html",
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   },
@@ -336,7 +345,8 @@
         "type": "copay_card",
         "savings": "Pay as little as $10/month",
         "eligibility": "Commercially insured patients. Not valid for government insurance.",
-        "url": "https://www.invokana.com/savings"
+        "url": "https://www.invokana.com/savings-and-cost-support/",
+        "linkCheckedOn": "2026-10-01"
       },
       {
         "name": "Janssen CarePath",
@@ -368,11 +378,12 @@
         "url": "https://www.gileadadvancingaccess.com/"
       },
       {
-        "name": "Ready, Set, PrEP (Federal Program)",
+        "name": "HIV.gov: Resources for Accessing PrEP",
         "type": "patient_assistance",
-        "savings": "Free PrEP medication — no insurance needed",
-        "eligibility": "Anyone without insurance coverage for PrEP. Federal program.",
-        "url": "https://readysetprep.hiv.gov/"
+        "savings": "Lists manufacturer patient assistance and co-pay programs for PrEP medicines.",
+        "eligibility": "Each program sets its own rules. Check the program page.",
+        "url": "https://www.hiv.gov/hiv-basics/hiv-prevention/using-hiv-medication-to-reduce-risk/pre-exposure-prophylaxis/accessing",
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   },
