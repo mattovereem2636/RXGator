@@ -8,16 +8,19 @@
       {
         "name": "Jardiance Savings Card",
         "type": "copay_card",
-        "savings": "Pay as little as $10/month",
-        "eligibility": "Commercially insured patients. Not valid for patients on Medicare, Medicaid, or other government insurance.",
-        "url": "https://www.jardiance.com/savings-card/"
+        "savings": "Savings program available. See the program page for current terms.",
+        "eligibility": "Check the program page for current eligibility rules and covered conditions.",
+        "url": "https://patient.boehringer-ingelheim.com/us/products/jardiance/savings",
+        "linkCheckedOn": "2026-10-01"
       },
       {
         "name": "Boehringer Ingelheim Cares Foundation",
         "type": "patient_assistance",
         "savings": "Free medication for qualifying patients",
-        "eligibility": "Uninsured or underinsured patients meeting income requirements.",
-        "url": "https://www.bipatientsupport.com/"
+        "eligibility": "Check the program page for income, coverage, and covered medicines.",
+        "url": "https://bicares.com/",
+        "needsReview": true,
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   },
@@ -31,16 +34,27 @@
       {
         "name": "Mounjaro Savings Card",
         "type": "copay_card",
-        "savings": "Pay as little as $25/month",
-        "eligibility": "Commercially insured patients with a prescription for type 2 diabetes. Not valid for weight loss indication or government insurance.",
-        "url": "https://www.mounjaro.com/savings-card"
+        "savings": "Savings program available. See the program page for current terms.",
+        "eligibility": "Commercial insurance required. Not available with Medicare, Medicaid, or other government coverage.",
+        "url": "https://mounjaro.lilly.com/savings-resources",
+        "linkCheckedOn": "2026-10-01"
       },
       {
         "name": "Lilly Cares Foundation",
         "type": "patient_assistance",
         "savings": "Free medication for qualifying patients",
-        "eligibility": "Uninsured patients meeting income requirements (typically under 400% federal poverty level).",
-        "url": "https://www.lillycares.com/"
+        "eligibility": "Check the program page to see whether this medicine is covered and for income and coverage rules.",
+        "url": "https://www.lillycares.com/",
+        "needsReview": true,
+        "linkCheckedOn": "2026-10-01"
+      },
+      {
+        "name": "LillyDirect self-pay option",
+        "type": "info",
+        "savings": "Self-pay pricing without insurance. See the program page.",
+        "eligibility": "Prescription required. Self-pay only.",
+        "url": "https://www.lilly.com/lillydirect/mounjaro",
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   },
@@ -53,18 +67,20 @@
     "manufacturer": "Novo Nordisk",
     "programs": [
       {
-        "name": "Ozempic Savings Card",
+        "name": "Novo Nordisk Diabetes Savings Card (Ozempic, Rybelsus)",
         "type": "copay_card",
-        "savings": "Pay as little as $25/month for up to 2 years",
-        "eligibility": "Commercially insured patients. Not valid for government insurance.",
-        "url": "https://www.ozempic.com/savings-offer.html"
+        "savings": "Savings program available. See the program page for current terms.",
+        "eligibility": "Commercial, Health Exchange, FEHB, and state employee plans. Not available with Medicare, Medicaid, VA, DoD, or TRICARE.",
+        "url": "https://www.novocare.com/eligibility/diabetes-savings-card.html",
+        "linkCheckedOn": "2026-10-01"
       },
       {
         "name": "Novo Nordisk Patient Assistance Program",
         "type": "patient_assistance",
         "savings": "Free medication for qualifying patients",
-        "eligibility": "Uninsured or underinsured patients meeting income requirements.",
-        "url": "https://www.novocare.com/pap.html"
+        "eligibility": "For people with Medicare or no insurance who meet income limits (limits vary by product). Not available with commercial insurance. Some medicines leave the program in 2026, so check the current list.",
+        "url": "https://www.novocare.com/diabetes/help-with-costs/pap.html",
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   },
@@ -97,18 +113,21 @@
     "manufacturer": "Bristol-Myers Squibb / Pfizer",
     "programs": [
       {
-        "name": "Eliquis Free Trial Offer",
+        "name": "Eliquis Co-pay Card and Free Trial Offer",
         "type": "copay_card",
-        "savings": "30-day free trial, then pay as little as $10/month",
-        "eligibility": "Commercially insured patients. Not valid for government insurance.",
-        "url": "https://www.eliquis.com/savings"
+        "savings": "Co-pay card, plus a free 30-day trial for new patients. See the program page for current terms.",
+        "eligibility": "Commercial insurance required. Not available with Medicare Part D, Medicaid, TRICARE, VA, or DoD coverage.",
+        "url": "https://www.eliquis.bmscustomerconnect.com/commercially-insured-patients",
+        "linkCheckedOn": "2026-10-01"
       },
       {
         "name": "BMS Patient Assistance Foundation",
         "type": "patient_assistance",
         "savings": "Free medication for qualifying patients",
-        "eligibility": "Uninsured or underinsured patients meeting income requirements.",
-        "url": "https://www.bmsaccesssupport.com/"
+        "eligibility": "Check the program page for income and coverage rules.",
+        "url": "https://www.bmspaf.org/",
+        "needsReview": true,
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   },
@@ -234,7 +253,7 @@
         "name": "Sanofi Insulins Valyou Savings Program",
         "type": "copay_card",
         "savings": "Pay $35 for a 30-day supply (no insurance needed)",
-        "eligibility": "Anyone \u2014 with or without insurance.",
+        "eligibility": "Anyone — with or without insurance.",
         "url": "https://www.sanofi.us/en/patients-and-caregivers/patient-assistance"
       },
       {
@@ -256,7 +275,7 @@
         "name": "Note",
         "type": "info",
         "savings": "Generic rosuvastatin is widely available at $2-5/month with discount cards",
-        "eligibility": "Ask your pharmacist for the generic version \u2014 same drug, fraction of the price.",
+        "eligibility": "Ask your pharmacist for the generic version — same drug, fraction of the price.",
         "url": "https://rxgator.info/app"
       }
     ]
@@ -351,7 +370,7 @@
       {
         "name": "Ready, Set, PrEP (Federal Program)",
         "type": "patient_assistance",
-        "savings": "Free PrEP medication \u2014 no insurance needed",
+        "savings": "Free PrEP medication — no insurance needed",
         "eligibility": "Anyone without insurance coverage for PrEP. Federal program.",
         "url": "https://readysetprep.hiv.gov/"
       }
@@ -380,9 +399,50 @@
       {
         "name": "Ready, Set, PrEP (Federal Program)",
         "type": "patient_assistance",
-        "savings": "Free PrEP medication \u2014 no insurance needed",
+        "savings": "Free PrEP medication — no insurance needed",
         "eligibility": "Anyone without insurance coverage for PrEP. Federal program.",
         "url": "https://readysetprep.hiv.gov/"
+      }
+    ]
+  },
+  "darolutamide": {
+    "brandNames": [
+      "Nubeqa"
+    ],
+    "manufacturer": "Bayer",
+    "programs": [
+      {
+        "name": "NUBEQA $0 Co-Pay Card",
+        "type": "copay_card",
+        "savings": "Savings program available. See the program page for current terms.",
+        "eligibility": "Commercial prescription insurance required, with no income requirement. Not available with Medicare, Medicaid, or other government coverage.",
+        "url": "https://www.nubeqa-us.com/savings-support/nubeqa-copay-card",
+        "linkCheckedOn": "2026-10-01"
+      },
+      {
+        "name": "Bayer US Patient Assistance Foundation",
+        "type": "patient_assistance",
+        "savings": "Free medication for qualifying patients",
+        "eligibility": "For patients without insurance who meet the program requirements.",
+        "url": "https://www.patientassistance.bayer.us",
+        "linkCheckedOn": "2026-10-01"
+      }
+    ]
+  },
+  "vibegron": {
+    "brandNames": [
+      "Gemtesa"
+    ],
+    "manufacturer": "GEMTESA program",
+    "programs": [
+      {
+        "name": "GEMTESA Savings Program",
+        "type": "copay_card",
+        "savings": "Savings program available. See the program page for current terms.",
+        "eligibility": "Must be 18 or older. Check the program page for full eligibility rules.",
+        "url": "https://www.gemtesa.com/savings-apply/",
+        "needsReview": true,
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   }

@@ -4,6 +4,34 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.4.4] — 2026-10-01 (Manufacturer Links and Dictionary Fix)
+
+### Added
+- Dictionary entries for vibegron (Gemtesa), darolutamide (Nubeqa), and amphetamine/dextroamphetamine (Adderall). The 1.4.2 brand alias builds its index from these entries.
+- Dictionary entries for dupilumab (Dupixent) and fostemsavir (Rukobia), from the October gap patch.
+- Manufacturer assistance entries for darolutamide (Nubeqa) and vibegron (Gemtesa) in `manufacturer_assistance.json`.
+- `check-mfr-links.js` — a read-only checker for every program link in `manufacturer_assistance.json` and `public/pap-database.json`. Run it with each quarterly content audit.
+- `patch-dictionary-oct2026b.js` and `patch-mfr-links-oct2026.js` — data patches for this release, kept for the audit trail.
+
+### Changed
+- Corrected program links and eligibility text for empagliflozin, tirzepatide, semaglutide, and apixaban in `manufacturer_assistance.json`.
+- Replaced dollar amounts in program text with a pointer to the program page. The official pages show different amounts, and those amounts change.
+- Corrected the Novo Nordisk and BMS patient assistance links in `public/pap-database.json` (now 1.0.1). Removed stale retail prices from its notes.
+
+### Fixed
+- Seven program links returned errors or sent patients to a page for healthcare professionals. These covered the Jardiance savings card, the BI Cares link in `manufacturer_assistance.json`, the Ozempic savings card, two Novo Nordisk assistance links, and two BMS assistance links.
+- The dictionary lacked the vibegron and darolutamide entries that the 1.4.2 brand alias needs. The cause is not known.
+
+### Known Issues
+- Four program links need a browser check. Automated tools could not read them: BI Cares, Lilly Cares, the BMS Patient Assistance Foundation site, and the Gemtesa program terms. Each carries `needsReview` in the data.
+- Zepbound has no program of its own. It shows the Mounjaro card.
+- `build-dictionary.js` writes both dictionary files from its own list. It erases entries that patch scripts add. Do not run it until those entries move into its list.
+- The other 13 drugs in `manufacturer_assistance.json` have not been link-checked. Run `check-mfr-links.js`.
+- Adderall returns no prices from SingleCare, GoodRx, Blink Health, Inside Rx, and Health Warehouse. Nubeqa returns one source. The cache key gaps are not investigated.
+- The Ozempic page lists tablet form and oral route (Rybelsus data). It also lists recalls from Apollo Care, LLC under "this medication". The matching logic is not reviewed.
+
+---
+
 ## [1.4.3] — 2026-09-24 (Secret Hygiene)
 
 ### Security
