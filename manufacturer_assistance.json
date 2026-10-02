@@ -207,20 +207,12 @@
     "manufacturer": "Merck",
     "programs": [
       {
-        "name": "Januvia Savings Card",
-        "type": "copay_card",
-        "savings": "Pay as little as $5/month",
-        "eligibility": "Commercially insured patients. Not valid for government insurance.",
-        "url": "https://www.januvia.com/special-offers/",
-        "linkCheckedOn": "2026-10-01",
-        "needsReview": true
-      },
-      {
         "name": "Merck Patient Assistance Program",
         "type": "patient_assistance",
         "savings": "Free medication for qualifying patients",
         "eligibility": "Uninsured patients meeting income and residency requirements.",
-        "url": "https://www.merckhelps.com/"
+        "url": "https://www.merckhelps.com/JANUVIA",
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   },
@@ -408,11 +400,12 @@
         "url": "https://www.gileadadvancingaccess.com/"
       },
       {
-        "name": "Ready, Set, PrEP (Federal Program)",
+        "name": "HIV.gov: Resources for Accessing PrEP",
         "type": "patient_assistance",
-        "savings": "Free PrEP medication — no insurance needed",
-        "eligibility": "Anyone without insurance coverage for PrEP. Federal program.",
-        "url": "https://readysetprep.hiv.gov/"
+        "savings": "Lists manufacturer patient assistance and co-pay programs for PrEP medicines.",
+        "eligibility": "Each program sets its own rules. Check the program page.",
+        "url": "https://www.hiv.gov/hiv-basics/hiv-prevention/using-hiv-medication-to-reduce-risk/pre-exposure-prophylaxis/accessing",
+        "linkCheckedOn": "2026-10-01"
       }
     ]
   },

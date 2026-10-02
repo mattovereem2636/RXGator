@@ -4,6 +4,26 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.4.6] — 2026-10-01 (Manufacturer Program Corrections)
+
+### Added
+- `patch-mfr-links3-oct2026.js` — third data pass, kept for the audit trail.
+
+### Changed
+- Replaced the Januvia savings card in `manufacturer_assistance.json` with the Merck Patient Assistance Program. The old card link redirected to a 404 page.
+- Replaced the second Ready, Set, PrEP entry (the Descovy entry) with the same HIV.gov page used in 1.4.5. The 1.4.5 change covered only the Truvada entry.
+- Removed the Bristol Myers Squibb program from the aripiprazole entry in `public/pap-database.json` (now 1.0.3). BMS does not run an Abilify program.
+
+### Fixed
+- The aripiprazole note now states that the Otsuka Patient Assistance Foundation covers only the Abilify Maintena and Abilify Asimtufii injections, not tablets.
+
+### Known Issues
+- About a dozen links return 403 to automated requests. These include Lilly, Bayer, AbbVie, and AstraZeneca pages. They load in a browser. Confirm each one by hand.
+- Victoza, Entresto, BI Cares, Lilly Cares, bmspaf.org, and Gemtesa still carry `needsReview` in the data.
+- Dollar amounts remain in the program text for the 13 drugs not reviewed in 1.4.4.
+
+---
+
 ## [1.4.5] — 2026-10-01 (Manufacturer Link Cleanup)
 
 ### Added
