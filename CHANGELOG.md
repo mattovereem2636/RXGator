@@ -4,6 +4,25 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.4.7] — 2026-10-01 (Search Match Fix)
+
+### Added
+- `patch-search-match-oct2026.js` — fixes drug-name matching in four source modules, kept for the audit trail.
+
+### Changed
+- `rxoutreach.js`, `ira-negotiated.js`, `texas-wac.js`, and `va-fss.js` now match a drug only when the typed text starts the indexed name, or the query begins with the whole indexed name.
+- These four modules no longer match short names inside a long query, and no longer match text from the middle of a name.
+
+### Fixed
+- A search for a combination drug no longer returns unrelated drugs from these four sources. A Descovy search returned tenofovir disoproxil and methylphenidate LA rows from Rx Outreach.
+
+### Known Issues
+- The Walmart and Amazon RxPass lists in `retail-sources.js` and two lookups in `govt-data.js` use the same loose two-way match. They are not fixed.
+- Text from the middle of a drug name (for example "statin") no longer finds a drug in these four sources.
+- About a dozen manufacturer links return 403 to automated requests. Confirm each one by hand.
+
+---
+
 ## [1.4.6] — 2026-10-01 (Manufacturer Program Corrections)
 
 ### Added

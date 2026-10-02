@@ -60,6 +60,8 @@ function load() {
   }
 }
 
+const MIN_PARTIAL_LENGTH = 4;  // shortest text that may match the start of a drug name
+
 function search(drugName) {
   if (!drugName) return [];
 
@@ -69,8 +71,14 @@ function search(drugName) {
   if (drugIndex[query]) {
     matches = drugIndex[query];
   } else {
+    // Loose match, kept narrow on purpose (see patch-search-match-oct2026.js). A key matches when it
+    // starts with the typed text (partial typing, 4+ characters), or when the query begins with the
+    // whole key ("atorvastatin calcium tablet" -> key "atorvastatin calcium"). The old test,
+    // query.includes(key), matched short keys inside long queries and returned unrelated drugs.
     for (const [key, entries] of Object.entries(drugIndex)) {
-      if (key.includes(query) || query.includes(key)) {
+      const typedPrefix = query.length >= MIN_PARTIAL_LENGTH && key.startsWith(query);
+      const queryStartsWithKey = key.length >= MIN_PARTIAL_LENGTH && query.startsWith(key + ' ');
+      if (typedPrefix || queryStartsWithKey) {
         matches.push(...entries);
       }
     }

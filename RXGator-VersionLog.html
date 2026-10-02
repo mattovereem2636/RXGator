@@ -104,8 +104,36 @@
 </header>
 <main id="main-content">
 
-<section class="version current" aria-labelledby="v1-4-6">
-  <h2 id="v1-4-6">1.4.6 — 2026-10-01 <span class="badge">Current</span></h2>
+<section class="version current" aria-labelledby="v1-4-7">
+  <h2 id="v1-4-7">1.4.7 — 2026-10-01 <span class="badge">Current</span></h2>
+  <p><em>Search Match Fix</em></p>
+
+  <h3>Added</h3>
+  <ul>
+    <li><code>patch-search-match-oct2026.js</code> — fixes drug-name matching in four source modules, kept for the audit trail.</li>
+  </ul>
+
+  <h3>Changed</h3>
+  <ul>
+    <li><code>rxoutreach.js</code>, <code>ira-negotiated.js</code>, <code>texas-wac.js</code>, and <code>va-fss.js</code> now match a drug only when the typed text starts the indexed name, or the query begins with the whole indexed name.</li>
+    <li>These four modules no longer match short names inside a long query, and no longer match text from the middle of a name.</li>
+  </ul>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>A search for a combination drug no longer returns unrelated drugs from these four sources. A Descovy search returned tenofovir disoproxil and methylphenidate LA rows from Rx Outreach.</li>
+  </ul>
+
+  <h3>Known Issues</h3>
+  <ul>
+    <li>The Walmart and Amazon RxPass lists in <code>retail-sources.js</code> and two lookups in <code>govt-data.js</code> use the same loose two-way match. They are not fixed.</li>
+    <li>Text from the middle of a drug name (for example "statin") no longer finds a drug in these four sources.</li>
+    <li>About a dozen manufacturer links return 403 to automated requests. Confirm each one by hand.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-4-6">
+  <h2 id="v1-4-6">1.4.6 — 2026-10-01</h2>
   <p><em>Manufacturer Program Corrections</em></p>
 
   <h3>Added</h3>
