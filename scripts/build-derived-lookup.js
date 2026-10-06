@@ -5,7 +5,8 @@
  * WHY: retail-sources.js resolves a searched name to a generic through this lookup. It used
  * to be a hand-kept file that drifted from the master. Now the master is the only source.
  *
- * RULE: the generic name, every brand, and every alias becomes a lowercase key.
+ * RULE: every brand and every alias becomes a lowercase key. The generic name itself does not:
+ * a row for a generic name makes the app show "You searched for the brand name" for a generic search.
  * Row = { brand, generic, drugClass, primaryUse, hasGeneric, typicalSavings }.
  * Optional master fields: typicalSavings (string; shown only when hasGeneric is true), pricingNames ({ "<term>": "<generic used for pricing>" }).
  *
@@ -28,10 +29,10 @@ function buildLookup(master) {
   const collisions = [];
   for (const entry of master) {
     const brandCase = new Map((entry.brands || []).map(b => [String(b).toLowerCase().trim(), String(b).trim()]));
-    const terms = [entry.generic].concat(entry.brands || [], entry.aliases || []);
-    for (const term of terms) {
+    const genericKey = String(entry.generic).toLowerCase().trim();
+    for (const term of [].concat(entry.brands || [], entry.aliases || [])) {
       const key = String(term).toLowerCase().trim();
-      if (!key) continue;
+      if (!key || key === genericKey) continue;
       const pricing = entry.pricingNames && entry.pricingNames[key];
       const row = {
         brand: brandCase.get(key) || capitalize(key),

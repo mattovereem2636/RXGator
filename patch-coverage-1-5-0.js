@@ -156,7 +156,7 @@ carryOldValues();
 // ---- 1d. keep every old lookup key resolving ----
 let probe = lk.buildLookup(master).lookup;
 for (const key of Object.keys(oldLookup)) {
-  if (probe[key] || NOT_CARRIED.has(key)) continue;
+  if (probe[key] || NOT_CARRIED.has(key) || master.some(e => lc(e.generic) === key)) continue; // generic names are not lookup keys (1.5.1)
   const og = lc(oldLookup[key].generic);
   const target = master.find(e => lc(e.generic) === og || Object.values(e.pricingNames || {}).some(v => lc(v) === og));
   if (target && ownerOf.get(key) === target) { report.misspelled.push(key + ' -> ' + target.generic); continue; } // stays a misspelling by design
