@@ -104,8 +104,45 @@
 </header>
 <main id="main-content">
 
-<section class="version current" aria-labelledby="v1-4-9">
-  <h2 id="v1-4-9">1.4.9 — 2026-10-05 <span class="badge">Current</span></h2>
+<section class="version current" aria-labelledby="v1-5-0">
+  <h2 id="v1-5-0">1.5.0 — 2026-10-05 <span class="badge">Current</span></h2>
+  <p><em>Coverage</em></p>
+
+  <h3>Added</h3>
+  <ul>
+    <li>About 75 common generics in <code>data/drug-names.json</code>, each with brands, drug class, primary use, and Spanish text. Examples: ezetimibe, telmisartan, paroxetine, valacyclovir, and sacubitril/valsartan.</li>
+    <li><code>scripts/build-derived-lookup.js</code> — generates <code>data/brand-generic-lookup.json</code> from the master. Its <code>--check</code> mode compares the two files and writes nothing.</li>
+    <li>The aliases "ozempic pill", "ozempic tablets", and "wegovy pill" on semaglutide. The Ozempic pill launched in the US on May 4, 2026.</li>
+    <li>The optional master fields <code>typicalSavings</code> and <code>pricingNames</code>. The lookup uses them to price a search the same way as before.</li>
+    <li><code>patch-coverage-1-5-0.js</code> and <code>coverage-1-5-0.json</code> — the one-time import, kept for the audit trail.</li>
+  </ul>
+
+  <h3>Changed</h3>
+  <ul>
+    <li>Zantac now belongs to famotidine. Zantac 360 contains famotidine, not ranitidine.</li>
+    <li><code>retail-sources.js</code> now reads <code>data/brand-generic-lookup.json</code>, which is generated from the master.</li>
+    <li><code>scripts/add-dictionary-term.js</code> now refreshes the lookup as well as the map when it adds a brand or an alias.</li>
+    <li>Semaglutide, tirzepatide, empagliflozin, apixaban, and rivaroxaban now have <code>hasGeneric</code> set to false. No generic of the brand product sells in the US.</li>
+    <li>Ticagrelor, mirabegron, sacubitril/valsartan, lisdexamfetamine, and cyclosporine ophthalmic now have <code>hasGeneric</code> set to true. Generics launched.</li>
+  </ul>
+
+  <h3>Removed</h3>
+  <ul>
+    <li>The hand-kept <code>brand-generic-lookup.json</code> in the app root, moved to <code>_to_delete/</code>.</li>
+    <li>The stale <code>brand-generic-map.json</code> in the app root, moved to <code>_to_delete/</code>. The live copy is in <code>data/</code>.</li>
+  </ul>
+
+  <h3>Known Issues</h3>
+  <ul>
+    <li>The Depakote lookup row still prices as divalproex sodium, but the master entry is valproic acid. A price-coverage check is open.</li>
+    <li>Januvia, Lantus, Basaglar, Toujeo, Humalog, and Admelog now search by generic name. Confirm that a generic sells in the US for each.</li>
+    <li>The typical savings range of some brands now shows the most common value for the drug, not a value for each brand.</li>
+    <li>The health check does not yet test that the map and the lookup match the master.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-4-9">
+  <h2 id="v1-4-9">1.4.9 — 2026-10-05</h2>
   <p><em>Master Dictionary</em></p>
 
   <h3>Added</h3>

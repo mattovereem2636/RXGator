@@ -4,6 +4,34 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.0] — 2026-10-05 (Coverage)
+
+### Added
+- About 75 common generics in `data/drug-names.json`, each with brands, drug class, primary use, and Spanish text. Examples: ezetimibe, telmisartan, paroxetine, valacyclovir, and sacubitril/valsartan.
+- `scripts/build-derived-lookup.js` — generates `data/brand-generic-lookup.json` from the master. Its `--check` mode compares the two files and writes nothing.
+- The aliases "ozempic pill", "ozempic tablets", and "wegovy pill" on semaglutide. The Ozempic pill launched in the US on May 4, 2026.
+- The optional master fields `typicalSavings` and `pricingNames`. The lookup uses them to price a search the same way as before.
+- `patch-coverage-1-5-0.js` and `coverage-1-5-0.json` — the one-time import, kept for the audit trail.
+
+### Changed
+- Zantac now belongs to famotidine. Zantac 360 contains famotidine, not ranitidine.
+- `retail-sources.js` now reads `data/brand-generic-lookup.json`, which is generated from the master.
+- `scripts/add-dictionary-term.js` now refreshes the lookup as well as the map when it adds a brand or an alias.
+- Semaglutide, tirzepatide, empagliflozin, apixaban, and rivaroxaban now have `hasGeneric` set to false. No generic of the brand product sells in the US.
+- Ticagrelor, mirabegron, sacubitril/valsartan, lisdexamfetamine, and cyclosporine ophthalmic now have `hasGeneric` set to true. Generics launched.
+
+### Removed
+- The hand-kept `brand-generic-lookup.json` in the app root, moved to `_to_delete/`.
+- The stale `brand-generic-map.json` in the app root, moved to `_to_delete/`. The live copy is in `data/`.
+
+### Known Issues
+- The Depakote lookup row still prices as divalproex sodium, but the master entry is valproic acid. A price-coverage check is open.
+- Januvia, Lantus, Basaglar, Toujeo, Humalog, and Admelog now search by generic name. Confirm that a generic sells in the US for each.
+- The typical savings range of some brands now shows the most common value for the drug, not a value for each brand.
+- The health check does not yet test that the map and the lookup match the master.
+
+---
+
 ## [1.4.9] — 2026-10-05 (Master Dictionary)
 
 ### Added

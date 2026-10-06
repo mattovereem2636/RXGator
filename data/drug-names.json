@@ -7,7 +7,8 @@
       "Atorvaliq"
     ],
     "aliases": [
-      "ator"
+      "ator",
+      "atorvastatin calcium"
     ],
     "drugClass": "Statin",
     "primaryUse": "Cholesterol",
@@ -20,7 +21,8 @@
       "atorvststin",
       "atorvasatin",
       "atorvstatin"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1001",
@@ -33,7 +35,11 @@
     ],
     "aliases": [
       "met",
-      "glucophage"
+      "glucophage",
+      "synjardy xr",
+      "zituvimet xr",
+      "pioglitazone and metformin hydrochloride",
+      "metformin hcl"
     ],
     "drugClass": "Biguanide",
     "primaryUse": "Diabetes",
@@ -46,7 +52,8 @@
       "metfomin",
       "metformen",
       "metphormin"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1002",
@@ -70,7 +77,8 @@
       "lisinopral",
       "lisanopril",
       "lysinopril"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1003",
@@ -80,7 +88,11 @@
     ],
     "aliases": [
       "amlod",
-      "norvasc"
+      "norvasc",
+      "amlodipine besylate and benazepril hydrochloride",
+      "amlodipine and benazepril hydrochloride",
+      "olmesartan medoxomil / amlodipine besylate / hydrochlorothiazide",
+      "amlodipine besylate"
     ],
     "drugClass": "CCB",
     "primaryUse": "Blood pressure",
@@ -93,7 +105,8 @@
       "amlidopine",
       "amlodepine",
       "amoldipine"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1004",
@@ -107,7 +120,8 @@
     "aliases": [
       "levo",
       "synthroid",
-      "thyroid med"
+      "thyroid med",
+      "levothyroxine sodium"
     ],
     "drugClass": "Thyroid hormone",
     "primaryUse": "Thyroid",
@@ -120,7 +134,8 @@
       "levothroxine",
       "levothyroxinee",
       "synthroid"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1005",
@@ -130,7 +145,9 @@
     ],
     "aliases": [
       "ome",
-      "prilosec"
+      "prilosec",
+      "prilosec otc",
+      "omeprazole/sodium bicarbonate"
     ],
     "drugClass": "PPI",
     "primaryUse": "Acid reflux",
@@ -143,7 +160,8 @@
       "omeprezole",
       "omeprazolr",
       "omeparzole"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1006",
@@ -153,7 +171,8 @@
     ],
     "aliases": [
       "losar",
-      "cozaar"
+      "cozaar",
+      "losartan potassium"
     ],
     "drugClass": "ARB",
     "primaryUse": "Blood pressure",
@@ -166,7 +185,8 @@
       "losatan",
       "losartaan",
       "losartin"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1007",
@@ -190,7 +210,8 @@
       "gabapenten",
       "gabbapentin",
       "gabapentim"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1008",
@@ -200,7 +221,8 @@
     ],
     "aliases": [
       "sert",
-      "zoloft"
+      "zoloft",
+      "sertraline hydrochloride"
     ],
     "drugClass": "SSRI",
     "primaryUse": "Depression / Anxiety",
@@ -213,7 +235,8 @@
       "sertaline",
       "sertriline",
       "sertraleen"
-    ]
+    ],
+    "typicalSavings": "85-95%"
   },
   {
     "id": "1009",
@@ -223,7 +246,8 @@
     ],
     "aliases": [
       "monte",
-      "singulair"
+      "singulair",
+      "montelukast sodium"
     ],
     "drugClass": "LTRA",
     "primaryUse": "Asthma / Allergies",
@@ -235,7 +259,8 @@
       "montelukest",
       "montelucast",
       "montelukats"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1010",
@@ -245,7 +270,8 @@
     ],
     "aliases": [
       "escit",
-      "lexapro"
+      "lexapro",
+      "escitalopram oxalate"
     ],
     "drugClass": "SSRI",
     "primaryUse": "Depression / Anxiety",
@@ -257,7 +283,8 @@
       "escitalipram",
       "escitaopram",
       "escitolopram"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1011",
@@ -267,7 +294,8 @@
       "Oleptro"
     ],
     "aliases": [
-      "traz"
+      "traz",
+      "trazodone hydrochloride"
     ],
     "drugClass": "SARI",
     "primaryUse": "Depression / Sleep",
@@ -279,7 +307,8 @@
       "trazodne",
       "trasadone",
       "trazadome"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1012",
@@ -289,7 +318,8 @@
     ],
     "aliases": [
       "panto",
-      "protonix"
+      "protonix",
+      "pantoprazole sodium"
     ],
     "drugClass": "PPI",
     "primaryUse": "Acid reflux",
@@ -301,7 +331,8 @@
       "pantoprasole",
       "pantoprezole",
       "pantroprazole"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1013",
@@ -311,7 +342,8 @@
     ],
     "aliases": [
       "rosu",
-      "crestor"
+      "crestor",
+      "rosuvastatin calcium"
     ],
     "drugClass": "Statin",
     "primaryUse": "Cholesterol",
@@ -323,7 +355,8 @@
       "rosuvastaten",
       "rosuvastin",
       "rosuvstatin"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1014",
@@ -333,7 +366,8 @@
     ],
     "aliases": [
       "dulox",
-      "cymbalta"
+      "cymbalta",
+      "duloxetine delayed-release"
     ],
     "drugClass": "SNRI",
     "primaryUse": "Depression / Pain",
@@ -345,7 +379,8 @@
       "duloxitine",
       "duloxotine",
       "dulocetine"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1015",
@@ -356,7 +391,8 @@
     ],
     "aliases": [
       "bup",
-      "wellbutrin"
+      "wellbutrin",
+      "bupropion hydrochloride sr"
     ],
     "drugClass": "NDRI",
     "primaryUse": "Depression / Smoking",
@@ -368,7 +404,8 @@
       "buproprion",
       "bupropoin",
       "buproion"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1016",
@@ -378,7 +415,8 @@
     ],
     "aliases": [
       "melox",
-      "mobic"
+      "mobic",
+      "zybic"
     ],
     "drugClass": "NSAID",
     "primaryUse": "Pain / Inflammation",
@@ -390,7 +428,8 @@
       "meloxicame",
       "meloxicab",
       "melocicam"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1017",
@@ -412,7 +451,8 @@
       "carvedalol",
       "carvedlol",
       "carvadilol"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1018",
@@ -422,7 +462,8 @@
     ],
     "aliases": [
       "tams",
-      "flomax"
+      "flomax",
+      "tamsulosin hydrochloride"
     ],
     "drugClass": "Alpha blocker",
     "primaryUse": "Enlarged prostate",
@@ -434,7 +475,8 @@
       "tamsulisin",
       "tamsulosine",
       "tamsolusin"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1019",
@@ -446,7 +488,9 @@
       "HCTZ",
       "hydrochlor",
       "water pill",
-      "microzide"
+      "microzide",
+      "hydrodiuril",
+      "olmesartan medoxomil and hydrochlorothiazide"
     ],
     "drugClass": "Thiazide diuretic",
     "primaryUse": "Blood pressure",
@@ -458,7 +502,8 @@
       "hydrochlorothizide",
       "hydrochorthiazide",
       "hydroclorothiazide"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1020",
@@ -469,7 +514,8 @@
     ],
     "aliases": [
       "fluox",
-      "prozac"
+      "prozac",
+      "fluoxetine hydrochloride"
     ],
     "drugClass": "SSRI",
     "primaryUse": "Depression / Anxiety",
@@ -481,7 +527,8 @@
       "fluoxitine",
       "fluoxotine",
       "fluoxetene"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1021",
@@ -492,7 +539,8 @@
     ],
     "aliases": [
       "amox",
-      "amoxil"
+      "amoxil",
+      "amoxicillin and clavulanate potassium"
     ],
     "drugClass": "Penicillin",
     "primaryUse": "Bacterial infection",
@@ -504,7 +552,8 @@
       "amoxycillin",
       "amoxacillin",
       "amoxicillion"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1022",
@@ -518,7 +567,8 @@
       "z-pack",
       "zithromax",
       "zpak",
-      "z pack"
+      "z pack",
+      "azithromycin dihydrate"
     ],
     "drugClass": "Macrolide",
     "primaryUse": "Bacterial infection",
@@ -530,7 +580,8 @@
       "azythromycin",
       "azitromycin",
       "azithromysin"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1023",
@@ -544,7 +595,8 @@
       "alb",
       "proair",
       "ventolin",
-      "inhaler"
+      "inhaler",
+      "albuterol sulfate"
     ],
     "drugClass": "Beta-2 agonist",
     "primaryUse": "Asthma / COPD",
@@ -556,7 +608,8 @@
       "albuterel",
       "albutarol",
       "albuteroll"
-    ]
+    ],
+    "typicalSavings": "70-80%"
   },
   {
     "id": "1024",
@@ -579,7 +632,8 @@
       "predinosone",
       "prednizone",
       "prednisoine"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1025",
@@ -601,7 +655,8 @@
       "clopidogril",
       "clopidogrell",
       "clopidogrel"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1026",
@@ -623,7 +678,8 @@
       "furosemid",
       "furosimide",
       "furosimede"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1027",
@@ -635,7 +691,9 @@
     "aliases": [
       "meto",
       "lopressor",
-      "toprol"
+      "toprol",
+      "metoprolol tartrate",
+      "metoprolol succinate"
     ],
     "drugClass": "Beta blocker",
     "primaryUse": "Blood pressure / Heart",
@@ -647,7 +705,12 @@
       "metopralol",
       "metoprolo",
       "metprolol"
-    ]
+    ],
+    "pricingNames": {
+      "lopressor": "metoprolol tartrate",
+      "toprol-xl": "metoprolol succinate"
+    },
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1028",
@@ -669,7 +732,8 @@
       "glipzide",
       "glipeside",
       "glipiside"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1029",
@@ -679,7 +743,8 @@
     ],
     "aliases": [
       "prav",
-      "pravachol"
+      "pravachol",
+      "pravastatin sodium"
     ],
     "drugClass": "Statin",
     "primaryUse": "Cholesterol",
@@ -691,7 +756,8 @@
       "pravistatin",
       "pravastaten",
       "pravastation"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1030",
@@ -713,7 +779,8 @@
       "simvastain",
       "simvastatine",
       "simvastaten"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1031",
@@ -724,7 +791,8 @@
     ],
     "aliases": [
       "warf",
-      "coumadin"
+      "coumadin",
+      "warfarin sodium"
     ],
     "drugClass": "Anticoagulant",
     "primaryUse": "Blood clots",
@@ -736,7 +804,8 @@
       "warfarin",
       "warfaren",
       "warfain"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1032",
@@ -746,7 +815,8 @@
     ],
     "aliases": [
       "cital",
-      "celexa"
+      "celexa",
+      "citalopram hydrobromide"
     ],
     "drugClass": "SSRI",
     "primaryUse": "Depression",
@@ -758,7 +828,8 @@
       "citalapram",
       "citaloprame",
       "citaloprm"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1033",
@@ -769,7 +840,8 @@
     ],
     "aliases": [
       "tram",
-      "ultram"
+      "ultram",
+      "tramadol hydrochloride"
     ],
     "drugClass": "Opioid analgesic",
     "primaryUse": "Pain",
@@ -781,7 +853,8 @@
       "tramodol",
       "tramadole",
       "tramadl"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1034",
@@ -803,7 +876,8 @@
       "metronidazle",
       "metronidazol",
       "metranidazole"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1035",
@@ -814,7 +888,8 @@
     ],
     "aliases": [
       "cyclo",
-      "flexeril"
+      "flexeril",
+      "cyclobenzaprine hydrochloride"
     ],
     "drugClass": "Muscle relaxant",
     "primaryUse": "Muscle spasm",
@@ -826,7 +901,8 @@
       "cyclobenzaprine",
       "cyclobenzapene",
       "cyclobenziprine"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1036",
@@ -837,7 +913,8 @@
     ],
     "aliases": [
       "doxy",
-      "vibramycin"
+      "vibramycin",
+      "doxycycline hyclate"
     ],
     "drugClass": "Tetracycline",
     "primaryUse": "Bacterial infection",
@@ -849,7 +926,8 @@
       "doxycycline",
       "doxicicline",
       "doxycyclene"
-    ]
+    ],
+    "typicalSavings": "80-85%"
   },
   {
     "id": "1037",
@@ -859,7 +937,8 @@
     ],
     "aliases": [
       "venla",
-      "effexor"
+      "effexor",
+      "venlafaxine hydrochloride"
     ],
     "drugClass": "SNRI",
     "primaryUse": "Depression / Anxiety",
@@ -871,7 +950,8 @@
       "venlafaxene",
       "vanlafaxine",
       "venlafxine"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1038",
@@ -893,7 +973,8 @@
       "clonazapam",
       "clonazepem",
       "clonezepam"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1039",
@@ -916,7 +997,8 @@
       "alprazolm",
       "alprazolame",
       "alprazolom"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1040",
@@ -928,7 +1010,8 @@
     ],
     "aliases": [
       "ritalin",
-      "concerta"
+      "concerta",
+      "methylphenidate hydrochloride"
     ],
     "drugClass": "Stimulant",
     "primaryUse": "ADHD",
@@ -940,7 +1023,11 @@
       "methlyphenidate",
       "methylphenidiate",
       "methylphenadate"
-    ]
+    ],
+    "pricingNames": {
+      "concerta": "methylphenidate ER"
+    },
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1041",
@@ -961,7 +1048,8 @@
       "diazapam",
       "diazepem",
       "diazapem"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1042",
@@ -983,7 +1071,8 @@
       "lorazapam",
       "lorazepem",
       "lorezepam"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1043",
@@ -1005,7 +1094,8 @@
       "spironolactone",
       "spironalactone",
       "sprionolactone"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1044",
@@ -1016,7 +1106,10 @@
     "aliases": [
       "tylenol",
       "APAP",
-      "paracetamol"
+      "paracetamol",
+      "daytime cold and flu mini softgels",
+      "kroger daytime cold and flu softgel",
+      "topcare nite time day time cold and flu"
     ],
     "drugClass": "Analgesic",
     "primaryUse": "Pain / Fever",
@@ -1028,7 +1121,8 @@
       "acetiminophen",
       "acetaminifen",
       "acetaminophan"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1045",
@@ -1040,7 +1134,9 @@
     "aliases": [
       "advil",
       "motrin",
-      "IBU"
+      "IBU",
+      "sudafed pe head congestion plus pain",
+      "ibuprofen minis"
     ],
     "drugClass": "NSAID",
     "primaryUse": "Pain / Inflammation",
@@ -1052,7 +1148,8 @@
       "ibuprofene",
       "ibeprofen",
       "ibuprufen"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1046",
@@ -1063,7 +1160,10 @@
     ],
     "aliases": [
       "aleve",
-      "naprosyn"
+      "naprosyn",
+      "24/7 life by 7-eleven naproxen sodium",
+      "basic care naproxen sodium",
+      "aleve gelcaps"
     ],
     "drugClass": "NSAID",
     "primaryUse": "Pain / Inflammation",
@@ -1075,7 +1175,11 @@
       "naproxyn",
       "naporxen",
       "naproxem"
-    ]
+    ],
+    "pricingNames": {
+      "aleve": "naproxen sodium"
+    },
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1047",
@@ -1084,7 +1188,10 @@
       "Zyrtec"
     ],
     "aliases": [
-      "zyrtec"
+      "zyrtec",
+      "allergy relief all day",
+      "childrens cetirizine hydrochloride",
+      "cetirizine hydrochloride"
     ],
     "drugClass": "Antihistamine",
     "primaryUse": "Allergies",
@@ -1096,7 +1203,8 @@
       "cetirazine",
       "cetirizin",
       "cetirisine"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1048",
@@ -1105,7 +1213,11 @@
       "Claritin"
     ],
     "aliases": [
-      "claritin"
+      "claritin",
+      "childrens loratadine oral",
+      "allergy relief",
+      "all day allergy relief",
+      "loratadine 10mg"
     ],
     "drugClass": "Antihistamine",
     "primaryUse": "Allergies",
@@ -1117,7 +1229,8 @@
       "loratidin",
       "loratadene",
       "loratidene"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1049",
@@ -1137,16 +1250,21 @@
       "fexofenidine",
       "fexofenadince",
       "fexafenadine"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1050",
     "generic": "famotidine",
     "brands": [
-      "Pepcid"
+      "Pepcid",
+      "Zantac"
     ],
     "aliases": [
-      "pepcid"
+      "pepcid",
+      "zantac",
+      "ibuprofen and famotidine",
+      "zantac 360"
     ],
     "drugClass": "H2 blocker",
     "primaryUse": "Acid reflux",
@@ -1157,17 +1275,14 @@
       "famotidene",
       "famotodine",
       "famoitdine"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1051",
     "generic": "ranitidine",
-    "brands": [
-      "Zantac"
-    ],
-    "aliases": [
-      "zantac"
-    ],
+    "brands": [],
+    "aliases": [],
     "drugClass": "H2 blocker",
     "primaryUse": "Acid reflux",
     "primaryUseES": "Reflujo ácido",
@@ -1177,7 +1292,8 @@
       "ranitidene",
       "ranatidine",
       "ranitadene"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1052",
@@ -1197,7 +1313,8 @@
       "lansaprazole",
       "lansoprazol",
       "lansoprazle"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1053",
@@ -1206,7 +1323,10 @@
       "Nexium"
     ],
     "aliases": [
-      "nexium"
+      "nexium",
+      "nexium otc",
+      "esomeprazole magnesium",
+      "careone esomeprazole magnesium"
     ],
     "drugClass": "PPI",
     "primaryUse": "Acid reflux",
@@ -1217,7 +1337,8 @@
       "esomeprasole",
       "esomaprazole",
       "esomeprezole"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1054",
@@ -1239,7 +1360,8 @@
       "insulin glargin",
       "insulin glargene",
       "insuline glargine"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1055",
@@ -1259,7 +1381,8 @@
       "insulin lispro",
       "insulin lyspro",
       "insuline lispro"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1056",
@@ -1282,7 +1405,8 @@
       "methotrexete",
       "methotrexatte",
       "methotraxate"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1058",
@@ -1312,7 +1436,8 @@
       "Cipro"
     ],
     "aliases": [
-      "cipro"
+      "cipro",
+      "ciprofloxacin hydrochloride"
     ],
     "drugClass": "Fluoroquinolone",
     "primaryUse": "Bacterial infection",
@@ -1323,7 +1448,8 @@
       "ciprofloxacine",
       "ciprfloxacin",
       "ciprofloxasin"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1060",
@@ -1343,7 +1469,8 @@
       "levofloxacine",
       "levofloxasin",
       "levofloxcin"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1061",
@@ -1364,7 +1491,8 @@
       "cephalixin",
       "cephlexin",
       "cephalexine"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1062",
@@ -1373,7 +1501,10 @@
       "Cleocin"
     ],
     "aliases": [
-      "cleocin"
+      "cleocin",
+      "clindacare",
+      "clindamycin hydrochloride",
+      "clindamycin phosphate"
     ],
     "drugClass": "Lincosamide",
     "primaryUse": "Bacterial infection",
@@ -1384,7 +1515,8 @@
       "clindamycine",
       "clindamacin",
       "clindamysin"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1063",
@@ -1397,7 +1529,8 @@
       "bactrim",
       "septra",
       "SMZ-TMP",
-      "sulfa"
+      "sulfa",
+      "sulfamethox-tmp ds"
     ],
     "drugClass": "Sulfonamide",
     "primaryUse": "Bacterial infection",
@@ -1407,7 +1540,12 @@
       "sulfamethoxazole",
       "bactrim",
       "sulfa-trimethoprim"
-    ]
+    ],
+    "pricingNames": {
+      "bactrim": "sulfamethoxazole/trimethoprim",
+      "sulfamethox-tmp ds": "sulfamethoxazole/trimethoprim"
+    },
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1064",
@@ -1416,7 +1554,8 @@
       "Lotensin"
     ],
     "aliases": [
-      "lotensin"
+      "lotensin",
+      "benazepril hydrochloride"
     ],
     "drugClass": "ACE Inhibitor",
     "primaryUse": "Blood pressure",
@@ -1427,7 +1566,8 @@
       "benazepral",
       "benazipril",
       "benazeprile"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1065",
@@ -1436,7 +1576,8 @@
       "Vasotec"
     ],
     "aliases": [
-      "vasotec"
+      "vasotec",
+      "enalapril maleate"
     ],
     "drugClass": "ACE Inhibitor",
     "primaryUse": "Blood pressure",
@@ -1447,7 +1588,8 @@
       "enalopril",
       "enalapral",
       "enalipral"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1066",
@@ -1467,7 +1609,8 @@
       "ramipral",
       "rampril",
       "ramiprile"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1067",
@@ -1476,7 +1619,8 @@
       "Diovan"
     ],
     "aliases": [
-      "diovan"
+      "diovan",
+      "sacubitril and valsartan"
     ],
     "drugClass": "ARB",
     "primaryUse": "Blood pressure",
@@ -1487,7 +1631,8 @@
       "valsartin",
       "valsarton",
       "valsartane"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1068",
@@ -1507,7 +1652,8 @@
       "irbesartin",
       "irbesarton",
       "irbasartan"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1069",
@@ -1516,7 +1662,8 @@
       "Benicar"
     ],
     "aliases": [
-      "benicar"
+      "benicar",
+      "olmesartan medoxomil"
     ],
     "drugClass": "ARB",
     "primaryUse": "Blood pressure",
@@ -1527,7 +1674,8 @@
       "olmesartin",
       "olmasartan",
       "olmisartan"
-    ]
+    ],
+    "typicalSavings": "80-85%"
   },
   {
     "id": "1070",
@@ -1538,7 +1686,10 @@
     ],
     "aliases": [
       "cardizem",
-      "tiazac"
+      "tiazac",
+      "diltiazem hydrochloride",
+      "cardizem la",
+      "tiadylt er"
     ],
     "drugClass": "CCB",
     "primaryUse": "Blood pressure / Heart",
@@ -1549,7 +1700,8 @@
       "diltizem",
       "diltiazm",
       "diltiazen"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1071",
@@ -1570,7 +1722,8 @@
       "nifedipene",
       "nifedepine",
       "nifidipine"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1072",
@@ -1590,7 +1743,8 @@
       "atenlol",
       "atenolal",
       "atanolol"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1073",
@@ -1599,7 +1753,8 @@
       "Inderal"
     ],
     "aliases": [
-      "inderal"
+      "inderal",
+      "propranolol hydrochloride"
     ],
     "drugClass": "Beta blocker",
     "primaryUse": "Blood pressure / Anxiety",
@@ -1610,7 +1765,8 @@
       "propranalol",
       "propronolol",
       "propranololl"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1074",
@@ -1650,7 +1806,8 @@
       "clonidene",
       "clonidin",
       "clonodine"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1076",
@@ -1672,7 +1829,12 @@
       "finastride",
       "finasteride",
       "fenasteride"
-    ]
+    ],
+    "pricingNames": {
+      "proscar": "finasteride 5mg",
+      "propecia": "finasteride 1mg"
+    },
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1077",
@@ -1683,7 +1845,8 @@
     ],
     "aliases": [
       "viagra",
-      "revatio"
+      "revatio",
+      "sildenafil citrate"
     ],
     "drugClass": "PDE5 inhibitor",
     "primaryUse": "Erectile dysfunction / PAH",
@@ -1694,7 +1857,8 @@
       "sildinafil",
       "sildanafil",
       "sildenifil"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1078",
@@ -1716,7 +1880,8 @@
       "tadalifil",
       "tadalfil",
       "tadanafil"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1079",
@@ -1736,7 +1901,8 @@
       "sumatripten",
       "sumatripan",
       "sumatrippton"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1080",
@@ -1757,7 +1923,8 @@
       "ondansetrin",
       "ondancetrion",
       "ondansteron"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1081",
@@ -1819,7 +1986,8 @@
       "diclofanac",
       "diclofinac",
       "diclophenac"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1084",
@@ -1839,7 +2007,8 @@
       "celcoxib",
       "celecoxibe",
       "celicoxib"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1085",
@@ -1859,7 +2028,8 @@
       "pregabalon",
       "pregablin",
       "pregabakin"
-    ]
+    ],
+    "typicalSavings": "80-85%"
   },
   {
     "id": "1086",
@@ -1879,7 +2049,8 @@
       "topiromate",
       "topiramite",
       "topiramete"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1087",
@@ -1899,7 +2070,8 @@
       "lamotragine",
       "lamotrigene",
       "lamitrigine"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1088",
@@ -1919,7 +2091,8 @@
       "levetiracitam",
       "levetiracetame",
       "levetericetam"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1089",
@@ -1942,7 +2115,11 @@
       "valporic acid",
       "valprioc acid",
       "valporic"
-    ]
+    ],
+    "pricingNames": {
+      "depakote": "divalproex sodium"
+    },
+    "typicalSavings": "80-85%"
   },
   {
     "id": "1090",
@@ -1962,7 +2139,8 @@
       "phenytion",
       "phenitoin",
       "phenytoan"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1091",
@@ -1982,7 +2160,8 @@
       "aripiprasole",
       "aripiprazle",
       "aripaprazole"
-    ]
+    ],
+    "typicalSavings": "80-85%"
   },
   {
     "id": "1092",
@@ -2002,7 +2181,8 @@
       "quetipine",
       "quetiapiene",
       "quetiapaine"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1093",
@@ -2022,7 +2202,8 @@
       "olanzipine",
       "olanzapiene",
       "olanzepine"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1094",
@@ -2042,7 +2223,8 @@
       "risperadone",
       "risperidon",
       "risperdone"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1095",
@@ -2063,7 +2245,11 @@
       "lithium carbonat",
       "litheum",
       "lithiam carbonate"
-    ]
+    ],
+    "pricingNames": {
+      "lithobid": "lithium"
+    },
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1096",
@@ -2083,7 +2269,8 @@
       "busprirone",
       "busprone",
       "busparone"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1097",
@@ -2125,7 +2312,8 @@
       "zolpidm",
       "zolpidem",
       "zolpidim"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1099",
@@ -2145,7 +2333,8 @@
       "eszopiclone",
       "eszopiclon",
       "eszopiclome"
-    ]
+    ],
+    "typicalSavings": "80-85%"
   },
   {
     "id": "1100",
@@ -2165,7 +2354,8 @@
       "donepezal",
       "donepizil",
       "donepesil"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1101",
@@ -2185,7 +2375,8 @@
       "memantene",
       "memantina",
       "memantene"
-    ]
+    ],
+    "typicalSavings": "80-85%"
   },
   {
     "id": "1103",
@@ -2196,7 +2387,11 @@
     ],
     "aliases": [
       "flonase",
-      "flovent"
+      "flovent",
+      "azelastine hydrochloride and fluticasone propionate",
+      "fluticasone propionate and salmeterol diskus",
+      "airduo respiclick",
+      "fluticasone propionate"
     ],
     "drugClass": "Corticosteroid",
     "primaryUse": "Allergies / Asthma",
@@ -2207,7 +2402,11 @@
       "fluticason",
       "fluticasne",
       "fluitcasone"
-    ]
+    ],
+    "pricingNames": {
+      "flonase": "fluticasone propionate"
+    },
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1104",
@@ -2270,7 +2469,8 @@
       "latanprost",
       "latanaprost",
       "latanoproste"
-    ]
+    ],
+    "typicalSavings": "80-85%"
   },
   {
     "id": "1107",
@@ -2310,7 +2510,8 @@
       "pioglitasone",
       "pioglitezone",
       "pioglitazone"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1109",
@@ -2344,7 +2545,7 @@
     "drugClass": "SGLT2 inhibitor",
     "primaryUse": "Diabetes / Heart failure",
     "primaryUseES": "Diabetes / Insuficiencia cardíaca",
-    "hasGeneric": true,
+    "hasGeneric": false,
     "commonMisspellings": [
       "empagliflozn",
       "empaglifozin",
@@ -2392,7 +2593,8 @@
       "liraglutide",
       "liraglutyde",
       "liragluetide"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1113",
@@ -2405,19 +2607,27 @@
     "aliases": [
       "ozempic",
       "wegovy",
-      "rybelsus"
+      "rybelsus",
+      "ozempic pill",
+      "ozempic tablets",
+      "wegovy pill"
     ],
     "drugClass": "GLP-1 agonist",
     "primaryUse": "Diabetes / Weight loss",
     "primaryUseES": "Diabetes / Pérdida de peso",
-    "hasGeneric": true,
+    "hasGeneric": false,
     "commonMisspellings": [
       "semaglutid",
       "semaglutide",
       "semaglutyde",
       "semglutide",
       "semiglutide"
-    ]
+    ],
+    "pricingNames": {
+      "ozempic": "semaglutide injection",
+      "wegovy": "semaglutide injection"
+    },
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1114",
@@ -2433,7 +2643,7 @@
     "drugClass": "GIP/GLP-1 agonist",
     "primaryUse": "Diabetes / Weight loss",
     "primaryUseES": "Diabetes / Pérdida de peso",
-    "hasGeneric": true,
+    "hasGeneric": false,
     "commonMisspellings": [
       "tirzepatid",
       "tirzepatyde",
@@ -2453,13 +2663,14 @@
     "drugClass": "Factor Xa inhibitor",
     "primaryUse": "Blood clots / AFib",
     "primaryUseES": "Coágulos / Fibrilación auricular",
-    "hasGeneric": true,
+    "hasGeneric": false,
     "commonMisspellings": [
       "apixiban",
       "apixabin",
       "apixaban",
       "apixiben"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1116",
@@ -2473,13 +2684,14 @@
     "drugClass": "Factor Xa inhibitor",
     "primaryUse": "Blood clots / AFib",
     "primaryUseES": "Coágulos / Fibrilación auricular",
-    "hasGeneric": true,
+    "hasGeneric": false,
     "commonMisspellings": [
       "rivaroxiban",
       "rivaroxabin",
       "rivaroxban",
       "riivaroxaban"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1117",
@@ -2519,7 +2731,8 @@
       "allopurinall",
       "alopurinol",
       "allopurinole"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1119",
@@ -2540,7 +2753,8 @@
       "colchicene",
       "colchisine",
       "colchiciene"
-    ]
+    ],
+    "typicalSavings": "70-80%"
   },
   {
     "id": "1120",
@@ -2560,7 +2774,8 @@
       "febuxostat",
       "febuoxstat",
       "febuxstat"
-    ]
+    ],
+    "typicalSavings": "75-85%"
   },
   {
     "id": "1121",
@@ -2580,7 +2795,8 @@
       "metocloprimade",
       "metoclopramid",
       "metaclopramide"
-    ]
+    ],
+    "typicalSavings": "90-95%"
   },
   {
     "id": "1122",
@@ -2600,7 +2816,8 @@
       "dicyclomene",
       "dicyclamine",
       "dycyclomine"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1123",
@@ -2630,7 +2847,8 @@
       "Macrodantin"
     ],
     "aliases": [
-      "macrobid"
+      "macrobid",
+      "nitrofurantoin (monohydrate/macrocrystals)"
     ],
     "drugClass": "Antibiotic",
     "primaryUse": "UTI",
@@ -2641,7 +2859,8 @@
       "nitrofurantion",
       "nitrofurantoen",
       "nitrofuranoin"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1125",
@@ -2652,7 +2871,11 @@
     ],
     "aliases": [
       "pyridium",
-      "azo"
+      "azo",
+      "sunmark urinary pain relief",
+      "phenazopyridine hydrochloride",
+      "preferred maximum strength urinary pain relief",
+      "rite aid maximum strength urinary pain relief"
     ],
     "drugClass": "Urinary analgesic",
     "primaryUse": "UTI pain",
@@ -2662,7 +2885,8 @@
       "phenazopyridin",
       "phenazopyradine",
       "phenazopyridene"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1126",
@@ -2671,7 +2895,9 @@
       "Ditropan"
     ],
     "aliases": [
-      "ditropan"
+      "ditropan",
+      "oxybutynin chloride",
+      "oxybutynin chloride extended release"
     ],
     "drugClass": "Anticholinergic",
     "primaryUse": "Overactive bladder",
@@ -2682,7 +2908,8 @@
       "oxybutinin",
       "oxybuynin",
       "oxybutynon"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1127",
@@ -2691,7 +2918,8 @@
       "Vesicare"
     ],
     "aliases": [
-      "vesicare"
+      "vesicare",
+      "solifenacin succinate"
     ],
     "drugClass": "Anticholinergic",
     "primaryUse": "Overactive bladder",
@@ -2702,7 +2930,8 @@
       "solifenican",
       "solifencin",
       "solifenacen"
-    ]
+    ],
+    "typicalSavings": "80-95%"
   },
   {
     "id": "1128",
@@ -2748,7 +2977,8 @@
       "estradol",
       "estridiol",
       "estradioal"
-    ]
+    ],
+    "typicalSavings": "80-85%"
   },
   {
     "id": "1130",
@@ -2769,7 +2999,8 @@
       "medroxyprogesterone",
       "medroxyprogesterion",
       "medroxiprogesterone"
-    ]
+    ],
+    "typicalSavings": "85-90%"
   },
   {
     "id": "1131",
@@ -2907,6 +3138,1274 @@
       "adderol",
       "adrerall",
       "d amphetamine salt compo"
-    ]
+    ],
+    "typicalSavings": "70-80%"
+  },
+  {
+    "id": "1137",
+    "generic": "fluvastatin",
+    "brands": [
+      "Lescol",
+      "Lescol XL"
+    ],
+    "aliases": [
+      "lescol",
+      "lescol xl"
+    ],
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1138",
+    "generic": "lovastatin",
+    "brands": [
+      "Mevacor",
+      "Altoprev"
+    ],
+    "aliases": [
+      "mevacor",
+      "altoprev"
+    ],
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1139",
+    "generic": "ezetimibe",
+    "brands": [
+      "Zetia"
+    ],
+    "aliases": [
+      "zetia"
+    ],
+    "drugClass": "Cholesterol absorption inhibitor",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1140",
+    "generic": "fenofibrate",
+    "brands": [
+      "Tricor",
+      "Fenoglide"
+    ],
+    "aliases": [
+      "tricor",
+      "fenoglide"
+    ],
+    "drugClass": "Fibrate",
+    "primaryUse": "Cholesterol / Triglycerides",
+    "primaryUseES": "Colesterol y triglicéridos",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-90%"
+  },
+  {
+    "id": "1141",
+    "generic": "candesartan",
+    "brands": [
+      "Atacand"
+    ],
+    "aliases": [
+      "atacand",
+      "candesartan cilexetil and hydrochlorothiazide",
+      "candesartan cilexetil"
+    ],
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1142",
+    "generic": "telmisartan",
+    "brands": [
+      "Micardis"
+    ],
+    "aliases": [
+      "micardis"
+    ],
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1143",
+    "generic": "nebivolol",
+    "brands": [
+      "Bystolic"
+    ],
+    "aliases": [
+      "bystolic"
+    ],
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "75-85%"
+  },
+  {
+    "id": "1144",
+    "generic": "losartan/hydrochlorothiazide",
+    "brands": [
+      "Hyzaar"
+    ],
+    "aliases": [
+      "hyzaar"
+    ],
+    "drugClass": "ARB + diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1145",
+    "generic": "lisinopril/hydrochlorothiazide",
+    "brands": [
+      "Zestoretic"
+    ],
+    "aliases": [
+      "zestoretic",
+      "lisinopril/hctz"
+    ],
+    "drugClass": "ACE inhibitor + diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "pricingNames": {
+      "lisinopril/hctz": "lisinopril/hctz"
+    },
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1146",
+    "generic": "quinapril",
+    "brands": [
+      "Accupril"
+    ],
+    "aliases": [
+      "accupril",
+      "quinapril and hydrochlorothiazide 10/12.5",
+      "quinapril and hydrochlorothiazide 20/12.5"
+    ],
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1147",
+    "generic": "fosinopril",
+    "brands": [
+      "Monopril"
+    ],
+    "aliases": [
+      "monopril",
+      "fosinopril sodium"
+    ],
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1148",
+    "generic": "chlorthalidone",
+    "brands": [
+      "Thalitone"
+    ],
+    "aliases": [
+      "thalitone"
+    ],
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1149",
+    "generic": "verapamil",
+    "brands": [
+      "Calan",
+      "Isoptin"
+    ],
+    "aliases": [
+      "calan",
+      "isoptin",
+      "verapamil hydrochloride"
+    ],
+    "drugClass": "Calcium channel blocker",
+    "primaryUse": "Blood pressure / Heart rhythm",
+    "primaryUseES": "Presión arterial y ritmo cardíaco",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1150",
+    "generic": "prazosin",
+    "brands": [
+      "Minipress"
+    ],
+    "aliases": [
+      "minipress",
+      "prazosin hydrochloride"
+    ],
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1151",
+    "generic": "doxazosin",
+    "brands": [
+      "Cardura"
+    ],
+    "aliases": [
+      "cardura"
+    ],
+    "drugClass": "Alpha blocker",
+    "primaryUse": "BPH / Blood pressure",
+    "primaryUseES": "Próstata agrandada y presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1152",
+    "generic": "terazosin",
+    "brands": [],
+    "aliases": [
+      "terazosin hydrochloride"
+    ],
+    "drugClass": "Alpha blocker",
+    "primaryUse": "BPH / Blood pressure",
+    "primaryUseES": "Próstata agrandada y presión arterial",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1153",
+    "generic": "sacubitril/valsartan",
+    "brands": [
+      "Entresto"
+    ],
+    "aliases": [
+      "entresto"
+    ],
+    "drugClass": "ARNI",
+    "primaryUse": "Heart failure",
+    "primaryUseES": "Insuficiencia cardíaca",
+    "hasGeneric": true,
+    "commonMisspellings": []
+  },
+  {
+    "id": "1154",
+    "generic": "digoxin",
+    "brands": [
+      "Lanoxin"
+    ],
+    "aliases": [
+      "lanoxin"
+    ],
+    "drugClass": "Cardiac glycoside",
+    "primaryUse": "Heart failure / AFib",
+    "primaryUseES": "Insuficiencia cardíaca y fibrilación auricular",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1155",
+    "generic": "amiodarone",
+    "brands": [
+      "Pacerone"
+    ],
+    "aliases": [
+      "pacerone",
+      "amiodarone hydrochloride"
+    ],
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "primaryUseES": "Ritmo cardíaco",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1156",
+    "generic": "flecainide",
+    "brands": [
+      "Tambocor"
+    ],
+    "aliases": [
+      "tambocor",
+      "flecainide acetate"
+    ],
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "primaryUseES": "Ritmo cardíaco",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1157",
+    "generic": "sotalol",
+    "brands": [
+      "Betapace"
+    ],
+    "aliases": [
+      "betapace",
+      "sotalol hydrochloride"
+    ],
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart rhythm",
+    "primaryUseES": "Ritmo cardíaco",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1158",
+    "generic": "prasugrel",
+    "brands": [
+      "Effient"
+    ],
+    "aliases": [
+      "effient"
+    ],
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1159",
+    "generic": "ticagrelor",
+    "brands": [
+      "Brilinta"
+    ],
+    "aliases": [
+      "brilinta"
+    ],
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1160",
+    "generic": "aspirin",
+    "brands": [],
+    "aliases": [
+      "aspirin 81mg dye-free",
+      "low dose aspirin"
+    ],
+    "drugClass": "NSAID / Antiplatelet",
+    "primaryUse": "Pain / Blood clots",
+    "primaryUseES": "Dolor y coágulos de sangre",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1161",
+    "generic": "glimepiride",
+    "brands": [
+      "Amaryl"
+    ],
+    "aliases": [
+      "amaryl"
+    ],
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1162",
+    "generic": "glyburide",
+    "brands": [
+      "Diabeta",
+      "Glynase"
+    ],
+    "aliases": [
+      "diabeta",
+      "glynase"
+    ],
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1163",
+    "generic": "canagliflozin",
+    "brands": [
+      "Invokana"
+    ],
+    "aliases": [
+      "invokana"
+    ],
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": false,
+    "commonMisspellings": []
+  },
+  {
+    "id": "1164",
+    "generic": "dulaglutide",
+    "brands": [
+      "Trulicity"
+    ],
+    "aliases": [
+      "trulicity"
+    ],
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": false,
+    "commonMisspellings": []
+  },
+  {
+    "id": "1165",
+    "generic": "insulin aspart",
+    "brands": [
+      "NovoLog",
+      "Fiasp"
+    ],
+    "aliases": [
+      "novolog",
+      "fiasp"
+    ],
+    "drugClass": "Insulin (rapid-acting)",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": false,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1166",
+    "generic": "naltrexone/bupropion",
+    "brands": [
+      "Contrave"
+    ],
+    "aliases": [
+      "contrave"
+    ],
+    "drugClass": "Opioid antagonist + NDRI",
+    "primaryUse": "Weight management",
+    "primaryUseES": "Control del peso",
+    "hasGeneric": false,
+    "commonMisspellings": []
+  },
+  {
+    "id": "1167",
+    "generic": "thyroid desiccated",
+    "brands": [
+      "Armour Thyroid",
+      "NP Thyroid"
+    ],
+    "aliases": [
+      "armour thyroid",
+      "np thyroid"
+    ],
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Hypothyroidism",
+    "primaryUseES": "Hipotiroidismo",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "70-80%"
+  },
+  {
+    "id": "1168",
+    "generic": "methimazole",
+    "brands": [
+      "Tapazole"
+    ],
+    "aliases": [
+      "tapazole"
+    ],
+    "drugClass": "Antithyroid",
+    "primaryUse": "Hyperthyroidism",
+    "primaryUseES": "Hipertiroidismo",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1169",
+    "generic": "paroxetine",
+    "brands": [
+      "Paxil"
+    ],
+    "aliases": [
+      "paxil"
+    ],
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión y ansiedad",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-95%"
+  },
+  {
+    "id": "1170",
+    "generic": "desvenlafaxine",
+    "brands": [
+      "Pristiq"
+    ],
+    "aliases": [
+      "pristiq"
+    ],
+    "drugClass": "SNRI",
+    "primaryUse": "Depression",
+    "primaryUseES": "Depresión",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "75-85%"
+  },
+  {
+    "id": "1171",
+    "generic": "mirtazapine",
+    "brands": [
+      "Remeron"
+    ],
+    "aliases": [
+      "remeron"
+    ],
+    "drugClass": "Tetracyclic antidepressant",
+    "primaryUse": "Depression",
+    "primaryUseES": "Depresión",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1172",
+    "generic": "amitriptyline",
+    "brands": [
+      "Elavil"
+    ],
+    "aliases": [
+      "elavil"
+    ],
+    "drugClass": "TCA",
+    "primaryUse": "Depression / Pain",
+    "primaryUseES": "Depresión y dolor",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1173",
+    "generic": "lisdexamfetamine",
+    "brands": [
+      "Vyvanse"
+    ],
+    "aliases": [
+      "vyvanse"
+    ],
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "primaryUseES": "TDAH",
+    "hasGeneric": true,
+    "commonMisspellings": []
+  },
+  {
+    "id": "1174",
+    "generic": "atomoxetine",
+    "brands": [
+      "Strattera"
+    ],
+    "aliases": [
+      "strattera"
+    ],
+    "drugClass": "NRI",
+    "primaryUse": "ADHD",
+    "primaryUseES": "TDAH",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "75-85%"
+  },
+  {
+    "id": "1175",
+    "generic": "carbamazepine",
+    "brands": [
+      "Tegretol",
+      "Epitol"
+    ],
+    "aliases": [
+      "tegretol",
+      "epitol"
+    ],
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Nerve pain",
+    "primaryUseES": "Convulsiones y dolor nervioso",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1176",
+    "generic": "rabeprazole",
+    "brands": [
+      "Aciphex"
+    ],
+    "aliases": [
+      "aciphex"
+    ],
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux / GERD",
+    "primaryUseES": "Reflujo ácido y ERGE",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1177",
+    "generic": "linaclotide",
+    "brands": [
+      "Linzess"
+    ],
+    "aliases": [
+      "linzess"
+    ],
+    "drugClass": "GC-C agonist",
+    "primaryUse": "IBS / Constipation",
+    "primaryUseES": "Síndrome del intestino irritable y estreñimiento",
+    "hasGeneric": false,
+    "commonMisspellings": []
+  },
+  {
+    "id": "1178",
+    "generic": "indomethacin",
+    "brands": [
+      "Indocin"
+    ],
+    "aliases": [
+      "indocin"
+    ],
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Gout",
+    "primaryUseES": "Dolor y gota",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1179",
+    "generic": "tizanidine",
+    "brands": [
+      "Zanaflex"
+    ],
+    "aliases": [
+      "zanaflex"
+    ],
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "primaryUseES": "Espasmos musculares",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1180",
+    "generic": "methocarbamol",
+    "brands": [
+      "Robaxin"
+    ],
+    "aliases": [
+      "robaxin"
+    ],
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "primaryUseES": "Espasmos musculares",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1181",
+    "generic": "metaxalone",
+    "brands": [
+      "Skelaxin"
+    ],
+    "aliases": [
+      "skelaxin"
+    ],
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "primaryUseES": "Espasmos musculares",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1182",
+    "generic": "baclofen",
+    "brands": [
+      "Lioresal"
+    ],
+    "aliases": [
+      "lioresal"
+    ],
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms / Spasticity",
+    "primaryUseES": "Espasmos musculares y espasticidad",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1183",
+    "generic": "amoxicillin/clavulanate",
+    "brands": [
+      "Augmentin"
+    ],
+    "aliases": [
+      "augmentin"
+    ],
+    "drugClass": "Penicillin + inhibitor",
+    "primaryUse": "Bacterial infections",
+    "primaryUseES": "Infecciones bacterianas",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1184",
+    "generic": "diphenhydramine",
+    "brands": [
+      "Benadryl"
+    ],
+    "aliases": [
+      "benadryl"
+    ],
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies / Sleep",
+    "primaryUseES": "Alergias y sueño",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1185",
+    "generic": "mometasone nasal",
+    "brands": [
+      "Nasonex"
+    ],
+    "aliases": [
+      "nasonex"
+    ],
+    "drugClass": "Nasal corticosteroid",
+    "primaryUse": "Nasal allergies",
+    "primaryUseES": "Alergias nasales",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1186",
+    "generic": "ipratropium/albuterol",
+    "brands": [
+      "Combivent"
+    ],
+    "aliases": [
+      "combivent"
+    ],
+    "drugClass": "SAMA + SABA",
+    "primaryUse": "COPD",
+    "primaryUseES": "EPOC",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "70-80%"
+  },
+  {
+    "id": "1187",
+    "generic": "fluconazole",
+    "brands": [
+      "Diflucan"
+    ],
+    "aliases": [
+      "diflucan"
+    ],
+    "drugClass": "Antifungal",
+    "primaryUse": "Fungal infections",
+    "primaryUseES": "Infecciones por hongos",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1188",
+    "generic": "terbinafine",
+    "brands": [
+      "Lamisil"
+    ],
+    "aliases": [
+      "lamisil"
+    ],
+    "drugClass": "Antifungal",
+    "primaryUse": "Fungal infections",
+    "primaryUseES": "Infecciones por hongos",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1189",
+    "generic": "dutasteride",
+    "brands": [
+      "Avodart"
+    ],
+    "aliases": [
+      "avodart"
+    ],
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "Enlarged prostate (BPH)",
+    "primaryUseES": "Próstata agrandada (HPB)",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1190",
+    "generic": "tolterodine",
+    "brands": [
+      "Detrol"
+    ],
+    "aliases": [
+      "detrol",
+      "tolterodine tartrate"
+    ],
+    "drugClass": "Antimuscarinic",
+    "primaryUse": "Overactive bladder",
+    "primaryUseES": "Vejiga hiperactiva",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1191",
+    "generic": "mirabegron",
+    "brands": [
+      "Myrbetriq"
+    ],
+    "aliases": [
+      "myrbetriq"
+    ],
+    "drugClass": "Beta-3 agonist",
+    "primaryUse": "Overactive bladder",
+    "primaryUseES": "Vejiga hiperactiva",
+    "hasGeneric": true,
+    "commonMisspellings": []
+  },
+  {
+    "id": "1192",
+    "generic": "alendronate",
+    "brands": [
+      "Fosamax"
+    ],
+    "aliases": [
+      "fosamax"
+    ],
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "primaryUseES": "Osteoporosis",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1193",
+    "generic": "risedronate",
+    "brands": [
+      "Actonel"
+    ],
+    "aliases": [
+      "actonel"
+    ],
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "primaryUseES": "Osteoporosis",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1194",
+    "generic": "ibandronate",
+    "brands": [
+      "Boniva"
+    ],
+    "aliases": [
+      "boniva"
+    ],
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "primaryUseES": "Osteoporosis",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "75-85%"
+  },
+  {
+    "id": "1195",
+    "generic": "raloxifene",
+    "brands": [
+      "Evista"
+    ],
+    "aliases": [
+      "evista"
+    ],
+    "drugClass": "SERM",
+    "primaryUse": "Osteoporosis",
+    "primaryUseES": "Osteoporosis",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1196",
+    "generic": "rizatriptan",
+    "brands": [
+      "Maxalt"
+    ],
+    "aliases": [
+      "maxalt"
+    ],
+    "drugClass": "Triptan",
+    "primaryUse": "Migraines",
+    "primaryUseES": "Migrañas",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1197",
+    "generic": "bimatoprost",
+    "brands": [
+      "Lumigan"
+    ],
+    "aliases": [
+      "lumigan"
+    ],
+    "drugClass": "Prostaglandin analog",
+    "primaryUse": "Glaucoma",
+    "primaryUseES": "Glaucoma",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "70-80%"
+  },
+  {
+    "id": "1198",
+    "generic": "cyclosporine ophthalmic",
+    "brands": [
+      "Restasis"
+    ],
+    "aliases": [
+      "restasis"
+    ],
+    "drugClass": "Immunomodulator",
+    "primaryUse": "Dry eyes",
+    "primaryUseES": "Ojos secos",
+    "hasGeneric": true,
+    "commonMisspellings": []
+  },
+  {
+    "id": "1199",
+    "generic": "methylprednisolone",
+    "brands": [
+      "Medrol"
+    ],
+    "aliases": [
+      "medrol"
+    ],
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "primaryUseES": "Inflamación",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1200",
+    "generic": "conjugated estrogens",
+    "brands": [
+      "Premarin"
+    ],
+    "aliases": [
+      "premarin"
+    ],
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause",
+    "primaryUseES": "Menopausia",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "70-80%"
+  },
+  {
+    "id": "1201",
+    "generic": "tretinoin",
+    "brands": [
+      "Retin-A"
+    ],
+    "aliases": [
+      "retin-a"
+    ],
+    "drugClass": "Retinoid",
+    "primaryUse": "Acne",
+    "primaryUseES": "Acné",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "70-80%"
+  },
+  {
+    "id": "1202",
+    "generic": "hydroxychloroquine",
+    "brands": [
+      "Plaquenil"
+    ],
+    "aliases": [
+      "plaquenil"
+    ],
+    "drugClass": "DMARD",
+    "primaryUse": "Lupus / Rheumatoid arthritis",
+    "primaryUseES": "Lupus y artritis reumatoide",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1203",
+    "generic": "azathioprine",
+    "brands": [
+      "Imuran"
+    ],
+    "aliases": [
+      "imuran"
+    ],
+    "drugClass": "Immunosuppressant",
+    "primaryUse": "Autoimmune conditions",
+    "primaryUseES": "Enfermedades autoinmunes",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1204",
+    "generic": "adalimumab",
+    "brands": [
+      "Humira"
+    ],
+    "aliases": [
+      "humira"
+    ],
+    "drugClass": "TNF inhibitor (biologic)",
+    "primaryUse": "Autoimmune conditions",
+    "primaryUseES": "Enfermedades autoinmunes",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "Biosimilars available (50-60% savings)"
+  },
+  {
+    "id": "1205",
+    "generic": "etanercept",
+    "brands": [
+      "Enbrel"
+    ],
+    "aliases": [
+      "enbrel"
+    ],
+    "drugClass": "TNF inhibitor (biologic)",
+    "primaryUse": "Autoimmune conditions",
+    "primaryUseES": "Enfermedades autoinmunes",
+    "hasGeneric": false,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1206",
+    "generic": "ferrous sulfate",
+    "brands": [
+      "Slow Fe"
+    ],
+    "aliases": [
+      "slow fe"
+    ],
+    "drugClass": "Iron supplement",
+    "primaryUse": "Iron deficiency",
+    "primaryUseES": "Deficiencia de hierro",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1207",
+    "generic": "magnesium oxide",
+    "brands": [],
+    "aliases": [],
+    "drugClass": "Mineral supplement",
+    "primaryUse": "Low magnesium",
+    "primaryUseES": "Magnesio bajo",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1208",
+    "generic": "potassium chloride",
+    "brands": [
+      "Klor-Con",
+      "K-Tab"
+    ],
+    "aliases": [
+      "klor-con",
+      "k-tab",
+      "potassium chloride extended-release"
+    ],
+    "drugClass": "Electrolyte supplement",
+    "primaryUse": "Low potassium",
+    "primaryUseES": "Potasio bajo",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-95%"
+  },
+  {
+    "id": "1209",
+    "generic": "valacyclovir",
+    "brands": [
+      "Valtrex"
+    ],
+    "aliases": [
+      "valtrex"
+    ],
+    "drugClass": "Antiviral",
+    "primaryUse": "Herpes / Shingles",
+    "primaryUseES": "Herpes y culebrilla",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1210",
+    "generic": "acyclovir",
+    "brands": [
+      "Zovirax"
+    ],
+    "aliases": [
+      "zovirax"
+    ],
+    "drugClass": "Antiviral",
+    "primaryUse": "Herpes / Shingles",
+    "primaryUseES": "Herpes y culebrilla",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "90-95%"
+  },
+  {
+    "id": "1211",
+    "generic": "oseltamivir",
+    "brands": [
+      "Tamiflu"
+    ],
+    "aliases": [
+      "tamiflu"
+    ],
+    "drugClass": "Antiviral",
+    "primaryUse": "Influenza",
+    "primaryUseES": "Influenza (gripe)",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "80-85%"
+  },
+  {
+    "id": "1212",
+    "generic": "carbidopa/levodopa",
+    "brands": [
+      "Sinemet"
+    ],
+    "aliases": [
+      "sinemet"
+    ],
+    "drugClass": "Dopamine precursor",
+    "primaryUse": "Parkinson's disease",
+    "primaryUseES": "Enfermedad de Parkinson",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1213",
+    "generic": "ropinirole",
+    "brands": [
+      "Requip"
+    ],
+    "aliases": [
+      "requip"
+    ],
+    "drugClass": "Dopamine agonist",
+    "primaryUse": "Parkinson's / Restless legs",
+    "primaryUseES": "Parkinson y síndrome de piernas inquietas",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1214",
+    "generic": "pramipexole",
+    "brands": [
+      "Mirapex"
+    ],
+    "aliases": [
+      "mirapex"
+    ],
+    "drugClass": "Dopamine agonist",
+    "primaryUse": "Parkinson's / Restless legs",
+    "primaryUseES": "Parkinson y síndrome de piernas inquietas",
+    "hasGeneric": true,
+    "commonMisspellings": [],
+    "typicalSavings": "85-90%"
   }
 ]

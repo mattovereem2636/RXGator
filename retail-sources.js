@@ -10,7 +10,7 @@
 // ============================================================
 // BRAND-TO-GENERIC STATIC LOOKUP
 // ============================================================
-const brandGenericLookup = require('./brand-generic-lookup.json');
+const brandGenericLookup = require('./data/brand-generic-lookup.json');
 
 /**
  * Look up brand-to-generic mapping from the static JSON database.

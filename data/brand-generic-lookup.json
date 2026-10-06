@@ -1,0 +1,5274 @@
+{
+  "atorvastatin": {
+    "brand": "Atorvastatin",
+    "generic": "atorvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "lipitor": {
+    "brand": "Lipitor",
+    "generic": "atorvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "atorvaliq": {
+    "brand": "Atorvaliq",
+    "generic": "atorvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "ator": {
+    "brand": "Ator",
+    "generic": "atorvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "atorvastatin calcium": {
+    "brand": "Atorvastatin calcium",
+    "generic": "atorvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "metformin": {
+    "brand": "Metformin",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "glucophage": {
+    "brand": "Glucophage",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "fortamet": {
+    "brand": "Fortamet",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "glumetza": {
+    "brand": "Glumetza",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "riomet": {
+    "brand": "Riomet",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "met": {
+    "brand": "Met",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "synjardy xr": {
+    "brand": "Synjardy xr",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "zituvimet xr": {
+    "brand": "Zituvimet xr",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "pioglitazone and metformin hydrochloride": {
+    "brand": "Pioglitazone and metformin hydrochloride",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "metformin hcl": {
+    "brand": "Metformin hcl",
+    "generic": "metformin",
+    "drugClass": "Biguanide",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "lisinopril": {
+    "brand": "Lisinopril",
+    "generic": "lisinopril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "zestril": {
+    "brand": "Zestril",
+    "generic": "lisinopril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "prinivil": {
+    "brand": "Prinivil",
+    "generic": "lisinopril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "lisin": {
+    "brand": "Lisin",
+    "generic": "lisinopril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "amlodipine": {
+    "brand": "Amlodipine",
+    "generic": "amlodipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "norvasc": {
+    "brand": "Norvasc",
+    "generic": "amlodipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "amlod": {
+    "brand": "Amlod",
+    "generic": "amlodipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "amlodipine besylate and benazepril hydrochloride": {
+    "brand": "Amlodipine besylate and benazepril hydrochloride",
+    "generic": "amlodipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "amlodipine and benazepril hydrochloride": {
+    "brand": "Amlodipine and benazepril hydrochloride",
+    "generic": "amlodipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "olmesartan medoxomil / amlodipine besylate / hydrochlorothiazide": {
+    "brand": "Olmesartan medoxomil / amlodipine besylate / hydrochlorothiazide",
+    "generic": "amlodipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "amlodipine besylate": {
+    "brand": "Amlodipine besylate",
+    "generic": "amlodipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "levothyroxine": {
+    "brand": "Levothyroxine",
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "synthroid": {
+    "brand": "Synthroid",
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "levoxyl": {
+    "brand": "Levoxyl",
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "tirosint": {
+    "brand": "Tirosint",
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "unithroid": {
+    "brand": "Unithroid",
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "levo": {
+    "brand": "Levo",
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "thyroid med": {
+    "brand": "Thyroid med",
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "levothyroxine sodium": {
+    "brand": "Levothyroxine sodium",
+    "generic": "levothyroxine",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Thyroid",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "omeprazole": {
+    "brand": "Omeprazole",
+    "generic": "omeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "prilosec": {
+    "brand": "Prilosec",
+    "generic": "omeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "ome": {
+    "brand": "Ome",
+    "generic": "omeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "prilosec otc": {
+    "brand": "Prilosec otc",
+    "generic": "omeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "omeprazole/sodium bicarbonate": {
+    "brand": "Omeprazole/sodium bicarbonate",
+    "generic": "omeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "losartan": {
+    "brand": "Losartan",
+    "generic": "losartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "cozaar": {
+    "brand": "Cozaar",
+    "generic": "losartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "losar": {
+    "brand": "Losar",
+    "generic": "losartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "losartan potassium": {
+    "brand": "Losartan potassium",
+    "generic": "losartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "gabapentin": {
+    "brand": "Gabapentin",
+    "generic": "gabapentin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "neurontin": {
+    "brand": "Neurontin",
+    "generic": "gabapentin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "gralise": {
+    "brand": "Gralise",
+    "generic": "gabapentin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "gaba": {
+    "brand": "Gaba",
+    "generic": "gabapentin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "sertraline": {
+    "brand": "Sertraline",
+    "generic": "sertraline",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "85-95%"
+  },
+  "zoloft": {
+    "brand": "Zoloft",
+    "generic": "sertraline",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "85-95%"
+  },
+  "sert": {
+    "brand": "Sert",
+    "generic": "sertraline",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "85-95%"
+  },
+  "sertraline hydrochloride": {
+    "brand": "Sertraline hydrochloride",
+    "generic": "sertraline",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "85-95%"
+  },
+  "montelukast": {
+    "brand": "Montelukast",
+    "generic": "montelukast",
+    "drugClass": "LTRA",
+    "primaryUse": "Asthma / Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "singulair": {
+    "brand": "Singulair",
+    "generic": "montelukast",
+    "drugClass": "LTRA",
+    "primaryUse": "Asthma / Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "monte": {
+    "brand": "Monte",
+    "generic": "montelukast",
+    "drugClass": "LTRA",
+    "primaryUse": "Asthma / Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "montelukast sodium": {
+    "brand": "Montelukast sodium",
+    "generic": "montelukast",
+    "drugClass": "LTRA",
+    "primaryUse": "Asthma / Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "escitalopram": {
+    "brand": "Escitalopram",
+    "generic": "escitalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "lexapro": {
+    "brand": "Lexapro",
+    "generic": "escitalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "escit": {
+    "brand": "Escit",
+    "generic": "escitalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "escitalopram oxalate": {
+    "brand": "Escitalopram oxalate",
+    "generic": "escitalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "trazodone": {
+    "brand": "Trazodone",
+    "generic": "trazodone",
+    "drugClass": "SARI",
+    "primaryUse": "Depression / Sleep",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "desyrel": {
+    "brand": "Desyrel",
+    "generic": "trazodone",
+    "drugClass": "SARI",
+    "primaryUse": "Depression / Sleep",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "oleptro": {
+    "brand": "Oleptro",
+    "generic": "trazodone",
+    "drugClass": "SARI",
+    "primaryUse": "Depression / Sleep",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "traz": {
+    "brand": "Traz",
+    "generic": "trazodone",
+    "drugClass": "SARI",
+    "primaryUse": "Depression / Sleep",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "trazodone hydrochloride": {
+    "brand": "Trazodone hydrochloride",
+    "generic": "trazodone",
+    "drugClass": "SARI",
+    "primaryUse": "Depression / Sleep",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "pantoprazole": {
+    "brand": "Pantoprazole",
+    "generic": "pantoprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "protonix": {
+    "brand": "Protonix",
+    "generic": "pantoprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "panto": {
+    "brand": "Panto",
+    "generic": "pantoprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "pantoprazole sodium": {
+    "brand": "Pantoprazole sodium",
+    "generic": "pantoprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "rosuvastatin": {
+    "brand": "Rosuvastatin",
+    "generic": "rosuvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "crestor": {
+    "brand": "Crestor",
+    "generic": "rosuvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "rosu": {
+    "brand": "Rosu",
+    "generic": "rosuvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "rosuvastatin calcium": {
+    "brand": "Rosuvastatin calcium",
+    "generic": "rosuvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "duloxetine": {
+    "brand": "Duloxetine",
+    "generic": "duloxetine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "cymbalta": {
+    "brand": "Cymbalta",
+    "generic": "duloxetine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "dulox": {
+    "brand": "Dulox",
+    "generic": "duloxetine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "duloxetine delayed-release": {
+    "brand": "Duloxetine delayed-release",
+    "generic": "duloxetine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "bupropion": {
+    "brand": "Bupropion",
+    "generic": "bupropion",
+    "drugClass": "NDRI",
+    "primaryUse": "Depression / Smoking",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "wellbutrin": {
+    "brand": "Wellbutrin",
+    "generic": "bupropion",
+    "drugClass": "NDRI",
+    "primaryUse": "Depression / Smoking",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "zyban": {
+    "brand": "Zyban",
+    "generic": "bupropion",
+    "drugClass": "NDRI",
+    "primaryUse": "Depression / Smoking",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "bup": {
+    "brand": "Bup",
+    "generic": "bupropion",
+    "drugClass": "NDRI",
+    "primaryUse": "Depression / Smoking",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "bupropion hydrochloride sr": {
+    "brand": "Bupropion hydrochloride sr",
+    "generic": "bupropion",
+    "drugClass": "NDRI",
+    "primaryUse": "Depression / Smoking",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "meloxicam": {
+    "brand": "Meloxicam",
+    "generic": "meloxicam",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "mobic": {
+    "brand": "Mobic",
+    "generic": "meloxicam",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "melox": {
+    "brand": "Melox",
+    "generic": "meloxicam",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "zybic": {
+    "brand": "Zybic",
+    "generic": "meloxicam",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "carvedilol": {
+    "brand": "Carvedilol",
+    "generic": "carvedilol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "coreg": {
+    "brand": "Coreg",
+    "generic": "carvedilol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "carv": {
+    "brand": "Carv",
+    "generic": "carvedilol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "tamsulosin": {
+    "brand": "Tamsulosin",
+    "generic": "tamsulosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Enlarged prostate",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "flomax": {
+    "brand": "Flomax",
+    "generic": "tamsulosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Enlarged prostate",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "tams": {
+    "brand": "Tams",
+    "generic": "tamsulosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Enlarged prostate",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "tamsulosin hydrochloride": {
+    "brand": "Tamsulosin hydrochloride",
+    "generic": "tamsulosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Enlarged prostate",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "hydrochlorothiazide": {
+    "brand": "Hydrochlorothiazide",
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "microzide": {
+    "brand": "Microzide",
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "hctz": {
+    "brand": "Hctz",
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "hydrochlor": {
+    "brand": "Hydrochlor",
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "water pill": {
+    "brand": "Water pill",
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "hydrodiuril": {
+    "brand": "Hydrodiuril",
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "olmesartan medoxomil and hydrochlorothiazide": {
+    "brand": "Olmesartan medoxomil and hydrochlorothiazide",
+    "generic": "hydrochlorothiazide",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "fluoxetine": {
+    "brand": "Fluoxetine",
+    "generic": "fluoxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "prozac": {
+    "brand": "Prozac",
+    "generic": "fluoxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "sarafem": {
+    "brand": "Sarafem",
+    "generic": "fluoxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "fluox": {
+    "brand": "Fluox",
+    "generic": "fluoxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "fluoxetine hydrochloride": {
+    "brand": "Fluoxetine hydrochloride",
+    "generic": "fluoxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "amoxicillin": {
+    "brand": "Amoxicillin",
+    "generic": "amoxicillin",
+    "drugClass": "Penicillin",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "amoxil": {
+    "brand": "Amoxil",
+    "generic": "amoxicillin",
+    "drugClass": "Penicillin",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "trimox": {
+    "brand": "Trimox",
+    "generic": "amoxicillin",
+    "drugClass": "Penicillin",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "amox": {
+    "brand": "Amox",
+    "generic": "amoxicillin",
+    "drugClass": "Penicillin",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "amoxicillin and clavulanate potassium": {
+    "brand": "Amoxicillin and clavulanate potassium",
+    "generic": "amoxicillin",
+    "drugClass": "Penicillin",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "azithromycin": {
+    "brand": "Azithromycin",
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "zithromax": {
+    "brand": "Zithromax",
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "z-pack": {
+    "brand": "Z-Pack",
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "azith": {
+    "brand": "Azith",
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "zpak": {
+    "brand": "Zpak",
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "z pack": {
+    "brand": "Z pack",
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "azithromycin dihydrate": {
+    "brand": "Azithromycin dihydrate",
+    "generic": "azithromycin",
+    "drugClass": "Macrolide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "albuterol": {
+    "brand": "Albuterol",
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "proair": {
+    "brand": "ProAir",
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "ventolin": {
+    "brand": "Ventolin",
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "proventil": {
+    "brand": "Proventil",
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "alb": {
+    "brand": "Alb",
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "inhaler": {
+    "brand": "Inhaler",
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "albuterol sulfate": {
+    "brand": "Albuterol sulfate",
+    "generic": "albuterol",
+    "drugClass": "Beta-2 agonist",
+    "primaryUse": "Asthma / COPD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "prednisone": {
+    "brand": "Prednisone",
+    "generic": "prednisone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "deltasone": {
+    "brand": "Deltasone",
+    "generic": "prednisone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "rayos": {
+    "brand": "Rayos",
+    "generic": "prednisone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "pred": {
+    "brand": "Pred",
+    "generic": "prednisone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "clopidogrel": {
+    "brand": "Clopidogrel",
+    "generic": "clopidogrel",
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "plavix": {
+    "brand": "Plavix",
+    "generic": "clopidogrel",
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "clop": {
+    "brand": "Clop",
+    "generic": "clopidogrel",
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "furosemide": {
+    "brand": "Furosemide",
+    "generic": "furosemide",
+    "drugClass": "Loop diuretic",
+    "primaryUse": "Edema / Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "lasix": {
+    "brand": "Lasix",
+    "generic": "furosemide",
+    "drugClass": "Loop diuretic",
+    "primaryUse": "Edema / Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "furo": {
+    "brand": "Furo",
+    "generic": "furosemide",
+    "drugClass": "Loop diuretic",
+    "primaryUse": "Edema / Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "metoprolol": {
+    "brand": "Metoprolol",
+    "generic": "metoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "lopressor": {
+    "brand": "Lopressor",
+    "generic": "metoprolol tartrate",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "toprol-xl": {
+    "brand": "Toprol-XL",
+    "generic": "metoprolol succinate",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "meto": {
+    "brand": "Meto",
+    "generic": "metoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "toprol": {
+    "brand": "Toprol",
+    "generic": "metoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "metoprolol tartrate": {
+    "brand": "Metoprolol tartrate",
+    "generic": "metoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "metoprolol succinate": {
+    "brand": "Metoprolol succinate",
+    "generic": "metoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "glipizide": {
+    "brand": "Glipizide",
+    "generic": "glipizide",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "glucotrol": {
+    "brand": "Glucotrol",
+    "generic": "glipizide",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "glip": {
+    "brand": "Glip",
+    "generic": "glipizide",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "pravastatin": {
+    "brand": "Pravastatin",
+    "generic": "pravastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "pravachol": {
+    "brand": "Pravachol",
+    "generic": "pravastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "prav": {
+    "brand": "Prav",
+    "generic": "pravastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "pravastatin sodium": {
+    "brand": "Pravastatin sodium",
+    "generic": "pravastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "simvastatin": {
+    "brand": "Simvastatin",
+    "generic": "simvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "zocor": {
+    "brand": "Zocor",
+    "generic": "simvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "simv": {
+    "brand": "Simv",
+    "generic": "simvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "warfarin": {
+    "brand": "Warfarin",
+    "generic": "warfarin",
+    "drugClass": "Anticoagulant",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "coumadin": {
+    "brand": "Coumadin",
+    "generic": "warfarin",
+    "drugClass": "Anticoagulant",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "jantoven": {
+    "brand": "Jantoven",
+    "generic": "warfarin",
+    "drugClass": "Anticoagulant",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "warf": {
+    "brand": "Warf",
+    "generic": "warfarin",
+    "drugClass": "Anticoagulant",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "warfarin sodium": {
+    "brand": "Warfarin sodium",
+    "generic": "warfarin",
+    "drugClass": "Anticoagulant",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "citalopram": {
+    "brand": "Citalopram",
+    "generic": "citalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "celexa": {
+    "brand": "Celexa",
+    "generic": "citalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "cital": {
+    "brand": "Cital",
+    "generic": "citalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "citalopram hydrobromide": {
+    "brand": "Citalopram hydrobromide",
+    "generic": "citalopram",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "tramadol": {
+    "brand": "Tramadol",
+    "generic": "tramadol",
+    "drugClass": "Opioid analgesic",
+    "primaryUse": "Pain",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "ultram": {
+    "brand": "Ultram",
+    "generic": "tramadol",
+    "drugClass": "Opioid analgesic",
+    "primaryUse": "Pain",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "conzip": {
+    "brand": "ConZip",
+    "generic": "tramadol",
+    "drugClass": "Opioid analgesic",
+    "primaryUse": "Pain",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "tram": {
+    "brand": "Tram",
+    "generic": "tramadol",
+    "drugClass": "Opioid analgesic",
+    "primaryUse": "Pain",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "tramadol hydrochloride": {
+    "brand": "Tramadol hydrochloride",
+    "generic": "tramadol",
+    "drugClass": "Opioid analgesic",
+    "primaryUse": "Pain",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "metronidazole": {
+    "brand": "Metronidazole",
+    "generic": "metronidazole",
+    "drugClass": "Antibiotic",
+    "primaryUse": "Bacterial / Parasitic infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "flagyl": {
+    "brand": "Flagyl",
+    "generic": "metronidazole",
+    "drugClass": "Antibiotic",
+    "primaryUse": "Bacterial / Parasitic infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "metro": {
+    "brand": "Metro",
+    "generic": "metronidazole",
+    "drugClass": "Antibiotic",
+    "primaryUse": "Bacterial / Parasitic infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "cyclobenzaprine": {
+    "brand": "Cyclobenzaprine",
+    "generic": "cyclobenzaprine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasm",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "flexeril": {
+    "brand": "Flexeril",
+    "generic": "cyclobenzaprine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasm",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "amrix": {
+    "brand": "Amrix",
+    "generic": "cyclobenzaprine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasm",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "cyclo": {
+    "brand": "Cyclo",
+    "generic": "cyclobenzaprine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasm",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "cyclobenzaprine hydrochloride": {
+    "brand": "Cyclobenzaprine hydrochloride",
+    "generic": "cyclobenzaprine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasm",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "doxycycline": {
+    "brand": "Doxycycline",
+    "generic": "doxycycline",
+    "drugClass": "Tetracycline",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "vibramycin": {
+    "brand": "Vibramycin",
+    "generic": "doxycycline",
+    "drugClass": "Tetracycline",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "doryx": {
+    "brand": "Doryx",
+    "generic": "doxycycline",
+    "drugClass": "Tetracycline",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "doxy": {
+    "brand": "Doxy",
+    "generic": "doxycycline",
+    "drugClass": "Tetracycline",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "doxycycline hyclate": {
+    "brand": "Doxycycline hyclate",
+    "generic": "doxycycline",
+    "drugClass": "Tetracycline",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "venlafaxine": {
+    "brand": "Venlafaxine",
+    "generic": "venlafaxine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "effexor": {
+    "brand": "Effexor",
+    "generic": "venlafaxine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "venla": {
+    "brand": "Venla",
+    "generic": "venlafaxine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "venlafaxine hydrochloride": {
+    "brand": "Venlafaxine hydrochloride",
+    "generic": "venlafaxine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "clonazepam": {
+    "brand": "Clonazepam",
+    "generic": "clonazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Seizures / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "klonopin": {
+    "brand": "Klonopin",
+    "generic": "clonazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Seizures / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "clona": {
+    "brand": "Clona",
+    "generic": "clonazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Seizures / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "alprazolam": {
+    "brand": "Alprazolam",
+    "generic": "alprazolam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "xanax": {
+    "brand": "Xanax",
+    "generic": "alprazolam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "xanex": {
+    "brand": "Xanex",
+    "generic": "alprazolam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "alpraz": {
+    "brand": "Alpraz",
+    "generic": "alprazolam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "methylphenidate": {
+    "brand": "Methylphenidate",
+    "generic": "methylphenidate",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "ritalin": {
+    "brand": "Ritalin",
+    "generic": "methylphenidate",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "concerta": {
+    "brand": "Concerta",
+    "generic": "methylphenidate ER",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "focalin": {
+    "brand": "Focalin",
+    "generic": "methylphenidate",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "methylphenidate hydrochloride": {
+    "brand": "Methylphenidate hydrochloride",
+    "generic": "methylphenidate",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "diazepam": {
+    "brand": "Diazepam",
+    "generic": "diazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety / Seizures",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "valium": {
+    "brand": "Valium",
+    "generic": "diazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety / Seizures",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "lorazepam": {
+    "brand": "Lorazepam",
+    "generic": "lorazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "ativan": {
+    "brand": "Ativan",
+    "generic": "lorazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "loraz": {
+    "brand": "Loraz",
+    "generic": "lorazepam",
+    "drugClass": "Benzodiazepine",
+    "primaryUse": "Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "spironolactone": {
+    "brand": "Spironolactone",
+    "generic": "spironolactone",
+    "drugClass": "Potassium-sparing diuretic",
+    "primaryUse": "Heart failure / Edema",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "aldactone": {
+    "brand": "Aldactone",
+    "generic": "spironolactone",
+    "drugClass": "Potassium-sparing diuretic",
+    "primaryUse": "Heart failure / Edema",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "spiro": {
+    "brand": "Spiro",
+    "generic": "spironolactone",
+    "drugClass": "Potassium-sparing diuretic",
+    "primaryUse": "Heart failure / Edema",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "acetaminophen": {
+    "brand": "Acetaminophen",
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "tylenol": {
+    "brand": "Tylenol",
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "apap": {
+    "brand": "Apap",
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "paracetamol": {
+    "brand": "Paracetamol",
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "daytime cold and flu mini softgels": {
+    "brand": "Daytime cold and flu mini softgels",
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "kroger daytime cold and flu softgel": {
+    "brand": "Kroger daytime cold and flu softgel",
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "topcare nite time day time cold and flu": {
+    "brand": "Topcare nite time day time cold and flu",
+    "generic": "acetaminophen",
+    "drugClass": "Analgesic",
+    "primaryUse": "Pain / Fever",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "ibuprofen": {
+    "brand": "Ibuprofen",
+    "generic": "ibuprofen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "advil": {
+    "brand": "Advil",
+    "generic": "ibuprofen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "motrin": {
+    "brand": "Motrin",
+    "generic": "ibuprofen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "ibu": {
+    "brand": "Ibu",
+    "generic": "ibuprofen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "sudafed pe head congestion plus pain": {
+    "brand": "Sudafed pe head congestion plus pain",
+    "generic": "ibuprofen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "ibuprofen minis": {
+    "brand": "Ibuprofen minis",
+    "generic": "ibuprofen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "naproxen": {
+    "brand": "Naproxen",
+    "generic": "naproxen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "aleve": {
+    "brand": "Aleve",
+    "generic": "naproxen sodium",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "naprosyn": {
+    "brand": "Naprosyn",
+    "generic": "naproxen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "24/7 life by 7-eleven naproxen sodium": {
+    "brand": "24/7 life by 7-eleven naproxen sodium",
+    "generic": "naproxen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "basic care naproxen sodium": {
+    "brand": "Basic care naproxen sodium",
+    "generic": "naproxen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "aleve gelcaps": {
+    "brand": "Aleve gelcaps",
+    "generic": "naproxen",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "cetirizine": {
+    "brand": "Cetirizine",
+    "generic": "cetirizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "zyrtec": {
+    "brand": "Zyrtec",
+    "generic": "cetirizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "allergy relief all day": {
+    "brand": "Allergy relief all day",
+    "generic": "cetirizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "childrens cetirizine hydrochloride": {
+    "brand": "Childrens cetirizine hydrochloride",
+    "generic": "cetirizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "cetirizine hydrochloride": {
+    "brand": "Cetirizine hydrochloride",
+    "generic": "cetirizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "loratadine": {
+    "brand": "Loratadine",
+    "generic": "loratadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "claritin": {
+    "brand": "Claritin",
+    "generic": "loratadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "childrens loratadine oral": {
+    "brand": "Childrens loratadine oral",
+    "generic": "loratadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "allergy relief": {
+    "brand": "Allergy relief",
+    "generic": "loratadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "all day allergy relief": {
+    "brand": "All day allergy relief",
+    "generic": "loratadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "loratadine 10mg": {
+    "brand": "Loratadine 10mg",
+    "generic": "loratadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "fexofenadine": {
+    "brand": "Fexofenadine",
+    "generic": "fexofenadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "allegra": {
+    "brand": "Allegra",
+    "generic": "fexofenadine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "famotidine": {
+    "brand": "Famotidine",
+    "generic": "famotidine",
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "pepcid": {
+    "brand": "Pepcid",
+    "generic": "famotidine",
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "zantac": {
+    "brand": "Zantac",
+    "generic": "famotidine",
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "ibuprofen and famotidine": {
+    "brand": "Ibuprofen and famotidine",
+    "generic": "famotidine",
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "zantac 360": {
+    "brand": "Zantac 360",
+    "generic": "famotidine",
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "ranitidine": {
+    "brand": "Ranitidine",
+    "generic": "ranitidine",
+    "drugClass": "H2 blocker",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "lansoprazole": {
+    "brand": "Lansoprazole",
+    "generic": "lansoprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "prevacid": {
+    "brand": "Prevacid",
+    "generic": "lansoprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "esomeprazole": {
+    "brand": "Esomeprazole",
+    "generic": "esomeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "nexium": {
+    "brand": "Nexium",
+    "generic": "esomeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "nexium otc": {
+    "brand": "Nexium otc",
+    "generic": "esomeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "esomeprazole magnesium": {
+    "brand": "Esomeprazole magnesium",
+    "generic": "esomeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "careone esomeprazole magnesium": {
+    "brand": "Careone esomeprazole magnesium",
+    "generic": "esomeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "insulin glargine": {
+    "brand": "Insulin glargine",
+    "generic": "insulin glargine",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "lantus": {
+    "brand": "Lantus",
+    "generic": "insulin glargine",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "basaglar": {
+    "brand": "Basaglar",
+    "generic": "insulin glargine",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "toujeo": {
+    "brand": "Toujeo",
+    "generic": "insulin glargine",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "insulin lispro": {
+    "brand": "Insulin lispro",
+    "generic": "insulin lispro",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "humalog": {
+    "brand": "Humalog",
+    "generic": "insulin lispro",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "admelog": {
+    "brand": "Admelog",
+    "generic": "insulin lispro",
+    "drugClass": "Insulin",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "methotrexate": {
+    "brand": "Methotrexate",
+    "generic": "methotrexate",
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "trexall": {
+    "brand": "Trexall",
+    "generic": "methotrexate",
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "rasuvo": {
+    "brand": "Rasuvo",
+    "generic": "methotrexate",
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "otrexup": {
+    "brand": "Otrexup",
+    "generic": "methotrexate",
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "mtx": {
+    "brand": "Mtx",
+    "generic": "methotrexate",
+    "drugClass": "DMARD",
+    "primaryUse": "Rheumatoid arthritis / Cancer",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "prednisolone": {
+    "brand": "Prednisolone",
+    "generic": "prednisolone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "orapred": {
+    "brand": "Orapred",
+    "generic": "prednisolone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "prelone": {
+    "brand": "Prelone",
+    "generic": "prednisolone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "ciprofloxacin": {
+    "brand": "Ciprofloxacin",
+    "generic": "ciprofloxacin",
+    "drugClass": "Fluoroquinolone",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "cipro": {
+    "brand": "Cipro",
+    "generic": "ciprofloxacin",
+    "drugClass": "Fluoroquinolone",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "ciprofloxacin hydrochloride": {
+    "brand": "Ciprofloxacin hydrochloride",
+    "generic": "ciprofloxacin",
+    "drugClass": "Fluoroquinolone",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "levofloxacin": {
+    "brand": "Levofloxacin",
+    "generic": "levofloxacin",
+    "drugClass": "Fluoroquinolone",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "levaquin": {
+    "brand": "Levaquin",
+    "generic": "levofloxacin",
+    "drugClass": "Fluoroquinolone",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "cephalexin": {
+    "brand": "Cephalexin",
+    "generic": "cephalexin",
+    "drugClass": "Cephalosporin",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "keflex": {
+    "brand": "Keflex",
+    "generic": "cephalexin",
+    "drugClass": "Cephalosporin",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "clindamycin": {
+    "brand": "Clindamycin",
+    "generic": "clindamycin",
+    "drugClass": "Lincosamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "cleocin": {
+    "brand": "Cleocin",
+    "generic": "clindamycin",
+    "drugClass": "Lincosamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "clindacare": {
+    "brand": "Clindacare",
+    "generic": "clindamycin",
+    "drugClass": "Lincosamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "clindamycin hydrochloride": {
+    "brand": "Clindamycin hydrochloride",
+    "generic": "clindamycin",
+    "drugClass": "Lincosamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "clindamycin phosphate": {
+    "brand": "Clindamycin phosphate",
+    "generic": "clindamycin",
+    "drugClass": "Lincosamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "sulfamethoxazole-trimethoprim": {
+    "brand": "Sulfamethoxazole-trimethoprim",
+    "generic": "sulfamethoxazole-trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "bactrim": {
+    "brand": "Bactrim",
+    "generic": "sulfamethoxazole/trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "septra": {
+    "brand": "Septra",
+    "generic": "sulfamethoxazole-trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "smz-tmp": {
+    "brand": "Smz-tmp",
+    "generic": "sulfamethoxazole-trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "sulfa": {
+    "brand": "Sulfa",
+    "generic": "sulfamethoxazole-trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "sulfamethox-tmp ds": {
+    "brand": "Sulfamethox-tmp ds",
+    "generic": "sulfamethoxazole/trimethoprim",
+    "drugClass": "Sulfonamide",
+    "primaryUse": "Bacterial infection",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "benazepril": {
+    "brand": "Benazepril",
+    "generic": "benazepril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "lotensin": {
+    "brand": "Lotensin",
+    "generic": "benazepril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "benazepril hydrochloride": {
+    "brand": "Benazepril hydrochloride",
+    "generic": "benazepril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "enalapril": {
+    "brand": "Enalapril",
+    "generic": "enalapril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "vasotec": {
+    "brand": "Vasotec",
+    "generic": "enalapril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "enalapril maleate": {
+    "brand": "Enalapril maleate",
+    "generic": "enalapril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "ramipril": {
+    "brand": "Ramipril",
+    "generic": "ramipril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "altace": {
+    "brand": "Altace",
+    "generic": "ramipril",
+    "drugClass": "ACE Inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "valsartan": {
+    "brand": "Valsartan",
+    "generic": "valsartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "diovan": {
+    "brand": "Diovan",
+    "generic": "valsartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "sacubitril and valsartan": {
+    "brand": "Sacubitril and valsartan",
+    "generic": "valsartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "irbesartan": {
+    "brand": "Irbesartan",
+    "generic": "irbesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "avapro": {
+    "brand": "Avapro",
+    "generic": "irbesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "olmesartan": {
+    "brand": "Olmesartan",
+    "generic": "olmesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "benicar": {
+    "brand": "Benicar",
+    "generic": "olmesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "olmesartan medoxomil": {
+    "brand": "Olmesartan medoxomil",
+    "generic": "olmesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "diltiazem": {
+    "brand": "Diltiazem",
+    "generic": "diltiazem",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "cardizem": {
+    "brand": "Cardizem",
+    "generic": "diltiazem",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "tiazac": {
+    "brand": "Tiazac",
+    "generic": "diltiazem",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "diltiazem hydrochloride": {
+    "brand": "Diltiazem hydrochloride",
+    "generic": "diltiazem",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "cardizem la": {
+    "brand": "Cardizem la",
+    "generic": "diltiazem",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "tiadylt er": {
+    "brand": "Tiadylt er",
+    "generic": "diltiazem",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure / Heart",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "nifedipine": {
+    "brand": "Nifedipine",
+    "generic": "nifedipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "procardia": {
+    "brand": "Procardia",
+    "generic": "nifedipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "adalat": {
+    "brand": "Adalat",
+    "generic": "nifedipine",
+    "drugClass": "CCB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "atenolol": {
+    "brand": "Atenolol",
+    "generic": "atenolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "tenormin": {
+    "brand": "Tenormin",
+    "generic": "atenolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "propranolol": {
+    "brand": "Propranolol",
+    "generic": "propranolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "inderal": {
+    "brand": "Inderal",
+    "generic": "propranolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "propranolol hydrochloride": {
+    "brand": "Propranolol hydrochloride",
+    "generic": "propranolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "bisoprolol": {
+    "brand": "Bisoprolol",
+    "generic": "bisoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "zebeta": {
+    "brand": "Zebeta",
+    "generic": "bisoprolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "clonidine": {
+    "brand": "Clonidine",
+    "generic": "clonidine",
+    "drugClass": "Alpha-2 agonist",
+    "primaryUse": "Blood pressure / ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "catapres": {
+    "brand": "Catapres",
+    "generic": "clonidine",
+    "drugClass": "Alpha-2 agonist",
+    "primaryUse": "Blood pressure / ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "finasteride": {
+    "brand": "Finasteride",
+    "generic": "finasteride",
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "BPH / Hair loss",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "proscar": {
+    "brand": "Proscar",
+    "generic": "finasteride 5mg",
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "BPH / Hair loss",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "propecia": {
+    "brand": "Propecia",
+    "generic": "finasteride 1mg",
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "BPH / Hair loss",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "sildenafil": {
+    "brand": "Sildenafil",
+    "generic": "sildenafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / PAH",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "viagra": {
+    "brand": "Viagra",
+    "generic": "sildenafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / PAH",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "revatio": {
+    "brand": "Revatio",
+    "generic": "sildenafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / PAH",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "sildenafil citrate": {
+    "brand": "Sildenafil citrate",
+    "generic": "sildenafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / PAH",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "tadalafil": {
+    "brand": "Tadalafil",
+    "generic": "tadalafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / BPH",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "cialis": {
+    "brand": "Cialis",
+    "generic": "tadalafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / BPH",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "adcirca": {
+    "brand": "Adcirca",
+    "generic": "tadalafil",
+    "drugClass": "PDE5 inhibitor",
+    "primaryUse": "Erectile dysfunction / BPH",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "sumatriptan": {
+    "brand": "Sumatriptan",
+    "generic": "sumatriptan",
+    "drugClass": "Triptan",
+    "primaryUse": "Migraine",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "imitrex": {
+    "brand": "Imitrex",
+    "generic": "sumatriptan",
+    "drugClass": "Triptan",
+    "primaryUse": "Migraine",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "ondansetron": {
+    "brand": "Ondansetron",
+    "generic": "ondansetron",
+    "drugClass": "5-HT3 antagonist",
+    "primaryUse": "Nausea / Vomiting",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "zofran": {
+    "brand": "Zofran",
+    "generic": "ondansetron",
+    "drugClass": "5-HT3 antagonist",
+    "primaryUse": "Nausea / Vomiting",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "odt": {
+    "brand": "Odt",
+    "generic": "ondansetron",
+    "drugClass": "5-HT3 antagonist",
+    "primaryUse": "Nausea / Vomiting",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "promethazine": {
+    "brand": "Promethazine",
+    "generic": "promethazine",
+    "drugClass": "Antihistamine / Antiemetic",
+    "primaryUse": "Nausea / Allergies",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "phenergan": {
+    "brand": "Phenergan",
+    "generic": "promethazine",
+    "drugClass": "Antihistamine / Antiemetic",
+    "primaryUse": "Nausea / Allergies",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "meclizine": {
+    "brand": "Meclizine",
+    "generic": "meclizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Vertigo / Motion sickness",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "antivert": {
+    "brand": "Antivert",
+    "generic": "meclizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Vertigo / Motion sickness",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "bonine": {
+    "brand": "Bonine",
+    "generic": "meclizine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Vertigo / Motion sickness",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "diclofenac": {
+    "brand": "Diclofenac",
+    "generic": "diclofenac",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "voltaren": {
+    "brand": "Voltaren",
+    "generic": "diclofenac",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "celecoxib": {
+    "brand": "Celecoxib",
+    "generic": "celecoxib",
+    "drugClass": "COX-2 inhibitor",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "celebrex": {
+    "brand": "Celebrex",
+    "generic": "celecoxib",
+    "drugClass": "COX-2 inhibitor",
+    "primaryUse": "Pain / Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "pregabalin": {
+    "brand": "Pregabalin",
+    "generic": "pregabalin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain / Fibromyalgia",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "lyrica": {
+    "brand": "Lyrica",
+    "generic": "pregabalin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Nerve pain / Fibromyalgia",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "topiramate": {
+    "brand": "Topiramate",
+    "generic": "topiramate",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Migraine",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "topamax": {
+    "brand": "Topamax",
+    "generic": "topiramate",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Migraine",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "lamotrigine": {
+    "brand": "Lamotrigine",
+    "generic": "lamotrigine",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "lamictal": {
+    "brand": "Lamictal",
+    "generic": "lamotrigine",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "levetiracetam": {
+    "brand": "Levetiracetam",
+    "generic": "levetiracetam",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "keppra": {
+    "brand": "Keppra",
+    "generic": "levetiracetam",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "valproic acid": {
+    "brand": "Valproic acid",
+    "generic": "valproic acid",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "depakote": {
+    "brand": "Depakote",
+    "generic": "divalproex sodium",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "depakene": {
+    "brand": "Depakene",
+    "generic": "valproic acid",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "vpa": {
+    "brand": "Vpa",
+    "generic": "valproic acid",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "phenytoin": {
+    "brand": "Phenytoin",
+    "generic": "phenytoin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "dilantin": {
+    "brand": "Dilantin",
+    "generic": "phenytoin",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "aripiprazole": {
+    "brand": "Aripiprazole",
+    "generic": "aripiprazole",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "abilify": {
+    "brand": "Abilify",
+    "generic": "aripiprazole",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "quetiapine": {
+    "brand": "Quetiapine",
+    "generic": "quetiapine",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "seroquel": {
+    "brand": "Seroquel",
+    "generic": "quetiapine",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "olanzapine": {
+    "brand": "Olanzapine",
+    "generic": "olanzapine",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "zyprexa": {
+    "brand": "Zyprexa",
+    "generic": "olanzapine",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Bipolar / Schizophrenia",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "risperidone": {
+    "brand": "Risperidone",
+    "generic": "risperidone",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Schizophrenia / Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "risperdal": {
+    "brand": "Risperdal",
+    "generic": "risperidone",
+    "drugClass": "Atypical antipsychotic",
+    "primaryUse": "Schizophrenia / Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "lithium carbonate": {
+    "brand": "Lithium carbonate",
+    "generic": "lithium carbonate",
+    "drugClass": "Mood stabilizer",
+    "primaryUse": "Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "lithobid": {
+    "brand": "Lithobid",
+    "generic": "lithium",
+    "drugClass": "Mood stabilizer",
+    "primaryUse": "Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "eskalith": {
+    "brand": "Eskalith",
+    "generic": "lithium carbonate",
+    "drugClass": "Mood stabilizer",
+    "primaryUse": "Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "lithium": {
+    "brand": "Lithium",
+    "generic": "lithium carbonate",
+    "drugClass": "Mood stabilizer",
+    "primaryUse": "Bipolar",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "buspirone": {
+    "brand": "Buspirone",
+    "generic": "buspirone",
+    "drugClass": "Anxiolytic",
+    "primaryUse": "Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "buspar": {
+    "brand": "Buspar",
+    "generic": "buspirone",
+    "drugClass": "Anxiolytic",
+    "primaryUse": "Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "hydroxyzine": {
+    "brand": "Hydroxyzine",
+    "generic": "hydroxyzine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Anxiety / Allergies",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "vistaril": {
+    "brand": "Vistaril",
+    "generic": "hydroxyzine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Anxiety / Allergies",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "atarax": {
+    "brand": "Atarax",
+    "generic": "hydroxyzine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Anxiety / Allergies",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "zolpidem": {
+    "brand": "Zolpidem",
+    "generic": "zolpidem",
+    "drugClass": "Sedative-hypnotic",
+    "primaryUse": "Insomnia",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "ambien": {
+    "brand": "Ambien",
+    "generic": "zolpidem",
+    "drugClass": "Sedative-hypnotic",
+    "primaryUse": "Insomnia",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "eszopiclone": {
+    "brand": "Eszopiclone",
+    "generic": "eszopiclone",
+    "drugClass": "Sedative-hypnotic",
+    "primaryUse": "Insomnia",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "lunesta": {
+    "brand": "Lunesta",
+    "generic": "eszopiclone",
+    "drugClass": "Sedative-hypnotic",
+    "primaryUse": "Insomnia",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "donepezil": {
+    "brand": "Donepezil",
+    "generic": "donepezil",
+    "drugClass": "Cholinesterase inhibitor",
+    "primaryUse": "Alzheimer's",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "aricept": {
+    "brand": "Aricept",
+    "generic": "donepezil",
+    "drugClass": "Cholinesterase inhibitor",
+    "primaryUse": "Alzheimer's",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "memantine": {
+    "brand": "Memantine",
+    "generic": "memantine",
+    "drugClass": "NMDA antagonist",
+    "primaryUse": "Alzheimer's",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "namenda": {
+    "brand": "Namenda",
+    "generic": "memantine",
+    "drugClass": "NMDA antagonist",
+    "primaryUse": "Alzheimer's",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "fluticasone": {
+    "brand": "Fluticasone",
+    "generic": "fluticasone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "flonase": {
+    "brand": "Flonase",
+    "generic": "fluticasone propionate",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "flovent": {
+    "brand": "Flovent",
+    "generic": "fluticasone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "azelastine hydrochloride and fluticasone propionate": {
+    "brand": "Azelastine hydrochloride and fluticasone propionate",
+    "generic": "fluticasone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "fluticasone propionate and salmeterol diskus": {
+    "brand": "Fluticasone propionate and salmeterol diskus",
+    "generic": "fluticasone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "airduo respiclick": {
+    "brand": "Airduo respiclick",
+    "generic": "fluticasone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "fluticasone propionate": {
+    "brand": "Fluticasone propionate",
+    "generic": "fluticasone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Allergies / Asthma",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "budesonide": {
+    "brand": "Budesonide",
+    "generic": "budesonide",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Asthma / Allergies / Crohn's",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "pulmicort": {
+    "brand": "Pulmicort",
+    "generic": "budesonide",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Asthma / Allergies / Crohn's",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "rhinocort": {
+    "brand": "Rhinocort",
+    "generic": "budesonide",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Asthma / Allergies / Crohn's",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "entocort": {
+    "brand": "Entocort",
+    "generic": "budesonide",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Asthma / Allergies / Crohn's",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "tiotropium": {
+    "brand": "Tiotropium",
+    "generic": "tiotropium",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "COPD",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "spiriva": {
+    "brand": "Spiriva",
+    "generic": "tiotropium",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "COPD",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "latanoprost": {
+    "brand": "Latanoprost",
+    "generic": "latanoprost",
+    "drugClass": "Prostaglandin analog",
+    "primaryUse": "Glaucoma",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "xalatan": {
+    "brand": "Xalatan",
+    "generic": "latanoprost",
+    "drugClass": "Prostaglandin analog",
+    "primaryUse": "Glaucoma",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "timolol": {
+    "brand": "Timolol",
+    "generic": "timolol",
+    "drugClass": "Beta blocker (ophthalmic)",
+    "primaryUse": "Glaucoma",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "timoptic": {
+    "brand": "Timoptic",
+    "generic": "timolol",
+    "drugClass": "Beta blocker (ophthalmic)",
+    "primaryUse": "Glaucoma",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "pioglitazone": {
+    "brand": "Pioglitazone",
+    "generic": "pioglitazone",
+    "drugClass": "Thiazolidinedione",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "actos": {
+    "brand": "Actos",
+    "generic": "pioglitazone",
+    "drugClass": "Thiazolidinedione",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "sitagliptin": {
+    "brand": "Sitagliptin",
+    "generic": "sitagliptin",
+    "drugClass": "DPP-4 inhibitor",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "januvia": {
+    "brand": "Januvia",
+    "generic": "sitagliptin",
+    "drugClass": "DPP-4 inhibitor",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "empagliflozin": {
+    "brand": "Empagliflozin",
+    "generic": "empagliflozin",
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes / Heart failure",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "jardiance": {
+    "brand": "Jardiance",
+    "generic": "empagliflozin",
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes / Heart failure",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "dapagliflozin": {
+    "brand": "Dapagliflozin",
+    "generic": "dapagliflozin",
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes / Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "farxiga": {
+    "brand": "Farxiga",
+    "generic": "dapagliflozin",
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes / Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "liraglutide": {
+    "brand": "Liraglutide",
+    "generic": "liraglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "victoza": {
+    "brand": "Victoza",
+    "generic": "liraglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "saxenda": {
+    "brand": "Saxenda",
+    "generic": "liraglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "semaglutide": {
+    "brand": "Semaglutide",
+    "generic": "semaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "ozempic": {
+    "brand": "Ozempic",
+    "generic": "semaglutide injection",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "wegovy": {
+    "brand": "Wegovy",
+    "generic": "semaglutide injection",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "rybelsus": {
+    "brand": "Rybelsus",
+    "generic": "semaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "ozempic pill": {
+    "brand": "Ozempic pill",
+    "generic": "semaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "ozempic tablets": {
+    "brand": "Ozempic tablets",
+    "generic": "semaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "wegovy pill": {
+    "brand": "Wegovy pill",
+    "generic": "semaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "tirzepatide": {
+    "brand": "Tirzepatide",
+    "generic": "tirzepatide",
+    "drugClass": "GIP/GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "mounjaro": {
+    "brand": "Mounjaro",
+    "generic": "tirzepatide",
+    "drugClass": "GIP/GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "zepbound": {
+    "brand": "Zepbound",
+    "generic": "tirzepatide",
+    "drugClass": "GIP/GLP-1 agonist",
+    "primaryUse": "Diabetes / Weight loss",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "apixaban": {
+    "brand": "Apixaban",
+    "generic": "apixaban",
+    "drugClass": "Factor Xa inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "eliquis": {
+    "brand": "Eliquis",
+    "generic": "apixaban",
+    "drugClass": "Factor Xa inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "rivaroxaban": {
+    "brand": "Rivaroxaban",
+    "generic": "rivaroxaban",
+    "drugClass": "Factor Xa inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "xarelto": {
+    "brand": "Xarelto",
+    "generic": "rivaroxaban",
+    "drugClass": "Factor Xa inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "dabigatran": {
+    "brand": "Dabigatran",
+    "generic": "dabigatran",
+    "drugClass": "Direct thrombin inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "pradaxa": {
+    "brand": "Pradaxa",
+    "generic": "dabigatran",
+    "drugClass": "Direct thrombin inhibitor",
+    "primaryUse": "Blood clots / AFib",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "allopurinol": {
+    "brand": "Allopurinol",
+    "generic": "allopurinol",
+    "drugClass": "XO inhibitor",
+    "primaryUse": "Gout",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "zyloprim": {
+    "brand": "Zyloprim",
+    "generic": "allopurinol",
+    "drugClass": "XO inhibitor",
+    "primaryUse": "Gout",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "colchicine": {
+    "brand": "Colchicine",
+    "generic": "colchicine",
+    "drugClass": "Anti-gout",
+    "primaryUse": "Gout",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "colcrys": {
+    "brand": "Colcrys",
+    "generic": "colchicine",
+    "drugClass": "Anti-gout",
+    "primaryUse": "Gout",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "mitigare": {
+    "brand": "Mitigare",
+    "generic": "colchicine",
+    "drugClass": "Anti-gout",
+    "primaryUse": "Gout",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "febuxostat": {
+    "brand": "Febuxostat",
+    "generic": "febuxostat",
+    "drugClass": "XO inhibitor",
+    "primaryUse": "Gout",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "uloric": {
+    "brand": "Uloric",
+    "generic": "febuxostat",
+    "drugClass": "XO inhibitor",
+    "primaryUse": "Gout",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "metoclopramide": {
+    "brand": "Metoclopramide",
+    "generic": "metoclopramide",
+    "drugClass": "Prokinetic",
+    "primaryUse": "Nausea / GERD",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "reglan": {
+    "brand": "Reglan",
+    "generic": "metoclopramide",
+    "drugClass": "Prokinetic",
+    "primaryUse": "Nausea / GERD",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "dicyclomine": {
+    "brand": "Dicyclomine",
+    "generic": "dicyclomine",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "IBS",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "bentyl": {
+    "brand": "Bentyl",
+    "generic": "dicyclomine",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "IBS",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "sucralfate": {
+    "brand": "Sucralfate",
+    "generic": "sucralfate",
+    "drugClass": "Mucosal protectant",
+    "primaryUse": "Ulcers",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "carafate": {
+    "brand": "Carafate",
+    "generic": "sucralfate",
+    "drugClass": "Mucosal protectant",
+    "primaryUse": "Ulcers",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "nitrofurantoin": {
+    "brand": "Nitrofurantoin",
+    "generic": "nitrofurantoin",
+    "drugClass": "Antibiotic",
+    "primaryUse": "UTI",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "macrobid": {
+    "brand": "Macrobid",
+    "generic": "nitrofurantoin",
+    "drugClass": "Antibiotic",
+    "primaryUse": "UTI",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "macrodantin": {
+    "brand": "Macrodantin",
+    "generic": "nitrofurantoin",
+    "drugClass": "Antibiotic",
+    "primaryUse": "UTI",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "nitrofurantoin (monohydrate/macrocrystals)": {
+    "brand": "Nitrofurantoin (monohydrate/macrocrystals)",
+    "generic": "nitrofurantoin",
+    "drugClass": "Antibiotic",
+    "primaryUse": "UTI",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "phenazopyridine": {
+    "brand": "Phenazopyridine",
+    "generic": "phenazopyridine",
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "pyridium": {
+    "brand": "Pyridium",
+    "generic": "phenazopyridine",
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "azo": {
+    "brand": "Azo",
+    "generic": "phenazopyridine",
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "sunmark urinary pain relief": {
+    "brand": "Sunmark urinary pain relief",
+    "generic": "phenazopyridine",
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "phenazopyridine hydrochloride": {
+    "brand": "Phenazopyridine hydrochloride",
+    "generic": "phenazopyridine",
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "preferred maximum strength urinary pain relief": {
+    "brand": "Preferred maximum strength urinary pain relief",
+    "generic": "phenazopyridine",
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "rite aid maximum strength urinary pain relief": {
+    "brand": "Rite aid maximum strength urinary pain relief",
+    "generic": "phenazopyridine",
+    "drugClass": "Urinary analgesic",
+    "primaryUse": "UTI pain",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "oxybutynin": {
+    "brand": "Oxybutynin",
+    "generic": "oxybutynin",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "ditropan": {
+    "brand": "Ditropan",
+    "generic": "oxybutynin",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "oxybutynin chloride": {
+    "brand": "Oxybutynin chloride",
+    "generic": "oxybutynin",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "oxybutynin chloride extended release": {
+    "brand": "Oxybutynin chloride extended release",
+    "generic": "oxybutynin",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "solifenacin": {
+    "brand": "Solifenacin",
+    "generic": "solifenacin",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "vesicare": {
+    "brand": "Vesicare",
+    "generic": "solifenacin",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "solifenacin succinate": {
+    "brand": "Solifenacin succinate",
+    "generic": "solifenacin",
+    "drugClass": "Anticholinergic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "testosterone": {
+    "brand": "Testosterone",
+    "generic": "testosterone",
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "androgel": {
+    "brand": "AndroGel",
+    "generic": "testosterone",
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "testim": {
+    "brand": "Testim",
+    "generic": "testosterone",
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "axiron": {
+    "brand": "Axiron",
+    "generic": "testosterone",
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "t": {
+    "brand": "T",
+    "generic": "testosterone",
+    "drugClass": "Androgen",
+    "primaryUse": "Low testosterone",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "estradiol": {
+    "brand": "Estradiol",
+    "generic": "estradiol",
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause / HRT",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "estrace": {
+    "brand": "Estrace",
+    "generic": "estradiol",
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause / HRT",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "vivelle-dot": {
+    "brand": "Vivelle-Dot",
+    "generic": "estradiol",
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause / HRT",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "climara": {
+    "brand": "Climara",
+    "generic": "estradiol",
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause / HRT",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "medroxyprogesterone": {
+    "brand": "Medroxyprogesterone",
+    "generic": "medroxyprogesterone",
+    "drugClass": "Progestin",
+    "primaryUse": "Menopause / Contraception",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "provera": {
+    "brand": "Provera",
+    "generic": "medroxyprogesterone",
+    "drugClass": "Progestin",
+    "primaryUse": "Menopause / Contraception",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "depo-provera": {
+    "brand": "Depo-Provera",
+    "generic": "medroxyprogesterone",
+    "drugClass": "Progestin",
+    "primaryUse": "Menopause / Contraception",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "norethindrone": {
+    "brand": "Norethindrone",
+    "generic": "norethindrone",
+    "drugClass": "Progestin",
+    "primaryUse": "Contraception",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "aygestin": {
+    "brand": "Aygestin",
+    "generic": "norethindrone",
+    "drugClass": "Progestin",
+    "primaryUse": "Contraception",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "camila": {
+    "brand": "Camila",
+    "generic": "norethindrone",
+    "drugClass": "Progestin",
+    "primaryUse": "Contraception",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "dupilumab": {
+    "brand": "Dupilumab",
+    "generic": "dupilumab",
+    "drugClass": "Monoclonal Antibody",
+    "primaryUse": "Eczema / Asthma",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "dupixent": {
+    "brand": "Dupixent",
+    "generic": "dupilumab",
+    "drugClass": "Monoclonal Antibody",
+    "primaryUse": "Eczema / Asthma",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "fostemsavir": {
+    "brand": "Fostemsavir",
+    "generic": "fostemsavir",
+    "drugClass": "Attachment Inhibitor",
+    "primaryUse": "HIV",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "rukobia": {
+    "brand": "Rukobia",
+    "generic": "fostemsavir",
+    "drugClass": "Attachment Inhibitor",
+    "primaryUse": "HIV",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "vibegron": {
+    "brand": "Vibegron",
+    "generic": "vibegron",
+    "drugClass": "Beta-3 Adrenergic Agonist",
+    "primaryUse": "Overactive Bladder",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "gemtesa": {
+    "brand": "Gemtesa",
+    "generic": "vibegron",
+    "drugClass": "Beta-3 Adrenergic Agonist",
+    "primaryUse": "Overactive Bladder",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "darolutamide": {
+    "brand": "Darolutamide",
+    "generic": "darolutamide",
+    "drugClass": "Androgen Receptor Inhibitor",
+    "primaryUse": "Prostate Cancer",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "nubeqa": {
+    "brand": "Nubeqa",
+    "generic": "darolutamide",
+    "drugClass": "Androgen Receptor Inhibitor",
+    "primaryUse": "Prostate Cancer",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "amphetamine/dextroamphetamine": {
+    "brand": "Amphetamine/dextroamphetamine",
+    "generic": "amphetamine/dextroamphetamine",
+    "drugClass": "CNS Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "adderall": {
+    "brand": "Adderall",
+    "generic": "amphetamine/dextroamphetamine",
+    "drugClass": "CNS Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "amphetamine salts": {
+    "brand": "Amphetamine salts",
+    "generic": "amphetamine/dextroamphetamine",
+    "drugClass": "CNS Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "mixed amphetamine salts": {
+    "brand": "Mixed amphetamine salts",
+    "generic": "amphetamine/dextroamphetamine",
+    "drugClass": "CNS Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "dextroamphetamine amphetamine": {
+    "brand": "Dextroamphetamine amphetamine",
+    "generic": "amphetamine/dextroamphetamine",
+    "drugClass": "CNS Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "d amphetamine salt": {
+    "brand": "D amphetamine salt",
+    "generic": "amphetamine/dextroamphetamine",
+    "drugClass": "CNS Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "d amphetamine salt combo": {
+    "brand": "D amphetamine salt combo",
+    "generic": "amphetamine/dextroamphetamine",
+    "drugClass": "CNS Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "fluvastatin": {
+    "brand": "Fluvastatin",
+    "generic": "fluvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "lescol": {
+    "brand": "Lescol",
+    "generic": "fluvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "lescol xl": {
+    "brand": "Lescol XL",
+    "generic": "fluvastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "lovastatin": {
+    "brand": "Lovastatin",
+    "generic": "lovastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "mevacor": {
+    "brand": "Mevacor",
+    "generic": "lovastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "altoprev": {
+    "brand": "Altoprev",
+    "generic": "lovastatin",
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "ezetimibe": {
+    "brand": "Ezetimibe",
+    "generic": "ezetimibe",
+    "drugClass": "Cholesterol absorption inhibitor",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "zetia": {
+    "brand": "Zetia",
+    "generic": "ezetimibe",
+    "drugClass": "Cholesterol absorption inhibitor",
+    "primaryUse": "Cholesterol",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "fenofibrate": {
+    "brand": "Fenofibrate",
+    "generic": "fenofibrate",
+    "drugClass": "Fibrate",
+    "primaryUse": "Cholesterol / Triglycerides",
+    "hasGeneric": true,
+    "typicalSavings": "80-90%"
+  },
+  "tricor": {
+    "brand": "Tricor",
+    "generic": "fenofibrate",
+    "drugClass": "Fibrate",
+    "primaryUse": "Cholesterol / Triglycerides",
+    "hasGeneric": true,
+    "typicalSavings": "80-90%"
+  },
+  "fenoglide": {
+    "brand": "Fenoglide",
+    "generic": "fenofibrate",
+    "drugClass": "Fibrate",
+    "primaryUse": "Cholesterol / Triglycerides",
+    "hasGeneric": true,
+    "typicalSavings": "80-90%"
+  },
+  "candesartan": {
+    "brand": "Candesartan",
+    "generic": "candesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "atacand": {
+    "brand": "Atacand",
+    "generic": "candesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "candesartan cilexetil and hydrochlorothiazide": {
+    "brand": "Candesartan cilexetil and hydrochlorothiazide",
+    "generic": "candesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "candesartan cilexetil": {
+    "brand": "Candesartan cilexetil",
+    "generic": "candesartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "telmisartan": {
+    "brand": "Telmisartan",
+    "generic": "telmisartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "micardis": {
+    "brand": "Micardis",
+    "generic": "telmisartan",
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "nebivolol": {
+    "brand": "Nebivolol",
+    "generic": "nebivolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "bystolic": {
+    "brand": "Bystolic",
+    "generic": "nebivolol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "losartan/hydrochlorothiazide": {
+    "brand": "Losartan/hydrochlorothiazide",
+    "generic": "losartan/hydrochlorothiazide",
+    "drugClass": "ARB + diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "hyzaar": {
+    "brand": "Hyzaar",
+    "generic": "losartan/hydrochlorothiazide",
+    "drugClass": "ARB + diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "lisinopril/hydrochlorothiazide": {
+    "brand": "Lisinopril/hydrochlorothiazide",
+    "generic": "lisinopril/hydrochlorothiazide",
+    "drugClass": "ACE inhibitor + diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "zestoretic": {
+    "brand": "Zestoretic",
+    "generic": "lisinopril/hydrochlorothiazide",
+    "drugClass": "ACE inhibitor + diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "lisinopril/hctz": {
+    "brand": "Lisinopril/hctz",
+    "generic": "lisinopril/hctz",
+    "drugClass": "ACE inhibitor + diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "quinapril": {
+    "brand": "Quinapril",
+    "generic": "quinapril",
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "accupril": {
+    "brand": "Accupril",
+    "generic": "quinapril",
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "quinapril and hydrochlorothiazide 10/12.5": {
+    "brand": "Quinapril and hydrochlorothiazide 10/12.5",
+    "generic": "quinapril",
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "quinapril and hydrochlorothiazide 20/12.5": {
+    "brand": "Quinapril and hydrochlorothiazide 20/12.5",
+    "generic": "quinapril",
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "fosinopril": {
+    "brand": "Fosinopril",
+    "generic": "fosinopril",
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "monopril": {
+    "brand": "Monopril",
+    "generic": "fosinopril",
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "fosinopril sodium": {
+    "brand": "Fosinopril sodium",
+    "generic": "fosinopril",
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "chlorthalidone": {
+    "brand": "Chlorthalidone",
+    "generic": "chlorthalidone",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "thalitone": {
+    "brand": "Thalitone",
+    "generic": "chlorthalidone",
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "verapamil": {
+    "brand": "Verapamil",
+    "generic": "verapamil",
+    "drugClass": "Calcium channel blocker",
+    "primaryUse": "Blood pressure / Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "calan": {
+    "brand": "Calan",
+    "generic": "verapamil",
+    "drugClass": "Calcium channel blocker",
+    "primaryUse": "Blood pressure / Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "isoptin": {
+    "brand": "Isoptin",
+    "generic": "verapamil",
+    "drugClass": "Calcium channel blocker",
+    "primaryUse": "Blood pressure / Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "verapamil hydrochloride": {
+    "brand": "Verapamil hydrochloride",
+    "generic": "verapamil",
+    "drugClass": "Calcium channel blocker",
+    "primaryUse": "Blood pressure / Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "prazosin": {
+    "brand": "Prazosin",
+    "generic": "prazosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "minipress": {
+    "brand": "Minipress",
+    "generic": "prazosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "prazosin hydrochloride": {
+    "brand": "Prazosin hydrochloride",
+    "generic": "prazosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "doxazosin": {
+    "brand": "Doxazosin",
+    "generic": "doxazosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "BPH / Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "cardura": {
+    "brand": "Cardura",
+    "generic": "doxazosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "BPH / Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "terazosin": {
+    "brand": "Terazosin",
+    "generic": "terazosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "BPH / Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "terazosin hydrochloride": {
+    "brand": "Terazosin hydrochloride",
+    "generic": "terazosin",
+    "drugClass": "Alpha blocker",
+    "primaryUse": "BPH / Blood pressure",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "sacubitril/valsartan": {
+    "brand": "Sacubitril/valsartan",
+    "generic": "sacubitril/valsartan",
+    "drugClass": "ARNI",
+    "primaryUse": "Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "entresto": {
+    "brand": "Entresto",
+    "generic": "sacubitril/valsartan",
+    "drugClass": "ARNI",
+    "primaryUse": "Heart failure",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "digoxin": {
+    "brand": "Digoxin",
+    "generic": "digoxin",
+    "drugClass": "Cardiac glycoside",
+    "primaryUse": "Heart failure / AFib",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "lanoxin": {
+    "brand": "Lanoxin",
+    "generic": "digoxin",
+    "drugClass": "Cardiac glycoside",
+    "primaryUse": "Heart failure / AFib",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "amiodarone": {
+    "brand": "Amiodarone",
+    "generic": "amiodarone",
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "pacerone": {
+    "brand": "Pacerone",
+    "generic": "amiodarone",
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "amiodarone hydrochloride": {
+    "brand": "Amiodarone hydrochloride",
+    "generic": "amiodarone",
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "flecainide": {
+    "brand": "Flecainide",
+    "generic": "flecainide",
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "tambocor": {
+    "brand": "Tambocor",
+    "generic": "flecainide",
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "flecainide acetate": {
+    "brand": "Flecainide acetate",
+    "generic": "flecainide",
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "sotalol": {
+    "brand": "Sotalol",
+    "generic": "sotalol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "betapace": {
+    "brand": "Betapace",
+    "generic": "sotalol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "sotalol hydrochloride": {
+    "brand": "Sotalol hydrochloride",
+    "generic": "sotalol",
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart rhythm",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "prasugrel": {
+    "brand": "Prasugrel",
+    "generic": "prasugrel",
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "effient": {
+    "brand": "Effient",
+    "generic": "prasugrel",
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "ticagrelor": {
+    "brand": "Ticagrelor",
+    "generic": "ticagrelor",
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "brilinta": {
+    "brand": "Brilinta",
+    "generic": "ticagrelor",
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "aspirin": {
+    "brand": "Aspirin",
+    "generic": "aspirin",
+    "drugClass": "NSAID / Antiplatelet",
+    "primaryUse": "Pain / Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "aspirin 81mg dye-free": {
+    "brand": "Aspirin 81mg dye-free",
+    "generic": "aspirin",
+    "drugClass": "NSAID / Antiplatelet",
+    "primaryUse": "Pain / Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "low dose aspirin": {
+    "brand": "Low dose aspirin",
+    "generic": "aspirin",
+    "drugClass": "NSAID / Antiplatelet",
+    "primaryUse": "Pain / Blood clots",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "glimepiride": {
+    "brand": "Glimepiride",
+    "generic": "glimepiride",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "amaryl": {
+    "brand": "Amaryl",
+    "generic": "glimepiride",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "glyburide": {
+    "brand": "Glyburide",
+    "generic": "glyburide",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "diabeta": {
+    "brand": "Diabeta",
+    "generic": "glyburide",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "glynase": {
+    "brand": "Glynase",
+    "generic": "glyburide",
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "canagliflozin": {
+    "brand": "Canagliflozin",
+    "generic": "canagliflozin",
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "invokana": {
+    "brand": "Invokana",
+    "generic": "canagliflozin",
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "dulaglutide": {
+    "brand": "Dulaglutide",
+    "generic": "dulaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "trulicity": {
+    "brand": "Trulicity",
+    "generic": "dulaglutide",
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "insulin aspart": {
+    "brand": "Insulin aspart",
+    "generic": "insulin aspart",
+    "drugClass": "Insulin (rapid-acting)",
+    "primaryUse": "Diabetes",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "novolog": {
+    "brand": "NovoLog",
+    "generic": "insulin aspart",
+    "drugClass": "Insulin (rapid-acting)",
+    "primaryUse": "Diabetes",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "fiasp": {
+    "brand": "Fiasp",
+    "generic": "insulin aspart",
+    "drugClass": "Insulin (rapid-acting)",
+    "primaryUse": "Diabetes",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "naltrexone/bupropion": {
+    "brand": "Naltrexone/bupropion",
+    "generic": "naltrexone/bupropion",
+    "drugClass": "Opioid antagonist + NDRI",
+    "primaryUse": "Weight management",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "contrave": {
+    "brand": "Contrave",
+    "generic": "naltrexone/bupropion",
+    "drugClass": "Opioid antagonist + NDRI",
+    "primaryUse": "Weight management",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "thyroid desiccated": {
+    "brand": "Thyroid desiccated",
+    "generic": "thyroid desiccated",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Hypothyroidism",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "armour thyroid": {
+    "brand": "Armour Thyroid",
+    "generic": "thyroid desiccated",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Hypothyroidism",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "np thyroid": {
+    "brand": "NP Thyroid",
+    "generic": "thyroid desiccated",
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Hypothyroidism",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "methimazole": {
+    "brand": "Methimazole",
+    "generic": "methimazole",
+    "drugClass": "Antithyroid",
+    "primaryUse": "Hyperthyroidism",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "tapazole": {
+    "brand": "Tapazole",
+    "generic": "methimazole",
+    "drugClass": "Antithyroid",
+    "primaryUse": "Hyperthyroidism",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "paroxetine": {
+    "brand": "Paroxetine",
+    "generic": "paroxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "85-95%"
+  },
+  "paxil": {
+    "brand": "Paxil",
+    "generic": "paroxetine",
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "hasGeneric": true,
+    "typicalSavings": "85-95%"
+  },
+  "desvenlafaxine": {
+    "brand": "Desvenlafaxine",
+    "generic": "desvenlafaxine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "pristiq": {
+    "brand": "Pristiq",
+    "generic": "desvenlafaxine",
+    "drugClass": "SNRI",
+    "primaryUse": "Depression",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "mirtazapine": {
+    "brand": "Mirtazapine",
+    "generic": "mirtazapine",
+    "drugClass": "Tetracyclic antidepressant",
+    "primaryUse": "Depression",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "remeron": {
+    "brand": "Remeron",
+    "generic": "mirtazapine",
+    "drugClass": "Tetracyclic antidepressant",
+    "primaryUse": "Depression",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "amitriptyline": {
+    "brand": "Amitriptyline",
+    "generic": "amitriptyline",
+    "drugClass": "TCA",
+    "primaryUse": "Depression / Pain",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "elavil": {
+    "brand": "Elavil",
+    "generic": "amitriptyline",
+    "drugClass": "TCA",
+    "primaryUse": "Depression / Pain",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "lisdexamfetamine": {
+    "brand": "Lisdexamfetamine",
+    "generic": "lisdexamfetamine",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "vyvanse": {
+    "brand": "Vyvanse",
+    "generic": "lisdexamfetamine",
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "atomoxetine": {
+    "brand": "Atomoxetine",
+    "generic": "atomoxetine",
+    "drugClass": "NRI",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "strattera": {
+    "brand": "Strattera",
+    "generic": "atomoxetine",
+    "drugClass": "NRI",
+    "primaryUse": "ADHD",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "carbamazepine": {
+    "brand": "Carbamazepine",
+    "generic": "carbamazepine",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Nerve pain",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "tegretol": {
+    "brand": "Tegretol",
+    "generic": "carbamazepine",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Nerve pain",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "epitol": {
+    "brand": "Epitol",
+    "generic": "carbamazepine",
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Nerve pain",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "rabeprazole": {
+    "brand": "Rabeprazole",
+    "generic": "rabeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux / GERD",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "aciphex": {
+    "brand": "Aciphex",
+    "generic": "rabeprazole",
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux / GERD",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "linaclotide": {
+    "brand": "Linaclotide",
+    "generic": "linaclotide",
+    "drugClass": "GC-C agonist",
+    "primaryUse": "IBS / Constipation",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "linzess": {
+    "brand": "Linzess",
+    "generic": "linaclotide",
+    "drugClass": "GC-C agonist",
+    "primaryUse": "IBS / Constipation",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "indomethacin": {
+    "brand": "Indomethacin",
+    "generic": "indomethacin",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Gout",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "indocin": {
+    "brand": "Indocin",
+    "generic": "indomethacin",
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Gout",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "tizanidine": {
+    "brand": "Tizanidine",
+    "generic": "tizanidine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "zanaflex": {
+    "brand": "Zanaflex",
+    "generic": "tizanidine",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "methocarbamol": {
+    "brand": "Methocarbamol",
+    "generic": "methocarbamol",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "robaxin": {
+    "brand": "Robaxin",
+    "generic": "methocarbamol",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "metaxalone": {
+    "brand": "Metaxalone",
+    "generic": "metaxalone",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "skelaxin": {
+    "brand": "Skelaxin",
+    "generic": "metaxalone",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "baclofen": {
+    "brand": "Baclofen",
+    "generic": "baclofen",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms / Spasticity",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "lioresal": {
+    "brand": "Lioresal",
+    "generic": "baclofen",
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms / Spasticity",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "amoxicillin/clavulanate": {
+    "brand": "Amoxicillin/clavulanate",
+    "generic": "amoxicillin/clavulanate",
+    "drugClass": "Penicillin + inhibitor",
+    "primaryUse": "Bacterial infections",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "augmentin": {
+    "brand": "Augmentin",
+    "generic": "amoxicillin/clavulanate",
+    "drugClass": "Penicillin + inhibitor",
+    "primaryUse": "Bacterial infections",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "diphenhydramine": {
+    "brand": "Diphenhydramine",
+    "generic": "diphenhydramine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies / Sleep",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "benadryl": {
+    "brand": "Benadryl",
+    "generic": "diphenhydramine",
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies / Sleep",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "mometasone nasal": {
+    "brand": "Mometasone nasal",
+    "generic": "mometasone nasal",
+    "drugClass": "Nasal corticosteroid",
+    "primaryUse": "Nasal allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "nasonex": {
+    "brand": "Nasonex",
+    "generic": "mometasone nasal",
+    "drugClass": "Nasal corticosteroid",
+    "primaryUse": "Nasal allergies",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "ipratropium/albuterol": {
+    "brand": "Ipratropium/albuterol",
+    "generic": "ipratropium/albuterol",
+    "drugClass": "SAMA + SABA",
+    "primaryUse": "COPD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "combivent": {
+    "brand": "Combivent",
+    "generic": "ipratropium/albuterol",
+    "drugClass": "SAMA + SABA",
+    "primaryUse": "COPD",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "fluconazole": {
+    "brand": "Fluconazole",
+    "generic": "fluconazole",
+    "drugClass": "Antifungal",
+    "primaryUse": "Fungal infections",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "diflucan": {
+    "brand": "Diflucan",
+    "generic": "fluconazole",
+    "drugClass": "Antifungal",
+    "primaryUse": "Fungal infections",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "terbinafine": {
+    "brand": "Terbinafine",
+    "generic": "terbinafine",
+    "drugClass": "Antifungal",
+    "primaryUse": "Fungal infections",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "lamisil": {
+    "brand": "Lamisil",
+    "generic": "terbinafine",
+    "drugClass": "Antifungal",
+    "primaryUse": "Fungal infections",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "dutasteride": {
+    "brand": "Dutasteride",
+    "generic": "dutasteride",
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "Enlarged prostate (BPH)",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "avodart": {
+    "brand": "Avodart",
+    "generic": "dutasteride",
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "Enlarged prostate (BPH)",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "tolterodine": {
+    "brand": "Tolterodine",
+    "generic": "tolterodine",
+    "drugClass": "Antimuscarinic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "detrol": {
+    "brand": "Detrol",
+    "generic": "tolterodine",
+    "drugClass": "Antimuscarinic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "tolterodine tartrate": {
+    "brand": "Tolterodine tartrate",
+    "generic": "tolterodine",
+    "drugClass": "Antimuscarinic",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "mirabegron": {
+    "brand": "Mirabegron",
+    "generic": "mirabegron",
+    "drugClass": "Beta-3 agonist",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "myrbetriq": {
+    "brand": "Myrbetriq",
+    "generic": "mirabegron",
+    "drugClass": "Beta-3 agonist",
+    "primaryUse": "Overactive bladder",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "alendronate": {
+    "brand": "Alendronate",
+    "generic": "alendronate",
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "fosamax": {
+    "brand": "Fosamax",
+    "generic": "alendronate",
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "risedronate": {
+    "brand": "Risedronate",
+    "generic": "risedronate",
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "actonel": {
+    "brand": "Actonel",
+    "generic": "risedronate",
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "ibandronate": {
+    "brand": "Ibandronate",
+    "generic": "ibandronate",
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "boniva": {
+    "brand": "Boniva",
+    "generic": "ibandronate",
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "hasGeneric": true,
+    "typicalSavings": "75-85%"
+  },
+  "raloxifene": {
+    "brand": "Raloxifene",
+    "generic": "raloxifene",
+    "drugClass": "SERM",
+    "primaryUse": "Osteoporosis",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "evista": {
+    "brand": "Evista",
+    "generic": "raloxifene",
+    "drugClass": "SERM",
+    "primaryUse": "Osteoporosis",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "rizatriptan": {
+    "brand": "Rizatriptan",
+    "generic": "rizatriptan",
+    "drugClass": "Triptan",
+    "primaryUse": "Migraines",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "maxalt": {
+    "brand": "Maxalt",
+    "generic": "rizatriptan",
+    "drugClass": "Triptan",
+    "primaryUse": "Migraines",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "bimatoprost": {
+    "brand": "Bimatoprost",
+    "generic": "bimatoprost",
+    "drugClass": "Prostaglandin analog",
+    "primaryUse": "Glaucoma",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "lumigan": {
+    "brand": "Lumigan",
+    "generic": "bimatoprost",
+    "drugClass": "Prostaglandin analog",
+    "primaryUse": "Glaucoma",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "cyclosporine ophthalmic": {
+    "brand": "Cyclosporine ophthalmic",
+    "generic": "cyclosporine ophthalmic",
+    "drugClass": "Immunomodulator",
+    "primaryUse": "Dry eyes",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "restasis": {
+    "brand": "Restasis",
+    "generic": "cyclosporine ophthalmic",
+    "drugClass": "Immunomodulator",
+    "primaryUse": "Dry eyes",
+    "hasGeneric": true,
+    "typicalSavings": null
+  },
+  "methylprednisolone": {
+    "brand": "Methylprednisolone",
+    "generic": "methylprednisolone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "medrol": {
+    "brand": "Medrol",
+    "generic": "methylprednisolone",
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "conjugated estrogens": {
+    "brand": "Conjugated estrogens",
+    "generic": "conjugated estrogens",
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "premarin": {
+    "brand": "Premarin",
+    "generic": "conjugated estrogens",
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "tretinoin": {
+    "brand": "Tretinoin",
+    "generic": "tretinoin",
+    "drugClass": "Retinoid",
+    "primaryUse": "Acne",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "retin-a": {
+    "brand": "Retin-A",
+    "generic": "tretinoin",
+    "drugClass": "Retinoid",
+    "primaryUse": "Acne",
+    "hasGeneric": true,
+    "typicalSavings": "70-80%"
+  },
+  "hydroxychloroquine": {
+    "brand": "Hydroxychloroquine",
+    "generic": "hydroxychloroquine",
+    "drugClass": "DMARD",
+    "primaryUse": "Lupus / Rheumatoid arthritis",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "plaquenil": {
+    "brand": "Plaquenil",
+    "generic": "hydroxychloroquine",
+    "drugClass": "DMARD",
+    "primaryUse": "Lupus / Rheumatoid arthritis",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "azathioprine": {
+    "brand": "Azathioprine",
+    "generic": "azathioprine",
+    "drugClass": "Immunosuppressant",
+    "primaryUse": "Autoimmune conditions",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "imuran": {
+    "brand": "Imuran",
+    "generic": "azathioprine",
+    "drugClass": "Immunosuppressant",
+    "primaryUse": "Autoimmune conditions",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "adalimumab": {
+    "brand": "Adalimumab",
+    "generic": "adalimumab",
+    "drugClass": "TNF inhibitor (biologic)",
+    "primaryUse": "Autoimmune conditions",
+    "hasGeneric": true,
+    "typicalSavings": "Biosimilars available (50-60% savings)"
+  },
+  "humira": {
+    "brand": "Humira",
+    "generic": "adalimumab",
+    "drugClass": "TNF inhibitor (biologic)",
+    "primaryUse": "Autoimmune conditions",
+    "hasGeneric": true,
+    "typicalSavings": "Biosimilars available (50-60% savings)"
+  },
+  "etanercept": {
+    "brand": "Etanercept",
+    "generic": "etanercept",
+    "drugClass": "TNF inhibitor (biologic)",
+    "primaryUse": "Autoimmune conditions",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "enbrel": {
+    "brand": "Enbrel",
+    "generic": "etanercept",
+    "drugClass": "TNF inhibitor (biologic)",
+    "primaryUse": "Autoimmune conditions",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "ferrous sulfate": {
+    "brand": "Ferrous sulfate",
+    "generic": "ferrous sulfate",
+    "drugClass": "Iron supplement",
+    "primaryUse": "Iron deficiency",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "slow fe": {
+    "brand": "Slow Fe",
+    "generic": "ferrous sulfate",
+    "drugClass": "Iron supplement",
+    "primaryUse": "Iron deficiency",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "magnesium oxide": {
+    "brand": "Magnesium oxide",
+    "generic": "magnesium oxide",
+    "drugClass": "Mineral supplement",
+    "primaryUse": "Low magnesium",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "potassium chloride": {
+    "brand": "Potassium chloride",
+    "generic": "potassium chloride",
+    "drugClass": "Electrolyte supplement",
+    "primaryUse": "Low potassium",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "klor-con": {
+    "brand": "Klor-Con",
+    "generic": "potassium chloride",
+    "drugClass": "Electrolyte supplement",
+    "primaryUse": "Low potassium",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "k-tab": {
+    "brand": "K-Tab",
+    "generic": "potassium chloride",
+    "drugClass": "Electrolyte supplement",
+    "primaryUse": "Low potassium",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "potassium chloride extended-release": {
+    "brand": "Potassium chloride extended-release",
+    "generic": "potassium chloride",
+    "drugClass": "Electrolyte supplement",
+    "primaryUse": "Low potassium",
+    "hasGeneric": true,
+    "typicalSavings": "80-95%"
+  },
+  "valacyclovir": {
+    "brand": "Valacyclovir",
+    "generic": "valacyclovir",
+    "drugClass": "Antiviral",
+    "primaryUse": "Herpes / Shingles",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "valtrex": {
+    "brand": "Valtrex",
+    "generic": "valacyclovir",
+    "drugClass": "Antiviral",
+    "primaryUse": "Herpes / Shingles",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "acyclovir": {
+    "brand": "Acyclovir",
+    "generic": "acyclovir",
+    "drugClass": "Antiviral",
+    "primaryUse": "Herpes / Shingles",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "zovirax": {
+    "brand": "Zovirax",
+    "generic": "acyclovir",
+    "drugClass": "Antiviral",
+    "primaryUse": "Herpes / Shingles",
+    "hasGeneric": true,
+    "typicalSavings": "90-95%"
+  },
+  "oseltamivir": {
+    "brand": "Oseltamivir",
+    "generic": "oseltamivir",
+    "drugClass": "Antiviral",
+    "primaryUse": "Influenza",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "tamiflu": {
+    "brand": "Tamiflu",
+    "generic": "oseltamivir",
+    "drugClass": "Antiviral",
+    "primaryUse": "Influenza",
+    "hasGeneric": true,
+    "typicalSavings": "80-85%"
+  },
+  "carbidopa/levodopa": {
+    "brand": "Carbidopa/levodopa",
+    "generic": "carbidopa/levodopa",
+    "drugClass": "Dopamine precursor",
+    "primaryUse": "Parkinson's disease",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "sinemet": {
+    "brand": "Sinemet",
+    "generic": "carbidopa/levodopa",
+    "drugClass": "Dopamine precursor",
+    "primaryUse": "Parkinson's disease",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "ropinirole": {
+    "brand": "Ropinirole",
+    "generic": "ropinirole",
+    "drugClass": "Dopamine agonist",
+    "primaryUse": "Parkinson's / Restless legs",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "requip": {
+    "brand": "Requip",
+    "generic": "ropinirole",
+    "drugClass": "Dopamine agonist",
+    "primaryUse": "Parkinson's / Restless legs",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "pramipexole": {
+    "brand": "Pramipexole",
+    "generic": "pramipexole",
+    "drugClass": "Dopamine agonist",
+    "primaryUse": "Parkinson's / Restless legs",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  },
+  "mirapex": {
+    "brand": "Mirapex",
+    "generic": "pramipexole",
+    "drugClass": "Dopamine agonist",
+    "primaryUse": "Parkinson's / Restless legs",
+    "hasGeneric": true,
+    "typicalSavings": "85-90%"
+  }
+}
