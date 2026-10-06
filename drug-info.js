@@ -13,7 +13,7 @@ const { fetchJSON } = require('./utils');
 // ============================================================
 // DRUG NAMES DICTIONARY (for client-side Fuse.js autocomplete)
 // ============================================================
-const DRUG_NAMES_FILE = path.join(__dirname, 'public', 'drug-names.json');
+const DRUG_NAMES_FILE = path.join(__dirname, 'data', 'drug-names.json');
 let drugNamesDictionary = [];
 
 /**

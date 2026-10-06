@@ -104,8 +104,43 @@
 </header>
 <main id="main-content">
 
-<section class="version current" aria-labelledby="v1-4-8">
-  <h2 id="v1-4-8">1.4.8 — 2026-10-05 <span class="badge">Current</span></h2>
+<section class="version current" aria-labelledby="v1-4-9">
+  <h2 id="v1-4-9">1.4.9 — 2026-10-05 <span class="badge">Current</span></h2>
+  <p><em>Master Dictionary</em></p>
+
+  <h3>Added</h3>
+  <ul>
+    <li><code>scripts/build-derived-map.js</code> — generates <code>data/brand-generic-map.json</code> from the master dictionary. Its <code>--check</code> mode compares the two files and writes nothing.</li>
+    <li><code>scripts/add-dictionary-term.js</code> — adds one misspelling, alias, or brand to a master entry. It refuses a term that belongs to another drug and logs each change to <code>data/dictionary-changes.log</code>.</li>
+    <li><code>patch-dictionary-master-oct2026.js</code> — the one-time migration, kept for the audit trail.</li>
+  </ul>
+
+  <h3>Changed</h3>
+  <ul>
+    <li><code>data/drug-names.json</code> is now the only dictionary file.</li>
+    <li><code>data/brand-generic-map.json</code> is now generated from the master. It holds every brand and alias. Misspellings stay in the master list.</li>
+    <li><code>public/app.html</code> now loads <code>/data/drug-names.json</code>, the same path the autocomplete already uses.</li>
+    <li><code>drug-info.js</code> now reads <code>data/drug-names.json</code>.</li>
+  </ul>
+
+  <h3>Removed</h3>
+  <ul>
+    <li>The <code>public/</code> copy of the dictionary, moved to <code>_to_delete/</code>.</li>
+    <li><code>build-dictionary.js</code> and <code>build-drug-dictionary.js</code>, moved to <code>_to_delete/</code>. Both rebuilt dictionary files from hard-coded lists and removed patched entries.</li>
+    <li><code>scripts/add-glp1-drugs.js</code> and <code>fix-dictionary-gaps-sept2026.js</code>, moved to <code>_to_delete/</code>. Both wrote the <code>public/</code> copy.</li>
+    <li>The misspelling keys that earlier hand patches added to the brand map. They stay in the master list.</li>
+  </ul>
+
+  <h3>Known Issues</h3>
+  <ul>
+    <li><code>brand-generic-lookup.json</code> is still a separate file that <code>retail-sources.js</code> reads. It holds about 100 common generics that the master lacks, and 13 naming differences from the master.</li>
+    <li>The health check does not yet test that the brand map matches the master. Run <code>node /var/www/rxaggregator/scripts/build-derived-map.js --check</code> by hand.</li>
+    <li>Terms added with <code>add-dictionary-term.js</code> need <code>pm2 restart rxaggregator</code> before the search uses them.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-4-8">
+  <h2 id="v1-4-8">1.4.8 — 2026-10-05</h2>
   <p><em>Gap Report Fix</em></p>
 
   <h3>Added</h3>

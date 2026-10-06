@@ -58,7 +58,14 @@ function canon(v) {
 }
 const sameDictionary = (a, b) => a.map(canon).sort().join('|') === b.map(canon).sort().join('|');
 
-/** Finds references to drug-names.json under public/ that do not go through data/. */
+/** True when the text at i looks like a file path or a quoted file name, not prose or a comment. */
+function isPathLike(text, i) {
+  const prev = text[i - 1];
+  if (prev === '"' || prev === "'" || prev === '`') return true;
+  return prev === '/' && text.slice(Math.max(0, i - 5), i) !== 'data/';
+}
+
+/** Finds paths under public/ that load drug-names.json without going through data/. Comments that only name the file pass. */
 function findStaleRefs(dir, patchedApp, out) {
   for (const name of fs.readdirSync(dir)) {
     const full = path.join(dir, name);
@@ -68,7 +75,7 @@ function findStaleRefs(dir, patchedApp, out) {
     const text = full === APP_HTML ? patchedApp : read(full);
     let i = text.indexOf('drug-names.json');
     while (i !== -1) {
-      if (text.slice(Math.max(0, i - 5), i) !== 'data/') out.push(path.relative(BASE, full) + ':' + (text.slice(0, i).split('\n').length));
+      if (isPathLike(text, i)) out.push(path.relative(BASE, full) + ':' + (text.slice(0, i).split('\n').length));
       i = text.indexOf('drug-names.json', i + 1);
     }
   }

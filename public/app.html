@@ -2109,7 +2109,7 @@ const AC_MAX = isMobile ? 5 : 8;
 // Load drug dictionary asynchronously
 (async function loadDrugDictionary() {
   try {
-    const res = await fetch('/drug-names.json');
+    const res = await fetch('/data/drug-names.json');
     drugDictionary = await res.json();
     // Build search keys: generic, all brands joined, all aliases joined, misspellings
     fuseInstance = new Fuse(drugDictionary, {

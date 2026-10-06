@@ -4,6 +4,32 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.4.9] — 2026-10-05 (Master Dictionary)
+
+### Added
+- `scripts/build-derived-map.js` — generates `data/brand-generic-map.json` from the master dictionary. Its `--check` mode compares the two files and writes nothing.
+- `scripts/add-dictionary-term.js` — adds one misspelling, alias, or brand to a master entry. It refuses a term that belongs to another drug and logs each change to `data/dictionary-changes.log`.
+- `patch-dictionary-master-oct2026.js` — the one-time migration, kept for the audit trail.
+
+### Changed
+- `data/drug-names.json` is now the only dictionary file.
+- `data/brand-generic-map.json` is now generated from the master. It holds every brand and alias. Misspellings stay in the master list.
+- `public/app.html` now loads `/data/drug-names.json`, the same path the autocomplete already uses.
+- `drug-info.js` now reads `data/drug-names.json`.
+
+### Removed
+- The `public/` copy of the dictionary, moved to `_to_delete/`.
+- `build-dictionary.js` and `build-drug-dictionary.js`, moved to `_to_delete/`. Both rebuilt dictionary files from hard-coded lists and removed patched entries.
+- `scripts/add-glp1-drugs.js` and `fix-dictionary-gaps-sept2026.js`, moved to `_to_delete/`. Both wrote the `public/` copy.
+- The misspelling keys that earlier hand patches added to the brand map. They stay in the master list.
+
+### Known Issues
+- `brand-generic-lookup.json` is still a separate file that `retail-sources.js` reads. It holds about 100 common generics that the master lacks, and 13 naming differences from the master.
+- The health check does not yet test that the brand map matches the master. Run `node /var/www/rxaggregator/scripts/build-derived-map.js --check` by hand.
+- Terms added with `add-dictionary-term.js` need `pm2 restart rxaggregator` before the search uses them.
+
+---
+
 ## [1.4.8] — 2026-10-05 (Gap Report Fix)
 
 ### Added
