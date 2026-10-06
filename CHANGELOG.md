@@ -4,6 +4,32 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.4.8] — 2026-10-05 (Gap Report Fix)
+
+### Added
+- `patch-gap-report-oct2026.js` — fixes the weekly drug gap report and repairs the dictionary copies, kept for the audit trail.
+
+### Changed
+- `find-missing-drugs.js` now reads `data/drug-names.json`, the dictionary that every patch updates.
+- `find-missing-drugs.js` now counts only the last 14 days of searches.
+- `find-missing-drugs.js` now skips searches from the server IP and from localhost.
+- `find-missing-drugs.js` now counts a search with `sources_hit` of 0 as a search with no result.
+- The report email now says how many searches fall in the 14-day window.
+
+### Fixed
+- The gap report no longer flags drugs that were fixed weeks ago. The 2026-10-04 report flagged Gemtesa, nubeca, and olmesartan from June and July rows.
+- The gap report no longer ignores new zero-result searches. Newer log rows write 0, and the old test read only an empty field.
+- The darolutamide entry has its misspellings again: nubeca, darolutimide, and darolutomide. The live dictionary did not contain them.
+- `public/drug-names.json` now holds the entries that existed only in `data/drug-names.json`.
+
+### Known Issues
+- Two copies of the dictionary still exist. `drug-info.js` reads the `public/` copy. The alias index and search read the `data/` copy.
+- `build-drug-dictionary.js` writes the `public/` copy and `build-dictionary.js` writes the `data/` copy. Both build from hard-coded lists and can remove patched entries.
+- Mounjaro, Ozempic, Zepbound, and Jardiance return only one or two sources. GoodRx and SingleCare prices are not added yet.
+- The Walmart and Amazon RxPass lists in `retail-sources.js` and two lookups in `govt-data.js` still use the loose two-way match.
+
+---
+
 ## [1.4.7] — 2026-10-01 (Search Match Fix)
 
 ### Added

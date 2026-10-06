@@ -104,8 +104,43 @@
 </header>
 <main id="main-content">
 
-<section class="version current" aria-labelledby="v1-4-7">
-  <h2 id="v1-4-7">1.4.7 — 2026-10-01 <span class="badge">Current</span></h2>
+<section class="version current" aria-labelledby="v1-4-8">
+  <h2 id="v1-4-8">1.4.8 — 2026-10-05 <span class="badge">Current</span></h2>
+  <p><em>Gap Report Fix</em></p>
+
+  <h3>Added</h3>
+  <ul>
+    <li><code>patch-gap-report-oct2026.js</code> — fixes the weekly drug gap report and repairs the dictionary copies, kept for the audit trail.</li>
+  </ul>
+
+  <h3>Changed</h3>
+  <ul>
+    <li><code>find-missing-drugs.js</code> now reads <code>data/drug-names.json</code>, the dictionary that every patch updates.</li>
+    <li><code>find-missing-drugs.js</code> now counts only the last 14 days of searches.</li>
+    <li><code>find-missing-drugs.js</code> now skips searches from the server IP and from localhost.</li>
+    <li><code>find-missing-drugs.js</code> now counts a search with <code>sources_hit</code> of 0 as a search with no result.</li>
+    <li>The report email now says how many searches fall in the 14-day window.</li>
+  </ul>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>The gap report no longer flags drugs that were fixed weeks ago. The 2026-10-04 report flagged Gemtesa, nubeca, and olmesartan from June and July rows.</li>
+    <li>The gap report no longer ignores new zero-result searches. Newer log rows write 0, and the old test read only an empty field.</li>
+    <li>The darolutamide entry has its misspellings again: nubeca, darolutimide, and darolutomide. The live dictionary did not contain them.</li>
+    <li><code>public/drug-names.json</code> now holds the entries that existed only in <code>data/drug-names.json</code>.</li>
+  </ul>
+
+  <h3>Known Issues</h3>
+  <ul>
+    <li>Two copies of the dictionary still exist. <code>drug-info.js</code> reads the <code>public/</code> copy. The alias index and search read the <code>data/</code> copy.</li>
+    <li><code>build-drug-dictionary.js</code> writes the <code>public/</code> copy and <code>build-dictionary.js</code> writes the <code>data/</code> copy. Both build from hard-coded lists and can remove patched entries.</li>
+    <li>Mounjaro, Ozempic, Zepbound, and Jardiance return only one or two sources. GoodRx and SingleCare prices are not added yet.</li>
+    <li>The Walmart and Amazon RxPass lists in <code>retail-sources.js</code> and two lookups in <code>govt-data.js</code> still use the loose two-way match.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-4-7">
+  <h2 id="v1-4-7">1.4.7 — 2026-10-01</h2>
   <p><em>Search Match Fix</em></p>
 
   <h3>Added</h3>

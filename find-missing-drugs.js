@@ -3,7 +3,7 @@
  * find-missing-drugs.js
  *
  * Weekly job: scans search_log.csv for drug searches that returned no
- * price results, cross-references them against public/drug-names.json,
+ * price results, cross-references them against data/drug-names.json,
  * and separates genuine "add this drug" candidates from:
  *   - typos of a known drug that aren't yet in its commonMisspellings list
  *   - drugs that ARE in the dictionary but no price source ever returned data
@@ -18,7 +18,7 @@ const path = require('path');
 
 const BASE_DIR = __dirname;
 const SEARCH_LOG = path.join(BASE_DIR, 'search_log.csv');
-const DRUG_NAMES_FILE = path.join(BASE_DIR, 'public', 'drug-names.json');
+const DRUG_NAMES_FILE = path.join(BASE_DIR, 'data', 'drug-names.json');
 const LOGS_DIR = path.join(BASE_DIR, 'logs');
 const ENV_FILE = path.join(BASE_DIR, '.env.healthcheck');
 
@@ -134,9 +134,34 @@ function closestKnownDrug(term, fuzzyTargets) {
   return bestDist <= FUZZY_MAX_DISTANCE ? { generic: best, distance: bestDist } : null;
 }
 
+// ---------- log filtering (v1.4.8) ----------
+const WINDOW_DAYS = 14;  // older rows are history, not signal
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+// The server's own test searches and localhost checks are not user demand.
+const IGNORED_IPS = new Set(['74.208.32.197', '127.0.0.1', '::1']);
+
+function normalizeIp(ip) {
+  return String(ip || '').replace(/^::ffff:/, '').trim();
+}
+
+// Old log rows leave sources_hit empty. Newer rows write 0.
+function isNoResult(sourcesHit) {
+  const v = String(sourcesHit || '').trim();
+  return v === '' || Number(v) === 0;
+}
+
+function filterRows(rows) {
+  const cutoff = Date.now() - WINDOW_DAYS * MS_PER_DAY;
+  return rows.filter(row => {
+    const t = Date.parse(row.timestamp);
+    if (Number.isNaN(t) || t < cutoff) return false;
+    return !IGNORED_IPS.has(normalizeIp(row.ip));
+  });
+}
+
 // ---------- main analysis ----------
 function analyze() {
-  const rows = loadSearchLog(SEARCH_LOG);
+  const rows = filterRows(loadSearchLog(SEARCH_LOG));
   const { known, fuzzyTargets } = loadDictionary(DRUG_NAMES_FILE);
 
   const stats = new Map(); // normalized term -> { total, noResult, examples: Set }
@@ -148,7 +173,7 @@ function analyze() {
     const s = stats.get(term);
     s.total++;
     s.examples.add(raw);
-    if (!row.sources_hit || row.sources_hit === '') s.noResult++;
+    if (isNoResult(row.sources_hit)) s.noResult++;
   }
 
   const missingCandidates = [];  // genuine gaps: not in dictionary, no close fuzzy match either
@@ -199,7 +224,7 @@ function writeReport(report) {
 function buildEmailBody(report, outFile) {
   const lines = [];
   lines.push(`RxGator Drug Gap Report — ${report.generatedAt}`);
-  lines.push(`Total searches in log: ${report.windowSearches}`);
+  lines.push(`Searches in the last ${WINDOW_DAYS} days (server and localhost excluded): ${report.windowSearches}`);
   lines.push('');
 
   lines.push(`=== Candidates to add (${report.missingCandidates.length}) ===`);
