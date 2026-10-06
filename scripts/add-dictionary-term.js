@@ -3,7 +3,7 @@
  * add-dictionary-term.js — adds a misspelling, alias, or brand to one master dictionary entry.
  *
  * WHY: the weekly gap report lists typos that miss. This tool turns each one into a single
- * command instead of a patch and a release. Brands and aliases also refresh the derived map.
+ * command instead of a patch and a release. Brands and aliases also refresh the derived map and lookup.
  *
  * USAGE:  node /var/www/rxaggregator/scripts/add-dictionary-term.js <misspelling|alias|brand> "<generic>" "<term>" ["<term>" ...] [--dry-run]
  * EXAMPLE: node /var/www/rxaggregator/scripts/add-dictionary-term.js misspelling "darolutamide" "nubeqqa"
@@ -15,6 +15,7 @@
 const fs = require('fs');
 const path = require('path');
 const lib = require('./build-derived-map.js');
+const lk = require('./build-derived-lookup.js');
 
 const FIELD_FOR_KIND = { misspelling: 'commonMisspellings', alias: 'aliases', brand: 'brands' };
 const TERM_PATTERN = /^[A-Za-z0-9][A-Za-z0-9 .'&\/-]{1,59}$/;
@@ -54,7 +55,7 @@ function main() {
     fresh.push(term);
   }
   if (fresh.length === 0) { console.log('Nothing to add.'); return; }
-  console.log('Plan: add ' + kind + ' ' + JSON.stringify(fresh) + ' to ' + entry.generic + (kind === 'misspelling' ? ' (map unchanged)' : ' and refresh the map'));
+  console.log('Plan: add ' + kind + ' ' + JSON.stringify(fresh) + ' to ' + entry.generic + (kind === 'misspelling' ? ' (map unchanged)' : ' and refresh the map and lookup'));
   if (dryRun) { console.log('DRY RUN: nothing written.'); return; }
 
   const stamp = new Date().toISOString().replace(/[:.]/g, '-');
@@ -67,6 +68,8 @@ function main() {
       const { map } = lib.buildMap(master);
       if (fs.existsSync(lib.MAP)) fs.copyFileSync(lib.MAP, lib.MAP + '.pre-term-' + stamp + '.bak');
       lib.writeAtomic(lib.MAP, lib.serialize(map));
+      if (fs.existsSync(lk.LOOKUP)) fs.copyFileSync(lk.LOOKUP, lk.LOOKUP + '.pre-term-' + stamp + '.bak');
+      lib.writeAtomic(lk.LOOKUP, lib.serialize(lk.buildLookup(master).lookup));
     }
     const lines = fresh.map(t => [new Date().toISOString(), kind, entry.generic, t].join('\t')).join('\n') + '\n';
     fs.appendFileSync(LOG_FILE, lines, 'utf8');

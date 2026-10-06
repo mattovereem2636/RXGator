@@ -1,13 +1,13 @@
 {
   "source": "HealthWarehouse",
   "sourceUrl": "https://www.healthwarehouse.com",
-  "dataDate": "2026-08-19",
+  "dataDate": "2026-10-01",
   "description": "Drug pricing from HealthWarehouse online pharmacy (NABP accredited, all 50 states)",
   "totalProducts": 929,
   "withPriceCount": 929,
-  "inStockCount": 912,
-  "rxCount": 492,
-  "otcCount": 437,
+  "inStockCount": 906,
+  "rxCount": 486,
+  "otcCount": 443,
   "products": [
     {
       "name": "21st Century Mega Multi for Women, Multivitamin & Multimineral 90 tablets",
@@ -208,60 +208,6 @@
       "source": "rx-search"
     },
     {
-      "name": "Acyclovir 200 mg Capsules",
-      "price": 0.2,
-      "url": "https://www.healthwarehouse.com/acyclovir-200mg-capsules",
-      "sku": "*ACYCLOVIR200",
-      "rxRequired": true,
-      "inStock": true,
-      "source": "rx-search"
-    },
-    {
-      "name": "Acyclovir 400 mg Tablets",
-      "price": 0.17,
-      "url": "https://www.healthwarehouse.com/acyclovir-400mg-tablets-generic-zovirax",
-      "sku": "*ACYCLOVIR400",
-      "rxRequired": true,
-      "inStock": true,
-      "source": "rx-search"
-    },
-    {
-      "name": "Acyclovir 5% Cream - 5 gm Tube",
-      "price": 59.16,
-      "url": "https://www.healthwarehouse.com/acyclovir-5-cream-5-gm-tube",
-      "sku": "*ACYCLOVIRCRM",
-      "rxRequired": true,
-      "inStock": true,
-      "source": "rx-search"
-    },
-    {
-      "name": "Acyclovir 5% Ointment - 15 g Tube",
-      "price": 21.42,
-      "url": "https://www.healthwarehouse.com/acyclovir-5-ointment-15g-tube",
-      "sku": "*ACYCLOVIROIN515",
-      "rxRequired": true,
-      "inStock": true,
-      "source": "rx-search"
-    },
-    {
-      "name": "Acyclovir 5% Ointment- 30 g Tube",
-      "price": 20.4,
-      "url": "https://www.healthwarehouse.com/acyclovir-5-ointment-30g-tube",
-      "sku": "*ACYCLOVIROIN530",
-      "rxRequired": true,
-      "inStock": true,
-      "source": "rx-search"
-    },
-    {
-      "name": "Acyclovir 800 mg Tablets",
-      "price": 0.41,
-      "url": "https://www.healthwarehouse.com/acyclovir-800mg-tablets-generic-zovirax",
-      "sku": "*ACYCLOVIR800",
-      "rxRequired": true,
-      "inStock": true,
-      "source": "rx-search"
-    },
-    {
       "name": "Admelog Solostar Insulin 100U/ml- 5 x 3ml Syringes",
       "price": 219,
       "url": "https://www.healthwarehouse.com/admelog-solostar-insulin-100u-ml-5-x-3ml-syringes",
@@ -344,7 +290,7 @@
     },
     {
       "name": "Albuterol 2mg/5ml Syrup - 16oz Bottle (473 ml)",
-      "price": 30.6,
+      "price": 21,
       "url": "https://www.healthwarehouse.com/albuterol-2mg-5ml-syrup",
       "sku": "*ALBUTSYR2516",
       "rxRequired": true,
@@ -353,7 +299,7 @@
     },
     {
       "name": "Albuterol 4mg Tablets",
-      "price": 0.45,
+      "price": 0.18,
       "url": "https://www.healthwarehouse.com/albuterol-4mg-tablets",
       "sku": "*ALBUTEROL4",
       "rxRequired": true,
@@ -884,7 +830,7 @@
     },
     {
       "name": "Antinol+ Plus Enhanced Daily Joint and Mobility Support for Cats- 45 Soft Gels",
-      "price": 28.98,
+      "price": 36.32,
       "url": "https://www.healthwarehouse.com/antinol-plus-enhanced-daily-joint-and-mobility-support-for-cats-45-soft-gels",
       "sku": "MWI129454",
       "rxRequired": false,
@@ -893,7 +839,7 @@
     },
     {
       "name": "Antinol+ Plus Enhanced Daily Joint and Mobility Support for Dogs- 100 Soft Gels",
-      "price": 59.37,
+      "price": 73.88,
       "url": "https://www.healthwarehouse.com/antinol-plus-enhanced-daily-joint-and-mobility-support-for-dogs-100-soft-gels",
       "sku": "MWI129452",
       "rxRequired": false,
@@ -902,7 +848,7 @@
     },
     {
       "name": "Antinol+ Plus Enhanced Daily Joint and Mobility Support for Dogs- 200 Soft Gels",
-      "price": 111.35,
+      "price": 139.66,
       "url": "https://www.healthwarehouse.com/antinol-plus-enhanced-daily-joint-and-mobility-support-for-dogs-200-soft-gels",
       "sku": "MWI129453",
       "rxRequired": false,
@@ -1025,6 +971,15 @@
       "rxRequired": true,
       "inStock": true,
       "source": "rx-search"
+    },
+    {
+      "name": "Aveeno Skin Relief Healing Ointment- 14oz",
+      "price": 17.35,
+      "url": "https://www.healthwarehouse.com/aveeno-skin-relief-healing-ointment-14oz",
+      "sku": "A10310631",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
     },
     {
       "name": "Azithromycin 200mg/5ml Suspension (22.5ml Bottle)",
@@ -1441,6 +1396,15 @@
       "source": "rx-search"
     },
     {
+      "name": "Budesonide 32mcg Nasal Spray- 120 Sprays 8.43ml",
+      "price": 18.2,
+      "url": "https://www.healthwarehouse.com/budesonide-32mcg-nasal-spray-120-sprays-8-43ml",
+      "sku": "A10304038",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
       "name": "Bupropion HCl 100 mg Tablets",
       "price": 0.26,
       "url": "https://www.healthwarehouse.com/bupropion-hcl-100mg-tablets-generic-wellbutrin",
@@ -1460,7 +1424,7 @@
     },
     {
       "name": "Bupropion HCl SR 100 mg Tablets",
-      "price": 0.2,
+      "price": 0.21,
       "url": "https://www.healthwarehouse.com/bupropion-hcl-sr-100mg-tablets-generic-wellbutrin-sr",
       "sku": "*BUPROPIONSR100",
       "rxRequired": true,
@@ -1666,8 +1630,17 @@
       "source": "over-the-counter"
     },
     {
+      "name": "Calcium Citrate 950mg Tablet- 100ct",
+      "price": 6.06,
+      "url": "https://www.healthwarehouse.com/calcium-citrate-950mg-tablet-100ct",
+      "sku": "A10254082",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
       "name": "Cara Ice Bag + Wrap - 1ct",
-      "price": 16.22,
+      "price": 17.42,
       "url": "https://www.healthwarehouse.com/cara-ice-bag-wrap-1ct",
       "sku": "A10035454",
       "rxRequired": false,
@@ -1838,7 +1811,7 @@
     },
     {
       "name": "Cetirizine 10mg Tablets- 500ct",
-      "price": 24.28,
+      "price": 37.54,
       "url": "https://www.healthwarehouse.com/cetirizine-10mg-tablets-500ct",
       "sku": "A10125197",
       "rxRequired": false,
@@ -1864,12 +1837,12 @@
       "source": "rx-search"
     },
     {
-      "name": "Children's Advil Ibuprofen Fever Reducer/Pain Reliever Oral Suspension Fruit Flavor - 4.0 fl oz",
+      "name": "Children's Advil Ibuprofen Fever Reducer/Pain Reliever Oral Suspension Fruit Flavor - 4.0 fl oz Out of Stock",
       "price": 7.52,
       "url": "https://www.healthwarehouse.com/children-s-advil-ibuprofen-fever-reducer-pain-reliever-oral-suspension-fruit-flavor-4-0-fl-oz",
       "sku": "A10052228",
       "rxRequired": false,
-      "inStock": true,
+      "inStock": false,
       "source": "rx-search"
     },
     {
@@ -1919,7 +1892,7 @@
     },
     {
       "name": "Children's Loratadine 5mg Syrup- 4oz",
-      "price": 9.67,
+      "price": 10.82,
       "url": "https://www.healthwarehouse.com/children-s-loratadine-5mg-syrup-4oz",
       "sku": "A10002964",
       "rxRequired": false,
@@ -2126,7 +2099,7 @@
     },
     {
       "name": "Clonidine 0.1mg Tablets",
-      "price": 0.11,
+      "price": 0.12,
       "url": "https://www.healthwarehouse.com/clonidine-0-1mg-tablets",
       "sku": "*CLONIDINE01",
       "rxRequired": true,
@@ -2287,6 +2260,15 @@
       "source": "home-medical"
     },
     {
+      "name": "Culturelle Complete 3-in-1 Biotics Packets- 28ct",
+      "price": 25.58,
+      "url": "https://www.healthwarehouse.com/culturelle-complete-3-in-1-biotics-packets-28ct",
+      "sku": "A10306562",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
       "name": "Curad Extreme Hold Adhesive Bandages Assorted, 30 ct",
       "price": 4.92,
       "url": "https://www.healthwarehouse.com/curad-extreme-hold-adhesive-bandages-assorted-30-ct",
@@ -2395,12 +2377,12 @@
       "source": "rx-search"
     },
     {
-      "name": "Deluxe Pill Splitter Out of Stock",
+      "name": "Deluxe Pill Splitter",
       "price": 5.98,
       "url": "https://www.healthwarehouse.com/deluxe-pill-splitter",
       "sku": "A10013071",
       "rxRequired": false,
-      "inStock": false,
+      "inStock": true,
       "source": "home-medical"
     },
     {
@@ -2408,6 +2390,15 @@
       "price": 8.39,
       "url": "https://www.healthwarehouse.com/dentemp-cap-filling-repair-set-2-2-gm",
       "sku": "A10226461",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Desenex Antifungal 2% Foot Cream- 1oz",
+      "price": 8.79,
+      "url": "https://www.healthwarehouse.com/desenex-antifungal-2-foot-cream-1oz",
+      "sku": "A10308872",
       "rxRequired": false,
       "inStock": true,
       "source": "over-the-counter"
@@ -2432,7 +2423,7 @@
     },
     {
       "name": "Dexcom G7 15 Day Sensor",
-      "price": 210,
+      "price": 197,
       "url": "https://www.healthwarehouse.com/dexcom-g7-15-day-sensor",
       "sku": "DEXCOMG715DAY",
       "rxRequired": false,
@@ -2467,12 +2458,12 @@
       "source": "rx-search"
     },
     {
-      "name": "Dia-Pak Classic Diabetic Supply Organizer",
+      "name": "Dia-Pak Classic Diabetic Supply Organizer Out of Stock",
       "price": 26.33,
       "url": "https://www.healthwarehouse.com/dia-pak-classic-diabetic-supply-organizer",
       "sku": "A10016780",
       "rxRequired": false,
-      "inStock": true,
+      "inStock": false,
       "source": "diabetic-supplies"
     },
     {
@@ -2489,15 +2480,6 @@
       "price": 8.53,
       "url": "https://www.healthwarehouse.com/dickinson-s-pore-perfecting-original-witch-hazel-toner-16oz",
       "sku": "A10030735",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
-      "name": "Diclofenac 1% Topical Gel (OTC)- 100g",
-      "price": 18.62,
-      "url": "https://www.healthwarehouse.com/diclofenac-1-topical-gel-otc-100g",
-      "sku": "A10238409",
       "rxRequired": false,
       "inStock": true,
       "source": "over-the-counter"
@@ -2815,7 +2797,7 @@
       "sku": "MH830561",
       "rxRequired": false,
       "inStock": true,
-      "source": "over-the-counter"
+      "source": "diabetic-supplies"
     },
     {
       "name": "EasyTouch® Pressure Activated Safety Lancets, 28 Gauge, 1.8 mm - 100ct",
@@ -2935,9 +2917,27 @@
       "source": "diabetic-supplies"
     },
     {
-      "name": "Ensure Original Nutrition Shake Vanilla, 6pk",
+      "name": "Ensure High Protein Nutrition Shake Chocolate- 6x8oz",
+      "price": 24.13,
+      "url": "https://www.healthwarehouse.com/ensure-high-protein-nutrition-shake-chocolate-6x8oz",
+      "sku": "A10184475",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Ensure High Protein Nutrition Shake Vanilla- 6x8oz",
+      "price": 24.13,
+      "url": "https://www.healthwarehouse.com/ensure-high-protein-nutrition-shake-vanilla-6x8oz",
+      "sku": "A10184477",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Ensure Original Nutrition Shake Vanilla- 6x8oz",
       "price": 23.95,
-      "url": "https://www.healthwarehouse.com/ensure-original-nutrition-shake-vanilla-6pk",
+      "url": "https://www.healthwarehouse.com/ensure-original-nutrition-shake-vanilla-6x8oz",
       "sku": "A10184568",
       "rxRequired": false,
       "inStock": true,
@@ -3034,6 +3034,15 @@
       "source": "rx-search"
     },
     {
+      "name": "Estroven Complete Menopause Relief Gummies- 30ct",
+      "price": 18.68,
+      "url": "https://www.healthwarehouse.com/estroven-complete-menopause-relief-gummies-30ct",
+      "sku": "A10311619",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
       "name": "Everyday Essentials Lighted Magnifier L4001",
       "price": 12.12,
       "url": "https://www.healthwarehouse.com/everyday-essentials-lighted-magnifier-l4001",
@@ -3052,12 +3061,12 @@
       "source": "rx-search"
     },
     {
-      "name": "Eye Wash Irrigation Solution Rubgy- 4oz",
+      "name": "Eye Wash Irrigation Solution Rubgy- 4oz Out of Stock",
       "price": 6.62,
       "url": "https://www.healthwarehouse.com/eye-wash-irrigation-solution-rubgy-4oz",
       "sku": "A10219530",
       "rxRequired": false,
-      "inStock": true,
+      "inStock": false,
       "source": "over-the-counter"
     },
     {
@@ -3152,7 +3161,7 @@
     },
     {
       "name": "Famotidine Tablets 40mg",
-      "price": 0.22,
+      "price": 0.23,
       "url": "https://www.healthwarehouse.com/famotidine-tablets-40mg",
       "sku": "*FAMETS40",
       "rxRequired": true,
@@ -3175,7 +3184,7 @@
       "sku": "A10016349",
       "rxRequired": false,
       "inStock": true,
-      "source": "over-the-counter"
+      "source": "home-medical"
     },
     {
       "name": "Ferrous Fumerate",
@@ -3203,24 +3212,6 @@
       "rxRequired": false,
       "inStock": true,
       "source": "rx-search"
-    },
-    {
-      "name": "Fexofenadine 60mg Tablets (Major)- 100ct",
-      "price": 17.17,
-      "url": "https://www.healthwarehouse.com/fexofenadine-60mg-tablets-major-100ct",
-      "sku": "A10262065",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
-      "name": "Fexofenadine 60mg Tablets-100ct",
-      "price": 25.03,
-      "url": "https://www.healthwarehouse.com/fexofenadine-60mg-tablets-100ct",
-      "sku": "A10262833",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
     },
     {
       "name": "Fiasp 100U/ml Insulin- 10ml Vial",
@@ -3257,15 +3248,6 @@
       "rxRequired": true,
       "inStock": true,
       "source": "rx-search"
-    },
-    {
-      "name": "First Response Gold Digital Pregnancy Test - 2ct",
-      "price": 20.2,
-      "url": "https://www.healthwarehouse.com/first-response-gold-digital-pregnancy-test-2ct",
-      "sku": "A10041943",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "home-medical"
     },
     {
       "name": "Flents Eye Patch One Size 1ct",
@@ -3521,7 +3503,7 @@
     },
     {
       "name": "Furosemide 40mg Tablets",
-      "price": 0.1,
+      "price": 0.11,
       "url": "https://www.healthwarehouse.com/furosemide-40mg-tablets",
       "sku": "*FUROSEMIDE40",
       "rxRequired": true,
@@ -3637,15 +3619,6 @@
       "source": "rx-search"
     },
     {
-      "name": "Geri-Care Anti-Diarrheal 2mg Caplet- 24ct",
-      "price": 3.38,
-      "url": "https://www.healthwarehouse.com/geri-care-anti-diarrheal-2mg-caplet-24ct",
-      "sku": "A10258176",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
       "name": "Geri-Care Extra Strength Acetaminophen - 100 Tablets",
       "price": 4.2,
       "url": "https://www.healthwarehouse.com/geri-care-extra-strength-acetaminophen-100-tablets",
@@ -3662,6 +3635,24 @@
       "rxRequired": false,
       "inStock": true,
       "source": "rx-search"
+    },
+    {
+      "name": "Geri-Mucil Orange Psyllium Powder- 13oz",
+      "price": 9.17,
+      "url": "https://www.healthwarehouse.com/geri-mucil-orange-psyllium-powder-13oz",
+      "sku": "A10284276",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Geri-Mucil Sugar Free Orange Psyllium Powder- 10oz",
+      "price": 9.61,
+      "url": "https://www.healthwarehouse.com/geri-mucil-sugar-free-orange-psyllium-powder-10oz",
+      "sku": "A10284218",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
     },
     {
       "name": "GeriCare Enteric Coated Aspirin Tablets, 81mg, 100ct",
@@ -3952,6 +3943,24 @@
       "source": "home-medical"
     },
     {
+      "name": "GNP Tussin Sugar Free Mucus & Chest Congestion Syrup- 4oz",
+      "price": 6.2,
+      "url": "https://www.healthwarehouse.com/gnp-tussin-sugar-free-mucus-chest-congestion-syrup-4oz",
+      "sku": "A10287469",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "GNP Tussin Sugar Free Mucus & Chest Congestion Syrup- 8oz",
+      "price": 8.16,
+      "url": "https://www.healthwarehouse.com/gnp-tussin-sugar-free-mucus-chest-congestion-syrup-8oz",
+      "sku": "A10287634",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
       "name": "GNP® All Day Allergy Relief Cetirizine 10 mg softgels, 25ct",
       "price": 8.9,
       "url": "https://www.healthwarehouse.com/gnpr-all-day-allergy-relief-cetirizine-10-mg-softgels-25ct",
@@ -4094,6 +4103,15 @@
       "rxRequired": false,
       "inStock": true,
       "source": "rx-search"
+    },
+    {
+      "name": "Good Neighbor Pharmacy COVID-19/Flu A&B Home Test Kit- 2ct",
+      "price": 16.09,
+      "url": "https://www.healthwarehouse.com/good-neighbor-pharmacy-covid-19-flu-ab-home-test-kit-2ct",
+      "sku": "A10305602",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
     },
     {
       "name": "Good Neighbor Pharmacy Famotodine Complete Berry Chewables- 25ct",
@@ -4627,6 +4645,24 @@
       "source": "over-the-counter"
     },
     {
+      "name": "Lamisil AT Athlete's Foot Spray- 4.2oz",
+      "price": 11.79,
+      "url": "https://www.healthwarehouse.com/lamisil-at-athlete-s-foot-spray-4-2oz",
+      "sku": "A10308718",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Lamisil Sweat Absorbing Foot Cream- 2.8oz",
+      "price": 9.43,
+      "url": "https://www.healthwarehouse.com/lamisil-sweat-absorbing-foot-cream-2-8oz",
+      "sku": "A10308776",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
       "name": "Lamotrigine 100 mg Tablets",
       "price": 0.16,
       "url": "https://www.healthwarehouse.com/lamotrigine-100mg-tablets-1",
@@ -4834,10 +4870,10 @@
       "source": "over-the-counter"
     },
     {
-      "name": "Leader ClearLax Polyethylene Glycol Powder - Laxative- 17.9 oz",
-      "price": 18.23,
-      "url": "https://www.healthwarehouse.com/leader-clearlax-polyethylene-glycol-powder-laxative-17-9-oz",
-      "sku": "C5460506",
+      "name": "Leader Daily Fiber Sugar Free Orange Laxative Powder- 10oz",
+      "price": 9.03,
+      "url": "https://www.healthwarehouse.com/leader-daily-fiber-sugar-free-orange-laxative-powder-10oz",
+      "sku": "C5491626",
       "rxRequired": false,
       "inStock": true,
       "source": "over-the-counter"
@@ -4849,7 +4885,7 @@
       "sku": "C5216387",
       "rxRequired": false,
       "inStock": true,
-      "source": "over-the-counter"
+      "source": "diabetic-supplies"
     },
     {
       "name": "Leader Isopropyl Rubbing Alcohol 70% Antiseptic Solution, 16oz",
@@ -4870,28 +4906,10 @@
       "source": "over-the-counter"
     },
     {
-      "name": "Leader Medicated Pain Relieving Patch-5ct",
-      "price": 7.27,
-      "url": "https://www.healthwarehouse.com/leader-medicated-pain-relieving-patch-5ct",
-      "sku": "C5441951",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
       "name": "Leader Men's Extra Strength Minoxidil Topical Solution USP, 6oz",
       "price": 15.35,
       "url": "https://www.healthwarehouse.com/leader-men-s-extra-strength-minoxidil-topical-solution-usp-6oz",
       "sku": "C5859210",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
-      "name": "Leader NAC (n-acetyl-cysteine) 600mg Caplets- 100ct",
-      "price": 13.4,
-      "url": "https://www.healthwarehouse.com/leader-nac-n-acetyl-cysteine-600mg-caplets-100ct",
-      "sku": "C5675111",
       "rxRequired": false,
       "inStock": true,
       "source": "over-the-counter"
@@ -4997,7 +5015,7 @@
     },
     {
       "name": "Levothyroxine (Synthroid, Levoxyl) 175mcg Tablets",
-      "price": 0.24,
+      "price": 0.25,
       "url": "https://www.healthwarehouse.com/levothyroxine-synthroid-levoxyl-175mcg-tablets",
       "sku": "*LEVOTHY175",
       "rxRequired": true,
@@ -5168,7 +5186,7 @@
     },
     {
       "name": "Lisinopril 2.5mg Tablets",
-      "price": 0.08,
+      "price": 0.09,
       "url": "https://www.healthwarehouse.com/lisinopril-2-5mg-tablets",
       "sku": "*116633",
       "rxRequired": true,
@@ -5708,7 +5726,7 @@
     },
     {
       "name": "Metoprolol Tartrate 100mg Tablets",
-      "price": 0.1,
+      "price": 0.11,
       "url": "https://www.healthwarehouse.com/metoprolol-tartrate-100mg-tablets",
       "sku": "*METOPTART100",
       "rxRequired": true,
@@ -5932,21 +5950,21 @@
       "source": "over-the-counter"
     },
     {
-      "name": "Mylan Cetirizine Antihistamine 10mg - 100 Tablets",
+      "name": "Mylan Cetirizine Antihistamine 10mg - 100 Tablets Out of Stock",
       "price": 14.57,
       "url": "https://www.healthwarehouse.com/generic-zyrtec-cetirizine-antihistamine-10mg-100-tablets",
       "sku": "901955",
       "rxRequired": false,
-      "inStock": true,
+      "inStock": false,
       "source": "rx-search"
     },
     {
-      "name": "Naproxen 125mg/5ml Suspension (500ml Bottle)",
+      "name": "Naproxen 125mg/5ml Suspension (500ml Bottle) Out of Stock",
       "price": 57.68,
       "url": "https://www.healthwarehouse.com/naproxen-125mg-5ml-susp-500ml",
       "sku": "*NAPXEN125",
       "rxRequired": true,
-      "inStock": true,
+      "inStock": false,
       "source": "rx-search"
     },
     {
@@ -6049,12 +6067,12 @@
       "source": "home-medical"
     },
     {
-      "name": "Nature's Blend Acidophilus Probiotic Tablets, 60 ct",
+      "name": "Nature's Blend Acidophilus Probiotic Tablets, 60 ct Out of Stock",
       "price": 11.82,
       "url": "https://www.healthwarehouse.com/nature-s-blend-acidophilus-probiotic-tablets-60-ct",
       "sku": "NB8981",
       "rxRequired": false,
-      "inStock": true,
+      "inStock": false,
       "source": "home-medical"
     },
     {
@@ -6067,12 +6085,12 @@
       "source": "home-medical"
     },
     {
-      "name": "Nature's Blend Vitamin C, 500 mg, Chewable Tablet, Orange, 100 ct",
+      "name": "Nature's Blend Vitamin C, 500 mg, Chewable Tablet, Orange, 100 ct Out of Stock",
       "price": 10.1,
       "url": "https://www.healthwarehouse.com/nature-s-blend-vitamin-c-500-mg-chewable-tablet-orange-100-ct",
       "sku": "A10013557",
       "rxRequired": false,
-      "inStock": true,
+      "inStock": false,
       "source": "home-medical"
     },
     {
@@ -6130,12 +6148,12 @@
       "source": "home-medical"
     },
     {
-      "name": "Natures Blend Selenium 200 mcg Tablets 100ct",
+      "name": "Natures Blend Selenium 200 mcg Tablets 100ct Out of Stock",
       "price": 9.5,
       "url": "https://www.healthwarehouse.com/natures-blend-selenium-200-mcg-tablets-100ct",
       "sku": "A144663",
       "rxRequired": false,
-      "inStock": true,
+      "inStock": false,
       "source": "home-medical"
     },
     {
@@ -6163,15 +6181,6 @@
       "sku": "MWI122864",
       "rxRequired": false,
       "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
-      "name": "New Day Levonorgestrel 1.5mg Tablet-1ct Out of Stock",
-      "price": 10.67,
-      "url": "https://www.healthwarehouse.com/new-day-levonorgestrel-1-5mg-tablet-1ct",
-      "sku": "NEWDAY",
-      "rxRequired": false,
-      "inStock": false,
       "source": "over-the-counter"
     },
     {
@@ -6598,15 +6607,6 @@
       "source": "over-the-counter"
     },
     {
-      "name": "Opill Daily Oral Contraceptive- 84 Tablet Pack",
-      "price": 46,
-      "url": "https://www.healthwarehouse.com/opill-daily-oral-contraceptive-84-tablet-pack",
-      "sku": "C5886817",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
       "name": "OptiChamber Pediatric Mask - Pediatric Medium - PRESCRIPTION REQUIRED",
       "price": 10.5,
       "url": "https://www.healthwarehouse.com/optichamber-pediatric-mask-pediatric-medium-prescription-required",
@@ -6614,15 +6614,6 @@
       "rxRequired": true,
       "inStock": true,
       "source": "home-medical"
-    },
-    {
-      "name": "Optimum Calcium Citrate, 250 mg Caplets, 180ct Out of Stock",
-      "price": 8.75,
-      "url": "https://www.healthwarehouse.com/optimum-calcium-citrate-250-mg-caplets-180ct",
-      "sku": "A10007882",
-      "rxRequired": false,
-      "inStock": false,
-      "source": "over-the-counter"
     },
     {
       "name": "Orajel P.M. 4X Medicated Severe Nighttime Formula Cream - 0.25 oz",
@@ -6643,12 +6634,12 @@
       "source": "over-the-counter"
     },
     {
-      "name": "Pack Pharmaceuticals Cetirizine HCL 5mg, 100 Tablets",
+      "name": "Pack Pharmaceuticals Cetirizine HCL 5mg, 100 Tablets Out of Stock",
       "price": 9.64,
       "url": "https://www.healthwarehouse.com/pack-pharmaceuticals-cetirizine-hcl-5mg-100-tablets",
       "sku": "A10098345",
       "rxRequired": false,
-      "inStock": true,
+      "inStock": false,
       "source": "rx-search"
     },
     {
@@ -6779,7 +6770,7 @@
     },
     {
       "name": "Pravastatin 80 mg Tablets",
-      "price": 0.2,
+      "price": 0.21,
       "url": "https://www.healthwarehouse.com/pravastatin-sodium-80mg-tablets-generic-pravachol",
       "sku": "*PRAVSTAT80",
       "rxRequired": true,
@@ -6905,9 +6896,18 @@
     },
     {
       "name": "Primatene Mist Epinephrine Inhalation Aerosol 0.125 mg Bronchodilator 160 sprays- 11.7gm",
-      "price": 34.99,
+      "price": 35.27,
       "url": "https://www.healthwarehouse.com/primatene-mist-epinephrine-inhalation-aerosol-0-125-mg-bronchodilator-160-sprays-11-7gm",
       "sku": "A10250789",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "ProClearz Fungal Shield Maximum Strength Liquid- 1oz",
+      "price": 7.45,
+      "url": "https://www.healthwarehouse.com/proclearz-fungal-shield-maximum-strength-liquid-1oz",
+      "sku": "A10308636",
       "rxRequired": false,
       "inStock": true,
       "source": "over-the-counter"
@@ -7093,10 +7093,37 @@
       "source": "home-medical"
     },
     {
-      "name": "Regenecare HA Wound Care Gel with 2% Lidocaine- 3oz",
-      "price": 25.02,
-      "url": "https://www.healthwarehouse.com/regenecare-ha-wound-care-gel-with-2-lidocaine-3oz",
-      "sku": "C4013041",
+      "name": "Reguloid Orange Smooth Powder- 13oz (369g)",
+      "price": 9.73,
+      "url": "https://www.healthwarehouse.com/reguloid-orange-smooth-powder-13oz-369g",
+      "sku": "A10237007",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Reguloid Regular Powder- 13oz (369g)",
+      "price": 10.44,
+      "url": "https://www.healthwarehouse.com/reguloid-regular-powder-13oz-369g",
+      "sku": "A10235099",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Reguloid Sugar Free Natural Psyllium Husk Orange Powder- 15oz",
+      "price": 17.51,
+      "url": "https://www.healthwarehouse.com/reguloid-sugar-free-natural-psyllium-husk-orange-powder-15oz",
+      "sku": "A10228041",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Reliable 1 Sodium Chloride 5% Hypertonicity Ophthalmic Solution- 0.5oz (15mL)",
+      "price": 6.91,
+      "url": "https://www.healthwarehouse.com/reliable-1-sodium-chloride-5-hypertonicity-ophthalmic-solution-0-5oz-15ml",
+      "sku": "A10297736",
       "rxRequired": false,
       "inStock": true,
       "source": "over-the-counter"
@@ -7147,15 +7174,6 @@
       "source": "rx-search"
     },
     {
-      "name": "Risa-Bid Probiotic Caplets- 100ct",
-      "price": 21.43,
-      "url": "https://www.healthwarehouse.com/risa-bid-probiotic-caplets-100ct",
-      "sku": "A10090125",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
       "name": "Rosuvastatin 10mg Tablets",
       "price": 0.27,
       "url": "https://www.healthwarehouse.com/rosuvastatin-10mg-tablets",
@@ -7192,19 +7210,19 @@
       "source": "rx-search"
     },
     {
-      "name": "Rugby Capsaicin 0.075% Arthritis Pain Cream- 2oz",
-      "price": 9,
-      "url": "https://www.healthwarehouse.com/rugby-capsaicin-0-075-arthritis-pain-cream-2oz",
-      "sku": "A10175505",
+      "name": "Ruby Sodium Chloride 5% Hypertonicity Ophthalmic Ointment- 3.5g",
+      "price": 12.71,
+      "url": "https://www.healthwarehouse.com/ruby-sodium-chloride-5-hypertonicity-ophthalmic-ointment-3-5g",
+      "sku": "A10251842",
       "rxRequired": false,
       "inStock": true,
       "source": "over-the-counter"
     },
     {
-      "name": "Rugby First Aid Ointment Povidone Iodine 10%- 28.4g",
-      "price": 4.31,
-      "url": "https://www.healthwarehouse.com/rugby-first-aid-ointment-povidone-iodine-10-28-4g",
-      "sku": "C10254983",
+      "name": "Rugby Sodium Chloride 5% Hypertonicity Ophthalmic Solution- 0.5oz(15mL)",
+      "price": 8.57,
+      "url": "https://www.healthwarehouse.com/rugby-sodium-chloride-5-hypertonicity-ophthalmic-solution-0-5oz-15ml",
+      "sku": "A10243959",
       "rxRequired": false,
       "inStock": true,
       "source": "over-the-counter"
@@ -7217,15 +7235,6 @@
       "rxRequired": false,
       "inStock": true,
       "source": "home-medical"
-    },
-    {
-      "name": "Salonpas Lidocaine 4% Pain Relieving Flex Patch - 7ct",
-      "price": 12.11,
-      "url": "https://www.healthwarehouse.com/salonpas-lidocaine-4-pain-relieving-flex-patch-7ct",
-      "sku": "A10266021",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
     },
     {
       "name": "Sarna Sensitive Anti-Itch Lotion Fragrance Free 7.5 oz",
@@ -7382,7 +7391,7 @@
     },
     {
       "name": "Spironolactone 100mg Tablets",
-      "price": 0.2,
+      "price": 0.21,
       "url": "https://www.healthwarehouse.com/spironolactone-100mg-tablets-generic-aldactone",
       "sku": "*SPIRONO100",
       "rxRequired": true,
@@ -7442,24 +7451,6 @@
       "rxRequired": false,
       "inStock": true,
       "source": "home-medical"
-    },
-    {
-      "name": "Sudafed Sinus Congestion 12 Hour Relief Maximum Strength Decongestant Caplets- 20ea",
-      "price": 13.13,
-      "url": "https://www.healthwarehouse.com/sudafed-sinus-congestion-12-hour-relief-maximum-strength-decongestant-caplets-20ea",
-      "sku": "A10230452",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
-      "name": "Sudafed Sinus Congestion PSE 30mg Tablet- 48ct",
-      "price": 13.13,
-      "url": "https://www.healthwarehouse.com/sudafed-sinus-congestion-pse-30mg-tablet-48ct",
-      "sku": "A10276605",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
     },
     {
       "name": "Sumatriptan 25mg Tablets (9 Tablet Pack)",
@@ -7543,8 +7534,8 @@
       "source": "rx-search"
     },
     {
-      "name": "Super PoliGrip Original Denture Adhesive Cream - 2.4 oz.",
-      "price": 8.28,
+      "name": "Super PoliGrip Original Denture Adhesive Cream- 2.4oz",
+      "price": 9.17,
       "url": "https://www.healthwarehouse.com/super-poligrip-original-denture-adhesive-cream-2-4-oz",
       "sku": "A10005246",
       "rxRequired": false,
@@ -7778,7 +7769,7 @@
     },
     {
       "name": "Thyquidity (Levothyroxine Sodium) 100mcg/5mL Oral Solution- 100mL",
-      "price": 100.98,
+      "price": 99,
       "url": "https://www.healthwarehouse.com/thyquidity-levothyroxine-sodium-100mcg-5ml-oral-solution-100ml",
       "sku": "*THYD2100",
       "rxRequired": true,
@@ -7841,7 +7832,7 @@
     },
     {
       "name": "Topiramate 100mg Tablets",
-      "price": 0.11,
+      "price": 0.12,
       "url": "https://www.healthwarehouse.com/topiramate-100mg-tablets-generic-topamax",
       "sku": "*TOPIRAMATE100",
       "rxRequired": true,
@@ -8029,6 +8020,24 @@
       "source": "diabetic-supplies"
     },
     {
+      "name": "Tussin Mucus & Chest Congestion S/F- 16oz (473mL)",
+      "price": 10.74,
+      "url": "https://www.healthwarehouse.com/tussin-mucus-chest-congestion-s-f-16oz-473ml",
+      "sku": "A10301397",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
+      "name": "Tussin Mucus & Chest Congestion S/F- 4oz",
+      "price": 4.99,
+      "url": "https://www.healthwarehouse.com/tussin-mucus-chest-congestion-s-f-4oz",
+      "sku": "A10283124",
+      "rxRequired": false,
+      "inStock": true,
+      "source": "over-the-counter"
+    },
+    {
       "name": "Tylenol Children's Pain + Fever Acetaminophen 160mg Oral Suspension 4oz- Bubblegum",
       "price": 10.66,
       "url": "https://www.healthwarehouse.com/tylenol-children-s-pain-fever-acetaminophen-160mg-oral-suspension-4oz-bubblegum",
@@ -8168,15 +8177,6 @@
       "price": 66.26,
       "url": "https://www.healthwarehouse.com/vi-sorbits-vitamin-iron-tablets-for-dogs-meat-flavor-200ct",
       "sku": "MWI032880",
-      "rxRequired": false,
-      "inStock": true,
-      "source": "over-the-counter"
-    },
-    {
-      "name": "Vitamin B12 Tablet, 1000mcg- 100ct",
-      "price": 8.33,
-      "url": "https://www.healthwarehouse.com/vitamin-b12-tablet-1000mcg-100ct",
-      "sku": "C5782198",
       "rxRequired": false,
       "inStock": true,
       "source": "over-the-counter"

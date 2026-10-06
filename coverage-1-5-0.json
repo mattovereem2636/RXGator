@@ -1,0 +1,865 @@
+[
+  {
+    "generic": "fluvastatin",
+    "brands": [
+      "Lescol",
+      "Lescol XL"
+    ],
+    "aliases": [],
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true
+  },
+  {
+    "generic": "lovastatin",
+    "brands": [
+      "Mevacor",
+      "Altoprev"
+    ],
+    "aliases": [],
+    "drugClass": "Statin",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true
+  },
+  {
+    "generic": "ezetimibe",
+    "brands": [
+      "Zetia"
+    ],
+    "aliases": [],
+    "drugClass": "Cholesterol absorption inhibitor",
+    "primaryUse": "Cholesterol",
+    "primaryUseES": "Colesterol",
+    "hasGeneric": true
+  },
+  {
+    "generic": "fenofibrate",
+    "brands": [
+      "Tricor",
+      "Fenoglide"
+    ],
+    "aliases": [],
+    "drugClass": "Fibrate",
+    "primaryUse": "Cholesterol / Triglycerides",
+    "primaryUseES": "Colesterol y triglicéridos",
+    "hasGeneric": true
+  },
+  {
+    "generic": "candesartan",
+    "brands": [
+      "Atacand"
+    ],
+    "aliases": [],
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "telmisartan",
+    "brands": [
+      "Micardis"
+    ],
+    "aliases": [],
+    "drugClass": "ARB",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "nebivolol",
+    "brands": [
+      "Bystolic"
+    ],
+    "aliases": [],
+    "drugClass": "Beta blocker",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "losartan/hydrochlorothiazide",
+    "brands": [
+      "Hyzaar"
+    ],
+    "aliases": [],
+    "drugClass": "ARB + diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "lisinopril/hydrochlorothiazide",
+    "brands": [
+      "Zestoretic"
+    ],
+    "aliases": [
+      "lisinopril/hctz"
+    ],
+    "drugClass": "ACE inhibitor + diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "quinapril",
+    "brands": [
+      "Accupril"
+    ],
+    "aliases": [],
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "fosinopril",
+    "brands": [
+      "Monopril"
+    ],
+    "aliases": [],
+    "drugClass": "ACE inhibitor",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "chlorthalidone",
+    "brands": [
+      "Thalitone"
+    ],
+    "aliases": [],
+    "drugClass": "Thiazide diuretic",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "verapamil",
+    "brands": [
+      "Calan",
+      "Isoptin"
+    ],
+    "aliases": [],
+    "drugClass": "Calcium channel blocker",
+    "primaryUse": "Blood pressure / Heart rhythm",
+    "primaryUseES": "Presión arterial y ritmo cardíaco",
+    "hasGeneric": true
+  },
+  {
+    "generic": "prazosin",
+    "brands": [
+      "Minipress"
+    ],
+    "aliases": [],
+    "drugClass": "Alpha blocker",
+    "primaryUse": "Blood pressure",
+    "primaryUseES": "Presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "doxazosin",
+    "brands": [
+      "Cardura"
+    ],
+    "aliases": [],
+    "drugClass": "Alpha blocker",
+    "primaryUse": "BPH / Blood pressure",
+    "primaryUseES": "Próstata agrandada y presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "terazosin",
+    "brands": [],
+    "aliases": [],
+    "drugClass": "Alpha blocker",
+    "primaryUse": "BPH / Blood pressure",
+    "primaryUseES": "Próstata agrandada y presión arterial",
+    "hasGeneric": true
+  },
+  {
+    "generic": "sacubitril/valsartan",
+    "brands": [
+      "Entresto"
+    ],
+    "aliases": [],
+    "drugClass": "ARNI",
+    "primaryUse": "Heart failure",
+    "primaryUseES": "Insuficiencia cardíaca",
+    "hasGeneric": true
+  },
+  {
+    "generic": "digoxin",
+    "brands": [
+      "Lanoxin"
+    ],
+    "aliases": [],
+    "drugClass": "Cardiac glycoside",
+    "primaryUse": "Heart failure / AFib",
+    "primaryUseES": "Insuficiencia cardíaca y fibrilación auricular",
+    "hasGeneric": true
+  },
+  {
+    "generic": "amiodarone",
+    "brands": [
+      "Pacerone"
+    ],
+    "aliases": [],
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "primaryUseES": "Ritmo cardíaco",
+    "hasGeneric": true
+  },
+  {
+    "generic": "flecainide",
+    "brands": [
+      "Tambocor"
+    ],
+    "aliases": [],
+    "drugClass": "Antiarrhythmic",
+    "primaryUse": "Heart rhythm",
+    "primaryUseES": "Ritmo cardíaco",
+    "hasGeneric": true
+  },
+  {
+    "generic": "sotalol",
+    "brands": [
+      "Betapace"
+    ],
+    "aliases": [],
+    "drugClass": "Beta blocker",
+    "primaryUse": "Heart rhythm",
+    "primaryUseES": "Ritmo cardíaco",
+    "hasGeneric": true
+  },
+  {
+    "generic": "prasugrel",
+    "brands": [
+      "Effient"
+    ],
+    "aliases": [],
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre",
+    "hasGeneric": true
+  },
+  {
+    "generic": "ticagrelor",
+    "brands": [
+      "Brilinta"
+    ],
+    "aliases": [],
+    "drugClass": "Antiplatelet",
+    "primaryUse": "Blood clots",
+    "primaryUseES": "Coágulos de sangre",
+    "hasGeneric": true
+  },
+  {
+    "generic": "aspirin",
+    "brands": [],
+    "aliases": [],
+    "drugClass": "NSAID / Antiplatelet",
+    "primaryUse": "Pain / Blood clots",
+    "primaryUseES": "Dolor y coágulos de sangre",
+    "hasGeneric": true
+  },
+  {
+    "generic": "glimepiride",
+    "brands": [
+      "Amaryl"
+    ],
+    "aliases": [],
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true
+  },
+  {
+    "generic": "glyburide",
+    "brands": [
+      "Diabeta",
+      "Glynase"
+    ],
+    "aliases": [],
+    "drugClass": "Sulfonylurea",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": true
+  },
+  {
+    "generic": "canagliflozin",
+    "brands": [
+      "Invokana"
+    ],
+    "aliases": [],
+    "drugClass": "SGLT2 inhibitor",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": false
+  },
+  {
+    "generic": "dulaglutide",
+    "brands": [
+      "Trulicity"
+    ],
+    "aliases": [],
+    "drugClass": "GLP-1 agonist",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": false
+  },
+  {
+    "generic": "insulin aspart",
+    "brands": [
+      "NovoLog",
+      "Fiasp"
+    ],
+    "aliases": [],
+    "drugClass": "Insulin (rapid-acting)",
+    "primaryUse": "Diabetes",
+    "primaryUseES": "Diabetes",
+    "hasGeneric": false
+  },
+  {
+    "generic": "naltrexone/bupropion",
+    "brands": [
+      "Contrave"
+    ],
+    "aliases": [],
+    "drugClass": "Opioid antagonist + NDRI",
+    "primaryUse": "Weight management",
+    "primaryUseES": "Control del peso",
+    "hasGeneric": false
+  },
+  {
+    "generic": "thyroid desiccated",
+    "brands": [
+      "Armour Thyroid",
+      "NP Thyroid"
+    ],
+    "aliases": [],
+    "drugClass": "Thyroid hormone",
+    "primaryUse": "Hypothyroidism",
+    "primaryUseES": "Hipotiroidismo",
+    "hasGeneric": true
+  },
+  {
+    "generic": "methimazole",
+    "brands": [
+      "Tapazole"
+    ],
+    "aliases": [],
+    "drugClass": "Antithyroid",
+    "primaryUse": "Hyperthyroidism",
+    "primaryUseES": "Hipertiroidismo",
+    "hasGeneric": true
+  },
+  {
+    "generic": "paroxetine",
+    "brands": [
+      "Paxil"
+    ],
+    "aliases": [],
+    "drugClass": "SSRI",
+    "primaryUse": "Depression / Anxiety",
+    "primaryUseES": "Depresión y ansiedad",
+    "hasGeneric": true
+  },
+  {
+    "generic": "desvenlafaxine",
+    "brands": [
+      "Pristiq"
+    ],
+    "aliases": [],
+    "drugClass": "SNRI",
+    "primaryUse": "Depression",
+    "primaryUseES": "Depresión",
+    "hasGeneric": true
+  },
+  {
+    "generic": "mirtazapine",
+    "brands": [
+      "Remeron"
+    ],
+    "aliases": [],
+    "drugClass": "Tetracyclic antidepressant",
+    "primaryUse": "Depression",
+    "primaryUseES": "Depresión",
+    "hasGeneric": true
+  },
+  {
+    "generic": "amitriptyline",
+    "brands": [
+      "Elavil"
+    ],
+    "aliases": [],
+    "drugClass": "TCA",
+    "primaryUse": "Depression / Pain",
+    "primaryUseES": "Depresión y dolor",
+    "hasGeneric": true
+  },
+  {
+    "generic": "lisdexamfetamine",
+    "brands": [
+      "Vyvanse"
+    ],
+    "aliases": [],
+    "drugClass": "Stimulant",
+    "primaryUse": "ADHD",
+    "primaryUseES": "TDAH",
+    "hasGeneric": true
+  },
+  {
+    "generic": "atomoxetine",
+    "brands": [
+      "Strattera"
+    ],
+    "aliases": [],
+    "drugClass": "NRI",
+    "primaryUse": "ADHD",
+    "primaryUseES": "TDAH",
+    "hasGeneric": true
+  },
+  {
+    "generic": "carbamazepine",
+    "brands": [
+      "Tegretol",
+      "Epitol"
+    ],
+    "aliases": [],
+    "drugClass": "Anticonvulsant",
+    "primaryUse": "Seizures / Nerve pain",
+    "primaryUseES": "Convulsiones y dolor nervioso",
+    "hasGeneric": true
+  },
+  {
+    "generic": "rabeprazole",
+    "brands": [
+      "Aciphex"
+    ],
+    "aliases": [],
+    "drugClass": "PPI",
+    "primaryUse": "Acid reflux / GERD",
+    "primaryUseES": "Reflujo ácido y ERGE",
+    "hasGeneric": true
+  },
+  {
+    "generic": "linaclotide",
+    "brands": [
+      "Linzess"
+    ],
+    "aliases": [],
+    "drugClass": "GC-C agonist",
+    "primaryUse": "IBS / Constipation",
+    "primaryUseES": "Síndrome del intestino irritable y estreñimiento",
+    "hasGeneric": false
+  },
+  {
+    "generic": "indomethacin",
+    "brands": [
+      "Indocin"
+    ],
+    "aliases": [],
+    "drugClass": "NSAID",
+    "primaryUse": "Pain / Gout",
+    "primaryUseES": "Dolor y gota",
+    "hasGeneric": true
+  },
+  {
+    "generic": "tizanidine",
+    "brands": [
+      "Zanaflex"
+    ],
+    "aliases": [],
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "primaryUseES": "Espasmos musculares",
+    "hasGeneric": true
+  },
+  {
+    "generic": "methocarbamol",
+    "brands": [
+      "Robaxin"
+    ],
+    "aliases": [],
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "primaryUseES": "Espasmos musculares",
+    "hasGeneric": true
+  },
+  {
+    "generic": "metaxalone",
+    "brands": [
+      "Skelaxin"
+    ],
+    "aliases": [],
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms",
+    "primaryUseES": "Espasmos musculares",
+    "hasGeneric": true
+  },
+  {
+    "generic": "baclofen",
+    "brands": [
+      "Lioresal"
+    ],
+    "aliases": [],
+    "drugClass": "Muscle relaxant",
+    "primaryUse": "Muscle spasms / Spasticity",
+    "primaryUseES": "Espasmos musculares y espasticidad",
+    "hasGeneric": true
+  },
+  {
+    "generic": "amoxicillin/clavulanate",
+    "brands": [
+      "Augmentin"
+    ],
+    "aliases": [],
+    "drugClass": "Penicillin + inhibitor",
+    "primaryUse": "Bacterial infections",
+    "primaryUseES": "Infecciones bacterianas",
+    "hasGeneric": true
+  },
+  {
+    "generic": "diphenhydramine",
+    "brands": [
+      "Benadryl"
+    ],
+    "aliases": [],
+    "drugClass": "Antihistamine",
+    "primaryUse": "Allergies / Sleep",
+    "primaryUseES": "Alergias y sueño",
+    "hasGeneric": true
+  },
+  {
+    "generic": "mometasone nasal",
+    "brands": [
+      "Nasonex"
+    ],
+    "aliases": [],
+    "drugClass": "Nasal corticosteroid",
+    "primaryUse": "Nasal allergies",
+    "primaryUseES": "Alergias nasales",
+    "hasGeneric": true
+  },
+  {
+    "generic": "ipratropium/albuterol",
+    "brands": [
+      "Combivent"
+    ],
+    "aliases": [],
+    "drugClass": "SAMA + SABA",
+    "primaryUse": "COPD",
+    "primaryUseES": "EPOC",
+    "hasGeneric": true
+  },
+  {
+    "generic": "fluconazole",
+    "brands": [
+      "Diflucan"
+    ],
+    "aliases": [],
+    "drugClass": "Antifungal",
+    "primaryUse": "Fungal infections",
+    "primaryUseES": "Infecciones por hongos",
+    "hasGeneric": true
+  },
+  {
+    "generic": "terbinafine",
+    "brands": [
+      "Lamisil"
+    ],
+    "aliases": [],
+    "drugClass": "Antifungal",
+    "primaryUse": "Fungal infections",
+    "primaryUseES": "Infecciones por hongos",
+    "hasGeneric": true
+  },
+  {
+    "generic": "dutasteride",
+    "brands": [
+      "Avodart"
+    ],
+    "aliases": [],
+    "drugClass": "5-alpha reductase inhibitor",
+    "primaryUse": "Enlarged prostate (BPH)",
+    "primaryUseES": "Próstata agrandada (HPB)",
+    "hasGeneric": true
+  },
+  {
+    "generic": "tolterodine",
+    "brands": [
+      "Detrol"
+    ],
+    "aliases": [],
+    "drugClass": "Antimuscarinic",
+    "primaryUse": "Overactive bladder",
+    "primaryUseES": "Vejiga hiperactiva",
+    "hasGeneric": true
+  },
+  {
+    "generic": "mirabegron",
+    "brands": [
+      "Myrbetriq"
+    ],
+    "aliases": [],
+    "drugClass": "Beta-3 agonist",
+    "primaryUse": "Overactive bladder",
+    "primaryUseES": "Vejiga hiperactiva",
+    "hasGeneric": true
+  },
+  {
+    "generic": "alendronate",
+    "brands": [
+      "Fosamax"
+    ],
+    "aliases": [],
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "primaryUseES": "Osteoporosis",
+    "hasGeneric": true
+  },
+  {
+    "generic": "risedronate",
+    "brands": [
+      "Actonel"
+    ],
+    "aliases": [],
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "primaryUseES": "Osteoporosis",
+    "hasGeneric": true
+  },
+  {
+    "generic": "ibandronate",
+    "brands": [
+      "Boniva"
+    ],
+    "aliases": [],
+    "drugClass": "Bisphosphonate",
+    "primaryUse": "Osteoporosis",
+    "primaryUseES": "Osteoporosis",
+    "hasGeneric": true
+  },
+  {
+    "generic": "raloxifene",
+    "brands": [
+      "Evista"
+    ],
+    "aliases": [],
+    "drugClass": "SERM",
+    "primaryUse": "Osteoporosis",
+    "primaryUseES": "Osteoporosis",
+    "hasGeneric": true
+  },
+  {
+    "generic": "rizatriptan",
+    "brands": [
+      "Maxalt"
+    ],
+    "aliases": [],
+    "drugClass": "Triptan",
+    "primaryUse": "Migraines",
+    "primaryUseES": "Migrañas",
+    "hasGeneric": true
+  },
+  {
+    "generic": "bimatoprost",
+    "brands": [
+      "Lumigan"
+    ],
+    "aliases": [],
+    "drugClass": "Prostaglandin analog",
+    "primaryUse": "Glaucoma",
+    "primaryUseES": "Glaucoma",
+    "hasGeneric": true
+  },
+  {
+    "generic": "cyclosporine ophthalmic",
+    "brands": [
+      "Restasis"
+    ],
+    "aliases": [],
+    "drugClass": "Immunomodulator",
+    "primaryUse": "Dry eyes",
+    "primaryUseES": "Ojos secos",
+    "hasGeneric": true
+  },
+  {
+    "generic": "methylprednisolone",
+    "brands": [
+      "Medrol"
+    ],
+    "aliases": [],
+    "drugClass": "Corticosteroid",
+    "primaryUse": "Inflammation",
+    "primaryUseES": "Inflamación",
+    "hasGeneric": true
+  },
+  {
+    "generic": "conjugated estrogens",
+    "brands": [
+      "Premarin"
+    ],
+    "aliases": [],
+    "drugClass": "Estrogen",
+    "primaryUse": "Menopause",
+    "primaryUseES": "Menopausia",
+    "hasGeneric": true
+  },
+  {
+    "generic": "tretinoin",
+    "brands": [
+      "Retin-A"
+    ],
+    "aliases": [],
+    "drugClass": "Retinoid",
+    "primaryUse": "Acne",
+    "primaryUseES": "Acné",
+    "hasGeneric": true
+  },
+  {
+    "generic": "hydroxychloroquine",
+    "brands": [
+      "Plaquenil"
+    ],
+    "aliases": [],
+    "drugClass": "DMARD",
+    "primaryUse": "Lupus / Rheumatoid arthritis",
+    "primaryUseES": "Lupus y artritis reumatoide",
+    "hasGeneric": true
+  },
+  {
+    "generic": "azathioprine",
+    "brands": [
+      "Imuran"
+    ],
+    "aliases": [],
+    "drugClass": "Immunosuppressant",
+    "primaryUse": "Autoimmune conditions",
+    "primaryUseES": "Enfermedades autoinmunes",
+    "hasGeneric": true
+  },
+  {
+    "generic": "adalimumab",
+    "brands": [
+      "Humira"
+    ],
+    "aliases": [],
+    "drugClass": "TNF inhibitor (biologic)",
+    "primaryUse": "Autoimmune conditions",
+    "primaryUseES": "Enfermedades autoinmunes",
+    "hasGeneric": true
+  },
+  {
+    "generic": "etanercept",
+    "brands": [
+      "Enbrel"
+    ],
+    "aliases": [],
+    "drugClass": "TNF inhibitor (biologic)",
+    "primaryUse": "Autoimmune conditions",
+    "primaryUseES": "Enfermedades autoinmunes",
+    "hasGeneric": false
+  },
+  {
+    "generic": "ferrous sulfate",
+    "brands": [
+      "Slow Fe"
+    ],
+    "aliases": [],
+    "drugClass": "Iron supplement",
+    "primaryUse": "Iron deficiency",
+    "primaryUseES": "Deficiencia de hierro",
+    "hasGeneric": true
+  },
+  {
+    "generic": "magnesium oxide",
+    "brands": [],
+    "aliases": [],
+    "drugClass": "Mineral supplement",
+    "primaryUse": "Low magnesium",
+    "primaryUseES": "Magnesio bajo",
+    "hasGeneric": true
+  },
+  {
+    "generic": "potassium chloride",
+    "brands": [
+      "Klor-Con",
+      "K-Tab"
+    ],
+    "aliases": [],
+    "drugClass": "Electrolyte supplement",
+    "primaryUse": "Low potassium",
+    "primaryUseES": "Potasio bajo",
+    "hasGeneric": true
+  },
+  {
+    "generic": "valacyclovir",
+    "brands": [
+      "Valtrex"
+    ],
+    "aliases": [],
+    "drugClass": "Antiviral",
+    "primaryUse": "Herpes / Shingles",
+    "primaryUseES": "Herpes y culebrilla",
+    "hasGeneric": true
+  },
+  {
+    "generic": "acyclovir",
+    "brands": [
+      "Zovirax"
+    ],
+    "aliases": [],
+    "drugClass": "Antiviral",
+    "primaryUse": "Herpes / Shingles",
+    "primaryUseES": "Herpes y culebrilla",
+    "hasGeneric": true
+  },
+  {
+    "generic": "oseltamivir",
+    "brands": [
+      "Tamiflu"
+    ],
+    "aliases": [],
+    "drugClass": "Antiviral",
+    "primaryUse": "Influenza",
+    "primaryUseES": "Influenza (gripe)",
+    "hasGeneric": true
+  },
+  {
+    "generic": "carbidopa/levodopa",
+    "brands": [
+      "Sinemet"
+    ],
+    "aliases": [],
+    "drugClass": "Dopamine precursor",
+    "primaryUse": "Parkinson's disease",
+    "primaryUseES": "Enfermedad de Parkinson",
+    "hasGeneric": true
+  },
+  {
+    "generic": "ropinirole",
+    "brands": [
+      "Requip"
+    ],
+    "aliases": [],
+    "drugClass": "Dopamine agonist",
+    "primaryUse": "Parkinson's / Restless legs",
+    "primaryUseES": "Parkinson y síndrome de piernas inquietas",
+    "hasGeneric": true
+  },
+  {
+    "generic": "pramipexole",
+    "brands": [
+      "Mirapex"
+    ],
+    "aliases": [],
+    "drugClass": "Dopamine agonist",
+    "primaryUse": "Parkinson's / Restless legs",
+    "primaryUseES": "Parkinson y síndrome de piernas inquietas",
+    "hasGeneric": true
+  }
+]
