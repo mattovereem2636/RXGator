@@ -104,8 +104,46 @@
 </header>
 <main id="main-content">
 
-<section class="version current" aria-labelledby="v1-5-0">
-  <h2 id="v1-5-0">1.5.0 — 2026-10-05 <span class="badge">Current</span></h2>
+<section class="version current" aria-labelledby="v1-5-2">
+  <h2 id="v1-5-2">1.5.2 — 2026-10-14 <span class="badge">Current</span></h2>
+  <p><em>Brand Banner Fix</em></p>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>The "Brand Name Search" box on <code>/app</code> said the prices were for an FDA-rated generic equivalent on every brand search, including brand-only drugs such as Addyi where no generic is sold. The box now reads the dictionary: a generic is sold (prices include it), RXGator records show no U.S. generic (prices are for the brand), or no record (check the drug name on each price card).</li>
+    <li>The box is now in English and Spanish. It was English only.</li>
+  </ul>
+
+  <h3>Data</h3>
+  <ul>
+    <li>SingleCare prices for Addyi (flibanserin), Vyleesi (bremelanotide), Osphena (ospemifene), and Myfembree, imported 2026-10-14 with <code>import-singlecare-womens-health.js</code>. Myfembree is cached but does not show yet: RxNorm resolves it to relugolix, which is also Orgovyx.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-5-1">
+  <h2 id="v1-5-1">1.5.1 — 2026-10-05</h2>
+  <p><em>Banner Fix</em></p>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>A search for a generic name no longer shows the banner "You searched for the brand name". The 1.5.0 lookup had a row for every generic name, and the banner treated each row as a brand.</li>
+    <li>The generic banner no longer shows an empty "Typical savings vs. brand" box when a drug has no savings range on file.</li>
+  </ul>
+
+  <h3>Changed</h3>
+  <ul>
+    <li><code>scripts/build-derived-lookup.js</code> now makes a lookup key from each brand and each alias. It no longer makes a key from the generic name.</li>
+    <li><code>public/app.html</code> prints the savings line of the generic banner only when the lookup has a value.</li>
+  </ul>
+
+  <h3>Added</h3>
+  <ul>
+    <li><code>patch-banner-1-5-1.js</code> — the banner change, kept for the audit trail.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-5-0">
+  <h2 id="v1-5-0">1.5.0 — 2026-10-05</h2>
   <p><em>Coverage</em></p>
 
   <h3>Added</h3>

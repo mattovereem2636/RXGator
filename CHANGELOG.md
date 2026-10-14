@@ -4,6 +4,32 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.2] — 2026-10-14 (Brand Banner Fix)
+
+### Fixed
+- The "Brand Name Search" box on `/app` said the prices were for an FDA-rated generic equivalent on every brand search, including brand-only drugs such as Addyi where no generic is sold. The box now reads the dictionary: a generic is sold (prices include it), RXGator records show no U.S. generic (prices are for the brand), or no record (check the drug name on each price card).
+- The box is now in English and Spanish. It was English only.
+
+### Data
+- SingleCare prices for Addyi (flibanserin), Vyleesi (bremelanotide), Osphena (ospemifene), and Myfembree, imported 2026-10-14 with `import-singlecare-womens-health.js`. Myfembree is cached but does not show yet: RxNorm resolves it to relugolix, which is also Orgovyx.
+
+---
+
+## [1.5.1] — 2026-10-05 (Banner Fix)
+
+### Fixed
+- A search for a generic name no longer shows the banner "You searched for the brand name". The 1.5.0 lookup had a row for every generic name, and the banner treated each row as a brand.
+- The generic banner no longer shows an empty "Typical savings vs. brand" box when a drug has no savings range on file.
+
+### Changed
+- `scripts/build-derived-lookup.js` now makes a lookup key from each brand and each alias. It no longer makes a key from the generic name.
+- `public/app.html` prints the savings line of the generic banner only when the lookup has a value.
+
+### Added
+- `patch-banner-1-5-1.js` — the banner change, kept for the audit trail.
+
+---
+
 ## [1.5.0] — 2026-10-05 (Coverage)
 
 ### Added

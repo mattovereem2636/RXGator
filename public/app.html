@@ -1635,6 +1635,12 @@ const T = {
   // Drug info
   aboutMed: { en: 'About This Medication', es: 'Sobre Este Medicamento' },
   brandSearch: { en: 'Brand Name Search:', es: 'Búsqueda por Marca:' },
+  brandSearchIntro: { en: 'You searched for', es: 'Buscó' },
+  brandSearchIntroOf: { en: 'a brand name for', es: 'un nombre de marca de' },
+  brandSearchGeneric: { en: 'A generic version is sold. Prices below include the generic, which has the same active ingredient.', es: 'Se vende una versión genérica. Los precios abajo incluyen el genérico, que tiene el mismo ingrediente activo.' },
+  brandSearchGenericNote: { en: 'If your doctor prescribed the brand-name version, generic prices may not apply. Ask your doctor or pharmacist before you switch between brand and generic.', es: 'Si su médico recetó la versión de marca, los precios del genérico pueden no aplicar. Consulte a su médico o farmacéutico antes de cambiar entre marca y genérico.' },
+  brandSearchBrandOnly: { en: 'RXGator records show no generic version sold in the U.S. Prices below are for the brand-name drug.', es: 'Los registros de RXGator no muestran una versión genérica a la venta en EE. UU. Los precios abajo son para el medicamento de marca.' },
+  brandSearchUnknown: { en: 'Each price card shows the drug name its source lists. Check it to see whether a price is for the brand or a generic.', es: 'Cada tarjeta de precio muestra el nombre del medicamento que indica su fuente. Revíselo para saber si un precio es de la marca o de un genérico.' },
   brandNames: { en: 'Brand names:', es: 'Nombres de marca:' },
   forms: { en: 'Forms:', es: 'Formas:' },
 
@@ -2261,6 +2267,23 @@ async function doSearch() {
   }
 }
 
+/**
+ * Brand-name search box. WHY: RxNorm can tell that a search was a brand name, but only the
+ * dictionary (data.genericInfo.hasGeneric) knows whether a generic is sold. Release 1.5.2.
+ */
+function brandSearchBox(data, dn) {
+  const gi = data.genericInfo;
+  const status = gi && gi.hasGeneric === true ? 'generic' : (gi && gi.hasGeneric === false ? 'brandOnly' : 'unknown');
+  const textKey = { generic: 'brandSearchGeneric', brandOnly: 'brandSearchBrandOnly', unknown: 'brandSearchUnknown' }[status];
+  const note = status === 'generic'
+    ? '<div style="font-size:0.8rem; color:var(--gray-500); margin-top:0.3rem; font-style:italic;">' + t('brandSearchGenericNote') + '</div>'
+    : '';
+  return '<div style="font-size:0.88rem; background:var(--light-blue); padding:0.6rem 0.9rem; border-radius:6px; margin-bottom:0.5rem; line-height:1.5;">'
+    + '<strong style="color:var(--navy);">' + t('brandSearch') + '</strong> '
+    + t('brandSearchIntro') + ' <strong>' + esc(data.query.drug) + '</strong>, ' + t('brandSearchIntroOf') + ' <strong>' + esc(dn.genericName) + '</strong>. '
+    + t(textKey) + note + '</div>';
+}
+
 function renderResults(data) {
   window._lastSearchData = data;
   let html = '';
@@ -2270,10 +2293,7 @@ function renderResults(data) {
     const dn = data.drugNormalization;
     html += `<div class="drug-info">
       <h2>${dn.genericName || data.query.drug}${dn.rxcui ? `<span class="rxnorm-badge">RxCUI: ${dn.rxcui}</span>` : ''}</h2>
-      ${dn.brandSearchResolved ? `<div style="font-size:0.88rem; background:var(--light-blue); padding:0.6rem 0.9rem; border-radius:6px; margin-bottom:0.5rem; line-height:1.5;">
-        <strong style="color:var(--navy);">Brand Name Search:</strong> You searched for <strong>${esc(data.query.drug)}</strong>, which is a brand name for the generic drug <strong>${esc(dn.genericName)}</strong>. Prices shown below are for the generic equivalent, which contains the same active ingredient and is FDA-rated as therapeutically equivalent.
-        <div style="font-size:0.8rem; color:var(--gray-500); margin-top:0.3rem; font-style:italic;">If your doctor has specifically prescribed the brand-name version, these generic prices may not apply. Always consult your doctor or pharmacist before switching between brand and generic medications.</div>
-      </div>` : ''}
+      ${dn.brandSearchResolved ? brandSearchBox(data, dn) : ''}
       <div class="meta">
         ${dn.brandNames && dn.brandNames.length ? `<div><strong>Brand names:</strong> ${dn.brandNames.slice(0, 6).join(', ')}</div>` : ''}
         ${dn.dosageForms && dn.dosageForms.length ? `<div><strong>Forms:</strong> ${dn.dosageForms.join(', ')}</div>` : ''}
