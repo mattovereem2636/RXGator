@@ -24,3 +24,5 @@ health-report*.json
 data/alerts_subscribers.json
 # Added in v1.4.3: secrets, backups, logs with visitor IPs
 backups/
+
+_to_delete/
