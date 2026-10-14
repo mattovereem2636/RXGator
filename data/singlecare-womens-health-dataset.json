@@ -1,0 +1,6 @@
+[
+  {"drugName": "Osphena", "drugType": "Brand", "lowestPrice": 255.37, "lowestPricePharmacy": "Kroger Pharmacy", "quantity": null, "ndc": null, "pharmacyCount": 9, "url": "https://www.singlecare.com/prescription/osphena", "scrapedAt": "2026-10-14T19:57:10.598Z"},
+  {"drugName": "Myfembree", "drugType": "Brand", "lowestPrice": 1236.38, "lowestPricePharmacy": "Kroger Pharmacy", "quantity": null, "ndc": null, "pharmacyCount": 9, "url": "https://www.singlecare.com/prescription/myfembree", "scrapedAt": "2026-10-14T19:57:11.799Z"},
+  {"drugName": "Vyleesi", "drugType": "Brand", "lowestPrice": 986.62, "lowestPricePharmacy": "Walgreens", "quantity": null, "ndc": null, "pharmacyCount": 6, "url": "https://www.singlecare.com/prescription/vyleesi", "scrapedAt": "2026-10-14T19:57:12.595Z"},
+  {"drugName": "Addyi", "drugType": "Brand", "lowestPrice": 1960.02, "lowestPricePharmacy": "Kroger Pharmacy", "quantity": null, "ndc": null, "pharmacyCount": 8, "url": "https://www.singlecare.com/prescription/addyi", "scrapedAt": "2026-10-14T19:57:13.905Z"}
+]
