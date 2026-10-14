@@ -3566,5 +3566,45 @@
     "primaryUse": "Parkinson's / Restless legs",
     "hasGeneric": true,
     "typicalSavings": "85-90%"
+  },
+  "addyi": {
+    "brand": "Addyi",
+    "generic": "flibanserin",
+    "drugClass": "Serotonin 1A agonist / 2A antagonist",
+    "primaryUse": "Low sexual desire in premenopausal women (HSDD)",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "vyleesi": {
+    "brand": "Vyleesi",
+    "generic": "bremelanotide",
+    "drugClass": "Melanocortin receptor agonist",
+    "primaryUse": "Low sexual desire in premenopausal women (HSDD)",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "osphena": {
+    "brand": "Osphena",
+    "generic": "ospemifene",
+    "drugClass": "Estrogen agonist/antagonist (SERM)",
+    "primaryUse": "Painful intercourse and vaginal dryness after menopause",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "myfembree": {
+    "brand": "Myfembree",
+    "generic": "relugolix, estradiol, and norethindrone acetate",
+    "drugClass": "GnRH receptor antagonist combination",
+    "primaryUse": "Heavy menstrual bleeding from uterine fibroids; endometriosis pain",
+    "hasGeneric": false,
+    "typicalSavings": null
+  },
+  "orgovyx": {
+    "brand": "Orgovyx",
+    "generic": "relugolix",
+    "drugClass": "GnRH receptor antagonist",
+    "primaryUse": "Advanced prostate cancer",
+    "hasGeneric": false,
+    "typicalSavings": null
   }
 }

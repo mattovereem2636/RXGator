@@ -4407,5 +4407,105 @@
     "hasGeneric": true,
     "commonMisspellings": [],
     "typicalSavings": "85-90%"
+  },
+  {
+    "id": "1215",
+    "generic": "flibanserin",
+    "brands": [
+      "Addyi"
+    ],
+    "aliases": [
+      "addyi"
+    ],
+    "drugClass": "Serotonin 1A agonist / 2A antagonist",
+    "primaryUse": "Low sexual desire in premenopausal women (HSDD)",
+    "primaryUseES": "Deseo sexual bajo en mujeres premenopáusicas (HSDD)",
+    "hasGeneric": false,
+    "commonMisspellings": [
+      "flibanserine",
+      "flibanseran",
+      "flibansarin",
+      "addyie"
+    ]
+  },
+  {
+    "id": "1216",
+    "generic": "bremelanotide",
+    "brands": [
+      "Vyleesi"
+    ],
+    "aliases": [
+      "vyleesi"
+    ],
+    "drugClass": "Melanocortin receptor agonist",
+    "primaryUse": "Low sexual desire in premenopausal women (HSDD)",
+    "primaryUseES": "Deseo sexual bajo en mujeres premenopáusicas (HSDD)",
+    "hasGeneric": false,
+    "commonMisspellings": [
+      "bremelanatide",
+      "bremelonotide",
+      "vylesi",
+      "vyleesy",
+      "vylessi"
+    ]
+  },
+  {
+    "id": "1217",
+    "generic": "ospemifene",
+    "brands": [
+      "Osphena"
+    ],
+    "aliases": [
+      "osphena"
+    ],
+    "drugClass": "Estrogen agonist/antagonist (SERM)",
+    "primaryUse": "Painful intercourse and vaginal dryness after menopause",
+    "primaryUseES": "Relaciones sexuales dolorosas y sequedad vaginal después de la menopausia",
+    "hasGeneric": false,
+    "commonMisspellings": [
+      "ospemifine",
+      "ospemiphene",
+      "osphina",
+      "ospheena",
+      "ospena"
+    ]
+  },
+  {
+    "id": "1218",
+    "generic": "relugolix, estradiol, and norethindrone acetate",
+    "brands": [
+      "Myfembree"
+    ],
+    "aliases": [
+      "myfembree"
+    ],
+    "drugClass": "GnRH receptor antagonist combination",
+    "primaryUse": "Heavy menstrual bleeding from uterine fibroids; endometriosis pain",
+    "primaryUseES": "Sangrado menstrual abundante por fibromas uterinos; dolor por endometriosis",
+    "hasGeneric": false,
+    "commonMisspellings": [
+      "myfembre",
+      "myfembry",
+      "myfembrie",
+      "myfemebree"
+    ]
+  },
+  {
+    "id": "1219",
+    "generic": "relugolix",
+    "brands": [
+      "Orgovyx"
+    ],
+    "aliases": [
+      "orgovyx"
+    ],
+    "drugClass": "GnRH receptor antagonist",
+    "primaryUse": "Advanced prostate cancer",
+    "primaryUseES": "Cáncer de próstata avanzado",
+    "hasGeneric": false,
+    "commonMisspellings": [
+      "relugolex",
+      "orgovix"
+    ]
   }
 ]
