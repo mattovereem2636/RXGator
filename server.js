@@ -42,6 +42,8 @@ app.use(helmet({
   },
 }));
 app.use(express.json({ limit: '10mb' }));
+// 1.5.2: landing.html duplicates the homepage. Send visitors and crawlers to the one canonical URL.
+app.get('/landing.html', (req, res) => res.redirect(301, '/'));
 app.use(express.static(path.join(__dirname, 'public'), { index: false }));
 require("./health-report")(app);
 require('./pharmacy-locator')(app);

@@ -259,7 +259,7 @@ function estimateCostcoPrice(genericName, strength, quantity) {
       unitPrice: basePricePerUnit[key],
       totalPrice: +(basePricePerUnit[key] * quantity).toFixed(2),
       source: 'Costco Pharmacy (estimated)',
-      note: 'No membership required to use Costco pharmacy (federal law). Prices are estimates based on published reporting.'
+      note: 'Costco pharmacies serve non-members in most states (state laws vary; confirm with your local store). Prices are estimates based on published reporting.'
     };
   }
   return null;

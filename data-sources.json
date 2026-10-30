@@ -275,7 +275,7 @@
       "shortName": "Costco",
       "type": "static",
       "category": "consumer_pricing",
-      "description": "Estimated Costco pharmacy prices based on published reporting. No membership required by federal law.",
+      "description": "Estimated Costco pharmacy prices based on published reporting. Costco serves non-members in most states; state laws vary; confirm with your local store.",
       "url": null,
       "healthCheckUrl": null,
       "healthCheckExpect": null,
@@ -287,7 +287,7 @@
       "module": null,
       "queryFunction": "estimateCostcoPrice",
       "priceType": "consumer_estimate",
-      "notes": "Uses NADAC benchmark with markup formula. No Costco membership needed for pharmacy (federal law)."
+      "notes": "Uses NADAC benchmark with markup formula. Costco serves non-members at the pharmacy in most states; state laws vary; confirm with your local store."
     },
     "rxOutreach": {
       "id": 15,
