@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RXGator — Compare Prescription Drug Prices From 18+ Sources</title>
-<meta name="description" content="RXGator compares prescription drug prices across 18+ sources including Cost Plus Drugs, GoodRx, SingleCare, RxSaver, Blink Health, Walmart $4 Program, NADAC, and Medicare Part D. Find the lowest price for your medication — free, no signup required.">
+<title>RXGator — Compare Prescription Drug Prices From 22 Sources</title>
+<meta name="description" content="RXGator compares prescription drug prices across 22 sources including Cost Plus Drugs, GoodRx, SingleCare, RxSaver, Blink Health, Walmart $4 Program, NADAC, and Medicare Part D. Find the lowest price for your medication — free, no signup required.">
 <link rel="canonical" href="https://rxgator.info/">
 <link rel="alternate" hreflang="en" href="https://rxgator.info/">
 <link rel="alternate" hreflang="es" href="https://rxgator.info/">
@@ -12,15 +12,15 @@
 <link rel="alternate" hreflang="en" href="https://rxgator.info/">
 <link rel="alternate" hreflang="es" href="https://rxgator.info/">
 <link rel="alternate" hreflang="x-default" href="https://rxgator.info/">
-<meta property="og:title" content="RXGator — Compare Prescription Drug Prices From 18+ Sources">
-<meta property="og:description" content="Free prescription price comparison across 18+ data sources. Find the lowest cost for your medication instantly.">
+<meta property="og:title" content="RXGator — Compare Prescription Drug Prices From 22 Sources">
+<meta property="og:description" content="Free prescription price comparison across 22 data sources. Find the lowest cost for your medication instantly.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rxgator.info/">
 <meta property="og:image" content="https://rxgator.info/screenshot.png">
 <meta property="og:site_name" content="RXGator">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="RXGator — Compare Prescription Drug Prices">
-<meta name="twitter:description" content="Free prescription price comparison across 18+ data sources. Find the lowest cost for your medication instantly.">
+<meta name="twitter:description" content="Free prescription price comparison across 22 data sources. Find the lowest cost for your medication instantly.">
 <meta name="twitter:image" content="https://rxgator.info/screenshot.png">
 <link rel="icon" type="image/png" href="/favicon.png">
 <style>
@@ -1072,7 +1072,7 @@
   "name": "RXGator",
   "url": "https://rxgator.info",
   "logo": "https://rxgator.info/logo-primary.png",
-  "description": "Free prescription drug price comparison tool aggregating prices from 18+ data sources including government databases, pharmacy programs, and discount card providers.",
+  "description": "Free prescription drug price comparison tool aggregating prices from 22 data sources including government databases, pharmacy programs, and discount card providers.",
   "sameAs": [],
   "contactPoint": {
     "@type": "ContactPoint",
@@ -1769,10 +1769,10 @@ function setLang(lang) {
   esBtn.setAttribute('aria-pressed', lang === 'es' ? 'true' : 'false');
 
   // Update page title for language
-  document.title = lang === 'es' ? 'RXGator — Comparador Gratuito de Precios de Medicamentos' : 'RXGator — Compare Prescription Drug Prices From 18+ Sources';
+  document.title = lang === 'es' ? 'RXGator — Comparador Gratuito de Precios de Medicamentos' : 'RXGator — Compare Prescription Drug Prices From 22 Sources';
 
   // Update page title for language
-  document.title = lang === 'es' ? 'RXGator — Comparador Gratuito de Precios de Medicamentos' : 'RXGator — Compare Prescription Drug Prices From 18+ Sources';
+  document.title = lang === 'es' ? 'RXGator — Comparador Gratuito de Precios de Medicamentos' : 'RXGator — Compare Prescription Drug Prices From 22 Sources';
 
   // Swap text content on data-i18n elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -2705,7 +2705,7 @@ function renderResults(data) {
   // Disclaimer
   html += `<div class="disclaimer">
     <strong>22 Data Sources</strong><br>
-    This tool queries <a href="https://costplusdrugs.com" target="_blank" rel="noopener" style="color:#1A6FA0;">Cost Plus Drugs</a> (live API), <a href="https://www.singlecare.com" target="_blank" rel="noopener" style="color:#1A6FA0;">SingleCare</a> (cached), <a href="https://www.goodrx.com" target="_blank" rel="noopener" style="color:#1A6FA0;">GoodRx</a> (cached), <a href="https://www.rxsaver.com" target="_blank" rel="noopener" style="color:#1A6FA0;">RxSaver</a> (cached), <a href="https://www.blinkhealth.com" target="_blank" rel="noopener" style="color:#1A6FA0;">Blink Health</a> (cached), <a href="https://pharmacy.amazon.com/rxpass" target="_blank" rel="noopener" style="color:#1A6FA0;">Amazon RxPass</a> (built-in), <a href="https://data.medicaid.gov/datasets?keyword=nadac" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicaid NADAC</a> (benchmark), <a href="https://data.medicaid.gov/datasets?keyword=ful" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicaid FUL</a> (benchmark), <a href="https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-opioid-prescribing-rates/medicare-part-d-spending-by-drug" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicare Part D</a> (CMS), <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="_blank" rel="noopener" style="color:#1A6FA0;">RxNorm</a> (drug matching), <a href="https://medlineplus.gov" target="_blank" rel="noopener" style="color:#1A6FA0;">MedlinePlus</a> (drug information), <a href="https://open.fda.gov" target="_blank" rel="noopener" style="color:#1A6FA0;">openFDA</a> (normalization), <a href="https://www.walmart.com/cp/4-dollar-prescriptions/1078664" target="_blank" rel="noopener" style="color:#1A6FA0;">Walmart Rx Program</a>, <a href="https://www.costco.com/pharmacy/" target="_blank" rel="noopener" style="color:#1A6FA0;">Costco Pharmacy</a> (estimated), <a href="https://rxoutreach.org" target="_blank" rel="noopener" style="color:#1A6FA0;">Rx Outreach</a> (nonprofit mail-order), <a href="https://www.va.gov/opal/nac/fss/pharmPrices.asp" target="_blank" rel="noopener" style="color:#1A6FA0;">VA Federal Supply Schedule</a> (govt benchmark), <a href="https://www.cms.gov/inflation-reduction-act-and-medicare/negotiated-prices-for-selected-drugs" target="_blank" rel="noopener" style="color:#1A6FA0;">IRA Negotiated Prices</a> (Medicare), and <a href="https://www.dshs.texas.gov/prescription-drug-prices" target="_blank" rel="noopener" style="color:#1A6FA0;">Texas DSHS WAC</a> (manufacturer list price).
+    This tool queries <a href="https://costplusdrugs.com" target="_blank" rel="noopener" style="color:#1A6FA0;">Cost Plus Drugs</a> (live API), <a href="https://www.singlecare.com" target="_blank" rel="noopener" style="color:#1A6FA0;">SingleCare</a> (cached), <a href="https://www.goodrx.com" target="_blank" rel="noopener" style="color:#1A6FA0;">GoodRx</a> (cached), <a href="https://www.rxsaver.com" target="_blank" rel="noopener" style="color:#1A6FA0;">RxSaver</a> (cached), <a href="https://www.blinkhealth.com" target="_blank" rel="noopener" style="color:#1A6FA0;">Blink Health</a> (cached), <a href="https://pharmacy.amazon.com/rxpass" target="_blank" rel="noopener" style="color:#1A6FA0;">Amazon RxPass</a> (built-in), <a href="https://data.medicaid.gov/datasets?keyword=nadac" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicaid NADAC</a> (benchmark), <a href="https://data.medicaid.gov/datasets?keyword=ful" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicaid FUL</a> (benchmark), <a href="https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-opioid-prescribing-rates/medicare-part-d-spending-by-drug" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicare Part D</a> (CMS), <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="_blank" rel="noopener" style="color:#1A6FA0;">RxNorm</a> (drug matching), <a href="https://medlineplus.gov" target="_blank" rel="noopener" style="color:#1A6FA0;">MedlinePlus</a> (drug information), <a href="https://open.fda.gov" target="_blank" rel="noopener" style="color:#1A6FA0;">openFDA</a> (normalization), <a href="https://www.walmart.com/cp/4-dollar-prescriptions/1078664" target="_blank" rel="noopener" style="color:#1A6FA0;">Walmart Rx Program</a>, <a href="https://www.costco.com/pharmacy/" target="_blank" rel="noopener" style="color:#1A6FA0;">Costco Pharmacy</a> (estimated), <a href="https://rxoutreach.org" target="_blank" rel="noopener" style="color:#1A6FA0;">Rx Outreach</a> (nonprofit mail-order), <a href="https://www.va.gov/opal/nac/fss/pharmPrices.asp" target="_blank" rel="noopener" style="color:#1A6FA0;">VA Federal Supply Schedule</a> (govt benchmark), <a href="https://www.cms.gov/inflation-reduction-act-and-medicare/negotiated-prices-for-selected-drugs" target="_blank" rel="noopener" style="color:#1A6FA0;">IRA Negotiated Prices</a> (Medicare), <a href="https://www.dshs.texas.gov/prescription-drug-prices" target="_blank" rel="noopener" style="color:#1A6FA0;">Texas DSHS WAC</a> (manufacturer list price), <a href="https://insiderx.com" target="_blank" rel="noopener" style="color:#1A6FA0;">Inside Rx</a> (cached), <a href="https://www.healthwarehouse.com" target="_blank" rel="noopener" style="color:#1A6FA0;">HealthWarehouse</a> (online pharmacy), <a href="https://trumprx.gov" target="_blank" rel="noopener" style="color:#1A6FA0;">TrumpRx.gov</a> (government deal prices), and <a href="https://www.accessdata.fda.gov/scripts/drugshortages/default.cfm" target="_blank" rel="noopener" style="color:#1A6FA0;">FDA Drug Shortages</a> (supply alerts).
     <br>Drug information provided by MedlinePlus, a service of the National Library of Medicine.
     <br>Prices are estimates and may differ from what you pay at the pharmacy. Always verify with your pharmacist.
     <div style="margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid #D6EAF8;">

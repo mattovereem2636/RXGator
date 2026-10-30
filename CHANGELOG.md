@@ -4,6 +4,14 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.5] — 2026-10-29 (Source Count)
+
+### Fixed
+- Pages that still said "18+ sources" now say 22, matching the rest of the site: the `/app` title, description, social tags, structured data and browser-tab title; `lost-insurance.html`; `perdi-mi-seguro.html` (Spanish); six articles; and `pap-database.json`. The 1.5.3 audit missed the "18+" wording.
+- The "22 Data Sources" box on `/app` named only 18 sources. It now also names Inside Rx, HealthWarehouse, TrumpRx.gov and FDA Drug Shortages.
+
+---
+
 ## [1.5.4] — 2026-10-29 (Brand Lookup and Pack Sizes)
 
 ### Fixed
