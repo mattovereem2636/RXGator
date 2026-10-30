@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metodología: Cómo RXGator Encuentra y Ordena los Precios — RXGator</title>
+<meta name="description" content="Cómo funciona RXGator: las 22 fuentes de datos que busca, qué ofrece cada una, qué tan actuales son los datos y cómo se ordenan los resultados.">
+<link rel="canonical" href="https://rxgator.info/metodologia.html">
+<link rel="alternate" hreflang="en" href="https://rxgator.info/methodology.html">
+<link rel="alternate" hreflang="es" href="https://rxgator.info/metodologia.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B3B5C;
+    --teal: #0C8080;
+    --teal-bright: #25CCCC;
+    --teal-light: #D0F0F0;
+    --pale: #F4F8F9;
+    --white: #FFFFFF;
+    --gray-700: #2C3E50;
+    --gray-500: #5D6D7E;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0B3B5C;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-link:focus { top: 0; }
+
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--gray-700); background: var(--white); line-height: 1.7; }
+
+  .header {
+    background: linear-gradient(135deg, #0B3B5C 0%, #0E5A6F 100%);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .header a { text-decoration: none; }
+  .header img { max-width: 200px; height: auto; }
+
+  .nav {
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    background: var(--pale);
+    border-bottom: 1px solid #E0E8EC;
+    font-size: 0.85rem;
+  }
+  .nav a {
+    color: var(--teal);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 0.75rem;
+  }
+  .nav a:hover { text-decoration: underline; }
+
+  .content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .effective {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p { margin-bottom: 1rem; font-size: 0.95rem; }
+
+  ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+  }
+
+  .highlight {
+    background: var(--teal-light);
+    border-left: 4px solid var(--teal);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  .highlight strong { color: var(--navy); }
+
+  .footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+  .footer a { color: var(--teal-bright); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  .footer-medical { display: block; margin-top: 0.75rem; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.9); }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2566350144413801" crossorigin="anonymous"></script>
+<script defer src="https://analytics.tapthemap.online/getinfo" data-website-id="5734e55c-87b7-4ada-ad28-58b1b465a20c"></script>
+<style>
+.table-wrap{overflow-x:auto;margin:1rem 0}
+.src-table{border-collapse:collapse;width:100%;font-size:.95rem}
+.src-table caption{text-align:left;font-weight:700;padding:.5rem 0;color:var(--navy,#0B3B5C)}
+.src-table th,.src-table td{border:1px solid #D5D8DC;padding:.5rem .7rem;text-align:left;vertical-align:top}
+.src-table th{background:var(--pale,#F4F8F9)}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="header">
+  <a href="/"><img src="/logo-reversed.png" alt="RXGator Home"></a>
+</header>
+
+<nav class="nav">
+  <a href="/">Inicio</a>
+  <a href="/about.html">Acerca de</a>
+  <a href="/faq.html">Preguntas frecuentes</a>
+  <a href="/privacy.html">Política de privacidad</a>
+  <a href="/terms.html">Términos de uso</a>
+  <a href="https://patreon.com/RXGator" target="_blank" rel="noopener">Apóyenos</a>
+  <a href="/app">Buscar medicamentos</a>
+  <span style="margin-left:0.5rem;">
+    <span style="font-size:0.72rem; color:var(--gray-500,#5D6D7E);">Text:</span>
+    <button onclick="setTextSize('normal')" id="sizeA" style="padding:0.1rem 0.4rem; background:var(--teal,#0C8080); color:#fff; border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.72rem; font-weight:600;" title="Normal text size">A</button>
+    <button onclick="setTextSize('large')" id="sizeAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.82rem; font-weight:600;" title="Large text">A+</button>
+    <button onclick="setTextSize('xlarge')" id="sizeAAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.92rem; font-weight:600;" title="Extra large text">A++</button>
+  </span>
+</nav>
+
+<main id="main-content">
+<div class="content">
+  <h1>Cómo Funciona RXGator: Fuentes de Datos y Metodología</h1>
+  <div class="highlight"><strong>En resumen:</strong> RXGator busca en 22 fuentes de datos a la vez y ordena los resultados del precio más bajo al más alto. Hoy es gratis para los consumidores. Las relaciones de afiliados, patrocinios y asociaciones no cambian el orden.</div>
+
+  <h2>Las 22 Fuentes de Datos</h2>
+  <p>RXGator agrupa sus fuentes en tres tipos. Las referencias del gobierno muestran lo que pagan las farmacias o lo que permiten los programas. No siempre son precios que usted pueda obtener en el mostrador.</p>
+  <div class="table-wrap">
+    <table class="src-table">
+      <caption>Precios para consumidores: tarjetas de descuento, farmacias, programas (11)</caption>
+      <thead><tr><th scope="col">Fuente</th><th scope="col">Qué ofrece</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Cost Plus Drugs</th><td>Farmacia por correo con precios transparentes. El precio es el costo más un margen y cargos publicados.</td></tr>
+        <tr><th scope="row">GoodRx</th><td>Precios de tarjeta de descuento en las principales farmacias (datos en caché).</td></tr>
+        <tr><th scope="row">SingleCare</th><td>Precios de tarjeta de descuento (datos en caché).</td></tr>
+        <tr><th scope="row">RxSaver</th><td>Precios de tarjeta de descuento en farmacias locales (datos en caché).</td></tr>
+        <tr><th scope="row">Blink Health</th><td>Precios con descuento que se pagan en línea y se recogen o se reciben a domicilio (datos en caché).</td></tr>
+        <tr><th scope="row">Inside Rx</th><td>Precios de tarjeta de descuento (datos en caché). <em>(Descripción basada en cómo se rotula la fuente en RXGator. Consulte las preguntas frecuentes para más detalles.)</em></td></tr>
+        <tr><th scope="row">HealthWarehouse</th><td>Precios de una farmacia en línea. <em>(Descripción basada en cómo se rotula la fuente en RXGator. Consulte las preguntas frecuentes para más detalles.)</em></td></tr>
+        <tr><th scope="row">Walmart Rx Program</th><td>Programa de medicamentos genéricos de bajo costo de Walmart (lista integrada, actualizada cuando cambian los precios del programa).</td></tr>
+        <tr><th scope="row">Amazon RxPass</th><td>Suscripción Prime que cubre un conjunto de genéricos (lista integrada).</td></tr>
+        <tr><th scope="row">Costco Pharmacy (estimated)</th><td>Precios en efectivo estimados según informes publicados. Son estimados, no cotizaciones de la tienda.</td></tr>
+        <tr><th scope="row">Rx Outreach</th><td>Farmacia sin fines de lucro por correo, con elegibilidad según ingresos.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-wrap">
+    <table class="src-table">
+      <caption>Referencias y programas del gobierno (7)</caption>
+      <thead><tr><th scope="col">Fuente</th><th scope="col">Qué ofrece</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">NADAC</th><td>Costo Promedio Nacional de Adquisición de Medicamentos: lo que pagan las farmacias en promedio. Es una referencia, no un precio de venta. CMS lo publica cada semana.</td></tr>
+        <tr><th scope="row">Medicaid Federal Upper Limit</th><td>Reembolso máximo de Medicaid para genéricos. CMS lo publica cada mes.</td></tr>
+        <tr><th scope="row">Medicare Part D (CMS)</th><td>Datos de gasto de Medicare Parte D por medicamento.</td></tr>
+        <tr><th scope="row">VA Federal Supply Schedule</th><td>Precios negociados por el gobierno federal. Solo una referencia; no están disponibles para los consumidores.</td></tr>
+        <tr><th scope="row">Medicare Negotiated Prices (IRA)</th><td>Precios Máximos Justos negociados bajo la Ley de Reducción de la Inflación para Medicare Parte D.</td></tr>
+        <tr><th scope="row">Texas DSHS (WAC)</th><td>Costo de Adquisición Mayorista: el precio de lista del fabricante antes de descuentos.</td></tr>
+        <tr><th scope="row">FedRx</th><td>Precios de acuerdos negociados por el gobierno. <em>(Descripción basada en cómo se rotula la fuente en RXGator. Consulte las preguntas frecuentes para más detalles.)</em></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-wrap">
+    <table class="src-table">
+      <caption>Información de medicamentos (4)</caption>
+      <thead><tr><th scope="col">Fuente</th><th scope="col">Qué ofrece</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">openFDA</th><td>Datos de seguridad e identificación de medicamentos de la FDA.</td></tr>
+        <tr><th scope="row">RxNorm (NLM)</th><td>Coincidencia de nombres de medicamentos y resolución de marca a genérico de la Biblioteca Nacional de Medicina.</td></tr>
+        <tr><th scope="row">MedlinePlus (NLM)</th><td>Información de medicamentos en lenguaje sencillo de la Biblioteca Nacional de Medicina.</td></tr>
+        <tr><th scope="row">FDA Drug Shortages</th><td>Listas actuales de escasez de medicamentos de la FDA.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>¿Qué Tan Actuales Son los Datos?</h2>
+  <ul>
+    <li><strong>Cost Plus Drugs, Medicare Parte D, RxNorm, MedlinePlus, openFDA</strong> — se consultan en tiempo real en cada búsqueda.</li>
+    <li><strong>NADAC</strong> — CMS publica datos nuevos de NADAC cada semana. RXGator muestra la referencia de su actualización más reciente.</li>
+    <li><strong>GoodRx y SingleCare</strong> — datos en caché, actualizados periódicamente. Los precios son recientes pero pueden tener horas o días.</li>
+    <li><strong>Walmart, Costco, Amazon RxPass</strong> — listas integradas, actualizadas cuando cambian los precios del programa (normalmente cada trimestre).</li>
+    <li><strong>Límite Superior Federal</strong> — se actualiza cada mes con datos de CMS.</li>
+    <li><strong>Las demás fuentes</strong> — se actualizan según su propio calendario. Las fuentes en caché pueden tener horas o días.</li>
+  </ul>
+  <p>Consulte las <a href="/faq.html">preguntas frecuentes</a> para la respuesta completa a "¿Con qué frecuencia se actualizan los precios?"</p>
+
+  <h2>Qué Significan y Qué No Significan los Precios</h2>
+  <ul>
+    <li>Las cifras de Costco son estimados basados en informes publicados, no cotizaciones de la tienda.</li>
+    <li>Los precios de las tarjetas de descuento cambian según la farmacia, la ubicación y el día. Su precio en el mostrador puede ser distinto.</li>
+    <li>Referencias como NADAC, el Límite Superior Federal, la lista de precios federal del VA y el WAC de Texas muestran costos dentro de la cadena de suministro. No son precios de venta.</li>
+    <li>Siempre verifique el precio final en el mostrador de la farmacia.</li>
+  </ul>
+
+  <h2>Cómo Se Financia RXGator</h2>
+  <p>RXGator se financia con apoyo de la comunidad, publicidad y comisiones de afiliados. Las comisiones de afiliados nunca cambian el orden de los resultados. Las <a href="/faq.html">preguntas frecuentes</a> explican cada uno.</p>
+
+  <h2>Reportar un Problema</h2>
+  <p>Si un precio o una descripción parece incorrecto, escriba a <a href="mailto:info@rxgator.info">info@rxgator.info</a>.</p>
+
+  <p><em>Esta página no es consejo médico. Hable con su médico o farmacéutico antes de cambiar cualquier medicamento.</em></p>
+</div>
+</main>
+
+<footer class="footer">
+  RXGator &mdash; Prescription Aggregator &mdash; <a href="https://rxgator.info">rxgator.info</a><br>
+  <a href="/">Inicio</a> &middot; <a href="/about.html">Acerca de</a>
+  <a href="/faq.html">Preguntas frecuentes</a> &middot; <a href="/privacy.html">Política de privacidad</a>
+  <a href="/terms.html">Términos de uso</a> &middot; <a href="https://github.com/mattovereem2636/rxgator">GitHub</a> &middot; <a href="https://ko-fi.com/rxgator">Ko-fi</a>
+  <span class="footer-medical">Esta herramienta no es consejo médico. Siempre consulte a su médico o farmacéutico antes de hacer cambios en sus medicamentos.</span>
+</footer>
+
+
+<script>
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    var inTopBar = el.closest && el.closest('.top-bar');
+    if (inTopBar) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.25)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'rgba(255,255,255,0.7)';
+      el.style.borderColor = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.3)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology: How RXGator Finds and Ranks Drug Prices — RXGator</title>
+<meta name="description" content="How RXGator works: the 22 data sources it searches, what each one provides, how fresh the data is, and how results are ranked.">
+<link rel="canonical" href="https://rxgator.info/methodology.html">
+<link rel="alternate" hreflang="en" href="https://rxgator.info/methodology.html">
+<link rel="alternate" hreflang="es" href="https://rxgator.info/metodologia.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B3B5C;
+    --teal: #0C8080;
+    --teal-bright: #25CCCC;
+    --teal-light: #D0F0F0;
+    --pale: #F4F8F9;
+    --white: #FFFFFF;
+    --gray-700: #2C3E50;
+    --gray-500: #5D6D7E;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0B3B5C;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .skip-link:focus { top: 0; }
+
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--gray-700); background: var(--white); line-height: 1.7; }
+
+  .header {
+    background: linear-gradient(135deg, #0B3B5C 0%, #0E5A6F 100%);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .header a { text-decoration: none; }
+  .header img { max-width: 200px; height: auto; }
+
+  .nav {
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    background: var(--pale);
+    border-bottom: 1px solid #E0E8EC;
+    font-size: 0.85rem;
+  }
+  .nav a {
+    color: var(--teal);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 0.75rem;
+  }
+  .nav a:hover { text-decoration: underline; }
+
+  .content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .effective {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p { margin-bottom: 1rem; font-size: 0.95rem; }
+
+  ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+  }
+
+  .highlight {
+    background: var(--teal-light);
+    border-left: 4px solid var(--teal);
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  .highlight strong { color: var(--navy); }
+
+  .footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+  .footer a { color: var(--teal-bright); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  .footer-medical { display: block; margin-top: 0.75rem; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.9); }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2566350144413801" crossorigin="anonymous"></script>
+<script defer src="https://analytics.tapthemap.online/getinfo" data-website-id="5734e55c-87b7-4ada-ad28-58b1b465a20c"></script>
+<style>
+.table-wrap{overflow-x:auto;margin:1rem 0}
+.src-table{border-collapse:collapse;width:100%;font-size:.95rem}
+.src-table caption{text-align:left;font-weight:700;padding:.5rem 0;color:var(--navy,#0B3B5C)}
+.src-table th,.src-table td{border:1px solid #D5D8DC;padding:.5rem .7rem;text-align:left;vertical-align:top}
+.src-table th{background:var(--pale,#F4F8F9)}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="header">
+  <a href="/"><img src="/logo-reversed.png" alt="RXGator Home"></a>
+</header>
+
+<nav class="nav">
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/faq.html">FAQ</a>
+  <a href="/privacy.html">Privacy Policy</a>
+  <a href="/terms.html">Terms of Use</a>
+  <a href="https://patreon.com/RXGator" target="_blank" rel="noopener">Support Us</a>
+  <a href="/app">Search Drugs</a>
+  <span style="margin-left:0.5rem;">
+    <span style="font-size:0.72rem; color:var(--gray-500,#5D6D7E);">Text:</span>
+    <button onclick="setTextSize('normal')" id="sizeA" style="padding:0.1rem 0.4rem; background:var(--teal,#0C8080); color:#fff; border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.72rem; font-weight:600;" title="Normal text size">A</button>
+    <button onclick="setTextSize('large')" id="sizeAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.82rem; font-weight:600;" title="Large text">A+</button>
+    <button onclick="setTextSize('xlarge')" id="sizeAAA" style="padding:0.1rem 0.4rem; background:transparent; color:var(--teal,#0C8080); border:1px solid var(--teal,#0C8080); border-radius:3px; cursor:pointer; font-size:0.92rem; font-weight:600;" title="Extra large text">A++</button>
+  </span>
+</nav>
+
+<main id="main-content">
+<div class="content">
+  <h1>How RXGator Works: Data Sources and Methodology</h1>
+  <div class="highlight"><strong>The short version:</strong> RXGator searches 22 data sources at once and ranks results from lowest price to highest. It is free for consumers today. Affiliate relationships, sponsorships, and partnerships do not change the ranking order.</div>
+
+  <h2>The 22 Data Sources</h2>
+  <p>RXGator groups its sources into three kinds. Government benchmarks show what pharmacies pay or what programs allow. They are not always prices you can get at the counter.</p>
+  <div class="table-wrap">
+    <table class="src-table">
+      <caption>Consumer pricing: discount cards, pharmacies, programs (11)</caption>
+      <thead><tr><th scope="col">Source</th><th scope="col">What it provides</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Cost Plus Drugs</th><td>Transparent-pricing mail-order pharmacy. Price is cost plus a published markup and fees.</td></tr>
+        <tr><th scope="row">GoodRx</th><td>Discount card prices at major pharmacies (cached data).</td></tr>
+        <tr><th scope="row">SingleCare</th><td>Discount card prices (cached data).</td></tr>
+        <tr><th scope="row">RxSaver</th><td>Discount card prices at local pharmacies (cached data).</td></tr>
+        <tr><th scope="row">Blink Health</th><td>Discount prices you pay online, then pick up or have delivered (cached data).</td></tr>
+        <tr><th scope="row">Inside Rx</th><td>Discount card prices (cached data). <em>(Description based on how the source is labeled in RXGator. Check the FAQ for details.)</em></td></tr>
+        <tr><th scope="row">HealthWarehouse</th><td>Online pharmacy prices. <em>(Description based on how the source is labeled in RXGator. Check the FAQ for details.)</em></td></tr>
+        <tr><th scope="row">Walmart Rx Program</th><td>Walmart low-cost generic drug program (built-in list, updated when program pricing changes).</td></tr>
+        <tr><th scope="row">Amazon RxPass</th><td>Prime subscription that covers a set of generics (built-in list).</td></tr>
+        <tr><th scope="row">Costco Pharmacy (estimated)</th><td>Estimated cash prices based on published reporting. These are estimates, not store quotes.</td></tr>
+        <tr><th scope="row">Rx Outreach</th><td>Nonprofit mail-order pharmacy with income-based eligibility.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-wrap">
+    <table class="src-table">
+      <caption>Government benchmarks and programs (7)</caption>
+      <thead><tr><th scope="col">Source</th><th scope="col">What it provides</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">NADAC</th><td>National Average Drug Acquisition Cost: what pharmacies pay on average. A benchmark, not a retail price. CMS publishes it weekly.</td></tr>
+        <tr><th scope="row">Medicaid Federal Upper Limit</th><td>Maximum Medicaid reimbursement for generics. CMS publishes it monthly.</td></tr>
+        <tr><th scope="row">Medicare Part D (CMS)</th><td>Medicare Part D spending data per drug.</td></tr>
+        <tr><th scope="row">VA Federal Supply Schedule</th><td>Federal negotiated prices. A benchmark only; not available to consumers.</td></tr>
+        <tr><th scope="row">Medicare Negotiated Prices (IRA)</th><td>Maximum Fair Prices negotiated under the Inflation Reduction Act for Medicare Part D.</td></tr>
+        <tr><th scope="row">Texas DSHS (WAC)</th><td>Wholesale Acquisition Cost: the manufacturer list price before discounts.</td></tr>
+        <tr><th scope="row">FedRx</th><td>Government-negotiated deal pricing. <em>(Description based on how the source is labeled in RXGator. Check the FAQ for details.)</em></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-wrap">
+    <table class="src-table">
+      <caption>Drug information (4)</caption>
+      <thead><tr><th scope="col">Source</th><th scope="col">What it provides</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">openFDA</th><td>Drug safety and identification data from the FDA.</td></tr>
+        <tr><th scope="row">RxNorm (NLM)</th><td>Drug name matching and brand-to-generic resolution from the National Library of Medicine.</td></tr>
+        <tr><th scope="row">MedlinePlus (NLM)</th><td>Plain-language drug information from the National Library of Medicine.</td></tr>
+        <tr><th scope="row">FDA Drug Shortages</th><td>Current drug shortage listings from the FDA.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>How Fresh Is the Data?</h2>
+  <ul>
+    <li><strong>Cost Plus Drugs, Medicare Part D, RxNorm, MedlinePlus, openFDA</strong> — queried in real time on every search.</li>
+    <li><strong>NADAC</strong> — CMS publishes new NADAC data weekly. RXGator shows the benchmark from its most recent update.</li>
+    <li><strong>GoodRx and SingleCare</strong> — cached data, updated periodically. Prices are recent but may be hours or days old.</li>
+    <li><strong>Walmart, Costco, Amazon RxPass</strong> — built-in lists, updated when program pricing changes (typically quarterly).</li>
+    <li><strong>Federal Upper Limit</strong> — updated monthly from CMS data.</li>
+    <li><strong>All other sources</strong> — refreshed on their own schedules. Cached sources can be hours or days old.</li>
+  </ul>
+  <p>See the <a href="/faq.html">FAQ</a> for the full answer to "How often are prices updated?"</p>
+
+  <h2>What the Prices Do and Do Not Mean</h2>
+  <ul>
+    <li>Costco figures are estimates based on published reporting, not quotes from a store.</li>
+    <li>Discount card prices change by pharmacy, location, and day. Your price at the counter can differ.</li>
+    <li>Benchmarks such as NADAC, Federal Upper Limit, VA Federal Supply Schedule, and Texas WAC show costs inside the supply chain. They are not retail prices.</li>
+    <li>Always verify the final price at the pharmacy counter.</li>
+  </ul>
+
+  <h2>How RXGator Is Funded</h2>
+  <p>RXGator is funded by community support, advertising, and affiliate commissions. Affiliate commissions never change how results are ranked. The <a href="/faq.html">FAQ</a> explains each one.</p>
+
+  <h2>Report a Problem</h2>
+  <p>If a price or a description looks wrong, email <a href="mailto:info@rxgator.info">info@rxgator.info</a>.</p>
+
+  <p><em>This page is not medical advice. Talk to your doctor or pharmacist before you change any medication.</em></p>
+</div>
+</main>
+
+<footer class="footer">
+  RXGator &mdash; Prescription Aggregator &mdash; <a href="https://rxgator.info">rxgator.info</a><br>
+  <a href="/">Home</a> &middot; <a href="/about.html">About</a>
+  <a href="/faq.html">FAQ</a> &middot; <a href="/privacy.html">Privacy Policy</a>
+  <a href="/terms.html">Terms of Use</a> &middot; <a href="https://github.com/mattovereem2636/rxgator">GitHub</a> &middot; <a href="https://ko-fi.com/rxgator">Ko-fi</a>
+  <span class="footer-medical">This tool is not medical advice. Always consult your doctor or pharmacist before making changes to your medications.</span>
+</footer>
+
+
+<script>
+function setTextSize(size) {
+  var sizes = { normal: '100%', large: '115%', xlarge: '130%' };
+  document.documentElement.style.fontSize = sizes[size] || '100%';
+  try { localStorage.setItem('rxgator_textsize', size); } catch(e) {}
+  var btns = [
+    { id: 'sizeA', active: size === 'normal' },
+    { id: 'sizeAA', active: size === 'large' },
+    { id: 'sizeAAA', active: size === 'xlarge' }
+  ];
+  btns.forEach(function(b) {
+    var el = document.getElementById(b.id);
+    if (!el) return;
+    var inTopBar = el.closest && el.closest('.top-bar');
+    if (inTopBar) {
+      el.style.background = b.active ? 'rgba(255,255,255,0.25)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'rgba(255,255,255,0.7)';
+      el.style.borderColor = b.active ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.3)';
+    } else {
+      el.style.background = b.active ? 'var(--teal,#0C8080)' : 'transparent';
+      el.style.color = b.active ? '#fff' : 'var(--teal,#0C8080)';
+      el.style.borderColor = b.active ? 'var(--teal,#0C8080)' : 'var(--teal,#0C8080)';
+    }
+  });
+}
+(function() {
+  try {
+    var saved = localStorage.getItem('rxgator_textsize');
+    if (saved && saved !== 'normal') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { setTextSize(saved); });
+      } else {
+        setTextSize(saved);
+      }
+    }
+  } catch(e) {}
+})();
+</script>
+</body>
+</html>

@@ -4,6 +4,30 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.3] — 2026-10-29 (Search Hygiene)
+
+### Fixed
+- Nine pages named a canonical URL that returns 404: the six August price pages, the Rx Outreach review, `lost-insurance.html`, and `perdi-mi-seguro.html`. Each now names its own URL.
+- `index.html` and `landing.html` now both name `/` as canonical.
+- Seven English pages gained their Spanish hreflang pair. Two hreflang targets that did not exist now point at the real Spanish pages, and the lost-insurance pair works.
+- About 100 internal links that returned 404 now work (the nav and footer on the six price pages, related-article links, `/contact`, `/search`). Seven related cards for articles that were never written are removed.
+- One data-source number, 22, replaces 8, 12, 16, 18, 19, and 20 on 124 pages (including the search page), in English and Spanish.
+- The Costco "federal law" claim now says "in most states, but state laws vary" on every page and in the search results text.
+- "Free forever" and "every dollar goes to data" no longer promise more than the FAQ funding answer says. "GoodRx only shows GoodRx prices" (homepage, About, and search results) and "NADAC is always current" are corrected. "No ads. No affiliate links" is removed because the FAQ discloses affiliate commissions.
+- The homepage price example labels the Costco figure as an estimate and calls the example illustrative.
+
+### Added
+- `public/methodology.html` and `public/metodologia.html` list all 22 sources, what each provides, how fresh the data is, and how results are ranked.
+- `public/llms.txt` for AI assistants, built only from claims the site already makes.
+- Organization and WebSite structured data on the homepage and the About page.
+- Footer links to Articles and Methodology on the homepage.
+- `deploy-seo-baseline-1-5-2/` with the patch, `audit-seo.js` (read-only check), and a sitemap builder.
+
+### Changed
+- `public/sitemap.xml` is built from the files on disk and lists every indexable page once (144 URLs; it listed 67). Run `patch-seo-1-5-2.js` again after any deploy that adds pages.
+
+---
+
 ## [1.5.2] — 2026-10-14 (Brand Banner Fix)
 
 ### Fixed

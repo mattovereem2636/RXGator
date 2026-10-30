@@ -257,6 +257,49 @@
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2566350144413801" crossorigin="anonymous"></script>
 <script defer src="https://analytics.tapthemap.online/getinfo" data-website-id="5734e55c-87b7-4ada-ad28-58b1b465a20c"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://rxgator.info/#organization",
+      "name": "RXGator",
+      "url": "https://rxgator.info/",
+      "logo": "https://rxgator.info/logo-primary.png",
+      "email": "info@rxgator.info",
+      "founder": {
+        "@type": "Person",
+        "name": "Matt Overeem"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Technology Assessment Project LLC",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Glenview",
+          "addressRegion": "IL",
+          "addressCountry": "US"
+        }
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rxgator.info/#website",
+      "url": "https://rxgator.info/",
+      "name": "RXGator",
+      "description": "Free prescription drug price comparison across multiple discount cards, pharmacy programs, and government benchmarks.",
+      "inLanguage": [
+        "en",
+        "es"
+      ],
+      "publisher": {
+        "@id": "https://rxgator.info/#organization"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -295,12 +338,12 @@
   </div>
 
   <h2 data-i18n="theProblem">The Problem</h2>
-  <p data-i18n="problemP1">Americans overpay for prescription drugs every single day — not because cheaper options don't exist, but because no one tool shows all of them. GoodRx only shows GoodRx prices. SingleCare only shows SingleCare prices. Your pharmacist only knows their own shelf price. The information is scattered across a dozen platforms, and nobody has time to check them all.</p>
+  <p data-i18n="problemP1">Americans overpay for prescription drugs every single day — not because cheaper options don't exist, but because no one tool shows all of them. Each discount card shows only its own prices. Your pharmacist only knows their own shelf price. The information is scattered across a dozen platforms, and nobody has time to check them all.</p>
   <p data-i18n="problemP2">The same generic medication can cost $4 at one pharmacy and $37 at another — same pill, same day, same zip code. The difference is simply knowing where to look.</p>
 
   <h2 data-i18n="whatWeDo">What RXGator Does</h2>
-  <p data-i18n="whatWeDoP1">RXGator searches nineteen data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.</p>
-  <p data-i18n="whatWeDoP2">Every result includes step-by-step instructions explaining how to actually get that price at the pharmacy counter. No sign-up required. No data sold. Free forever.</p>
+  <p data-i18n="whatWeDoP1">RXGator searches twenty-two data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.</p>
+  <p data-i18n="whatWeDoP2">Every result includes step-by-step instructions explaining how to actually get that price at the pharmacy counter. No sign-up required. No data sold. Free to use.</p>
 
   <div class="stat-row">
     <div class="stat-card">
@@ -332,8 +375,8 @@
       <p data-i18n="transparentDesc">RXGator is community-funded through Patreon. We believe in the same transparency for our funding that we believe in for drug pricing.</p>
     </div>
     <div class="principle">
-      <h3 data-i18n="freeForever">Free Forever</h3>
-      <p data-i18n="freeForeverDesc">RXGator will never charge consumers to search for drug prices. The tool exists to serve the public interest, funded by the community and by affiliate commissions when users choose to fill prescriptions through our links.</p>
+      <h3 data-i18n="freeForever">Free to Use</h3>
+      <p data-i18n="freeForeverDesc">RXGator is free for consumers today, and we have no plans to charge for searching drug prices. The tool exists to serve the public interest, funded by the community and by affiliate commissions when users choose to fill prescriptions through our links.</p>
     </div>
   </div>
 
@@ -381,7 +424,7 @@
 
   <div class="cta-box">
     <h3 data-i18n="ctaTitle">Support RXGator</h3>
-    <p data-i18n="ctaDesc">Every dollar goes directly to adding more pharmacy data sources so more people can find cheaper medication.</p>
+    <p data-i18n="ctaDesc">Support helps us add more pharmacy data sources so more people can find cheaper medication.</p>
     <a href="https://patreon.com/RXGator" target="_blank" rel="noopener">Patreon</a>
     <a href="https://ko-fi.com/rxgator" target="_blank" rel="noopener">Ko-fi</a>
     <a href="https://github.com/mattovereem2636/rxgator" target="_blank" rel="noopener">GitHub</a>
@@ -414,11 +457,11 @@ const T = {
   aboutTitle: { en: 'About RXGator', es: 'Acerca de RXGator' },
   missionStatement: { en: 'Prescription pricing should be transparent. No one should overpay for medication because they didn\'t know a cheaper option existed ten minutes away.', es: 'Los precios de medicamentos recetados deben ser transparentes. Nadie debería pagar de más porque no sabía que existía una opción más barata a diez minutos de distancia.' },
   theProblem: { en: 'The Problem', es: 'El Problema' },
-  problemP1: { en: 'Americans overpay for prescription drugs every single day — not because cheaper options don\'t exist, but because no one tool shows all of them. GoodRx only shows GoodRx prices. SingleCare only shows SingleCare prices. Your pharmacist only knows their own shelf price. The information is scattered across a dozen platforms, and nobody has time to check them all.', es: 'Los estadounidenses pagan de más por medicamentos recetados todos los días — no porque no existan opciones más baratas, sino porque ninguna herramienta las muestra todas. GoodRx solo muestra precios de GoodRx. SingleCare solo muestra precios de SingleCare. Su farmacéutico solo conoce sus propios precios. La información está dispersa en una docena de plataformas y nadie tiene tiempo para revisar todas.' },
+  problemP1: { en: 'Americans overpay for prescription drugs every single day — not because cheaper options don\'t exist, but because no one tool shows all of them. Each discount card shows only its own prices. Your pharmacist only knows their own shelf price. The information is scattered across a dozen platforms, and nobody has time to check them all.', es: 'Los estadounidenses pagan de más por medicamentos recetados todos los días — no porque no existan opciones más baratas, sino porque ninguna herramienta las muestra todas. Cada tarjeta de descuento solo muestra sus propios precios. Su farmacéutico solo conoce sus propios precios. La información está dispersa en una docena de plataformas y nadie tiene tiempo para revisar todas.' },
   problemP2: { en: 'The same generic medication can cost $4 at one pharmacy and $37 at another — same pill, same day, same zip code. The difference is simply knowing where to look.', es: 'El mismo medicamento genérico puede costar $4 en una farmacia y $37 en otra — la misma pastilla, el mismo día, el mismo código postal. La diferencia es simplemente saber dónde buscar.' },
   whatWeDo: { en: 'What RXGator Does', es: 'Qué Hace RXGator' },
-  whatWeDoP1: { en: 'RXGator searches nineteen data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.', es: 'RXGator busca en diecinueve fuentes de datos simultáneamente — bases de datos gubernamentales, programas de farmacia, plataformas de tarjetas de descuento y farmacias por correo — y devuelve todos los precios disponibles ordenados del más barato al más caro. Una búsqueda reemplaza el trabajo de verificar múltiples plataformas individualmente.' },
-  whatWeDoP2: { en: 'Every result includes step-by-step instructions explaining how to actually get that price at the pharmacy counter. No sign-up required. No data sold. Free forever.', es: 'Cada resultado incluye instrucciones paso a paso que explican cómo obtener ese precio en el mostrador de la farmacia. Sin registro. Sin venta de datos. Gratis para siempre.' },
+  whatWeDoP1: { en: 'RXGator searches twenty-two data sources simultaneously — government databases, pharmacy programs, discount card platforms, and mail-order pharmacies — and returns every available price ranked from cheapest to most expensive. One search replaces the work of checking multiple platforms individually.', es: 'RXGator busca en veintidós fuentes de datos simultáneamente — bases de datos gubernamentales, programas de farmacia, plataformas de tarjetas de descuento y farmacias por correo — y devuelve todos los precios disponibles ordenados del más barato al más caro. Una búsqueda reemplaza el trabajo de verificar múltiples plataformas individualmente.' },
+  whatWeDoP2: { en: 'Every result includes step-by-step instructions explaining how to actually get that price at the pharmacy counter. No sign-up required. No data sold. Free to use.', es: 'Cada resultado incluye instrucciones paso a paso que explican cómo obtener ese precio en el mostrador de la farmacia. Sin registro. Sin venta de datos. Gratis para usar.' },
   statSources: { en: 'Data Sources', es: 'Fuentes de Datos' },
   statCost: { en: 'Cost to Users', es: 'Costo para Usuarios' },
   statAds: { en: 'Ads Tracking You', es: 'Anuncios Rastreándote' },
@@ -429,15 +472,15 @@ const T = {
   noDataSellingDesc: { en: 'Your drug searches are never sold, shared with advertisers, or used to build profiles. Read our full privacy policy — it says exactly what it means.', es: 'Sus búsquedas de medicamentos nunca se venden, comparten con anunciantes ni se usan para crear perfiles. Lea nuestra política de privacidad completa — dice exactamente lo que significa.' },
   transparent: { en: 'Transparent Operations', es: 'Operaciones Transparentes' },
   transparentDesc: { en: 'RXGator is community-funded through Patreon. We believe in the same transparency for our funding that we believe in for drug pricing.', es: 'RXGator es financiado por la comunidad a través de Patreon. Creemos en la misma transparencia para nuestro financiamiento que para los precios de medicamentos.' },
-  freeForever: { en: 'Free Forever', es: 'Gratis Para Siempre' },
-  freeForeverDesc: { en: 'RXGator will never charge consumers to search for drug prices. The tool exists to serve the public interest, funded by the community and by affiliate commissions when users choose to fill prescriptions through our links.', es: 'RXGator nunca cobrará a los consumidores por buscar precios de medicamentos. La herramienta existe para servir al interés público, financiada por la comunidad y por comisiones de afiliados cuando los usuarios eligen surtir recetas a través de nuestros enlaces.' },
+  freeForever: { en: 'Free to Use', es: 'Gratis Para Usar' },
+  freeForeverDesc: { en: 'RXGator is free for consumers today, and we have no plans to charge for searching drug prices. The tool exists to serve the public interest, funded by the community and by affiliate commissions when users choose to fill prescriptions through our links.', es: 'RXGator es gratis para los consumidores hoy, y no tenemos planes de cobrar por buscar precios de medicamentos. La herramienta existe para servir al interés público, financiada por la comunidad y por comisiones de afiliados cuando los usuarios eligen surtir recetas a través de nuestros enlaces.' },
   roadmap: { en: 'Roadmap', es: 'Hoja de Ruta' },
   whoBuilt: { en: 'Who Built This', es: 'Quién Construyó Esto' },
   founderName: { en: 'Matt Overeem — Founder', es: 'Matt Overeem — Fundador' },
   founderBio: { en: 'Matt is a technology assessment professional with 34 years of experience in public infrastructure, GIS, and technology evaluation. He holds degrees from Northwestern University and Roosevelt University. RXGator grew from a simple question: why isn\'t there one tool that shows every available price for a prescription drug? The answer turned out to be that building one requires connecting government databases, pharmacy APIs, discount card platforms, and drug reference systems that were never designed to talk to each other. That\'s a technology assessment problem — and that\'s exactly Matt\'s background.', es: 'Matt es un profesional de evaluación de tecnología con 34 años de experiencia en infraestructura pública, SIG y evaluación tecnológica. Tiene títulos de Northwestern University y Roosevelt University. RXGator nació de una simple pregunta: ¿por qué no hay una herramienta que muestre todos los precios disponibles para un medicamento recetado? La respuesta resultó ser que construir una requiere conectar bases de datos gubernamentales, APIs de farmacias, plataformas de tarjetas de descuento y sistemas de referencia de medicamentos que nunca fueron diseñados para comunicarse entre sí. Eso es un problema de evaluación tecnológica — y esa es exactamente la experiencia de Matt.' },
   founderCompany: { en: 'RXGator is operated by Technology Assessment Project LLC, based in Glenview, Illinois.', es: 'RXGator es operado por Technology Assessment Project LLC, con sede en Glenview, Illinois.' },
   ctaTitle: { en: 'Support RXGator', es: 'Apoya a RXGator' },
-  ctaDesc: { en: 'Every dollar goes directly to adding more pharmacy data sources so more people can find cheaper medication.', es: 'Cada dólar se destina directamente a agregar más fuentes de datos de farmacias para que más personas puedan encontrar medicamentos más baratos.' },
+  ctaDesc: { en: 'Support helps us add more pharmacy data sources so more people can find cheaper medication.', es: 'El apoyo nos ayuda a agregar más fuentes de datos de farmacias para que más personas puedan encontrar medicamentos más baratos.' },
   contactTitle: { en: 'Contact', es: 'Contacto' },
   contactDesc: { en: 'Questions, feedback, partnership inquiries, or media requests:', es: 'Preguntas, comentarios, consultas de asociación o solicitudes de medios:' },
 };

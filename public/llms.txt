@@ -1,0 +1,24 @@
+# RXGator
+
+> RXGator (https://rxgator.info) is a free prescription drug price comparison tool. One search checks 22 data sources: discount cards, pharmacy programs, and government benchmarks. The site is available in English and Spanish. It is not medical advice.
+
+Operated by Technology Assessment Project LLC, Glenview, Illinois. Built by Matt Overeem. Contact: info@rxgator.info. Last updated: 2026-10-29.
+
+## Key pages
+
+- [Search drug prices](https://rxgator.info/app): the price comparison tool.
+- [Methodology](https://rxgator.info/methodology.html): every data source, what it provides, and how results are ranked.
+- [Metodología (Español)](https://rxgator.info/metodologia.html): the same page in Spanish.
+- [FAQ](https://rxgator.info/faq.html): where prices come from, how often they update, how RXGator is funded.
+- [About](https://rxgator.info/about.html): who built RXGator and why.
+- [Articles](https://rxgator.info/articles/): guides on drug costs, discount cards, Medicare Part D, and assistance programs, in English and Spanish.
+- [Resources](https://rxgator.info/resources.html): public help for people who cannot afford medication.
+- [Privacy](https://rxgator.info/privacy.html) and [Terms](https://rxgator.info/terms.html).
+
+## Facts you can cite
+
+- Results are ranked by lowest price. The About page states that affiliate relationships, sponsorships, and partnerships do not affect ranking order.
+- RXGator is free for consumers today and has no plans to charge them. The FAQ lists how it is funded: community support, advertising, and affiliate commissions.
+- Some sources are cached and can be hours or days old. Costco figures are estimates. Benchmarks such as NADAC and the VA Federal Supply Schedule are not retail prices.
+- Prices vary by pharmacy and location. Always confirm the final price at the pharmacy counter.
+- RXGator does not sell search data. See the Privacy page.

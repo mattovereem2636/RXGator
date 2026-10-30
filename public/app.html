@@ -1523,7 +1523,7 @@
 <!-- ══ End Article Rotator ══ -->
 
 <footer class="footer" role="contentinfo">
-  RxGator v1.0 &mdash; 19 Data Sources
+  RxGator v1.0 &mdash; 22 Data Sources
   &mdash; <a href="https://patreon.com/RXGator" style="color:var(--gray-500); text-decoration:none; border-bottom:1px dotted var(--gray-500);">Patreon</a>
   &middot; <a href="https://ko-fi.com/rxgator" style="color:var(--gray-500); text-decoration:none; border-bottom:1px dotted var(--gray-500);">Ko-fi</a>
   &middot; <a href="/api/log" style="color:var(--gray-500); text-decoration:none; border-bottom:1px dotted var(--gray-500);">Admin Log</a>
@@ -1604,7 +1604,7 @@ const T = {
   },
 
   // Results
-  loading: { en: 'Querying 18 data sources: Cost Plus Drugs, SingleCare, GoodRx, RxSaver, Blink Health, Amazon RxPass, NADAC, FUL, Medicare Part D, RxNorm, MedlinePlus, openFDA, Walmart, Costco, Rx Outreach, VA FSS, IRA Negotiated, and Texas WAC...', es: 'Consultando 18 fuentes de datos: Cost Plus Drugs, SingleCare, GoodRx, RxSaver, Blink Health, Amazon RxPass, NADAC, FUL, Medicare Part D, RxNorm, MedlinePlus, openFDA, Walmart, Costco, Rx Outreach, VA FSS, IRA Negotiated y Texas WAC...' },
+  loading: { en: 'Querying 22 data sources, including Cost Plus Drugs, SingleCare, GoodRx, RxSaver, Blink Health, Amazon RxPass, NADAC, FUL, Medicare Part D, RxNorm, MedlinePlus, openFDA, Walmart, Costco, Rx Outreach, VA FSS, IRA Negotiated, and Texas WAC...', es: 'Consultando 22 fuentes de datos, entre ellas Cost Plus Drugs, SingleCare, GoodRx, RxSaver, Blink Health, Amazon RxPass, NADAC, FUL, Medicare Part D, RxNorm, MedlinePlus, openFDA, Walmart, Costco, Rx Outreach, VA FSS, IRA Negotiated y Texas WAC...' },
   noResults: { en: 'No pricing data found. Try searching by generic name, or check the spelling.', es: 'No se encontraron datos de precios. Intente buscar por nombre genérico o verifique la ortografía.' },
   pricesFound: { en: 'Prices found:', es: 'Precios encontrados:' },
   options: { en: 'options', es: 'opciones' },
@@ -1739,7 +1739,7 @@ const T = {
 
   // Welcome overlay
   welcomeTitle: { en: '', es: 'Bienvenido a RXGator' },
-  welcomeMsg: { en: '', es: 'Esta herramienta busca los precios más bajos para sus medicamentos recetados en 18 fuentes de datos. Escriba el nombre de su medicamento y presione "Buscar Precios". Los resultados le mostrarán dónde encontrar el mejor precio y cómo obtenerlo en la farmacia. Es gratis y no necesita cuenta.' },
+  welcomeMsg: { en: '', es: 'Esta herramienta busca los precios más bajos para sus medicamentos recetados en 22 fuentes de datos. Escriba el nombre de su medicamento y presione "Buscar Precios". Los resultados le mostrarán dónde encontrar el mejor precio y cómo obtenerlo en la farmacia. Es gratis y no necesita cuenta.' },
   welcomeClose: { en: '', es: 'Entendido — Comenzar' },
 };
 
@@ -1878,11 +1878,11 @@ const SOURCE_GUIDES = {
     extra: 'No signup required for basic use. SingleCare coupons are accepted at CVS, Walgreens, Walmart, Kroger, Costco, and 35,000+ other pharmacies. Prices vary by pharmacy and location. Some pharmacies offer additional loyalty savings on top of the SingleCare price.'
   },
   'Costco Pharmacy (est.)': {
-    summary: 'No Costco membership required to use the pharmacy (federal law).',
+    summary: 'Costco pharmacies serve non-members in most states (state laws vary, so confirm with your local store).',
     steps: [
-      'Walk into any <strong>Costco pharmacy</strong> \u2014 you do NOT need a Costco membership.',
+      'Walk into a <strong>Costco pharmacy</strong> \u2014 in most states you do not need a Costco membership.',
       'Present your prescription and ask for the cash price.',
-      'Federal law requires Costco to serve non-members at the pharmacy.',
+      'Costco serves non-members at the pharmacy in most states. State laws vary, so confirm with your local store.',
       'For even lower prices, consider the Costco Member Prescription Program (requires membership).',
     ],
     extra: 'Costco consistently ranks among the cheapest retail pharmacies for generics. Prices shown here are estimates based on published reporting \u2014 verify the exact price at the counter.'
@@ -2427,7 +2427,7 @@ function renderResults(data) {
     const worstPrice = prices[prices.length - 1];
     const nadacUnit = data.nadacBenchmark ? `$${data.nadacBenchmark.lowestNadacPerUnit.toFixed(4)}` : null;
     html += `<div style="background:#EBF5FB; border-left:4px solid #2E86C1; border-radius:8px; padding:0.85rem 1.1rem; margin:0.75rem 0; font-size:0.88rem; color:#1B4F72;">
-      <strong>Why RXGator?</strong> GoodRx only shows GoodRx prices. SingleCare only shows SingleCare. Your pharmacist only knows their shelf price. RXGator searched <strong>all 19 sources</strong> and found ${bestSource} has the best deal for this drug. ${nadacUnit ? `Your pharmacy pays about ${nadacUnit}/pill wholesale.` : ''}
+      <strong>Why RXGator?</strong> Each discount card shows only its own prices. Your pharmacist only knows their shelf price. RXGator searched <strong>all 22 sources</strong> and found ${bestSource} has the best deal for this drug. ${nadacUnit ? `Your pharmacy pays about ${nadacUnit}/pill wholesale.` : ''}
     </div>`;
   }
 
@@ -2701,7 +2701,7 @@ function renderResults(data) {
 
   // Disclaimer
   html += `<div class="disclaimer">
-    <strong>19 Data Sources</strong><br>
+    <strong>22 Data Sources</strong><br>
     This tool queries <a href="https://costplusdrugs.com" target="_blank" rel="noopener" style="color:#1A6FA0;">Cost Plus Drugs</a> (live API), <a href="https://www.singlecare.com" target="_blank" rel="noopener" style="color:#1A6FA0;">SingleCare</a> (cached), <a href="https://www.goodrx.com" target="_blank" rel="noopener" style="color:#1A6FA0;">GoodRx</a> (cached), <a href="https://www.rxsaver.com" target="_blank" rel="noopener" style="color:#1A6FA0;">RxSaver</a> (cached), <a href="https://www.blinkhealth.com" target="_blank" rel="noopener" style="color:#1A6FA0;">Blink Health</a> (cached), <a href="https://pharmacy.amazon.com/rxpass" target="_blank" rel="noopener" style="color:#1A6FA0;">Amazon RxPass</a> (built-in), <a href="https://data.medicaid.gov/datasets?keyword=nadac" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicaid NADAC</a> (benchmark), <a href="https://data.medicaid.gov/datasets?keyword=ful" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicaid FUL</a> (benchmark), <a href="https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-medicaid-opioid-prescribing-rates/medicare-part-d-spending-by-drug" target="_blank" rel="noopener" style="color:#1A6FA0;">Medicare Part D</a> (CMS), <a href="https://www.nlm.nih.gov/research/umls/rxnorm/" target="_blank" rel="noopener" style="color:#1A6FA0;">RxNorm</a> (drug matching), <a href="https://medlineplus.gov" target="_blank" rel="noopener" style="color:#1A6FA0;">MedlinePlus</a> (drug information), <a href="https://open.fda.gov" target="_blank" rel="noopener" style="color:#1A6FA0;">openFDA</a> (normalization), <a href="https://www.walmart.com/cp/4-dollar-prescriptions/1078664" target="_blank" rel="noopener" style="color:#1A6FA0;">Walmart Rx Program</a>, <a href="https://www.costco.com/pharmacy/" target="_blank" rel="noopener" style="color:#1A6FA0;">Costco Pharmacy</a> (estimated), <a href="https://rxoutreach.org" target="_blank" rel="noopener" style="color:#1A6FA0;">Rx Outreach</a> (nonprofit mail-order), <a href="https://www.va.gov/opal/nac/fss/pharmPrices.asp" target="_blank" rel="noopener" style="color:#1A6FA0;">VA Federal Supply Schedule</a> (govt benchmark), <a href="https://www.cms.gov/inflation-reduction-act-and-medicare/negotiated-prices-for-selected-drugs" target="_blank" rel="noopener" style="color:#1A6FA0;">IRA Negotiated Prices</a> (Medicare), and <a href="https://www.dshs.texas.gov/prescription-drug-prices" target="_blank" rel="noopener" style="color:#1A6FA0;">Texas DSHS WAC</a> (manufacturer list price).
     <br>Drug information provided by MedlinePlus, a service of the National Library of Medicine.
     <br>Prices are estimates and may differ from what you pay at the pharmacy. Always verify with your pharmacist.
