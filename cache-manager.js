@@ -49,18 +49,29 @@ function saveSingleCareCache() {
   }
 }
 
-const { resolveCacheKey } = require('./brand-alias');
+const { resolveCacheKey, resolveTypedCacheKey } = require('./brand-alias');
+
+// 1.5.4: supplies the result cards label as "30-day" / "90-day". Any other pack size is shown as
+// "for N units" with no 90-day price, because multiplying a 4-pen pack by 3 is not a 90-day supply.
+const STANDARD_SUPPLIES = [30, 90];
+
+/** @returns {number|null} The pack quantity when it is not a standard supply, else null. */
+function packSizeOf(quantity) {
+  const n = Number(quantity);
+  return Number.isFinite(n) && n > 0 && !STANDARD_SUPPLIES.includes(n) ? n : null;
+}
 
 /**
  * Query the SingleCare cache for coupon pricing on a drug.
  * @param {string} drugName - The drug name to search.
  * @returns {Array<Object>} Array with one pricing result, or empty if not cached.
  */
-function querySingleCare(drugName) {
-  const key = resolveCacheKey(drugName, singleCareCache);
+function querySingleCare(drugName, typedName) {
+  const key = resolveTypedCacheKey(drugName, typedName, singleCareCache);
   const entry = singleCareCache[key];
   if (!entry || !entry.lowestPrice) return [];
 
+  const scPack = packSizeOf(entry.quantity);
   const results = [];
 
   results.push({
@@ -70,9 +81,10 @@ function querySingleCare(drugName) {
     ndc: entry.ndc || null,
     unitPrice: entry.quantity ? +(entry.lowestPrice / entry.quantity).toFixed(4) : null,
     priceFor30: entry.quantity === 90 ? +(entry.lowestPrice / 3).toFixed(2) : entry.lowestPrice,
-    priceFor90: entry.quantity === 90 ? entry.lowestPrice : +(entry.lowestPrice * 3).toFixed(2),
+    priceFor90: scPack ? null : (entry.quantity === 90 ? entry.lowestPrice : +(entry.lowestPrice * 3).toFixed(2)),
+    packQuantity: scPack,
     brandGeneric: entry.isGeneric ? 'Generic' : (entry.drugType || 'Generic'),
-    note: `SingleCare coupon price. Lowest: $${entry.lowestPrice} at ${entry.lowestPricePharmacy || 'participating pharmacy'} (${entry.quantity || 30}-count). Prices vary by pharmacy and location.`,
+    note: `SingleCare coupon price. Lowest: $${entry.lowestPrice} at ${entry.lowestPricePharmacy || 'participating pharmacy'} (${entry.quantity ? entry.quantity + '-count' : 'package size not listed'}). Prices vary by pharmacy and location.`,
     dataFreshness: entry.scrapedAt ? `Cached ${new Date(entry.scrapedAt).toLocaleDateString()}` : 'Cached',
     pharmacies: (entry.pharmacies || []).map(p => ({
       name: p.name,
@@ -132,8 +144,8 @@ function saveGoodRxCache() {
  * @param {string} drugName - The drug name to search.
  * @returns {Array<Object>} Array with one pricing result, or empty if not cached.
  */
-function queryGoodRx(drugName) {
-  const key = resolveCacheKey(drugName, goodRxCache);
+function queryGoodRx(drugName, typedName) {
+  const key = resolveTypedCacheKey(drugName, typedName, goodRxCache);
   const entry = goodRxCache[key];
   if (!entry || !entry.pharmacies || entry.pharmacies.length === 0) return [];
 
@@ -150,6 +162,7 @@ function queryGoodRx(drugName) {
     : allPharmacies.reduce((min, p) => p.goodrx_price < min.goodrx_price ? p : min);
 
   const qty = entry.quantity || 30;
+  const grPack = packSizeOf(entry.quantity);
 
   results.push({
     source: 'GoodRx',
@@ -159,7 +172,8 @@ function queryGoodRx(drugName) {
     form: entry.form || null,
     unitPrice: +(lowest.goodrx_price / qty).toFixed(4),
     priceFor30: qty === 90 ? +(lowest.goodrx_price / 3).toFixed(2) : lowest.goodrx_price,
-    priceFor90: qty === 90 ? lowest.goodrx_price : +(lowest.goodrx_price * 3).toFixed(2),
+    priceFor90: grPack ? null : (qty === 90 ? lowest.goodrx_price : +(lowest.goodrx_price * 3).toFixed(2)),
+    packQuantity: grPack,
     brandGeneric: 'Generic',
     note: `GoodRx coupon price. Lowest: $${lowest.goodrx_price} at ${lowest.name} (${qty}-count). Show the coupon at the pharmacy counter.`,
     dataFreshness: entry.scrapedAt ? `Cached ${new Date(entry.scrapedAt).toLocaleDateString()}` : 'Cached',

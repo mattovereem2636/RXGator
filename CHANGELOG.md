@@ -4,6 +4,26 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.4] — 2026-10-29 (Brand Lookup and Pack Sizes)
+
+### Fixed
+- A search for Myfembree now shows its SingleCare price. The search resolved Myfembree to relugolix, and the relugolix brand alias is Orgovyx, a different product. The price lookup now tries the name the user typed first, and it skips the alias when the typed name belongs to a different drug.
+- A price for a pack that is not a 30-day or 90-day supply now says "for N units" ("por N unidades" in Spanish), for example Vyleesi (4 pens) and Myfembree (28 tablets). These prices no longer show a made-up 90-day price.
+- The SingleCare note no longer says "30-count" when the cache has no package size. It says "package size not listed".
+- The "30-day" and "90-day" labels on price cards are now in Spanish on the Spanish page.
+
+### Changed
+- `/api/health/report` leaves searches from the server, from loopback, and from the Alibaba Cloud crawler out of the zero-result rate. The report lists how many it left out (`excludedFromRates`). The address lists are in `health-report-config.js`.
+- `/app` loads `/data/drug-names.json?v=1.5.4`, so browsers fetch the new dictionary after a release.
+
+### Added
+- `health-report-config.js` and `patch-1-5-4-code.js` (the code change, kept for the audit trail).
+
+### Notes
+- Autocomplete on `/app` was broken from 1.4.9 to 2026-10-14: `/data/drug-names.json` returned 404. Commit 4a92c7b fixed it with a symlink in `public/data/`. It shipped between releases and is recorded here.
+
+---
+
 ## [1.5.3] — 2026-10-29 (Search Hygiene)
 
 ### Fixed

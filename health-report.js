@@ -7,6 +7,8 @@ const path = require('path');
 const https = require('https');
 const http = require('http');
 const BASE_DIR = path.resolve(__dirname);
+// 1.5.4: server, loopback and crawler searches are counted apart from the user rates.
+const { classifyIp, IP_COLUMN_NAMES } = require('./health-report-config');
 
 const CACHE_FILES = [
   { name: 'goodrx_cache', path: 'goodrx_cache.json', maxAgeDays: 45 },
@@ -63,6 +65,10 @@ function analyzeSearchLog() {
     const drugIdx = header.findIndex(h => ['drug','query','drug_name','search_term','drugname'].includes(h));
     const dateIdx = header.findIndex(h => ['date','timestamp','time','searched_at'].includes(h));
     const resultsIdx = header.findIndex(h => ['results','result_count','resultcount','sources_hit','sourceshit'].includes(h));
+    // logSearch() writes the IP in column 2 (index 1) after the timestamp.
+    let ipIdx = header.findIndex(h => IP_COLUMN_NAMES.includes(h));
+    if (ipIdx < 0 && dateIdx === 0 && header.length >= 12) ipIdx = 1;
+    const excluded = { server: 0, loopback: 0, crawler: 0 };
     const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
     let totalSearches = 0, zeroResults = 0;
     const drugCounts = {}, failedTerms = {};
@@ -73,6 +79,8 @@ function analyzeSearchLog() {
         const rowDate = new Date(row[dateIdx]);
         if (!isNaN(rowDate.getTime()) && rowDate.getTime() < sevenDaysAgo) continue;
       }
+      const kind = ipIdx >= 0 ? classifyIp(row[ipIdx]) : null;
+      if (kind) { excluded[kind]++; continue; }
       totalSearches++;
       const drug = (row[drugIdx] || '').trim().toLowerCase();
       const resultCount = resultsIdx >= 0 ? parseInt(row[resultsIdx], 10) : NaN;
@@ -88,7 +96,8 @@ function analyzeSearchLog() {
     const topSearched = Object.entries(drugCounts).sort((a,b) => b[1]-a[1]).slice(0,10).map(([drug,count]) => ({drug,count}));
     const topFailed = Object.entries(failedTerms).sort((a,b) => b[1]-a[1]).slice(0,10).map(([term,count]) => ({term,count}));
     return { status: 'OK', period: '7_days', totalSearches, zeroResults,
-      zeroResultRate: zeroResultRate + '%', zeroResultRateOk: zeroResultRate < 5, topSearched, topFailed };
+      zeroResultRate: zeroResultRate + '%', zeroResultRateOk: zeroResultRate < 5, topSearched, topFailed,
+      excludedFromRates: excluded, ipFilter: ipIdx >= 0 ? 'on' : 'off (no IP column found)' };
   } catch (err) { return { status: 'ERROR', error: err.message }; }
 }
 

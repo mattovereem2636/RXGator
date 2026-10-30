@@ -1586,6 +1586,7 @@ const T = {
   quantity: { en: 'Quantity', es: 'Cantidad' },
   thirtyDay: { en: '30-day', es: '30 días' },
   ninetyDay: { en: '90-day', es: '90 días' },
+  forUnits: { en: 'for {n} units', es: 'por {n} unidades' },
   zipCode: { en: 'Zip Code', es: 'Código Postal' },
   zipPlaceholder: { en: 'e.g. 60025', es: 'ej. 60025' },
   searchPrices: { en: 'Search Prices', es: 'Buscar Precios' },
@@ -2115,7 +2116,7 @@ const AC_MAX = isMobile ? 5 : 8;
 // Load drug dictionary asynchronously
 (async function loadDrugDictionary() {
   try {
-    const res = await fetch('/data/drug-names.json');
+    const res = await fetch('/data/drug-names.json?v=1.5.4'); // 1.5.4: new URL per release so browsers drop the cached copy
     drugDictionary = await res.json();
     // Build search keys: generic, all brands joined, all aliases joined, misspellings
     fuseInstance = new Fuse(drugDictionary, {
@@ -2595,8 +2596,10 @@ function renderResults(data) {
     prices.forEach((p, i) => {
       const isBest = i === 0;
       const autoExpand = i === 0; // Auto-expand first result's instructions
-      const displayPrice = data.query.quantity == 90 ? p.priceFor90 : p.priceFor30;
-      const displayLabel = data.query.quantity == 90 ? '90-day' : '30-day';
+      // 1.5.4: a pack that is not a 30- or 90-day supply shows its own size and one price.
+      const isPack = !!p.packQuantity;
+      const displayPrice = isPack ? p.priceFor30 : (data.query.quantity == 90 ? p.priceFor90 : p.priceFor30);
+      const displayLabel = isPack ? t('forUnits').replace('{n}', p.packQuantity) : t(data.query.quantity == 90 ? 'ninetyDay' : 'thirtyDay');
 
       html += `<div class="price-card${isBest ? ' best' : ''}">
         <div>
@@ -3174,7 +3177,7 @@ async function rxgCheckInteractions() {
         allHtml += '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:0.75rem;">';
         allHtml += '<h3 style="font-size:1.1rem; color:var(--navy); margin:0;">' + gName + '</h3>';
         if (lowest) {
-          allHtml += '<div style="font-size:1.3rem; font-weight:800; color:var(--green-dark,#145A32);">$' + (lowest.priceFor30 || 0).toFixed(2) + '<span style="font-size:0.75rem; font-weight:400; color:var(--gray-500);"> /30-day</span></div>';
+          allHtml += '<div style="font-size:1.3rem; font-weight:800; color:var(--green-dark,#145A32);">$' + (lowest.priceFor30 || 0).toFixed(2) + '<span style="font-size:0.75rem; font-weight:400; color:var(--gray-500);">' + (lowest.packQuantity ? ' ' + t('forUnits').replace('{n}', lowest.packQuantity) : ' /30-day') + '</span></div>';
         }
         allHtml += '</div>';
 
@@ -3184,7 +3187,7 @@ async function rxgCheckInteractions() {
           // Show top 3 prices
           const topPrices = prices.slice(0, 3);
           topPrices.forEach(function(p, i) {
-            const dp = qty == 90 ? p.priceFor90 : p.priceFor30;
+            const dp = (qty == 90 && !p.packQuantity) ? p.priceFor90 : p.priceFor30;
             allHtml += '<div style="display:flex; justify-content:space-between; align-items:center; padding:0.4rem 0; border-top:1px solid #F4F6F7;">';
             allHtml += '<span style="font-size:0.88rem; color:var(--gray-700);">' + (i === 0 ? '🏆 ' : '') + p.source + '</span>';
             allHtml += '<span style="font-weight:700; color:' + (i === 0 ? 'var(--green-dark,#145A32)' : 'var(--gray-700)') + ';">$' + (dp != null ? dp.toFixed(2) : '—') + '</span>';

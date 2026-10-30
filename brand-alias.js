@@ -23,14 +23,21 @@ const path = require('path');
 const NAMES_PATH = path.join(__dirname, 'data', 'drug-names.json');
 
 let aliasIndex = null;
+let nameIndex = {};   // 1.5.4: any dictionary name (generic, brand, alias) -> its generic
 
 /** Build the generic -> brand index from data/drug-names.json. */
 function buildIndex() {
   aliasIndex = {};
+  nameIndex = {};
   try {
     const entries = JSON.parse(fs.readFileSync(NAMES_PATH, 'utf8'));
     for (const entry of entries) {
       if (!entry || typeof entry !== 'object') continue;
+      const g = String(entry.generic || '').toLowerCase().trim();
+      for (const raw of [entry.generic].concat(entry.brands || [], entry.aliases || [])) {
+        const n = String(raw || '').toLowerCase().trim();
+        if (n && g) nameIndex[n] = nameIndex[n] || g;
+      }
       if (entry.hasGeneric !== false) continue;
       if (!Array.isArray(entry.brands) || entry.brands.length !== 1) continue;
       const generic = String(entry.generic || '').toLowerCase().trim();
@@ -65,4 +72,27 @@ function resolveCacheKey(name, cache) {
   return alias && cache[alias] ? alias : key;
 }
 
-module.exports = { brandAliasFor, resolveCacheKey };
+/**
+ * 1.5.4: pick the cache key, trying the name the user typed first.
+ * WHY: "Myfembree" resolves to the generic relugolix, and the relugolix alias is Orgovyx, a different
+ * product. The typed name finds the right entry. The alias is skipped when the typed name is a
+ * dictionary name of a different drug, so one brand can never show another brand's price.
+ * @param {string} resolvedName - The resolved (usually generic) name.
+ * @param {string} typedName - The name the user typed, after spelling correction.
+ * @param {object} cache - A cache object keyed by lowercase drug name.
+ * @returns {string} The key to read (may not exist in the cache).
+ */
+function resolveTypedCacheKey(resolvedName, typedName, cache) {
+  if (!aliasIndex) buildIndex();
+  const typed = String(typedName || '').toLowerCase().trim();
+  if (typed && cache[typed]) return typed;
+  const key = String(resolvedName || '').toLowerCase().trim();
+  if (cache[key]) return key;
+  const alias = brandAliasFor(key);
+  if (!alias || !cache[alias]) return key;
+  const typedGeneric = nameIndex[typed];
+  if (typed && typed !== alias && typedGeneric && typedGeneric !== key) return key;
+  return alias;
+}
+
+module.exports = { brandAliasFor, resolveCacheKey, resolveTypedCacheKey };

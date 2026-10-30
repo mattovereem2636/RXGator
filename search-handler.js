@@ -241,26 +241,29 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
       });
     }
 
-    const singleCareResults = querySingleCare(pricingSearchName);
+    // 1.5.4: pass the typed name too, so a brand finds its own cache entry first (Myfembree).
+    const singleCareResults = querySingleCare(pricingSearchName, drugName);
     for (const sc of singleCareResults) {
       allPrices.push({
         source: sc.source, sourceUrl: sc.sourceUrl, drugName: sc.drugName,
         ndc: sc.ndc, unitPrice: sc.unitPrice,
-        priceForQuantity: qty <= 30 ? sc.priceFor30 : sc.priceFor90,
+        priceForQuantity: (sc.packQuantity || qty <= 30) ? sc.priceFor30 : sc.priceFor90,
         priceFor30: sc.priceFor30, priceFor90: sc.priceFor90,
+        packQuantity: sc.packQuantity || null,
         brandGeneric: sc.brandGeneric, note: sc.note,
         dataFreshness: sc.dataFreshness, pharmacies: sc.pharmacies,
         priceHistory: sc.priceHistory,
       });
     }
 
-    const goodRxResults = queryGoodRx(pricingSearchName);
+    const goodRxResults = queryGoodRx(pricingSearchName, drugName);
     for (const gr of goodRxResults) {
       allPrices.push({
         source: gr.source, sourceUrl: gr.sourceUrl, drugName: gr.drugName,
         dosage: gr.dosage, form: gr.form, unitPrice: gr.unitPrice,
-        priceForQuantity: qty <= 30 ? gr.priceFor30 : gr.priceFor90,
+        priceForQuantity: (gr.packQuantity || qty <= 30) ? gr.priceFor30 : gr.priceFor90,
         priceFor30: gr.priceFor30, priceFor90: gr.priceFor90,
+        packQuantity: gr.packQuantity || null,
         brandGeneric: gr.brandGeneric, note: gr.note,
         dataFreshness: gr.dataFreshness, pharmacies: gr.pharmacies,
       });
