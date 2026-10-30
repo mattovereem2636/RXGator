@@ -2,7 +2,7 @@
   "source": "Blink Health",
   "sourceUrl": "https://www.blinkhealth.com",
   "description": "Blink Health discounted prescription prices with home delivery and pharmacy pickup",
-  "generatedAt": "2026-10-30T01:18:14.642Z",
+  "generatedAt": "2026-10-30T01:20:28.803Z",
   "drugCount": 204,
   "priceCount": 204,
   "drugs": {
@@ -23,7 +23,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/oseltamivir",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "penicillin-v-potassium": {
       "name": "penicillin V potassium",
@@ -42,7 +42,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/penicillin-v-potassium",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "propranolol": {
       "name": "propranolol",
@@ -61,7 +61,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/propranolol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "haloperidol": {
       "name": "haloperidol",
@@ -80,7 +80,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/haloperidol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "atenolol": {
       "name": "atenolol",
@@ -99,7 +99,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/atenolol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "clozapine": {
       "name": "clozapine",
@@ -118,7 +118,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/clozapine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "metformin": {
       "name": "metformin",
@@ -137,7 +137,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/metformin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "lisinopril": {
       "name": "lisinopril",
@@ -156,7 +156,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/lisinopril",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "budesonide": {
       "name": "budesonide",
@@ -175,7 +175,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/budesonide",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "oxcarbazepine": {
       "name": "oxcarbazepine",
@@ -194,7 +194,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/oxcarbazepine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "theophylline": {
       "name": "theophylline",
@@ -213,7 +213,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/theophylline",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "levetiracetam": {
       "name": "levetiracetam",
@@ -232,7 +232,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/levetiracetam",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "hydralazine": {
       "name": "hydralazine",
@@ -251,7 +251,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/hydralazine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "losartan": {
       "name": "losartan",
@@ -270,7 +270,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/losartan",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "colchicine": {
       "name": "colchicine",
@@ -289,7 +289,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/colchicine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "amlodipine": {
       "name": "amlodipine",
@@ -308,7 +308,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/amlodipine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "allopurinol": {
       "name": "allopurinol",
@@ -327,7 +327,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/allopurinol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "isosorbide-mononitrate": {
       "name": "isosorbide mononitrate",
@@ -346,7 +346,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/isosorbide-mononitrate",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "pregabalin": {
       "name": "pregabalin",
@@ -365,7 +365,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/pregabalin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "carbamazepine": {
       "name": "carbamazepine",
@@ -384,7 +384,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/carbamazepine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "estradiol": {
       "name": "estradiol",
@@ -403,7 +403,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/estradiol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "digoxin": {
       "name": "digoxin",
@@ -422,7 +422,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/digoxin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "atorvastatin": {
       "name": "atorvastatin",
@@ -441,7 +441,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/atorvastatin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "lansoprazole": {
       "name": "lansoprazole",
@@ -460,7 +460,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/lansoprazole",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "phenytoin": {
       "name": "phenytoin",
@@ -479,7 +479,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/phenytoin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "progesterone": {
       "name": "progesterone",
@@ -498,7 +498,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/progesterone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "amiodarone": {
       "name": "amiodarone",
@@ -517,7 +517,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/amiodarone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "misoprostol": {
       "name": "misoprostol",
@@ -536,7 +536,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/misoprostol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "valproic-acid": {
       "name": "valproic acid",
@@ -555,7 +555,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/valproic-acid",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "medroxyprogesterone": {
       "name": "medroxyprogesterone",
@@ -574,7 +574,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/medroxyprogesterone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "doxazosin": {
       "name": "doxazosin",
@@ -593,7 +593,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/doxazosin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "carvedilol": {
       "name": "carvedilol",
@@ -612,7 +612,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/carvedilol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "divalproex": {
       "name": "divalproex",
@@ -631,7 +631,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/divalproex",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "lactulose": {
       "name": "lactulose",
@@ -650,7 +650,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/lactulose",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "ezetimibe": {
       "name": "ezetimibe",
@@ -669,7 +669,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ezetimibe",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "furosemide": {
       "name": "furosemide",
@@ -688,7 +688,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/furosemide",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "testosterone": {
       "name": "testosterone",
@@ -707,7 +707,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/testosterone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "hydrochlorothiazide": {
       "name": "hydrochlorothiazide",
@@ -726,7 +726,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/hydrochlorothiazide",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "loperamide": {
       "name": "loperamide",
@@ -745,7 +745,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/loperamide",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "spironolactone": {
       "name": "spironolactone",
@@ -764,7 +764,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/spironolactone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "eszopiclone": {
       "name": "eszopiclone",
@@ -783,7 +783,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/eszopiclone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "gemfibrozil": {
       "name": "gemfibrozil",
@@ -802,7 +802,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/gemfibrozil",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "warfarin": {
       "name": "warfarin",
@@ -821,7 +821,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/warfarin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "sumatriptan": {
       "name": "sumatriptan",
@@ -840,7 +840,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/sumatriptan",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "tolterodine": {
       "name": "tolterodine",
@@ -859,7 +859,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/tolterodine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "mesalamine": {
       "name": "mesalamine",
@@ -878,7 +878,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/mesalamine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "glyburide": {
       "name": "glyburide",
@@ -897,7 +897,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/glyburide",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "solifenacin": {
       "name": "solifenacin",
@@ -916,7 +916,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/solifenacin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "celecoxib": {
       "name": "celecoxib",
@@ -935,7 +935,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/celecoxib",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "rizatriptan": {
       "name": "rizatriptan",
@@ -954,7 +954,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/rizatriptan",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "clopidogrel": {
       "name": "clopidogrel",
@@ -973,7 +973,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/clopidogrel",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "acarbose": {
       "name": "acarbose",
@@ -992,7 +992,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/acarbose",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "dutasteride": {
       "name": "dutasteride",
@@ -1011,7 +1011,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/dutasteride",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "pravastatin": {
       "name": "pravastatin",
@@ -1030,7 +1030,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/pravastatin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "donepezil": {
       "name": "donepezil",
@@ -1049,7 +1049,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/donepezil",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "indomethacin": {
       "name": "indomethacin",
@@ -1068,7 +1068,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/indomethacin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "tretinoin": {
       "name": "tretinoin",
@@ -1087,7 +1087,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/tretinoin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "ketorolac": {
       "name": "ketorolac",
@@ -1106,7 +1106,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ketorolac",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "memantine": {
       "name": "memantine",
@@ -1125,7 +1125,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/memantine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "simvastatin": {
       "name": "simvastatin",
@@ -1144,7 +1144,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/simvastatin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "rosuvastatin": {
       "name": "rosuvastatin",
@@ -1163,7 +1163,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/rosuvastatin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "atomoxetine": {
       "name": "atomoxetine",
@@ -1182,7 +1182,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/atomoxetine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "baclofen": {
       "name": "baclofen",
@@ -1201,7 +1201,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/baclofen",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "clotrimazole": {
       "name": "clotrimazole",
@@ -1220,7 +1220,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/clotrimazole",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "tizanidine": {
       "name": "tizanidine",
@@ -1239,7 +1239,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/tizanidine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "methocarbamol": {
       "name": "methocarbamol",
@@ -1258,7 +1258,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/methocarbamol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "carisoprodol": {
       "name": "carisoprodol",
@@ -1277,7 +1277,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/carisoprodol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "latanoprost": {
       "name": "latanoprost",
@@ -1296,7 +1296,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/latanoprost",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "hydrocortisone": {
       "name": "hydrocortisone",
@@ -1315,7 +1315,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/hydrocortisone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "fluvoxamine": {
       "name": "fluvoxamine",
@@ -1334,7 +1334,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/fluvoxamine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "ranolazine": {
       "name": "ranolazine",
@@ -1353,7 +1353,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ranolazine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "levofloxacin": {
       "name": "levofloxacin",
@@ -1372,7 +1372,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/levofloxacin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "brimonidine": {
       "name": "brimonidine",
@@ -1391,7 +1391,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/brimonidine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "nitrofurantoin": {
       "name": "nitrofurantoin",
@@ -1410,7 +1410,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/nitrofurantoin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "meloxicam": {
       "name": "meloxicam",
@@ -1429,7 +1429,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/meloxicam",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "isoniazid": {
       "name": "isoniazid",
@@ -1448,7 +1448,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/isoniazid",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "guanfacine": {
       "name": "guanfacine",
@@ -1467,7 +1467,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/guanfacine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "docusate-sodium": {
       "name": "docusate sodium",
@@ -1486,7 +1486,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/docusate-sodium",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "ethambutol": {
       "name": "ethambutol",
@@ -1505,7 +1505,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ethambutol",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "pyrazinamide": {
       "name": "pyrazinamide",
@@ -1524,7 +1524,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/pyrazinamide",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "doxepin": {
       "name": "doxepin",
@@ -1543,7 +1543,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/doxepin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "aripiprazole": {
       "name": "aripiprazole",
@@ -1562,7 +1562,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/aripiprazole",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "quetiapine": {
       "name": "quetiapine",
@@ -1581,7 +1581,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/quetiapine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "montelukast": {
       "name": "montelukast",
@@ -1600,7 +1600,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/montelukast",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "naproxen": {
       "name": "naproxen",
@@ -1619,7 +1619,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/naproxen",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "ibuprofen": {
       "name": "ibuprofen",
@@ -1638,7 +1638,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ibuprofen",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "mometasone": {
       "name": "mometasone",
@@ -1657,7 +1657,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/mometasone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "paliperidone": {
       "name": "paliperidone",
@@ -1676,7 +1676,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/paliperidone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "cetirizine": {
       "name": "cetirizine",
@@ -1695,7 +1695,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/cetirizine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "loratadine": {
       "name": "loratadine",
@@ -1714,7 +1714,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/loratadine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "buspirone": {
       "name": "buspirone",
@@ -1733,7 +1733,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/buspirone",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "fexofenadine": {
       "name": "fexofenadine",
@@ -1752,7 +1752,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/fexofenadine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "desloratadine": {
       "name": "desloratadine",
@@ -1771,7 +1771,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/desloratadine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "pantoprazole": {
       "name": "pantoprazole",
@@ -1790,7 +1790,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/pantoprazole",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "famotidine": {
       "name": "famotidine",
@@ -1809,7 +1809,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/famotidine",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "amoxicillin": {
       "name": "amoxicillin",
@@ -1828,7 +1828,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/amoxicillin",
-      "scrapedAt": "2026-10-30T01:18:14.642Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "capsaicin": {
       "name": "capsaicin",
@@ -1847,7 +1847,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/capsaicin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "azithromycin": {
       "name": "azithromycin",
@@ -1866,7 +1866,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/azithromycin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "levocetirizine": {
       "name": "levocetirizine",
@@ -1885,7 +1885,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/levocetirizine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "benzonatate": {
       "name": "benzonatate",
@@ -1904,7 +1904,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/benzonatate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "guaifenesin": {
       "name": "guaifenesin",
@@ -1923,7 +1923,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/guaifenesin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "sucralfate": {
       "name": "sucralfate",
@@ -1942,7 +1942,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/sucralfate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "piroxicam": {
       "name": "piroxicam",
@@ -1961,7 +1961,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/piroxicam",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "etodolac": {
       "name": "etodolac",
@@ -1980,7 +1980,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/etodolac",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "ciprofloxacin": {
       "name": "ciprofloxacin",
@@ -1999,7 +1999,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ciprofloxacin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.803Z"
     },
     "dicyclomine": {
       "name": "dicyclomine",
@@ -2018,7 +2018,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/dicyclomine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "cromolyn": {
       "name": "cromolyn",
@@ -2037,7 +2037,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/cromolyn",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "cephalexin": {
       "name": "cephalexin",
@@ -2056,7 +2056,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/cephalexin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "sulindac": {
       "name": "sulindac",
@@ -2075,7 +2075,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/sulindac",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "moxifloxacin": {
       "name": "moxifloxacin",
@@ -2094,7 +2094,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/moxifloxacin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "ursodiol": {
       "name": "ursodiol",
@@ -2113,7 +2113,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ursodiol",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "fluoxetine": {
       "name": "fluoxetine",
@@ -2132,7 +2132,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/fluoxetine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "glycopyrrolate": {
       "name": "glycopyrrolate",
@@ -2151,7 +2151,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/glycopyrrolate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "citalopram": {
       "name": "citalopram",
@@ -2170,7 +2170,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/citalopram",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "minocycline": {
       "name": "minocycline",
@@ -2189,7 +2189,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/minocycline",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "tetracycline": {
       "name": "tetracycline",
@@ -2208,7 +2208,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/tetracycline",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "venlafaxine": {
       "name": "venlafaxine",
@@ -2227,7 +2227,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/venlafaxine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "colesevelam": {
       "name": "colesevelam",
@@ -2246,7 +2246,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/colesevelam",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "duloxetine": {
       "name": "duloxetine",
@@ -2265,7 +2265,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/duloxetine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "clarithromycin": {
       "name": "clarithromycin",
@@ -2284,7 +2284,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/clarithromycin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "omeprazole": {
       "name": "omeprazole",
@@ -2303,7 +2303,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/omeprazole",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "alvimopan": {
       "name": "alvimopan",
@@ -2322,7 +2322,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/alvimopan",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "erythromycin": {
       "name": "erythromycin",
@@ -2341,7 +2341,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/erythromycin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "linezolid": {
       "name": "linezolid",
@@ -2360,7 +2360,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/linezolid",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "trazodone": {
       "name": "trazodone",
@@ -2379,7 +2379,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/trazodone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "mirtazapine": {
       "name": "mirtazapine",
@@ -2398,7 +2398,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/mirtazapine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "rifampin": {
       "name": "rifampin",
@@ -2417,7 +2417,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/rifampin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "amitriptyline": {
       "name": "amitriptyline",
@@ -2436,7 +2436,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/amitriptyline",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "nortriptyline": {
       "name": "nortriptyline",
@@ -2455,7 +2455,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/nortriptyline",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "glipizide": {
       "name": "glipizide",
@@ -2474,7 +2474,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/glipizide",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "glimepiride": {
       "name": "glimepiride",
@@ -2493,7 +2493,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/glimepiride",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "pioglitazone": {
       "name": "pioglitazone",
@@ -2512,7 +2512,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/pioglitazone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "repaglinide": {
       "name": "repaglinide",
@@ -2531,7 +2531,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/repaglinide",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "nateglinide": {
       "name": "nateglinide",
@@ -2550,7 +2550,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/nateglinide",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "bromocriptine": {
       "name": "bromocriptine",
@@ -2569,7 +2569,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/bromocriptine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "alendronate": {
       "name": "alendronate",
@@ -2588,7 +2588,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/alendronate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "levothyroxine": {
       "name": "levothyroxine",
@@ -2607,7 +2607,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/levothyroxine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "risedronate": {
       "name": "risedronate",
@@ -2626,7 +2626,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/risedronate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "ibandronate": {
       "name": "ibandronate",
@@ -2645,7 +2645,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ibandronate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "methimazole": {
       "name": "methimazole",
@@ -2664,7 +2664,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/methimazole",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "raloxifene": {
       "name": "raloxifene",
@@ -2683,7 +2683,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/raloxifene",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "desmopressin": {
       "name": "desmopressin",
@@ -2702,7 +2702,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/desmopressin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "cabergoline": {
       "name": "cabergoline",
@@ -2721,7 +2721,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/cabergoline",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "prednisone": {
       "name": "prednisone",
@@ -2740,7 +2740,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/prednisone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "prednisolone": {
       "name": "prednisolone",
@@ -2759,7 +2759,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/prednisolone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "methylprednisolone": {
       "name": "methylprednisolone",
@@ -2778,7 +2778,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/methylprednisolone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "tamsulosin": {
       "name": "tamsulosin",
@@ -2797,7 +2797,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/tamsulosin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "finasteride": {
       "name": "finasteride",
@@ -2816,7 +2816,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/finasteride",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "dexamethasone": {
       "name": "dexamethasone",
@@ -2835,7 +2835,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/dexamethasone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "fludrocortisone": {
       "name": "fludrocortisone",
@@ -2854,7 +2854,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/fludrocortisone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "sildenafil": {
       "name": "sildenafil",
@@ -2873,7 +2873,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/sildenafil",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "tadalafil": {
       "name": "tadalafil",
@@ -2892,7 +2892,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/tadalafil",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "alfuzosin": {
       "name": "alfuzosin",
@@ -2911,7 +2911,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/alfuzosin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "terazosin": {
       "name": "terazosin",
@@ -2930,7 +2930,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/terazosin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "lanthanum": {
       "name": "lanthanum",
@@ -2949,7 +2949,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/lanthanum",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "darifenacin": {
       "name": "darifenacin",
@@ -2968,7 +2968,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/darifenacin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "ropinirole": {
       "name": "ropinirole",
@@ -2987,7 +2987,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ropinirole",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "pramipexole": {
       "name": "pramipexole",
@@ -3006,7 +3006,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/pramipexole",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "carbidopa-levodopa": {
       "name": "carbidopa-levodopa",
@@ -3025,7 +3025,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/carbidopa-levodopa",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "trospium": {
       "name": "trospium",
@@ -3044,7 +3044,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/trospium",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "entacapone": {
       "name": "entacapone",
@@ -3063,7 +3063,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/entacapone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "phenazopyridine": {
       "name": "phenazopyridine",
@@ -3082,7 +3082,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/phenazopyridine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "potassium-citrate": {
       "name": "potassium citrate",
@@ -3101,7 +3101,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/potassium-citrate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "benztropine": {
       "name": "benztropine",
@@ -3120,7 +3120,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/benztropine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "sodium-bicarbonate": {
       "name": "sodium bicarbonate",
@@ -3139,7 +3139,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/sodium-bicarbonate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "trihexyphenidyl": {
       "name": "trihexyphenidyl",
@@ -3158,7 +3158,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/trihexyphenidyl",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "aliskiren": {
       "name": "aliskiren",
@@ -3177,7 +3177,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/aliskiren",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "riluzole": {
       "name": "riluzole",
@@ -3196,7 +3196,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/riluzole",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "eplerenone": {
       "name": "eplerenone",
@@ -3215,7 +3215,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/eplerenone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "tolvaptan": {
       "name": "tolvaptan",
@@ -3234,7 +3234,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/tolvaptan",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "tetrabenazine": {
       "name": "tetrabenazine",
@@ -3253,7 +3253,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/tetrabenazine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "primidone": {
       "name": "primidone",
@@ -3272,7 +3272,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/primidone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "ethosuximide": {
       "name": "ethosuximide",
@@ -3291,7 +3291,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ethosuximide",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "olmesartan": {
       "name": "olmesartan",
@@ -3310,7 +3310,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/olmesartan",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "losartan-hydrochlorothiazide": {
       "name": "losartan-hydrochlorothiazide",
@@ -3329,7 +3329,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/losartan-hydrochlorothiazide",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "trimethoprim": {
       "name": "trimethoprim",
@@ -3348,7 +3348,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/trimethoprim",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "benazepril": {
       "name": "benazepril",
@@ -3367,7 +3367,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/benazepril",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "irbesartan": {
       "name": "irbesartan",
@@ -3386,7 +3386,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/irbesartan",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "ramipril": {
       "name": "ramipril",
@@ -3405,7 +3405,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ramipril",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "fluconazole": {
       "name": "fluconazole",
@@ -3424,7 +3424,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/fluconazole",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "olanzapine": {
       "name": "olanzapine",
@@ -3443,7 +3443,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/olanzapine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "valacyclovir": {
       "name": "valacyclovir",
@@ -3462,7 +3462,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/valacyclovir",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "acyclovir": {
       "name": "acyclovir",
@@ -3481,7 +3481,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/acyclovir",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "risperidone": {
       "name": "risperidone",
@@ -3500,7 +3500,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/risperidone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "nifedipine": {
       "name": "nifedipine",
@@ -3519,7 +3519,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/nifedipine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "hydroxychloroquine": {
       "name": "hydroxychloroquine",
@@ -3538,7 +3538,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/hydroxychloroquine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "naltrexone": {
       "name": "naltrexone",
@@ -3557,7 +3557,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/naltrexone",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "cyclobenzaprine": {
       "name": "cyclobenzaprine",
@@ -3576,7 +3576,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/cyclobenzaprine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "clonidine": {
       "name": "clonidine",
@@ -3595,7 +3595,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/clonidine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "ondansetron": {
       "name": "ondansetron",
@@ -3614,7 +3614,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/ondansetron",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "clindamycin": {
       "name": "Clindamycin (Generic)",
@@ -3633,7 +3633,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/clindamycin",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "salsalate": {
       "name": "salsalate",
@@ -3652,7 +3652,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/salsalate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "zafirlukast": {
       "name": "zafirlukast",
@@ -3671,7 +3671,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/zafirlukast",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "diflunisal": {
       "name": "diflunisal",
@@ -3690,7 +3690,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/diflunisal",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "metronidazole": {
       "name": "metronidazole",
@@ -3709,7 +3709,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/metronidazole",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "promethazine": {
       "name": "promethazine",
@@ -3728,7 +3728,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/promethazine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "sertraline": {
       "name": "sertraline",
@@ -3747,7 +3747,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/sertraline",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "clobazam": {
       "name": "clobazam",
@@ -3766,7 +3766,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/clobazam",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "felbamate": {
       "name": "felbamate",
@@ -3785,7 +3785,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/felbamate",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "rufinamide": {
       "name": "rufinamide",
@@ -3804,7 +3804,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/rufinamide",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "tiagabine": {
       "name": "tiagabine",
@@ -3823,7 +3823,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/tiagabine",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "lisinopril-hydrochlorothiazide": {
       "name": "lisinopril-hydrochlorothiazide",
@@ -3842,7 +3842,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/lisinopril-hydrochlorothiazide",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "valsartan": {
       "name": "valsartan",
@@ -3861,7 +3861,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/valsartan",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     },
     "dorzolamide": {
       "name": "dorzolamide",
@@ -3880,7 +3880,7 @@
         }
       ],
       "url": "https://www.blinkhealth.com/dorzolamide",
-      "scrapedAt": "2026-10-30T01:18:14.643Z"
+      "scrapedAt": "2026-10-30T01:20:28.804Z"
     }
   }
 }
