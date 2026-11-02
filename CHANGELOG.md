@@ -4,6 +4,19 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.6] — 2026-11-02 (HealthWarehouse Prices)
+
+### Fixed
+- HealthWarehouse results no longer show a per-tablet "as low as" figure as a 30-day price. Lisinopril 10mg showed $0.11 and ranked first; the real 30-count price is $9.30. Prices now come from the quantity prices on each product page.
+- HealthWarehouse 90-day prices now use the real 90-count price. Tablets and capsules with no usable quantity price are left out of results instead of guessed.
+- Bottles, tubes, vials and inhalers from HealthWarehouse now say "per package" ("por envase" in Spanish). Other packs say "for N units".
+
+### Changed
+- `scrape-healthwarehouse.js` (v3.1) reads quantity prices from each product page through the new `healthwarehouse-tiers.js`. It refuses to replace the cache if under 90% of products have them.
+- `/api/healthwarehouse-prices` now includes `priceTiers`.
+
+---
+
 ## [1.5.5] — 2026-10-29 (Source Count)
 
 ### Fixed

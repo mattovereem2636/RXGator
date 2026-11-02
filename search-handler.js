@@ -324,10 +324,12 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
     for (const hw of healthwarehouseResults) {
       allPrices.push({
         source: hw.source, sourceUrl: hw.sourceUrl, drugName: hw.drugName,
-        unitPrice: hw.price, priceForQuantity: hw.price,
+        unitPrice: hw.unitPrice,
+        priceForQuantity: (hw.packQuantity || qty <= 30) ? hw.priceFor30 : hw.priceFor90,
         priceFor30: hw.priceFor30, priceFor90: hw.priceFor90,
+        packQuantity: hw.packQuantity || null,
         brandGeneric: hw.rxRequired ? 'Generic' : 'OTC',
-        note: `HealthWarehouse: ${hw.price.toFixed(2)}. NABP-accredited online pharmacy, licensed in all 50 states.`,
+        note: 'HealthWarehouse quantity price from the product page. NABP-accredited online pharmacy, licensed in all 50 states. Shipping may be extra.',
         dataFreshness: hw.cachedDate ? `Cached (data date ${hw.cachedDate})` : 'Cached',
       });
     }

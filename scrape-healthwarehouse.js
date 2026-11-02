@@ -21,6 +21,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
+const { addPriceTiers, MIN_TIER_COVERAGE } = require('./healthwarehouse-tiers');
 
 const OUTPUT_FILE = path.join('/var/www/rxaggregator/data', 'healthwarehouse_cache.json');
 const DELAY_MS = 1500;
@@ -230,7 +231,7 @@ async function scrapeCategoryPage(page, category) {
 }
 
 async function main() {
-  console.log('HealthWarehouse Scraper v3.0');
+  console.log('HealthWarehouse Scraper v3.1');
   console.log('===========================\n');
 
   console.log('Launching browser...');
@@ -322,6 +323,11 @@ async function main() {
 
   console.log(`\n  Grand total: ${allProducts.size} unique products\n`);
 
+  // Phase 3: real quantity prices (the search card only shows an "as low as" per-unit figure)
+  console.log('--- Phase 3: Quantity prices from product pages ---');
+  const tierResult = await addPriceTiers(page, Array.from(allProducts.values()));
+  console.log(`  Quantity prices found for ${tierResult.withTiers} products (${(tierResult.coverage * 100).toFixed(1)}%)\n`);
+
   await browser.close();
 
   // Build cache JSON
@@ -333,6 +339,7 @@ async function main() {
       sku: p.sku,
       rxRequired: p.rxRequired,
       inStock: p.inStock,
+      priceTiers: p.priceTiers || null,
       source: p.source,
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
@@ -351,6 +358,12 @@ async function main() {
     products: drugList
   };
 
+  // A thin cache would hide most tablets and capsules on the live site, so keep it out of the deploy path.
+  if (tierResult.coverage < MIN_TIER_COVERAGE) {
+    fs.writeFileSync(OUTPUT_FILE + '.partial', JSON.stringify(cache, null, 2));
+    console.error(`ERROR: only ${(tierResult.coverage * 100).toFixed(1)}% of products have quantity prices. Saved ${OUTPUT_FILE}.partial, cache not replaced.`);
+    process.exit(1);
+  }
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(cache, null, 2));
   const sizeKB = (fs.statSync(OUTPUT_FILE).size / 1024).toFixed(1);
 

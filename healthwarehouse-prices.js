@@ -81,7 +81,8 @@ module.exports = function (app) {
     // Enrich results
     const enriched = results.map(d => ({
       productName: d.name,
-      price: d.price,
+      price: d.price, // "as low as" cost per unit at the largest quantity; priceTiers holds real prices
+      priceTiers: d.priceTiers || null,
       inStock: d.inStock,
       rxRequired: d.rxRequired,
       url: d.url,

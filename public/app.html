@@ -1587,6 +1587,7 @@ const T = {
   thirtyDay: { en: '30-day', es: '30 días' },
   ninetyDay: { en: '90-day', es: '90 días' },
   forUnits: { en: 'for {n} units', es: 'por {n} unidades' },
+  forPackage: { en: 'per package', es: 'por envase' },
   zipCode: { en: 'Zip Code', es: 'Código Postal' },
   zipPlaceholder: { en: 'e.g. 60025', es: 'ej. 60025' },
   searchPrices: { en: 'Search Prices', es: 'Buscar Precios' },
@@ -1743,6 +1744,9 @@ const T = {
   welcomeMsg: { en: '', es: 'Esta herramienta busca los precios más bajos para sus medicamentos recetados en 22 fuentes de datos. Escriba el nombre de su medicamento y presione "Buscar Precios". Los resultados le mostrarán dónde encontrar el mejor precio y cómo obtenerlo en la farmacia. Es gratis y no necesita cuenta.' },
   welcomeClose: { en: '', es: 'Entendido — Comenzar' },
 };
+
+// 1.5.6: a bottle, tube, vial or inhaler sells as one package, so "for 1 units" would read wrong.
+function packLabel(n) { return n === 1 ? t('forPackage') : t('forUnits').replace('{n}', n); }
 
 function t(key) {
   const entry = T[key];
@@ -2599,7 +2603,7 @@ function renderResults(data) {
       // 1.5.4: a pack that is not a 30- or 90-day supply shows its own size and one price.
       const isPack = !!p.packQuantity;
       const displayPrice = isPack ? p.priceFor30 : (data.query.quantity == 90 ? p.priceFor90 : p.priceFor30);
-      const displayLabel = isPack ? t('forUnits').replace('{n}', p.packQuantity) : t(data.query.quantity == 90 ? 'ninetyDay' : 'thirtyDay');
+      const displayLabel = isPack ? packLabel(p.packQuantity) : t(data.query.quantity == 90 ? 'ninetyDay' : 'thirtyDay');
 
       html += `<div class="price-card${isBest ? ' best' : ''}">
         <div>
@@ -3177,7 +3181,7 @@ async function rxgCheckInteractions() {
         allHtml += '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:0.75rem;">';
         allHtml += '<h3 style="font-size:1.1rem; color:var(--navy); margin:0;">' + gName + '</h3>';
         if (lowest) {
-          allHtml += '<div style="font-size:1.3rem; font-weight:800; color:var(--green-dark,#145A32);">$' + (lowest.priceFor30 || 0).toFixed(2) + '<span style="font-size:0.75rem; font-weight:400; color:var(--gray-500);">' + (lowest.packQuantity ? ' ' + t('forUnits').replace('{n}', lowest.packQuantity) : ' /30-day') + '</span></div>';
+          allHtml += '<div style="font-size:1.3rem; font-weight:800; color:var(--green-dark,#145A32);">$' + (lowest.priceFor30 || 0).toFixed(2) + '<span style="font-size:0.75rem; font-weight:400; color:var(--gray-500);">' + (lowest.packQuantity ? ' ' + packLabel(lowest.packQuantity) : ' /30-day') + '</span></div>';
         }
         allHtml += '</div>';
 
