@@ -104,8 +104,24 @@
 </header>
 <main id="main-content">
 
-<section class="version current" aria-labelledby="v1-5-6">
-  <h2 id="v1-5-6">1.5.6 — 2026-11-02 <span class="badge">Current</span></h2>
+<section class="version current" aria-labelledby="v1-5-7">
+  <h2 id="v1-5-7">1.5.7 — 2026-11-02 <span class="badge">Current</span></h2>
+  <p><em>GoodRx Price Guard</em></p>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>GoodRx prices that do not hold up no longer appear. Eliquis showed $1, and 152 cached pharmacy rows carried the same $2,862 retail price at 100% off. Simvastatin showed $1, while goodrx.com showed $9.00 for paying Companion members and a coupon price from $11.70.</li>
+    <li>GoodRx prices over 45 days old no longer appear.</li>
+  </ul>
+
+  <h3>Notes</h3>
+  <ul>
+    <li>All 30 cached GoodRx drugs fail these checks today, so GoodRx shows no prices until a clean refresh. The cache file is unchanged.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-5-6">
+  <h2 id="v1-5-6">1.5.6 — 2026-11-02</h2>
   <p><em>HealthWarehouse Prices</em></p>
 
   <h3>Fixed</h3>

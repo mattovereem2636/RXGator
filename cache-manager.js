@@ -138,6 +138,25 @@ function saveGoodRxCache() {
   }
 }
 
+/** An entry older than this has aged out, matching the health report's cache limit. */
+const GOODRX_MAX_AGE_DAYS = 45;
+/** Real coupons rarely reach this. The bad rows sit at 97-100% off, with one retail price for every drug. */
+const GOODRX_MAX_PLAUSIBLE_DISCOUNT = 95;
+const MS_PER_DAY = 86400000;
+
+/**
+ * Decides whether a GoodRx cache entry can be shown to shoppers.
+ * WHY (1.5.7): the cache held $1 prices that goodrx.com does not offer without a paid plan.
+ * @param {Object} entry - A goodrx_cache.json entry.
+ * @param {number} [now] - Current time in ms, for tests.
+ * @returns {boolean} true when the entry is recent and has no implausible discount.
+ */
+function isUsableGoodRxEntry(entry, now = Date.now()) {
+  const scraped = Date.parse(entry.scrapedAt);
+  if (Number.isNaN(scraped) || (now - scraped) / MS_PER_DAY > GOODRX_MAX_AGE_DAYS) return false;
+  return !entry.pharmacies.some(p => p.discount_percentage >= GOODRX_MAX_PLAUSIBLE_DISCOUNT);
+}
+
 /**
  * Query the GoodRx cache for coupon pricing on a drug.
  * Prefers in-store pharmacy prices over mail-order.
@@ -148,6 +167,7 @@ function queryGoodRx(drugName, typedName) {
   const key = resolveTypedCacheKey(drugName, typedName, goodRxCache);
   const entry = goodRxCache[key];
   if (!entry || !entry.pharmacies || entry.pharmacies.length === 0) return [];
+  if (!isUsableGoodRxEntry(entry)) return [];
 
   const results = [];
 

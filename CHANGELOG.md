@@ -4,6 +4,17 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.7] — 2026-11-02 (GoodRx Price Guard)
+
+### Fixed
+- GoodRx prices that do not hold up no longer appear. Eliquis showed $1, and 152 cached pharmacy rows carried the same $2,862 retail price at 100% off. Simvastatin showed $1, while goodrx.com showed $9.00 for paying Companion members and a coupon price from $11.70.
+- GoodRx prices over 45 days old no longer appear.
+
+### Notes
+- All 30 cached GoodRx drugs fail these checks today, so GoodRx shows no prices until a clean refresh. The cache file is unchanged.
+
+---
+
 ## [1.5.6] — 2026-11-02 (HealthWarehouse Prices)
 
 ### Fixed
