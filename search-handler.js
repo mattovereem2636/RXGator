@@ -247,9 +247,10 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
       allPrices.push({
         source: sc.source, sourceUrl: sc.sourceUrl, drugName: sc.drugName,
         ndc: sc.ndc, unitPrice: sc.unitPrice,
-        priceForQuantity: (sc.packQuantity || qty <= 30) ? sc.priceFor30 : sc.priceFor90,
+        priceForQuantity: (sc.packQuantity || sc.typicalFill || qty <= 30) ? sc.priceFor30 : sc.priceFor90,
         priceFor30: sc.priceFor30, priceFor90: sc.priceFor90,
         packQuantity: sc.packQuantity || null,
+        typicalFill: sc.typicalFill || false,
         brandGeneric: sc.brandGeneric, note: sc.note,
         dataFreshness: sc.dataFreshness, pharmacies: sc.pharmacies,
         priceHistory: sc.priceHistory,

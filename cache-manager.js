@@ -72,6 +72,8 @@ function querySingleCare(drugName, typedName) {
   if (!entry || !entry.lowestPrice) return [];
 
   const scPack = packSizeOf(entry.quantity);
+  // 1.5.8: no quantity means SingleCare's default fill, which is not always a 30-day supply.
+  const typicalFill = !entry.quantity;
   const results = [];
 
   results.push({
@@ -81,8 +83,9 @@ function querySingleCare(drugName, typedName) {
     ndc: entry.ndc || null,
     unitPrice: entry.quantity ? +(entry.lowestPrice / entry.quantity).toFixed(4) : null,
     priceFor30: entry.quantity === 90 ? +(entry.lowestPrice / 3).toFixed(2) : entry.lowestPrice,
-    priceFor90: scPack ? null : (entry.quantity === 90 ? entry.lowestPrice : +(entry.lowestPrice * 3).toFixed(2)),
+    priceFor90: (scPack || typicalFill) ? null : (entry.quantity === 90 ? entry.lowestPrice : +(entry.lowestPrice * 3).toFixed(2)),
     packQuantity: scPack,
+    typicalFill,
     brandGeneric: entry.isGeneric ? 'Generic' : (entry.drugType || 'Generic'),
     note: `SingleCare coupon price. Lowest: $${entry.lowestPrice} at ${entry.lowestPricePharmacy || 'participating pharmacy'} (${entry.quantity ? entry.quantity + '-count' : 'package size not listed'}). Prices vary by pharmacy and location.`,
     dataFreshness: entry.scrapedAt ? `Cached ${new Date(entry.scrapedAt).toLocaleDateString()}` : 'Cached',

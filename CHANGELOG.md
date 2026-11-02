@@ -4,6 +4,14 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.8] — 2026-11-02 (SingleCare Fill Labels)
+
+### Fixed
+- SingleCare prices with no listed quantity no longer say "30-day". They are the price of SingleCare's default fill, which is not always a 30-day supply (metformin is 60 tablets). They now say "usual fill" ("cantidad habitual" in Spanish).
+- Those prices no longer show a 90-day price made by multiplying by 3.
+
+---
+
 ## [1.5.7] — 2026-11-02 (GoodRx Price Guard)
 
 ### Fixed
