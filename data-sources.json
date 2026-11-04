@@ -187,7 +187,7 @@
       "module": null,
       "queryFunction": "queryGoodRx",
       "priceType": "consumer_actionable",
-      "notes": "Cache loaded at startup. Filters out mail-order pharmacies for main result."
+      "notes": "Hidden since 1.5.7: entries fail the guard in queryGoodRx. Not counted in the 21 sources."
     },
     "medicaidFUL": {
       "id": 10,

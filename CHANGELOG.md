@@ -4,6 +4,15 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.9] — 2026-11-02 (21 Sources)
+
+### Changed
+- The site now says 21 sources, not 22, in English and Spanish. GoodRx prices stopped appearing in 1.5.7. The About page, which still said 19, now also says 21.
+- GoodRx is out of the "we search" lists on the home, `/app`, FAQ, methodology and lost-insurance pages. The FAQ says RXGator does not show GoodRx prices at this time. General advice about discount cards stays.
+- `/api/health` no longer lists GoodRx, and `/api/health/report` no longer checks its cache.
+
+---
+
 ## [1.5.8] — 2026-11-02 (SingleCare Fill Labels)
 
 ### Fixed

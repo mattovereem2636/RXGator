@@ -1,6 +1,6 @@
 # RXGator
 
-> RXGator (https://rxgator.info) is a free prescription drug price comparison tool. One search checks 22 data sources: discount cards, pharmacy programs, and government benchmarks. The site is available in English and Spanish. It is not medical advice.
+> RXGator (https://rxgator.info) is a free prescription drug price comparison tool. One search checks 21 data sources: discount cards, pharmacy programs, and government benchmarks. The site is available in English and Spanish. It is not medical advice.
 
 Operated by Technology Assessment Project LLC, Glenview, Illinois. Built by Matt Overeem. Contact: info@rxgator.info. Last updated: 2026-10-29.
 

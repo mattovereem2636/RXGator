@@ -11,7 +11,6 @@ const BASE_DIR = path.resolve(__dirname);
 const { classifyIp, IP_COLUMN_NAMES } = require('./health-report-config');
 
 const CACHE_FILES = [
-  { name: 'goodrx_cache', path: 'goodrx_cache.json', maxAgeDays: 45 },
   { name: 'singlecare_cache', path: 'singlecare_cache.json', maxAgeDays: 45 },
   { name: 'rxsaver_cache', path: 'data/rxsaver_cache.json', maxAgeDays: 45 },
   { name: 'blink_cache', path: 'data/blink_cache.json', maxAgeDays: 45 },

@@ -109,7 +109,6 @@ app.listen(PORT, () => {
   console.log(`  ║   ✓ MedlinePlus (NLM - drug info)       ║`);
   console.log(`  ║   ✓ Medicare Part D (CMS - live API)    ║`);
   console.log(`  ║   ✓ SingleCare (Apify cache)            ║`);
-  console.log(`  ║   ✓ GoodRx (Apify cache)                ║`);
   console.log(`  ║   ✓ Amazon RxPass (built-in, 55 drugs)  ║`);
   console.log(`  ║   ✓ Walmart Rx Program (built-in)       ║`);
   console.log(`  ║   ✓ Costco Pharmacy (estimated)         ║`);

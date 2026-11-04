@@ -486,6 +486,6 @@ module.exports = function(app, { searchLimiter, LOG_FILE }) {
 
   // Health check
   app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2026 (pharmacy costs, 6327 drugs)', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'GoodRx (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)', 'FedRx (govt deals, 841 drugs)', 'HealthWarehouse (online, 930 drugs)', 'Inside Rx (cached)'] });
+    res.json({ status: 'ok', sources: ['Cost Plus Drugs API', 'NADAC 2026 (pharmacy costs, 6327 drugs)', 'Medicaid FUL', 'openFDA', 'RxNorm (NLM)', 'MedlinePlus (NLM)', 'Medicare Part D (CMS)', 'FDA Drug Shortages', 'SingleCare (cached)', 'Walmart Rx Program', 'Costco Pharmacy (est.)', 'Amazon RxPass', 'Rx Outreach (nonprofit)', 'VA FSS (govt benchmark)', 'IRA Negotiated (Medicare)', 'Texas WAC (mfr list price)', 'RxSaver (cached)', 'Blink Health (cached)', 'FedRx (govt deals, 841 drugs)', 'HealthWarehouse (online, 930 drugs)', 'Inside Rx (cached)'] });
   });
 };
