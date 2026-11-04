@@ -4,6 +4,35 @@ All notable changes to the RxGator application. This changelog follows [Keep a C
 
 ---
 
+## [1.5.11] — 2026-11-03 (Trending Health Articles, November 2026)
+
+### Added
+- Five trending health articles in English and Spanish (10 pages): Medicare open enrollment 2027 (`medicare-open-enrollment-2027-drug-plan-check`); ACA open enrollment and prescriptions (`aca-open-enrollment-2027-prescription-check`); unapproved retatrutide and legal GLP-1 prices (`retatrutide-online-risks-legal-glp1-prices`); flu antiviral costs (`flu-antiviral-cost-tamiflu-xofluza-2026`); the customs rule for Canadian drug imports (`canada-drug-imports-customs-rule-2027`). Spanish versions live under `/articles/es/`.
+
+### Fixed
+- Medicare Part D 2027 article (EN and ES): corrected the 2026 out-of-pocket cap to $2,100 and replaced the old premium estimates with CMS and KFF 2027 figures.
+- Canadian drug articles (EN and ES): added a dated note about the customs filing requirement that becomes mandatory January 20, 2027.
+
+---
+
+## [1.5.10] — 2026-11-03 (Health and Medicine Articles + Bilingual Carousel)
+
+### Added
+- Five health and medicine articles in English and Spanish (10 pages): flu, COVID, and RSV vaccine costs for 2026-27 (`flu-covid-rsv-vaccine-cost-2026`); amoxicillin and antibiotic costs (`amoxicillin-antibiotics-cost-without-insurance`); expired medicine and safe disposal (`expired-medications-safe-disposal`); how to check drug interactions when you use more than one pharmacy (`how-to-check-drug-interactions`); metoprolol costs (`metoprolol-cost-without-insurance`). Spanish versions live under `/articles/es/`.
+- New article pages include a skip-to-content link, header and main landmarks, and an x-default hreflang tag.
+
+### Fixed
+- The homepage article carousel read `articles.json`, which listed only 66 of the 123 live articles. 57 live articles (6 English, 51 Spanish) never appeared in rotation. They are now in `articles.json` with the 10 new pages (133 entries).
+- The carousel showed Spanish articles to English readers and English articles to Spanish readers. `article-widget.js` now filters by the EN/ES toggle, follows a toggle change without a reload, translates its heading, and escapes card text.
+- The /articles/ language filter counts now match the cards.
+
+### Data
+- RxSaver prices refreshed from the saved Apify Task (`data/rxsaver_cache.json`).
+- Blink Health prices refreshed from the saved Apify Task (`data/blink_cache.json`).
+- SingleCare: 189 cache keys merged from ParseForge run `gE33UW2FaAubhcwTR` (2026-10-22, 133 drugs) with `import-singlecare-apify.js`. Older entries kept.
+
+---
+
 ## [1.5.9] — 2026-11-02 (21 Sources)
 
 ### Changed

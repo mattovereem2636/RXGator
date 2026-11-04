@@ -104,8 +104,49 @@
 </header>
 <main id="main-content">
 
-<section class="version current" aria-labelledby="v1-5-9">
-  <h2 id="v1-5-9">1.5.9 — 2026-11-02 <span class="badge">Current</span></h2>
+<section class="version current" aria-labelledby="v1-5-11">
+  <h2 id="v1-5-11">1.5.11 — 2026-11-03 <span class="badge">Current</span></h2>
+  <p><em>Trending Health Articles, November 2026</em></p>
+
+  <h3>Added</h3>
+  <ul>
+    <li>Five trending health articles in English and Spanish (10 pages): Medicare open enrollment 2027 (<code>medicare-open-enrollment-2027-drug-plan-check</code>); ACA open enrollment and prescriptions (<code>aca-open-enrollment-2027-prescription-check</code>); unapproved retatrutide and legal GLP-1 prices (<code>retatrutide-online-risks-legal-glp1-prices</code>); flu antiviral costs (<code>flu-antiviral-cost-tamiflu-xofluza-2026</code>); the customs rule for Canadian drug imports (<code>canada-drug-imports-customs-rule-2027</code>). Spanish versions live under <code>/articles/es/</code>.</li>
+  </ul>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>Medicare Part D 2027 article (EN and ES): corrected the 2026 out-of-pocket cap to $2,100 and replaced the old premium estimates with CMS and KFF 2027 figures.</li>
+    <li>Canadian drug articles (EN and ES): added a dated note about the customs filing requirement that becomes mandatory January 20, 2027.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-5-10">
+  <h2 id="v1-5-10">1.5.10 — 2026-11-03</h2>
+  <p><em>Health and Medicine Articles + Bilingual Carousel</em></p>
+
+  <h3>Added</h3>
+  <ul>
+    <li>Five health and medicine articles in English and Spanish (10 pages): flu, COVID, and RSV vaccine costs for 2026-27 (<code>flu-covid-rsv-vaccine-cost-2026</code>); amoxicillin and antibiotic costs (<code>amoxicillin-antibiotics-cost-without-insurance</code>); expired medicine and safe disposal (<code>expired-medications-safe-disposal</code>); how to check drug interactions when you use more than one pharmacy (<code>how-to-check-drug-interactions</code>); metoprolol costs (<code>metoprolol-cost-without-insurance</code>). Spanish versions live under <code>/articles/es/</code>.</li>
+    <li>New article pages include a skip-to-content link, header and main landmarks, and an x-default hreflang tag.</li>
+  </ul>
+
+  <h3>Fixed</h3>
+  <ul>
+    <li>The homepage article carousel read <code>articles.json</code>, which listed only 66 of the 123 live articles. 57 live articles (6 English, 51 Spanish) never appeared in rotation. They are now in <code>articles.json</code> with the 10 new pages (133 entries).</li>
+    <li>The carousel showed Spanish articles to English readers and English articles to Spanish readers. <code>article-widget.js</code> now filters by the EN/ES toggle, follows a toggle change without a reload, translates its heading, and escapes card text.</li>
+    <li>The /articles/ language filter counts now match the cards.</li>
+  </ul>
+
+  <h3>Data</h3>
+  <ul>
+    <li>RxSaver prices refreshed from the saved Apify Task (<code>data/rxsaver_cache.json</code>).</li>
+    <li>Blink Health prices refreshed from the saved Apify Task (<code>data/blink_cache.json</code>).</li>
+    <li>SingleCare: 189 cache keys merged from ParseForge run <code>gE33UW2FaAubhcwTR</code> (2026-10-22, 133 drugs) with <code>import-singlecare-apify.js</code>. Older entries kept.</li>
+  </ul>
+</section>
+
+<section class="version" aria-labelledby="v1-5-9">
+  <h2 id="v1-5-9">1.5.9 — 2026-11-02</h2>
   <p><em>21 Sources</em></p>
 
   <h3>Changed</h3>

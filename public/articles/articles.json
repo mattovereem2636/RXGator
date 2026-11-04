@@ -1,64 +1,670 @@
 [
   {
-    "slug": "nadac-drug-prices-2025-vs-2026",
-    "title": "Drug Prices 2025 vs 2026: What Pharmacies Actually Pay (NADAC Data)",
-    "description": "Insulin dropped up to 75%. Generics fell 3.3% on average. But Ozempic barely budged. We compared 6,000+ drugs using federal NADAC data.",
-    "tag": "Drug Pricing",
-    "date": "2026-08-17",
+    "slug": "aca-open-enrollment-2027-prescription-check",
+    "title": "ACA Open Enrollment 2027: Check Your Prescriptions Before You Pick a Plan",
+    "description": "The out-of-pocket limit hits $12,000 and some insurers are leaving. Check your prescriptions before you pick a 2027 Marketplace plan.",
+    "tag": "Savings Guide",
+    "date": "2026-11-03",
     "readTime": "8 min read"
   },
   {
-    "slug": "es/costo-metformina-sin-seguro",
-    "title": "¿Cuánto Cuesta Metformina Sin Seguro en 2026?",
-    "description": "Metformina genérica cuesta entre $4 y $30 al mes dependiendo de la farmacia. Aquí le mostramos dónde encontrar el precio más bajo.",
+    "slug": "canada-drug-imports-customs-rule-2027",
+    "title": "Do You Buy Medicine From Canada? What the January 20 Customs Rule Means for You",
+    "description": "A customs rule for mailed medicine now starts January 20, 2027. See what is known and how to protect your supply.",
+    "tag": "Practical Guide",
+    "date": "2026-11-03",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "flu-antiviral-cost-tamiflu-xofluza-2026",
+    "title": "How Much Do Tamiflu and Xofluza Cost? A Guide for an Early Flu Season",
+    "description": "Flu started early this year. Compare generic Tamiflu prices, the $50 Xofluza cash offer, and the truth about generic Xofluza.",
+    "tag": "Drug Pricing",
+    "date": "2026-11-03",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "medicare-open-enrollment-2027-drug-plan-check",
+    "title": "Medicare Open Enrollment 2027: Check Your Drug Plan Before December 7",
+    "description": "Part D premiums may jump 50% for people who stay put, and 4.3 million people lose their plan. Compare your real 2027 costs by December 7.",
+    "tag": "Medicare & Policy",
+    "date": "2026-11-03",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "retatrutide-online-risks-legal-glp1-prices",
+    "title": "Retatrutide Online: Why No One Can Legally Sell It, and What Real GLP-1 Drugs Cost",
+    "description": "Retatrutide is not FDA approved, and online versions are illegal. See the warning signs and the legal GLP-1 prices that start at $149 a month.",
+    "tag": "Drug Safety",
+    "date": "2026-11-03",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "es/costo-antivirales-gripe-tamiflu-xofluza-2026",
+    "title": "¿Cuánto Cuestan Tamiflu y Xofluza? Guía para una Temporada de Gripe Temprana",
+    "description": "La gripe empezó temprano este año. Compare los precios de Tamiflu genérico, la oferta en efectivo de $50 de Xofluza y la verdad sobre el Xofluza genérico.",
     "tag": "Precios de Medicamentos",
-    "date": "2026-08-01",
-    "readTime": "5 min de lectura",
+    "date": "2026-11-03",
+    "readTime": "7 min de lectura",
     "lang": "es"
   },
   {
-    "slug": "es/costo-lisinopril-sin-seguro",
-    "title": "¿Cuánto Cuesta Lisinopril Sin Seguro en 2026?",
-    "description": "Lisinopril genérico cuesta entre $3 y $40 al mes. Compare precios y encuentre el mejor precio en su farmacia.",
-    "tag": "Precios de Medicamentos",
-    "date": "2026-08-01",
-    "readTime": "5 min de lectura",
+    "slug": "es/importar-medicamentos-canada-regla-aduanas-2027",
+    "title": "¿Compra Medicamentos de Canadá? Qué Significa para Usted la Regla de Aduanas del 20 de enero",
+    "description": "Una regla de aduanas para medicamentos por correo ahora empieza el 20 de enero de 2027. Vea qué se sabe y cómo proteger su suministro.",
+    "tag": "Guía Práctica",
+    "date": "2026-11-03",
+    "readTime": "8 min de lectura",
     "lang": "es"
   },
   {
-    "slug": "es/costo-atorvastatina-sin-seguro",
-    "title": "¿Cuánto Cuesta Atorvastatina Sin Seguro en 2026?",
-    "description": "Atorvastatina genérica (Lipitor) cuesta entre $4 y $90 al mes. Descubra dónde encontrar el precio más bajo.",
+    "slug": "es/inscripcion-abierta-aca-2027-recetas",
+    "title": "Inscripción Abierta de la ACA 2027: Revise sus Recetas Antes de Elegir un Plan",
+    "description": "El tope de gastos de bolsillo llega a $12,000 y algunas aseguradoras se van. Revise sus recetas antes de elegir un plan del Mercado de seguros para 2027.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-11-03",
+    "readTime": "8 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/inscripcion-abierta-medicare-2027-plan-medicamentos",
+    "title": "Inscripción Abierta de Medicare 2027: Revise su Plan de Medicamentos Antes del 7 de diciembre",
+    "description": "Las primas de la Parte D pueden subir 50% si no cambia de plan, y 4.3 millones de personas pierden su plan. Compare sus costos reales de 2027 antes del 7 de diciembre.",
+    "tag": "Medicare y Políticas",
+    "date": "2026-11-03",
+    "readTime": "8 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/retatrutida-en-linea-riesgos-precios-glp1",
+    "title": "Retatrutida en Línea: Por Qué Nadie Puede Venderla Legalmente y Cuánto Cuestan los Medicamentos GLP-1 Reales",
+    "description": "La retatrutida no tiene aprobación de la FDA, y las versiones en línea son ilegales. Vea las señales de alerta y los precios legales de GLP-1 desde $149 al mes.",
+    "tag": "Seguridad de Medicamentos",
+    "date": "2026-11-03",
+    "readTime": "8 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "amoxicillin-antibiotics-cost-without-insurance",
+    "title": "How Much Does Amoxicillin Cost Without Insurance in 2026?",
+    "description": "A course of generic amoxicillin runs about $8 to $18 cash. Compare capsule, tablet, and liquid prices and learn how to use antibiotics safely.",
+    "tag": "Drug Pricing",
+    "date": "2026-10-27",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "expired-medications-safe-disposal",
+    "title": "Expired Medicine: Is It Safe to Take, and How Do You Get Rid of It?",
+    "description": "What a medicine expiration date really means, which drugs raise the most concern, and free ways to dispose of old pills safely all year.",
+    "tag": "Drug Safety",
+    "date": "2026-10-27",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "flu-covid-rsv-vaccine-cost-2026",
+    "title": "Flu, COVID, and RSV Shots in 2026-27: What They Cost and How to Pay Less",
+    "description": "Flu shots run about $22 to $99 cash this season, and COVID shots near $279. See who pays $0 and where uninsured adults find low-cost shots.",
+    "tag": "Drug Pricing",
+    "date": "2026-10-27",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "how-to-check-drug-interactions",
+    "title": "How to Check for Drug Interactions, Especially When You Shop Around",
+    "description": "The three types of drug interactions, free ways to check them, and how to stay safe when you fill prescriptions at more than one pharmacy.",
+    "tag": "Drug Safety",
+    "date": "2026-10-27",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "metoprolol-cost-without-insurance",
+    "title": "How Much Does Metoprolol Cost Without Insurance in 2026?",
+    "description": "Generic metoprolol often costs $3 to $12 a month with a discount card. Compare tartrate and succinate ER prices by strength.",
+    "tag": "Drug Pricing",
+    "date": "2026-10-27",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "es/como-revisar-interacciones-medicamentos",
+    "title": "Cómo Revisar Interacciones de Medicamentos, Sobre Todo Cuando Compara Farmacias",
+    "description": "Los tres tipos de interacciones de medicamentos, formas gratis de revisarlas y cómo mantenerse seguro si surte recetas en varias farmacias.",
+    "tag": "Seguridad de Medicamentos",
+    "date": "2026-10-27",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-amoxicilina-antibioticos-sin-seguro",
+    "title": "¿Cuánto Cuesta la Amoxicilina Sin Seguro en 2026?",
+    "description": "Un tratamiento de amoxicilina genérica cuesta de $8 a $18 en efectivo. Compare precios por forma y aprenda a usar los antibióticos con seguridad.",
     "tag": "Precios de Medicamentos",
-    "date": "2026-08-01",
+    "date": "2026-10-27",
     "readTime": "6 min de lectura",
     "lang": "es"
   },
   {
-    "slug": "es/costo-amlodipino-sin-seguro",
-    "title": "¿Cuánto Cuesta Amlodipino Sin Seguro en 2026?",
-    "description": "Amlodipino genérico cuesta entre $3 y $45 al mes. Aquí le mostramos cómo conseguir el mejor precio.",
+    "slug": "es/costo-metoprolol-sin-seguro",
+    "title": "¿Cuánto Cuesta el Metoprolol Sin Seguro en 2026?",
+    "description": "El metoprolol genérico suele costar de $3 a $12 al mes con tarjeta de descuento. Compare precios de tartrato y succinato ER.",
     "tag": "Precios de Medicamentos",
-    "date": "2026-08-01",
-    "readTime": "5 min de lectura",
-    "lang": "es"
-  },
-  {
-    "slug": "es/costo-losartan-sin-seguro",
-    "title": "¿Cuánto Cuesta Losartán Sin Seguro en 2026?",
-    "description": "Losartán genérico cuesta entre $4 y $55 al mes. Compare precios y ahorre en su medicamento para la presión arterial.",
-    "tag": "Precios de Medicamentos",
-    "date": "2026-08-01",
-    "readTime": "5 min de lectura",
-    "lang": "es"
-  },
-  {
-    "slug": "es/costo-omeprazol-sin-seguro",
-    "title": "¿Cuánto Cuesta Omeprazol Sin Seguro en 2026?",
-    "description": "Omeprazol está disponible con y sin receta. Aquí le explicamos las diferencias de precio y dónde encontrar la mejor oferta.",
-    "tag": "Precios de Medicamentos",
-    "date": "2026-08-01",
+    "date": "2026-10-27",
     "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-vacunas-gripe-covid-vrs-2026",
+    "title": "Vacunas de Gripe, COVID y VRS en 2026-27: Cuánto Cuestan y Cómo Pagar Menos",
+    "description": "La vacuna de la gripe cuesta de $22 a $99 en efectivo esta temporada y la de COVID cerca de $279. Vea quién paga $0 y opciones de bajo costo.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-10-27",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/medicamentos-vencidos-desecho-seguro",
+    "title": "Medicamentos Vencidos: ¿Es Seguro Tomarlos y Cómo Desecharlos?",
+    "description": "Qué significa la fecha de vencimiento, qué medicamentos preocupan más y formas gratis de desechar pastillas viejas con seguridad todo el año.",
+    "tag": "Seguridad de Medicamentos",
+    "date": "2026-10-27",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/recetas-90-dias-ahorrar-dinero",
+    "title": "Recetas de 90 Días: Por Qué Comprar al Por Mayor Ahorra Dinero",
+    "description": "Surtir un suministro de 90 días en lugar de mensual puede ahorrar entre 20% y 40% en muchos medicamentos, además de menos viajes a la farmacia.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "4 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-inhalador-albuterol-sin-seguro",
+    "title": "¿Cuánto Cuesta un Inhalador de Albuterol Sin Seguro en 2026?",
+    "description": "Los inhaladores de albuterol cuestan entre $30 y $60 sin seguro. Aquí le mostramos cómo reducir ese costo y por qué los precios de los inhaladores son especialmente altos.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/resena-amazon-rxpass",
+    "title": "Reseña de Amazon RxPass: ¿Vale la Pena $5 al Mes?",
+    "description": "Todos sus medicamentos genéricos elegibles por una tarifa fija mensual. Analizamos la lista de medicamentos, la letra pequeña y quién realmente ahorra dinero.",
+    "tag": "Reseña",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/retiro-amlodipino-olmesartan-2026",
+    "title": "Retiro de Amlodipino y Olmesartán Medoxomilo 2026: Lo Que Necesita Saber",
+    "description": "Varios lotes de tabletas de amlodipino y olmesartán medoxomilo han sido retirados por no cumplir especificaciones de disolución. Averigüe si su medicamento está afectado.",
+    "tag": "Seguridad de Medicamentos",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/biosimilares-explicados",
+    "title": "Biosimilares: La Revolución Genérica para Medicamentos Costosos",
+    "description": "Aprenda qué son los biosimilares, cómo se diferencian de los genéricos tradicionales y cómo están reduciendo los precios de medicamentos biológicos como Humira e insulina.",
+    "tag": "Educación",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/comprar-medicamentos-recetados-canada",
+    "title": "Comprar Medicamentos Recetados de Canadá: Lo Legal, lo Seguro y lo que Vale la Pena",
+    "description": "Los estadounidenses pueden ahorrar entre 50% y 80% comprando en farmacias canadienses. Aquí está la realidad legal, la lista de seguridad y cómo hacerlo bien.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-seguro-cobra",
+    "title": "COBRA: ¿Vale la Pena $800 al Mes? (Las Cuentas Reales)",
+    "description": "COBRA vs Mercado ACA — comparaciones de costos reales, cuándo COBRA tiene sentido y la estrategia de elección retroactiva de 60 días.",
+    "tag": "Educación",
+    "date": "2026-08-28",
+    "readTime": "8 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/guia-farmacia-compuestos",
+    "title": "Farmacias de Compuestos: Medicamentos Personalizados y Cuándo Tienen Sentido",
+    "description": "Las farmacias de compuestos crean medicamentos personalizados con dosis, formas o ingredientes diferentes. Aquí le explicamos cuándo es la opción correcta y cuánto cuesta.",
+    "tag": "Educación",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/farmacia-costco-sin-membresia",
+    "title": "Farmacia de Costco Sin Membresía — Lo Que Debe Saber",
+    "description": "No necesita tarjeta de Costco para usar la farmacia. Los precios de Costco en genéricos están entre los más bajos del país. Así funciona.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/ahorrar-eliquis-alternativas",
+    "title": "Cómo Ahorrar en Eliquis: Cupones, Alternativas y lo que Viene",
+    "description": "Eliquis cuesta más de $600 al mes a precio de lista. Conozca la tarjeta de copago de BMS, el impacto de la negociación de Medicare, el cronograma de genéricos y alternativas.",
+    "tag": "Medicamentos de Marca",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/primeras-48-horas-sin-seguro",
+    "title": "7 Cosas que Hacer en las Primeras 48 Horas Después de Perder el Seguro",
+    "description": "Plazos de COBRA, Medicaid, inscripción en ACA, surtidos de emergencia — las 7 cosas más importantes que hacer ahora mismo.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-gabapentina-sin-seguro",
+    "title": "¿Cuánto Cuesta Gabapentina Sin Seguro en 2026?",
+    "description": "Los precios de gabapentina dependen mucho de la dosis. Con tarjeta de descuento, un suministro de 30 días cuesta entre $6 y $25. Sin ella, espere entre $50 y $120.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/generico-descontinuado-que-hacer",
+    "title": "¿Qué Pasa Cuando un Medicamento Genérico se Descontinúa?",
+    "description": "La escasez de medicamentos y las salidas de fabricantes pueden dejarlo sin opciones. Esto es lo que debe hacer cuando su genérico desaparece y cómo encontrar alternativas rápido.",
+    "tag": "Guía Práctica",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/genericos-vs-marca",
+    "title": "Genéricos vs Medicamentos de Marca: ¿Son Realmente Iguales?",
+    "description": "La FDA dice que sí. Su farmacéutico dice que sí. Entonces, ¿por qué la versión de marca cuesta 10 veces más? Esto es lo que realmente es diferente y lo que no.",
+    "tag": "Educación",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/como-leer-explicacion-beneficios",
+    "title": "Cómo Leer su Explicación de Beneficios (EOB) y Detectar Errores de Facturación",
+    "description": "Su EOB le dice exactamente lo que pagó su seguro, lo que usted debe y si le están cobrando de más. Aquí le explicamos cómo decodificarlo línea por línea.",
+    "tag": "Educación",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/como-leer-recibo-farmacia",
+    "title": "Cómo Leer su Recibo de Farmacia (y Detectar Cobros Excesivos)",
+    "description": "Aprenda a decodificar su recibo de farmacia, entender los códigos DAW, detectar errores de facturación y saber cuándo pagar en efectivo es mejor que usar su copago.",
+    "tag": "Educación",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/hsa-fsa-pagar-recetas",
+    "title": "Cómo Usar su HSA o FSA para Pagar Recetas",
+    "description": "Su cuenta de ahorros de salud o cuenta de gastos flexibles puede cubrir recetas libres de impuestos. Esto es lo que califica y cómo maximizar el beneficio.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/ley-reduccion-inflacion-precios-medicamentos",
+    "title": "Qué Significa la Ley de Reducción de la Inflación para sus Precios de Medicamentos",
+    "description": "La Ley de Reducción de la Inflación está cambiando los precios de medicamentos recetados para millones de estadounidenses. Conozca las negociaciones de Medicare, el tope de insulina de $35 y el límite de $2,000.",
+    "tag": "Industria",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/seguro-no-cubre-medicamento",
+    "title": "Qué Hacer Cuando su Seguro No Cubre su Medicamento",
+    "description": "Una receta denegada no es el fin del camino. Autorizaciones previas, apelaciones, alternativas terapéuticas y otras opciones pueden conseguirle cobertura o ahorrarle dinero.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/tarjeta-ahorro-jardiance",
+    "title": "Cómo Conseguir Jardiance por Menos (Tarjeta de Ahorro del Fabricante)",
+    "description": "Jardiance cuesta más de $500 al mes al precio de lista. El programa de ahorro de Eli Lilly y otras opciones pueden reducirlo drásticamente. Así puede calificar.",
+    "tag": "Medicamentos de Marca",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-levotiroxina-sin-seguro",
+    "title": "¿Cuánto Cuesta Levotiroxina Sin Seguro en 2026?",
+    "description": "Levotiroxina es el 4to medicamento más recetado en EE.UU. Conozca su costo sin seguro, por qué persiste la marca Synthroid y cómo ahorrar en su medicamento para tiroides.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/farmacia-correo-vs-minorista",
+    "title": "Farmacia por Correo vs Minorista: Ventajas, Desventajas y Ahorros",
+    "description": "Las farmacias por correo pueden ahorrarle tiempo y dinero en medicamentos de mantenimiento. Pero no siempre son la mejor opción. Aquí le mostramos cuándo conviene cada una.",
+    "tag": "Comparación",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/guia-inscripcion-medicare-parte-d",
+    "title": "Medicare Parte D: Cómo Elegir el Plan de Medicamentos Recetados Correcto",
+    "description": "Guía completa de inscripción en Medicare Parte D, comparación de planes, niveles de formulario y cómo evitar errores costosos al elegir su cobertura de medicamentos.",
+    "tag": "Medicare",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/subsidio-medicare-parte-d-termina-2027",
+    "title": "El Subsidio de Medicare Parte D Termina en 2027: Lo Que los Adultos Mayores Deben Saber",
+    "description": "El gobierno federal está eliminando los subsidios que mantuvieron bajas las primas de medicamentos de Medicare para 25 millones de personas mayores. Esto es lo que cambia y cuánto más podría pagar.",
+    "tag": "Medicare y Políticas",
+    "date": "2026-08-28",
+    "readTime": "8 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/precios-medicamentos-nadac-2025-vs-2026",
+    "title": "Precios de Medicamentos 2025 vs 2026: Lo Que Realmente Pagan las Farmacias (Datos NADAC)",
+    "description": "La insulina bajó hasta un 75%. Los genéricos bajaron un 3.3% en promedio. Pero Ozempic casi no se movió. Comparamos más de 6,000 medicamentos usando datos federales NADAC.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-28",
+    "readTime": "8 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/otc-vs-receta-ahorrar",
+    "title": "Sin Receta vs Con Receta: Cuándo lo de Venta Libre Es la Mejor Opción",
+    "description": "Algunos medicamentos recetados tienen versiones de venta libre idénticas a una fracción del costo. Aquí le mostramos cuándo tiene sentido cambiar.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/guia-ahorro-ozempic-wegovy",
+    "title": "Cómo Ahorrar en Ozempic y Wegovy en 2026",
+    "description": "Ozempic y Wegovy cuestan entre $900 y $1,300 al mes a precio de lista. Conozca los programas de ahorro del fabricante, cobertura de seguro, farmacias de compuestos y futuros genéricos.",
+    "tag": "Medicamentos de Marca",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/guia-completa-programas-asistencia-paciente",
+    "title": "Programas de Asistencia al Paciente: La Guía Completa para Medicamentos Gratis",
+    "description": "Cómo obtener medicamentos recetados gratis de programas de fabricantes. Elegibilidad, límites de ingresos, cómo solicitar y todos los programas principales listados.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "10 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/programas-asistencia-medicamentos-gratis",
+    "title": "Programas de Asistencia al Paciente: Cómo Obtener Medicamentos Gratis o de Bajo Costo",
+    "description": "Fabricantes de medicamentos, organizaciones sin fines de lucro y programas gubernamentales proporcionan medicamentos gratis a millones de estadounidenses. Aquí le mostramos cómo encontrarlos y solicitarlos.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/partir-pastillas-ahorrar",
+    "title": "Partir Pastillas: Una Forma Legal de Reducir sus Costos de Medicamentos a la Mitad",
+    "description": "Muchas tabletas cuestan lo mismo sin importar la dosis. Partir una pastilla de doble dosis puede reducir sus costos un 50%. Aquí le mostramos cuándo funciona y cuándo no.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/cupones-medicamentos-recetados-como-funcionan",
+    "title": "Cupones de Medicamentos Recetados: Cómo Funcionan y la Letra Pequeña",
+    "description": "Los cupones gratuitos de GoodRx, SingleCare y fabricantes pueden reducir sus costos drásticamente. Pero hay desventajas que la mayoría de la gente desconoce.",
+    "tag": "Educación",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/recetas-mientras-viaja",
+    "title": "Cómo Surtir Recetas Mientras Viaja",
+    "description": "Quedarse sin medicamentos en el camino no tiene que ser una crisis. Aquí le mostramos cómo surtir recetas lejos de casa, dentro y fuera del país.",
+    "tag": "Guía Práctica",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/guia-autorizacion-previa-apelacion",
+    "title": "¿Autorización Previa Denegada? Cómo Apelar y Ganar",
+    "description": "Una denegación de autorización previa no significa que no pueda obtener su medicamento. Aquí está el proceso paso a paso para apelar y las estrategias que realmente funcionan.",
+    "tag": "Guía Práctica",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/resena-rx-outreach-farmacia-sin-fines-lucro",
+    "title": "Rx Outreach: La Farmacia Sin Fines de Lucro Que la Mayoría No Conoce",
+    "description": "Rx Outreach es una farmacia por correo sin fines de lucro que ofrece más de 1,000 medicamentos con envío gratis, sin seguro requerido. Así funciona y cómo se compara.",
+    "tag": "Reseña",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/programas-asistencia-recetas-estatales",
+    "title": "Programas Estatales de Asistencia para Recetas: Medicamentos Gratis o de Bajo Costo por Estado",
+    "description": "Más de 30 estados tienen programas de asistencia farmacéutica que proporcionan medicamentos gratis o con descuento. Aquí le mostramos cómo encontrar el programa de su estado y cómo solicitarlo.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/hablar-medico-costos-medicamentos",
+    "title": "Cómo Hablar con su Médico Sobre los Costos de Medicamentos",
+    "description": "Su médico no siempre sabe cuánto cuesta su medicamento en la farmacia. Aquí le mostramos cómo tener la conversación que podría ahorrarle dinero real.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "4 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/guia-recetas-telesalud",
+    "title": "Cómo Obtener Recetas por Telesalud en 2026",
+    "description": "Aprenda cómo funcionan las recetas por telesalud, qué medicamentos se pueden recetar en línea, cuánto cuestan las consultas y consejos para surtir recetas al menor precio.",
+    "tag": "Guía Práctica",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/transferir-receta-farmacia-mas-barata",
+    "title": "Cómo Transferir su Receta a una Farmacia Más Barata",
+    "description": "Cambiar de farmacia es más fácil de lo que la mayoría piensa y puede ahorrarle cientos al año. Aquí está el proceso paso a paso.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "4 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/trumprx-explicado",
+    "title": "TrumpRx.gov Explicado: Qué Cubre, Quién se Beneficia y la Letra Pequeña",
+    "description": "Qué hace realmente TrumpRx, qué medicamentos están cubiertos, cómo se compara con otras opciones y qué no hace.",
+    "tag": "Educación",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/precios-medicamentos-eeuu-vs-otros-paises",
+    "title": "Por Qué los Precios de Medicamentos en EE.UU. Son Más Altos Que en Otros Países",
+    "description": "Los estadounidenses pagan de dos a tres veces más por los mismos medicamentos que las personas en Canadá, Europa y Australia. Aquí le explicamos por qué el sistema funciona así.",
+    "tag": "Industria",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/guia-beneficios-recetas-va",
+    "title": "Beneficios de Recetas del VA: Lo Que los Veteranos Deben Saber Sobre Costos de Medicamentos",
+    "description": "Guía de beneficios farmacéuticos del VA para veteranos, incluyendo niveles de copago, recetas por correo, formulario del VA y cómo se comparan los precios con farmacias minoristas.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/que-es-un-formulario",
+    "title": "¿Qué Es un Formulario y Por Qué Afecta sus Costos de Medicamentos?",
+    "description": "El formulario de su compañía de seguros decide cuánto paga por cada receta. Entender cómo funciona puede ahorrarle cientos al año.",
+    "tag": "Educación",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/cuanto-paga-farmacia-por-su-medicamento",
+    "title": "La Pastilla de $0.02: Lo Que su Farmacia Realmente Paga por su Medicamento",
+    "description": "La diferencia entre lo que las farmacias pagan por medicamentos genéricos y lo que usted paga en el mostrador es enorme. Aquí le mostramos cómo ver los números reales.",
+    "tag": "Industria",
+    "date": "2026-08-28",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/por-que-precios-varian-por-farmacia",
+    "title": "Por Qué el Mismo Medicamento Cuesta Diferente en Diferentes Farmacias",
+    "description": "La misma pastilla genérica puede costar $4 en una farmacia y $40 en otra en el mismo vecindario. Así es como realmente funcionan los precios de las farmacias.",
+    "tag": "Industria",
+    "date": "2026-08-28",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "glp1-weight-loss-drug-pricing-guide",
+    "title": "GLP-1 Weight Loss Drug Pricing Guide: What Ozempic, Wegovy, and Mounjaro Actually Cost in 2026",
+    "description": "Brand-name GLP-1 drugs cost $998 to $1,349/month at retail. Manufacturer programs, compounding, and new devices can cut that dramatically. Here's the full breakdown.",
+    "tag": "Brand Drugs",
+    "date": "2026-08-28",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "prescription-drug-price-trends-2026",
+    "title": "Prescription Drug Price Trends 2026: The Sharpest Drop in 60 Years",
+    "description": "Drug prices fell 3.1% year-over-year — the steepest decline since 1963. But 350+ brand drugs raised list prices and spending keeps climbing. Here's what's really happening.",
+    "tag": "Industry",
+    "date": "2026-08-28",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "state-by-state-pharmacy-pricing",
+    "title": "State-by-State Pharmacy Pricing: Why Your Location Changes What You Pay",
+    "description": "The same prescription can cost $237/month in one city and $425 in another. Geography, competition, and coverage type all play a role.",
+    "tag": "Industry",
+    "date": "2026-08-28",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "pbm-rebates-affect-drug-prices",
+    "title": "How PBM Rebates Affect What You Pay for Prescriptions",
+    "description": "Three companies control 80% of the drug market. Their rebate system creates incentives that push list prices higher. Here's how it works and what's changing.",
+    "tag": "Industry",
+    "date": "2026-08-28",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "medicare-part-d-changes-2027",
+    "title": "Medicare Part D: What Changes in 2027 and How to Prepare",
+    "description": "The $9.8 billion Part D subsidy ends January 2027. Premiums may rise $10-$20/month for 25 million seniors. Here's what's changing and what to do during Open Enrollment.",
+    "tag": "Medicare & Policy",
+    "date": "2026-08-28",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "generic-drug-shortages-getting-worse",
+    "title": "Why Generic Drug Shortages Are Getting Worse in 2026",
+    "description": "227 active drug shortages in Q2 2026 and climbing. Market consolidation, razor-thin margins, and overseas dependence are driving the crisis.",
+    "tag": "Industry",
+    "date": "2026-08-28",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "es/guia-precios-medicamentos-glp1-perdida-peso",
+    "title": "Guía de Precios de Medicamentos GLP-1 Para Pérdida de Peso en 2026",
+    "description": "Los medicamentos GLP-1 de marca cuestan entre $998 y $1,349 al mes. Programas del fabricante, compuestos y nuevos dispositivos pueden reducir el costo significativamente.",
+    "tag": "Medicamentos de Marca",
+    "date": "2026-08-28",
+    "readTime": "8 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/tendencias-precios-medicamentos-2026",
+    "title": "Tendencias de Precios de Medicamentos 2026: La Caída Más Pronunciada en 60 Años",
+    "description": "Los precios de medicamentos cayeron un 3.1% interanual, la mayor caída desde 1963. Pero más de 350 medicamentos de marca subieron precios.",
+    "tag": "Industria",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/precios-farmacia-estado-por-estado",
+    "title": "Precios de Farmacia Estado por Estado: Por Qué Su Ubicación Cambia Lo Que Paga",
+    "description": "La misma receta puede costar $237 al mes en una ciudad y $425 en otra. La geografía, la competencia y el tipo de cobertura influyen.",
+    "tag": "Industria",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/rebajas-pbm-afectan-precios-medicamentos",
+    "title": "Cómo las Rebajas de los PBM Afectan Lo Que Usted Paga por Sus Medicamentos",
+    "description": "Tres empresas controlan el 80% del mercado de medicamentos. Su sistema de rebajas crea incentivos que elevan los precios de lista.",
+    "tag": "Industria",
+    "date": "2026-08-28",
+    "readTime": "8 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/cambios-medicare-parte-d-2027",
+    "title": "Medicare Parte D: Qué Cambia en 2027 y Cómo Prepararse",
+    "description": "El subsidio de $9,800 millones para la Parte D termina en enero de 2027. Las primas podrían subir $10-$20 al mes para 25 millones de personas mayores.",
+    "tag": "Medicare y Políticas",
+    "date": "2026-08-28",
+    "readTime": "8 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/escasez-medicamentos-genericos-empeora",
+    "title": "Por Qué la Escasez de Medicamentos Genéricos Empeora en 2026",
+    "description": "227 escaseces activas en el segundo trimestre de 2026 y en aumento. La consolidación del mercado, márgenes mínimos y dependencia del extranjero impulsan la crisis.",
+    "tag": "Industria",
+    "date": "2026-08-28",
+    "readTime": "7 min de lectura",
     "lang": "es"
   },
   {
@@ -134,6 +740,125 @@
     "lang": "es"
   },
   {
+    "slug": "nadac-drug-prices-2025-vs-2026",
+    "title": "Drug Prices 2025 vs 2026: What Pharmacies Actually Pay (NADAC Data)",
+    "description": "Insulin dropped up to 75%. Generics fell 3.3% on average. But Ozempic barely budged. We compared 6,000+ drugs using federal NADAC data.",
+    "tag": "Drug Pricing",
+    "date": "2026-08-17",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "first-48-hours-after-losing-insurance",
+    "title": "7 Things to Do in the First 48 Hours After Losing Insurance",
+    "description": "COBRA deadlines, Medicaid, ACA enrollment, emergency fills — the 7 most important things to do right now.",
+    "tag": "Savings Guide",
+    "date": "2026-08-09",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "patient-assistance-programs-complete-guide",
+    "title": "Patient Assistance Programs: The Complete Guide to Free Medications",
+    "description": "How to get free prescription drugs from manufacturer programs. Eligibility, income limits, how to apply, and every major program listed.",
+    "tag": "Savings Guide",
+    "date": "2026-08-09",
+    "readTime": "10 min read"
+  },
+  {
+    "slug": "trumprx-explained",
+    "title": "TrumpRx.gov Explained: What It Covers, Who Benefits, and the Fine Print",
+    "description": "What TrumpRx actually does, which drugs are covered, how it compares to other options, and what it does not do.",
+    "tag": "Education",
+    "date": "2026-08-09",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "cobra-insurance-cost",
+    "title": "COBRA: Is It Worth $800/Month? (The Real Math)",
+    "description": "COBRA vs ACA Marketplace — real cost comparisons, when COBRA makes sense, and the 60-day retroactive election strategy.",
+    "tag": "Education",
+    "date": "2026-08-09",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "es/costo-metformina-sin-seguro",
+    "title": "¿Cuánto Cuesta Metformina Sin Seguro en 2026?",
+    "description": "Metformina genérica cuesta entre $4 y $30 al mes dependiendo de la farmacia. Aquí le mostramos dónde encontrar el precio más bajo.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-01",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-lisinopril-sin-seguro",
+    "title": "¿Cuánto Cuesta Lisinopril Sin Seguro en 2026?",
+    "description": "Lisinopril genérico cuesta entre $3 y $40 al mes. Compare precios y encuentre el mejor precio en su farmacia.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-01",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-atorvastatina-sin-seguro",
+    "title": "¿Cuánto Cuesta Atorvastatina Sin Seguro en 2026?",
+    "description": "Atorvastatina genérica (Lipitor) cuesta entre $4 y $90 al mes. Descubra dónde encontrar el precio más bajo.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-01",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-amlodipino-sin-seguro",
+    "title": "¿Cuánto Cuesta Amlodipino Sin Seguro en 2026?",
+    "description": "Amlodipino genérico cuesta entre $3 y $45 al mes. Aquí le mostramos cómo conseguir el mejor precio.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-01",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-losartan-sin-seguro",
+    "title": "¿Cuánto Cuesta Losartán Sin Seguro en 2026?",
+    "description": "Losartán genérico cuesta entre $4 y $55 al mes. Compare precios y ahorre en su medicamento para la presión arterial.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-01",
+    "readTime": "5 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/costo-omeprazol-sin-seguro",
+    "title": "¿Cuánto Cuesta Omeprazol Sin Seguro en 2026?",
+    "description": "Omeprazol está disponible con y sin receta. Aquí le explicamos las diferencias de precio y dónde encontrar la mejor oferta.",
+    "tag": "Precios de Medicamentos",
+    "date": "2026-08-01",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "es/perdi-seguro-guia-medicamentos",
+    "title": "Perdí Mi Seguro Médico: Guía Para Obtener Medicamentos",
+    "description": "Si perdió su seguro médico, todavía hay formas de obtener sus medicamentos recetados a precios accesibles. Aquí le explicamos sus opciones.",
+    "tag": "Guía de Ahorro",
+    "date": "2026-08-01",
+    "readTime": "6 min de lectura",
+    "lang": "es"
+  },
+  {
+    "slug": "medicare-part-d-subsidy-ending-2027",
+    "title": "Medicare Part D Subsidy Ending in 2027: What Seniors Need to Know and Do Now",
+    "description": "The federal government is ending subsidies that kept Medicare drug premiums low for 25 million seniors. Here's what's changing, how much more you could pay, and how to contact Congress.",
+    "tag": "Medicare & Policy",
+    "date": "2026-07-31",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "amlodipine-olmesartan-recall-2026",
+    "title": "Amlodipine and Olmesartan Medoxomil Recall 2026: What You Need to Know",
+    "description": "Multiple lots of amlodipine and olmesartan medoxomil tablets have been recalled due to failed dissolution specifications. Find out if your medication is affected and what to do next.",
+    "tag": "Drug Safety",
+    "date": "2026-07-31",
+    "readTime": "6 min read"
+  },
+  {
     "slug": "amlodipine-cost-without-insurance",
     "title": "How Much Does Amlodipine Cost Without Insurance in 2026?",
     "description": "Generic amlodipine runs $3 to $45 per month depending on your pharmacy. Here's where to find the lowest price and what most people actually pay.",
@@ -166,20 +891,84 @@
     "readTime": "6 min read"
   },
   {
-    "slug": "medicare-part-d-subsidy-ending-2027",
-    "title": "Medicare Part D Subsidy Ending in 2027: What Seniors Need to Know and Do Now",
-    "description": "The federal government is ending subsidies that kept Medicare drug premiums low for 25 million seniors. Here's what's changing, how much more you could pay, and how to contact Congress.",
-    "tag": "Medicare & Policy",
-    "date": "2026-07-31",
-    "readTime": "8 min read"
+    "slug": "lisinopril-cost-without-insurance",
+    "title": "How Much Does Lisinopril Cost Without Insurance in 2026?",
+    "description": "Find out what lisinopril costs without insurance in 2026. Compare prices from $4 to $40, learn about discount programs, and discover how to get the lowest price on this common blood pressure medication.",
+    "tag": "Drug Pricing",
+    "date": "2026-07-26",
+    "readTime": "5 min read"
   },
   {
-    "slug": "amlodipine-olmesartan-recall-2026",
-    "title": "Amlodipine and Olmesartan Medoxomil Recall 2026: What You Need to Know",
-    "description": "Multiple lots of amlodipine and olmesartan medoxomil tablets have been recalled due to failed dissolution specifications. Find out if your medication is affected and what to do next.",
-    "tag": "Drug Safety",
-    "date": "2026-07-31",
+    "slug": "levothyroxine-cost-without-insurance",
+    "title": "How Much Does Levothyroxine Cost Without Insurance in 2026?",
+    "description": "Levothyroxine is the 4th most prescribed drug in America. Learn what it costs without insurance, why brand Synthroid persists, and how to save on your thyroid medication in 2026.",
+    "tag": "Drug Pricing",
+    "date": "2026-07-26",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "ozempic-wegovy-savings-guide",
+    "title": "How to Save on Ozempic and Wegovy in 2026",
+    "description": "Ozempic and Wegovy cost $900-$1,300/month at list price. Learn about manufacturer savings programs, insurance coverage, compounding pharmacies, and future generics to reduce your semaglutide costs.",
+    "tag": "Brand Drugs",
+    "date": "2026-07-26",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "eliquis-savings-alternatives",
+    "title": "How to Save on Eliquis: Coupons, Alternatives, and What's Coming",
+    "description": "Eliquis costs over $600/month at list price. Learn about the BMS co-pay card, Medicare negotiation impact, generic timeline, and alternatives to reduce your blood thinner costs in 2026.",
+    "tag": "Brand Drugs",
+    "date": "2026-07-26",
     "readTime": "6 min read"
+  },
+  {
+    "slug": "inflation-reduction-act-drug-prices",
+    "title": "What the Inflation Reduction Act Means for Your Drug Prices",
+    "description": "The Inflation Reduction Act is changing prescription drug prices for millions of Americans. Learn about Medicare drug negotiations, the $35 insulin cap, $2,000 out-of-pocket limit, and what's coming through 2029.",
+    "tag": "Industry",
+    "date": "2026-07-26",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "biosimilars-explained",
+    "title": "Biosimilars: The Generic Revolution for Expensive Drugs",
+    "description": "Learn what biosimilars are, how they differ from traditional generics, and how they're driving down prices on expensive biologic drugs like Humira and insulin.",
+    "tag": "Education",
+    "date": "2026-07-26",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "medicare-part-d-enrollment-guide",
+    "title": "Medicare Part D: How to Choose the Right Prescription Drug Plan",
+    "description": "A complete guide to Medicare Part D enrollment, plan comparison, formulary tiers, and avoiding costly mistakes when choosing your prescription drug coverage.",
+    "tag": "Medicare",
+    "date": "2026-07-26",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "va-prescription-benefits-guide",
+    "title": "VA Prescription Benefits: What Veterans Should Know About Drug Costs",
+    "description": "A guide to VA pharmacy benefits for veterans, including copay tiers, mail-order prescriptions, VA formulary, and how VA drug prices compare to retail pharmacies.",
+    "tag": "Savings Guide",
+    "date": "2026-07-26",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "telehealth-prescriptions-guide",
+    "title": "How to Get Prescriptions Through Telehealth in 2026",
+    "description": "Learn how telehealth prescriptions work, what medications can be prescribed online, how much visits cost, and tips for filling telehealth prescriptions at the lowest price.",
+    "tag": "Practical Guide",
+    "date": "2026-07-26",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "how-to-read-pharmacy-receipt",
+    "title": "How to Read Your Pharmacy Receipt (And Catch Overcharges)",
+    "description": "Learn how to decode your pharmacy receipt, understand DAW codes, spot billing errors, and know when paying cash beats using your insurance copay.",
+    "tag": "Education",
+    "date": "2026-07-26",
+    "readTime": "5 min read"
   },
   {
     "slug": "metformin-cost-without-insurance",
@@ -258,6 +1047,14 @@
     "title": "The $0.02 Pill: What Your Pharmacy Actually Pays for Your Medication",
     "description": "The gap between what pharmacies pay for generic drugs and what you pay at the counter is staggering. Here's how to see the real numbers.",
     "tag": "Industry",
+    "date": "2026-07-09",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "rx-outreach-nonprofit-pharmacy-review",
+    "title": "Rx Outreach: The Nonprofit Pharmacy Most People Don't Know About",
+    "description": "Rx Outreach is a nonprofit mail-order pharmacy offering 1,000+ medications with free shipping, no insurance required. Here's how it works and how it compares.",
+    "tag": "Review",
     "date": "2026-07-09",
     "readTime": "6 min read"
   },
@@ -400,125 +1197,5 @@
     "description": "Americans pay two to three times more for the same medications as people in Canada, Europe, and Australia. Here's why the system works this way.",
     "tag": "Industry",
     "readTime": "7 min read"
-  },
-  {
-    "slug": "rx-outreach-nonprofit-pharmacy-review",
-    "title": "Rx Outreach: The Nonprofit Pharmacy Most People Don't Know About",
-    "description": "Rx Outreach is a nonprofit mail-order pharmacy offering 1,000+ medications with free shipping, no insurance required. Here's how it works and how it compares.",
-    "tag": "Review",
-    "date": "2026-07-09",
-    "readTime": "6 min read"
-  },
-  {
-    "slug": "lisinopril-cost-without-insurance",
-    "title": "How Much Does Lisinopril Cost Without Insurance in 2026?",
-    "description": "Find out what lisinopril costs without insurance in 2026. Compare prices from $4 to $40, learn about discount programs, and discover how to get the lowest price on this common blood pressure medication.",
-    "tag": "Drug Pricing",
-    "date": "2026-07-26",
-    "readTime": "5 min read"
-  },
-  {
-    "slug": "levothyroxine-cost-without-insurance",
-    "title": "How Much Does Levothyroxine Cost Without Insurance in 2026?",
-    "description": "Levothyroxine is the 4th most prescribed drug in America. Learn what it costs without insurance, why brand Synthroid persists, and how to save on your thyroid medication in 2026.",
-    "tag": "Drug Pricing",
-    "date": "2026-07-26",
-    "readTime": "5 min read"
-  },
-  {
-    "slug": "ozempic-wegovy-savings-guide",
-    "title": "How to Save on Ozempic and Wegovy in 2026",
-    "description": "Ozempic and Wegovy cost $900-$1,300/month at list price. Learn about manufacturer savings programs, insurance coverage, compounding pharmacies, and future generics to reduce your semaglutide costs.",
-    "tag": "Brand Drugs",
-    "date": "2026-07-26",
-    "readTime": "7 min read"
-  },
-  {
-    "slug": "eliquis-savings-alternatives",
-    "title": "How to Save on Eliquis: Coupons, Alternatives, and What's Coming",
-    "description": "Eliquis costs over $600/month at list price. Learn about the BMS co-pay card, Medicare negotiation impact, generic timeline, and alternatives to reduce your blood thinner costs in 2026.",
-    "tag": "Brand Drugs",
-    "date": "2026-07-26",
-    "readTime": "6 min read"
-  },
-  {
-    "slug": "inflation-reduction-act-drug-prices",
-    "title": "What the Inflation Reduction Act Means for Your Drug Prices",
-    "description": "The Inflation Reduction Act is changing prescription drug prices for millions of Americans. Learn about Medicare drug negotiations, the $35 insulin cap, $2,000 out-of-pocket limit, and what's coming through 2029.",
-    "tag": "Industry",
-    "date": "2026-07-26",
-    "readTime": "7 min read"
-  },
-  {
-    "slug": "biosimilars-explained",
-    "title": "Biosimilars: The Generic Revolution for Expensive Drugs",
-    "description": "Learn what biosimilars are, how they differ from traditional generics, and how they're driving down prices on expensive biologic drugs like Humira and insulin.",
-    "tag": "Education",
-    "date": "2026-07-26",
-    "readTime": "6 min read"
-  },
-  {
-    "slug": "medicare-part-d-enrollment-guide",
-    "title": "Medicare Part D: How to Choose the Right Prescription Drug Plan",
-    "description": "A complete guide to Medicare Part D enrollment, plan comparison, formulary tiers, and avoiding costly mistakes when choosing your prescription drug coverage.",
-    "tag": "Medicare",
-    "date": "2026-07-26",
-    "readTime": "7 min read"
-  },
-  {
-    "slug": "va-prescription-benefits-guide",
-    "title": "VA Prescription Benefits: What Veterans Should Know About Drug Costs",
-    "description": "A guide to VA pharmacy benefits for veterans, including copay tiers, mail-order prescriptions, VA formulary, and how VA drug prices compare to retail pharmacies.",
-    "tag": "Savings Guide",
-    "date": "2026-07-26",
-    "readTime": "6 min read"
-  },
-  {
-    "slug": "telehealth-prescriptions-guide",
-    "title": "How to Get Prescriptions Through Telehealth in 2026",
-    "description": "Learn how telehealth prescriptions work, what medications can be prescribed online, how much visits cost, and tips for filling telehealth prescriptions at the lowest price.",
-    "tag": "Practical Guide",
-    "date": "2026-07-26",
-    "readTime": "5 min read"
-  },
-  {
-    "slug": "how-to-read-pharmacy-receipt",
-    "title": "How to Read Your Pharmacy Receipt (And Catch Overcharges)",
-    "description": "Learn how to decode your pharmacy receipt, understand DAW codes, spot billing errors, and know when paying cash beats using your insurance copay.",
-    "tag": "Education",
-    "date": "2026-07-26",
-    "readTime": "5 min read"
-  },
-  {
-    "slug": "first-48-hours-after-losing-insurance",
-    "title": "7 Things to Do in the First 48 Hours After Losing Insurance",
-    "description": "COBRA deadlines, Medicaid, ACA enrollment, emergency fills — the 7 most important things to do right now.",
-    "tag": "Savings Guide",
-    "date": "2026-08-09",
-    "readTime": "7 min read"
-  },
-  {
-    "slug": "patient-assistance-programs-complete-guide",
-    "title": "Patient Assistance Programs: The Complete Guide to Free Medications",
-    "description": "How to get free prescription drugs from manufacturer programs. Eligibility, income limits, how to apply, and every major program listed.",
-    "tag": "Savings Guide",
-    "date": "2026-08-09",
-    "readTime": "10 min read"
-  },
-  {
-    "slug": "trumprx-explained",
-    "title": "TrumpRx.gov Explained: What It Covers, Who Benefits, and the Fine Print",
-    "description": "What TrumpRx actually does, which drugs are covered, how it compares to other options, and what it does not do.",
-    "tag": "Education",
-    "date": "2026-08-09",
-    "readTime": "7 min read"
-  },
-  {
-    "slug": "cobra-insurance-cost",
-    "title": "COBRA: Is It Worth $800/Month? (The Real Math)",
-    "description": "COBRA vs ACA Marketplace — real cost comparisons, when COBRA makes sense, and the 60-day retroactive election strategy.",
-    "tag": "Education",
-    "date": "2026-08-09",
-    "readTime": "8 min read"
   }
 ]
